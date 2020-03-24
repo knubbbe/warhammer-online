@@ -1,0 +1,94 @@
+<Interface xmlns:xsi="http://www.w3.org/2501/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+   <Scripts>
+      <Script file="ClosetGoblinItemRack.lua" />
+   </Scripts>
+   <Windows>
+   
+         <Button name="CG_ItemRackEquipmentButton" inherits="CharacterWindowDefaultButton" draganddrop="true" gameactionbutton="right" >
+            <EventHandlers>
+                <EventHandler event="OnRButtonDown" function="CG_ItemRack.EquipmentRButtonDown" />
+                <EventHandler event="OnMouseOver" function="CG_ItemRack.EquipmentMouseOver" />
+            </EventHandlers>
+        </Button>
+        
+   	<Window name="CG_ItemRackEQShow1" inherits="EA_Window_Default" movable="false" layer="popup" savesettings="false">
+       		<Size>
+            		<AbsPoint x="750" y="75" />
+         	</Size>
+         	<Windows>
+				<Window name="$parentEquipment" draganddrop="true" layer="background">
+					<Size>
+						<AbsPoint x="750" y="75" />
+					</Size>
+					<Windows>
+						<Button name="$parentSlot1" inherits="CG_ItemRackEquipmentButton" id="1">
+						</Button>
+						<Button name="$parentSlot2" inherits="CG_ItemRackEquipmentButton" id="2">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSlot1">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+						<Button name="$parentSlot3" inherits="CG_ItemRackEquipmentButton" id="3">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSlot2">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+						 <Button name="$parentSlot4" inherits="CG_ItemRackEquipmentButton" id="4">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSlot3">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+						 <Button name="$parentSlot5" inherits="CG_ItemRackEquipmentButton" id="5">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSlot4">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+						 <Button name="$parentSlot6" inherits="CG_ItemRackEquipmentButton" id="6">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSlot5">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+						 <Button name="$parentSlot7" inherits="CG_ItemRackEquipmentButton" id="7">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSlot6">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+						 <Button name="$parentSlot8" inherits="CG_ItemRackEquipmentButton" id="8">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSlot7">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+						 <Button name="$parentSlot9" inherits="CG_ItemRackEquipmentButton" id="9">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSlot8">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+						 <Button name="$parentSlot10" inherits="CG_ItemRackEquipmentButton" id="10">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSlot9">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>                                                                                          
+					</Windows>
+				</Window>
+		</Windows>
+   	</Window>
+    </Windows>
+</Interface>

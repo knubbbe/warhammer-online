@@ -1,0 +1,1 @@
+A special thank you to Aiiane for saving me a world of time and letting me use her slash command handling code as a boiler plate. 

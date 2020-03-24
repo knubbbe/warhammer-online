@@ -1,0 +1,113 @@
+------------------------------------------------------------------------
+r233 | wikki | 2010-12-17 04:29:41 +0000 (Fri, 17 Dec 2010) | 1 line
+Changed paths:
+   A /tags/1.2.5 (from /trunk:232)
+
+Tagging as 1.2.5
+------------------------------------------------------------------------
+r232 | wikki | 2010-12-17 04:15:51 +0000 (Fri, 17 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/Pure.mod
+   M /trunk/Source/Pure.lua
+
+Removed an erroneous debug statement
+------------------------------------------------------------------------
+r229 | wikki | 2010-12-05 21:43:09 +0000 (Sun, 05 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/Pure.mod
+   M /trunk/Source/Pure.lua
+   M /trunk/Source/PureGroup_UnitFrame.lua
+   M /trunk/Source/PurePlayer_UnitFrame.lua
+
+Fixed an issue that was created when fixing the city siege group display.
+------------------------------------------------------------------------
+r228 | wikki | 2010-12-04 23:57:21 +0000 (Sat, 04 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/Configuration/PureConfig_Group.lua
+
+Fixed a few of the config UI spacing issues from the new feature
+------------------------------------------------------------------------
+r227 | wikki | 2010-12-04 23:55:33 +0000 (Sat, 04 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/Configuration/PureConfig_GroupPet.lua
+
+Fixed 
+------------------------------------------------------------------------
+r226 | wikki | 2010-12-04 22:09:16 +0000 (Sat, 04 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/Configuration/PureConfig_Group.lua
+   M /trunk/Configuration/PureConfig_GroupPet.lua
+   M /trunk/Configuration/PureConfig_Player.lua
+   M /trunk/Configuration/PureConfig_PlayerPet.lua
+   M /trunk/Configuration/PureConfig_PlayerPetTarget.lua
+   M /trunk/Configuration/PureConfig_TargetFriendly.lua
+   M /trunk/Configuration/PureConfig_TargetHostile.lua
+   M /trunk/Pure.mod
+   M /trunk/Source/Pure.lua
+   M /trunk/Source/PureDefaultSettings.lua
+   M /trunk/Source/PureGroup.lua
+   M /trunk/Source/PureGroupPet.lua
+   M /trunk/Source/PurePlayer.lua
+   M /trunk/Source/PurePlayerPet.lua
+   M /trunk/Source/PurePlayerPetTarget.lua
+   M /trunk/Source/PureTarget.lua
+
+Added option to show all but HUDs while in siege engine.
+------------------------------------------------------------------------
+r225 | wikki | 2010-12-04 04:49:44 +0000 (Sat, 04 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/Source/Pure.lua
+   M /trunk/Source/PureGroup.lua
+
+Fixed an issue where the group was not being properly hidden when in a siege and the group was to be hidden.
+------------------------------------------------------------------------
+r224 | wikki | 2010-11-28 06:23:02 +0000 (Sun, 28 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/Libraries/AceDB-3.0.lua
+   M /trunk/Libraries/AceDBOptions-3.0.lua
+
+AceDB Update
+------------------------------------------------------------------------
+r222 | wikki | 2010-11-28 05:07:34 +0000 (Sun, 28 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/Configuration/PureConfig.lua
+   M /trunk/Pure.mod
+   M /trunk/Source/Pure.lua
+
+Small code fix to unbreak Pure Career Bar addon
+------------------------------------------------------------------------
+r221 | wikki | 2010-11-24 04:31:20 +0000 (Wed, 24 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/Libraries/AceDB-3.0.lua
+   M /trunk/Pure.mod
+   M /trunk/Source/Pure.lua
+
+Bringing in the new AceDB library
+------------------------------------------------------------------------
+r219 | wikki | 2010-11-23 03:44:47 +0000 (Tue, 23 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/Assets/SharedAssetsPure.mod
+   M /trunk/Configuration/PureConfig.xml
+   M /trunk/Pure.mod
+   M /trunk/Source/Pure.lua
+   M /trunk/Source/PureGroup.lua
+   M /trunk/Source/PureGroupPet.lua
+   M /trunk/Source/PurePlayer.lua
+   M /trunk/Source/PurePlayerPet.lua
+   M /trunk/Source/PurePlayerPetTarget.lua
+   M /trunk/Source/PureTarget.lua
+   M /trunk/Source/PureUIElementTemplates.xml
+   M /trunk/Source/PureUnitFrame.xml
+   M /trunk/Source/PureUnitFrameHUD.xml
+   M /trunk/Source/TargetInfoFix.lua
+   M /trunk/Templates/Free/Free.xml
+
+Added some additional checks for when frames are loaded to make sure their saved anchor window exists, if it does not it will go to Root->center/center.
+------------------------------------------------------------------------
+r218 | wikki | 2010-11-02 00:55:01 +0000 (Tue, 02 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/Pure.mod
+   M /trunk/Source/Pure.lua
+
+Fixed dep load
+------------------------------------------------------------------------

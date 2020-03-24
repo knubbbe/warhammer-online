@@ -1,0 +1,208 @@
+<? version="1.0" encoding="UTF-8"?>
+    <!--
+    This application is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    The applications is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with the applications.  If not, see
+    <http://www.gnu.org/licenses/>.
+    -->
+    <Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Scripts>
+        </Scripts>
+        <Windows>
+        	<!-- Pure Config Listbox Row -->
+			<Window name="PureConfigRow">
+				<Size>
+					<AbsPoint x="220" y="25"/>
+				</Size>
+				<EventHandlers>
+					<EventHandler event="OnLButtonUp" function="PureConfig.OnLButtonUpConfigList" />
+				</EventHandlers>
+				<Windows>
+					
+					<FullResizeImage name="$parentBackground" inherits="EA_FullResizeImage_TintableSolidBackground">
+						<Anchors>
+	                        <Anchor point="topleft" relativePoint="topleft" />
+	                        <Anchor point="bottomright" relativePoint="bottomright" />
+	                    </Anchors>
+					</FullResizeImage>
+					
+					<Label name="$parentName" inherits="PureDefaultLabelSmallFont"  maxchars="80" handleinput="false" textalign="center" autoresize="false" autoresizewidth="false" warnOnTextCropped="false">
+						<Size>
+							<AbsPoint x="100" y="25"/>
+						</Size>
+						<Anchors>
+							<Anchor point="topleft" relativePoint="topleft">
+	                            <AbsPoint x="0" y="0" />
+	                        </Anchor>
+	                        <Anchor point="bottomright" relativePoint="bottomright">
+	                            <AbsPoint x="0" y="0" />
+	                        </Anchor>
+						</Anchors>
+					</Label>
+				</Windows>
+			</Window>
+			
+            <Window name="PureConfig" movable="true" handleinput="true" savesettings="true">
+            	<Size>
+					<AbsPoint x="800" y="500" />
+				</Size>
+                <Anchors>
+                    <Anchor point="center" relativePoint="center">
+                        <AbsPoint x="0" y="0" />
+                    </Anchor>
+                </Anchors>
+                <Windows>
+                	<!-- Default window background -->
+					<Window name="$parentBackground" inherits="EA_Window_DefaultBackgroundFrame" />
+					<!-- Title Bar -->
+					<Window name ="$parentTitleBar"   inherits="EA_TitleBar_Default" />
+					
+					<!-- Button Background Area -->
+					<Window name="$parentButtonBackground" inherits="EA_Window_DefaultButtonBottomFrame" layer="background" >
+						<Size>
+							<AbsPoint x="0" y="70" />
+						</Size>
+					</Window>
+					
+					<!-- Top Right Close Button -->
+					<Button name="$parentTopRightCloseButton" inherits="EA_Button_DefaultWindowClose">
+						<EventHandlers>
+							<EventHandler event="OnLButtonUp" function="PureConfig.OnClose" />
+						</EventHandlers>
+					</Button>
+    	
+					<ListBox name="$parentList" scrollbar="EA_ScrollBar_DefaultVerticalChain" rowdef="PureConfigRow" visiblerows="15" rowspacing="0">
+	                	<Size>
+			                <AbsPoint x="240" y="0" />
+			            </Size>
+						<Anchors>
+	                        <Anchor point="bottomright" relativePoint="topright" relativeTo="$parentTitleBar">
+	                            <AbsPoint x="-8" y="-2" />
+	                        </Anchor>
+	                        <Anchor point="topright" relativePoint="bottomright" relativeTo="$parentButtonBackground">
+	                            <AbsPoint x="-8" y="10"/>
+	                        </Anchor>
+	                    </Anchors>
+						<ListData table="PureConfig.displayData" populationfunction="PureConfig.PopulateDisplay">
+							<ListColumns>
+								<ListColumn windowname="Name" variable="Name" format="wstring" />
+							</ListColumns>
+						</ListData>
+					</ListBox>
+					
+					<!-- Config Scroll Window -->
+	                <ScrollWindow name="$parentScroll" childscrollwindow="$parentChild" scrollbar="$parentBar" lineheight="18" autohidescrollbar="true">
+	                    <Anchors>
+	                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" >
+	                            <AbsPoint x="8" y="35" />
+	                        </Anchor>
+	                        <Anchor point="bottomleft" relativePoint="bottomright" relativeTo="$parentList" >
+	                            <AbsPoint x="0" y="0" />
+	                        </Anchor>
+	                    </Anchors>
+	                    <Windows>
+	                    	<VerticalScrollbar name="$parentBar" inherits="EA_ScrollBar_DefaultVerticalChain" layer="popup">
+	                            <Size>
+	                                <AbsPoint x="20" y="0"/>
+	                            </Size>
+	                            <Anchors>
+	                                <Anchor point="topright" relativePoint="topright">
+	                                    <AbsPoint x="-2" y="0"/>
+	                                </Anchor>
+	                                <Anchor point="bottomright" relativePoint="bottomright">
+	                                    <AbsPoint x="-2" y="0"/>
+	                                </Anchor>
+	                            </Anchors>
+	                        </VerticalScrollbar>
+	                        <Window name="$parentChild">
+	                            <Anchors>
+	                            	<Anchor point="topleft" relativePoint="topleft" relativeTo="">
+	                                    <AbsPoint x="0" y="0" />
+	                                </Anchor>
+	                                <Anchor point="topright" relativePoint="topright" relativeTo="">
+	                                    <AbsPoint x="-20" y="0" />
+	                                </Anchor>
+	                            </Anchors>
+	                            <Windows/>
+	                        </Window>
+                    	</Windows>
+                    </ScrollWindow>
+                    
+                    <!-- Close -->
+					<Button name="$parentCloseButton" inherits="EA_Button_DefaultResizeable">	
+						 <Size>
+		                    <AbsPoint x="160" y="39" />
+		                </Size>
+						<Anchors>
+							<Anchor point="right" relativePoint="right" relativeTo="$parentButtonBackground">
+								<AbsPoint x="-10" y="7" />
+							</Anchor>
+						</Anchors>
+						<EventHandlers>
+							<EventHandler event="OnLButtonUp" function="PureConfig.OnClose" />
+						</EventHandlers>
+					</Button>
+					
+					<!-- Revert -->
+					<Button name="$parentRevertButton" inherits="EA_Button_DefaultResizeable">	
+						 <Size>
+		                    <AbsPoint x="160" y="39" />
+		                </Size>
+						<Anchors>
+							<Anchor point="left" relativePoint="right" relativeTo="$parentCloseButton">
+								<AbsPoint x="-10" y="0" />
+							</Anchor>
+						</Anchors>
+						<EventHandlers>
+							<EventHandler event="OnLButtonUp" function="PureConfig.OnRevert" />
+						</EventHandlers>
+					</Button>
+					
+					<!-- Apply -->
+					<Button name="$parentApplyButton" inherits="EA_Button_DefaultResizeable">	
+						 <Size>
+		                    <AbsPoint x="160" y="39" />
+		                </Size>
+						<Anchors>
+							<Anchor point="left" relativePoint="right" relativeTo="$parentRevertButton">
+								<AbsPoint x="-10" y="0" />
+							</Anchor>
+						</Anchors>
+						<EventHandlers>
+							<EventHandler event="OnLButtonUp" function="PureConfig.OnApply" />
+						</EventHandlers>
+					</Button>
+					
+					<!-- Version Display -->
+                    <Label name="$parentVersion" layer="secondary" font="font_clear_small_bold" maxchars="30" textalign="leftcenter" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="240" y="20"/>
+                        </Size>
+                        <Anchors>
+							<Anchor point="left" relativePoint="left" relativeTo="$parentButtonBackground">
+								<AbsPoint x="30" y="7" />
+							</Anchor>
+						</Anchors>
+                    </Label>
+					
+					<Button name="$parentResizeButton" inherits="CoreWindowResizeButtonBottomRight" layer="popup" >
+	                    <Anchors>
+	                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="" >
+	                            <AbsPoint x="0" y="0" />
+	                        </Anchor>
+	                    </Anchors>
+	                    <EventHandlers>
+	                        <EventHandler event="OnLButtonDown" function="PureConfig.OnResizeBegin" />
+	                    </EventHandlers>
+	                </Button>
+				</Windows>
+            </Window>
+        </Windows>
+    </Interface>

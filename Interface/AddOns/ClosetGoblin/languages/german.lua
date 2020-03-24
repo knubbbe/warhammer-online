@@ -1,0 +1,85 @@
+-------------------------------------------------------------------------------
+--If you find some error in this translation you can make change here :
+-- http://war.curseforge.com/projects/closetgoblin/localization/
+-- last update : "5/19/2009"
+-------------------------------------------------------------------------------
+ClosetGoblin.languageData.german =
+{
+	already_activating_set = L"Du aktivierst bereits ein Set. Bitte warte bis es ausgerüstet wurde, bevor du ein anderes Set aktivierst.", -- Needs review
+	Associate_with_set = L"Assoziieren mit Set '#1#'",
+	Associate_with_Zone = L"Assoziieren mit Zone ...",
+	Associating_zone_with_set = L"Set '#2#' mit Zone '#1#' Assoziieren",
+	bad_career = L"Dieses Item ist nicht für deine Karriere gedacht.", -- Needs review
+	bad_race = L"Dieses Item ist nicht für deine Rasse gedacht.", -- Needs review
+	bad_rank = L"Dein Rang ist nicht hoch genug um dieses Item nutzen zu können.", -- Needs review
+	bad_rr = L"Du hast nicht den nötigen Rufrang um dieses Item nutzen zu können.", -- Needs review
+	bad_skill = L"Du hast nicht die nötige Fähigkeit um dieses Item benutzen zu können.", -- Needs review
+	bad_slot = L"Dieses Item passt nicht an diesen Platz.", -- Needs review
+	bag_full_set_problem = L"Achtung: Deine Beutel sind voll! Das Set konnte nicht korrekt ausgerüstet werden.", -- Needs review
+	cannot_equip_item = L"Du kannst das Item momentan nicht anlegen. Bitte prüfe die Erfordernisse.",
+	Change = L"Wechseln",
+	ClosetGoblin_Zone_Configuration = L"ClosetGoblin Zonen Konfiguration",
+	confirm_delete_set = L"Bist du sicher, dass du das Set '#1#' löschen möchtest?", -- Needs review
+	Copy = L"Kopieren",
+	Delete_Set = L"Set Löschen",
+	Disabled = L"Ausschalten",
+	Enabled = L"Einschalten",
+	Enter_set_name = L"Set Name Eintragen",
+	Equiping_set = L"Set '#1#' anlegen ...",
+	Equip_set = L"Rüste '#1#' aus", -- Needs review
+	Import_Current = L"Momentane Ausrüstung Importieren",
+	Item_dragged = L"Nur Items aus deinem Inventar oder deinem Charakter Fenster werden momentan Unterstützt. ",
+	iteminset = L"Item im ClosetGoblin Set :",
+	Link_with_tactics_set = L"Verbinden mit Taktik Set  #1#",
+	loaded = L"#1# geladen",
+	Map_Unknown = L"Warnung: Aktuelle Kate ist Unbekannt. Bitte  '#1#' mit der Nummer '#2#' Melden.",
+	New_Set = L"Neues Set",
+	New_set_name = L"Neuer Set Name",
+	Paste = L"Einfügen",
+	player_in_combat = L"Du befindest dich im Kampf! Du kannst das Set jetzt nicht ändern.", -- Needs review
+	reloadui = L"Du musst /reloadui in den Chat schreiben, damit die Änderungen wirksam werden.", -- Needs review
+	Rename_Set = L"Set Umbenennen",
+	Set_link_to_tactics = L"Das Set '#1#' ist nun mit dem Taktikset Nummer '#2#' Verbunden.",
+	Set_Name = L"Set Name",
+	Set_name_empty = L"Kein Name gewählt. Bitte trage einen Namen ein.",
+	Set_name_unique = L"Set Namen müssen Einzigartig sein. Bitte versuch einen anderen Namen.",
+	setnotfound = L"Set '#1#' wurde nicht gefunden.",
+	Setting_message_output = L"Einstellung -  Nachrichten ausgabe.",
+	Setting_remove_to_first = L"Setting remove-to-first: ", -- Requires localization
+	Setting_tooltips = L"Einstellungen - Tooltips",
+	Setting_zones_to_sets = L"Einstellungen - Zone-Set",
+	Set_unlink_to_tactics = L"Das Set '#1#' ist nicht länger mit dem Taktikset verbunden.",
+	Tactics = L"Taktiken ",
+	talisman_skill_1 = L"STR", -- Requires localization
+	talisman_skill_10 = L"BLOK", -- Requires localization
+	talisman_skill_11 = L"PARY", -- Requires localization
+	talisman_skill_12 = L"EVAD", -- Requires localization
+	talisman_skill_13 = L"DISR", -- Requires localization
+	talisman_skill_14 = L"SP.R", -- Requires localization
+	talisman_skill_15 = L"EL.R", -- Requires localization
+	talisman_skill_16 = L"CO.R", -- Requires localization
+	talisman_skill_26 = L"ARMO", -- Requires localization
+	talisman_skill_3 = L"WIL", -- Requires localization
+	talisman_skill_4 = L"TOU", -- Requires localization
+	talisman_skill_5 = L"WND", -- Requires localization
+	talisman_skill_6 = L"INI", -- Requires localization
+	talisman_skill_7 = L"WE.S", -- Requires localization
+	talisman_skill_8 = L"BA.S", -- Requires localization
+	talisman_skill_85 = L"-BLK", -- Requires localization
+	talisman_skill_86 = L"-PAR", -- Requires localization
+	talisman_skill_87 = L"-EVA", -- Requires localization
+	talisman_skill_88 = L"-DIS", -- Requires localization
+	talisman_skill_9 = L"INT", -- Requires localization
+	talisman_skill_89 = L"HCRI", -- Requires localization
+	talisman_skill_10864 = L"ODJI", -- Requires localization
+	talisman_skill_94 = L"HEAL", -- Requires localization
+	talisman_skill_82 = L"MAGI", -- Requires localization
+	talisman_skill_78 = L"MCRI", -- Requires localization
+	Unassociate_with_set = L"Nicht Assoziieren mit Set",
+	Unassociating_zone_with_set = L"Set nicht mit Zone '#1#' Assoziieren",
+	Unlink_with_tactics_set = L"Trennen von Set Taktik",
+	Warning_not_enough_item = L"Warnung: Du besitzt nicht so viel '#1#' wie du dem Set hinzugefügt hast. Das Set könnte nicht so funktionieren wie du es dir Vorstellst.",
+	Zone = L"Zone",
+	Zone_Configuration = L"Zonen Konfiguration",
+	Zone_List = L"Zone '#1#' wird assoziiert mit Set '#2#'",
+}

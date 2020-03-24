@@ -1,0 +1,319 @@
+<? version="1.0" encoding="UTF-8"?>
+    <!--
+    This application is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    The applications is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with the applications.  If not, see
+    <http://www.gnu.org/licenses/>.
+    -->
+    <Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Windows>
+            <Window name="PureUnitFrame_Default" movable="false" popable="false" layer="default" handleinput="false" savesettings="false">
+                <Size>
+                    <AbsPoint x="240" y="51"/>
+                </Size>
+                <Windows>
+                    <FullResizeImage name="$parentBackground" texture="EA_HUD_01" layer="background" handleinput="false">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"/>
+                            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"/>
+                        </Anchors>
+                        <Sizes>
+                            <TopLeft x="16" y="16" />
+                            <BottomRight x="16" y="16" />
+                            <Middle x="88" y="40" />
+                        </Sizes>
+                        <TexSlices>
+                            <TopLeft      id="Action-Bar-Frame-Top-Left" />
+                            <TopCenter    id="Action-Bar-Frame-Top-Center" />
+                            <TopRight     id="Action-Bar-Frame-Top-Right" />
+                            <MiddleLeft   id="Action-Bar-Frame-Middle-Left" />
+                            <MiddleCenter id="Action-Bar-Frame-Middle-Center" />
+                            <MiddleRight  id="Action-Bar-Frame-Middle-Right" />
+                            <BottomLeft   id="Action-Bar-Frame-Bottom-Left" />
+                            <BottomCenter id="Action-Bar-Frame-Bottom-Center" />
+                            <BottomRight  id="Action-Bar-Frame-Bottom-Right" />
+                        </TexSlices>
+                    </FullResizeImage>
+                    <DynamicImage name="$parentSelectedTarget" layer="background" texture="tint_square" handleinput="false" alpha="0.0">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"/>
+                            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"/>
+                        </Anchors>
+                        <TintColor r="255" g="255" b="255" />
+                    </DynamicImage>
+                    <DynamicImage name="$parentEffectsDispel" layer="default" texture="tint_square" handleinput="false" alpha="0.0">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"/>
+                            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"/>
+                        </Anchors>
+                        <TintColor r="255" g="255" b="255" />
+                    </DynamicImage>
+                    <DynamicImage name="$parentActionPointsStatusBackground" layer="secondary" handleinput="false">
+                        <Size>
+                            <AbsPoint x="0" y="20"/>
+                        </Size>
+                        <Anchors>
+                            <Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parent">
+                                <AbsPoint x="6" y="-5"/>
+                            </Anchor>
+                            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                                <AbsPoint x="-6" y="-5"/>
+                            </Anchor>
+                        </Anchors>
+                        <TintColor r="255" g="255" b="0" />
+                    </DynamicImage>
+                    <DynamicImage name="$parentActionPointsStatus" layer="popup" handleinput="false">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentActionPointsStatusBackground"/>
+                            <Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentActionPointsStatusBackground"/>
+                        </Anchors>
+                        <TintColor r="255" g="255" b="0" />
+                    </DynamicImage>
+                    <DynamicImage name="$parentHitPointsStatusBackground" layer="secondary" handleinput="false">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                                <AbsPoint x="6" y="5"/>
+                            </Anchor>
+                            <Anchor point="topright" relativePoint="bottomright" relativeTo="$parentActionPointsStatusBackground">
+                                <AbsPoint x="0" y="-1"/>
+                            </Anchor>
+                        </Anchors>
+                        <TintColor r="85" g="188" b="70" />
+                    </DynamicImage>
+                    <DynamicImage name="$parentHitPointsStatus" layer="popup" handleinput="false">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentHitPointsStatusBackground"/>
+                            <Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentHitPointsStatusBackground"/>
+                        </Anchors>
+                        <TintColor r="85" g="188" b="70" />
+                    </DynamicImage>
+                    <Button name="$parentSigil" inherits="EA_Button_Default" backgroundtexture="EA_HUD_01" highlighttexture="EA_HUD_01" layer="popup" handleinput="true">
+			            <Size>
+			                <AbsPoint x="24" y="24" />
+			            </Size>
+			            <Anchors>
+                            <Anchor point="right" relativePoint="center" relativeTo="$parent">
+                            	<AbsPoint x="-3" y="0"/>
+                            </Anchor>
+                        </Anchors>
+			            <TexDims x="17" y="17" />
+			            <EventHandlers>
+			                <EventHandler event="OnLButtonUp"     	function="PureTargetUnitFrame.OnLButtonUp_Sigil" />
+			                <EventHandler event="OnMouseOver"   	function="PureTargetUnitFrame.OnMouseOver_Sigil" />
+			            </EventHandlers>
+			        </Button>
+                    <Label name="$parentName" layer="overlay" font="font_clear_small_bold" maxchars="22" textalign="leftcenter" textAutoFitMinScale=".75" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="160" y="24"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="left" relativePoint="left" relativeTo="$parentHitPointsStatusBackground">
+	                            <AbsPoint x="5" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+                    <Label name="$parentHitPoints" layer="overlay" font="font_clear_small_bold" maxchars="14" textalign="rightcenter" textAutoFitMinScale=".75" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="120" y="24"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="right" relativePoint="right" relativeTo="$parentHitPointsStatusBackground">
+	                            <AbsPoint x="-5" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+                    <Label name="$parentOffline" layer="overlay" font="font_clear_small_bold" maxchars="14" textalign="rightcenter" textAutoFitMinScale=".75" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="120" y="24"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="right" relativePoint="right" relativeTo="$parentHitPointsStatusBackground">
+	                            <AbsPoint x="-5" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+                    <Label name="$parentMorale" layer="overlay" font="font_clear_small_bold" maxchars="1" autoresizewidth="true" textalign="leftcenter" textAutoFitMinScale=".75" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="20" y="24"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="left" relativePoint="left" relativeTo="$parentActionPointsStatusBackground">
+	                            <AbsPoint x="5" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+                    <Label name="$parentRank" layer="overlay" font="font_clear_small_bold" maxchars="7" autoresizewidth="true" textalign="leftcenter" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="60" y="24"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="right" relativePoint="left" relativeTo="$parentMorale">
+	                        	<AbsPoint x="2" y="0"/>
+	                        </Anchor>
+                        </Anchors>
+                    </Label>
+                    <Label name="$parentActionPoints" layer="overlay" font="font_clear_small_bold" maxchars="9" textalign="rightcenter" textAutoFitMinScale=".75" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="75" y="24"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="right" relativePoint="right" relativeTo="$parentActionPointsStatusBackground">
+	                            <AbsPoint x="-5" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+                    <Label name="$parentCareer" layer="overlay" font="font_clear_small_bold" textalign="leftcenter" textAutoFitMinScale=".80" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="140" y="24"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="right" relativePoint="left" relativeTo="$parentRank">
+	                            <AbsPoint x="2" y="-0"/>
+	                        </Anchor>
+	                        <!-- <Anchor point="left" relativePoint="right" relativeTo="$parentActionPoints"/> -->
+	                    </Anchors>
+                    </Label>
+                </Windows>
+            </Window>
+            
+            <Window name="PurePetUnitFrame_Default" movable="false" popable="false" layer="default" savesettings="false">
+                <Size>
+                    <AbsPoint x="200" y="31"/>
+                </Size>
+                <Windows>
+                    <FullResizeImage name="$parentFrame" texture="EA_HUD_01" layer="background" handleinput="false">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"/>
+                            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"/>
+                        </Anchors>
+                        <Sizes>
+                            <TopLeft x="16" y="16" />
+                            <BottomRight x="16" y="16" />
+                            <Middle x="88" y="40" />
+                        </Sizes>
+                        <TexSlices>
+                            <TopLeft      id="Action-Bar-Frame-Top-Left" />
+                            <TopCenter    id="Action-Bar-Frame-Top-Center" />
+                            <TopRight     id="Action-Bar-Frame-Top-Right" />
+                            <MiddleLeft   id="Action-Bar-Frame-Middle-Left" />
+                            <MiddleCenter id="Action-Bar-Frame-Middle-Center" />
+                            <MiddleRight  id="Action-Bar-Frame-Middle-Right" />
+                            <BottomLeft   id="Action-Bar-Frame-Bottom-Left" />
+                            <BottomCenter id="Action-Bar-Frame-Bottom-Center" />
+                            <BottomRight  id="Action-Bar-Frame-Bottom-Right" />
+                        </TexSlices>
+                    </FullResizeImage>
+                    <DynamicImage name="$parentHitPointsStatusBackground" layer="background" handleinput="false">
+                    	<Size>
+                            <AbsPoint x="0" y="20"/>
+                        </Size>
+	                    <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                                <AbsPoint x="6" y="5"/>
+                            </Anchor>
+                            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                                <AbsPoint x="-6" y="-5"/>
+                            </Anchor>
+                        </Anchors>
+	                    <TintColor r="85" g="188" b="70" />
+	                </DynamicImage>
+	                <DynamicImage name="$parentHitPointsStatus" layer="default" handleinput="false">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentHitPointsStatusBackground"/>
+                            <Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentHitPointsStatusBackground"/>
+                        </Anchors>
+                        <TintColor r="85" g="188" b="70" />
+                    </DynamicImage>
+                    
+                    <Label name="$parentRank" layer="overlay" font="font_clear_small_bold" maxchars="7" autoresizewidth="true" textalign="leftcenter" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="60" y="24"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="left" relativePoint="left" relativeTo="$parentHitPointsStatusBackground">
+	                        	<AbsPoint x="5" y="0"/>
+	                        </Anchor>
+                        </Anchors>
+                    </Label>
+                    
+                    <Label name="$parentName" layer="overlay" font="font_clear_small_bold" maxchars="18" textalign="leftcenter" textAutoFitMinScale=".5" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="160" y="20"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="right" relativePoint="left" relativeTo="$parentRank">
+	                            <AbsPoint x="2" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+                    <Label name="$parentHitPoints" layer="overlay" font="font_clear_small_bold" maxchars="14" textalign="rightcenter" textAutoFitMinScale=".5" handleinput="false" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="100" y="20"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="right" relativePoint="right" relativeTo="$parentHitPointsStatusBackground">
+	                            <AbsPoint x="-5" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+                </Windows>
+            </Window>
+            
+            <Window name="PurePlayer_Default" inherits="PureUnitFrame_Default" handleinput="true">
+                <EventHandlers>
+                    <EventHandler event="OnLButtonDown" function="PurePlayerUnitFrame.OnLButtonDown" />
+                    <EventHandler event="OnRButtonUp" function="PurePlayerUnitFrame.OnRButtonUp" />
+                </EventHandlers>
+            </Window>
+            
+            <Window name="PureTargetFriendly_Default" inherits="PureUnitFrame_Default" handleinput="true">
+                <EventHandlers>
+                    <EventHandler event="OnRButtonUp" function="PureTargetUnitFrame.OnRButtonUp" />
+                    <EventHandler event="OnLButtonUp" function="PureTargetUnitFrame.OnLButtonUp" />
+                </EventHandlers>
+            </Window>
+            
+            <Window name="PureTargetHostile_Default" inherits="PureUnitFrame_Default" handleinput="true">
+                <EventHandlers>
+                    <EventHandler event="OnRButtonUp" function="PureTargetUnitFrame.OnRButtonUp" />
+                    <EventHandler event="OnLButtonUp" function="PureTargetUnitFrame.OnLButtonUp" />
+                </EventHandlers>
+            </Window>
+            
+            <Window name="PureGroup_Default" inherits="PureUnitFrame_Default" handleinput="true">
+                <EventHandlers>
+                	<EventHandler event="OnLButtonUp" function="PureGroupUnitFrame.OnLButtonUp" />
+                    <EventHandler event="OnRButtonUp" function="PureGroupUnitFrame.OnRButtonUp" />
+                </EventHandlers>
+            </Window>
+            
+            <Window name="PureGroupLayout" savesettings="false"/>
+            
+            <Window name="PurePlayerPet_Default" inherits="PurePetUnitFrame_Default" handleinput="true">
+                <EventHandlers>
+                    <EventHandler event="OnLButtonDown" function="PurePlayerPetUnitFrame.OnLButtonDown" />
+                </EventHandlers>
+            </Window>
+            
+            <Window name="PurePlayerPetTarget_Default" inherits="PurePetUnitFrame_Default" handleinput="true">
+            	<EventHandlers>
+                	<EventHandler event="OnLButtonDown" function="PurePlayerPetTargetUnitFrame.OnLButtonDown" />
+                </EventHandlers>
+            </Window>
+            
+			<Window name="PureGroupPet_Default" inherits="PurePetUnitFrame_Default" handleinput="true">
+            	<EventHandlers>
+                    <EventHandler event="OnLButtonDown" function="PureGroupPetUnitFrame.OnLButtonDown" />
+                </EventHandlers>
+            </Window>
+            
+            <Window name="PureGroupPetLayout" savesettings="false"/>
+        </Windows>
+    </Interface>

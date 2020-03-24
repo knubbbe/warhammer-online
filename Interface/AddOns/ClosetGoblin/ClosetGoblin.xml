@@ -1,0 +1,1470 @@
+<!--
+Copyright (c) 2008, Naeru@Ulthuan
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation  
+and/or other materials provided with the distribution.
+Neither the name of the Candymancer Coding Company nor the names of its contributors may be used to endorse or promote products derived from 
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, 
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE 
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<!--
+Large portions of this file are inspired by Mythic's CharacterWindow code. I can't take all, or even most, of the credit here. I've obviously tweaked for my needs and made
+quite a few changes, but the inspiration for how to do this lays squarely on Mythic's CharacterWindow
+-->
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Assets>
+		<Texture name="ClosetGoblinIcon" file="ClosetGoblinIcon.tga" />
+		<Texture name="WHLCG" file="WHL CG.tga"/>
+	</Assets>
+	
+	<Windows>
+	    <Button name="ClosetGoblinDefaultButton" inherits="EA_Button_Default" texturescale="1.171" font="font_default_text" textalign="bottomright" drawchildrenfirst="true" draganddrop="true" gameactionbutton="right" >
+            <Size>
+                <AbsPoint x="75" y="75" />
+            </Size>
+            <Windows>
+				<DynamicImage name="$parentIconBase" textureScale="1.171" handleinput="false" layer="background">
+                    <Size>
+                        <AbsPoint x="75" y="75" />
+                    </Size>
+                </DynamicImage>	
+            </Windows>
+				<TexCoords>
+					<Normal texture="EA_SquareFrame" x="0" y="0" />
+					<NormalHighlit texture="EA_SquareFrame_Highlight" x="0" y="0" />
+					<Pressed texture="EA_SquareFrame_Pressed" x="0" y="0" />
+					<Disabled texture="EA_SquareFrame" x="0" y="0" />
+				</TexCoords>
+            <TextOffset x="5" />
+        </Button>
+		
+		<Button name="ClosetGoblinEquipmentButton" inherits="ClosetGoblinDefaultButton" draganddrop="true" gameactionbutton="right" >
+            <EventHandlers>
+				<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.EquipmentLButtonUp" />
+				<EventHandler event="OnLButtonDown" function="ClosetGoblinCharacterWindow.EquipmentLButtonDown" />
+				<EventHandler event="OnRButtonUp" function="ClosetGoblinCharacterWindow.EquipmentRButtonUp" />
+				<EventHandler event="OnMouseOver" function="ClosetGoblinCharacterWindow.EquipmentMouseOver" />
+				<EventHandler event="OnMouseOverEnd" function="ClosetGoblinCharacterWindow.EquipmentMouseOverEnd" />
+			</EventHandlers>
+        </Button>
+        
+        <Label name="ClosetGoblinTalismanLabel" handleinput="false" font="font_clear_medium_bold" textalign="center" layer="overlay">
+			<Size>
+				<AbsPoint x="65" y="20"/>
+			</Size>
+			<Color r="255" g="255" b="255" a="255"/>
+		</Label>
+		
+		<FullResizeImage name="ClosetGoblinDefaultBG" handleinput="false" layer="background" texture="shared_01">
+            <Sizes>
+                <TopLeft x="16" y="15" />
+                <BottomRight x="16" y="15" />
+                <Middle x="78" y="25" />
+            </Sizes>
+            <TexCoords>
+                <TopLeft x="256" y="157" />
+                <TopCenter x="272" y="157" />
+                <TopRight x="350" y="157" />
+                <MiddleLeft x="256" y="172" />
+                <MiddleCenter x="272" y="172" />
+                <MiddleRight x="350" y="172" />
+                <BottomLeft x="256" y="197" />
+                <BottomCenter x="272" y="197" />
+                <BottomRight x="350" y="197" />
+            </TexCoords>
+        </FullResizeImage>
+		
+		<Window name="ClosetGoblinSetRow">
+			<Size>
+                <AbsPoint x="355" y="26"/>
+            </Size>
+			<Windows>
+				<FullResizeImage name="$parentBackgroundName" inherits="EA_FullResizeImage_TintableSolidBackground">
+					<Size>
+						<AbsPoint x="340" y="26" />
+					</Size>
+					<Anchors>
+						<Anchor point="left" relativePoint="left" relativeTo="">
+							<AbsPoint x="0" y="0"/>
+						</Anchor>
+					</Anchors>
+				</FullResizeImage>
+				<FullResizeImage name="$parentSelectionBorder" inherits="DefaultWindowBackground">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentName">
+                            <AbsPoint x="-4" y="-4"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentTactics">
+                            <AbsPoint x="-10" y="0"/>
+                        </Anchor>
+                    </Anchors>
+                </FullResizeImage>
+				<Label name="$parentName" font="font_default_text">
+					<Size>
+						<AbsPoint x="275" y="24" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="">
+							<AbsPoint x="5" y="5" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.OnClickSetRow" />
+						<EventHandler event="OnRButtonUp" function="ClosetGoblinCharacterWindow.OnSetRowContextMenu" />
+					</EventHandlers>
+				</Label>
+				<Label name="$parentTactics" font="font_default_text" textalign="center">
+					<Size>
+						<AbsPoint x="70" y="24" />
+					</Size>
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentName">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.OnClickSetRow" />
+						<EventHandler event="OnRButtonUp" function="ClosetGoblinCharacterWindow.OnSetRowContextMenu" />
+					</EventHandlers>
+				</Label>
+			</Windows>
+		</Window>
+		<Window name="ClosetGoblinZoneRow">
+			<Size>
+                <AbsPoint x="480" y="26"/>
+            </Size>
+			<Windows>
+				<FullResizeImage name="$parentBackgroundZone" inherits="EA_FullResizeImage_TintableSolidBackground">
+					<Size>
+						<AbsPoint x="465" y="26" />
+					</Size>
+					<Anchors>
+						<Anchor point="left" relativePoint="left" relativeTo="">
+							<AbsPoint x="0" y="0"/>
+						</Anchor>
+					</Anchors>
+				</FullResizeImage>
+				<FullResizeImage name="$parentSelectionBorder" inherits="DefaultWindowBackground">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentZone">
+                            <AbsPoint x="-4" y="-4"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSet">
+                            <AbsPoint x="-10" y="0"/>
+                        </Anchor>
+                    </Anchors>
+                </FullResizeImage>
+				<Label name="$parentZone" font="font_default_text">
+					<Size>
+						<AbsPoint x="120" y="24" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="">
+							<AbsPoint x="5" y="5" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="ClosetGoblinZoneWindow.OnClickZoneRow" />
+						<EventHandler event="OnRButtonUp" function="ClosetGoblinZoneWindow.OnSetZoneRowContextMenu" />
+					</EventHandlers>
+				</Label>
+				<Label name="$parentSet" font="font_default_text" textalign="left">
+					<Size>
+						<AbsPoint x="345" y="24" />
+					</Size>
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentZone">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="ClosetGoblinZoneWindow.OnClickZoneRow" />
+						<EventHandler event="OnRButtonUp" function="ClosetGoblinZoneWindow.OnSetZoneRowContextMenu" />
+					</EventHandlers>
+				</Label>
+			</Windows>
+		</Window>
+	
+		<!-- Action Bar Scroll Buttons -->
+        <Window name="ClosetGoblinActionBarPageSelector">
+            <Size>
+                <AbsPoint x="26" y="66" />
+            </Size>
+            <Windows>
+                <Button name="$parentUp" inherits="EA_Button_DefaultUp">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"/>
+                    </Anchors>
+                    <EventHandlers>
+                        <EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.HotbarPageUpProxy" />
+                        <EventHandler event="OnMouseOver" function="ActionBars.OnMouseoverHotbarPageUp" />
+                    </EventHandlers>
+                </Button>
+                <Button name="$parentDown" inherits="EA_Button_DefaultDown">
+                    <Anchors>
+                        <Anchor point="bottom" relativePoint="top" relativeTo="$parentCurrentPage" >
+                            <AbsPoint x="0" y="-3" />
+                        </Anchor>
+                    </Anchors>
+                    <EventHandlers>
+                        <EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.HotbarPageDownProxy" />
+                        <EventHandler event="OnMouseOver" function="ActionBars.OnMouseoverHotbarPageDown" />
+                    </EventHandlers>
+                </Button>
+                <DynamicImage name="$parentCurrentPage" handleinput="false" layer="overlay" texture="shared_01" slice="Radio-Button">
+                    <Size>
+                        <AbsPoint x="22" y="22" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="bottom" relativePoint="top" relativeTo="$parentUp">
+                            <AbsPoint x="0" y="-3" />
+                        </Anchor>
+                    </Anchors>
+                    <Windows>
+                        <Label name="$parentText" handleinput="false" font="font_clear_tiny" maxchars="10" textalign="center">
+                            <Size>
+                                <AbsPoint x="22" y="22" />
+                            </Size>
+                            <Anchors>
+                                <Anchor point="center" relativePoint="center">
+                                    <AbsPoint x="0" y="0" />
+                                </Anchor>
+                            </Anchors>
+                            <Color r="255" g="255" b="255" a="255" />
+                        </Label>
+                    </Windows>
+                </DynamicImage>
+            </Windows>
+        </Window>
+		
+		<Window name="ClosetGoblinLoadWindow" handleinput="false" savesettings="false" popable="false">
+         <Size>
+            <AbsPoint x="180" y="35" />
+         </Size>
+         <Anchors>
+            <Anchor point="center" relativePoint="center" relativeTo="Root">
+               <AbsPoint x="0" y="0" />
+            </Anchor>
+         </Anchors>
+         <Windows>
+            <Label name="$parentText" font="font_clear_large_bold" autoresize="true" textalign="center" layer="popup" popable="false" handleinput="false">
+                 <Size>
+                     <AbsPoint x="180" y="25" />
+                 </Size>
+                 <Anchors>
+                     <Anchor point="top" relativePoint="top" relativeTo="">
+                         <AbsPoint x="0" y="2" />
+                     </Anchor>
+                 </Anchors>
+                 <Color r="255" g="255" b="255" a="255" />
+            </Label>
+
+         </Windows>
+
+      </Window>
+		
+		
+		<Window name="ClosetGoblinCharacterWindow" inherits="EA_Window_Default" movable="true" layer="default">
+			<Size>
+				<AbsPoint x="545" y="753" />
+            </Size>
+            <Anchors>
+                <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+                    <AbsPoint x="35" y="0" />
+                </Anchor>
+            </Anchors>
+            <EventHandlers> 
+                <EventHandler event="OnShown" function="ClosetGoblinCharacterWindow.OnShow" />
+                <EventHandler event="OnHidden" function="ClosetGoblinCharacterWindow.OnHide" />
+                <EventHandler event="OnShutdown" function="ClosetGoblinCharacterWindow.OnShutdown" />
+            </EventHandlers>
+            <Windows>
+				<!-- Window decoration -->
+                <Window name="$parentBackground" inherits="EA_Window_DefaultFrame" >
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+                            <AbsPoint x="0" y="65" />
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                    </Anchors>
+                </Window>
+                <Window name="$parentTitleBar" inherits="EA_TitleBar_Default" layer="background" >
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentBackground">
+                            <AbsPoint x="0" y="5" />
+                        </Anchor>
+                        <Anchor point="topright" relativePoint="bottomright" relativeTo="$parentBackground">
+                            <AbsPoint x="0" y="5" />
+                        </Anchor>
+                    </Anchors>
+                </Window>
+                <DynamicImage name="$parentCornerImage" inherits="EA_Default_CharacterImage" sticky="false">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentTitleBar">
+                            <AbsPoint x="-50" y="-60" />
+                        </Anchor>
+                    </Anchors>
+                </DynamicImage>
+                <Button name="$parentClose" inherits="EA_Button_DefaultWindowClose">
+                    <Anchors>
+                        <Anchor point="topright" relativePoint="topright" relativeTo="$parentTitleBar">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                    </Anchors>
+                    <EventHandlers>
+                        <EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.Hide" />
+                    </EventHandlers>
+                </Button>
+				
+				<!-- Actual window contents -->
+                <Window name="$parentContents">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackground">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                    </Anchors>
+                    <Windows>                        
+                        <FullResizeImage name="$parentBG" handleinput="false" layer="background" inherits="ClosetGoblinDefaultBG">
+                            <Anchors>
+                                <Anchor point="topleft" relativePoint="topleft" relativeTo="ClosetGoblinCharacterWindowBackground">
+                                    <AbsPoint x="9" y="5" />
+                                </Anchor>
+                                <Anchor point="bottomright" relativePoint="bottomright" relativeTo="ClosetGoblinCharacterWindowBackground">
+                                    <AbsPoint x="-9" y="-9" />
+                                </Anchor>
+                            </Anchors>
+                        </FullResizeImage>
+						
+						<!-- List box actions -->
+						<Button name="$parentNewSet" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentSetList">
+									<AbsPoint x="48" y="-105" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.OnClickNewSetButton"/>
+							</EventHandlers>
+						</Button>
+						
+						<Button name="$parentDeleteSet" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentNewSet">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.OnClickDeleteSetButton"/>
+							</EventHandlers>
+						</Button>
+						
+						<Button name="$parentZoneConfig" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center">
+							<Anchors>
+								<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentNewSet">
+									<AbsPoint x="0" y="15" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.OnClickZoneConfigButton"/>
+							</EventHandlers>
+						</Button>
+						
+						<Label name="$parentLabelUseItemRack" handleinput="false" font="font_default_text" textalign="left" layer="overlay" autoresize="true" autoresizewidth = "true" >
+							<Size>
+								<AbsPoint x="250" y="20"/>
+							</Size>
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentZoneConfig">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+						</Label>
+						<Button name="$parentCheckboxUseItemRack" inherits="EA_Button_DefaultCheckBox" layer="overlay">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentLabelUseItemRack">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.UseItemRackToggled" />
+							</EventHandlers>
+						</Button>
+								
+						<!-- Sets list box -->
+						<Window name="$parentSetListBackground" inherits="EA_Window_DefaultFrame" >
+		                    <Size>
+		                        <AbsPoint x="375" y="325" />
+		                    </Size>
+                            <Anchors>
+                                <Anchor point="top" relativePoint="top" relativeTo="ClosetGoblinCharacterWindowBackground">
+                                    <AbsPoint x="0" y="118" />
+                                </Anchor>
+                            </Anchors>
+		                </Window>
+						<Button name="$parentSortNameButton" inherits="EA_Button_ListSort" id="1">
+		                    <Size>
+		                        <AbsPoint x="275" y="40" />
+		                    </Size>
+		                    <Anchors>
+		                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentSetListBackground">
+		                            <AbsPoint x="5" y="5" />
+		                        </Anchor>
+		                    </Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.OnClickSortNameButton" />
+							</EventHandlers>
+		                </Button>
+						<DynamicImage name="$parentSortUpArrow" inherits="EA_ListSortUpArrow">
+							<Anchors>
+								<Anchor point="right" relativePoint="right" relativeTo="$parentSortNameButton">
+									<AbsPoint x="-3" y="0" />
+								</Anchor>
+							</Anchors>
+						</DynamicImage>
+						<DynamicImage name="$parentSortDownArrow" inherits="EA_ListSortDownArrow">
+							<Anchors>
+								<Anchor point="right" relativePoint="right" relativeTo="$parentSortNameButton">
+									<AbsPoint x="-3" y="0" />
+								</Anchor>
+							</Anchors>
+						</DynamicImage>
+						<Button name="$parentSortTacticsButton" inherits="EA_Button_ListSort" id="2">
+		                    <Size>
+		                        <AbsPoint x="90" y="40" />
+		                    </Size>
+		                    <Anchors>
+		                        <Anchor point="topright" relativePoint="topleft" relativeTo="$parentSortNameButton">
+		                            <AbsPoint x="0" y="0" />
+		                        </Anchor>
+		                    </Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.OnClickSortTacticsButton" />
+							</EventHandlers>
+		                </Button>
+						<DynamicImage name="$parentSortTacticsUpArrow" inherits="EA_ListSortUpArrow">
+							<Anchors>
+								<Anchor point="right" relativePoint="right" relativeTo="$parentSortTacticsButton">
+									<AbsPoint x="-3" y="0" />
+								</Anchor>
+							</Anchors>
+						</DynamicImage>
+						<DynamicImage name="$parentSortTacticsDownArrow" inherits="EA_ListSortDownArrow">
+							<Anchors>
+								<Anchor point="right" relativePoint="right" relativeTo="$parentSortTacticsButton">
+									<AbsPoint x="-3" y="0" />
+								</Anchor>
+							</Anchors>
+						</DynamicImage>
+						<ListBox name="$parentSetList" scrollbar="EA_ScrollBar_DefaultVerticalChain" rowdef="ClosetGoblinSetRow" visiblerows="16" rowcount="100" rowspacing="1" layer="secondary">
+                            <!--<Size>
+                                <AbsPoint x="365" y="360" />
+                            </Size>-->
+                            <Anchors>
+                                <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSortNameButton">
+                                    <AbsPoint x="0" y="-10" />
+                                </Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSetListBackground">
+                                    <AbsPoint x="0" y="-3" />
+                                </Anchor>
+                            </Anchors>
+							<ListData table="ClosetGoblin.currentProfile.sets" populationfunction="ClosetGoblinCharacterWindow.UpdateSetRow">
+								<ListColumns>
+									<ListColumn windowname="Name" variable="name" format="wstring" />
+									<ListColumn windowname="Tactics" variable="tactics" format="wstring" />
+								</ListColumns>
+							</ListData>
+						</ListBox>
+						<!-- ActionBar Settings -->
+						<Window name="$parentActionBarSettings" layer="secondary">
+		                    <Size>
+		                        <AbsPoint x="375" y="160" />
+		                    </Size>
+                            <Anchors>
+                                <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSetListBackground">
+                                    <AbsPoint x="0" y="0" />
+                                </Anchor>
+                            </Anchors>
+							<Windows>
+								<Window name="$parentBG" inherits="EA_Window_DefaultFrame" layer="secondary">
+									<Anchors>
+										<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+										<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Window>
+								<Label name="$parentLabel" handleinput="false" font="font_default_text" textalign="center" layer="overlay">
+									<Size>
+										<AbsPoint x="160" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBG">
+											<AbsPoint x="10" y="10" />
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentLabelAB1" handleinput="false" font="font_default_text" textalign="center" layer="overlay">
+									<Size>
+										<AbsPoint x="15" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentLabel">
+											<AbsPoint x="10" y="10" />
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Button name="$parentCheckboxAB1" inherits="EA_Button_DefaultCheckBox" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentLabelAB1">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.HotbarChangeToggled1" />
+									</EventHandlers>
+								</Button>
+								<Window name="$parentPSAB1" inherits="ClosetGoblinActionBarPageSelector" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentCheckboxAB1">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Window>								
+								<Label name="$parentLabelAB2" handleinput="false" font="font_default_text" textalign="center" layer="overlay">
+									<Size>
+										<AbsPoint x="15" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentLabelAB1">
+											<AbsPoint x="10" y="0" />
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Button name="$parentCheckboxAB2" inherits="EA_Button_DefaultCheckBox" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentLabelAB2">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.HotbarChangeToggled2" />
+									</EventHandlers>
+								</Button>
+								<Window name="$parentPSAB2" inherits="ClosetGoblinActionBarPageSelector" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentCheckboxAB2">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Window>								
+								<Label name="$parentLabelAB3" handleinput="false" font="font_default_text" textalign="center" layer="overlay">
+									<Size>
+										<AbsPoint x="15" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentLabelAB2">
+											<AbsPoint x="10" y="0" />
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Button name="$parentCheckboxAB3" inherits="EA_Button_DefaultCheckBox" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentLabelAB3">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.HotbarChangeToggled3" />
+									</EventHandlers>
+								</Button>
+								<Window name="$parentPSAB3" inherits="ClosetGoblinActionBarPageSelector" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentCheckboxAB3">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Window>								
+								<Label name="$parentLabelAB4" handleinput="false" font="font_default_text" textalign="center" layer="overlay">
+									<Size>
+										<AbsPoint x="15" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentLabelAB3">
+											<AbsPoint x="10" y="0" />
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Button name="$parentCheckboxAB4" inherits="EA_Button_DefaultCheckBox" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentLabelAB4">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.HotbarChangeToggled4" />
+									</EventHandlers>
+								</Button>
+								<Window name="$parentPSAB4" inherits="ClosetGoblinActionBarPageSelector" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentCheckboxAB4">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Window>								
+								<Label name="$parentLabelAB5" handleinput="false" font="font_default_text" textalign="center" layer="overlay">
+									<Size>
+										<AbsPoint x="15" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentLabelAB4">
+											<AbsPoint x="10" y="0" />
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Button name="$parentCheckboxAB5" inherits="EA_Button_DefaultCheckBox" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentLabelAB5">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.HotbarChangeToggled5" />
+									</EventHandlers>
+								</Button>
+								<Window name="$parentPSAB5" inherits="ClosetGoblinActionBarPageSelector" layer="overlay">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="top" relativeTo="$parentCheckboxAB5">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Window>								
+							</Windows>
+		                </Window>
+						<!-- Equipment buttons and container -->
+						<Window name="$parentEquipment" draganddrop="true" layer="background">
+							<Size>
+								<AbsPoint x="545" y="655" />
+							</Size>
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+							</Anchors>
+							<Windows>
+								<!-- Right hand slot -->
+								<Button name="$parentSlot1" inherits="ClosetGoblinEquipmentButton" id="1">
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentSlot12">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot1Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot1" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot1Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot1Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Left hand slot -->
+								<Button name="$parentSlot2" inherits="ClosetGoblinEquipmentButton" id="2">
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentSlot5">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot2Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot2" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot2Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot2Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Ranged slot -->
+								<Button name="$parentSlot3" inherits="ClosetGoblinEquipmentButton" id="3">
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentSlot2">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot3Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot3" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot3Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot3Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Pocket 2 slot -->
+								<Button name="$parentSlot12" inherits="ClosetGoblinEquipmentButton" id="12">
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentSlot11">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot12Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot12" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot12Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot12Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Banner slot -->
+								<Button name="$parentSlot5" inherits="ClosetGoblinEquipmentButton" id="5">
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentSlot1">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot5Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot5" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot5Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot5Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Left Column -->
+								<!-- Event slot -->
+								<Button name="$parentSlot15" inherits="ClosetGoblinEquipmentButton" id="15">
+								<Anchors>
+								<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot9">
+								<AbsPoint x="0" y="0" />
+								</Anchor>
+								</Anchors>
+								</Button>
+								<Label name="$parentSlot15Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot15" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot15Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot15Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Helm slot -->
+								<Button name="$parentSlot9" inherits="ClosetGoblinEquipmentButton" id="9">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot10">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnLButtonDown" function="ClosetGoblinCharacterWindow.EquipmentLButtonDown" />
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.EquipmentLButtonUp" />
+										<EventHandler event="OnRButtonDown" function="ClosetGoblinCharacterWindow.EquipmentRButtonDown" />
+										<EventHandler event="OnMouseOver" function="ClosetGoblinCharacterWindow.ShowShowHelm" />
+										<EventHandler event="OnMouseOverEnd" function="ClosetGoblinCharacterWindow.HideShowHelm" />
+									</EventHandlers>
+								</Button>
+								<Label name="$parentSlot9Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot9" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot9Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot9Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Button name="$parentShowHelm" inherits="EA_Button_DefaultCheckBox" layer="popup">
+									<Anchors>
+										<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentSlot9">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnMouseOver" function="ClosetGoblinCharacterWindow.ShowShowHelmOnly" />
+										<EventHandler event="OnMouseOverEnd" function="ClosetGoblinCharacterWindow.HideShowHelm" />
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.ShowHelm" />
+									</EventHandlers>
+								</Button>
+								<!-- Shoulders slot -->
+								<Button name="$parentSlot10" inherits="ClosetGoblinEquipmentButton" id="10">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot13">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot10Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot10" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot10Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot10Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Back slot -->
+								<Button name="$parentSlot13" inherits="ClosetGoblinEquipmentButton" id="13">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot6">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnLButtonDown" function="ClosetGoblinCharacterWindow.EquipmentLButtonDown" />
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.EquipmentLButtonUp" />
+										<EventHandler event="OnRButtonDown" function="ClosetGoblinCharacterWindow.EquipmentRButtonDown" />
+										<EventHandler event="OnMouseOver" function="ClosetGoblinCharacterWindow.ShowCloakOptions" />
+										<EventHandler event="OnMouseOverEnd" function="ClosetGoblinCharacterWindow.HideCloakOptions" />
+									</EventHandlers>
+								</Button>
+								<Label name="$parentSlot13Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot13" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot13Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot13Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Button name="$parentShowCloak" inherits="EA_Button_DefaultCheckBox" layer="popup">
+									<Anchors>
+										<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentSlot13">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnMouseOver" function="ClosetGoblinCharacterWindow.ShowShowCloakOnly" />
+										<EventHandler event="OnMouseOverEnd" function="ClosetGoblinCharacterWindow.HideCloakOptions" />
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.ShowCloak" />
+									</EventHandlers>
+								</Button>
+								<Button name="$parentShowCloakHeraldry" inherits="EA_Button_DefaultCheckBox" layer="popup">
+									<Anchors>
+										<Anchor point="topright" relativePoint="topright" relativeTo="$parentSlot13">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+									<EventHandlers>
+										<EventHandler event="OnMouseOver" function="ClosetGoblinCharacterWindow.ShowShowCloakHeraldryOnly" />
+										<EventHandler event="OnMouseOverEnd" function="ClosetGoblinCharacterWindow.HideCloakOptions" />
+										<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.ShowCloakHeraldry" />
+									</EventHandlers>
+								</Button>
+								<!-- Body slot -->
+								<Button name="$parentSlot6" inherits="ClosetGoblinEquipmentButton" id="6">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot7">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot6Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot6" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot6Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot6Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Gloves slot -->
+								<Button name="$parentSlot7" inherits="ClosetGoblinEquipmentButton" id="7">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot14">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot7Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot7" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot7Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot7Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Belt slot -->
+								<Button name="$parentSlot14" inherits="ClosetGoblinEquipmentButton" id="14">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot8">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot14Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot14" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot14Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot14Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Boots slot -->
+								<Button name="$parentSlot8" inherits="ClosetGoblinEquipmentButton" id="8">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot11">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot8Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot8" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot8Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot8Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Pocket 1 slot -->
+								<Button name="$parentSlot11" inherits="ClosetGoblinEquipmentButton" id="11">
+									<Anchors>
+										<Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="ClosetGoblinCharacterWindowContents">
+											<AbsPoint x="10" y="-10" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot11Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot11" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot11Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot11Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+
+								<!-- Right Column -->
+								<!-- Accessory 1 slot -->
+								<Button name="$parentSlot17" inherits="ClosetGoblinEquipmentButton" id="17">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot18">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot17Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot17" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot17Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot17Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Accessory 2 slot -->
+								<Button name="$parentSlot18" inherits="ClosetGoblinEquipmentButton" id="18">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot19">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot18Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot18" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot18Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot18Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Accessory 3 slot -->
+								<Button name="$parentSlot19" inherits="ClosetGoblinEquipmentButton" id="19">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot20">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot19Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot19" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot19Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot19Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Accessory 4 slot -->
+								<Button name="$parentSlot20" inherits="ClosetGoblinEquipmentButton" id="20">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot21">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot20Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot20" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot20Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot20Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+
+								<!-- Trophy 1 slot -->
+								<Button name="$parentSlot21" inherits="ClosetGoblinEquipmentButton" id="21">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot22">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot21Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot21" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot21Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot21Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Trophy 2 slot -->
+								<Button name="$parentSlot22" inherits="ClosetGoblinEquipmentButton" id="22">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot23">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot22Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot22" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot22Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot22Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Trophy 3 slot -->
+								<Button name="$parentSlot23" inherits="ClosetGoblinEquipmentButton" id="23">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot24">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot23Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot23" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot23Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot23Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Trophy 4 slot -->
+								<Button name="$parentSlot24" inherits="ClosetGoblinEquipmentButton" id="24">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot25">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot24Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot24" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot24Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot24Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<!-- Trophy 5 slot -->
+								<Button name="$parentSlot25" inherits="ClosetGoblinEquipmentButton" id="25">
+									<Anchors>
+										<Anchor point="right" relativePoint="left" relativeTo="$parentSlot3">
+											<AbsPoint x="0" y="0" />
+										</Anchor>
+									</Anchors>
+								</Button>
+								<Label name="$parentSlot25Talisman1" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="bottom" relativePoint="bottom" relativeTo="$parentSlot25" >
+											<AbsPoint x="0" y="-3"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+								<Label name="$parentSlot25Talisman2" inherits="ClosetGoblinTalismanLabel">
+									<Anchors>
+										<Anchor point="top" relativePoint="bottom" relativeTo="$parentSlot25Talisman1" >
+											<AbsPoint x="0" y="0"/>
+										</Anchor>
+									</Anchors>
+								</Label>
+							</Windows>
+						</Window>
+					</Windows>
+				</Window>
+			</Windows>
+		</Window>
+		
+		<Window name="ClosetGoblinZoneWindow" inherits="EA_Window_Default" movable="true" layer="default" >
+            <Size>
+                <AbsPoint x="545" y="753" />
+            </Size>
+            <Anchors>
+                <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+                    <AbsPoint x="35" y="0" />
+                </Anchor>
+            </Anchors>
+            <EventHandlers>
+                <EventHandler event="OnShown" function="ClosetGoblinZoneWindow.OnShow" />
+                <EventHandler event="OnHidden" function="ClosetGoblinZoneWindow.OnHide" />
+                <EventHandler event="OnShutdown" function="ClosetGoblinZoneWindow.OnShutdown" />
+            </EventHandlers>
+           <Windows>
+				<!-- Window decoration -->
+                <Window name="$parentBackground" inherits="EA_Window_DefaultFrame" >
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+                            <AbsPoint x="0" y="75" />
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                    </Anchors>
+                </Window>
+                <Window name="$parentTitleBar" inherits="EA_TitleBar_Default" layer="background" >
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentBackground">
+                            <AbsPoint x="0" y="5" />
+                        </Anchor>
+                        <Anchor point="topright" relativePoint="bottomright" relativeTo="$parentBackground">
+                            <AbsPoint x="0" y="5" />
+                        </Anchor>
+                    </Anchors>
+                </Window>
+                <Button name="$parentClose" inherits="EA_Button_DefaultWindowClose">
+				    <Anchors>
+                        <Anchor point="topright" relativePoint="topright" relativeTo="$parentTitleBar">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                    </Anchors>
+                    <EventHandlers>
+                        <EventHandler event="OnLButtonUp" function="ClosetGoblinZoneWindow.Hide" />
+                    </EventHandlers>
+                </Button>
+				<!-- Actual window contents -->
+				<Window name="$parentContents">
+                   <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackground">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                    </Anchors>
+					<Windows>                        
+                        <FullResizeImage name="$parentBG" handleinput="false" layer="background" inherits="ClosetGoblinDefaultBG">
+                            <Anchors>
+                                <Anchor point="topleft" relativePoint="topleft" relativeTo="ClosetGoblinZoneWindowBackground">
+                                    <AbsPoint x="9" y="5" />
+                                </Anchor>
+                                <Anchor point="bottomright" relativePoint="bottomright" relativeTo="ClosetGoblinZoneWindowBackground">
+                                    <AbsPoint x="-9" y="-9" />
+                                </Anchor>
+                            </Anchors>
+                        </FullResizeImage>
+						
+						<!-- text label -->
+						<Label name="$parentZoneOption" id="1" handleinput="false" font="font_chat_text" textalign="left" >
+							<Size>
+								<AbsPoint x="250" y="20"/>
+							</Size>
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="ClosetGoblinZoneWindowContents" >
+									<AbsPoint x="80" y="25"/>
+								</Anchor>
+							</Anchors>
+							<Color r="255" g="255" b="255" a="255"/>
+						</Label>
+						
+						<!-- List box actions -->
+						<Button name="$parentChangeZoneButton" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center">
+							<Anchors>
+								<Anchor point="topright" relativePoint="topleft" relativeTo="$parentZoneOption">
+									<AbsPoint x="0" y="-10" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="ClosetGoblinZoneWindow.OnClickChangeZoneOptionButton"/>
+							</EventHandlers>
+						</Button>
+						
+						<!-- Sets list box -->
+						<Window name="$parentSetListBackground" inherits="EA_Window_DefaultFrame" >
+		                    <Size>
+		                        <AbsPoint x="500" y="595" />
+		                    </Size>
+                            <Anchors>
+                                <Anchor point="top" relativePoint="top" relativeTo="ClosetGoblinZoneWindowBackground">
+                                    <AbsPoint x="0" y="63" />
+                                </Anchor>
+                            </Anchors>
+		                </Window>
+						<Button name="$parentSortZoneButton" inherits="EA_Button_ListSort" id="1">
+		                    <Size>
+		                        <AbsPoint x="120" y="40" />
+		                    </Size>
+		                    <Anchors>
+		                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentSetListBackground">
+		                            <AbsPoint x="5" y="5" />
+		                        </Anchor>
+		                    </Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="ClosetGoblinZoneWindow.OnClickSortZoneButton" />
+							</EventHandlers>
+		                </Button>
+						<DynamicImage name="$parentSortUpArrow" inherits="EA_ListSortUpArrow">
+							<Anchors>
+								<Anchor point="right" relativePoint="right" relativeTo="$parentSortZoneButton">
+									<AbsPoint x="-3" y="0" />
+								</Anchor>
+							</Anchors>
+						</DynamicImage>
+						<DynamicImage name="$parentSortDownArrow" inherits="EA_ListSortDownArrow">
+							<Anchors>
+								<Anchor point="right" relativePoint="right" relativeTo="$parentSortZoneButton">
+									<AbsPoint x="-3" y="0" />
+								</Anchor>
+							</Anchors>
+						</DynamicImage>
+						<Button name="$parentSortSetButton" inherits="EA_Button_ListSort" id="2">
+		                    <Size>
+		                        <AbsPoint x="366" y="40" />
+		                    </Size>
+		                    <Anchors>
+		                        <Anchor point="topright" relativePoint="topleft" relativeTo="$parentSortZoneButton">
+		                            <AbsPoint x="0" y="0" />
+		                        </Anchor>
+		                    </Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="ClosetGoblinCharacterWindow.OnClickSortSetButton" />
+							</EventHandlers>
+		                </Button>
+						<DynamicImage name="$parentSortSetUpArrow" inherits="EA_ListSortUpArrow">
+							<Anchors>
+								<Anchor point="right" relativePoint="right" relativeTo="$parentSortSetButton">
+									<AbsPoint x="-3" y="0" />
+								</Anchor>
+							</Anchors>
+						</DynamicImage>
+						<DynamicImage name="$parentSortSetDownArrow" inherits="EA_ListSortDownArrow">
+							<Anchors>
+								<Anchor point="right" relativePoint="right" relativeTo="$parentSortSetButton">
+									<AbsPoint x="-3" y="0" />
+								</Anchor>
+							</Anchors>
+						</DynamicImage>
+						<ListBox name="$parentSetList" scrollbar="EA_ScrollBar_DefaultVerticalChain" rowdef="ClosetGoblinZoneRow" visiblerows="20" rowcount="100" rowspacing="1" layer="secondary">
+                            <Size>
+                                <AbsPoint x="486" y="540" />
+                            </Size>
+                            <Anchors>
+                                <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSortZoneButton">
+                                    <AbsPoint x="0" y="0" />
+                                </Anchor>
+                            </Anchors>
+							<ListData table="ClosetGoblinZoneWindow.associationTable" populationfunction="ClosetGoblinZoneWindow.UpdateSetRow">
+								<ListColumns>
+									<ListColumn windowname="Zone" variable="zone" format="wstring" />
+									<ListColumn windowname="Set" variable="set" format="wstring" />
+								</ListColumns>
+							</ListData>
+						</ListBox>
+					</Windows>
+				</Window>
+			</Windows>
+		</Window>
+		
+		<Window name="ClosetGoblinOptionWindow" inherits="EA_Window_Default" movable="false" savesettings="true" >
+           <Size>
+                <AbsPoint x="48" y="48" />
+            </Size>
+            <Anchors>
+                <Anchor point="center" relativePoint="center" >
+                    <AbsPoint x="0" y="0" />
+                </Anchor>
+            </Anchors>
+			<EventHandlers>
+                <EventHandler event="OnInitialize" function="ClosetGoblinOptionWindow.OnInitialize" />
+            </EventHandlers>
+			<Windows>
+				<DynamicImage name="$parentIcon" texture="ClosetGoblinIcon" layer="default" texturescale= "1.00"><!--"0.66">-->
+					<!--<Size>
+						<AbsPoint x="48" y="48"/>
+					</Size>-->
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="ClosetGoblinOptionWindow.OnLButtonUp" />
+						<EventHandler event="OnRButtonUp" function="ClosetGoblinOptionWindow.OnRButtonUp" />
+					</EventHandlers>
+					<Anchors>
+						<Anchor point="topleft" relativeTo="$parent" relativePoint="topleft">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativeTo="$parent" relativePoint="bottomright">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+				</DynamicImage>
+			</Windows>
+		</Window>
+		
+		<DynamicImage name="yClosetGoblinButton" layer="popup" movable="false" popable="true" texture="WHLCG" savesettings="false">
+			<Size>
+				<AbsPoint x="36" y="36" />
+			</Size>
+			<Anchors>
+				<Anchor point="topright" relativePoint="topright" relativeTo="CharacterWindowTitleBar">
+					<AbsPoint x="-76" y="0" />
+				</Anchor>
+			</Anchors>
+            <EventHandlers>
+					<EventHandler event="OnLButtonUp" function="ClosetGoblinOptionWindow.OnLButtonUp" />
+					<EventHandler event="OnRButtonUp" function="ClosetGoblinOptionWindow.OnRButtonUp" />
+			</EventHandlers>
+		</DynamicImage>
+	</Windows>
+</Interface>

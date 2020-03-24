@@ -2,9 +2,9 @@
 <UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="2.2" messagingEnabled="false">
     <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="" savedVariablesVersion="" />
     <Windows>
-        <WindowSettings xmlVersion="1.0" name="MouseOverTargetWindow" sizeX="300.000000" sizeY="70.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.140744" showing="true">
+        <WindowSettings xmlVersion="1.0" name="MouseOverTargetWindow" sizeX="300.000000" sizeY="70.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.140744" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-350.333527" yOffset="80.073921" />
+                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-360.110260" yOffset="-270.147827" />
             </Anchors>
         </WindowSettings>
     </Windows>

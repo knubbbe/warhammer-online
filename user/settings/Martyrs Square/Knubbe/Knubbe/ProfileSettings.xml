@@ -57,11 +57,11 @@
         <KeyBinding action="ACTION_BAR_3" key="3" />
         <KeyBinding action="ACTION_BAR_4" key="4" />
         <KeyBinding action="ACTION_BAR_5" key="5" />
-        <KeyBinding action="ACTION_BAR_6" key="Mouse Button 4" />
-        <KeyBinding action="ACTION_BAR_7" key="F" />
-        <KeyBinding action="ACTION_BAR_8" key="T" />
-        <KeyBinding action="ACTION_BAR_9" key="Left Shift+T" />
-        <KeyBinding action="ACTION_BAR_10" key="NONE" />
+        <KeyBinding action="ACTION_BAR_6" key="Q" />
+        <KeyBinding action="ACTION_BAR_7" key="Mouse Button 4" />
+        <KeyBinding action="ACTION_BAR_8" key="F" />
+        <KeyBinding action="ACTION_BAR_9" key="T" />
+        <KeyBinding action="ACTION_BAR_10" key="Left Shift+T" />
         <KeyBinding action="ACTION_BAR_11" key="NONE" />
         <KeyBinding action="ACTION_BAR_12" key="NONE" />
         <KeyBinding action="ACTION_BAR_13" key="Left Shift+1" />
@@ -69,11 +69,11 @@
         <KeyBinding action="ACTION_BAR_15" key="Left Shift+3" />
         <KeyBinding action="ACTION_BAR_16" key="Left Shift+4" />
         <KeyBinding action="ACTION_BAR_17" key="Left Shift+5" />
-        <KeyBinding action="ACTION_BAR_18" key="Mouse Button 5" />
-        <KeyBinding action="ACTION_BAR_19" key="Left Shift+F" />
-        <KeyBinding action="ACTION_BAR_20" key="E" />
-        <KeyBinding action="ACTION_BAR_21" key="Left Shift+E" />
-        <KeyBinding action="ACTION_BAR_22" key="NONE" />
+        <KeyBinding action="ACTION_BAR_18" key="Left Shift+Q" />
+        <KeyBinding action="ACTION_BAR_19" key="Mouse Button 5" />
+        <KeyBinding action="ACTION_BAR_20" key="Left Shift+F" />
+        <KeyBinding action="ACTION_BAR_21" key="E" />
+        <KeyBinding action="ACTION_BAR_22" key="Left Shift+E" />
         <KeyBinding action="ACTION_BAR_23" key="NONE" />
         <KeyBinding action="ACTION_BAR_24" key="NONE" />
         <KeyBinding action="ACTION_BAR_25" key="Left Control+1" />

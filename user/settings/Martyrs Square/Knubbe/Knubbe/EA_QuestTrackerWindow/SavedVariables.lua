@@ -1,11 +1,11 @@
 EA_Window_QuestTracker.Settings = 
 {
-	fadeAlpha = 0.7,
 	fadeTime = 30,
+	fadeAlpha = 0.7,
 	fadeData = 
 	{
 	},
-	isShowing = true,
+	isShowing = false,
 }
 
 

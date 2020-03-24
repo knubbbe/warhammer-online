@@ -1,0 +1,113 @@
+<? version="1.0" encoding="UTF-8"?>
+    <!--
+    This application is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    The applications is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with the applications.  If not, see
+    <http://www.gnu.org/licenses/>.
+    -->
+    <Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Windows>
+        	<Window name="PureUnitFrameHUD_Default" movable="false" popable="false" layer="default" handleinput="false" savesettings="false">
+                <Size>
+                    <AbsPoint x="280" y="55"/>
+                </Size>
+                <Windows>
+                	<DynamicImage name="$parentEffectsDispel" layer="secondary" texture="tint_square" handleinput="false" alpha="0.0">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentHitPointsStatusBackground"/>
+                            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentHitPointsStatusBackground"/>
+                        </Anchors>
+                        <TintColor r="255" g="255" b="255" />
+                    </DynamicImage>
+                    
+	                <Label name="$parentName" layer="overlay" font="font_clear_large_bold" maxchars="40" textalign="center" textAutoFitMinScale=".75" warnOnTextCropped="false">
+	                    <Size>
+	                        <AbsPoint x="280" y="20"/>
+	                    </Size>
+	                    <Anchors>
+	                    	<Anchor point="top" relativePoint="top" relativeTo="$parent"/>
+	                    </Anchors>
+                    </Label>
+                    
+					<DynamicImage name="$parentHitPointsStatusBackground" layer="background">
+                    	<Size>
+                            <AbsPoint x="0" y="20"/>
+                        </Size>
+	                    <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                                <AbsPoint x="36" y="18"/>
+                            </Anchor>
+                            <Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+                                <AbsPoint x="-36" y="18"/>
+                            </Anchor>
+                        </Anchors>
+	                    <TintColor r="85" g="188" b="70" />
+	                </DynamicImage>
+	                
+	                <DynamicImage name="$parentHitPointsStatus" layer="default">
+                        <Anchors>
+                            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentHitPointsStatusBackground"/>
+                            <Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentHitPointsStatusBackground"/>
+                        </Anchors>
+                        <TintColor r="85" g="188" b="70" />
+                    </DynamicImage>
+                    
+                     <DynamicImage name="$parentSigil" layer="default">
+                     	<Size>
+			                <AbsPoint x="24" y="24" />
+			            </Size>
+                        <Anchors>
+                            <Anchor point="bottom" relativePoint="center" relativeTo="$parentHitPointsStatusBackground"/>
+                        </Anchors>
+                        <TexDims x="17" y="17" />
+                    </DynamicImage>
+                    
+                    <Label name="$parentRank" layer="overlay" font="font_clear_large_bold" maxchars="6" textalign="leftcenter" textAutoFitMinScale=".75" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="50" y="20"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="left" relativePoint="left" relativeTo="$parentHitPointsStatus">
+	                            <AbsPoint x="2" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+                    
+                   	<Label name="$parentHitPoints" layer="overlay" font="font_clear_large_bold" maxchars="4" textalign="rightcenter" textAutoFitMinScale=".5" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="60" y="20"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="right" relativePoint="right" relativeTo="$parentHitPointsStatusBackground">
+	                            <AbsPoint x="-2" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+                    
+                    <Label name="$parentCareer" layer="overlay" font="font_clear_small_bold" maxchars="50" textalign="center" textAutoFitMinScale=".75" warnOnTextCropped="false">
+                        <Size>
+                            <AbsPoint x="280" y="20"/>
+                        </Size>
+                        <Anchors>
+	                        <Anchor point="bottom" relativePoint="top" relativeTo="$parentHitPointsStatusBackground">
+	                        	<AbsPoint x="0" y="0"/>
+	                        </Anchor>
+	                    </Anchors>
+                    </Label>
+	            </Windows>
+            </Window>
+            
+            <Window name="PureTargetHUDAnchor" movable="false" savesettings="false"/>
+            <Window name="PureTargetHUDHostile_Default" inherits="PureUnitFrameHUD_Default"/>
+            <Window name="PureTargetHUDFriendly_Default" inherits="PureUnitFrameHUD_Default"/>
+            <Window name="PureTargetHUDUnitFrameLayoutHostile"/>
+            <Window name="PureTargetHUDUnitFrameLayoutFriendly"/>
+        </Windows>
+    </Interface>

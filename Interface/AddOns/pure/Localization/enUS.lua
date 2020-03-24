@@ -1,0 +1,155 @@
+--[[
+	This application is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    The applications is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with the applications.  If not, see <http://www.gnu.org/licenses/>.
+--]]
+
+--
+-- The localization information present within this file is automatically
+-- packaged by the CurseForge packager.
+--
+-- Incorrect or missing translations can be updated here:
+-- http://war.curseforge.com/projects/pure/localization/
+--
+
+local debug = false
+--[===[@debug@
+debug = true
+--@end-debug@]===]
+
+local T = LibStub( "WAR-AceLocale-3.0" ):NewLocale( "Pure", "enUS", true, debug )
+
+T["About Pure"] = L"About Pure"
+T["Action Point Format:"] = L"Action Point Format:"
+T["Action Point Texture:"] = L"Action Point Texture:"
+T["Action Points Texture Color"] = L"Action Points Texture Color"
+T["Active Profile:"] = L"Active Profile:"
+T["Alpha"] = L"Alpha"
+T["Anchor Column Offset:"] = L"Anchor Column Offset:"
+T["Anchor Row Offset:"] = L"Anchor Row Offset:"
+T["Apply"] = L"Apply"
+T["Archtype:"] = L"Archtype:"
+T["Archtypes"] = L"Archtypes"
+T["Are you sure?"] = L"Are you sure?"
+T["Blue"] = L"Blue"
+T["Bottom"] = L"Bottom"
+T["Cancel"] = L"Cancel"
+T["Cast Pet Heal On Click"] = L"Cast Pet Heal On Click"
+T["Clear Friendly Target On Click"] = L"Clear Friendly Target On Click"
+T["Click Through Unit Frame"] = L"Click Through Unit Frame"
+T["Close"] = L"Close"
+T["Colors"] = L"Colors"
+T["Coming Soon!"] = L"Coming Soon!"
+T["Configure Class/Archtypes:"] = L"Configure Class/Archtypes:"
+T["Copy Settings From:"] = L"Copy Settings From:"
+T["Current Hitpoints:"] = L"Current Hitpoints:"
+T["Current Profile:"] = L"Current Profile:"
+T["Default"] = L"Default"
+T["Direction From Target"] = L"Direction From Target"
+T["Dispel Highlighting"] = L"Dispel Highlighting"
+T["Distance"] = L"Distance"
+T["Distance From Target"] = L"Distance From Target"
+T["Down"] = L"Down"
+T["Effect Anchor:"] = L"Effect Anchor:"
+T["Effect Columns:"] = L"Effect Columns:"
+T["Effect Frame Alpha"] = L"Effect Frame Alpha"
+T["Effect Frame Font Alpha"] = L"Effect Frame Font Alpha"
+T["Effect Height:"] = L"Effect Height:"
+T["Effect Rows:"] = L"Effect Rows:"
+T["Effect Width:"] = L"Effect Width:"
+T["Effects"] = L"Effects"
+T["Enable Class Archtype Coloring"] = L"Enable Class Archtype Coloring"
+T["Enable Class Archtype Coloring - Hitpoints"] = L"Enable Class Archtype Coloring - Hitpoints"
+T["Enable Class Archtype Coloring - Name"] = L"Enable Class Archtype Coloring - Name"
+T["Enable Dispel Highlighting"] = L"Enable Dispel Highlighting"
+T["Enable Effect Tracker"] = L"Enable Effect Tracker"
+T["Enable Friendly Target HUD"] = L"Enable Friendly Target HUD"
+T["Enable Friendly Target HUD Unit Frame"] = L"Enable Friendly Target HUD Unit Frame"
+T["Enable Friendly Target Unit Frame"] = L"Enable Friendly Target Unit Frame"
+T["Enable Group Pet Unit Frame"] = L"Enable Group Pet Unit Frame"
+T["Enable Group Unit Frame"] = L"Enable Group Unit Frame"
+T["Enable Hostile Target HUD"] = L"Enable Hostile Target HUD"
+T["Enable Hostile Target HUD Unit Frame"] = L"Enable Hostile Target HUD Unit Frame"
+T["Enable Hostile Target Unit Frame"] = L"Enable Hostile Target Unit Frame"
+T["Enable Player Pet Target Unit Frame"] = L"Enable Player Pet Target Unit Frame"
+T["Enable Player Pet Unit Frame"] = L"Enable Player Pet Unit Frame"
+T["Enable Player Unit Frame"] = L"Enable Player Unit Frame"
+T["Enable Pure"] = L"Enable Pure"
+T["Enable Target Highlighting"] = L"Enable Target Highlighting"
+T["Format:"] = L"Format:"
+T["Formatting"] = L"Formatting"
+T["Friendly Target"] = L"Friendly Target"
+T["Friendly Target HUD"] = L"Friendly Target HUD"
+T["Friendly Target HUD:"] = L"Friendly Target HUD:"
+T["Friendly Target:"] = L"Friendly Target:"
+T["General"] = L"General"
+T["Green"] = L"Green"
+T["Group"] = L"Group"
+T["Group Leader Indicator:"] = L"Group Leader Indicator:"
+T["Group Pet"] = L"Group Pet"
+T["Group Pet Window"] = L"Group Pet Window"
+T["Group Pet:"] = L"Group Pet:"
+T["Group Window"] = L"Group Window"
+T["Group:"] = L"Group:"
+T["Growth Direction:"] = L"Growth Direction:"
+T["Hit Point Format:"] = L"Hit Point Format:"
+T["Hit Point Texture:"] = L"Hit Point Texture:"
+T["Hit Points Texture Color"] = L"Hit Points Texture Color"
+T["Horizontal Growth Offset:"] = L"Horizontal Growth Offset:"
+T["Hostile Target"] = L"Hostile Target"
+T["Hostile Target HUD"] = L"Hostile Target HUD"
+T["Hostile Target HUD:"] = L"Hostile Target HUD:"
+T["Hostile Target:"] = L"Hostile Target:"
+T["Left"] = L"Left"
+T["Morale Color"] = L"Morale Color"
+T["NOTE: Profile changes take effect immediately!"] = L"NOTE: Profile changes take effect immediately!"
+T["None"] = L"None"
+T["Offline"] = L"Offline"
+T["Open Parties Window"] = L"Open Parties Window"
+T["Pet Target"] = L"Pet Target"
+T["Player"] = L"Player"
+T["Player Pet"] = L"Player Pet"
+T["Player Pet Target"] = L"Player Pet Target"
+T["Player Pet Target:"] = L"Player Pet Target:"
+T["Player:"] = L"Player:"
+T["Playet Pet:"] = L"Playet Pet:"
+T["Profiles"] = L"Profiles"
+T["Pure %s initialized."] = L"Pure %s initialized."
+T["Pure - Configuration"] = L"Pure - Configuration"
+T["Red"] = L"Red"
+T["Reset Profile"] = L"Reset Profile"
+T["Revert"] = L"Revert"
+T["Right"] = L"Right"
+T["RvR Flag Color"] = L"RvR Flag Color"
+T["Set Active Profile:"] = L"Set Active Profile:"
+T["Show Class Names"] = L"Show Class Names"
+T["Show Effect Durations"] = L"Show Effect Durations"
+T["Show In Scenarios"] = L"Show In Scenarios"
+T["Show In Warband"] = L"Show In Warband"
+T["Show Mythic Style Border"] = L"Show Mythic Style Border"
+T["Show Player In Group"] = L"Show Player In Group"
+T["Show Self Cast Effects Only"] = L"Show Self Cast Effects Only"
+T["Show Sigil Requirement"] = L"Show Sigil Requirement"
+T["Show When In Siege Engine"] = L"Show When In Siege Engine"
+T["Show When Out Of Combat"] = L"Show When Out Of Combat"
+T["Target"] = L"Target"
+T["Target Highlighting"] = L"Target Highlighting"
+T["Templates"] = L"Templates"
+T["Textures"] = L"Textures"
+T["Top"] = L"Top"
+T["Unit Frame Alpha"] = L"Unit Frame Alpha"
+T["Unit Frame Font Alpha"] = L"Unit Frame Font Alpha"
+T["Unit Frame Templates"] = L"Unit Frame Templates"
+T["Up"] = L"Up"
+T["Use Squared archtype coloring (Requires Squared)"] = L"Use Squared archtype coloring (Requires Squared)"
+T["Vertical Growth Offset:"] = L"Vertical Growth Offset:"
+T["WARNING: Clicking this button will restore the current profile back to default values!"] = L"WARNING: Clicking this button will restore the current profile back to default values!"
