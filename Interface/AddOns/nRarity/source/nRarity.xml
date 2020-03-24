@@ -1,0 +1,23 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Assets>
+		<Texture name="nRarityBorderNormal" file="textures/normal.dds" />
+		<Texture name="nRarityBorderHighlight" file="textures/highlight.dds" />
+	</Assets>
+
+	<Windows>
+		<!-- nRarity border button -->
+		<Button name="nRarityBorderButton" inherits="EA_Button_Default" handleinput="false" movable="false" savesettings="false">
+			<Size>
+				<AbsPoint x="64" y="64"/>
+			</Size>
+			<TexCoords>
+				<Normal texture="nRarityBorderNormal" x="0" y="0" />
+				<NormalHighlit texture="nRarityBorderHighlight" x="0" y="0" />
+				<Pressed texture="nRarityBorderHighlight" x="0" y="0" />
+				<Disabled texture="nRarityBorderNormal" x="0" y="0" />
+			</TexCoords>
+		</Button>
+	</Windows>
+
+</Interface>

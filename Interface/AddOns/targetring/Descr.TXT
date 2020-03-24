@@ -1,0 +1,1 @@
+This addon will put a ring around your friendly/hostile target, so it stands out of the crowd, or shows you the general direction of where that nearly-dying Witch Elf is, that's just never in line of sight.

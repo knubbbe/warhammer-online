@@ -1,0 +1,315 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Assets>
+   
+  
+	 	 <Texture name="SoR_Icon" file="original/SoRicon.dds" />
+
+		 <Icon id="29979" texture="original/Time.Tga" name=" "/>			 
+		 <Icon id="29980" texture="original/Door.Tga" name=" "/>	
+		<Icon id="29981" texture="original/Skull.tga" name=" "/>	
+		<Icon id="29982" texture="original/Neutral.tga" name=" "/>	
+		 <Icon id="29983" texture="original/Neutral-Locked.tga" name=" "/>	
+		 <Icon id="29984" texture="original/Neutral-Burning.tga" name=" "/>	
+		 <Icon id="29985" texture="original/Destro.tga" name=" "/>
+		<Icon id="29986" texture="original/Destro-Locked.tga" name=" "/>	
+		<Icon id="29987" texture="original/Destro-Burning.tga" name=" "/>			 
+		<Icon id="29988" texture="original/Destro-Glowing.tga" name=" "/>			
+		<Icon id="29989" texture="original/Destro-Glowing-Locked.tga" name=" "/>
+
+		<Icon id="29990" texture="original/Order.tga" name=" "/>
+		<Icon id="29991" texture="original/Order-Locked.tga" name=" "/>	
+		<Icon id="29992" texture="original/Order-Burning.tga" name=" "/>			 
+		<Icon id="29993" texture="original/Order-Glowing.tga" name=" "/>			
+		<Icon id="29994" texture="original/Order-Glowing-Locked.tga" name=" "/>
+
+		<Icon id="29995" texture="original/Keep-Neutral.tga" name=" "/>		
+		<Icon id="29996" texture="original/Keep-Destro.tga" name=" "/>	
+		<Icon id="29997" texture="original/Keep-Destro-Attacked.tga" name=" "/>			
+		<Icon id="29998" texture="original/Keep-Order.tga" name=" "/>	
+		<Icon id="29999" texture="original/Keep-Order-Attacked.tga" name=" "/>					
+		
+		
+		<Texture name="SoR_Neutral" file="original/Neutral.tga" />
+		<Texture name="SoR_Neutral-Locked" file="original/Neutral-Locked.tga" />
+		<Texture name="SoR_Neutral-Burning" file="original/Neutral-Burning.tga" />
+		<Texture name="SoR_Neutral-Glowing" file="original/Neutral-Glowing.tga" />
+		<Texture name="SoR_Destro" file="original/Destro.tga" />	
+		<Texture name="SoR_Destro-Locked" file="original/Destro-Locked.tga" />	
+		<Texture name="SoR_Destro-Burning" file="original/Destro-Burning.tga" />	
+		<Texture name="SoR_Destro-Glowing" file="original/Destro-Glowing.tga" />	
+		<Texture name="SoR_Destro-Glowing-Locked" file="original/Destro-Glowing-Locked.tga" />	
+		
+		<Texture name="SoR_Order" file="original/Order.tga" />	
+		<Texture name="SoR_Order-Locked" file="original/Order-Locked.tga" />	
+		<Texture name="SoR_Order-Burning" file="original/Order-Burning.tga" />	
+		<Texture name="SoR_Order-Glowing" file="original/Order-Glowing.tga" />	
+		<Texture name="SoR_Order-Glowing-Locked" file="original/Order-Glowing-Locked.tga" />	
+		
+	
+		<Texture name="SoR_Keep_Neutral" file="original/Keep-Neutral.tga" />	
+		<Texture name="SoR_Keep_Destro" file="original/Keep-Destro.tga" />	
+		<Texture name="SoR_Keep_Order" file="original/Keep-Order.tga" />
+		<Texture name="SoR_Keep_Destro-Attacked" file="original/Keep-Destro-Attacked.tga" />			
+		<Texture name="SoR_Keep_Order-Attacked" file="original/Keep-Order-Attacked.tga" />			
+		<Texture name="SoR_Keep_Glow" file="original/Keep-Glow.tga" />			
+		<Texture name="SoR_Keep_Door" file="original/Keep-Door.tga" />				
+
+
+	
+		
+  </Assets>
+   <Scripts>
+      <Script file="RoR_SoR.lua" />
+   </Scripts>
+      <Windows>
+
+	  <Window name="RoR_SoR_Button" layer="secondary" movable="true" popable="false"  handleinput="true" savesettings="true">
+	<Size>
+		<AbsPoint x="36" y="36"/>
+	</Size>
+	
+			<Anchors>
+		<Anchor point="left" relativePoint="left" relativeTo="EA_Window_OverheadMap">
+		<AbsPoint x="0" y="-16" />
+		</Anchor>
+		</Anchors>
+		
+
+		
+	<Windows>
+		<Button name="$parentBtn" inherits="DefaultButton" backgroundtexture="SoR_Icon" layer="default"  handleinput="true" texturescale="0.75">
+			<Size>
+				<AbsPoint x="36" y="36"/>
+			</Size>
+			<EventHandlers>
+				<EventHandler event="OnLButtonUp" function="RoR_SoR.Toggle"/>
+			<EventHandler event="OnRButtonUp" function="RoR_SoR.Enable"/>
+					
+			<EventHandler event="OnMouseOver" function="RoR_SoR.OnMouseOverStart"/>
+				
+			
+			</EventHandlers>
+			<TexSlices>
+				<Normal id="SquareButton" /> 
+				<NormalHighlit id="SquareButton-Rollover" /> 
+				<Pressed id="SquareButton-Depressed" /> 
+				<PressedHighlit id="SquareButton-Depressed" /> 
+			</TexSlices>
+			<Anchors>
+				<Anchor point="topleft" relativeTo="$parent" relativePoint="topleft"/>
+			</Anchors>
+		</Button>
+	</Windows>
+ </Window>
+	  
+	  
+		<Window name="RoR_SoR_Window" layer="background" movable="true" popable="true" sticky="true" savesettings="true" handleinput="true">
+		<Size>
+		<AbsPoint x="300" y="375" />
+		</Size>
+		<Anchors>
+		<Anchor point="top" relativePoint="top" relativeTo="Root">
+		<AbsPoint x="0" y="50" />
+		</Anchor>
+		</Anchors>
+		<EventHandlers>
+		<EventHandler event="OnShown" function="RoR_SoR.Enable"/>					
+<!--		
+		<EventHandler event="OnRButtonUp" function="RoR_SoR_T3.ZoneUpdate"/>
+		<EventHandler event="OnMButtonUp" function="RoR_SoR_T3.ZoneUpdate"/>
+		<EventHandler event="OnMouseOver" function="GroupSpotter.OnMouseOverStart"/>
+		<EventHandler event="OnMouseOverEnd" function="GroupSpotter.OnMouseOverEnd" /> -->
+		</EventHandlers> 
+		 
+		 
+		 	<Windows>
+
+  
+				<Window name="$parentTabSeparatorRight" inherits="EA_Window_TabSeparatorRightSide" layer="default" >
+            		<Size>
+						<AbsPoint x="30" y="25" />
+					</Size>
+            		<Anchors>
+                		<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground">
+                    		<AbsPoint x="265" y="27" />
+                		</Anchor>
+					</Anchors>
+				</Window>
+			
+							<Window name="$parentTabSeparatorLeft" inherits="EA_Window_TabSeparatorLeftSide" layer="default" >
+            		<Size>
+						<AbsPoint x="10" y="25" />
+					</Size>
+            		<Anchors>
+                		<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground">
+                    		<AbsPoint x="2" y="27" />
+                		</Anchor>
+					</Anchors>
+				</Window>
+			
+			
+			
+			         <Button name="$parentClose" inherits="EA_Button_DefaultWindowClose" layer="overlay" popable="false" handleinput="true" >
+					           <Anchors>
+                		<Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+                    		<AbsPoint x="2" y="22" />
+                		</Anchor>
+					</Anchors>
+					<EventHandlers>
+					<EventHandler event="OnLButtonUp" function="RoR_SoR_T3.Close" />
+					</EventHandlers>
+					</Button>
+			
+						<Label name="$parentTIER_NAME" font="font_clear_large_bold" autoresize="true" textalign="center" wordwrap="true" layer="overlay" popable="false" handleinput="false">	
+						<Size>
+						<AbsPoint x="250" y="35" />
+						</Size>
+						<Anchors>
+						<Anchor point="top" relativePoint="top" relativeTo="$parent">
+						<AbsPoint x="0" y="12" />
+						</Anchor>
+						</Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+			
+			
+			<Button name="$parentT1Tab" inherits="EA_Button_Tab" id="1" textalign="center" layer="overlay">
+			  <EventHandlers>
+			
+			<EventHandler event="OnLButtonUp" function="RoR_SoR.OnTabLBU" />
+			<EventHandler event="OnRButtonUp" function="RoR_SoR.OnTabRBU" />
+			
+			</EventHandlers>
+		<Size>
+                <AbsPoint x="55" y="35" />
+                 </Size>
+		<Anchors>
+			<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+				<AbsPoint x="10" y="10"/>
+			</Anchor>		
+
+	
+		</Anchors>
+		</Button>
+			
+			<Button name="$parentT2Tab" inherits="EA_Button_Tab" id="2" textalign="center" layer="overlay">
+			  <EventHandlers>
+			  			<EventHandler event="OnLButtonUp" function="RoR_SoR.OnTabLBU" />
+			<EventHandler event="OnRButtonUp" function="RoR_SoR.OnTabRBU" />
+			</EventHandlers>
+		<Size>
+                <AbsPoint x="55" y="35" />
+                 </Size>
+		<Anchors>
+			<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+				<AbsPoint x="65" y="10"/>
+			</Anchor>		
+
+	
+		</Anchors>
+		</Button>	
+	
+	
+			<Button name="$parentT3Tab" inherits="EA_Button_Tab" id="3" textalign="center" layer="overlay">
+			  <EventHandlers>
+			  			<EventHandler event="OnLButtonUp" function="RoR_SoR.OnTabLBU" />
+			<EventHandler event="OnRButtonUp" function="RoR_SoR.OnTabRBU" />
+			</EventHandlers>
+		<Size>
+                <AbsPoint x="55" y="35" />
+                 </Size>
+		<Anchors>
+			<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+				<AbsPoint x="120" y="10"/>
+			</Anchor>		
+
+	
+		</Anchors>
+		</Button>	
+		
+		
+			<Button name="$parentT4Tab" inherits="EA_Button_Tab" id="4" textalign="center" layer="overlay">
+			  <EventHandlers>
+			  			<EventHandler event="OnLButtonUp" function="RoR_SoR.OnTabLBU" />
+			<EventHandler event="OnRButtonUp" function="RoR_SoR.OnTabRBU" />
+			</EventHandlers>
+		<Size>
+                <AbsPoint x="55" y="35" />
+                 </Size>
+		<Anchors>
+			<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+				<AbsPoint x="175" y="10"/>
+			</Anchor>		
+
+	
+		</Anchors>
+		</Button>	
+
+			<Button name="$parentT5Tab" inherits="EA_Button_Tab" id="5" textalign="center" layer="overlay">
+			  <EventHandlers>
+			  			<EventHandler event="OnLButtonUp" function="RoR_SoR.OnTabLBU" />
+			<EventHandler event="OnRButtonUp" function="RoR_SoR.OnTabRBU" />
+			</EventHandlers>
+		<Size>
+                <AbsPoint x="40" y="35" />
+                 </Size>
+		<Anchors>
+			<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+				<AbsPoint x="230" y="10"/>
+			</Anchor>		
+
+	
+		</Anchors>
+		</Button>	
+
+
+		
+			<Window name="$parentBackground" inherits="EA_Window_DefaultBackgroundFrame" sticky="false" handleinput="false" alpha="1">
+				<Anchors>
+				<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+				<AbsPoint x="0" y="12" />
+				</Anchor>
+				<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+				<AbsPoint x="5" y="0" />
+				</Anchor>
+				</Anchors>			
+				
+			</Window>
+
+<!--
+				
+					<DynamicImage name="$parentMenu02" texture="EA_Tome" slice="PairingEvCSelected" texturescale="0.7" alpha="0.3" mirrorTexCoords="false" layer="background">
+					<Size><AbsPoint x="295" y="110"/></Size>
+					<Anchors>
+						<Anchor point="top" relativePoint="top" relativeTo="$parent">
+							<AbsPoint x="-3" y="143" />
+						</Anchor>
+					</Anchors>
+
+				</DynamicImage>
+
+					<DynamicImage name="$parentMenu03" texture="EA_Tome" slice="PairingElvesSelected" texturescale="0.7" alpha="0.3" mirrorTexCoords="false" layer="background">
+					<Size><AbsPoint x="295" y="110"/></Size>		
+					<Anchors>
+						<Anchor point="top" relativePoint="top" relativeTo="$parent">
+							<AbsPoint x="-3" y="248" />
+						</Anchor>
+					</Anchors>
+
+				</DynamicImage>
+-->				
+			<!--------------Realm 1: Orc vs Dwarfs----------------->
+				
+	
+
+
+
+	
+				
+			</Windows>
+		 				 
+		</Window>	
+
+		
+   </Windows>
+</Interface>

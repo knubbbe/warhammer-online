@@ -1,0 +1,50 @@
+------------------------------------------------------------------------
+r14 | talvinen | 2009-08-28 19:29:12 +0000 (Fri, 28 Aug 2009) | 1 line
+Changed paths:
+   A /tags/1.3.2 (from /trunk:13)
+
+tagged
+------------------------------------------------------------------------
+r13 | talvinen | 2009-08-28 19:28:55 +0000 (Fri, 28 Aug 2009) | 1 line
+Changed paths:
+   M /trunk/TargetRing.lua
+
+everything fixed for now .. hopefully
+------------------------------------------------------------------------
+r12 | talvinen | 2009-08-28 19:22:53 +0000 (Fri, 28 Aug 2009) | 1 line
+Changed paths:
+   M /trunk/TargetRing.lua
+
+beware! more bugfixes ahead.
+------------------------------------------------------------------------
+r10 | talvinen | 2009-08-28 19:16:52 +0000 (Fri, 28 Aug 2009) | 1 line
+Changed paths:
+   M /trunk/TargetRing.lua
+
+LibConfig is no longer local
+------------------------------------------------------------------------
+r8 | talvinen | 2009-08-28 17:48:29 +0000 (Fri, 28 Aug 2009) | 1 line
+Changed paths:
+   M /trunk/TargetRing.lua
+   M /trunk/libs/LibConfig.lua
+
+added option to play a sound upon showing
+------------------------------------------------------------------------
+r6 | talvinen | 2009-08-22 09:31:30 +0000 (Sat, 22 Aug 2009) | 1 line
+Changed paths:
+   M /trunk/TargetRing.lua
+   M /trunk/libs/LibGUI.lua
+
+hopefully fixed the problem with settings conversion
+------------------------------------------------------------------------
+r4 | talvinen | 2009-08-21 19:13:02 +0000 (Fri, 21 Aug 2009) | 1 line
+Changed paths:
+   M /trunk/TargetRing.lua
+   M /trunk/TargetRing.mod
+   A /trunk/libs
+   A /trunk/libs/LibConfig.lua
+   A /trunk/libs/LibGUI.lua
+   A /trunk/libs/LibStub.lua
+
+removed clicking sound and added an not so pretty config gui
+------------------------------------------------------------------------

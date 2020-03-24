@@ -1,0 +1,255 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+   <Scripts>
+      <Script file="ChattyCathy.lua" />
+   </Scripts>
+   <Windows>
+		<Window name="TextEntry" handleinput="false" popable="false" savesettings="true">
+			<Size>
+	            <AbsPoint x="500" y="20" />
+			</Size>
+			<Anchors>
+	            <Anchor point="center" relativePoint="center" relativeTo="Root">
+	               <AbsPoint x="0" y="-200" />
+	            </Anchor>
+			</Anchors>
+		</Window>
+		<Window name="ChattyCathyOpt" layer="background" movable="true">
+			<Anchors>
+				<Anchor point="center" relativePoint="center">
+					<AbsPoint x="0" y="0"/>
+				</Anchor>
+			</Anchors>
+			<Windows>
+				<Window name="$parentTitleBar" inherits="EA_TitleBar_Default">
+					<Size>
+						<AbsPoint x="455" y="20"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="0"/>
+						</Anchor>
+					</Anchors>
+				</Window>				
+				<Window name="$parentBackground" inherits="EA_Window_DefaultContextMenuFrame" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="30"/>
+						</Anchor>
+					</Anchors>
+				</Window>
+				<Label name="$parentTitle" inherits="DefaultWindowSmallText" textalign="center" layer="popup">
+					<Size>
+						<AbsPoint x="455" y="20"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="10"/>
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="255" b="255" a="255"/>
+				</Label>
+				<Label name="$parentScrollInfo" inherits="DefaultWindowSmallText" textalign="center">
+					<Size>
+						<AbsPoint x="455" y="40"/>
+					</Size>
+					<Anchors>
+						<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTitle">
+							<AbsPoint x="0" y="3"/>
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="255" b="0" a="255"/>
+				</Label>
+				<Label name="$parentScrollSet" inherits="DefaultWindowSmallText" textalign="center">
+					<Size>
+						<AbsPoint x="149" y="25"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="162" y="73"/>
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="255" b="255" a="255"/>
+				</Label>
+				<Label name="$parentTabSet" inherits="DefaultWindowSmallText" textalign="center">
+					<Size>
+						<AbsPoint x="130" y="25"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentScrollSet">
+							<AbsPoint x="2" y="0"/>
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="255" b="255" a="255"/>
+				</Label>
+	            <FullResizeImage name="$parentScrollSetupBorder" inherits="EA_FullResizeImage_TanBorder" />
+				<Label name="$parentEntryInfo" inherits="DefaultWindowSmallText" textalign="center">
+					<Size>
+						<AbsPoint x="320" y="40"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentWindow">
+							<AbsPoint x="-17" y="-11"/>
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="255" b="0" a="255"/>
+				</Label>
+				<Label name="$parentWindow" inherits="DefaultWindowSmallText" textalign="left">
+					<Size>
+						<AbsPoint x="165" y="25"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentTo">
+							<AbsPoint x="0" y="-7"/>
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="255" b="255" a="255"/>
+				</Label>
+				<ComboBox name="$parentWindowCombo" inherits="EA_ComboBox_DefaultResizableSmall" layer="primary">
+					<Size>
+						<AbsPoint x="150" y="30"/>
+					</Size>
+					<Anchors>
+						<Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentWindow">
+							<AbsPoint x="159" y="-4"/>
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="ChattyCathy.UpdateEntrySetup" />
+					</EventHandlers>
+				</ComboBox>
+				<Label name="$parentTo" inherits="DefaultWindowSmallText" textalign="left">
+					<Size>
+						<AbsPoint x="165" y="25"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentAlpha">
+							<AbsPoint x="0" y="-9"/>
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="255" b="255" a="255"/>
+				</Label>
+				<ComboBox name="$parentToCombo" inherits="EA_ComboBox_DefaultResizableSmall" layer="primary">
+					<Size>
+						<AbsPoint x="150" y="30"/>
+					</Size>
+					<Anchors>
+						<Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentTo">
+							<AbsPoint x="159" y="1"/>
+						</Anchor>
+					</Anchors>
+				</ComboBox>
+				<Label name="$parentAlpha" inherits="DefaultWindowSmallText" textalign="left">
+					<Size>
+						<AbsPoint x="71" y="30"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentSave">
+							<AbsPoint x="75" y="-20"/>
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="255" b="255" a="255"/>
+				</Label>
+	            <SliderBar name="$parentAlphaSlider" inherits="EA_Default_SliderBar" >
+	                <Size>
+	                    <AbsPoint x="205" y="33" />
+	                </Size>
+	                <Anchors>
+						<Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentAlpha">
+							<AbsPoint x="78" y="-3"/>
+						</Anchor>
+	                </Anchors>
+	                <EventHandlers>
+	                    <EventHandler event="OnSlide" function="ChattyCathy.OnSlideAlpha" />
+	                </EventHandlers>
+	            </SliderBar>
+				<Button name="$parentSave" inherits="EA_Button_DefaultResizeable">
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="ChattyCathy.SaveOptions"/>
+					</EventHandlers>
+					<Size>
+						<AbsPoint x="100" y="40"/>
+					</Size>
+					<Anchors>
+						<Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parent">
+							<AbsPoint x="9" y="-10"/>
+						</Anchor>
+					</Anchors>
+				</Button>
+				<Button name="$parentApply" inherits="EA_Button_DefaultResizeable">
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="ChattyCathy.ApplyOptions"/>
+					</EventHandlers>
+					<Size>
+						<AbsPoint x="101" y="40"/>
+					</Size>
+					<Anchors>
+						<Anchor point="bottom" relativePoint="bottom" relativeTo="$parent">
+							<AbsPoint x="0" y="-10"/>
+						</Anchor>
+					</Anchors>
+				</Button>
+				<Button name="$parentCancel" inherits="EA_Button_DefaultResizeable">
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="ChattyCathy.CancelOptions"/>
+					</EventHandlers>
+					<Size>
+						<AbsPoint x="100" y="40"/>
+					</Size>
+					<Anchors>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+							<AbsPoint x="-9" y="-10"/>
+						</Anchor>
+					</Anchors>
+				</Button>
+	            <FullResizeImage name="$parentEntrySetupBorder" inherits="EA_FullResizeImage_TanBorder">
+	               <Anchors>
+	                  <Anchor point="topleft" relativeTo="$parentWindow" relativePoint="topleft">
+	                     <AbsPoint x="-8" y="-20" />
+	                  </Anchor>
+	                  <Anchor point="bottomright" relativeTo="$parentAlphaSlider" relativePoint="bottomright">
+	                     <AbsPoint x="10" y="12" />
+	                  </Anchor>
+	               </Anchors>
+	            </FullResizeImage>
+			</Windows>
+		</Window>
+		<Window name="CCBoxTemplate" handleinput="true" popable="true">
+			<Size>
+				<AbsPoint x="450" y="30"/>
+			</Size>
+			<Windows>
+				<Label name="$parentText" inherits="DefaultWindowSmallText" textalign="left">
+					<Size>
+						<AbsPoint x="180" y="30"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="22" y="6"/>
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="255" b="255" a="255"/>
+				</Label>
+				<ComboBox name="$parentCombo" inherits="EA_ComboBox_DefaultResizableSmall" layer="popup">
+					<Size>
+						<AbsPoint x="128" y="30"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="177" y="0"/>
+						</Anchor>
+					</Anchors>
+				</ComboBox>
+				<ComboBox name="$parentTabCombo" inherits="EA_ComboBox_DefaultResizableSmall" layer="popup">
+					<Size>
+						<AbsPoint x="128" y="30"/>
+					</Size>
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentCombo">
+							<AbsPoint x="5" y="0"/>
+						</Anchor>
+					</Anchors>
+				</ComboBox>
+			</Windows>
+		</Window>
+   </Windows>
+</Interface>
