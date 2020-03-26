@@ -1,0 +1,13 @@
+*
+
+!.gitignore
+!/user/
+!/user/settings/
+!/user/settings/Martyrs Square/
+!/user/settings/Martyrs Square/Knubbe
+!/user/settings/Martyrs Square/Knubbe/*
+!/user/settings/Martyrs Square/Knubbe/**/*
+
+!/Interface/
+!/Interface/AddOns/
+!/Interface/AddOns/**/*
