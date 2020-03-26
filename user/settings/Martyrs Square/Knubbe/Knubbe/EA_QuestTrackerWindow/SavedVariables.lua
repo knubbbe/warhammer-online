@@ -5,7 +5,7 @@ EA_Window_QuestTracker.Settings =
 	fadeData = 
 	{
 	},
-	isShowing = false,
+	isShowing = true,
 }
 
 

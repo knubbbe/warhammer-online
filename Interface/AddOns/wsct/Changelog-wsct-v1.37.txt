@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r23 | grayhoof | 2011-03-12 01:56:33 +0000 (Sat, 12 Mar 2011) | 1 line
+Changed paths:
+   A /tags/v1.37 (from /trunk:22)
+
+Tagging as v1.37
+------------------------------------------------------------------------
+r22 | grayhoof | 2011-03-12 01:55:44 +0000 (Sat, 12 Mar 2011) | 1 line
+Changed paths:
+   M /trunk/wsct.lua
+   M /trunk/wsct.mod
+
+wsct: Long overdue updates for career resources...minor stuff I don't remember =)
+------------------------------------------------------------------------

@@ -386,11 +386,11 @@ EA_ChatWindow.Settings =
 			maxAlpha = 0.7,
 			windowDims = 
 			{
-				y = 0.77037060260773,
+				y = 0.77037036418915,
 				x = 0.0026041667442769,
 				height = 317.77905273438,
 				scale = 1,
-				width = 571.11492919922,
+				width = 591.11553955078,
 			},
 			activeTab = 1,
 			Tabs = 

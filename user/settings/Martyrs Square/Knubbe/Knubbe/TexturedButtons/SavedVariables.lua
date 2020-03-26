@@ -12,9 +12,15 @@ TexturedButtons.Settings =
 	},
 	AdvancedTextures = 
 	{
-		[1] = 
+		
 		{
 		},
+		
+		{
+		},
+		
+		{
+		}, 
 		[8] = 
 		{
 		},
@@ -93,7 +99,23 @@ TexturedButtons.Settings =
 					X = 6,
 				},
 				HideEmpty = true,
-				PageSelector = 43,
+				PageSelector = 44,
+			},
+			
+			{
+				Spacing = 
+				{
+					Y = 0,
+					X = 0,
+				},
+				Padding = 
+				{
+					Y = 3,
+					X = 3,
+				},
+				HideBackground = false,
+				HideEmpty = true,
+				PageSelector = 44,
 			},
 		},
 	},
@@ -131,7 +153,7 @@ TexturedButtons.Settings =
 		EnableButtonTinting = true,
 		HideFlash = false,
 		ShowGlobalCooldownText = false,
-		Alpha = 0.8,
+		Alpha = 0.80000001192093,
 		Tint = 
 		{
 			R = 0,

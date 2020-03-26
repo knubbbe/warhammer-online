@@ -1,0 +1,50 @@
+Installing WSCT
+---------------------------------------------------------------------------
+
+These instructions assume you have extracted (or are about to extract)
+this .zip file with "Retain directory structure" enabled.
+
+Simple Installation Instructions
+--------------------------------
+  1. Go into your Warhammer folder
+     (e.g. C:\Program Files\Warhammer Online - Age of Reckoning\)
+
+  2. Go into the Interface sub-folder (if you dont have one, create it)
+
+  3. Go into the AddOns sub-folder (if you dont have one, create it)
+
+  4. Copy/Extract this addon's folder into the AddOns folder.
+  
+  5. The final path should be simailar to this: C:\Program Files\Warhammer Online - Age of Reckoning\Interface\Addons\wsct
+
+Verification
+------------
+  The following folder paths will exist within your WAR Install directory:
+
+    WSCT:
+    Interface\AddOns\wsct\
+    Interface\AddOns\wsct\locals
+    Interface\AddOns\wsct_options
+    Interface\AddOns\wsct_options\locals
+
+  Look for the following (wrong) files as evidence of common mistakes:
+
+  * If you have Interface\AddOns\wsct.mod
+    ... then you've extracted the zip file's contents without its
+        folder structure, or copied the contents without the parent
+        folder.
+
+  * If you have Interface\AddOns\wsct\wsct\wsct.mod
+    ... then you've extracted the zip file into a folder an extra
+        level deep. Move the files and any sub-folders up one level
+        and remove the extra folder.
+
+Need More Help?
+---------------
+  See the Installation FAQ's at Warhammer mmoui
+
+  http://war.mmoui.com/forums/faq.php?faq=userfaq#faq_installing
+
+---------------------------------------------------------------------------
+These instructions were borrowed from Iriel! Thanks!
+---------------------------------------------------------------------------

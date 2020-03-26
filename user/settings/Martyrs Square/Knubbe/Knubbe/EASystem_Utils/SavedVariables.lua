@@ -100,16 +100,6 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Turquoiseous"] = 
-	{
-		lockouts = 
-		{
-			1584916801,
-			1584916801,
-			1584916801,
-		},
-		value = 5,
-	},
 	[L"Psychiatrist"] = 
 	{
 		lockouts = 
@@ -120,23 +110,23 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Rugur"] = 
+	[L"Turquoiseous"] = 
 	{
 		lockouts = 
 		{
-			1585086848,
-			1585086848,
-			1585086848,
+			1584916801,
+			1584916801,
+			1584916801,
 		},
 		value = 5,
 	},
-	[L"Infernape"] = 
+	[L"Korkolkhien"] = 
 	{
 		lockouts = 
 		{
-			1585086848,
-			1585086848,
-			1585086848,
+			1584916801,
+			1584916801,
+			1584916801,
 		},
 		value = 5,
 	},
@@ -159,6 +149,16 @@ FriendSuggester.Data =
 			1585086531,
 		},
 		value = 20,
+	},
+	[L"Infernape"] = 
+	{
+		lockouts = 
+		{
+			1585086848,
+			1585086848,
+			1585086848,
+		},
+		value = 5,
 	},
 	[L"Gailik"] = 
 	{
@@ -218,16 +218,6 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Korkolkhien"] = 
-	{
-		lockouts = 
-		{
-			1584916801,
-			1584916801,
-			1584916801,
-		},
-		value = 5,
-	},
 	[L"Lrak"] = 
 	{
 		lockouts = 
@@ -237,6 +227,16 @@ FriendSuggester.Data =
 			1584916475,
 		},
 		value = 10,
+	},
+	[L"Rugur"] = 
+	{
+		lockouts = 
+		{
+			1585086848,
+			1585086848,
+			1585086848,
+		},
+		value = 5,
 	},
 }
 

@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="PureConfig" sizeX="800.000000" sizeY="500.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="" xOffset="212.222168" yOffset="-221.111115" />
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="" xOffset="-61.111183" yOffset="-193.333344" />
             </Anchors>
         </WindowSettings>
     </Windows>
