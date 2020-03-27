@@ -1,2 +1,2 @@
-RoR_SoR.ShowTier = 4
+RoR_SoR.ShowTier = 2
 

@@ -1,0 +1,2218 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+    <Assets>
+		<Icon id="00092" texture="Textures/LMB.tga" name=""/>	
+		<Icon id="00093" texture="Textures/RMB.tga" name=""/>			
+		<Icon id="00094" texture="Textures/MMB.tga" name=""/>			
+	</Assets>
+   <Scripts>
+   <Script file="Warbuilder.lua" />
+   </Scripts>
+		
+
+ <Windows>
+ <!-- TEMPLATES -->
+ 
+
+ 	<Button name="TestTacticTemplate" handleinput="true" inherits="EA_Button_Default" textureScale="0.4" layer="overlay">
+
+	<Windows>
+    <DynamicImage name="$parentIcon" handleinput="true" textureScale="1">
+    <Size><AbsPoint x="25" y="25" /></Size>
+    <Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"/></Anchors>
+   	<EventHandlers><EventHandler event="OnLButtonDown" function="OnTabLBU" /></EventHandlers>  
+    <TexDims x="64" y="64" />
+    </DynamicImage> 
+
+	<Label name="$parentName" maxchars="125" font="font_clear_tiny" autoresize="false" textalign="left" layer="popup" ellipsisOnCrop="true" popable="false" handleinput="false" warnOnTextCropped="false" >
+	<Size><AbsPoint x="115" y="25"/></Size>
+	<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="3" y="6"/></Anchor></Anchors>
+	</Label>	
+    </Windows> 	
+	</Button>	
+ 
+  	<Button name="TestMoraleTemplate" handleinput="true" inherits="EA_Button_Default" textureScale="0.4" layer="overlay">
+	<Windows>
+    <CircleImage name="$parentIcon" handleinput="true" textureScale="0.4">
+    <Size><AbsPoint x="25" y="25" /></Size>
+    <Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"/></Anchors>
+   	<EventHandlers><EventHandler event="OnLButtonDown" function="OnTabLBU" /></EventHandlers>  
+    <TexDims x="64" y="64" />
+    </CircleImage> 
+
+	<Label name="$parentName" maxchars="125" font="font_clear_tiny" autoresize="false" textalign="left" layer="popup" ellipsisOnCrop="true" popable="false" handleinput="false" warnOnTextCropped="false" >
+	<Size><AbsPoint x="115" y="25"/></Size>
+	<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="3" y="5"/></Anchor></Anchors>
+	</Label>	
+    </Windows> 	
+	</Button>	
+ 
+ 
+ 		<Window name="AbilityLinkTemplate" movable="true" sticky="false" >			
+				 <Size><AbsPoint x="475" y="300" /></Size>
+		         <EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.ReLink" /></EventHandlers>
+				<Windows>
+				<Button name="$parentClose" inherits="EA_Button_DefaultWindowClose">
+					<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.AbilityLinkClose" /></EventHandlers>
+				</Button> 	
+					<Window name="$parentWindowBackground" inherits="EA_Window_DefaultTooltipBackground" sticky="false" alpha="1">
+						<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="2" y="10" /></Anchor><Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"><AbsPoint x="-10" y="0" /></Anchor></Anchors>
+					</Window>	
+					<!--Tactic Icon -->					
+					 	<Button name="$parent_Icon_1" handleinput="true" inherits="EA_Button_Default"backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization" layer="overlay" drawchildrenfirst="true">
+						<EventHandlers><EventHandler event="OnLButtonDown" function="Warbuilder.DnD" /></EventHandlers> 
+						<Size><AbsPoint x="62" y="62" /></Size>
+						<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="15" y="10" /></Anchor></Anchors>  						
+							<TexSlices>
+								<Normal          id="tactic-white"   />
+								<NormalHighlit   id="tactic-white"   />
+								<Pressed         id="tactic-white"  />
+								<PressedHighlit  id="tactic-white"  />
+								<Disabled        id="tactic-white"   />
+								<DisabledPressed id="tactic-white"  />
+							</TexSlices>
+							<Windows>
+								<DynamicImage name="$parentIcon" handleinput="false" textureScale="0.5"><Size><AbsPoint x="51" y="51" /></Size><Anchors><Anchor point="center" relativePoint="center" /></Anchors>
+								 <TexDims x="64" y="64" />
+								</DynamicImage>
+							</Windows>  
+						</Button>
+											
+						<!--Ability Icon -->
+						<Button name="$parent_Icon_2" handleinput="true" inherits="EA_Button_Default" backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization" layer="overlay" drawchildrenfirst="true">  
+						<EventHandlers><EventHandler event="OnLButtonDown" function="Warbuilder.DnD" /></EventHandlers>
+						<Size><AbsPoint x="68" y="71" /></Size>
+						<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="10" y="10" /></Anchor></Anchors>  						    
+							<TexSlices>
+							<Normal          id="ability-white"   />
+							<NormalHighlit   id="ability-white"   />
+							<Pressed         id="ability-white"  />
+							<PressedHighlit  id="ability-white"  />
+							<Disabled        id="ability-white"   />
+							<DisabledPressed id="ability-white"  />
+							</TexSlices>
+								<Windows>
+									<DynamicImage name="$parentIcon" handleinput="false" textureScale="0.45">
+									<Size><AbsPoint x="55" y="55" /></Size>
+									<Anchors><Anchor point="center" relativePoint="center" /><AbsPoint x="0" y="5" /></Anchors>
+									 <TexDims x="64" y="64" />
+									</DynamicImage>
+								</Windows>		
+						</Button>
+						
+					<Button name="$parent_Icon_4" handleinput="true" inherits="EA_Button_Default" backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization" layer="overlay" drawchildrenfirst="true">  
+						<EventHandlers><EventHandler event="OnLButtonDown" function="Warbuilder.DnD" /></EventHandlers>
+						<Size><AbsPoint x="68" y="71" /></Size>
+						<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="10" y="10" /></Anchor></Anchors>  						    
+							<TexSlices>
+							<Normal          id="ability-white"   />
+							<NormalHighlit   id="ability-white"   />
+							<Pressed         id="ability-white"  />
+							<PressedHighlit  id="ability-white"  />
+							<Disabled        id="ability-white"   />
+							<DisabledPressed id="ability-white"  />
+							</TexSlices>
+								<Windows>
+									<DynamicImage name="$parentIcon" handleinput="false" textureScale="0.45">
+									<Size><AbsPoint x="55" y="55" /></Size>
+									<Anchors><Anchor point="center" relativePoint="center" /><AbsPoint x="0" y="5" /></Anchors>
+									 <TexDims x="64" y="64" />
+									</DynamicImage>
+								</Windows>		
+						</Button>
+						
+						
+	
+						<!--Morale Icon -->	
+					    <Button name="$parent_Icon_3" handleinput="true" inherits="EA_Button_Default" backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization"  textureScale="1.4" layer="overlay" drawchildrenfirst="true">
+						<EventHandlers><EventHandler event="OnLButtonDown" function="Warbuilder.DnD" /></EventHandlers> 
+						<Size><AbsPoint x="74" y="80" /></Size>
+						<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="5" y="0" /></Anchor></Anchors>  						   
+								<TexSlices>
+								<Normal          id="morale-white"   />
+								<NormalHighlit   id="morale-white"   />
+								<Pressed         id="morale-white"  />
+								<PressedHighlit  id="morale-white"  />
+								<Disabled        id="morale-white"   />
+								<DisabledPressed id="morale-white"  />
+							</TexSlices>
+							<Windows>
+								<CircleImage name="$parentIcon" handleinput="false" textureScale="0.85" numsegments="8" id="21">
+									<Size><AbsPoint x="50" y="50" /> </Size>
+									<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" ><AbsPoint x="13" y="23" /></Anchor></Anchors> 
+								<TexDims x="64" y="64" />
+								</CircleImage>
+							</Windows>
+						</Button>
+					
+					<ComboBox name="$parentComboLevelSelect" inherits="EA_ComboBox_DefaultResizableTiny" layer="overlay" warnOnTextCropped="false" id="1" maxvisibleitems="15">
+					<Anchors><Anchor point="bottomright" relativePoint="topright" relativeTo="$parentAbilityBuffType"><AbsPoint x="-13" y="5" /></Anchor></Anchors>
+					<Size><AbsPoint x="60" y="28"/></Size>
+					<EventHandlers><EventHandler event="OnSelChanged" function="Warbuilder.LinkLevel" /></EventHandlers>			
+					</ComboBox>						
+
+			<Button name="$parentPlus" inherits="EA_Button_DefaultPlus" texturescale="0.8" id="3">
+			<Size><AbsPoint x="13" y="13"/></Size>
+			<Anchors><Anchor point="topleft" relativePoint="topright" relativeTo="$parentComboLevelSelect"><AbsPoint x="0" y="0"/></Anchor></Anchors>
+			<EventHandlers><EventHandler event="OnLButtonDown" function="Warbuilder.ChangeLvl" /></EventHandlers>
+			</Button>
+			<Button name="$parentMinus" inherits="EA_Button_DefaultMinus" texturescale="0.8" id="4">
+			<Size><AbsPoint x="13" y="13"/></Size>
+			<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentPlus"><AbsPoint x="0" y="1"/></Anchor></Anchors>
+			<EventHandlers><EventHandler event="OnLButtonDown" function="Warbuilder.ChangeLvl" /></EventHandlers>
+			</Button>
+
+				
+				<FullResizeImage name="$parentSeperator1" inherits="EA_FullResizeImage_TintableSolidBackground" layer="default">
+				<Size><AbsPoint x="435" y="3" /></Size>
+				<Anchors><Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parent"><AbsPoint x="18" y="-55" /></Anchor></Anchors>
+				<TintColor r="130" g="130" b="130" a="200"/>
+                </FullResizeImage>
+
+				<FullResizeImage name="$parentSeperator2" inherits="EA_FullResizeImage_TintableSolidBackground" layer="default">
+				<Size><AbsPoint x="440" y="3" /></Size>
+				<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="18" y="80" /></Anchor></Anchors>
+				<TintColor r="130" g="130" b="130" a="200"/>
+                </FullResizeImage>
+				
+							<Label name="$parentAbilityName"font="font_default_text_large" autoresize="true" wordwrap="true"textalign="left" layer="default" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="340" y="69"/></Size>
+							<Color r="255" g="218" b="73" />  	
+							<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="85" y="25"/></Anchor></Anchors>
+							</Label>	
+
+							<Label name="$parentAbilityType" font="font_default_text_large" autoresize="false" wordwrap="true"textalign="right" layer="default" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="0" y="0"/></Size>
+							<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent"><AbsPoint x="-25" y="30"/></Anchor></Anchors>
+							</Label>	
+
+							<Label name="$parentHiddenCareer" font="font_default_text_large" autoresize="false" wordwrap="true"textalign="right" layer="default" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="0" y="0"/></Size>
+							<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent"><AbsPoint x="-25" y="30"/></Anchor></Anchors>
+							</Label>	
+							
+							<Label name="$parentAbilityBuffType" font="font_default_text_large" autoresize="true" wordwrap="true"textalign="right" layer="default" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="180" y="39"/></Size>
+							<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent"><AbsPoint x="-25" y="25"/></Anchor></Anchors>
+							</Label>						
+											
+							<Label name="$parentAbilityPath" maxchars="200" font="font_clear_medium" autoresize="false" textalign="left" layer="default" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="240" y="39"/></Size>
+							<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAbilityName"><AbsPoint x="0" y="10"/></Anchor></Anchors>
+							</Label>	
+
+							<Label name="$parentAbilitylvl"font="font_clear_medium" autoresize="false" textalign="right" layer="default" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="140" y="39"/></Size><Anchors><Anchor point="topleft" relativePoint="topright" relativeTo="$parentComboLevelSelect"><AbsPoint x="-15" y="4"/></Anchor></Anchors>
+							</Label>
+							
+							<Label name="$parentAbilityCost" maxchars="200" font="font_clear_medium" autoresize="false" textalign="left" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="240" y="29"/></Size>
+							<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentAbilityPath"><AbsPoint x="-70" y="35"/></Anchor></Anchors>
+							</Label>					
+	
+							<Label name="$parentAbilityCast" maxchars="200" font="font_clear_medium" autoresize="false" textalign="left" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="240" y="39"/></Size><Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentAbilityCost"><AbsPoint x="0" y="20"/></Anchor></Anchors>
+							</Label>							
+						
+														
+							<Label name="$parentAbilityRange"font="font_clear_medium" autoresize="false" textalign="right" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="140" y="39"/></Size><Anchors>
+							<Anchor point="topright" relativePoint="topright" relativeTo="$parentComboLevelSelect"><AbsPoint x="10" y="38"/></Anchor></Anchors>
+							</Label>
+							
+							
+							<Label name="$parentAbilityCD"font="font_clear_medium" autoresize="false" textalign="right" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="140" y="39"/></Size>
+							<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parentAbilityRange"><AbsPoint x="0" y="20"/></Anchor></Anchors>
+							</Label>
+												
+							<Button name="$parentCareerName" font="font_clear_medium" autoresize="false" textalign="left" layer="popup" popable="false" handleinput="true" warnOnTextCropped="false" >
+							<Size><AbsPoint x="240" y="39"/></Size>
+							<Anchors><Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentWindowBackground"><AbsPoint x="5" y="10"/></Anchor></Anchors>
+							<EventHandlers><EventHandler event="OnLButtonDown" function="Warbuilder.ShowCareer" /></EventHandlers>						
+								<TextColors>
+								<Normal r="255" g="255" b="255" a="255"/>
+								<NormalHighlit r="255" g="85" b="0" a="255"/>
+								<Pressed r="95" g="57" b="36" a="255"/>
+								<PressedHighlit r="95" g="57" b="36" a="255"/>
+								<Disabled r="95" g="57" b="36" a="255" />
+								<DisabledPressed r="95" g="57" b="36" a="255" />
+								</TextColors>  							
+							</Button>
+												
+							<Label name="$parentLinkLabel" font="font_chat_text" autoresize="false" textalign="left" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="360" y="39"/></Size>
+							<Anchors><Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentCareerName"><AbsPoint x="5" y="-20"/></Anchor></Anchors>
+							</Label>
+							
+
+							<Label name="$parentNickName" font="font_clear_medium" autoresize="false" textalign="right" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="240" y="39"/></Size>
+							<Color r="100" g="100" b="100"/> 
+							<Anchors><Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentWindowBackground"><AbsPoint x="-20" y="12"/></Anchor></Anchors>
+							</Label>
+
+	
+							<Label name="$parentAbilityReq1" font="font_clear_medium" autoresize="true" textalign="left" wordwrap="true" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="390" y="20"/></Size>
+							<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAbilityCost"><AbsPoint x="0" y="10"/></Anchor></Anchors>
+							</Label>	
+								
+							<Label name="$parentAbilityReq2" font="font_clear_medium" autoresize="true" textalign="left" wordwrap="true" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="390" y="20"/></Size>
+							<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAbilityReq1"><AbsPoint x="0" y="0"/></Anchor></Anchors>
+							</Label>	
+	
+							<Label name="$parentAbilityReq3" font="font_clear_medium" autoresize="true" textalign="left" wordwrap="true" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="390" y="20"/></Size>
+							<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAbilityReq2"><AbsPoint x="0" y="0"/></Anchor></Anchors>
+							</Label>	
+	
+							<Label name="$parentAbilityReq4" font="font_clear_medium" autoresize="true" textalign="left" wordwrap="true" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="390" y="20"/></Size>
+							<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAbilityReq3"><AbsPoint x="0" y="0"/></Anchor></Anchors>
+							</Label>	
+	
+							<Label name="$parentAbilityReq5" font="font_clear_medium" autoresize="true" textalign="left" wordwrap="true" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="390" y="20"/></Size>
+							<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAbilityReq4"><AbsPoint x="0" y="0"/></Anchor></Anchors>
+							</Label>	
+	
+						<Label name="$parentAbilityDesc" font="font_clear_medium" autoresize="true" textalign="left" wordwrap="true" layer="popup" popable="false" handleinput="true" warnOnTextCropped="false" >
+							<EventHandlers><EventHandler event="OnHyperLinkLButtonUp" function="EA_ChatWindow.OnHyperLinkLButtonUp" /><EventHandler event="OnHyperLinkRButtonUp" function="EA_ChatWindow.OnHyperLinkRButtonUp" /></EventHandlers>
+							<Size><AbsPoint x="390" y="440"/></Size>
+							<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentAbilityReq5"><AbsPoint x="0" y="20"/></Anchor></Anchors>
+						</Label>	
+
+						<Label name="$parentReLinkLabel" font="font_clear_medium" autoresize="true" textalign="left" wordwrap="true" layer="popup" popable="false" FontAlpha="0" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="0" y="0"/></Size>
+							<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentAbilityReq5"><AbsPoint x="0" y="0"/></Anchor></Anchors>
+							</Label>				
+				</Windows>
+		</Window>
+
+		
+ 	    <Window name="WB_Specialization" layer="popup" handleinput="false" inherits="EA_Templates_SpecializationStep">
+							<Windows>  
+							<DynamicImage name="$parentEmpty" texture="EA_Training_Specialization" slice="bar-empty" handleinput="false">
+							<Size><AbsPoint x="100" y="30" /></Size>
+							<Anchors><Anchor point="right" relativePoint="right" relativeTo="$parent"/></Anchors>
+							</DynamicImage>						
+							<Label name="$parentNumber" maxchars="80" font="font_clear_medium_bold" autoresize="false" textalign="center" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="40" y="39"/></Size>
+							<Anchors><Anchor point="left" relativePoint="left" relativeTo="$parent"><AbsPoint x="10" y="0"/></Anchor></Anchors></Label>								
+							</Windows>
+		</Window>
+ 
+ 	    <Window name="WB_Specialization_TREE" layer="default" inherits="EA_Templates_SpecializationStep">>
+			<Windows>					
+				<Window name="$parentSpecializationStep15" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="topleft" relativePoint="top" relativeTo="$parent"><AbsPoint x="65" y="130" /></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep14" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep15"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep13" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep14"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep12" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep13"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep11" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep12"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep10" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep11"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep9" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep10"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep8" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep9"></Anchor></Anchors>
+				</Window>				
+				<Window name="$parentSpecializationStep7" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep8"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep6" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep7"></Anchor></Anchors>							
+				</Window>
+				<Window name="$parentSpecializationStep5" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep6"></Anchor></Anchors>
+				</Window>				
+				<Window name="$parentSpecializationStep4" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep5"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep3" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep4"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep2" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep3"></Anchor></Anchors>
+				</Window>
+				<Window name="$parentSpecializationStep1" layer="popup" inherits="WB_Specialization">
+                            <Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parentSpecializationStep2"></Anchor></Anchors>
+				</Window>	
+			</Windows>		
+		</Window>
+ 
+ 
+	<Button name="Template_CoreTacticButton" handleinput="true" inherits="EA_Button_Default"backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization" textureScale="0.8" layer="overlay" drawchildrenfirst="true">
+		<EventHandlers><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /><EventHandler event="OnLButtonDown" function="Warbuilder.OnTabLBU" /></EventHandlers>    
+		<Size><AbsPoint x="51" y="51" /></Size>		 
+		<TexSlices>
+		<Normal          id="tactic-white"   />
+		<NormalHighlit   id="tactic-white"   />
+		<Pressed         id="tactic-yellow"  />
+		<PressedHighlit  id="tactic-yellow"  />
+		<Disabled        id="tactic-black"   />
+		<DisabledPressed id="tactic-yellow"  />
+		</TexSlices>
+		<Windows>
+		<DynamicImage name="$parentIcon" handleinput="false" textureScale="1">
+		<Size><AbsPoint x="41" y="41" /></Size>
+		<Anchors><Anchor point="center" relativePoint="center" /></Anchors>
+		<TexDims x="64" y="64" />
+		</DynamicImage>  
+		
+		    <DynamicImage name="$parentGlow" handleinput="false" texture="EA_Training_Specialization" slice="tactic-white" sticky="false" layer="overlay" textureScale="1.055">
+          <Size><AbsPoint x="65" y="65"/></Size>
+          <Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="-7" y="-8" /></Anchor></Anchors>
+		</DynamicImage>		
+		
+		</Windows>  
+	</Button>					
+ 
+ 
+ 			<Button name="Template_CoreMoraleButton" handleinput="true" inherits="EA_Button_Default" backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization" layer="overlay" drawchildrenfirst="true">
+    			<EventHandlers><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /><EventHandler event="OnLButtonDown" function="Warbuilder.OnTabLBU" /></EventHandlers>   
+				<Size><AbsPoint x="58" y="71" /></Size>
+			<Anchors><Anchor point="right" relativePoint="center" relativeTo="Coremorale4button3"><AbsPoint x="15" y="0" /></Anchor></Anchors> 
+			<TexSlices>
+                <Normal          id="morale-white"   />
+                <NormalHighlit   id="morale-white"   />
+                <Pressed         id="morale-white"  />
+                <PressedHighlit  id="morale-white"  />
+                <Disabled        id="morale-black"   />
+                <DisabledPressed id="morale-white"  />
+            </TexSlices>
+            <Windows>
+			
+
+			
+                <CircleImage name="$parentIcon" handleinput="false" textureScale="0.5" numsegments="8">
+                    <Size><AbsPoint x="40" y="40" /></Size>
+                    <Anchors><Anchor point="center" relativePoint="center" /></Anchors>
+				<TexDims x="64" y="64" />
+                </CircleImage>
+           <DynamicImage name="$parentGlow" handleinput="false" texture="EA_Training_Specialization" slice="morale-white" sticky="false" layer="overlay" textureScale="1.25">
+          <Size><AbsPoint x="68" y="68"/></Size>
+          <Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="-7" y="-8" /> </Anchor></Anchors>
+		</DynamicImage>		
+            </Windows>
+        </Button>
+ 
+
+ 
+ 	<Button name="Template_Ability_Button" handleinput="true" inherits="EA_Button_Default" backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization" layer="overlay" drawchildrenfirst="true">   
+ 				<EventHandlers><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /><EventHandler event="OnLButtonDown" function="Warbuilder.OnTabLBU" /></EventHandlers>        
+			<TexSlices>
+                <Normal          id="ability-yellow"   />
+                <NormalHighlit   id="ability-yellow"   />
+                <Pressed         id="ability-yellow"  />
+                <PressedHighlit  id="ability-yellow"  />
+                <Disabled        id="ability-black"   />
+                <DisabledPressed id="ability-yellow"  />
+            </TexSlices>
+            <Windows>
+                <DynamicImage name="$parentIcon" handleinput="false" textureScale="0.5">
+                 <Size><AbsPoint x="55" y="55" /></Size>
+                    <Anchors><Anchor point="center" relativePoint="center" /></Anchors>
+                 <TexDims x="64" y="64" />
+                </DynamicImage>
+                <DynamicImage name="$parentBackgroundRule" handleinput="false" texture="EA_Training_Specialization" slice="grey-bar" layer="background">
+                    <Size><AbsPoint x="100" y="3" /></Size>
+                    <Anchors><Anchor point="center" relativePoint="center" /></Anchors>
+                </DynamicImage>
+            </Windows>		
+    </Button>
+ 
+ 	<Button name="Template_Tactic_Button" handleinput="true" inherits="EA_Button_Default"backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization" layer="overlay" drawchildrenfirst="true">
+				<EventHandlers><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /> <EventHandler event="OnLButtonDown" function="Warbuilder.OnTabLBU" /></EventHandlers>    
+			<TexSlices>
+                <Normal          id="tactic-yellow"   />
+                <NormalHighlit   id="tactic-yellow"   />
+                <Pressed         id="tactic-yellow"  />
+                <PressedHighlit  id="tactic-yellow"  />
+                <Disabled        id="tactic-black"   />
+                <DisabledPressed id="tactic-yellow"  />
+            </TexSlices>
+			<Windows>
+                <DynamicImage name="$parentIcon" handleinput="false" textureScale="0.5"><Size><AbsPoint x="51" y="51" /></Size><Anchors><Anchor point="center" relativePoint="center" /></Anchors>
+                 <TexDims x="64" y="64" />
+                </DynamicImage>
+                <DynamicImage name="$parentBackgroundRule" handleinput="false" texture="EA_Training_Specialization" slice="grey-bar" layer="background">
+                    <Size><AbsPoint x="100" y="3" /> </Size>
+                    <Anchors><Anchor point="center" relativePoint="center" /> </Anchors>
+                </DynamicImage>
+            </Windows>  
+  </Button>
+ 
+    <Button name="Template_Morale_Button" handleinput="true" inherits="EA_Button_Default" backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization" layer="overlay" drawchildrenfirst="true">
+    		<EventHandlers><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /> <EventHandler event="OnLButtonDown" function="Warbuilder.OnTabLBU" /></EventHandlers>    
+				<Size><AbsPoint x="58" y="71" /></Size>
+				<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parentSpecialization1Step15"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+				<TexSlices>
+                <Normal          id="morale-yellow"   />
+                <NormalHighlit   id="morale-yellow"   />
+                <Pressed         id="morale-yellow"  />
+                <PressedHighlit  id="morale-yellow"  />
+                <Disabled        id="morale-black"   />
+                <DisabledPressed id="morale-yellow"  />
+            </TexSlices>
+            <Windows>
+                <CircleImage name="$parentIcon" handleinput="false" textureScale="0.6" numsegments="8" id="21">
+                    <Size><AbsPoint x="38" y="38" /> </Size>
+                    <Anchors><Anchor point="center" relativePoint="center" /></Anchors> 
+				<TexDims x="64" y="64" />
+                </CircleImage>
+                <DynamicImage name="$parentBackgroundRule" handleinput="false" texture="EA_Training_Specialization" slice="grey-bar" layer="background">
+                    <Size><AbsPoint x="100" y="3" /></Size>
+                    <Anchors><Anchor point="center" relativePoint="center" /></Anchors>
+                </DynamicImage>
+          </Windows>
+		  
+        </Button>
+ 
+ 
+        <Window name="SpecializationAbility_Templates">
+            <Size><AbsPoint x="38" y="38" /></Size>
+  				<EventHandlers><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" />           </EventHandlers>         
+            <Windows>
+                <DynamicImage name="$parentIcon" handleinput="false" >
+                    <Anchors><Anchor point="topleft" relativePoint="topleft" /><Anchor point="bottomright" relativePoint="bottomright" /></Anchors>
+                    <TexDims x="64" y="64" />
+                </DynamicImage>
+                <DynamicImage name="$parentFrame" texture="EA_SquareFrame_Highlight" handleinput="false" >
+                    <Anchors><Anchor point="topleft" relativePoint="topleft" /><Anchor point="bottomright" relativePoint="bottomright" /></Anchors>
+                    <TexDims x="64" y="64" />
+                </DynamicImage>
+            </Windows>
+        </Window>
+ 
+ 
+ 		<Window name="Path_Icon_Template" handleinput="true">
+        <Size><AbsPoint x="38" y="38" /></Size>
+		<EventHandlers><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /><EventHandler event="OnLButtonDown" function="Warbuilder.OnTabLBU" />         </EventHandlers> 
+			<Windows>
+				<DynamicImage name="$parent_ButtonIcon" texture="EA_Abilities01_d5" slice="Tab-ALL" texturescale = "0.85" layer="background" handleinput="true">
+				<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" /></Anchors>
+                    <Size><AbsPoint x="38" y="38" /></Size>
+					<EventHandlers><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /><EventHandler event="OnLButtonDown" function="Warbuilder.OnTabLBU" />         </EventHandlers>
+				</DynamicImage> 
+                <DynamicImage name="$parentFrame" layer="default" texture="EA_SquareFrame_Highlight" handleinput="false" >
+                    <Anchors><Anchor point="topleft" relativePoint="topleft" /><Anchor point="bottomright" relativePoint="bottomright" /></Anchors>
+                    <TexDims x="64" y="64" />
+                </DynamicImage>                
+			</Windows>
+        </Window>
+
+		
+  	<Button name="Template_Mastery_Button" handleinput="true" inherits="EA_Button_Default" textureScale="0.67" backgroundtexture="EA_Training_Specialization" highlighttexture="EA_Training_Specialization" layer="default" drawchildrenfirst="true">    
+			<TexSlices>
+                <Normal          id="ability-white"   />
+                <NormalHighlit   id="ability-white"   />
+                <Pressed         id="ability-white"  />
+                <PressedHighlit  id="ability-yellow"  />
+                <Disabled        id="ability-black"   />
+                <DisabledPressed id="ability-yellow"  />
+            </TexSlices>
+            <Windows>
+
+				<Window name="$parent_Button" handleinput="true" inherits="SpecializationAbility_Templates" layer="default">
+					<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent"><AbsPoint x="0" y="0" /></Anchor></Anchors>
+					<EventHandlers><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /><EventHandler event="OnLButtonDown" function="Warbuilder.OnTabLBU" /></EventHandlers>
+				
+					<DynamicImage name="$parentIcon" handleinput="false" textureScale="1">
+					<Size><AbsPoint x="55" y="55" /></Size>
+					<Anchors><Anchor point="center" relativePoint="center" /></Anchors>
+					<TexDims x="64" y="64" />
+					</DynamicImage>	
+
+				</Window> 
+			<DynamicImage name="$parentGlow" handleinput="false" texture="EA_Training_Specialization" slice="ability-white" sticky="false" layer="overlay" textureScale="0.82">
+          <Size><AbsPoint x="52" y="52"/></Size>
+          <Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="-6" y="-5" /></Anchor></Anchors>
+		</DynamicImage>		
+
+            </Windows>	
+			
+    </Button>
+ 
+ 
+ 
+ 
+ 
+  
+  <!-- MAIN WINDOW -->
+ 
+	<Window name="WarbuilderMainWindow" handleinput="true" layer="default" popable="true" movable="true" savesettings="false" id="0">
+				<Size><AbsPoint x="710" y="980" /></Size>
+				<Anchors><Anchor point="center" relativePoint="center" ><AbsPoint x="0" y="-100" /></Anchor></Anchors>
+				<EventHandlers><EventHandler event="OnKeyEscape" function="OnTabLBU" /><EventHandler event="OnShown" function="Warbuilder.OnUpdate" /></EventHandlers>									
+		<Windows>	
+			<Window name="$parentTitleBar" inherits="EA_TitleBar_Default" autoresize="false" textalign="right"/>
+
+				<Button name="$parentClose" inherits="EA_Button_DefaultWindowClose">
+					<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.Close" /></EventHandlers>
+				</Button> 	
+	   	
+				<FullResizeImage name="$parentWindowBackground" inherits="EA_FullResizeImage_TintableSolidBackground" layer="background">	
+					<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="2" y="30" /></Anchor>
+					<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"><AbsPoint x="-2" y="0" /></Anchor></Anchors>
+					<TintColor r="0" g="0" b="0" a="255"/>
+                </FullResizeImage>					
+
+				<Window name="$parentBackground" inherits="EA_Window_DefaultBackgroundFrame" sticky="false" >
+					<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="0" y="28" /></Anchor><Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"><AbsPoint x="0" y="0" /></Anchor></Anchors>
+				</Window>
+			
+				<DynamicImage name="$parentCornerImage" inherits="EA_Default_TrainingImage" sticky="false">
+					<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground"><AbsPoint x="-70" y="-90" /></Anchor></Anchors>
+				</DynamicImage>
+				
+							<Label name="$parentAbouttext" maxchars="400" font="font_clear_small_bold" autoresize="false" textalign="left" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Color r="75" g="75" b="75" />  
+							<Size><AbsPoint x="300" y="40"/></Size>
+							<Anchors><Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parent"><AbsPoint x="17" y="13"/></Anchor></Anchors>
+							</Label>		
+				
+				
+		<!-- Mastery Background Pictures -->
+				<DynamicImage name="$parentBgPicture1" texture="EA_Training_Specialization_Background" slice="Background" handleinput="false" layer="background" popable="false" texturescale="1">
+                    <Size><AbsPoint x="227" y="512" /></Size>
+                    <Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="10" y="160" /></Anchor>                </Anchors>
+                </DynamicImage>	
+				
+				<DynamicImage name="$parentBgPicture2" texture="EA_Training_Specialization_Background" slice="Background" handleinput="false" layer="background" popable="false" texturescale="1">
+                    <Size><AbsPoint x="227" y="512" /></Size>
+                    <Anchors><Anchor point="bottomright" relativePoint="bottomleft" relativeTo="$parentBgPicture1"><AbsPoint x="5" y="0" /></Anchor></Anchors>
+                </DynamicImage>	
+				
+				<DynamicImage name="$parentBgPicture3" texture="EA_Training_Specialization_Background" slice="Background" handleinput="false" layer="background" popable="false" texturescale="1">
+                    <Size><AbsPoint x="227" y="512" /></Size>
+                    <Anchors><Anchor point="bottomright" relativePoint="bottomleft" relativeTo="$parentBgPicture2"><AbsPoint x="5" y="0" /></Anchor></Anchors>
+                </DynamicImage>		
+
+			<ComboBox name="$parentCombo" inherits="EA_ComboBox_DefaultResizableMedium" maxvisibleitems="15" layer="overlay">
+            <Size><AbsPoint x="170" y="28" /></Size>	   
+			<OverlayOffset x="160" y="0" />   
+            <MenuButtonOffset x="5" y="5" />
+		    <Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"><AbsPoint x="25" y="50" /></Anchor></Anchors>
+			<EventHandlers><EventHandler event="OnSelChanged" function="Warbuilder.MenuSelect" /></EventHandlers>
+			</ComboBox>			
+		
+			<Label name="$parentComboLabel" font="font_clear_small_bold" autoresize="false" textAutoFitMinScale="0.3" textalign="left" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+			<Size><AbsPoint x="125" y="15" /></Size>
+			<Anchors><Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentCombo"><AbsPoint x="0" y="0" /></Anchor></Anchors>
+			<Color r="225" g="225" b="225" />
+			</Label>	
+		
+		<ComboBox name="$parentComboLevelSelect" inherits="EA_ComboBox_DefaultResizableTiny" layer="overlay" warnOnTextCropped="false" id="1" maxvisibleitems="15">
+		<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parentCombo"><AbsPoint x="30" y="0" /></Anchor></Anchors>
+		<Size><AbsPoint x="72" y="28"/></Size>
+		<EventHandlers><EventHandler event="OnSelChanged" function="Warbuilder.ComboBoxUpdate" /></EventHandlers>			
+		</ComboBox>		
+
+			<Label name="$parentLevelLabel" font="font_clear_small_bold" autoresize="false" textAutoFitMinScale="0.3" textalign="left" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+			<Size><AbsPoint x="75" y="15" /></Size>
+			<Anchors><Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentComboLevelSelect"><AbsPoint x="0" y="0" /></Anchor></Anchors>
+			<Color r="225" g="225" b="225" />
+			</Label>	
+			
+			<Button name="$parentPlus" inherits="EA_Button_DefaultPlus" texturescale="0.8" id="1">
+					<Size><AbsPoint x="13" y="13"/></Size>
+			  <Anchors><Anchor point="topleft" relativePoint="topright" relativeTo="$parentComboLevelSelect"><AbsPoint x="0" y="0"/></Anchor></Anchors>
+			  <EventHandlers><EventHandler event="OnLButtonDown" function="Warbuilder.ChangeLvl" /></EventHandlers>
+			</Button>
+			<Button name="$parentMinus" inherits="EA_Button_DefaultMinus" texturescale="0.8" id="2">
+			<Size><AbsPoint x="13" y="13"/></Size>
+				<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentPlus"><AbsPoint x="0" y="0"/></Anchor>
+			  </Anchors>
+			  <EventHandlers><EventHandler event="OnLButtonDown" function="Warbuilder.ChangeLvl" /></EventHandlers>
+			</Button>
+
+	
+		<ComboBox name="$parentComboRenownSelect" inherits="EA_ComboBox_DefaultResizableTiny" layer="overlay" warnOnTextCropped="false" id="2" maxvisibleitems="15">
+		<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parentComboLevelSelect"><AbsPoint x="10" y="0" /></Anchor></Anchors>
+		<Size><AbsPoint x="72" y="28"/></Size>
+		<EventHandlers><EventHandler event="OnSelChanged" function="Warbuilder.ComboBoxUpdate" /></EventHandlers>			
+		</ComboBox>						
+				
+			<Label name="$parentRenownLabel" font="font_clear_small_bold" autoresize="false" textAutoFitMinScale="0.3" textalign="left" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+			<Size><AbsPoint x="75" y="15" /></Size>
+			<Anchors><Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentComboRenownSelect"><AbsPoint x="0" y="0" /></Anchor></Anchors>
+			<Color r="225" g="225" b="225" />
+			</Label>	
+				
+		 	<Button name="$parentLinkButton" font="font_clear_medium_bold" autoresize="false" textalign="center" layer="popup" handleinput="true" warnOnTextCropped="false">
+					<Size><AbsPoint x="130" y="30" /></Size>  
+					<Anchors> <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"><AbsPoint x="5" y="-3" /></Anchor></Anchors>
+                    <EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.ShareLink" /></EventHandlers>
+					<TextColors>
+						<Normal r="255" g="175" b="73" a="255"/>
+						<NormalHighlit r="255" g="85" b="0" a="255"/>
+						<Pressed r="95" g="57" b="36" a="255"/>
+						<PressedHighlit r="95" g="57" b="36" a="255"/>
+						<Disabled r="95" g="57" b="36" a="255" />
+						<DisabledPressed r="95" g="57" b="36" a="255" />
+					</TextColors>  
+			</Button>		
+
+		 	<Button name="$parentImportButton" font="font_clear_medium_bold" autoresize="false" textalign="center" layer="popup" handleinput="true" warnOnTextCropped="false">
+					<Size><AbsPoint x="170" y="30" /></Size>  
+					<Anchors><Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"><AbsPoint x="-110" y="-3" /></Anchor></Anchors>
+                            <EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.ImportCurrent" /></EventHandlers>
+					<TextColors>
+						<Normal r="255" g="175" b="73" a="255"/>
+						<NormalHighlit r="255" g="85" b="0" a="255"/>
+						<Pressed r="95" g="57" b="36" a="255"/>
+						<PressedHighlit r="95" g="57" b="36" a="255"/>
+						<Disabled r="95" g="57" b="36" a="255" />
+						<DisabledPressed r="95" g="57" b="36" a="255" />
+					</TextColors>  
+			</Button>		
+		
+		 	<Button name="$parentClearAllButton" font="font_clear_medium_bold" autoresize="true" textalign="center" layer="popup" handleinput="true" warnOnTextCropped="false">
+					<Size><AbsPoint x="110" y="30" /></Size>  
+					<Anchors><Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"><AbsPoint x="-270" y="-8" /></Anchor></Anchors>
+                            <EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.Reset" /></EventHandlers>
+					<TextColors>
+						<Normal r="255" g="25" b="25" a="255"/>
+						<NormalHighlit r="255" g="85" b="0" a="255"/>
+						<Pressed r="95" g="57" b="36" a="255"/>
+						<PressedHighlit r="95" g="57" b="36" a="255"/>
+						<Disabled r="95" g="57" b="36" a="255" />
+						<DisabledPressed r="95" g="57" b="36" a="255" />
+					</TextColors>  
+			</Button>		
+				
+							<!-- Total Points Used Label-->
+							
+							
+							<Label name="$parentTotalPointsUsedValue" maxchars="200" font="font_alert_outline_large" autoresize="false" textalign="center" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="140" y="39"/></Size>
+							<Anchors><Anchor point="top" relativePoint="top" relativeTo="$parent"><AbsPoint x="95" y="47"/></Anchor></Anchors>
+							</Label>		
+							
+							<Label name="$parentLevelNeededValue" maxchars="400" font="font_default_text_large" autoresize="false" textalign="right" layer="popup" popable="false" handleinput="false" warnOnTextCropped="false" >
+							<Size><AbsPoint x="300" y="80"/></Size>
+							<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent"><AbsPoint x="-20" y="53"/></Anchor></Anchors>
+							</Label>
+							
+						<Label name="$parentCareerPointLabel" font="font_clear_small_bold" autoresize="false" textalign="left" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="160" y="35" /></Size>
+						<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentTotalPointsUsedValue"><AbsPoint x="20" y="-12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>							
+
+						
+							
+							
+							
+<!-- CORE -->
+	
+						<Button name="$parent_Core1" handleinput="true" layer="default" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_SpecTree1Decrement"><AbsPoint x="-35" y="20" /></Anchor></Anchors>							
+						</Button>
+						<Label name="$parent_Core1_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core1"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+
+						<Button name="$parent_Core2" handleinput="true" layer="default" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core1"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core2_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core2"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core3" handleinput="true" layer="default" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core2"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core3_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core3"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core4" handleinput="true" layer="default" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core3"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core4_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core4"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core5" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core4"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>
+						<Label name="$parent_Core5_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core5"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core6" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core5"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core6_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core6"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core7" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core6"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core7_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core7"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core8" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core7"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core8_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core8"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core9" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core8"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core9_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core9"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core10" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core9"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core10_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core10"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core11" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core10"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core11_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core11"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core12" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core11"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>			
+						<Label name="$parent_Core12_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core12"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core13" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core12"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>			
+						<Label name="$parent_Core13_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core13"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core14" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core13"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>
+						<Label name="$parent_Core14_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core14"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Core15" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core14"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>	
+						<Label name="$parent_Core15_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core15"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Core16" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Core15"><AbsPoint x="-3" y="0" /></Anchor></Anchors>		
+						</Button>						
+						<Label name="$parent_Core16_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Core16"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+					
+						<Label name="$parentCoreLabel" font="font_clear_small_bold" autoresize="false" textAutoFitMinScale="0.3" textalign="left" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parent_Core1"><AbsPoint x="0" y="-13" /></Anchor></Anchors>
+						<Color r="225" g="225" b="225" />
+						</Label>
+					
+					
+<!-- SPECC TREE 1 -->
+					<Window name="$parent_SpecTree1" layer="default" handleinput="true" inherits="WB_Specialization_TREE">
+							<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBgPicture1"><AbsPoint x="10" y="-150" /></Anchor></Anchors>							
+					</Window>	
+
+					<Window name="$parent_PathFrame1" layer="overlay" handleinput="true" inherits="Path_Icon_Template"  >
+					<Anchors><Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentBgPicture1"><AbsPoint x="10" y="-35" /></Anchor></Anchors>		
+					</Window>
+
+
+
+													
+					<Label name="$parent_PathLabel1" maxchars="180" font="font_default_text" wordwrap="true" autoresize="true" textalign="left" layer="popup" popable="false" handleinput="false" >
+					<Size><AbsPoint x="180" y="62"/></Size>
+					<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_PathFrame1"><AbsPoint x="6" y="0"/></Anchor></Anchors>
+					</Label>					
+					
+						<Button name="$parent_SpecTree1Increment" inherits="EA_Templates_SpecializationChange" layer="overlay" handleinput="true">
+						<Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parent_SpecTree1SpecializationStep1"><AbsPoint x="25" y="0" /></Anchor></Anchors>
+						<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.Increment" /></EventHandlers>
+						</Button>
+
+						<Button name="$parent_SpecTree1Decrement" inherits="EA_Templates_SpecializationChange" layer="overlay" handleinput="true">
+						<Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parent_SpecTree1Increment"><AbsPoint x="0" y="0" /></Anchor> </Anchors>
+						<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.Decrement" /></EventHandlers>
+						</Button>
+
+						
+						<Button name="$parent_SpecTree1_Clear" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="left" relativePoint="right" relativeTo="$parent_SpecTree1Increment"><AbsPoint x="-2" y="0" /></Anchor></Anchors>								
+						</Button>								
+						
+					<Button name="$parent_CheckBox1_Button" inherits="EA_Button_DefaultCheckBox" handleinput="true" >
+					<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.OnTabLBU" /><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /></EventHandlers>	
+					<Anchors><Anchor point="left" relativePoint="right" relativeTo="$parent_SpecTree1Decrement"><AbsPoint x="-5" y="0" /></Anchor></Anchors>
+					</Button>	
+						
+						
+						<!-- Point 3 -->						
+						<Button name="$parent_Tree1_SpecButton1_1" handleinput="true" inherits="Template_Tactic_Button">   
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep3"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+
+						<Button name="$parent_Tree1_SpecButton1_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep3"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+
+						<Button name="$parent_Tree1_SpecButton1_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep3"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 5 -->	
+						<Button name="$parent_Tree1_SpecButton2_1" handleinput="true" inherits="Template_Tactic_Button">   
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep5"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+
+						<Button name="$parent_Tree1_SpecButton2_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep5"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+						
+						<Button name="$parent_Tree1_SpecButton2_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep5"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 7 -->						
+						<Button name="$parent_Tree1_SpecButton3_1" handleinput="true" inherits="Template_Tactic_Button">   
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep7"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>		
+
+						<Button name="$parent_Tree1_SpecButton3_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep7"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>		
+
+						<Button name="$parent_Tree1_SpecButton3_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep7"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 9 -->							
+						<Button name="$parent_Tree1_SpecButton4_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep9"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+
+						<Button name="$parent_Tree1_SpecButton4_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep9"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>			
+
+						<Button name="$parent_Tree1_SpecButton4_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep9"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 11 -->								
+						<Button name="$parent_Tree1_SpecButton5_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep11"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>		
+
+						<Button name="$parent_Tree1_SpecButton5_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep11"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>
+
+						<Button name="$parent_Tree1_SpecButton5_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep11"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+													
+						<!-- Point 13 -->	
+						<Button name="$parent_Tree1_SpecButton6_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep13"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+						
+						<Button name="$parent_Tree1_SpecButton6_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep13"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>
+
+						<Button name="$parent_Tree1_SpecButton6_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep13"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+						
+						<!-- Point 15 -->	
+						<Button name="$parent_Tree1_SpecButton7_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep15"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+						
+						<Button name="$parent_Tree1_SpecButton7_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep15"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>
+
+						<Button name="$parent_Tree1_SpecButton7_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree1SpecializationStep15"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+
+						
+					<!-- Mastery -->	
+						
+						<Button name="$parent_Tree1_Mastery1" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_SpecTree1SpecializationStep15"><AbsPoint x="20" y="0" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree1_Mastery1_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery1"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						
+						<Button name="$parent_Tree1_Mastery2" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery1"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>	
+						<Label name="$parent_Tree1_Mastery2_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery2"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree1_Mastery3" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery2"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree1_Mastery3_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery3"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree1_Mastery4" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery3"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree1_Mastery4_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery4"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree1_Mastery5" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery4"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree1_Mastery5_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery5"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree1_Mastery6" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery5"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree1_Mastery6_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery6"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree1_Mastery7" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery6"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree1_Mastery7_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery7"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree1_Mastery8" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery7"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>
+						<Label name="$parent_Tree1_Mastery8_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery8"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree1_Mastery9" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery8"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>	
+						<Label name="$parent_Tree1_Mastery9_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery9"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree1_Mastery10" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery9"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>								
+						<Label name="$parent_Tree1_Mastery10_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery10"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>						
+						
+						<Button name="$parent_Tree1_Mastery11" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery10"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>
+						<Label name="$parent_Tree1_Mastery11_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery11"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree1_Mastery12" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery11"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree1_Mastery12_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery12"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree1_Mastery13" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery12"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>								
+						<Label name="$parent_Tree1_Mastery13_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree1_Mastery13"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree1_Mastery14" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree1_Mastery13"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree1_Mastery14_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery14"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+								
+				<!-- Tree -->
+				
+					<Window name="$parent_SpecTree2" layer="default" handleinput="true" inherits="WB_Specialization_TREE">
+							<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBgPicture2"><AbsPoint x="10" y="-150" /></Anchor></Anchors>							
+					</Window>	
+
+					<Window name="$parent_PathFrame2" layer="overlay" handleinput="true" inherits="Path_Icon_Template">
+					<Anchors><Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentBgPicture2"><AbsPoint x="10" y="-35" /></Anchor></Anchors>		
+					</Window>
+
+					<Label name="$parent_PathLabel2" maxchars="180" font="font_default_text" wordwrap="true" autoresize="true" textalign="left" layer="popup" popable="false" handleinput="false" >
+					<Size><AbsPoint x="180" y="62"/></Size>
+					<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_PathFrame2"><AbsPoint x="6" y="0"/></Anchor></Anchors>
+					</Label>									
+					
+					
+						<Button name="$parent_SpecTree2Increment" inherits="EA_Templates_SpecializationChange" layer="overlay" handleinput="true">
+						<Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parent_SpecTree2SpecializationStep1"><AbsPoint x="25" y="0" /></Anchor></Anchors>
+						<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.Increment" /></EventHandlers>
+						</Button>
+
+						<Button name="$parent_SpecTree2Decrement" inherits="EA_Templates_SpecializationChange" layer="overlay" handleinput="true">
+						<Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parent_SpecTree2Increment"><AbsPoint x="0" y="0" /></Anchor> </Anchors>
+						<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.Decrement" /></EventHandlers>
+						</Button>	
+
+					
+						<Button name="$parent_SpecTree2_Clear" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="left" relativePoint="right" relativeTo="$parent_SpecTree2Increment"><AbsPoint x="-2" y="0" /></Anchor></Anchors>								
+						</Button>		
+		
+		
+		
+					<Button name="$parent_CheckBox2_Button" inherits="EA_Button_DefaultCheckBox" handleinput="true" >
+					<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.OnTabLBU" /><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /></EventHandlers>	
+					<Anchors><Anchor point="left" relativePoint="right" relativeTo="$parent_SpecTree2Decrement"><AbsPoint x="-5" y="0" /></Anchor></Anchors>
+					</Button>	
+												
+						<!-- Point 3 -->						
+						<Button name="$parent_Tree2_SpecButton1_1" handleinput="true" inherits="Template_Tactic_Button">   
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep3"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+
+						<Button name="$parent_Tree2_SpecButton1_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep3"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+
+						<Button name="$parent_Tree2_SpecButton1_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep3"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 5 -->	
+						<Button name="$parent_Tree2_SpecButton2_1" handleinput="true" inherits="Template_Tactic_Button">   
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep5"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+
+						<Button name="$parent_Tree2_SpecButton2_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep5"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+						
+						<Button name="$parent_Tree2_SpecButton2_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep5"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 7 -->						
+						<Button name="$parent_Tree2_SpecButton3_1" handleinput="true" inherits="Template_Tactic_Button">   
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep7"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>		
+
+						<Button name="$parent_Tree2_SpecButton3_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep7"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>		
+
+						<Button name="$parent_Tree2_SpecButton3_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep7"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 9 -->							
+						<Button name="$parent_Tree2_SpecButton4_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep9"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+
+						<Button name="$parent_Tree2_SpecButton4_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep9"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>			
+
+						<Button name="$parent_Tree2_SpecButton4_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep9"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 11 -->								
+						<Button name="$parent_Tree2_SpecButton5_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep11"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>		
+
+						<Button name="$parent_Tree2_SpecButton5_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep11"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>
+
+						<Button name="$parent_Tree2_SpecButton5_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep11"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+													
+						<!-- Point 13 -->	
+						<Button name="$parent_Tree2_SpecButton6_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep13"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+						
+						<Button name="$parent_Tree2_SpecButton6_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep13"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>
+
+						<Button name="$parent_Tree2_SpecButton6_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep13"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+						
+						<!-- Point 15 -->	
+						<Button name="$parent_Tree2_SpecButton7_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep15"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+						
+						<Button name="$parent_Tree2_SpecButton7_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep15"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>
+
+						<Button name="$parent_Tree2_SpecButton7_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree2SpecializationStep15"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+
+						
+				<!-- Mastery -->		
+						<Button name="$parent_Tree2_Mastery1" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_SpecTree2SpecializationStep15"><AbsPoint x="20" y="0" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree2_Mastery1_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery1"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree2_Mastery2" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery1"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>	
+						<Label name="$parent_Tree2_Mastery2_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery2"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree2_Mastery3" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery2"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree2_Mastery3_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery3"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree2_Mastery4" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery3"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree2_Mastery4_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery4"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree2_Mastery5" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery4"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree2_Mastery5_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery5"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree2_Mastery6" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery5"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree2_Mastery6_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery6"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree2_Mastery7" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery6"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree2_Mastery7_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery7"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree2_Mastery8" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery7"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>
+						<Label name="$parent_Tree2_Mastery8_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery8"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree2_Mastery9" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery8"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>	
+						<Label name="$parent_Tree2_Mastery9_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery9"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree2_Mastery10" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery9"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>								
+						<Label name="$parent_Tree2_Mastery10_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery10"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree2_Mastery11" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery10"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>
+						<Label name="$parent_Tree2_Mastery11_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery11"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree2_Mastery12" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery1"><AbsPoint x="0" y="0" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree2_Mastery12_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery12"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree2_Mastery13" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery12"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree2_Mastery13_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery13"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree2_Mastery14" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree2_Mastery13"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree2_Mastery14_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree2_Mastery14"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+	
+<!-- SPECC TREE 3 -->										
+					<Window name="$parent_SpecTree3" layer="default" handleinput="true" inherits="WB_Specialization_TREE">
+							<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBgPicture3"><AbsPoint x="10" y="-150" /></Anchor></Anchors>							
+					</Window>	
+
+					<Window name="$parent_PathFrame3" layer="overlay" handleinput="true" inherits="Path_Icon_Template">
+					<Anchors><Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentBgPicture3"><AbsPoint x="10" y="-35" /></Anchor></Anchors>		
+					</Window>
+
+					<Label name="$parent_PathLabel3" maxchars="180" font="font_default_text" wordwrap="true" autoresize="true" textalign="left" layer="popup" popable="false" handleinput="false" >
+					<Size><AbsPoint x="180" y="82"/></Size>
+					<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_PathFrame3"><AbsPoint x="6" y="0"/></Anchor></Anchors>
+					</Label>									
+					
+					
+						<Button name="$parent_SpecTree3Increment" inherits="EA_Templates_SpecializationChange" layer="overlay" handleinput="true">
+						<Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parent_SpecTree3SpecializationStep1"><AbsPoint x="25" y="0" /></Anchor></Anchors>
+						<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.Increment" /></EventHandlers>
+						</Button>
+
+						<Button name="$parent_SpecTree3Decrement" inherits="EA_Templates_SpecializationChange" layer="overlay" handleinput="true">
+						<Anchors><Anchor point="bottom" relativePoint="top" relativeTo="$parent_SpecTree3Increment"><AbsPoint x="0" y="0" /></Anchor> </Anchors>
+						<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.Decrement" /></EventHandlers>
+						</Button>	
+														
+						<Button name="$parent_SpecTree3_Clear" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="left" relativePoint="right" relativeTo="$parent_SpecTree3Increment"><AbsPoint x="-2" y="0" /></Anchor></Anchors>								
+						</Button>		
+		
+						
+						
+					<Button name="$parent_CheckBox3_Button" inherits="EA_Button_DefaultCheckBox" handleinput="true" >
+					<EventHandlers><EventHandler event="OnLButtonUp" function="Warbuilder.OnTabLBU" /><EventHandler event="OnMouseOver" function="Warbuilder.overtooltip" /></EventHandlers>	
+					<Anchors><Anchor point="left" relativePoint="right" relativeTo="$parent_SpecTree3Decrement"><AbsPoint x="-5" y="0" /></Anchor></Anchors>
+					</Button>	
+
+					<!-- Point 3 -->						
+						<Button name="$parent_Tree3_SpecButton1_1" handleinput="true" inherits="Template_Tactic_Button">   
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep3"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+
+						<Button name="$parent_Tree3_SpecButton1_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep3"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+
+						<Button name="$parent_Tree3_SpecButton1_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep3"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 5 -->	
+						<Button name="$parent_Tree3_SpecButton2_1" handleinput="true" inherits="Template_Tactic_Button">   
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep5"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+
+						<Button name="$parent_Tree3_SpecButton2_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep5"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+						
+						<Button name="$parent_Tree3_SpecButton2_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep5"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 7 -->						
+						<Button name="$parent_Tree3_SpecButton3_1" handleinput="true" inherits="Template_Tactic_Button">   
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep7"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>		
+
+						<Button name="$parent_Tree3_SpecButton3_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep7"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>		
+
+						<Button name="$parent_Tree3_SpecButton3_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep7"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 9 -->							
+						<Button name="$parent_Tree3_SpecButton4_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep9"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+
+						<Button name="$parent_Tree3_SpecButton4_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep9"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>			
+
+						<Button name="$parent_Tree3_SpecButton4_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep9"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+								
+						<!-- Point 11 -->								
+						<Button name="$parent_Tree3_SpecButton5_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep11"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>		
+
+						<Button name="$parent_Tree3_SpecButton5_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep11"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>
+
+						<Button name="$parent_Tree3_SpecButton5_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep11"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+													
+						<!-- Point 13 -->	
+						<Button name="$parent_Tree3_SpecButton6_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep13"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+						
+						<Button name="$parent_Tree3_SpecButton6_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep13"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>
+
+						<Button name="$parent_Tree3_SpecButton6_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep13"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+						
+						<!-- Point 15 -->	
+						<Button name="$parent_Tree3_SpecButton7_1" handleinput="true" inherits="Template_Tactic_Button">    
+						<Size><AbsPoint x="61" y="71" /></Size><Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep15"><AbsPoint x="25" y="0" /></Anchor></Anchors>  
+						</Button>	
+						
+						<Button name="$parent_Tree3_SpecButton7_2" handleinput="true" inherits="Template_Ability_Button">   
+						<Size><AbsPoint x="71" y="71" /></Size>
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep15"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>
+
+						<Button name="$parent_Tree3_SpecButton7_3" handleinput="true" inherits="Template_Morale_Button">   
+						<Anchors><Anchor point="center" relativePoint="center" relativeTo="$parent_SpecTree3SpecializationStep15"><AbsPoint x="25" y="0" /></Anchor></Anchors> 
+						</Button>	
+
+						
+						<!-- Mastery -->
+						
+						
+						<Button name="$parent_Tree3_Mastery1" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="$parent_SpecTree3SpecializationStep15"><AbsPoint x="20" y="0" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree3_Mastery1_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery1"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree3_Mastery2" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery1"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>	
+						<Label name="$parent_Tree3_Mastery2_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery2"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree3_Mastery3" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery2"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree3_Mastery3_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery3"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree3_Mastery4" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery3"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree3_Mastery4_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery4"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree3_Mastery5" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery4"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree3_Mastery5_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery5"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree3_Mastery6" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery5"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree3_Mastery6_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery6"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree3_Mastery7" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery6"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree3_Mastery7_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery7"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree3_Mastery8" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery7"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>
+						<Label name="$parent_Tree3_Mastery8_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery8"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree3_Mastery9" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery8"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>	
+						<Label name="$parent_Tree3_Mastery9_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery9"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree3_Mastery10" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery9"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>								
+						<Label name="$parent_Tree3_Mastery10_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery10"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+						
+						<Button name="$parent_Tree3_Mastery11" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery10"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>
+						<Label name="$parent_Tree3_Mastery11_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery11"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree3_Mastery12" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery11"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>		
+						<Label name="$parent_Tree3_Mastery12_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery12"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+
+						<Button name="$parent_Tree3_Mastery13" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery12"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree3_Mastery13_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery13"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Tree3_Mastery14" handleinput="true" layer="overlay" inherits="Template_Mastery_Button">   
+						<Size><AbsPoint x="45" y="45" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Tree3_Mastery13"><AbsPoint x="0" y="-4" /></Anchor></Anchors>							
+						</Button>			
+						<Label name="$parent_Tree3_Mastery14_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tree3_Mastery14"><AbsPoint x="-7" y="7" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>
+												
+	<!--MORALES -->
+	
+	
+	
+	
+	
+						<Button name="$parent_Morale1Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Core1"><AbsPoint x="0" y="3" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Morale1Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale1Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Morale2Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale1Button"><AbsPoint x="-8" y="-6" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Morale2Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale2Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Morale3Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale2Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Morale3Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale3Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Morale4Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale3Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Morale4Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale4Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Morale5Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale4Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Morale5Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale5Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Morale6Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale5Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>						
+						<Label name="$parent_Morale6Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale6Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+	
+						<Button name="$parent_Morale7Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale6Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Morale7Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale7Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+	
+						<Button name="$parent_Morale8Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale7Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Morale8Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale8Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Morale9Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale8Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Morale9Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale9Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Morale10Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale9Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Morale10Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale10Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+
+						<Button name="$parent_Morale11Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale10Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Morale11Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale11Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+
+						<Button name="$parent_Morale12Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale11Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Morale12Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale12Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Morale13Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale12Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Morale13Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale13Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+
+						<Button name="$parent_Morale14Button" handleinput="true" inherits="Template_CoreMoraleButton">   
+						<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parent_Morale13Button"><AbsPoint x="-12" y="0" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Morale14Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Morale14Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+
+						<Label name="$parentMoraleLabel" font="font_clear_small_bold" autoresize="false" textAutoFitMinScale="0.3" textalign="left" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="70" y="35" /></Size>
+						<Anchors><Anchor point="topleft" relativePoint="topleft" relativeTo="$parentTacticLabel"><AbsPoint x="0" y="30" /></Anchor></Anchors>
+						<Color r="225" g="225" b="225" />
+						</Label>	
+
+		<Button name="TestMorale1" handleinput="true" inherits="TestMoraleTemplate" textureScale="0.4" layer="overlay" drawchildrenfirst="true">
+		<Size><AbsPoint x="25" y="25" /></Size>
+		<Anchors><Anchor point="right" relativePoint="left" relativeTo="$parentMoraleLabel"><AbsPoint x="-5" y="-9" /></Anchor></Anchors>  
+         <TexCoords>             
+			<Normal texture="EA_RoundFrame_Highlight" x="0" y="0" />             
+			<NormalHighlit texture="EA_RoundFrame_Highlight" x="0" y="0" />
+            <Pressed texture="EA_RoundFrame_Pressed" x="0" y="0" />             
+			<Disabled texture="EA_RoundFrame" x="0" y="0" />
+         </TexCoords>		
+		</Button>	
+		
+		<Button name="TestMorale2" handleinput="true" inherits="TestMoraleTemplate" textureScale="0.4" layer="overlay" drawchildrenfirst="true">
+		<Size><AbsPoint x="25" y="25" /></Size>
+		<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="TestMorale1Name"><AbsPoint x="5" y="-4" /></Anchor></Anchors>  
+         <TexCoords>             
+			<Normal texture="EA_RoundFrame_Highlight" x="0" y="0" />             
+			<NormalHighlit texture="EA_RoundFrame_Highlight" x="0" y="0" />
+            <Pressed texture="EA_RoundFrame_Pressed" x="0" y="0" />             
+			<Disabled texture="EA_RoundFrame" x="0" y="0" />
+         </TexCoords>		
+		</Button>	
+
+		<Button name="TestMorale3" handleinput="true" inherits="TestMoraleTemplate" textureScale="0.4" layer="overlay" drawchildrenfirst="true">
+		<Size><AbsPoint x="25" y="25" /></Size>
+		<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="TestMorale2Name"><AbsPoint x="5" y="-4" /></Anchor></Anchors>  
+        <TexCoords>             
+			<Normal texture="EA_RoundFrame_Highlight" x="0" y="0" />             
+			<NormalHighlit texture="EA_RoundFrame_Highlight" x="0" y="0" />
+            <Pressed texture="EA_RoundFrame_Pressed" x="0" y="0" />             
+			<Disabled texture="EA_RoundFrame" x="0" y="0" />
+         </TexCoords>		
+		</Button>	
+
+		<Button name="TestMorale4" handleinput="true" inherits="TestMoraleTemplate" textureScale="0.4" layer="overlay" drawchildrenfirst="true">
+		<Size><AbsPoint x="25" y="25" /></Size>
+		<Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="TestMorale3Name"><AbsPoint x="5" y="-4" /></Anchor></Anchors>  
+        <TexCoords>             
+			<Normal texture="EA_RoundFrame_Highlight" x="0" y="0" />             
+			<NormalHighlit texture="EA_RoundFrame_Highlight" x="0" y="0" />
+            <Pressed texture="EA_RoundFrame_Pressed" x="0" y="0" />             
+			<Disabled texture="EA_RoundFrame" x="0" y="0" />
+         </TexCoords>		
+		</Button>			
+						
+	<!-- TACTICS -->
+	
+						<Button name="$parent_Tactic1Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parent_Morale1Button"><AbsPoint x="5" y="-10" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic1Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic1Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>				
+			
+						<Button name="$parent_Tactic2Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic1Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic2Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic2Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+												
+						<Button name="$parent_Tactic3Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic2Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic3Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic3Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic4Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic3Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic4Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic4Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic5Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic4Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic5Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic5Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic6Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic5Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic6Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic6Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic7Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic6Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic7Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic7Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic8Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic7Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic8Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic8Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic9Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic8Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic9Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic9Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>								
+						
+						<Button name="$parent_Tactic10Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic9Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic10Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic10Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic11Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic10Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic11Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic11Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>								
+						
+						<Button name="$parent_Tactic12Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic11Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic12Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic12Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic13Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic12Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic13Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic13Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic14Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic13Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic14Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic14Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic15Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic14Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>					
+						<Label name="$parent_Tactic15Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic15Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+
+						<Button name="$parent_Tactic16Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic15Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic16Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic16Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic17Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic16Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic17Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic17Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+
+						<Button name="$parent_Tactic18Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic17Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic18Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic18Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+
+						<Button name="$parent_Tactic19Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic18Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>							
+						<Label name="$parent_Tactic19Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic19Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+
+						<Button name="$parent_Tactic20Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic19Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>						
+						<Label name="$parent_Tactic20Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic20Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic21Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic20Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic21Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic21Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>		
+						
+						<Button name="$parent_Tactic22Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic21Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>								
+						<Label name="$parent_Tactic22Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic22Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Tactic23Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic22Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic23Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic23Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>							
+						
+						<Button name="$parent_Tactic24Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic23Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic24Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic24Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+
+						<Button name="$parent_Tactic25Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic24Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic25Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic25Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Tactic26Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic25Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>																	
+						<Label name="$parent_Tactic26Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic26Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+
+						<Button name="$parent_Tactic27Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic26Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>							
+						<Label name="$parent_Tactic27Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic27Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+	
+						<Button name="$parent_Tactic28Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic27Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic28Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic28Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+						
+						<Button name="$parent_Tactic29Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="topright" relativePoint="bottomleft" relativeTo="$parent_Tactic28Button"><AbsPoint x="-30" y="18" /></Anchor></Anchors> 
+						</Button>	
+						<Label name="$parent_Tactic29Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic29Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+
+						<Button name="$parent_Tactic30Button" handleinput="true" inherits="Template_CoreTacticButton">   
+						<Anchors><Anchor point="bottomright" relativePoint="topleft" relativeTo="$parent_Tactic29Button"><AbsPoint x="-30" y="-18" /></Anchor></Anchors> 
+						</Button>
+						<Label name="$parent_Tactic30Button_LevelLabel" font="font_clear_small_bold" autoresize="false"textalign="right" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="120" y="35" /></Size>
+						<Anchors><Anchor point="topright" relativePoint="topright" relativeTo="$parent_Tactic30Button"><AbsPoint x="-12" y="12" /></Anchor></Anchors>
+						<Color r="255" g="255" b="255" />
+						</Label>	
+
+						<Label name="$parentTacticLabel" font="font_clear_small_bold" autoresize="false" textAutoFitMinScale="0.3" textalign="left" wordwrap="false" layer="overlay" popable="false" handleinput="false">	
+						<Size><AbsPoint x="60" y="35" /></Size>
+						<Anchors><Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parent"><AbsPoint x="20" y="-50" /></Anchor></Anchors>
+						<Color r="225" g="225" b="225" />
+						</Label>	
+
+	<Button name="TestTactic1" handleinput="true" inherits="TestTacticTemplate" textureScale="0.4" layer="overlay" id="301"drawchildrenfirst="true">
+	<Size><AbsPoint x="25" y="25" /></Size>
+    <Anchors><Anchor point="right" relativePoint="left" relativeTo="$parentTacticLabel"><AbsPoint x="5" y="-10" /></Anchor></Anchors>  
+	</Button>	
+	
+	<Button name="TestTactic2" handleinput="true" inherits="TestTacticTemplate" textureScale="0.4" layer="overlay" id="301"drawchildrenfirst="true">
+	<Size><AbsPoint x="25" y="25" /></Size>
+    <Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="TestTactic1Name"><AbsPoint x="5" y="-4" /></Anchor></Anchors>  
+	</Button>	
+
+	<Button name="TestTactic3" handleinput="true" inherits="TestTacticTemplate" textureScale="0.4" layer="overlay" id="301"drawchildrenfirst="true">
+	<Size><AbsPoint x="25" y="25" /></Size>
+    <Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="TestTactic2Name"><AbsPoint x="5" y="-4" /></Anchor></Anchors>  
+	</Button>	
+
+	<Button name="TestTactic4" handleinput="true" inherits="TestTacticTemplate" textureScale="0.4" layer="overlay" id="301"drawchildrenfirst="true">
+	<Size><AbsPoint x="25" y="25" /></Size>
+    <Anchors><Anchor point="topright" relativePoint="topleft" relativeTo="TestTactic3Name"><AbsPoint x="5" y="-4" /></Anchor></Anchors>  
+	</Button>	
+	
+						
+						
+			</Windows>
+		
+	</Window>
+	
+
+</Windows>
+</Interface>

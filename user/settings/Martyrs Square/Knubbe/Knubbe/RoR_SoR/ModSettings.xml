@@ -9,7 +9,7 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="RoR_SoR_Window" sizeX="300.000000" sizeY="370.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.007337" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-0.000136" yOffset="-162.027328" />
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-346.666809" yOffset="-116.359734" />
             </Anchors>
         </WindowSettings>
     </Windows>
