@@ -4,9 +4,9 @@
 !/user/
 !/user/settings/
 !/user/settings/Martyrs Square/
-!/user/settings/Martyrs Square/Knubbe
-!/user/settings/Martyrs Square/Knubbe/*
-!/user/settings/Martyrs Square/Knubbe/**/*
+!/user/settings/Martyrs Square/*
+!/user/settings/Martyrs Square/**/*
+
 
 !/Interface/
 !/Interface/AddOns/
