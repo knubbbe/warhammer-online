@@ -185,32 +185,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	MiracleGrow2Icon = 
+	Options = 
 	{
-		locked = false,
-		hidden = false,
+		snapDistance = 20,
+		snapWindowsEnabled = true,
 	},
-	LIBGUI_Label43 = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	LIBGUI_Window47 = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_MoraleBar = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	RoR_Window_ScenarioSurrender = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_CareerResourceWindowActionBar = 
+	FloatingScenarioGroup2Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -220,7 +200,27 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	PureTargetUnitFrameHostile = 
+	EA_MoraleBar = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	LIBGUI_Window47 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_CareerResourceWindowActionBar = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	BattlegroupHUDGroup2LayoutWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	FloatingScenarioGroup3Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -230,7 +230,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	FloatingScenarioGroup3Window = 
+	Moth = 
 	{
 		locked = false,
 		hidden = false,
@@ -240,10 +240,10 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTracker = 
+	LIBGUI_Window10 = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	RoR_SoR_Button = 
 	{
@@ -255,17 +255,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Label44 = 
+	LIBGUI_Label42 = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTrackerNub = 
+	FloatingScenarioGroup5Window = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	Moth = 
+	EA_Window_QuestTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -275,27 +275,27 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	LIBGUI_Window10 = 
+	LIBGUI_Label44 = 
 	{
 		locked = false,
-		hidden = true,
+		hidden = false,
 	},
 	EA_Window_ZoneControl = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Label42 = 
+	MenuBarWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_ActionBar4 = 
+	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup6Window = 
+	PureTargetUnitFrameFriendly = 
 	{
 		locked = false,
 		hidden = false,
@@ -310,12 +310,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_CityTracker = 
+	RpBarWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	EA_AssistWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -325,7 +325,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	MiracleGrow2 = 
+	EA_CareerResourceWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -340,7 +340,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	WarbuilderMainWindow = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -360,32 +360,32 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_CareerResourceWindow = 
+	WarbuilderMainWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_AssistWindow = 
+	MiracleGrow2 = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	RpBarWindow = 
+	EA_Window_CityTracker = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	PureTargetUnitFrameFriendly = 
+	FloatingScenarioGroup6Window = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	MenuBarWindow = 
+	EA_ActionBar4 = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup5Window = 
+	MiracleGrow2Icon = 
 	{
 		locked = false,
 		hidden = false,
@@ -410,7 +410,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	BattlegroupHUDGroup2LayoutWindow = 
+	PureTargetUnitFrameHostile = 
 	{
 		locked = false,
 		hidden = false,
@@ -420,15 +420,15 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup2Window = 
+	RoR_Window_ScenarioSurrender = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	Options = 
+	LIBGUI_Label43 = 
 	{
-		snapDistance = 20,
-		snapWindowsEnabled = true,
+		locked = false,
+		hidden = false,
 	},
 }
 

@@ -1,6 +1,6 @@
 EA_Window_Backpack.settings = 
 {
-	currentMode = 2,
+	currentMode = 4,
 	filterPocketNames = 
 	{
 		[6] = L"Pouch 5",

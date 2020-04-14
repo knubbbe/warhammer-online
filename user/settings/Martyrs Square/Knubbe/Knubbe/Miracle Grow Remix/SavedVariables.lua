@@ -4,22 +4,22 @@ MiracleGrow2.vSettings =
 	bRunOnce = true,
 	progress = 
 	{
-		back = 
-		{
-			a = 255,
-			b = 32,
-			g = 48,
-			r = 64,
-		},
+		texture = 1,
 		fill = 
 		{
 			a = 255,
-			b = 192,
-			g = 192,
 			r = 192,
+			g = 192,
+			b = 192,
 		},
 		arrange = 2,
-		texture = 1,
+		back = 
+		{
+			a = 255,
+			r = 64,
+			g = 48,
+			b = 32,
+		},
 	},
 	seedreserve = 4,
 	showtoggle = true,
@@ -36,78 +36,8 @@ MiracleGrow2.vSettings =
 		0,
 	},
 	version = 2.33,
-	boxvis = 
-	{
-		
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		},
-		
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		},
-		
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		},
-		
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		}, 
-		[8] = 
-		{
-			true,
-			true,
-			false,
-			false, 
-			[0] = false,
-		},
-		[10] = 
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		},
-		[9] = 
-		{
-			true,
-			true,
-			true,
-			false, 
-			[0] = false,
-		},
-	},
-	layout = 
-	{
-		dimx = 40,
-		progdimy1 = 0,
-		dimy = 5,
-		border = true,
-		progdimx1 = 24,
-		spacing = 5,
-		count = 4,
-		progdimx2 = 39,
-		arrange = 1,
-		progdimy2 = 5,
-	},
+	showing = true,
+	language = 0,
 	boxlayout = 
 	{
 		
@@ -161,8 +91,78 @@ MiracleGrow2.vSettings =
 			1,
 		},
 	},
-	language = 0,
-	showing = true,
+	layout = 
+	{
+		dimx = 40,
+		progdimy1 = 0,
+		dimy = 5,
+		border = true,
+		progdimx1 = 24,
+		spacing = 5,
+		progdimy2 = 5,
+		progdimx2 = 39,
+		arrange = 1,
+		count = 4,
+	},
+	boxvis = 
+	{
+		
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		},
+		
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		},
+		
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		},
+		
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		}, 
+		[10] = 
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		},
+		[9] = 
+		{
+			true,
+			true,
+			true,
+			false, 
+			[0] = false,
+		},
+		[8] = 
+		{
+			true,
+			true,
+			false,
+			false, 
+			[0] = false,
+		},
+	},
 }
 
 
