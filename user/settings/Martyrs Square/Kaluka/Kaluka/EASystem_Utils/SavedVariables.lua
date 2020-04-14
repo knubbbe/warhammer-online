@@ -1,24 +1,14 @@
 FriendSuggester.Data = 
 {
-	[L"Banockburn"] = 
+	[L"Ushupak"] = 
 	{
 		lockouts = 
 		{
-			1584916801,
-			1584916801,
-			1584916801,
+			1585348692,
+			1585348692,
+			1585348692,
 		},
-		value = 5,
-	},
-	[L"Meurs"] = 
-	{
-		lockouts = 
-		{
-			1585086848,
-			1585086848,
-			1585086848,
-		},
-		value = 5,
+		value = 10,
 	},
 	[L"Azaa"] = 
 	{
@@ -40,16 +30,6 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Zarter"] = 
-	{
-		lockouts = 
-		{
-			1585086531,
-			1585086531,
-			1585086531,
-		},
-		value = 20,
-	},
 	[L"Blankheed"] = 
 	{
 		lockouts = 
@@ -57,16 +37,6 @@ FriendSuggester.Data =
 			1585348692,
 			1585348692,
 			1585348692,
-		},
-		value = 10,
-	},
-	[L"Illuminarya"] = 
-	{
-		lockouts = 
-		{
-			1584916474,
-			1584916474,
-			1584916474,
 		},
 		value = 10,
 	},
@@ -79,16 +49,6 @@ FriendSuggester.Data =
 			1585256637,
 		},
 		value = 10,
-	},
-	[L"Aresios"] = 
-	{
-		lockouts = 
-		{
-			1585348813,
-			1585348813,
-			1585348813,
-		},
-		value = 5,
 	},
 	[L"Wagadabadu"] = 
 	{
@@ -110,56 +70,6 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Cyfen"] = 
-	{
-		lockouts = 
-		{
-			1584916801,
-			1584916801,
-			1584916801,
-		},
-		value = 5,
-	},
-	[L"Farbrormorot"] = 
-	{
-		lockouts = 
-		{
-			1585086531,
-			1585086531,
-			1585086531,
-		},
-		value = 20,
-	},
-	[L"Thandrik"] = 
-	{
-		lockouts = 
-		{
-			1585086531,
-			1585086531,
-			1585086531,
-		},
-		value = 20,
-	},
-	[L"Exerquz"] = 
-	{
-		lockouts = 
-		{
-			1585348692,
-			1585348692,
-			1585348692,
-		},
-		value = 10,
-	},
-	[L"Trayiana"] = 
-	{
-		lockouts = 
-		{
-			1585086848,
-			1585086848,
-			1585086848,
-		},
-		value = 5,
-	},
 	[L"Groundaphobe"] = 
 	{
 		lockouts = 
@@ -167,46 +77,6 @@ FriendSuggester.Data =
 			1585348368,
 			1585348368,
 			1585348368,
-		},
-		value = 5,
-	},
-	[L"Grizzkull"] = 
-	{
-		lockouts = 
-		{
-			1585348092,
-			1585348092,
-			1585348092,
-		},
-		value = 5,
-	},
-	[L"Cariola"] = 
-	{
-		lockouts = 
-		{
-			1585348526,
-			1585348526,
-			1585348526,
-		},
-		value = 5,
-	},
-	[L"Rulkey"] = 
-	{
-		lockouts = 
-		{
-			1585086531,
-			1585086531,
-			1585086531,
-		},
-		value = 20,
-	},
-	[L"Namaskar"] = 
-	{
-		lockouts = 
-		{
-			1585348471,
-			1585348471,
-			1585348471,
 		},
 		value = 5,
 	},
@@ -250,37 +120,7 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Ezya"] = 
-	{
-		lockouts = 
-		{
-			1585086848,
-			1585086848,
-			1585086848,
-		},
-		value = 5,
-	},
 	[L"Sellenea"] = 
-	{
-		lockouts = 
-		{
-			1585348692,
-			1585348692,
-			1585348692,
-		},
-		value = 10,
-	},
-	[L"Lrak"] = 
-	{
-		lockouts = 
-		{
-			1584916475,
-			1584916475,
-			1584916475,
-		},
-		value = 10,
-	},
-	[L"Radrogard"] = 
 	{
 		lockouts = 
 		{
@@ -297,16 +137,6 @@ FriendSuggester.Data =
 			1585348706,
 			1585348706,
 			1585348706,
-		},
-		value = 10,
-	},
-	[L"Ushupak"] = 
-	{
-		lockouts = 
-		{
-			1585348692,
-			1585348692,
-			1585348692,
 		},
 		value = 10,
 	},
@@ -330,45 +160,15 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Chourakus"] = 
+	[L"Jamoo"] = 
 	{
 		lockouts = 
 		{
-			1585348692,
-			1585348692,
-			1585348692,
+			1585348092,
+			1585348092,
+			1585348092,
 		},
-		value = 20,
-	},
-	[L"Drstihgnob"] = 
-	{
-		lockouts = 
-		{
-			1584916801,
-			1584916801,
-			1584916801,
-		},
-		value = 5,
-	},
-	[L"Yleth"] = 
-	{
-		lockouts = 
-		{
-			1585086848,
-			1585086848,
-			1585086848,
-		},
-		value = 5,
-	},
-	[L"Rugur"] = 
-	{
-		lockouts = 
-		{
-			1585086848,
-			1585086848,
-			1585086848,
-		},
-		value = 5,
+		value = 10,
 	},
 	[L"Lovhi"] = 
 	{
@@ -390,23 +190,13 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Neemeaux"] = 
+	[L"Radrogard"] = 
 	{
 		lockouts = 
 		{
-			1584916483,
-			1584916483,
-			1584916483,
-		},
-		value = 10,
-	},
-	[L"Garshaft"] = 
-	{
-		lockouts = 
-		{
-			1584916478,
-			1584916478,
-			1584916478,
+			1585348692,
+			1585348692,
+			1585348692,
 		},
 		value = 10,
 	},
@@ -450,35 +240,35 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Marthak"] = 
+	[L"Exerquz"] = 
 	{
 		lockouts = 
 		{
-			1585348092,
-			1585348092,
-			1585348092,
-		},
-		value = 5,
-	},
-	[L"Turquoiseous"] = 
-	{
-		lockouts = 
-		{
-			1584916801,
-			1584916801,
-			1584916801,
-		},
-		value = 5,
-	},
-	[L"Psychiatrist"] = 
-	{
-		lockouts = 
-		{
-			1584916473,
-			1584916473,
-			1584916473,
+			1585348692,
+			1585348692,
+			1585348692,
 		},
 		value = 10,
+	},
+	[L"Aresios"] = 
+	{
+		lockouts = 
+		{
+			1585348813,
+			1585348813,
+			1585348813,
+		},
+		value = 5,
+	},
+	[L"Momicra"] = 
+	{
+		lockouts = 
+		{
+			1585348692,
+			1585348692,
+			1585348692,
+		},
+		value = 20,
 	},
 	[L"Picture"] = 
 	{
@@ -490,7 +280,17 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Mentallo"] = 
+	[L"Cariola"] = 
+	{
+		lockouts = 
+		{
+			1585348526,
+			1585348526,
+			1585348526,
+		},
+		value = 5,
+	},
+	[L"Grizzkull"] = 
 	{
 		lockouts = 
 		{
@@ -500,25 +300,15 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Jamoo"] = 
+	[L"Brutusbrutalus"] = 
 	{
 		lockouts = 
 		{
-			1585348092,
-			1585348092,
-			1585348092,
+			1585682979,
+			1585682979,
+			1585682979,
 		},
 		value = 10,
-	},
-	[L"Momicra"] = 
-	{
-		lockouts = 
-		{
-			1585348692,
-			1585348692,
-			1585348692,
-		},
-		value = 20,
 	},
 	[L"Rotsnikk"] = 
 	{
@@ -540,15 +330,15 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Onic"] = 
+	[L"Slowbo"] = 
 	{
 		lockouts = 
 		{
-			1584916801,
-			1584916801,
-			1584916801,
+			1585682976,
+			1585682976,
+			1585682976,
 		},
-		value = 5,
+		value = 10,
 	},
 	[L"Gitfok"] = 
 	{
@@ -570,43 +360,43 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Infernape"] = 
+	[L"Mentallo"] = 
 	{
 		lockouts = 
 		{
-			1585086848,
-			1585086848,
-			1585086848,
+			1585348092,
+			1585348092,
+			1585348092,
 		},
 		value = 5,
 	},
-	[L"Twinblur"] = 
+	[L"Marthak"] = 
 	{
 		lockouts = 
 		{
-			1585086531,
-			1585086531,
-			1585086531,
+			1585348092,
+			1585348092,
+			1585348092,
+		},
+		value = 5,
+	},
+	[L"Chourakus"] = 
+	{
+		lockouts = 
+		{
+			1585348692,
+			1585348692,
+			1585348692,
 		},
 		value = 20,
 	},
-	[L"Korkolkhien"] = 
+	[L"Namaskar"] = 
 	{
 		lockouts = 
 		{
-			1584916801,
-			1584916801,
-			1584916801,
-		},
-		value = 5,
-	},
-	[L"Gailik"] = 
-	{
-		lockouts = 
-		{
-			1584916801,
-			1584916801,
-			1584916801,
+			1585348471,
+			1585348471,
+			1585348471,
 		},
 		value = 5,
 	},

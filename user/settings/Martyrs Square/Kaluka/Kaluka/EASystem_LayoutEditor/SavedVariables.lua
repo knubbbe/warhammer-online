@@ -3,7 +3,7 @@ LayoutEditor.Settings =
 	ClosetGoblinOptionWindow = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	TextEntry = 
 	{

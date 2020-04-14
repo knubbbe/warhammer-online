@@ -7,15 +7,15 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="PrimaryTargetLayoutWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="403.000000" yOffset="170.757919" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="39.000000" yOffset="186.757996" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="SecondaryTargetLayoutWindow" sizeX="265.000000" sizeY="167.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.779351" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-437.805450" yOffset="242.075882" />
+                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-432.805450" yOffset="-210.848389" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="223.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
+        <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
             <Anchors />
         </WindowSettings>
     </Windows>

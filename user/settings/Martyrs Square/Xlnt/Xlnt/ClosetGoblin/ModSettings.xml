@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="2.5.6" messagingEnabled="false">
+    <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="1.1" savedVariablesVersion="1.1" />
+    <Windows>
+        <WindowSettings xmlVersion="1.0" name="ClosetGoblinOptionWindow" sizeX="48.000000" sizeY="48.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-57.889053" yOffset="-281.111115" />
+            </Anchors>
+        </WindowSettings>
+    </Windows>
+</UiModuleSettings>

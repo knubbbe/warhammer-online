@@ -3,24 +3,20 @@
     <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="" savedVariablesVersion="" />
     <Windows>
         <WindowSettings xmlVersion="1.0" name="FriendlyTargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
-            <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="PrimaryTargetLayoutWindow" xOffset="0.000000" yOffset="0.000000" />
-            </Anchors>
+            <Anchors />
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="PrimaryTargetLayoutWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="292.000000" yOffset="21.000000" />
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="386.000000" yOffset="37.000000" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="SecondaryTargetLayoutWindow" sizeX="265.000000" sizeY="167.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.779351" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="-347.402832" yOffset="95.999992" />
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-462.805450" yOffset="153.075836" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
-            <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="PrimaryTargetLayoutWindow" xOffset="0.000000" yOffset="0.000000" />
-            </Anchors>
+            <Anchors />
         </WindowSettings>
     </Windows>
 </UiModuleSettings>

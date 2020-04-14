@@ -185,6 +185,21 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
+	MiracleGrow2Icon = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	LIBGUI_Label43 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	LIBGUI_Window47 = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	EA_MoraleBar = 
 	{
 		locked = false,
@@ -200,12 +215,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	Options = 
+	LIBGUI_Image31 = 
 	{
-		snapDistance = 20,
-		snapWindowsEnabled = true,
+		locked = false,
+		hidden = false,
 	},
-	FloatingScenarioGroup2Window = 
+	PureTargetUnitFrameHostile = 
 	{
 		locked = false,
 		hidden = false,
@@ -215,7 +230,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	LIBGUI_Image31 = 
+	FloatingScenarioGroup3Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -225,7 +240,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	BattlegroupHUDGroup2LayoutWindow = 
+	EA_Window_QuestTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -240,37 +255,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	Moth = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	LIBGUI_Window10 = 
-	{
-		locked = false,
-		hidden = true,
-	},
-	EA_Window_QuestTracker = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	PlayerWindow = 
-	{
-		locked = false,
-		hidden = true,
-	},
 	LIBGUI_Label44 = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_Window_ZoneControl = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_ActionBar4 = 
 	{
 		locked = false,
 		hidden = false,
@@ -280,7 +265,37 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup3Window = 
+	Moth = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	PlayerWindow = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	LIBGUI_Window10 = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EA_Window_ZoneControl = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	LIBGUI_Label42 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_ActionBar4 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	FloatingScenarioGroup6Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -295,12 +310,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup5Window = 
+	EA_Window_CityTracker = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	MenuBarWindow = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -310,7 +325,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	PureTargetUnitFrameFriendly = 
+	MiracleGrow2 = 
 	{
 		locked = false,
 		hidden = false,
@@ -325,7 +340,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	RpBarWindow = 
+	WarbuilderMainWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -355,22 +370,22 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	RpBarWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_CityTracker = 
+	PureTargetUnitFrameFriendly = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup6Window = 
+	MenuBarWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Label42 = 
+	FloatingScenarioGroup5Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -395,7 +410,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	PureTargetUnitFrameHostile = 
+	BattlegroupHUDGroup2LayoutWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -405,15 +420,15 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Window47 = 
+	FloatingScenarioGroup2Window = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Label43 = 
+	Options = 
 	{
-		locked = false,
-		hidden = false,
+		snapDistance = 20,
+		snapWindowsEnabled = true,
 	},
 }
 

@@ -189,9 +189,9 @@
         <KeyBinding action="TARGET_GROUP_MEMBER_4_PET" key="Left Alt+F5" />
         <KeyBinding action="TARGET_GROUP_MEMBER_5_PET" key="Left Alt+F6" />
         <KeyBinding action="TARGET_GROUP_MEMBER_6_PET" key="Left Alt+F7" />
-        <KeyBinding action="NEAREST_ENEMY_TARGET" key="Tab" />
+        <KeyBinding action="NEAREST_ENEMY_TARGET" key="NONE" />
         <KeyBinding action="NEAREST_FRIENDLY_TARGET" key="Left Control+N" />
-        <KeyBinding action="CYCLE_ENEMY_TARGET" key="NONE" />
+        <KeyBinding action="CYCLE_ENEMY_TARGET" key="Tab" />
         <KeyBinding action="NEXT_ENEMY_TARGET" key="Left Shift+N" />
         <KeyBinding action="NEXT_FRIENDLY_TARGET" key="Left Control+Tab" />
         <KeyBinding action="PREVIOUS_ENEMY_TARGET" key="Left Shift+Tab" />

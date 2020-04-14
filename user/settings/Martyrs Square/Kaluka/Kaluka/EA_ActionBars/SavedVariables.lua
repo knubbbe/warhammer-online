@@ -70,9 +70,17 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4620,
 		},
+		[1682] = 
+		{
+			icon = 2419,
+		},
 		[245] = 
 		{
 			icon = 5004,
+		},
+		[1678] = 
+		{
+			icon = 2561,
 		},
 		[1532] = 
 		{
@@ -267,7 +275,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Book of Binding",
 				broken = false,
-				timestamp = 242,
+				timestamp = 989,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -297,7 +305,7 @@ EA_ActionBars_DataCache =
 					{
 						type = 3,
 						value = 0,
-						cooldownTimeLeft = 0,
+						cooldownTimeLeft = 3289.63,
 						reference = 246,
 						totalCooldownTime = 3600,
 					},
@@ -579,7 +587,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Enslaved Pack Mule",
 				broken = false,
-				timestamp = 242,
+				timestamp = 989,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -694,7 +702,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Initiate's Draught of Allaying",
 				broken = false,
-				timestamp = 242,
+				timestamp = 989,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 

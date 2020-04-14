@@ -1,0 +1,569 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    <Button name="MiracleGrow2Button" inherits="EA_Button_Default" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true"  texturescale="0.37">
+      <Size>
+        <AbsPoint x="25" y="25" />
+      </Size>
+      <TexSlices>
+        <Normal id="IconFrame-1" />
+        <Pressed id="IconFrame-1" />
+        <Disabled id="IconFrame-1" />
+      </TexSlices>
+      <Windows>
+        <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.37">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" />
+          </Anchors>
+        </DynamicImage>
+      </Windows>
+      <EventHandlers>
+        <EventHandler event="OnRButtonUp" function="MiracleGrow2.onRClick" />
+      </EventHandlers>
+    </Button>
+
+    <Window name="MiracleGrow2Icon" savesettings="true">
+      <Size>
+        <AbsPoint x="40" y="40" />
+      </Size>
+      <Anchors>
+        <Anchor point="center" relativePoint="center" />
+      </Anchors>
+      <Windows>
+        <DynamicImage name="$parentFrame" texture="EA_HUD_01" slice="Portrait-Frame" popable="false" layer="overlay" texturescale="0.4" handleinput="false">
+          <Size>
+            <AbsPoint x="40" y="40" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" />
+          </Anchors>
+        </DynamicImage>
+        <CircleImage name="$parentLight" layer="popup" texture="EA_TintableImage" handleinput="false" alpha="0">
+          <Size>
+            <AbsPoint x="35" y="35" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" />
+          </Anchors>
+        </CircleImage>
+        <CircleImage name="$parentIcon" layer="secondary" texture="EA_Cultivating01_d5" texturescale="0.18" handleinput="false">
+          <Size>
+            <AbsPoint x="35" y="35" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" />
+          </Anchors>
+          <TexCoords x="855" y="620"/>
+        </CircleImage>
+      </Windows>
+      <EventHandlers>
+        <EventHandler event="OnLButtonUp" function="MiracleGrow2.ToggleClick" />
+        <EventHandler event="OnRButtonUp" function="MiracleGrow2.ToggleRClick" />
+        <EventHandler event="OnMouseOver" function="MiracleGrow2.ToggleHover" />
+        <EventHandler event="OnMouseOverEnd" function="MiracleGrow2.ToggleNoHover" />
+      </EventHandlers>	
+    </Window>
+
+    
+    <Button name="MiracleGrow2HarvestRptButton" inherits="EA_Button_Default">
+      <Size>
+        <AbsPoint x="28" y="28" />
+      </Size>
+      <Windows>
+        <DynamicImage name="$parentFrame" handleinput="false" layer="default" texture="EA_Cultivating01_d5"  texturescale="0.37" slice="IconFrame-1">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="bottomleft" />
+          </Anchors>
+        </DynamicImage>
+        <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.125">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="bottomleft" />
+          </Anchors>
+        </DynamicImage>
+        <DynamicImage name="$parentRpt" handleinput="false" layer="overlay" texture="EA_Guild"  texturescale="0.2" slice="adminbutton-base">
+          <Size>
+            <AbsPoint x="12" y="12" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topright" />
+          </Anchors>
+        </DynamicImage>
+      </Windows>
+      <EventHandlers>
+        <EventHandler event="OnRButtonUp" function="MiracleGrow2.onRClick" />
+      </EventHandlers>
+    </Button>
+    
+    <Button name="MiracleGrow2Repeat" inherits="EA_Button_Default" backgroundtexture="EA_Guild" highlighttexture="EA_Guild" texturescale="0.41">
+      <Size>
+        <AbsPoint x="25" y="25" />
+      </Size>
+      <TexSlices>
+        <Normal id="adminbutton-base" />
+        <Pressed id="adminbutton-base" />
+        <Disabled id="adminbutton-base" />
+      </TexSlices>
+      <EventHandlers>
+        <EventHandler event="OnRButtonUp" function="MiracleGrow2.onRClick" />
+      </EventHandlers>
+    </Button>
+
+    <Window name="MiracleGrow2Line">
+      <Size>
+        <AbsPoint x="180" y="30" />
+      </Size>
+      <EventHandlers>
+        <EventHandler event="OnRButtonUp" function="MiracleGrow2.onRClick" />
+      </EventHandlers>
+      <Windows>
+        <Button name="$parentButtonSeed" inherits="MiracleGrow2Button" >
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.onClickSeed" />
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.onHoverSeed" />
+          </EventHandlers>	
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" />
+          </Anchors>
+        </Button>
+        <Button name="$parentButtonSoil" inherits="MiracleGrow2Button" >
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.onClickSoil" />
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.onHoverSoil" />
+          </EventHandlers>	
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentButtonSeed" >
+	            <AbsPoint x="2" y="0" />
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Button name="$parentButtonWater" inherits="MiracleGrow2Button" >
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.onClickWater" />
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.onHoverWater" />
+          </EventHandlers>	
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentButtonSoil" >
+	            <AbsPoint x="2" y="0" />
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Button name="$parentButtonNutrient" inherits="MiracleGrow2Button" >
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.onClickNutrient" />
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.onHoverNutrient" />
+          </EventHandlers>	
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentButtonWater" >
+	            <AbsPoint x="2" y="0" />
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Button name="$parentHarvest" inherits="MiracleGrow2Button" gameactionbutton="left" id="1">
+          <EventHandlers>
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.onHHover" />
+            <EventHandler event="OnLButtonDown" function="MiracleGrow2.onHClick" />
+          </EventHandlers>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentButtonNutrient">
+              <AbsPoint x="10" y="0" />
+            </Anchor>
+          </Anchors>
+          <Sounds>
+            <Sound event="OnLButtonUp" script="Sound.Play(Sound.CULTIVATING_HARVEST_CROP)" />
+          </Sounds>
+        </Button>
+        <Button name="$parentHarvestRepeat" inherits="MiracleGrow2HarvestRptButton" gameactionbutton="left" id="2">
+          <EventHandlers>
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.onHHover" />
+            <EventHandler event="OnLButtonDown" function="MiracleGrow2.onHClick" />
+          </EventHandlers>
+          <Anchors>
+            <Anchor point="bottomright" relativePoint="bottomleft" relativeTo="$parentHarvest">
+              <AbsPoint x="15" y="0" />
+            </Anchor>
+          </Anchors>
+          <Sounds>
+            <Sound event="OnLButtonUp" script="Sound.Play(Sound.CULTIVATING_HARVEST_CROP)" />
+          </Sounds>
+        </Button>
+        <Button name="$parentRepeat" inherits="MiracleGrow2Repeat">
+          <EventHandlers>
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.onHoverRepeat" />
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.onRepeat" />
+          </EventHandlers>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentHarvest">
+              <AbsPoint x="15" y="0" />
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Label name="$parentStage" inherits="DefaultWindowSmallText" textalign="right" handleinput="false" layer="popup">
+          <Size>
+            <AbsPoint x="40" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentButtonNutrient">
+	            <AbsPoint x="0" y="5" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentTime" inherits="DefaultWindowSmallText" textalign="right" handleinput="false" layer="popup">
+          <Size>
+            <AbsPoint x="40" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentStage">
+	            <AbsPoint x="2" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentPlotNum" inherits="DefaultWindowSmallText" handleinput="false" layer="popup">
+          <Size>
+            <AbsPoint x="15" y="20" />
+          </Size>
+        </Label>
+        <Window name="$parentBar" layer="secondary" handleinput="false">
+          <Windows>
+            <DynamicImage name="$parentFill" popable="false"/>
+            <DynamicImage name="$parentBack" popable="false"/>
+          </Windows>
+        </Window>
+      </Windows>
+    </Window>
+
+    <Window name="MiracleGrow2" savesettings="true">
+      <Size>
+        <AbsPoint x="210" y="140" />
+      </Size>	
+      <Anchors>
+        <Anchor point="center" relativePoint="center" >
+          <AbsPoint x="0" y="0" />
+        </Anchor>
+      </Anchors>
+
+      <EventHandlers>
+        <EventHandler event="OnInitialize" function="MiracleGrow2.Initialize" />
+      </EventHandlers>
+      <Windows>
+        <Window name="$parentBackground" inherits="EA_Window_DefaultFrame" handleinput="true" layer="background">
+          <EventHandlers>
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.onMouseOver" />
+            <EventHandler event="OnRButtonUp" function="MiracleGrow2.onRClick" />
+          </EventHandlers>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo=""/>
+            <Anchor point="bottomright" relativePoint="bottomright" relativeTo=""/>
+          </Anchors>
+        </Window>
+
+        <Window name="$parentPlant1" inherits="MiracleGrow2Line" id="1">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="12" y="10" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parentPlant2" inherits="MiracleGrow2Line" id="2">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentPlant1" />
+          </Anchors>
+        </Window>
+        <Window name="$parentPlant3" inherits="MiracleGrow2Line" id="3">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentPlant2" />
+          </Anchors>
+        </Window>
+        <Window name="$parentPlant4" inherits="MiracleGrow2Line" id="4">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentPlant3" />
+          </Anchors>
+        </Window>
+        <DynamicImage name="$parentHSep1" handleinput="false" layer="background" texture="shared_01" poppable="false">
+          <Size>
+            <AbsPoint x="58" y="4" />
+          </Size>
+          <TexCoords x="4" y="0"/>
+        </DynamicImage>
+        <DynamicImage name="$parentHSep2" handleinput="false" layer="background" texture="shared_01" poppable="false">
+          <Size>
+            <AbsPoint x="58" y="4" />
+          </Size>
+          <TexCoords x="4" y="0"/>
+        </DynamicImage>
+        <DynamicImage name="$parentHSep3" handleinput="false" layer="background" texture="shared_01" poppable="false">
+          <Size>
+            <AbsPoint x="58" y="4" />
+          </Size>
+          <TexCoords x="4" y="0"/>
+        </DynamicImage>
+        <DynamicImage name="$parentVSep1" handleinput="false" layer="background" texture="shared_01" poppable="false">
+          <Size>
+            <AbsPoint x="4" y="20" />
+          </Size>
+          <TexCoords x="0" y="4"/>
+        </DynamicImage>
+        <DynamicImage name="$parentVSep2" handleinput="false" layer="background" texture="shared_01" poppable="false">
+          <Size>
+            <AbsPoint x="4" y="20" />
+          </Size>
+          <TexCoords x="0" y="4"/>
+        </DynamicImage>
+        <DynamicImage name="$parentVSep3" handleinput="false" layer="background" texture="shared_01" poppable="false">
+          <Size>
+            <AbsPoint x="4" y="20" />
+          </Size>
+          <TexCoords x="0" y="4"/>
+        </DynamicImage>
+      </Windows>
+    </Window>
+
+    <Label name="MiracleGrow2Label"  font="font_chat_text" maxchars="100" textalign="left" autoresize="false" wordwrap="false" warnOnTextCropped="false">
+      <Color r="255" g="255" b="255" a="255" />
+    </Label>
+
+    <Window name="MiracleGrow2RepeatTip"  inherits="TooltipBase" >
+      <Size>
+        <AbsPoint x="370" y="133" />
+      </Size>
+      <Windows>
+        <Window name="$parentBackground" inherits="EA_Window_DefaultTooltipBackground">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" />
+            <Anchor point="bottomright" relativePoint="bottomright">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Label name="$parentTitle" inherits="MiracleGrow2Label" font="font_clear_medium_bold">
+          <Size>
+            <AbsPoint x="370" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="10" y="10" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentSeedTitle" inherits="MiracleGrow2Label">
+          <Size>
+            <AbsPoint x="90" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTitle">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentSeed" inherits="MiracleGrow2Label">
+          <Size>
+            <AbsPoint x="235" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentSeedTitle">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentSeedCount" inherits="MiracleGrow2Label" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentSeed">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentSoilTitle" inherits="MiracleGrow2Label">
+          <Size>
+            <AbsPoint x="90" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSeedTitle">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentSoil" inherits="MiracleGrow2Label">
+          <Size>
+            <AbsPoint x="235" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentSoilTitle">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentSoilCount" inherits="MiracleGrow2Label" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentSoil">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentWaterTitle" inherits="MiracleGrow2Label">
+          <Size>
+            <AbsPoint x="90" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSoilTitle">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentWater" inherits="MiracleGrow2Label" >
+          <Size>
+            <AbsPoint x="235" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentWaterTitle">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentWaterCount" inherits="MiracleGrow2Label" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentWater">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentNutTitle" inherits="MiracleGrow2Label">
+          <Size>
+            <AbsPoint x="90" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentWaterTitle">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentNut" inherits="MiracleGrow2Label">
+          <Size>
+            <AbsPoint x="235" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentNutTitle">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentNutCount" inherits="MiracleGrow2Label" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentNut">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+      </Windows>
+    </Window>
+
+    <Button name="MiracleGrow2ContextItem" inherits="EA_Button_DefaultMenuButton" textalign="left" autoresize="false">
+      <EventHandlers>
+        <EventHandler event="OnLButtonUp" function="MiracleGrow2.ContextItem" />
+        <EventHandler event="OnMouseOver" function="MiracleGrow2.ContextHover" />
+      </EventHandlers>
+      <Size>
+        <AbsPoint x="410" y="28" />
+      </Size>
+      <Windows>
+        <Label name="$parentCount" font="font_clear_medium" maxchars="5" textalign="right" handleinput="false">
+          <Size>
+            <AbsPoint x="50" y="28" />
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="2" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentLevel" font="font_clear_medium" maxchars="6" textalign="right" handleinput="false">
+          <Size>
+            <AbsPoint x="62" y="28" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentCount" />
+          </Anchors>
+        </Label>
+        <Label name="$parentItem" font="font_clear_medium" maxchars="100" textalign="left" handleinput="false" warnOnTextCropped="false">
+          <Size>
+            <AbsPoint x="290" y="28" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentLevel">
+              <AbsPoint x="5" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+      </Windows>
+    </Button>
+
+    <Button name="MiracleGrow2ContextItemCIT" inherits="EA_Button_DefaultMenuButton" textalign="left" autoresize="false">
+      <EventHandlers>
+        <EventHandler event="OnLButtonUp" function="MiracleGrow2.ContextItem" />
+        <EventHandler event="OnMouseOver" function="MiracleGrow2.ContextHover" />
+      </EventHandlers>
+      <Size>
+        <AbsPoint x="410" y="24" />
+      </Size>
+      <Windows>
+        <Label name="$parentCount" font="font_clear_medium" maxchars="5" textalign="right" handleinput="false">
+          <Size>
+            <AbsPoint x="50" y="24" />
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="2" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentLevel" font="font_clear_medium" maxchars="6" textalign="right" handleinput="false">
+          <Size>
+            <AbsPoint x="62" y="24" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentCount" />
+          </Anchors>
+        </Label>
+        <Label name="$parentEffect" font="font_clear_medium" maxchars="100" textalign="left" handleinput="false" warnOnTextCropped="false">
+          <Size>
+            <AbsPoint x="190" y="24" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentLevel">
+              <AbsPoint x="5" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentItem" font="font_clear_medium" maxchars="100" textalign="left" handleinput="false" warnOnTextCropped="false">
+          <Size>
+            <AbsPoint x="100" y="24" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentEffect">
+              <AbsPoint x="5" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+      </Windows>
+    </Button>
+    
+  </Windows>
+</Interface>

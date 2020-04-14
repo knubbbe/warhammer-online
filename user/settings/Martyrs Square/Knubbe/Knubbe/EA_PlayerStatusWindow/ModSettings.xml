@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="PlayerWindow" sizeX="270.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.053499" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="8.000000" yOffset="22.000000" />
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="335.000000" yOffset="81.000008" />
             </Anchors>
         </WindowSettings>
     </Windows>

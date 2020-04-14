@@ -1,0 +1,902 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    <Button name="MiracleGrow2LayoutSeed" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+      <Size>
+        <AbsPoint x="25" y="25" />
+      </Size>
+      <TexSlices>
+        <Normal id="IconFrame-1" />
+        <Pressed id="IconFrame-1" />
+        <Disabled id="IconFrame-1" />
+      </TexSlices>
+      <Windows>
+        <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.45">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" />
+          </Anchors>
+          <TexCoords x="455" y="447"/>
+        </DynamicImage>
+      </Windows>
+    </Button>
+    
+    <Button name="MiracleGrow2LayoutSoil" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+      <Size>
+        <AbsPoint x="25" y="25" />
+      </Size>
+      <TexSlices>
+        <Normal id="IconFrame-1" />
+        <Pressed id="IconFrame-1" />
+        <Disabled id="IconFrame-1" />
+      </TexSlices>
+      <Windows>
+        <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.37" slice="Dirt">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" />
+          </Anchors>
+        </DynamicImage>
+      </Windows>
+    </Button>
+    
+    <Button name="MiracleGrow2LayoutWater" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+      <Size>
+        <AbsPoint x="25" y="25" />
+      </Size>
+      <TexSlices>
+        <Normal id="IconFrame-1" />
+        <Pressed id="IconFrame-1" />
+        <Disabled id="IconFrame-1" />
+      </TexSlices>
+      <Windows>
+        <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.37" slice="WaterDrop">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" />
+          </Anchors>
+        </DynamicImage>
+      </Windows>
+    </Button>
+
+    <Button name="MiracleGrow2LayoutNut" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+      <Size>
+        <AbsPoint x="25" y="25" />
+      </Size>
+      <TexSlices>
+        <Normal id="IconFrame-1" />
+        <Pressed id="IconFrame-1" />
+        <Disabled id="IconFrame-1" />
+      </TexSlices>
+      <Windows>
+        <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.37" slice="GreenCross">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" />
+          </Anchors>
+        </DynamicImage>
+      </Windows>
+    </Button>
+
+    <Button name="MiracleGrow2LayoutHarvest" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+      <Size>
+        <AbsPoint x="25" y="25" />
+      </Size>
+      <TexSlices>
+        <Normal id="IconFrame-1" />
+        <Pressed id="IconFrame-1" />
+        <Disabled id="IconFrame-1" />
+      </TexSlices>
+      <Windows>
+        <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.125">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" />
+          </Anchors>
+          <TexCoords x="829" y="0"/>
+        </DynamicImage>
+      </Windows>
+    </Button>
+    
+    <Button name="MiracleGrow2LayoutHRepeat" handleinput="false">
+      <Size>
+        <AbsPoint x="28" y="28" />
+      </Size>
+      <Windows>
+        <DynamicImage name="$parentFrame" handleinput="false" layer="default" texture="EA_Cultivating01_d5"  texturescale="0.37" slice="IconFrame-1">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="bottomleft" />
+          </Anchors>
+        </DynamicImage>
+        <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.125">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="bottomleft" />
+          </Anchors>
+          <TexCoords x="829" y="0"/>
+        </DynamicImage>
+        <DynamicImage name="$parentRpt" handleinput="false" layer="overlay" texture="EA_Guild"  texturescale="0.2" slice="adminbutton-base">
+          <Size>
+            <AbsPoint x="12" y="12" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topright" />
+          </Anchors>
+        </DynamicImage>
+      </Windows>
+    </Button>
+    
+    <Button name="MiracleGrow2LayoutRepeat" backgroundtexture="EA_Guild" highlighttexture="EA_Guild" texturescale="0.41" handleinput="false">
+      <Size>
+        <AbsPoint x="25" y="25" />
+      </Size>
+      <TexSlices>
+        <Normal id="adminbutton-base" />
+        <Pressed id="adminbutton-base" />
+        <Disabled id="adminbutton-base" />
+      </TexSlices>
+    </Button>
+
+    <Label name="MiracleGrow2LayoutTimer" inherits="DefaultWindowSmallText" textalign="right" handleinput="false">
+      <Size>
+        <AbsPoint x="40" y="20" />
+      </Size>
+    </Label>
+
+    <Label name="MiracleGrow2LayoutPlotNum" inherits="DefaultWindowSmallText" handleinput="false">
+      <Size>
+        <AbsPoint x="15" y="20" />
+      </Size>
+    </Label>
+
+    <Window name="MiracleGrow2LayoutBlock">
+      <EventHandlers>
+        <EventHandler event="OnLButtonDown" function="MiracleGrow2.LayoutStartDrag"/>
+        <EventHandler event="OnMouseOver" function="MiracleGrow2.LayoutIdentify"/>
+      </EventHandlers>
+    </Window>
+
+    <Window name="MiracleGrow2Check">
+      <Size>
+        <AbsPoint x="20" y="40"/>
+      </Size>
+      <Windows>
+        <DynamicImage name="$parent1" texture="EA_TintableImage" layer="background" handleinput="false">
+          <Size>
+            <AbsPoint x="10" y="10"/>
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </DynamicImage>
+        <DynamicImage name="$parent3" texture="EA_TintableImage" layer="background" handleinput="false">
+          <Size>
+            <AbsPoint x="10" y="10"/>
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="20"/>
+            </Anchor>
+          </Anchors>
+        </DynamicImage>
+        <DynamicImage name="$parent6" texture="EA_TintableImage" layer="background" handleinput="false">
+          <Size>
+            <AbsPoint x="10" y="10"/>
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="10" y="10"/>
+            </Anchor>
+          </Anchors>
+        </DynamicImage>
+        <DynamicImage name="$parent8" texture="EA_TintableImage" layer="background" handleinput="false">
+          <Size>
+            <AbsPoint x="10" y="10"/>
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="10" y="30"/>
+            </Anchor>
+          </Anchors>
+        </DynamicImage>
+      </Windows>
+    </Window>
+
+    <Window name="MiracleGrow2Checker">
+      <Size>
+        <AbsPoint x="140" y="40"/>
+      </Size>
+      <Windows>
+        <Window name="$parent1" inherits="MiracleGrow2Check">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parent2" inherits="MiracleGrow2Check">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="20" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parent3" inherits="MiracleGrow2Check">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="40" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parent4" inherits="MiracleGrow2Check">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="60" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parent5" inherits="MiracleGrow2Check">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="80" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parent6" inherits="MiracleGrow2Check">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="100" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parent7" inherits="MiracleGrow2Check">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="120" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+      </Windows>
+    </Window>
+    
+    <Window name="MiracleGrow2BarTint">
+      <Size>
+        <AbsPoint x="450" y="39"/>
+      </Size>
+      <Windows>
+        <Label name="$parentLabel" inherits="IraConfigHeading" layer="secondary">
+          <Size>
+            <AbsPoint x="145" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="left" relativePoint="left">
+              <AbsPoint x="5" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <DynamicImage name="$parentTest" popable="false" layer="primary" handleinput="false">
+          <Size>
+            <AbsPoint x="140" y="40"/>
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft"/>
+          </Anchors>
+        </DynamicImage>
+        <Window name="$parentBG" inherits="MiracleGrow2Checker" layer="background" handleinput="false">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft"/>
+          </Anchors>
+        </Window>
+        <EditBox name="$parentR" inherits="IraConfigNumEdit" id="1">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutBarCChanged"/>
+          </EventHandlers>
+        </EditBox>
+        <EditBox name="$parentG" inherits="IraConfigNumEdit" id="2">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentR">
+              <AbsPoint x="25" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutBarCChanged"/>
+          </EventHandlers>
+        </EditBox>
+        <EditBox name="$parentB" inherits="IraConfigNumEdit" id="3">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentG">
+              <AbsPoint x="25" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutBarCChanged"/>
+          </EventHandlers>
+        </EditBox>
+        <EditBox name="$parentA" inherits="IraConfigNumEdit" id="4">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentB">
+              <AbsPoint x="25" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutBarCChanged"/>
+          </EventHandlers>
+        </EditBox>
+      </Windows>
+    </Window>
+
+
+    <Window name="MiracleGrow2LayoutSettingsTemplate">
+      <Size>
+        <AbsPoint x="215" y="150"/>
+      </Size>
+      <Anchors>
+        <Anchor point="topright" relativePoint="topright">
+          <AbsPoint x="0" y="100" />
+        </Anchor>
+      </Anchors>
+      <Windows>
+        <Label name="$parentDimLabel" inherits="IraConfigHeading">
+          <Size>
+            <AbsPoint x="200" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentDimXLabel" inherits="IraConfigLabel" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentDimLabel">
+              <AbsPoint x="0" y="5"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <EditBox name="$parentDimX" inherits="IraConfigNumEdit">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimXLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutDimChanged"/>
+          </EventHandlers>
+        </EditBox>
+        <Label name="$parentDimYLabel" inherits="IraConfigLabel" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimX">
+              <AbsPoint x="20" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <EditBox name="$parentDimY" inherits="IraConfigNumEdit">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimYLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutDimChanged"/>
+          </EventHandlers>
+        </EditBox>
+
+        <Label name="$parentVisLabel" inherits="IraConfigHeading">
+          <Size>
+            <AbsPoint x="200" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentDimLabel">
+              <AbsPoint x="0" y="40"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Window name="$parentVisTarget">
+          <Size>
+            <AbsPoint x="40" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentVisLabel">
+              <AbsPoint x="5" y="25"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.LayoutIdentify"/>
+          </EventHandlers>
+        </Window>
+        <Button name="$parentVisPlus" inherits="EA_Button_DefaultPlus">
+          <Anchors>
+            <Anchor point="right" relativePoint="bottomleft" relativeTo="$parentVisTarget">
+              <AbsPoint x="1" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.NextVis" />
+          </EventHandlers>
+        </Button>
+        <Button name="$parentVisMinus" inherits="EA_Button_DefaultMinus">
+          <Anchors>
+            <Anchor point="right" relativePoint="topleft" relativeTo="$parentVisTarget">
+              <AbsPoint x="1" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.PrevVis" />
+          </EventHandlers>
+        </Button>
+        
+        <Button name="$parentStage0" inherits="EA_Button_DefaultCheckBox" id="0">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentVisTarget">
+              <AbsPoint x="25" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Button name="$parentStage0Lbl" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="top" relativePoint="bottom" relativeTo="$parentStage0">
+              <AbsPoint x="0" y="-2"/>
+            </Anchor>
+          </Anchors>
+          <TexSlices>
+            <Normal id="IconFrame-1" />
+            <Pressed id="IconFrame-1" />
+            <Disabled id="IconFrame-1" />
+          </TexSlices>
+          <Windows>
+            <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="1">
+              <Size>
+                <AbsPoint x="25" y="25" />
+              </Size>
+              <Anchors>
+                <Anchor point="center" relativePoint="center" />
+              </Anchors>
+              <TexCoords x="813" y="200"/>
+            </DynamicImage>
+          </Windows>
+        </Button>
+        <Button name="$parentStage1" inherits="EA_Button_DefaultCheckBox" id="1">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentStage0">
+              <AbsPoint x="7" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Button name="$parentStage1Lbl" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="top" relativePoint="bottom" relativeTo="$parentStage1">
+              <AbsPoint x="0" y="-2"/>
+            </Anchor>
+          </Anchors>
+          <TexSlices>
+            <Normal id="IconFrame-1" />
+            <Pressed id="IconFrame-1" />
+            <Disabled id="IconFrame-1" />
+          </TexSlices>
+          <Windows>
+            <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.45">
+              <Size>
+                <AbsPoint x="25" y="25" />
+              </Size>
+              <Anchors>
+                <Anchor point="center" relativePoint="center" />
+              </Anchors>
+              <TexCoords x="529" y="373"/>
+            </DynamicImage>
+          </Windows>
+        </Button>
+        <Button name="$parentStage2" inherits="EA_Button_DefaultCheckBox" id="2">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentStage1">
+              <AbsPoint x="7" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Button name="$parentStage2Lbl" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="top" relativePoint="bottom" relativeTo="$parentStage2">
+              <AbsPoint x="0" y="-2"/>
+            </Anchor>
+          </Anchors>
+          <TexSlices>
+            <Normal id="IconFrame-1" />
+            <Pressed id="IconFrame-1" />
+            <Disabled id="IconFrame-1" />
+          </TexSlices>
+          <Windows>
+            <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.45">
+              <Size>
+                <AbsPoint x="25" y="25" />
+              </Size>
+              <Anchors>
+                <Anchor point="center" relativePoint="center" />
+              </Anchors>
+              <TexCoords x="529" y="447"/>
+            </DynamicImage>
+          </Windows>
+        </Button>
+        <Button name="$parentStage3" inherits="EA_Button_DefaultCheckBox" id="3">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentStage2">
+              <AbsPoint x="7" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Button name="$parentStage3Lbl" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="top" relativePoint="bottom" relativeTo="$parentStage3">
+              <AbsPoint x="0" y="-2"/>
+            </Anchor>
+          </Anchors>
+          <TexSlices>
+            <Normal id="IconFrame-1" />
+            <Pressed id="IconFrame-1" />
+            <Disabled id="IconFrame-1" />
+          </TexSlices>
+          <Windows>
+            <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.45">
+              <Size>
+                <AbsPoint x="25" y="25" />
+              </Size>
+              <Anchors>
+                <Anchor point="center" relativePoint="center" />
+              </Anchors>
+              <TexCoords x="455" y="447"/>
+            </DynamicImage>
+          </Windows>
+        </Button>
+        <Button name="$parentStage4" inherits="EA_Button_DefaultCheckBox" id="4">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentStage3">
+              <AbsPoint x="7" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Button name="$parentStage4Lbl" backgroundtexture="EA_Cultivating01_d5" highlighttexture="EA_Cultivating01_d5" drawchildrenfirst="true" texturescale="0.37" handleinput="false">
+          <Size>
+            <AbsPoint x="25" y="25" />
+          </Size>
+          <Anchors>
+            <Anchor point="top" relativePoint="bottom" relativeTo="$parentStage4">
+              <AbsPoint x="0" y="-2"/>
+            </Anchor>
+          </Anchors>
+          <TexSlices>
+            <Normal id="IconFrame-1" />
+            <Pressed id="IconFrame-1" />
+            <Disabled id="IconFrame-1" />
+          </TexSlices>
+          <Windows>
+            <DynamicImage name="$parentIcon" handleinput="false" layer="background" texture="EA_Cultivating01_d5"  texturescale="0.125">
+              <Size>
+                <AbsPoint x="25" y="25" />
+              </Size>
+              <Anchors>
+                <Anchor point="center" relativePoint="center" />
+              </Anchors>
+              <TexCoords x="829" y="0"/>
+            </DynamicImage>
+          </Windows>
+        </Button>
+      </Windows>
+    </Window>
+    
+    <Window name="MiracleGrow2LayoutProgTemplate">
+      <Size>
+        <AbsPoint x="480" y="190"/>
+      </Size>
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft">
+          <AbsPoint x="5" y="260"/>
+        </Anchor>
+      </Anchors>
+      <Windows>
+        <Label name="$parentLabel" inherits="IraConfigHeading">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentDimX1Label" inherits="IraConfigLabel" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentLabel">
+              <AbsPoint x="20" y="5"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <EditBox name="$parentDimX1" inherits="IraConfigNumEdit" id="1">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimX1Label">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutProgDimChanged"/>
+          </EventHandlers>
+        </EditBox>
+        <Label name="$parentDimY1Label" inherits="IraConfigLabel" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimX1">
+              <AbsPoint x="20" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <EditBox name="$parentDimY1" inherits="IraConfigNumEdit" id="2">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimY1Label">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutProgDimChanged"/>
+          </EventHandlers>
+        </EditBox>
+        <Label name="$parentDimBar" inherits="IraConfigLabel">
+          <Size>
+            <AbsPoint x="25" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimY1">
+              <AbsPoint x="25" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Label name="$parentDimX2Label" inherits="IraConfigLabel" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimBar">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <EditBox name="$parentDimX2" inherits="IraConfigNumEdit" id="3">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimX2Label">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutProgDimChanged"/>
+          </EventHandlers>
+        </EditBox>
+        <Label name="$parentDimY2Label" inherits="IraConfigLabel" textalign="right">
+          <Size>
+            <AbsPoint x="25" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimX2">
+              <AbsPoint x="20" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <EditBox name="$parentDimY2" inherits="IraConfigNumEdit" id="4">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentDimY2Label">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.LayoutProgDimChanged"/>
+          </EventHandlers>
+        </EditBox>
+        <ComboBox name="$parentShow" inherits="IraConfigCombo">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentDimX1Label">
+              <AbsPoint x="0" y="15" />
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnSelChanged" function="MiracleGrow2.LayoutShowChanged" />
+          </EventHandlers>
+        </ComboBox>
+        <DynamicImage name="$parentBarFill" handleinput="false" popable="false">
+          <Anchors>
+            <Anchor point="right" relativePoint="topleft" relativeTo="$parentShow">
+              <AbsPoint x="20" y="-15"/>
+            </Anchor>
+            <Anchor point="right" relativePoint="bottomright" relativeTo="$parentShow">
+              <AbsPoint x="50" y="15"/>
+            </Anchor>
+          </Anchors>
+        </DynamicImage>
+        <DynamicImage name="$parentBarBack" handleinput="false" popable="false">
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentBarFill">
+              <AbsPoint x="5" y="0"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="bottomright" relativeTo="$parentBarFill">
+              <AbsPoint x="35" y="30"/>
+            </Anchor>
+          </Anchors>
+        </DynamicImage>
+        <Button name="$parentBarPlus" inherits="EA_Button_DefaultPlus">
+          <Anchors>
+            <Anchor point="right" relativePoint="bottomleft" relativeTo="$parentBarBack">
+              <AbsPoint x="1" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.LayoutNextBar" />
+          </EventHandlers>
+        </Button>
+        <Button name="$parentBarMinus" inherits="EA_Button_DefaultMinus">
+          <Anchors>
+            <Anchor point="right" relativePoint="topleft" relativeTo="$parentBarBack">
+              <AbsPoint x="1" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.LayoutPrevBar" />
+          </EventHandlers>
+        </Button>
+        <Window name="$parentFill" inherits="MiracleGrow2BarTint" id="1">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentShow">
+              <AbsPoint x="0" y="5"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parentBack" inherits="MiracleGrow2BarTint" id="2">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentFill">
+              <AbsPoint x="0" y="5"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+      </Windows>
+    </Window>
+
+    <Window name="MiracleGrow2LayoutPlotsTemplate">
+      <Size>
+        <AbsPoint x="480" y="130"/>
+      </Size>
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft">
+          <AbsPoint x="5" y="460"/>
+        </Anchor>
+      </Anchors>
+      <Windows>
+        <Label name="$parentLabel" inherits="IraConfigHeading">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft"/>
+          </Anchors>
+        </Label>
+        <ComboBox name="$parentArrange" inherits="IraConfigCombo">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentLabel">
+              <AbsPoint x="20" y="5"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnSelChanged" function="MiracleGrow2.LayoutPlotArrChanged" />
+          </EventHandlers>
+        </ComboBox>
+        <EditBox name="$parentCount" inherits="IraConfigNumSpin">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentArrange">
+              <AbsPoint x="5" y="0"/>
+            </Anchor>
+          </Anchors>
+        </EditBox>
+        <Label name="$parentCountLabel" inherits="IraConfigLabel">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentCount">
+              <AbsPoint x="20" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Window name="$parentBorder" inherits="IraConfigCheckBox">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentArrange">
+              <AbsPoint x="0" y="5"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Label name="$parentSepLabel" inherits="IraConfigLabel">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentBorder">
+              <AbsPoint x="0" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        <EditBox name="$parentSep" inherits="IraConfigNumSpin">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentSepLabel"/>
+          </Anchors>
+        </EditBox>
+      </Windows>
+    </Window>
+
+    <Window name="MiracleGrow2LayoutTemplate">
+      <Size>
+        <AbsPoint x="475" y="0"/>
+      </Size>
+      <Windows>
+        <FullResizeImage name="$parentVBar" inherits="EA_FullResizeImage_TanBorder" layer="background">
+          <Size>
+            <AbsPoint x="200" y="30"/>
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="5" y="5"/>
+            </Anchor>
+          </Anchors>
+        </FullResizeImage>
+        <Label name="$parentInstructions" font="font_heading_large_noshadow" layer="background" alpha=".1" textalign="center" handleinput="false" wordwrap="true">
+          <Size>
+            <AbsPoint x="250" y="250"/>
+          </Size>
+        </Label>
+        <Window name="$parentBar" layer="secondary" handleinput="false">
+          <Windows>
+            <DynamicImage name="$parentFill" popable="false">
+              <Anchors>
+                <Anchor point="topleft" relativePoint="topleft"/>
+                <Anchor point="bottom" relativePoint="bottomright"/>
+              </Anchors>
+            </DynamicImage>
+            <DynamicImage name="$parentBack" popable="false">
+              <Anchors>
+                <Anchor point="top" relativePoint="topleft"/>
+                <Anchor point="bottomright" relativePoint="bottomright"/>
+              </Anchors>
+            </DynamicImage>
+          </Windows>
+        </Window>
+        <Window name="$parentSet" inherits="MiracleGrow2LayoutSettingsTemplate"/>
+        <FullResizeImage name="$parentHover" inherits="EA_FullResizeImage_TintableFrame" layer="popup" handleinput="false" />
+        <Window name="$parentProg" inherits="MiracleGrow2LayoutProgTemplate"/>
+        <Window name="$parentPlots" inherits="MiracleGrow2LayoutPlotsTemplate"/>
+      </Windows>
+    </Window>
+    
+  </Windows>
+</Interface>

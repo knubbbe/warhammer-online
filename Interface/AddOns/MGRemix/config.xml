@@ -1,0 +1,382 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    <!-- Cannot inherit this normally as we do not want any default sounds-->
+    <Button name="MiracleGrow2SoundButton" font="font_default_text_small" textalign="center" textAutoFitMinScale="0.5" backgroundtexture="shared_01" highlighttexture="shared_01" >
+      <Size>
+        <AbsPoint x="130" y="39" />
+      </Size>
+      <TextColors>
+        <Normal         r="226" g="216" b="45" a="255" />
+        <NormalHighlit  r="226" g="216" b="45" a="255" />
+        <Pressed        r="226" g="216" b="45" a="255" />
+        <PressedHighlit r="226" g="216" b="45" a="255" />
+        <Disabled       r="92" g="92" b="92" a="255" />
+      </TextColors>
+      <ResizeImages>
+        <Normal def="EA_HorizontalResizeImage_ResizeableButtonNormal" />
+        <NormalHighlit def="EA_HorizontalResizeImage_ResizeableButtonNormalHighlit" />
+        <Pressed def="EA_HorizontalResizeImage_ResizeableButtonPressed"  />
+        <Disabled def="EA_HorizontalResizeImage_ResizeableButtonDisabled" />
+      </ResizeImages>
+      <TextOffset x="10" y="5" />
+    </Button>
+
+
+    <Window name="MiracleGrow2SoundLine">
+      <Size>
+        <AbsPoint x="450" y="39"/>
+      </Size>
+      <Windows>
+        <Label name="$parentLabel" inherits="IraConfigLabel">
+          <Size>
+            <AbsPoint x="220" y="22" />
+          </Size>
+          <Anchors>
+            <Anchor point="left" relativePoint="left"/>
+          </Anchors>
+        </Label>
+        <EditBox name="$parentEdit" inherits="IraConfigNumEdit" maxChars="4">
+          <Size>
+            <AbsPoint x="65" y="37" />
+          </Size>
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentLabel"/>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnTextChanged" function="MiracleGrow2.ConfigSoundChanged"/>
+          </EventHandlers>
+        </EditBox>
+        <Button name="$parentTest" inherits="MiracleGrow2SoundButton" font="font_clear_medium">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentEdit">
+              <AbsPoint x="25" y="0" />
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="MiracleGrow2.ConfigSoundTest" />
+            <EventHandler event="OnMouseOver" function="MiracleGrow2.ConfigSoundTestTip" />
+          </EventHandlers>
+        </Button>
+      </Windows>
+    </Window>
+
+    <Window name="MiracleGrow2ConfigTemplate">
+      <Size>
+        <AbsPoint x="450" y="1000"/>
+      </Size>
+      <Windows>
+        <Label name="$parentVersion" font="font_clear_small">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="5" y="10" />
+            </Anchor>
+          </Anchors>
+          <Size>
+            <AbsPoint x="450" y="25"/>
+          </Size>
+        </Label>
+        <Label name="$parentLanguageSection" inherits="IraConfigHeading">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentVersion">
+              <AbsPoint x="0" y="7" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <ComboBox name="$parentLanguage" inherits="IraConfigCombo">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentLanguageSection">
+              <AbsPoint x="14" y="0" />
+            </Anchor>
+          </Anchors>
+        </ComboBox>
+        <Label name="$parentWindowSection" inherits="IraConfigHeading">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentLanguageSection">
+              <AbsPoint x="0" y="40" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Window name="$parentShow" inherits="IraConfigCheckBox">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentWindowSection">
+              <AbsPoint x="14" y="5" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parentShowToggle" inherits="IraConfigCheckBox">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentShow">
+              <AbsPoint x="0" y="5" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parentThrob" inherits="IraConfigCheckBox">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentShowToggle">
+              <AbsPoint x="0" y="5" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parentThrobColor">
+          <Size>
+            <AbsPoint x="500" y="39"/>
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentThrob">
+              <AbsPoint x="30" y="0" />
+            </Anchor>
+          </Anchors>
+          <Windows>
+            <Label name="$parentLabel" inherits="IraConfigHeading">
+              <Size>
+                <AbsPoint x="100" y="25"/>
+              </Size>
+              <Anchors>
+                <Anchor point="left" relativePoint="left"/>
+              </Anchors>
+            </Label>
+            <EditBox name="$parentR" inherits="IraConfigNumEdit">
+              <Anchors>
+                <Anchor point="right" relativePoint="left" relativeTo="$parentLabel">
+                  <AbsPoint x="10" y="0"/>
+                </Anchor>
+              </Anchors>
+              <EventHandlers>
+                <EventHandler event="OnTextChanged" function="MiracleGrow2.ConfigThrobCChanged"/>
+              </EventHandlers>
+            </EditBox>
+            <EditBox name="$parentG" inherits="IraConfigNumEdit">
+              <Anchors>
+                <Anchor point="right" relativePoint="left" relativeTo="$parentR">
+                  <AbsPoint x="25" y="0"/>
+                </Anchor>
+              </Anchors>
+              <EventHandlers>
+                <EventHandler event="OnTextChanged" function="MiracleGrow2.ConfigThrobCChanged"/>
+              </EventHandlers>
+            </EditBox>
+            <EditBox name="$parentB" inherits="IraConfigNumEdit">
+              <Anchors>
+                <Anchor point="right" relativePoint="left" relativeTo="$parentG">
+                  <AbsPoint x="25" y="0"/>
+                </Anchor>
+              </Anchors>
+              <EventHandlers>
+                <EventHandler event="OnTextChanged" function="MiracleGrow2.ConfigThrobCChanged"/>
+              </EventHandlers>
+            </EditBox>
+          </Windows>
+        </Window>
+        <Label name="$parentIngredientSection" inherits="IraConfigHeading">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentWindowSection">
+              <AbsPoint x="0" y="125" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <ComboBox name="$parentMinLvl" inherits="IraConfigCombo">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentIngredientSection">
+              <AbsPoint x="14" y="0" />
+            </Anchor>
+          </Anchors>
+        </ComboBox>
+        <ComboBox name="$parentMaxLvl" inherits="IraConfigCombo">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentMinLvl">
+              <AbsPoint x="0" y="5" />
+            </Anchor>
+          </Anchors>
+        </ComboBox>
+        <Label name="$parentSoundSection" inherits="IraConfigHeading">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentIngredientSection">
+              <AbsPoint x="0" y="80" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Window name="$parentSound" inherits="IraConfigCheckBox">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSoundSection">
+              <AbsPoint x="14" y="0" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parentSound1" inherits="MiracleGrow2SoundLine" id="1">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSound">
+              <AbsPoint x="0" y="5" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Window name="$parentSound2" inherits="MiracleGrow2SoundLine" id="2">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSound1">
+              <AbsPoint x="0" y="5" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        <Label name="$parentAutoReapSection" inherits="IraConfigHeading">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSoundSection">
+              <AbsPoint x="0" y="130" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        <Window name="$parentReserve" inherits="IraConfigCheckBox">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAutoReapSection">
+              <AbsPoint x="14" y="0" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        <EditBox name="$parentReserveCount" inherits="IraConfigNumSpin">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentReserve">
+              <AbsPoint x="20" y="5"/>
+            </Anchor>
+          </Anchors>
+        </EditBox>
+        <Label name="$parentReserveCountLabel" inherits="IraConfigLabel">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentReserveCount">
+              <AbsPoint x="25" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+      </Windows>
+    </Window>
+    
+    <Window name="MiracleGrow2Settings">
+      <Size>
+        <AbsPoint x="550" y="447"/>
+      </Size>
+      <!--
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft">
+          <AbsPoint x="15" y="10"/>
+        </Anchor>
+        <Anchor point="bottomright" relativePoint="bottomright">
+          <AbsPoint x="-10" y="-10"/>
+        </Anchor>
+      </Anchors>
+      -->
+      <Windows>
+        <Window name="$parentTabs" layer="secondary">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="10" y="10"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="topright">
+              <AbsPoint x="-10" y="10"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        <FullResizeImage name="$parentFrame" inherits="IraConfigUFrame">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTabs" />
+            <Anchor point="bottomright" relativePoint="bottomright">
+              <AbsPoint x="-10" y="-10"/>
+            </Anchor>
+          </Anchors>
+        </FullResizeImage>
+        <Window name="$parentConfig">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTabs">
+              <AbsPoint x="8" y="0"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright">
+              <AbsPoint x="-18" y="-17"/>
+            </Anchor>
+          </Anchors>
+          <Windows>
+            <ScrollWindow name="$parentScroll" childscrollwindow="MiracleGrow2Config" scrollbar="$parentScroll" lineheight="20">
+              <Anchors>
+                <Anchor point="topleft" relativePoint="topleft"/>
+                <Anchor point="bottomright" relativePoint="bottomright"/>
+              </Anchors>
+              <Windows>
+                <VerticalScrollbar name="$parentScroll" inherits="EA_ScrollBar_DefaultVerticalChain" layer="popup">
+                  <Anchors>
+                    <Anchor point="topright" relativePoint="topright" />
+                    <Anchor point="bottomright" relativePoint="bottomright">
+                      <AbsPoint x="0" y="-1"/>
+                    </Anchor>
+                  </Anchors>
+                </VerticalScrollbar>
+                <Window name="MiracleGrow2Config" inherits="MiracleGrow2ConfigTemplate" />
+              </Windows>
+            </ScrollWindow>
+          </Windows>
+        </Window>
+        <Window name="$parentLayout">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTabs">
+              <AbsPoint x="8" y="0"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright">
+              <AbsPoint x="-18" y="-17"/>
+            </Anchor>
+          </Anchors>
+          <Windows>
+            <ScrollWindow name="$parentScroll" childscrollwindow="MiracleGrow2Layout" scrollbar="$parentScroll" lineheight="20">
+              <Anchors>
+                <Anchor point="topleft" relativePoint="topleft"/>
+                <Anchor point="bottomright" relativePoint="bottomright"/>
+              </Anchors>
+              <Windows>
+                <VerticalScrollbar name="$parentScroll" inherits="EA_ScrollBar_DefaultVerticalChain" layer="popup">
+                  <Anchors>
+                    <Anchor point="topright" relativePoint="topright" />
+                    <Anchor point="bottomright" relativePoint="bottomright">
+                      <AbsPoint x="0" y="-1"/>
+                    </Anchor>
+                  </Anchors>
+                </VerticalScrollbar>
+                <Window name="MiracleGrow2Layout" inherits="MiracleGrow2LayoutTemplate" />
+              </Windows>
+            </ScrollWindow>
+          </Windows>
+        </Window>
+        <Window name="$parentPreset">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTabs">
+              <AbsPoint x="8" y="0"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright">
+              <AbsPoint x="-18" y="-17"/>
+            </Anchor>
+          </Anchors>
+          <Windows>
+            <ScrollWindow name="$parentScroll" childscrollwindow="MiracleGrow2Preset" scrollbar="$parentScroll" lineheight="20">
+              <Anchors>
+                <Anchor point="topleft" relativePoint="topleft"/>
+                <Anchor point="bottomright" relativePoint="bottomright"/>
+              </Anchors>
+              <Windows>
+                <VerticalScrollbar name="$parentScroll" inherits="EA_ScrollBar_DefaultVerticalChain" layer="popup">
+                  <Anchors>
+                    <Anchor point="topright" relativePoint="topright" />
+                    <Anchor point="bottomright" relativePoint="bottomright">
+                      <AbsPoint x="0" y="-1"/>
+                    </Anchor>
+                  </Anchors>
+                </VerticalScrollbar>
+                <Window name="MiracleGrow2Preset" inherits="MiracleGrow2PresetTemplate" />
+              </Windows>
+            </ScrollWindow>
+          </Windows>
+        </Window>
+      </Windows>
+    </Window>
+    <Button name="MiracleGrow2CfgHelpBtn" inherits="IraConfigHelpBtn">
+      <Anchors>
+        <Anchor point="left" relativePoint="right" relativeTo="IraConfigClose"/>
+      </Anchors>
+      <EventHandlers>
+        <EventHandler event="OnLButtonUp" function="MiracleGrow2.ConfigHelp"/>
+        <EventHandler event="OnInitialize" function="IraConfig.HelpBtnInit"/>
+      </EventHandlers>
+    </Button>
+  </Windows>
+</Interface>
