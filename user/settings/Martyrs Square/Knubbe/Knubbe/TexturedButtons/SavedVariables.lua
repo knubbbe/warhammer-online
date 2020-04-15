@@ -158,7 +158,7 @@ TexturedButtons.Settings =
 			G = 0,
 			R = 0,
 		},
-		Alpha = 0.8,
+		Alpha = 0.80000001192093,
 		ShowGlobalCooldownText = false,
 	},
 	Custom = 
