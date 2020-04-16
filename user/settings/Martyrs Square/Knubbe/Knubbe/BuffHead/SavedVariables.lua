@@ -1,69 +1,69 @@
-BuffHead.Settings = 
+BuffHead.Settings =
 {
-	Fading = 
+	Fading =
 	{
 		Enable = true,
 	},
-	Trackers = 
+	Trackers =
 	{
-		Group = 
+		Group =
 		{
 			Enabled = true,
 			Debuffs = 2,
-			AlwaysShow = 
+			AlwaysShow =
 			{
 			},
 			Buffs = 2,
-			AlwaysIgnore = 
+			AlwaysIgnore =
 			{
 			},
 			Permanent = false,
 		},
-		Self = 
+		Self =
 		{
 			Enabled = true,
 			Debuffs = 2,
-			AlwaysShow = 
+			AlwaysShow =
 			{
 			},
 			Buffs = 2,
-			AlwaysIgnore = 
+			AlwaysIgnore =
 			{
 			},
 			Permanent = false,
 		},
-		Hostile = 
+		Hostile =
 		{
 			Enabled = true,
 			Debuffs = 2,
 			Permanent = false,
-			AlwaysShow = 
+			AlwaysShow =
 			{
 			},
 			Buffs = 1,
-			AlwaysIgnore = 
+			AlwaysIgnore =
 			{
 			},
-			OnTargetChange = 
+			OnTargetChange =
 			{
 				ClearBuffs = false,
 				ClearAlwaysShow = false,
 				ClearDebuffs = false,
 			},
 		},
-		Friendly = 
+		Friendly =
 		{
 			Enabled = true,
 			Debuffs = 2,
 			Permanent = false,
-			AlwaysShow = 
+			AlwaysShow =
 			{
 			},
 			Buffs = 2,
-			AlwaysIgnore = 
+			AlwaysIgnore =
 			{
 			},
-			OnTargetChange = 
+			OnTargetChange =
 			{
 				ClearBuffs = true,
 				ClearAlwaysShow = true,
@@ -71,25 +71,25 @@ BuffHead.Settings =
 			},
 		},
 	},
-	Indicators = 
+	Indicators =
 	{
 		Compression = 4,
-		Padding = 
+		Padding =
 		{
 			Y = 1,
 			X = 0,
 		},
 	},
 	Scale = 0.7,
-	PriorityEffects = 
+	PriorityEffects =
 	{
 		SortToFront = true,
 		Animation = 2,
-		Effect = 
+		Effect =
 		{
 		},
 	},
-	AlwaysShow = 
+	AlwaysShow =
 	{
 		[412] = true,
 		[413] = true,
@@ -104,10 +104,10 @@ BuffHead.Settings =
 		[407] = true,
 		[408] = true,
 	},
-	AdvancedContainers = 
+	AdvancedContainers =
 	{
 	},
-	Performance = 
+	Performance =
 	{
 		PriorityUpdate = true,
 		PriorityStart = 3,
@@ -116,28 +116,28 @@ BuffHead.Settings =
 		PriorityDelay = 0.1,
 		EffectAnchoring = 2,
 	},
-	Offset = 
+	Offset =
 	{
 		Y = -5,
 		X = 0,
 	},
 	Layer = 1,
-	AdvancedCompression = 
+	AdvancedCompression =
 	{
 	},
-	Layouts = 
+	Layouts =
 	{
 	},
 	MaximumThreshold = 60,
 	Version = 9,
-	Sync = 
+	Sync =
 	{
 		Enable = true,
 		ResyncEvery = 10,
 	},
-	Layout = 
+	Layout =
 	{
-		StatusBar = 
+		StatusBar =
 		{
 			Enabled = false,
 			Scale = 1,
@@ -147,15 +147,15 @@ BuffHead.Settings =
 			X = 0,
 			Reverse = false,
 			Height = 16,
-			Background = 
+			Background =
 			{
-				Color = 
+				Color =
 				{
 					R = 0,
 					G = 0,
 					B = 0,
 				},
-				TextureDimensions = 
+				TextureDimensions =
 				{
 					Height = 128,
 					Width = 128,
@@ -164,16 +164,16 @@ BuffHead.Settings =
 				Alpha = 0.8,
 				Texture = "EA_TintableImage",
 			},
-			Foreground = 
+			Foreground =
 			{
 				Type = 1,
-				Color = 
+				Color =
 				{
 					R = 255,
 					G = 255,
 					B = 255,
 				},
-				TextureDimensions = 
+				TextureDimensions =
 				{
 					Height = 128,
 					Width = 128,
@@ -184,7 +184,7 @@ BuffHead.Settings =
 			},
 			Orientation = 1,
 		},
-		Name = 
+		Name =
 		{
 			Scale = 1,
 			Layer = 2,
@@ -194,7 +194,7 @@ BuffHead.Settings =
 			X = 50,
 			Alignment = "leftcenter",
 			Height = 16,
-			Color = 
+			Color =
 			{
 				R = 255,
 				G = 255,
@@ -203,7 +203,7 @@ BuffHead.Settings =
 			Font = "font_clear_small",
 		},
 		Height = 48,
-		StackCount = 
+		StackCount =
 		{
 			Scale = 1,
 			Layer = 2,
@@ -213,7 +213,7 @@ BuffHead.Settings =
 			X = 0,
 			Alignment = "rightcenter",
 			Height = 16,
-			Color = 
+			Color =
 			{
 				R = 255,
 				G = 255,
@@ -221,7 +221,7 @@ BuffHead.Settings =
 			},
 			Font = "font_clear_small_bold",
 		},
-		Duration = 
+		Duration =
 		{
 			Scale = 1,
 			Layer = 2,
@@ -232,7 +232,7 @@ BuffHead.Settings =
 			Alignment = "center",
 			Height = 16,
 			Format = 3,
-			Color = 
+			Color =
 			{
 				R = 255,
 				G = 255,
@@ -240,7 +240,7 @@ BuffHead.Settings =
 			},
 			Font = "font_clear_small_bold",
 		},
-		Icon = 
+		Icon =
 		{
 			Y = 0,
 			X = 0,
@@ -248,9 +248,9 @@ BuffHead.Settings =
 			Alpha = 1,
 			Scale = 1,
 			Layer = 1,
-			Border = 
+			Border =
 			{
-				Color = 
+				Color =
 				{
 					R = 0,
 					G = 0,
@@ -263,48 +263,48 @@ BuffHead.Settings =
 		},
 		Width = 48,
 	},
-	Containers = 
+	Containers =
 	{
-		AlwaysShow = 
+		AlwaysShow =
 		{
 			Anchor = 1,
 			Placement = 1,
-			Size = 
+			Size =
 			{
 				Columns = 10,
 				Rows = 1,
 			},
 		},
-		Buffs = 
+		Buffs =
 		{
 			Anchor = 2,
 			Placement = 1,
-			Size = 
+			Size =
 			{
 				Columns = 10,
 				Rows = 1,
 			},
 		},
-		Debuffs = 
+		Debuffs =
 		{
 			Anchor = 3,
 			Placement = 1,
-			Size = 
+			Size =
 			{
 				Columns = 10,
 				Rows = 1,
 			},
 		},
-		Padding = 
+		Padding =
 		{
 			Y = 5,
 			X = 0,
 		},
 	},
-	AlwaysIgnore = 
+	AlwaysIgnore =
 	{
 	},
-	Sorting = 
+	Sorting =
 	{
 		Enabled = true,
 		Type = 1,

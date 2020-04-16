@@ -1,6 +1,6 @@
-TexturedButtons.Settings = 
+TexturedButtons.Settings =
 {
-	Misc = 
+	Misc =
 	{
 		HideActive = true,
 		SaveQuicklock = false,
@@ -10,74 +10,74 @@ TexturedButtons.Settings =
 		CustomGlow = 2,
 		ActionButtonPickUpModifier = 32,
 	},
-	AdvancedTextures = 
+	AdvancedTextures =
 	{
-		
+
 		{
 		},
-		
+
 		{
 		},
-		
+
 		{
-		}, 
-		[8] = 
+		},
+		[8] =
 		{
 		},
 	},
-	Tint = 
+	Tint =
 	{
 		Enabled = true,
-		Disabled = 
+		Disabled =
 		{
 			R = 150,
 			G = 150,
 			B = 150,
 		},
-		EnabledValid = 
+		EnabledValid =
 		{
 			R = 255,
 			G = 255,
 			B = 255,
 		},
-		DisabledInvalid = 
+		DisabledInvalid =
 		{
 			R = 100,
 			G = 0,
 			B = 0,
 		},
-		EnabledInvalid = 
+		EnabledInvalid =
 		{
 			R = 200,
 			G = 0,
 			B = 0,
 		},
-		OnCooldown = 
+		OnCooldown =
 		{
 			R = 148,
 			G = 148,
 			B = 148,
 		},
 	},
-	Preset = 
+	Preset =
 	{
 		Name = "SNT Skin 01",
 		Enabled = true,
 	},
-	Actionbars = 
+	Actionbars =
 	{
 		Enabled = true,
-		Bar = 
+		Bar =
 		{
-			
+
 			{
-				Spacing = 
+				Spacing =
 				{
 					Y = 0,
 					X = 0,
 				},
 				HideBackground = false,
-				Padding = 
+				Padding =
 				{
 					Y = 5,
 					X = 6,
@@ -85,15 +85,15 @@ TexturedButtons.Settings =
 				HideEmpty = true,
 				PageSelector = 43,
 			},
-			
+
 			{
-				Spacing = 
+				Spacing =
 				{
 					Y = 0,
 					X = 0,
 				},
 				HideBackground = false,
-				Padding = 
+				Padding =
 				{
 					Y = 5,
 					X = 6,
@@ -101,14 +101,14 @@ TexturedButtons.Settings =
 				HideEmpty = true,
 				PageSelector = 44,
 			},
-			
+
 			{
-				Spacing = 
+				Spacing =
 				{
 					Y = 0,
 					X = 0,
 				},
-				Padding = 
+				Padding =
 				{
 					Y = 3,
 					X = 3,
@@ -119,12 +119,12 @@ TexturedButtons.Settings =
 			},
 		},
 	},
-	Fonts = 
+	Fonts =
 	{
 		Enabled = true,
-		Cooldown = 
+		Cooldown =
 		{
-			Color = 
+			Color =
 			{
 				R = 255,
 				G = 255,
@@ -133,9 +133,9 @@ TexturedButtons.Settings =
 			Font = "font_clear_medium_bold",
 			Hide = false,
 		},
-		Keybind = 
+		Keybind =
 		{
-			Color = 
+			Color =
 			{
 				R = 255,
 				G = 255,
@@ -146,7 +146,7 @@ TexturedButtons.Settings =
 		},
 	},
 	Version = 6,
-	Cooldown = 
+	Cooldown =
 	{
 		Enabled = true,
 		RemoveS = true,
@@ -154,32 +154,32 @@ TexturedButtons.Settings =
 		HideFlash = false,
 		ShowGlobalCooldownText = false,
 		Alpha = 0.8,
-		Tint = 
+		Tint =
 		{
 			R = 0,
 			G = 0,
 			B = 0,
 		},
 	},
-	Custom = 
+	Custom =
 	{
 		Enabled = false,
-		State = 
+		State =
 		{
-			[0] = 
+			[0] =
 			{
 				Texture = "TexturedButtons_SNT_Buttons",
 				Slice = "Skin1_Normal",
 			},
-			[1] = 
+			[1] =
 			{
 				Texture = "TexturedButtons_Gloss_Down",
 			},
-			[3] = 
+			[3] =
 			{
 				Texture = "TexturedButtons_Gloss",
 			},
-			[4] = 
+			[4] =
 			{
 				Texture = "TexturedButtons_Gloss",
 			},

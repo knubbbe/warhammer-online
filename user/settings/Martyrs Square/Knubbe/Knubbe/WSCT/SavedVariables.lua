@@ -1,6 +1,6 @@
-WSCT_CONFIG = 
+WSCT_CONFIG =
 {
-	profile = 
+	profile =
 	{
 		INHEALNAME = false,
 		SHOWMORALE = 1,
@@ -12,177 +12,177 @@ WSCT_CONFIG =
 		SHOWHITOUT = 1,
 		SHOWHEAL = 1,
 		SHOWDEBUFF = 1,
-		COLORS = 
+		COLORS =
 		{
-			SHOWINTERRUPT = 
+			SHOWINTERRUPT =
 			{
 				b = 255,
 				g = 75,
 				r = 75,
 			},
-			SHOWBLOCKOUT = 
+			SHOWBLOCKOUT =
 			{
 				b = 255,
 				g = 128,
 				r = 0,
 			},
-			SHOWMORALE = 
+			SHOWMORALE =
 			{
 				b = 255,
 				g = 128,
 				r = 64,
 			},
-			SHOWBLOCK = 
+			SHOWBLOCK =
 			{
 				b = 200,
 				g = 150,
 				r = 100,
 			},
-			SHOWSPELLOUT = 
+			SHOWXP =
 			{
 				b = 0,
 				g = 255,
 				r = 255,
 			},
-			SHOWLOWHP = 
+			SHOWDODGE =
 			{
 				b = 128,
 				g = 128,
 				r = 255,
 			},
-			SHOWXP = 
+			SHOWPARRYOUT =
 			{
 				b = 0,
 				g = 255,
 				r = 255,
 			},
-			SHOWABSORB = 
+			SHOWLOWHP =
 			{
 				b = 0,
 				g = 255,
 				r = 255,
 			},
-			SHOWDEBUFFFADE = 
+			SHOWDEBUFFFADE =
 			{
 				b = 128,
 				g = 128,
 				r = 0,
 			},
-			SHOWDEBUFF = 
+			SHOWDEBUFF =
 			{
 				b = 128,
 				g = 128,
 				r = 0,
 			},
-			SHOWHITOUT = 
+			SHOWHITOUT =
 			{
 				b = 255,
 				g = 255,
 				r = 255,
 			},
-			SHOWPARRYOUT = 
+			SHOWSPELLOUT =
 			{
 				b = 255,
 				g = 128,
 				r = 0,
 			},
-			SHOWCOMBAT = 
+			SHOWCOMBAT =
 			{
 				b = 255,
 				g = 255,
 				r = 255,
 			},
-			SHOWHEAL = 
+			SHOWHEAL =
 			{
 				b = 0,
 				g = 255,
 				r = 0,
 			},
-			SHOWRESISTOUT = 
+			SHOWRESISTOUT =
 			{
 				b = 255,
 				g = 0,
 				r = 255,
 			},
-			SHOWAP = 
+			SHOWAP =
 			{
 				b = 0,
 				g = 255,
 				r = 180,
 			},
-			SHOWINF = 
+			SHOWINF =
 			{
 				b = 200,
 				g = 200,
 				r = 128,
 			},
-			SHOWPARRY = 
+			SHOWPARRY =
 			{
 				b = 200,
 				g = 150,
 				r = 100,
 			},
-			SHOWSPELL = 
+			SHOWSPELL =
 			{
 				b = 255,
 				g = 128,
 				r = 255,
 			},
-			SHOWBUFFFADE = 
+			SHOWBUFFFADE =
 			{
 				b = 0,
 				g = 180,
 				r = 180,
 			},
-			SHOWRESIST = 
+			SHOWRESIST =
 			{
 				b = 128,
 				g = 0,
 				r = 128,
 			},
-			SHOWABSORBOUT = 
+			SHOWABSORBOUT =
 			{
 				b = 0,
 				g = 255,
 				r = 255,
 			},
-			SHOWRENOWN = 
+			SHOWRENOWN =
 			{
 				b = 255,
 				g = 128,
 				r = 128,
 			},
-			SHOWHIT = 
+			SHOWHIT =
 			{
 				b = 0,
 				g = 0,
 				r = 255,
 			},
-			SHOWBUFF = 
+			SHOWBUFF =
 			{
 				b = 0,
 				g = 180,
 				r = 180,
 			},
-			SHOWRESOURCE = 
+			SHOWRESOURCE =
 			{
 				b = 255,
 				g = 180,
 				r = 180,
 			},
-			SHOWDODGE = 
+			SHOWABSORB =
 			{
 				b = 200,
 				g = 150,
 				r = 100,
 			},
-			SHOWHEALOUT = 
+			SHOWHEALOUT =
 			{
 				b = 0,
 				g = 175,
 				r = 0,
 			},
-			SHOWDODGEOUT = 
+			SHOWDODGEOUT =
 			{
 				b = 255,
 				g = 128,
@@ -195,7 +195,7 @@ WSCT_CONFIG =
 		SHOWBUFFFADE = false,
 		PETATOBJECT = 1,
 		SHOWSPELL = 1,
-		CRITS = 
+		CRITS =
 		{
 			SHOWMORALE = 1,
 			SHOWLOWHP = 1,
@@ -204,7 +204,7 @@ WSCT_CONFIG =
 		DMGFILTER = 0,
 		HEALFILTER = 0,
 		SHOWRESOURCE = false,
-		FRAMES = 
+		FRAMES =
 		{
 			SHOWINTERRUPT = 1,
 			SHOWBLOCKOUT = 3,
@@ -213,11 +213,13 @@ WSCT_CONFIG =
 			SHOWXP = 2,
 			SHOWLOWHP = 1,
 			SHOWSPELLOUT = 3,
-			SHOWDODGE = 1,
+			SHOWABSORB = 2,
+			SHOWPARRYOUT = 3,
+			SHOWLOWHP = 1,
 			SHOWDEBUFFFADE = 2,
 			SHOWDEBUFF = 2,
 			SHOWHITOUT = 3,
-			SHOWPARRYOUT = 3,
+			SHOWXP = 2,
 			SHOWCOMBAT = 1,
 			SHOWHEAL = 2,
 			SHOWRESISTOUT = 3,
@@ -232,7 +234,7 @@ WSCT_CONFIG =
 			SHOWHIT = 1,
 			SHOWBUFF = 2,
 			SHOWRESOURCE = 2,
-			SHOWABSORB = 2,
+			SHOWDODGE = 1,
 			SHOWHEALOUT = 3,
 			SHOWMORALE = 2,
 		},
@@ -247,21 +249,21 @@ WSCT_CONFIG =
 		SHOWDODGEOUT = 1,
 		SHOWPARRYOUT = 1,
 		PETFLAG = 1,
-		SPELLCOLORS = 
+		SPELLCOLORS =
 		{
-			SPIRIT = 
+			SPIRIT =
 			{
 				b = 0,
 				g = 0,
 				r = 255,
 			},
-			COPREAL = 
+			COPREAL =
 			{
 				b = 0,
 				g = 75,
 				r = 255,
 			},
-			ELEMENT = 
+			ELEMENT =
 			{
 				b = 0,
 				g = 255,
@@ -270,9 +272,9 @@ WSCT_CONFIG =
 		},
 		LOWHP = 40,
 		SHOWDEBUFFFADE = false,
-		FRAMESDATA = 
+		FRAMESDATA =
 		{
-			
+
 			{
 				GAPDIST = 150,
 				ANITYPE = 7,
@@ -288,7 +290,7 @@ WSCT_CONFIG =
 				YOFFSET = -150,
 				XOFFSET = 0,
 			},
-			
+
 			{
 				GAPDIST = 150,
 				ANITYPE = 7,
@@ -304,7 +306,7 @@ WSCT_CONFIG =
 				YOFFSET = -150,
 				XOFFSET = 0,
 			},
-			
+
 			{
 				GAPDIST = 40,
 				ANITYPE = 1,

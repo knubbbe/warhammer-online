@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+		<Window name="EnemyTimer" inherits="EA_Window_Default" handleinput="true" movable="true" savesettings="true">
+			<Size>
+				<AbsPoint x="150" y="30" />
+			</Size>
+			
+			<Anchors>
+				<Anchor point="bottom" relativePoint="top" relativeTo="EA_Window_OverheadMapMapDisplay">
+					<AbsPoint x="0" y="0" />
+				</Anchor>
+			</Anchors>
+			
+			<Windows>
+				<Label name="$parentText" textalign="center" font="font_clear_small_bold" handleinput="false">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" />
+					</Anchors>
+				</Label>
+			</Windows>
+			
+			<EventHandlers>
+				<EventHandler event="OnMouseOver" function="Enemy.TimerUI_OnMouseOver" />
+				<EventHandler event="OnLButtonUp" function="Enemy.TimerUI_OnLButtonUp" />
+				<EventHandler event="OnRButtonUp" function="Enemy.TimerUI_OnRButtonUp" />
+			</EventHandlers>
+		</Window>
+	</Windows>
+</Interface>

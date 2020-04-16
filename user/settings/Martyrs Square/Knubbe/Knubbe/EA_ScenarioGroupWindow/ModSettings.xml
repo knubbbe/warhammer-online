@@ -24,12 +24,12 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup5Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="286.000000" yOffset="139.000000" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="13.000000" yOffset="77.999947" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup6Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="286.000000" yOffset="33.999985" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="286.000000" yOffset="33.999973" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="UngroupedPlayersWindow" sizeX="565.000000" sizeY="343.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">

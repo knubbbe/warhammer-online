@@ -1,8 +1,8 @@
-FriendSuggester.Data = 
+FriendSuggester.Data =
 {
-	[L"Kanata"] = 
+	[L"Kanata"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -10,9 +10,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Insinkerator"] = 
+	[L"Insinkerator"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899654,
 			1586899654,
@@ -20,9 +20,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Ardolas"] = 
+	[L"Ardolas"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586898481,
 			1586898481,
@@ -30,9 +30,9 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Efnire"] = 
+	[L"Efnire"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899827,
 			1586899827,
@@ -40,9 +40,9 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Meyday"] = 
+	[L"Meyday"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -50,9 +50,9 @@ FriendSuggester.Data =
 		},
 		value = 40,
 	},
-	[L"Stikkekoben"] = 
+	[L"Stikkekoben"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586898097,
 			1586898097,
@@ -60,9 +60,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Ironvar"] = 
+	[L"Ironvar"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -70,9 +70,9 @@ FriendSuggester.Data =
 		},
 		value = 40,
 	},
-	[L"Whitskull"] = 
+	[L"Whitskull"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -80,9 +80,9 @@ FriendSuggester.Data =
 		},
 		value = 40,
 	},
-	[L"Satrin"] = 
+	[L"Satrin"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -90,9 +90,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Durnheim"] = 
+	[L"Durnheim"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899988,
 			1586899988,
@@ -100,9 +100,9 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Solawiz"] = 
+	[L"Solawiz"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899797,
 			1586899797,
@@ -110,9 +110,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Tankfuz"] = 
+	[L"Tankfuz"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586897881,
 			1586897881,
@@ -120,9 +120,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Lilirazel"] = 
+	[L"Lilirazel"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899126,
 			1586899126,
@@ -130,9 +130,9 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Durkat"] = 
+	[L"Durkat"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -140,9 +140,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Wanzel"] = 
+	[L"Wanzel"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899006,
 			1586899006,
@@ -150,9 +150,9 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Phalledra"] = 
+	[L"Phalledra"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -160,9 +160,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Hammeroo"] = 
+	[L"Hammeroo"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899830,
 			1586899830,
@@ -170,9 +170,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Ariandal"] = 
+	[L"Ariandal"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899034,
 			1586899034,
@@ -180,9 +180,9 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Savagesteve"] = 
+	[L"Savagesteve"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -190,9 +190,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Chamdrin"] = 
+	[L"Chamdrin"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899739,
 			1586899739,
@@ -200,9 +200,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Abdrobarine"] = 
+	[L"Abdrobarine"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586898633,
 			1586898633,
@@ -210,9 +210,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Peterskron"] = 
+	[L"Peterskron"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899229,
 			1586899229,
@@ -220,9 +220,9 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Athamas"] = 
+	[L"Athamas"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -230,9 +230,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Bombardment"] = 
+	[L"Bombardment"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586900172,
 			1586900172,
@@ -240,9 +240,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Tumtums"] = 
+	[L"Tumtums"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586897881,
 			1586897881,
@@ -250,9 +250,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Spergy"] = 
+	[L"Spergy"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586900062,
 			1586900062,
@@ -260,9 +260,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Meinkopt"] = 
+	[L"Meinkopt"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586897881,
 			1586897881,
@@ -270,9 +270,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Kaboomadorfa"] = 
+	[L"Kaboomadorfa"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586897881,
 			1586897881,
@@ -280,9 +280,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Boombataa"] = 
+	[L"Boombataa"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -290,9 +290,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Gertoff"] = 
+	[L"Gertoff"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899960,
 			1586899960,
@@ -300,9 +300,9 @@ FriendSuggester.Data =
 		},
 		value = 15,
 	},
-	[L"Wulmer"] = 
+	[L"Wulmer"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586900110,
 			1586900110,
@@ -310,9 +310,9 @@ FriendSuggester.Data =
 		},
 		value = 15,
 	},
-	[L"Chaoscontrol"] = 
+	[L"Chaoscontrol"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899020,
 			1586899020,
@@ -320,9 +320,9 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Rittersportt"] = 
+	[L"Rittersportt"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899834,
 			1586899834,
@@ -330,9 +330,9 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Nakavingi"] = 
+	[L"Nakavingi"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586898031,
 			1586898031,
@@ -340,9 +340,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Viionir"] = 
+	[L"Viionir"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899638,
 			1586899638,
@@ -350,9 +350,9 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Chubee"] = 
+	[L"Chubee"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899720,
 			1586899720,
@@ -360,9 +360,9 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Brokenskul"] = 
+	[L"Brokenskul"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -370,9 +370,9 @@ FriendSuggester.Data =
 		},
 		value = 40,
 	},
-	[L"Meraelith"] = 
+	[L"Meraelith"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899684,
 			1586899684,
@@ -380,9 +380,9 @@ FriendSuggester.Data =
 		},
 		value = 40,
 	},
-	[L"Oir"] = 
+	[L"Oir"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1586899552,
 			1586899552,
