@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup1Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="430.000000" yOffset="69.000000" />
+                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="-487.166748" yOffset="70.000000" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup2Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.175085" showing="false">
@@ -19,17 +19,17 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup4Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.080810" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="432.999969" yOffset="152.333618" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="432.999908" yOffset="152.333633" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup5Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="13.000000" yOffset="77.999947" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="13.000000" yOffset="77.999924" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup6Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="286.000000" yOffset="33.999973" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="286.000000" yOffset="33.999985" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="UngroupedPlayersWindow" sizeX="565.000000" sizeY="343.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">

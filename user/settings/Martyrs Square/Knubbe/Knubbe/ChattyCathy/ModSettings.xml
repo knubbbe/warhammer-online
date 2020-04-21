@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="TextEntry" sizeX="500.000000" sizeY="20.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottomleft" relativePoint="bottomleft" relativeTo="Root" xOffset="-1.111111" yOffset="-294.000061" />
+                <WindowAnchor xmlVersion="1.0" point="bottomleft" relativePoint="bottomleft" relativeTo="Root" xOffset="-1.111111" yOffset="-294.000092" />
             </Anchors>
         </WindowSettings>
     </Windows>

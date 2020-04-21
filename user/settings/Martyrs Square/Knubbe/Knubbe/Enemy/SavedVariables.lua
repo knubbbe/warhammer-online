@@ -13,14 +13,14 @@ Enemy.Settings =
 	prevVersion = 279,
 	combatLogTargetDefenseHideTimeout = 10,
 	guardDistanceIndicatorAnimation = true,
-	groupIconsOtherGroupsAlpha = 1,
+	groupIconsOtherGroupsAlpha = 0.4,
 	debug = false,
 	combatLogIDSEnabled = false,
 	unitFramesDirection1 = 2,
 	groupIconsPetScale = 1,
-	unitFramesMyGroupOnly = false,
+	unitFramesMyGroupOnly = true,
 	soundOnNewTarget = false,
-	guardDistanceIndicatorAlphaNormal = 0.75,
+	guardDistanceIndicatorAlphaNormal = 0.35,
 	talismanAlerterColorWarning = 
 	{
 		255,
@@ -77,41 +77,41 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			effectFilters = 
-			{
-				[1] = 
-				{
-					descriptionMatch = 2,
-					type = "guard",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 2,
-					filterName = L"MyGuard",
-					nameMatch = 1,
-					durationType = 3,
-				},
-			},
-			color = 
-			{
-				b = 127,
-				g = 243,
-				r = 191,
-			},
+			anchorTo = 5,
+			scale = 1,
 			anchorFrom = 8,
 			exceptMe = true,
 			offsetX = 10,
 			icon = "guard",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76101",
+			id = "7900",
 			alpha = 1,
 			archetypeMatch = 1,
-			scale = 1,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					typeMatch = 1,
+					type = "guard",
+					descriptionMatch = 2,
+					nameMatch = 1,
+					castedByMe = 2,
+					filterName = L"MyGuard",
+					hasDurationLimit = false,
+					durationType = 3,
+				},
+			},
 			name = L"My guard",
-			isEnabled = true,
 			playerType = 3,
+			isEnabled = true,
 			offsetY = 2,
-			anchorTo = 5,
+			color = 
+			{
+				r = 191,
+				g = 243,
+				b = 127,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -126,36 +126,36 @@ Enemy.Settings =
 			{
 				[1] = 
 				{
-					descriptionMatch = 2,
-					type = "guard",
 					typeMatch = 1,
-					hasDurationLimit = false,
+					type = "guard",
+					descriptionMatch = 2,
+					nameMatch = 1,
 					castedByMe = 3,
 					filterName = L"NotMyGuard",
-					nameMatch = 1,
+					hasDurationLimit = false,
 					durationType = 3,
 				},
 			},
-			color = 
-			{
-				b = 255,
-				g = 181,
-				r = 127,
-			},
+			scale = 0.8,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = 8,
 			icon = "guard",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76102",
+			id = "7901",
 			alpha = 1,
 			archetypeMatch = 2,
 			name = L"Other guard",
-			scale = 0.8,
 			isEnabled = true,
-			anchorTo = 5,
 			playerType = 3,
+			anchorTo = 5,
+			color = 
+			{
+				r = 127,
+				g = 181,
+				b = 255,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -166,40 +166,40 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			effectFilters = 
-			{
-				[1] = 
-				{
-					typeMatch = 1,
-					castedByMe = 1,
-					durationType = 2,
-					hasDurationLimit = false,
-					filterName = L"Any",
-					nameMatch = 1,
-					descriptionMatch = 2,
-				},
-			},
-			color = 
-			{
-				b = 119,
-				g = 60,
-				r = 255,
-			},
+			anchorTo = 9,
+			scale = 1,
 			anchorFrom = 9,
 			exceptMe = false,
 			offsetX = -25,
 			icon = "dot",
 			canDispell = 2,
 			isCircleIcon = false,
-			id = "76103",
+			id = "7902",
 			alpha = 1,
 			archetypeMatch = 1,
-			scale = 1,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					durationType = 2,
+					castedByMe = 1,
+					typeMatch = 1,
+					nameMatch = 1,
+					filterName = L"Any",
+					hasDurationLimit = false,
+					descriptionMatch = 2,
+				},
+			},
 			name = L"Any dispellable",
-			isEnabled = true,
 			playerType = 1,
+			isEnabled = true,
 			offsetY = 0,
-			anchorTo = 9,
+			color = 
+			{
+				r = 255,
+				g = 60,
+				b = 119,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -210,41 +210,41 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			effectFilters = 
-			{
-				[1] = 
-				{
-					descriptionMatch = 2,
-					type = "isHealing",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 2,
-					filterName = L"MyHealing",
-					nameMatch = 1,
-					durationType = 2,
-				},
-			},
-			color = 
-			{
-				b = 0,
-				g = 191,
-				r = 255,
-			},
+			anchorTo = 9,
+			scale = 1,
 			anchorFrom = 9,
 			exceptMe = false,
 			offsetX = -14,
 			icon = "dot",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76104",
+			id = "7903",
 			alpha = 1,
 			archetypeMatch = 1,
-			scale = 1,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					typeMatch = 1,
+					type = "isHealing",
+					descriptionMatch = 2,
+					nameMatch = 1,
+					castedByMe = 2,
+					filterName = L"MyHealing",
+					hasDurationLimit = false,
+					durationType = 2,
+				},
+			},
 			name = L"HoT",
-			isEnabled = true,
 			playerType = 1,
+			isEnabled = true,
 			offsetY = 0,
-			anchorTo = 9,
+			color = 
+			{
+				r = 255,
+				g = 191,
+				b = 0,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -255,53 +255,53 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			anchorTo = 9,
-			color = 
+			effectFilters = 
 			{
-				b = 255,
-				g = 200,
-				r = 50,
+				
+				{
+					typeMatch = 1,
+					type = "isBuff",
+					descriptionMatch = 2,
+					nameMatch = 1,
+					castedByMe = 2,
+					filterName = L"MyBuff",
+					hasDurationLimit = false,
+					durationType = 2,
+				},
+				
+				{
+					typeMatch = 1,
+					type = "isHealing",
+					descriptionMatch = 2,
+					nameMatch = 1,
+					castedByMe = 2,
+					filterName = L"MyHealing",
+					hasDurationLimit = false,
+					durationType = 2,
+				},
 			},
+			scale = 1,
 			anchorFrom = 9,
 			exceptMe = true,
 			offsetX = -3,
 			icon = "dot",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76105",
+			id = "7904",
 			alpha = 1,
 			logic = L"MyBuff and not MyHealing",
-			archetypeMatch = 1,
-			effectFilters = 
+			isEnabled = true,
+			color = 
 			{
-				
-				{
-					descriptionMatch = 2,
-					type = "isBuff",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 2,
-					filterName = L"MyBuff",
-					nameMatch = 1,
-					durationType = 2,
-				},
-				
-				{
-					descriptionMatch = 2,
-					type = "isHealing",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 2,
-					filterName = L"MyHealing",
-					nameMatch = 1,
-					durationType = 2,
-				},
+				r = 50,
+				g = 200,
+				b = 255,
 			},
 			name = L"Buff",
+			anchorTo = 9,
 			playerType = 1,
-			isEnabled = true,
 			offsetY = 0,
-			scale = 1,
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
@@ -312,23 +312,6 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			anchorTo = 9,
-			color = 
-			{
-				b = 255,
-				g = 200,
-				r = 50,
-			},
-			anchorFrom = 9,
-			exceptMe = false,
-			offsetX = -3,
-			icon = "dot",
-			canDispell = 1,
-			isCircleIcon = false,
-			id = "76106",
-			alpha = 1,
-			logic = L"MyBlessing and not MyHealing",
-			archetypeMatch = 1,
 			effectFilters = 
 			{
 				
@@ -339,27 +322,44 @@ Enemy.Settings =
 					descriptionMatch = 2,
 					castedByMe = 2,
 					durationMax = 59,
-					hasDurationLimit = true,
-					nameMatch = 1,
 					typeMatch = 1,
+					nameMatch = 1,
+					hasDurationLimit = true,
 				},
 				
 				{
-					descriptionMatch = 2,
-					type = "isHealing",
 					typeMatch = 1,
-					hasDurationLimit = false,
+					type = "isHealing",
+					descriptionMatch = 2,
+					nameMatch = 1,
 					castedByMe = 2,
 					filterName = L"MyHealing",
-					nameMatch = 1,
+					hasDurationLimit = false,
 					durationType = 2,
 				},
 			},
-			name = L"Blessing",
-			playerType = 1,
-			isEnabled = true,
-			offsetY = 0,
 			scale = 1,
+			anchorFrom = 9,
+			exceptMe = false,
+			offsetX = -3,
+			icon = "dot",
+			canDispell = 1,
+			isCircleIcon = false,
+			id = "7905",
+			alpha = 1,
+			logic = L"MyBlessing and not MyHealing",
+			isEnabled = true,
+			color = 
+			{
+				r = 50,
+				g = 200,
+				b = 255,
+			},
+			name = L"Blessing",
+			anchorTo = 9,
+			playerType = 1,
+			offsetY = 0,
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
@@ -370,41 +370,41 @@ Enemy.Settings =
 				false,
 				true,
 			},
-			effectFilters = 
-			{
-				[1] = 
-				{
-					descriptionMatch = 2,
-					type = "healDebuffOut50",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 3,
-					filterName = L"OutHealDebuff",
-					nameMatch = 1,
-					durationType = 1,
-				},
-			},
-			color = 
-			{
-				b = 64,
-				g = 255,
-				r = 191,
-			},
+			anchorTo = 8,
+			scale = 0.6,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = -53,
 			icon = "heal",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76107",
+			id = "7906",
 			alpha = 1,
 			archetypeMatch = 1,
-			scale = 0.6,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					typeMatch = 1,
+					type = "healDebuffOut50",
+					descriptionMatch = 2,
+					nameMatch = 1,
+					castedByMe = 3,
+					filterName = L"OutHealDebuff",
+					hasDurationLimit = false,
+					durationType = 1,
+				},
+			},
 			name = L"Outgoing 50% heal debuff",
-			isEnabled = true,
 			playerType = 1,
+			isEnabled = true,
 			offsetY = -5,
-			anchorTo = 8,
+			color = 
+			{
+				r = 191,
+				g = 255,
+				b = 64,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -415,41 +415,41 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			effectFilters = 
-			{
-				[1] = 
-				{
-					descriptionMatch = 2,
-					type = "healDebuffIn50",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 3,
-					filterName = L"InHealDebuff",
-					nameMatch = 1,
-					durationType = 1,
-				},
-			},
-			color = 
-			{
-				b = 64,
-				g = 64,
-				r = 255,
-			},
+			anchorTo = 8,
+			scale = 0.6,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = -40,
 			icon = "heal",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76108",
+			id = "7907",
 			alpha = 1,
 			archetypeMatch = 1,
-			scale = 0.6,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					typeMatch = 1,
+					type = "healDebuffIn50",
+					descriptionMatch = 2,
+					nameMatch = 1,
+					castedByMe = 3,
+					filterName = L"InHealDebuff",
+					hasDurationLimit = false,
+					durationType = 1,
+				},
+			},
 			name = L"Incomming 50% heal debuff",
-			isEnabled = true,
 			playerType = 1,
+			isEnabled = true,
 			offsetY = -5,
-			anchorTo = 8,
+			color = 
+			{
+				r = 255,
+				g = 64,
+				b = 64,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -464,36 +464,36 @@ Enemy.Settings =
 			{
 				[1] = 
 				{
-					descriptionMatch = 2,
-					type = "stagger",
 					typeMatch = 1,
-					hasDurationLimit = false,
+					type = "stagger",
+					descriptionMatch = 2,
+					nameMatch = 1,
 					castedByMe = 1,
 					filterName = L"Stagger",
-					nameMatch = 1,
+					hasDurationLimit = false,
 					durationType = 2,
 				},
 			},
-			color = 
-			{
-				b = 128,
-				g = 255,
-				r = 255,
-			},
+			scale = 0.75,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = 5,
 			icon = "stagger",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76109",
+			id = "7908",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Stagger",
-			scale = 0.75,
 			isEnabled = true,
-			anchorTo = 5,
 			playerType = 1,
+			anchorTo = 5,
+			color = 
+			{
+				r = 255,
+				g = 255,
+				b = 128,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -504,46 +504,46 @@ Enemy.Settings =
 				false,
 				true,
 			},
-			effectFilters = 
-			{
-				[1] = 
-				{
-					typeMatch = 1,
-					filterName = L"DoK_WP_Regen",
-					abilityIds = L"9561, 8237",
-					castedByMe = 1,
-					nameMatch = 1,
-					descriptionMatch = 2,
-					abilityIdsHash = 
-					{
-						[9561] = true,
-						[8237] = true,
-					},
-					hasDurationLimit = false,
-					durationType = 1,
-				},
-			},
-			color = 
-			{
-				b = 128,
-				g = 64,
-				r = 255,
-			},
+			anchorTo = 8,
+			scale = 0.5,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = -65,
 			icon = "disabled",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76110",
+			id = "7909",
 			alpha = 1,
 			archetypeMatch = 1,
-			scale = 0.5,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					typeMatch = 1,
+					filterName = L"DoK_WP_Regen",
+					descriptionMatch = 2,
+					castedByMe = 1,
+					durationType = 1,
+					abilityIds = L"9561, 8237",
+					abilityIdsHash = 
+					{
+						[9561] = true,
+						[8237] = true,
+					},
+					nameMatch = 1,
+					hasDurationLimit = false,
+				},
+			},
 			name = L"DoK/WP regen",
-			isEnabled = true,
 			playerType = 1,
+			isEnabled = true,
 			offsetY = -5,
-			anchorTo = 8,
+			color = 
+			{
+				r = 255,
+				g = 64,
+				b = 128,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -560,24 +560,19 @@ Enemy.Settings =
 				{
 					typeMatch = 1,
 					filterName = L"ID",
-					abilityIds = L"613",
-					castedByMe = 1,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					castedByMe = 1,
+					durationType = 2,
+					abilityIds = L"613",
 					abilityIdsHash = 
 					{
 						[613] = true,
 					},
+					nameMatch = 1,
 					hasDurationLimit = false,
-					durationType = 2,
 				},
 			},
-			color = 
-			{
-				b = 255,
-				g = 255,
-				r = 255,
-			},
+			scale = 0.5,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = 5,
@@ -585,14 +580,19 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76111",
+			id = "7910",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Immaculate Defense",
-			scale = 0.5,
 			isEnabled = true,
-			anchorTo = 2,
 			playerType = 3,
+			anchorTo = 2,
+			color = 
+			{
+				r = 255,
+				g = 255,
+				b = 255,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -609,27 +609,22 @@ Enemy.Settings =
 				{
 					typeMatch = 1,
 					filterName = L"FM",
-					abilityIds = L"653, 674, 695, 3882",
-					castedByMe = 1,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					castedByMe = 1,
+					durationType = 2,
+					abilityIds = L"653, 674, 695, 3882",
 					abilityIdsHash = 
 					{
 						[3882] = true,
+						[695] = true,
 						[674] = true,
 						[653] = true,
-						[695] = true,
 					},
+					nameMatch = 1,
 					hasDurationLimit = false,
-					durationType = 2,
 				},
 			},
-			color = 
-			{
-				b = 255,
-				g = 255,
-				r = 255,
-			},
+			scale = 0.5,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = 5,
@@ -637,14 +632,19 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76112",
+			id = "7911",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Focused Mind",
-			scale = 0.5,
 			isEnabled = true,
-			anchorTo = 2,
 			playerType = 3,
+			anchorTo = 2,
+			color = 
+			{
+				r = 255,
+				g = 255,
+				b = 255,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -661,24 +661,19 @@ Enemy.Settings =
 				{
 					typeMatch = 1,
 					filterName = L"TODB",
-					abilityIds = L"9616",
-					castedByMe = 1,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					castedByMe = 1,
+					durationType = 2,
+					abilityIds = L"9616",
 					abilityIdsHash = 
 					{
 						[9616] = true,
 					},
+					nameMatch = 1,
 					hasDurationLimit = false,
-					durationType = 2,
 				},
 			},
-			color = 
-			{
-				b = 255,
-				g = 255,
-				r = 255,
-			},
+			scale = 0.5,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = 5,
@@ -686,14 +681,19 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76113",
+			id = "7912",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"1001 Dark Blessings",
-			scale = 0.5,
 			isEnabled = true,
-			anchorTo = 2,
 			playerType = 3,
+			anchorTo = 2,
+			color = 
+			{
+				r = 255,
+				g = 255,
+				b = 255,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -710,24 +710,19 @@ Enemy.Settings =
 				{
 					typeMatch = 1,
 					filterName = L"GOF",
-					abilityIds = L"8308",
-					castedByMe = 1,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					castedByMe = 1,
+					durationType = 2,
+					abilityIds = L"8308",
 					abilityIdsHash = 
 					{
 						[8308] = true,
 					},
+					nameMatch = 1,
 					hasDurationLimit = false,
-					durationType = 2,
 				},
 			},
-			color = 
-			{
-				b = 255,
-				g = 255,
-				r = 255,
-			},
+			scale = 0.5,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = 5,
@@ -735,14 +730,19 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76114",
+			id = "7913",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Gift of Life",
-			scale = 0.5,
 			isEnabled = true,
-			anchorTo = 2,
 			playerType = 3,
+			anchorTo = 2,
+			color = 
+			{
+				r = 255,
+				g = 255,
+				b = 255,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -759,10 +759,10 @@ Enemy.Settings =
 				{
 					typeMatch = 1,
 					filterName = L"AnyMarkOrRune",
-					abilityIds = L"3746, 8551, 8617, 3748, 8560, 8619, 20458, 3747, 8556, 8618, 3038, 3773, 8567, 8620, 1591, 3670, 20476, 1588, 1600, 3570, 1608, 3650, 3671",
-					castedByMe = 2,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					castedByMe = 2,
+					durationType = 1,
+					abilityIds = L"3746, 8551, 8617, 3748, 8560, 8619, 20458, 3747, 8556, 8618, 3038, 3773, 8567, 8620, 1591, 3670, 20476, 1588, 1600, 3570, 1608, 3650, 3671",
 					abilityIdsHash = 
 					{
 						[8560] = true,
@@ -774,45 +774,45 @@ Enemy.Settings =
 						[3570] = true,
 						[8556] = true,
 						[1588] = true,
-						[20476] = true,
-						[3671] = true,
+						[8618] = true,
+						[1591] = true,
 						[8619] = true,
-						[1600] = true,
+						[8567] = true,
 						[3650] = true,
-						[3773] = true,
 						[3747] = true,
+						[8620] = true,
 						[3670] = true,
 						[3038] = true,
 						[8551] = true,
-						[8620] = true,
-						[8567] = true,
-						[8618] = true,
-						[1591] = true,
+						[3773] = true,
+						[1600] = true,
+						[3671] = true,
+						[20476] = true,
 					},
+					nameMatch = 1,
 					hasDurationLimit = false,
-					durationType = 1,
 				},
 			},
-			color = 
-			{
-				b = 221,
-				g = 255,
-				r = 0,
-			},
+			scale = 1,
 			anchorFrom = 9,
 			exceptMe = false,
 			offsetX = -36,
 			icon = "dot",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76115",
+			id = "7914",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"My marks/runes",
-			scale = 1,
 			isEnabled = true,
-			anchorTo = 9,
 			playerType = 3,
+			anchorTo = 9,
+			color = 
+			{
+				r = 0,
+				g = 255,
+				b = 221,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -829,26 +829,21 @@ Enemy.Settings =
 				{
 					durationType = 2,
 					filterName = L"WordOfPain",
-					descriptionMatch = 2,
-					castedByMe = 1,
 					abilityIds = L"9475, 20535",
+					castedByMe = 1,
+					typeMatch = 1,
 					durationMax = 5,
-					hasDurationLimit = true,
+					nameMatch = 1,
 					abilityIdsHash = 
 					{
 						[9475] = true,
 						[20535] = true,
 					},
-					nameMatch = 1,
-					typeMatch = 1,
+					hasDurationLimit = true,
+					descriptionMatch = 2,
 				},
 			},
-			color = 
-			{
-				b = 255,
-				g = 255,
-				r = 255,
-			},
+			scale = 0.5,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = 6,
@@ -856,14 +851,19 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76116",
+			id = "7915",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Improved Word of Pain",
-			scale = 0.5,
 			isEnabled = true,
-			anchorTo = 2,
 			playerType = 3,
+			anchorTo = 2,
+			color = 
+			{
+				r = 255,
+				g = 255,
+				b = 255,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -880,25 +880,20 @@ Enemy.Settings =
 				{
 					durationType = 2,
 					filterName = L"BoilingBlood",
-					descriptionMatch = 2,
-					castedByMe = 1,
 					abilityIds = L"8165",
+					castedByMe = 1,
+					typeMatch = 1,
 					durationMax = 5,
-					hasDurationLimit = true,
+					nameMatch = 1,
 					abilityIdsHash = 
 					{
 						[8165] = true,
 					},
-					nameMatch = 1,
-					typeMatch = 1,
+					hasDurationLimit = true,
+					descriptionMatch = 2,
 				},
 			},
-			color = 
-			{
-				b = 255,
-				g = 255,
-				r = 255,
-			},
+			scale = 0.5,
 			anchorFrom = 8,
 			exceptMe = false,
 			offsetX = 6,
@@ -906,14 +901,19 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "76117",
+			id = "7916",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Improved Boiling Blood",
-			scale = 0.5,
 			isEnabled = true,
-			anchorTo = 2,
 			playerType = 3,
+			anchorTo = 2,
+			color = 
+			{
+				r = 255,
+				g = 255,
+				b = 255,
+			},
 			playerTypeMatch = 1,
 		},
 	},
@@ -939,14 +939,14 @@ Enemy.Settings =
 		permanentTargets = 
 		{
 		},
-		id = 7,
-		targetOnClick = true,
+		id = 5902,
+		text = L"G",
 		alpha = 0.5,
-		scale = 0.6,
 		layer = 3,
+		scale = 0.6,
 		font = "font_default_text_giant",
 		name = L"",
-		text = L"G",
+		targetOnClick = true,
 		display = 1,
 		offsetY = 75,
 		neverExpire = true,
@@ -979,39 +979,1034 @@ Enemy.Settings =
 	{
 		[1] = 
 		{
+			eps = 
+			{
+				
+				{
+					total = 345,
+					objectTime = 64936537860,
+					data = 
+					{
+						
+						{
+							str = L"Purple Crawler's attack hits you for 36 damage. (72 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 36,
+							mit = 72,
+							crit = false,
+							time = 64936537889,
+						},
+						
+						{
+							str = L"Purple Crawler's Envenomed Fangs hits you for 8 damage. (20 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Envenomed Fangs",
+							value = 8,
+							mit = 20,
+							crit = false,
+							time = 64936537890,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 47 damage. (73 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 47,
+							mit = 73,
+							crit = false,
+							time = 64936537890,
+						},
+						
+						{
+							str = L"Purple Crawler's Spider Bite critically hits you for 68 damage. (131 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Spider Bite",
+							value = 68,
+							mit = 131,
+							crit = true,
+							time = 64936537890,
+						},
+						
+						{
+							str = L"Purple Crawler's Spider Bite hits you for 31 damage. (91 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Spider Bite",
+							value = 31,
+							mit = 91,
+							crit = false,
+							time = 64936537890,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 32 damage. (75 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 32,
+							mit = 75,
+							crit = false,
+							time = 64936537891,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 43 damage. (76 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 43,
+							mit = 76,
+							crit = false,
+							time = 64936537892,
+						},
+						
+						{
+							str = L"Purple Crawler's Envenomed Fangs hits you for 37 damage. (89 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Envenomed Fangs",
+							value = 37,
+							mit = 89,
+							crit = false,
+							time = 64936537893,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 43 damage. (76 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 43,
+							mit = 76,
+							crit = false,
+							time = 64936537895,
+						},
+					},
+					totalAoe = 0,
+					valueMaxData = 
+					{
+						
+						{
+							str = L"Purple Crawler's attack hits you for 43 damage. (76 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 43,
+							mit = 76,
+							crit = false,
+							time = 64936537878,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 32 damage. (75 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 32,
+							mit = 75,
+							crit = false,
+							time = 64936537878,
+						},
+						
+						{
+							str = L"Purple Crawler's Envenomed Fangs hits you for 9 damage. (22 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Envenomed Fangs",
+							value = 9,
+							mit = 22,
+							crit = false,
+							time = 64936537878,
+						},
+						
+						{
+							str = L"Purple Crawler's Envenomed Fangs hits you for 28 damage. (86 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Envenomed Fangs",
+							value = 28,
+							mit = 86,
+							crit = false,
+							time = 64936537879,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 43 damage. (76 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 43,
+							mit = 76,
+							crit = false,
+							time = 64936537880,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 32 damage. (75 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 32,
+							mit = 75,
+							crit = false,
+							time = 64936537880,
+						},
+						
+						{
+							str = L"Purple Crawler's Spider Bite hits you for 42 damage. (93 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Spider Bite",
+							value = 42,
+							mit = 93,
+							crit = false,
+							time = 64936537880,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 43 damage. (76 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 43,
+							mit = 76,
+							crit = false,
+							time = 64936537880,
+						},
+						
+						{
+							str = L"Purple Crawler's Envenomed Fangs hits you for 9 damage. (22 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Envenomed Fangs",
+							value = 9,
+							mit = 22,
+							crit = false,
+							time = 64936537881,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 32 damage. (75 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 32,
+							mit = 75,
+							crit = false,
+							time = 64936537882,
+						},
+						
+						{
+							str = L"Purple Crawler's Envenomed Fangs hits you for 7 damage. (21 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Envenomed Fangs",
+							value = 7,
+							mit = 21,
+							crit = false,
+							time = 64936537882,
+						},
+						
+						{
+							str = L"Purple Crawler's Spider Bite hits you for 31 damage. (91 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Spider Bite",
+							value = 31,
+							mit = 91,
+							crit = false,
+							time = 64936537882,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 43 damage. (76 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 43,
+							mit = 76,
+							crit = false,
+							time = 64936537883,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 32 damage. (75 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 32,
+							mit = 75,
+							crit = false,
+							time = 64936537884,
+						},
+						
+						{
+							str = L"Purple Crawler's Envenomed Fangs hits you for 7 damage. (21 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Envenomed Fangs",
+							value = 7,
+							mit = 21,
+							crit = false,
+							time = 64936537884,
+						},
+						
+						{
+							str = L"Purple Crawler's attack hits you for 61 damage. (58 mitigated)",
+							type = 1,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 61,
+							mit = 58,
+							crit = false,
+							time = 64936537885,
+						},
+					},
+					valueAoe = 0,
+					valueMax = 77,
+					value = 58,
+					object = L"Purple Crawler",
+				},
+				
+				{
+					valueAoeMaxData = 
+					{
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 64 damage. (42 mitigated)",
+							type = 2,
+							ability = L"Heavy Blow",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537884,
+							value = 64,
+							crit = false,
+							mit = 42,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your attack hits Purple Crawler for 53 damage. (50 mitigated)",
+							type = 2,
+							ability = L"attack",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537885,
+							value = 53,
+							crit = false,
+							mit = 50,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							ability = L"Heavy Blow",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537886,
+							value = 30,
+							crit = false,
+							mit = 32,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 64 damage. (42 mitigated)",
+							type = 2,
+							ability = L"Heavy Blow",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537886,
+							value = 64,
+							crit = false,
+							mit = 42,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							ability = L"Heavy Blow",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537887,
+							value = 30,
+							crit = false,
+							mit = 32,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your Shield Sweep hits Purple Crawler for 65 damage. (34 mitigated)",
+							type = 2,
+							ability = L"Shield Sweep",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537887,
+							value = 65,
+							crit = false,
+							mit = 34,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your Shield Sweep hits Purple Crawler for 63 damage. (36 mitigated)",
+							type = 2,
+							ability = L"Shield Sweep",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537887,
+							value = 63,
+							crit = false,
+							mit = 36,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							ability = L"Heavy Blow",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537888,
+							value = 30,
+							crit = false,
+							mit = 32,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your attack hits Purple Crawler for 56 damage. (47 mitigated)",
+							type = 2,
+							ability = L"attack",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537889,
+							value = 56,
+							crit = false,
+							mit = 47,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your Guarded Attack hits Purple Crawler for 55 damage. (37 mitigated)",
+							type = 2,
+							ability = L"Guarded Attack",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537889,
+							value = 55,
+							crit = false,
+							mit = 37,
+							abs = 0,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							ability = L"Heavy Blow",
+							currentTarget = true,
+							object = L"Purple Crawler",
+							time = 64936537889,
+							value = 30,
+							crit = false,
+							mit = 32,
+							abs = 0,
+						},
+					},
+					total = 492,
+					objectTime = 64936537864,
+					data = 
+					{
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 30,
+							mit = 32,
+							crit = false,
+							time = 64936537888,
+						},
+						
+						{
+							str = L"Your attack hits Purple Crawler for 56 damage. (47 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 56,
+							mit = 47,
+							crit = false,
+							time = 64936537889,
+						},
+						
+						{
+							str = L"Your Guarded Attack hits Purple Crawler for 55 damage. (37 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Guarded Attack",
+							value = 55,
+							mit = 37,
+							crit = false,
+							time = 64936537889,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 30,
+							mit = 32,
+							crit = false,
+							time = 64936537889,
+						},
+						
+						{
+							str = L"Your Vengeful Strike hits Purple Crawler for 55 damage. (37 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Vengeful Strike",
+							value = 55,
+							mit = 37,
+							crit = false,
+							time = 64936537890,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 66 damage. (40 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 66,
+							mit = 40,
+							crit = false,
+							time = 64936537892,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 31 damage. (31 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 31,
+							mit = 31,
+							crit = false,
+							time = 64936537893,
+						},
+						
+						{
+							str = L"Your attack hits Purple Crawler for 56 damage. (47 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 56,
+							mit = 47,
+							crit = false,
+							time = 64936537893,
+						},
+						
+						{
+							str = L"Your Heavy Blow critically hits Purple Crawler for 90 damage. (58 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 90,
+							mit = 58,
+							crit = true,
+							time = 64936537894,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 23 damage. (29 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 23,
+							mit = 29,
+							crit = false,
+							time = 64936537895,
+						},
+					},
+					totalAoe = 492,
+					valueMaxData = 
+					{
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 64 damage. (42 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 64,
+							mit = 42,
+							crit = false,
+							time = 64936537884,
+						},
+						
+						{
+							str = L"Your attack hits Purple Crawler for 53 damage. (50 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 53,
+							mit = 50,
+							crit = false,
+							time = 64936537885,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 30,
+							mit = 32,
+							crit = false,
+							time = 64936537886,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 64 damage. (42 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 64,
+							mit = 42,
+							crit = false,
+							time = 64936537886,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 30,
+							mit = 32,
+							crit = false,
+							time = 64936537887,
+						},
+						
+						{
+							str = L"Your Shield Sweep hits Purple Crawler for 65 damage. (34 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Shield Sweep",
+							value = 65,
+							mit = 34,
+							crit = false,
+							time = 64936537887,
+						},
+						
+						{
+							str = L"Your Shield Sweep hits Purple Crawler for 63 damage. (36 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Shield Sweep",
+							value = 63,
+							mit = 36,
+							crit = false,
+							time = 64936537887,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 30,
+							mit = 32,
+							crit = false,
+							time = 64936537888,
+						},
+						
+						{
+							str = L"Your attack hits Purple Crawler for 56 damage. (47 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"attack",
+							value = 56,
+							mit = 47,
+							crit = false,
+							time = 64936537889,
+						},
+						
+						{
+							str = L"Your Guarded Attack hits Purple Crawler for 55 damage. (37 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Guarded Attack",
+							value = 55,
+							mit = 37,
+							crit = false,
+							time = 64936537889,
+						},
+						
+						{
+							str = L"Your Heavy Blow hits Purple Crawler for 30 damage. (32 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							object = L"Purple Crawler",
+							ability = L"Heavy Blow",
+							value = 30,
+							mit = 32,
+							crit = false,
+							time = 64936537889,
+						},
+					},
+					valueAoe = 70,
+					valueMax = 108,
+					value = 70,
+					valueAoeMax = 108,
+					object = L"Purple Crawler",
+				},
+				
+				{
+					totalAoe = 0,
+					total = 240,
+					object = L"Ironknubbe",
+					value = 80,
+					objectTime = 64936537886,
+					data = 
+					{
+						
+						{
+							overheal = 0,
+							type = 3,
+							ability = L"Fleeting Elixir of Mending",
+							currentTarget = true,
+							time = 64936537886,
+							value = 120,
+							object = L"Ironknubbe",
+							crit = false,
+							str = L"Your Fleeting Elixir of Mending heals you for 120 points.",
+						},
+						
+						{
+							overheal = 0,
+							type = 3,
+							ability = L"Fleeting Elixir of Mending",
+							currentTarget = true,
+							time = 64936537889,
+							value = 120,
+							object = L"Ironknubbe",
+							crit = false,
+							str = L"Your Fleeting Elixir of Mending heals you for 120 points.",
+						},
+					},
+					valueAoe = 0,
+				},
+				
+				{
+					totalAoe = 240,
+					total = 240,
+					object = L"you",
+					value = 80,
+					objectTime = 64936537886,
+					data = 
+					{
+						
+						{
+							str = L"Your Fleeting Elixir of Mending heals you for 120 points.",
+							type = 4,
+							ability = L"Fleeting Elixir of Mending",
+							currentTarget = true,
+							time = 64936537886,
+							value = 120,
+							overheal = 0,
+							crit = false,
+							object = L"you",
+						},
+						
+						{
+							str = L"Your Fleeting Elixir of Mending heals you for 120 points.",
+							type = 4,
+							ability = L"Fleeting Elixir of Mending",
+							currentTarget = true,
+							time = 64936537889,
+							value = 120,
+							overheal = 0,
+							crit = false,
+							object = L"you",
+						},
+					},
+					valueAoe = 80,
+				},
+			},
+			name = L"Default",
 			data = 
 			{
 				
 				{
+					[L"Envenomed Fangs"] = 
+					{
+						normal = 
+						{
+							overheal = 0,
+							total = 674,
+							abs = 0,
+							min = 7,
+							count = 47,
+							max = 61,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 606,
+								level = 8,
+								hp = 0,
+								isFriendly = false,
+							},
+							mit = 1422,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 593,
+								level = 9,
+								hp = 93,
+								isFriendly = false,
+							},
+						},
+						dodge = 0,
+						disrupt = 0,
+						block = 1,
+						crit = 
+						{
+							overheal = 0,
+							total = 189,
+							abs = 0,
+							min = 9,
+							count = 5,
+							max = 68,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 545,
+								level = 9,
+								hp = 0,
+								isFriendly = false,
+							},
+							mit = 399,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 546,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						parry = 0,
+					},
+					[L"Spider Bite"] = 
+					{
+						normal = 
+						{
+							overheal = 0,
+							total = 783,
+							abs = 0,
+							min = 31,
+							count = 22,
+							max = 67,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 588,
+								level = 9,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 1779,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 544,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						dodge = 0,
+						disrupt = 0,
+						block = 2,
+						crit = 
+						{
+							overheal = 0,
+							total = 178,
+							abs = 0,
+							min = 46,
+							count = 3,
+							max = 68,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 544,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 390,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 546,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						parry = 0,
+					},
 					[L"attack"] = 
 					{
 						normal = 
 						{
 							overheal = 0,
-							total = 165,
-							max = 44,
+							total = 3725,
+							max = 67,
 							min = 23,
-							count = 6,
+							count = 100,
 							abs = 0,
-							mit = 408,
 							maxObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
-								level = 7,
-								hp = 100,
+								id = 606,
+								level = 8,
+								hp = 0,
 								isFriendly = false,
 							},
+							mit = 6616,
 							minObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Mountain Squig",
 								career = 0,
-								id = 11972,
+								id = 373,
 								level = 7,
 								hp = 100,
 								isFriendly = false,
@@ -1019,37 +2014,37 @@ Enemy.Settings =
 						},
 						dodge = 0,
 						disrupt = 0,
-						block = 0,
+						block = 6,
 						crit = 
 						{
 							overheal = 0,
-							total = 31,
-							max = 31,
+							total = 683,
+							max = 91,
 							min = 31,
-							count = 1,
+							count = 13,
 							abs = 0,
-							mit = 101,
 							maxObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
-								level = 7,
+								id = 588,
+								level = 9,
 								hp = 100,
 								isFriendly = false,
 							},
+							mit = 1339,
 							minObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								name = L"Black Orc",
-								career = 0,
+								isFriendly = false,
 								id = 11972,
 								level = 7,
 								hp = 100,
-								isFriendly = false,
+								career = 0,
 							},
 						},
 						parry = 0,
@@ -1057,36 +2052,36 @@ Enemy.Settings =
 				},
 				
 				{
-					[L"Guarded Attack"] = 
+					[L"Shield Sweep"] = 
 					{
 						normal = 
 						{
 							overheal = 0,
-							total = 49,
-							max = 49,
-							min = 49,
-							count = 1,
+							total = 601,
 							abs = 0,
-							mit = 33,
+							min = 58,
+							count = 9,
+							max = 81,
 							maxObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
-								level = 7,
+								id = 588,
+								level = 9,
 								hp = 100,
 								isFriendly = false,
 							},
+							mit = 330,
 							minObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
-								level = 7,
+								id = 606,
+								level = 8,
 								hp = 100,
 								isFriendly = false,
 							},
@@ -1097,43 +2092,67 @@ Enemy.Settings =
 						crit = 
 						{
 							overheal = 0,
-							total = 0,
-							count = 0,
+							total = 87,
 							abs = 0,
-							mit = 0,
+							min = 87,
+							count = 1,
+							max = 87,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 606,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 53,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 606,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
 						},
 						parry = 0,
 					},
-					[L"Inspiring Attack"] = 
+					[L"Binding Grudge"] = 
 					{
 						normal = 
 						{
 							overheal = 0,
-							total = 60,
-							max = 60,
-							min = 60,
-							count = 1,
+							total = 708,
 							abs = 0,
-							mit = 36,
+							min = 20,
+							count = 17,
+							max = 75,
 							maxObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
-								level = 7,
-								hp = 100,
+								id = 607,
+								level = 9,
+								hp = 90,
 								isFriendly = false,
 							},
+							mit = 341,
 							minObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Mountain Squig",
 								career = 0,
-								id = 11972,
-								level = 7,
+								id = 377,
+								level = 8,
 								hp = 100,
 								isFriendly = false,
 							},
@@ -1144,10 +2163,34 @@ Enemy.Settings =
 						crit = 
 						{
 							overheal = 0,
-							total = 0,
-							count = 0,
+							total = 160,
 							abs = 0,
-							mit = 0,
+							min = 44,
+							count = 3,
+							max = 69,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 588,
+								level = 9,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 81,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 547,
+								level = 8,
+								hp = 92,
+								isFriendly = false,
+							},
 						},
 						parry = 0,
 					},
@@ -1156,31 +2199,31 @@ Enemy.Settings =
 						normal = 
 						{
 							overheal = 0,
-							total = 68,
-							max = 68,
-							min = 68,
-							count = 1,
+							total = 2912,
+							max = 74,
+							min = 17,
+							count = 73,
 							abs = 0,
-							mit = 38,
 							maxObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
-								level = 7,
-								hp = 100,
+								id = 607,
+								level = 9,
+								hp = 90,
 								isFriendly = false,
 							},
+							mit = 2487,
 							minObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
-								level = 7,
+								id = 546,
+								level = 8,
 								hp = 100,
 								isFriendly = false,
 							},
@@ -1191,67 +2234,67 @@ Enemy.Settings =
 						crit = 
 						{
 							overheal = 0,
-							total = 119,
+							total = 479,
 							max = 95,
 							min = 24,
-							count = 2,
+							count = 9,
 							abs = 0,
-							mit = 89,
 							maxObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Mountain Squig",
 								career = 0,
-								id = 11972,
-								level = 7,
+								id = 377,
+								level = 8,
 								hp = 100,
 								isFriendly = false,
 							},
+							mit = 416,
 							minObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								name = L"Black Orc",
-								career = 0,
+								isFriendly = false,
 								id = 11972,
 								level = 7,
 								hp = 100,
-								isFriendly = false,
+								career = 0,
 							},
 						},
-						parry = 0,
+						parry = 1,
 					},
 					[L"Axe Toss"] = 
 					{
 						normal = 
 						{
 							overheal = 0,
-							total = 30,
+							total = 45,
 							max = 15,
 							min = 15,
-							count = 2,
+							count = 3,
 							abs = 0,
-							mit = 54,
 							maxObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
-								level = 7,
+								id = 545,
+								level = 9,
 								hp = 100,
 								isFriendly = false,
 							},
+							mit = 81,
 							minObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
-								level = 7,
+								id = 545,
+								level = 9,
 								hp = 100,
 								isFriendly = false,
 							},
@@ -1279,27 +2322,216 @@ Enemy.Settings =
 							min = 57,
 							count = 1,
 							abs = 0,
-							mit = 35,
 							maxObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								name = L"Black Orc",
-								career = 0,
+								isFriendly = false,
 								id = 11972,
 								level = 7,
 								hp = 100,
-								isFriendly = false,
+								career = 0,
 							},
+							mit = 35,
 							minObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								name = L"Black Orc",
-								career = 0,
+								isFriendly = false,
 								id = 11972,
 								level = 7,
 								hp = 100,
+								career = 0,
+							},
+						},
+						dodge = 0,
+						disrupt = 0,
+						block = 0,
+						crit = 
+						{
+							overheal = 0,
+							total = 0,
+							count = 0,
+							abs = 0,
+							mit = 0,
+						},
+						parry = 0,
+					},
+					[L"Guarded Attack"] = 
+					{
+						normal = 
+						{
+							overheal = 0,
+							total = 353,
+							max = 55,
+							min = 47,
+							count = 9,
+							abs = 0,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 544,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 251,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 606,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						dodge = 0,
+						disrupt = 0,
+						block = 0,
+						crit = 
+						{
+							overheal = 0,
+							total = 276,
+							abs = 0,
+							min = 64,
+							count = 4,
+							max = 73,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Mountain Squig",
+								career = 0,
+								id = 373,
+								level = 7,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 204,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 546,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						parry = 2,
+					},
+					[L"Inspiring Attack"] = 
+					{
+						normal = 
+						{
+							overheal = 0,
+							total = 432,
+							max = 74,
+							min = 58,
+							count = 8,
+							abs = 0,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 588,
+								level = 9,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 278,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 548,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						dodge = 0,
+						disrupt = 0,
+						block = 0,
+						crit = 
+						{
+							overheal = 0,
+							total = 79,
+							abs = 0,
+							min = 79,
+							count = 1,
+							max = 79,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 606,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 51,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 606,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						parry = 1,
+					},
+					[L"Shield of Reprisal"] = 
+					{
+						normal = 
+						{
+							overheal = 0,
+							total = 88,
+							abs = 0,
+							min = 88,
+							count = 1,
+							max = 88,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 547,
+								level = 8,
+								hp = 92,
+								isFriendly = false,
+							},
+							mit = 45,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 547,
+								level = 8,
+								hp = 92,
 								isFriendly = false,
 							},
 						},
@@ -1321,33 +2553,178 @@ Enemy.Settings =
 						normal = 
 						{
 							overheal = 0,
-							total = 57,
+							total = 402,
 							max = 57,
-							min = 57,
-							count = 1,
+							min = 46,
+							count = 9,
 							abs = 0,
-							mit = 35,
 							maxObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								name = L"Black Orc",
-								career = 0,
+								isFriendly = false,
 								id = 11972,
 								level = 7,
 								hp = 100,
-								isFriendly = false,
+								career = 0,
 							},
+							mit = 284,
 							minObject = 
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Black Orc",
+								name = L"Purple Crawler",
 								career = 0,
-								id = 11972,
+								id = 588,
+								level = 9,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						dodge = 0,
+						disrupt = 0,
+						block = 0,
+						crit = 
+						{
+							overheal = 0,
+							total = 64,
+							abs = 0,
+							min = 64,
+							count = 1,
+							max = 64,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 548,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 47,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 548,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						parry = 1,
+					},
+					[L"attack"] = 
+					{
+						normal = 
+						{
+							overheal = 0,
+							total = 2186,
+							max = 58,
+							min = 43,
+							count = 44,
+							abs = 0,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Mountain Squig",
+								career = 0,
+								id = 373,
 								level = 7,
 								hp = 100,
 								isFriendly = false,
+							},
+							mit = 1969,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 588,
+								level = 9,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						dodge = 0,
+						disrupt = 0,
+						block = 0,
+						crit = 
+						{
+							overheal = 0,
+							total = 304,
+							abs = 0,
+							min = 65,
+							count = 4,
+							max = 83,
+							maxObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 548,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+							mit = 265,
+							minObject = 
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Purple Crawler",
+								career = 0,
+								id = 546,
+								level = 8,
+								hp = 100,
+								isFriendly = false,
+							},
+						},
+						parry = 2,
+					},
+				},
+				
+				{
+					[L"Ironknubbe - Fleeting Elixir of Mending"] = 
+					{
+						normal = 
+						{
+							overheal = 0,
+							total = 240,
+							abs = 0,
+							min = 120,
+							count = 2,
+							max = 120,
+							maxObject = 
+							{
+								isNpc = false,
+								type = "selffriendlytarget",
+								name = L"Ironknubbe",
+								career = 1,
+								id = 114,
+								level = 11,
+								hp = 13,
+								isFriendly = true,
+							},
+							mit = 0,
+							minObject = 
+							{
+								isNpc = false,
+								type = "selffriendlytarget",
+								name = L"Ironknubbe",
+								career = 1,
+								id = 114,
+								level = 11,
+								hp = 13,
+								isFriendly = true,
 							},
 						},
 						dodge = 0,
@@ -1363,38 +2740,41 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"attack"] = 
+				},
+				
+				{
+					[L"Fleeting Elixir of Mending"] = 
 					{
 						normal = 
 						{
 							overheal = 0,
-							total = 164,
-							max = 58,
-							min = 48,
-							count = 4,
+							total = 240,
 							abs = 0,
-							mit = 129,
+							min = 120,
+							count = 2,
+							max = 120,
 							maxObject = 
 							{
-								isNpc = true,
-								type = "selfhostiletarget",
-								name = L"Black Orc",
-								career = 0,
-								id = 11972,
-								level = 7,
-								hp = 100,
-								isFriendly = false,
+								isNpc = false,
+								type = "selffriendlytarget",
+								name = L"Ironknubbe",
+								career = 1,
+								id = 114,
+								level = 11,
+								hp = 13,
+								isFriendly = true,
 							},
+							mit = 0,
 							minObject = 
 							{
-								isNpc = true,
-								type = "selfhostiletarget",
-								name = L"Black Orc",
-								career = 0,
-								id = 11972,
-								level = 7,
-								hp = 100,
-								isFriendly = false,
+								isNpc = false,
+								type = "selffriendlytarget",
+								name = L"Ironknubbe",
+								career = 1,
+								id = 114,
+								level = 11,
+								hp = 13,
+								isFriendly = true,
 							},
 						},
 						dodge = 0,
@@ -1408,281 +2788,10 @@ Enemy.Settings =
 							abs = 0,
 							mit = 0,
 						},
-						parry = 1,
+						parry = 0,
 					},
 				},
 			},
-			eps = 
-			{
-				
-				{
-					totalAoe = 0,
-					total = 196,
-					object = L"Black Orc",
-					objectTime = 64936509440,
-					data = 
-					{
-						
-						{
-							str = L"Black Orc's attack hits you for 44 damage. (52 mitigated)",
-							type = 1,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 44,
-							crit = false,
-							mit = 52,
-							abs = 0,
-						},
-						
-						{
-							str = L"Black Orc's attack hits you for 26 damage. (70 mitigated)",
-							type = 1,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 26,
-							crit = false,
-							mit = 70,
-							abs = 0,
-						},
-						
-						{
-							str = L"Black Orc's attack hits you for 26 damage. (70 mitigated)",
-							type = 1,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 26,
-							crit = false,
-							mit = 70,
-							abs = 0,
-						},
-						
-						{
-							str = L"Black Orc's attack hits you for 23 damage. (72 mitigated)",
-							type = 1,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 23,
-							crit = false,
-							mit = 72,
-							abs = 0,
-						},
-						
-						{
-							str = L"Black Orc's attack hits you for 23 damage. (72 mitigated)",
-							type = 1,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 23,
-							crit = false,
-							mit = 72,
-							abs = 0,
-						},
-						
-						{
-							str = L"Black Orc's attack hits you for 23 damage. (72 mitigated)",
-							type = 1,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 23,
-							crit = false,
-							mit = 72,
-							abs = 0,
-						},
-						
-						{
-							str = L"Black Orc's attack critically hits you for 31 damage. (101 mitigated)",
-							type = 1,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 31,
-							crit = true,
-							mit = 101,
-							abs = 0,
-						},
-					},
-				},
-				
-				{
-					totalAoe = 604,
-					total = 604,
-					object = L"Black Orc",
-					objectTime = 64936509440,
-					data = 
-					{
-						
-						{
-							str = L"Your Axe Toss hits Black Orc for 15 damage. (27 mitigated)",
-							type = 2,
-							ability = L"Axe Toss",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 15,
-							crit = false,
-							mit = 27,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your attack hits Black Orc for 48 damage. (41 mitigated)",
-							type = 2,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 48,
-							crit = false,
-							mit = 41,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your Axe Toss hits Black Orc for 15 damage. (27 mitigated)",
-							type = 2,
-							ability = L"Axe Toss",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 15,
-							crit = false,
-							mit = 27,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your Guarded Attack hits Black Orc for 49 damage. (33 mitigated)",
-							type = 2,
-							ability = L"Guarded Attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 49,
-							crit = false,
-							mit = 33,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your Inspiring Attack hits Black Orc for 60 damage. (36 mitigated)",
-							type = 2,
-							ability = L"Inspiring Attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 60,
-							crit = false,
-							mit = 36,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your Vengeful Strike hits Black Orc for 57 damage. (35 mitigated)",
-							type = 2,
-							ability = L"Vengeful Strike",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 57,
-							crit = false,
-							mit = 35,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your attack hits Black Orc for 58 damage. (44 mitigated)",
-							type = 2,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 58,
-							crit = false,
-							mit = 44,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your Heavy Blow critically hits Black Orc for 95 damage. (52 mitigated)",
-							type = 2,
-							ability = L"Heavy Blow",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 95,
-							crit = true,
-							mit = 52,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your attack hits Black Orc for 58 damage. (44 mitigated)",
-							type = 2,
-							ability = L"attack",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 58,
-							crit = false,
-							mit = 44,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your Grudging Blow hits Black Orc for 57 damage. (35 mitigated)",
-							type = 2,
-							ability = L"Grudging Blow",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 57,
-							crit = false,
-							mit = 35,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your Heavy Blow hits Black Orc for 68 damage. (38 mitigated)",
-							type = 2,
-							ability = L"Heavy Blow",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 68,
-							crit = false,
-							mit = 38,
-							abs = 0,
-						},
-						
-						{
-							str = L"Your Heavy Blow critically hits Black Orc for 24 damage. (37 mitigated)",
-							type = 2,
-							ability = L"Heavy Blow",
-							currentTarget = true,
-							object = L"Black Orc",
-							time = 64936509440,
-							value = 24,
-							crit = true,
-							mit = 37,
-							abs = 0,
-						},
-					},
-				},
-			},
-			name = L"Default",
 			dt = 
 			{
 				minutes = 10,
@@ -1772,7 +2881,7 @@ Enemy.Settings =
 		true,
 	},
 	unitFramesLayer = 1,
-	groupIconsOtherGroupsScale = 0.6,
+	groupIconsOtherGroupsScale = 0,
 	targetShowDelay = 8,
 	assistTargetOnNotifyClick = true,
 	scenarioInfoReplaceStandardWindow = false,
@@ -1781,7 +2890,12 @@ Enemy.Settings =
 	{
 		
 		{
-			scale = 1,
+			color = 
+			{
+				191,
+				255,
+				0,
+			},
 			firstLetters = 4,
 			showCareerIcon = true,
 			canClearOnClick = true,
@@ -1792,12 +2906,7 @@ Enemy.Settings =
 			text = L"",
 			alpha = 1,
 			targetOnClick = true,
-			color = 
-			{
-				191,
-				255,
-				0,
-			},
+			scale = 1,
 			font = "font_clear_large_bold",
 			name = L"A",
 			layer = 3,
@@ -1808,7 +2917,12 @@ Enemy.Settings =
 		},
 		
 		{
-			scale = 1,
+			color = 
+			{
+				255,
+				64,
+				255,
+			},
 			firstLetters = 4,
 			showCareerIcon = true,
 			canClearOnClick = true,
@@ -1819,12 +2933,7 @@ Enemy.Settings =
 			text = L"",
 			alpha = 1,
 			targetOnClick = true,
-			color = 
-			{
-				255,
-				64,
-				255,
-			},
+			scale = 1,
 			font = "font_clear_large_bold",
 			name = L"B",
 			layer = 3,
@@ -1835,7 +2944,12 @@ Enemy.Settings =
 		},
 		
 		{
-			scale = 1,
+			color = 
+			{
+				65,
+				150,
+				255,
+			},
 			firstLetters = 4,
 			showCareerIcon = false,
 			canClearOnClick = true,
@@ -1846,12 +2960,7 @@ Enemy.Settings =
 			text = L"G",
 			alpha = 1,
 			targetOnClick = true,
-			color = 
-			{
-				65,
-				150,
-				255,
-			},
+			scale = 1,
 			font = "font_default_text_giant",
 			name = L"G",
 			layer = 3,
@@ -1874,76 +2983,89 @@ Enemy.Settings =
 		255,
 		255,
 	},
+	stateMachineThrottle = 0.3,
+	groupIconsPetBGAlpha = 0.5,
+	unitFramesSortingEnabled = true,
+	unitFramesScale = 1,
+	groupIconsOtherGroupsHPColor = 
+	{
+		200,
+		255,
+		255,
+	},
 	combatLogTargetDefenseBackground = 
 	{
 		0,
 		0,
 		0,
 	},
-	groupIconsPetBGAlpha = 0.5,
-	unitFramesGroupsDirection2 = 4,
-	unitFramesScale = 1,
-	combatLogLogParseErrors = true,
-	soundOnNewTargetId = 500,
-	unitFramesMyGroupFirst = true,
+	newTargetMarkTemplate = 
+	{
+		color = 
+		{
+			r = 255,
+			g = 0,
+			b = 0,
+		},
+		unique = false,
+		firstLetters = 4,
+		showCareerIcon = true,
+		canClearOnClick = true,
+		permanentTargets = 
+		{
+		},
+		id = 6,
+		layer = 3,
+		alpha = 1,
+		scale = 1,
+		text = L"KILL",
+		font = "font_clear_large_bold",
+		name = L"",
+		targetOnClick = true,
+		display = 1,
+		offsetY = 50,
+		neverExpire = false,
+		permanent = false,
+	},
 	timerActiveColor = 
 	{
 		255,
 		255,
 		75,
 	},
-	combatLogEnabled = true,
-	combatLogTargetDefenseScale = 1,
-	scenarioInfoSelection = 
+	groupIconsPetOffset = 
 	{
-		
-		{
-			sortColumn = "value1",
-			columns = 
-			{
-				"db",
-				"deaths",
-			},
-			sortDirection = false,
-			id2 = "1",
-			id = "All",
-		},
-		
-		{
-			sortColumn = "value1",
-			columns = 
-			{
-				"db",
-				"deaths",
-			},
-			sortDirection = false,
-			id2 = "2",
-			id = "All",
-		},
+		0,
+		20,
 	},
-	unitFramesIsVertical = false,
+	scenarioInfoEnabled = true,
+	guardDistanceIndicator = 2,
 	guardMarkEnabled = true,
 	intercomPrivate = true,
-	groupIconsShowOtherGroups = true,
-	combatLogIDSRowScale = 1,
-	combatLogTargetDefenseTotalEnabled = false,
-	version = 279,
-	guardDistanceIndicatorScaleNormal = 1,
-	guardDistanceIndicatorClickThrough = false,
-	combatLogTargetDefenseTotalCalculate = 
+	groupIconsAlpha = 0.5,
+	combatLogEPSShow = 
 	{
 		true,
 		true,
 		true,
 		true,
-		true,
-		true,
 	},
-	playerDeaths = 0,
-	scenarioAlerterEnabled = true,
+	combatLogLogParseErrors = true,
+	guardDistanceIndicatorMovable = true,
+	version = 279,
+	groupIconsTargetOnClick = true,
+	guardDistanceIndicatorClickThrough = false,
+	chatThrottleDelay = 10,
+	playerDeaths = 6,
+	killSpamReparseChunkSize = 20,
 	unitFramesEnabled = true,
 	groupIconsShowOnMarkedPlayers = false,
-	guardDistanceIndicatorAlphaWarning = 1,
+	groupIconsHPColor = 
+	{
+		200,
+		255,
+		0,
+	},
 	groupIconsOtherGroupsLayer = 0,
 	chatDelay = 2,
 	combatLogStatisticsEnabled = true,
@@ -1962,8 +3084,13 @@ Enemy.Settings =
 	{
 		
 		{
-			type = "selectionFrame",
-			id = "76089",
+			archetypes = 
+			{
+				false,
+				false,
+				false,
+			},
+			id = "7888",
 			data = 
 			{
 				offlineHide = true,
@@ -1995,21 +3122,21 @@ Enemy.Settings =
 			},
 			exceptMe = false,
 			name = L"Selection",
-			playerType = 1,
 			isEnabled = true,
+			playerType = 1,
+			type = "selectionFrame",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "panel",
-			id = "76090",
+			id = "7889",
 			data = 
 			{
 				offlineColor = 
@@ -2053,21 +3180,21 @@ Enemy.Settings =
 			},
 			exceptMe = false,
 			name = L"Background",
-			playerType = 1,
 			isEnabled = true,
+			playerType = 1,
+			type = "panel",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "hpbar",
-			id = "76091",
+			id = "7890",
 			data = 
 			{
 				pos = 
@@ -2076,10 +3203,10 @@ Enemy.Settings =
 					3,
 				},
 				offlineHide = true,
-				wrap = false,
-				anchorTo = "topleft",
-				scale = 1,
 				layer = 1,
+				distAlpha = 0.3,
+				scale = 1,
+				wrap = false,
 				anchorFrom = "topleft",
 				color = 
 				{
@@ -2097,26 +3224,26 @@ Enemy.Settings =
 				alpha = 1,
 				textureFullResize = true,
 				distHide = false,
-				distAlpha = 0.3,
+				anchorTo = "topleft",
 				texture = "default",
 			},
 			exceptMe = false,
 			name = L"HP",
-			playerType = 1,
 			isEnabled = true,
+			playerType = 1,
+			type = "hpbar",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "apbar",
-			id = "76092",
+			id = "7891",
 			data = 
 			{
 				offlineHide = true,
@@ -2150,21 +3277,21 @@ Enemy.Settings =
 			},
 			exceptMe = false,
 			name = L"AP",
-			playerType = 3,
 			isEnabled = true,
+			playerType = 3,
+			type = "apbar",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "nameText",
-			id = "76093",
+			id = "7892",
 			data = 
 			{
 				anchorTo = "bottomleft",
@@ -2207,21 +3334,21 @@ Enemy.Settings =
 			},
 			exceptMe = false,
 			name = L"Name",
-			playerType = 1,
 			isEnabled = true,
+			playerType = 1,
+			type = "nameText",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "careerIcon",
-			id = "76094",
+			id = "7893",
 			data = 
 			{
 				anchorTo = "topleft",
@@ -2250,21 +3377,21 @@ Enemy.Settings =
 			},
 			exceptMe = false,
 			name = L"Icon",
-			playerType = 1,
 			isEnabled = true,
+			playerType = 1,
+			type = "careerIcon",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "levelText",
-			id = "76095",
+			id = "7894",
 			data = 
 			{
 				anchorTo = "bottomleft",
@@ -2295,21 +3422,21 @@ Enemy.Settings =
 			},
 			exceptMe = false,
 			name = L"Level",
-			playerType = 1,
 			isEnabled = true,
+			playerType = 1,
+			type = "levelText",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "groupLeaderIcon",
-			id = "76096",
+			id = "7895",
 			data = 
 			{
 				anchorTo = "topleft",
@@ -2338,21 +3465,21 @@ Enemy.Settings =
 			},
 			exceptMe = false,
 			name = L"Leader",
-			playerType = 1,
 			isEnabled = true,
+			playerType = 1,
+			type = "groupLeaderIcon",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "moraleBar",
-			id = "76097",
+			id = "7896",
 			data = 
 			{
 				pos = 
@@ -2361,47 +3488,47 @@ Enemy.Settings =
 					4,
 				},
 				offlineHide = true,
+				scale = 1,
+				anchorTo = "topleft",
 				color = 
 				{
 					120,
 					200,
 					255,
 				},
-				anchorTo = "topleft",
-				scale = 1,
 				layer = 3,
-				alpha = 1,
+				anchorFrom = "topleft",
 				size = 
 				{
 					38,
 					10,
 				},
 				textureFullResize = false,
-				deadHide = true,
+				vertical = false,
 				prefix = L"M ",
 				suffix = L"",
-				vertical = false,
+				deadHide = true,
 				distHide = false,
-				anchorFrom = "topleft",
+				alpha = 1,
 				texture = "4dots",
 			},
 			exceptMe = false,
 			name = L"Morale",
-			playerType = 3,
 			isEnabled = true,
+			playerType = 3,
+			type = "moraleBar",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "distanceText",
-			id = "76098",
+			id = "7897",
 			data = 
 			{
 				anchorTo = "topright",
@@ -2439,21 +3566,21 @@ Enemy.Settings =
 			},
 			exceptMe = true,
 			name = L"Distance",
-			playerType = 1,
 			isEnabled = false,
+			playerType = 1,
+			type = "distanceText",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "distanceBar",
-			id = "76099",
+			id = "7898",
 			data = 
 			{
 				anchorTo = "topright",
@@ -2507,25 +3634,30 @@ Enemy.Settings =
 			},
 			exceptMe = false,
 			name = L"Distance bar",
-			playerType = 1,
 			isEnabled = true,
+			playerType = 1,
+			type = "distanceBar",
+			archetypeMatch = 1,
+			playerTypeMatch = 1,
+		},
+		
+		{
 			archetypes = 
 			{
 				false,
 				false,
 				false,
 			},
-			archetypeMatch = 1,
-			playerTypeMatch = 1,
-		},
-		
-		{
-			type = "hppText",
-			id = "76100",
+			id = "7899",
 			data = 
 			{
 				anchorTo = "right",
-				scale = 0.7,
+				color = 
+				{
+					255,
+					255,
+					255,
+				},
 				anchorFrom = "right",
 				vertical = false,
 				prefix = L"",
@@ -2541,12 +3673,7 @@ Enemy.Settings =
 				layer = 2,
 				alpha = 1,
 				deadHide = true,
-				color = 
-				{
-					255,
-					255,
-					255,
-				},
+				scale = 0.7,
 				texture = "3dots",
 				align = "rightcenter",
 				font = "font_clear_small_bold",
@@ -2558,14 +3685,9 @@ Enemy.Settings =
 			},
 			exceptMe = false,
 			name = L"HP %",
-			playerType = 1,
 			isEnabled = false,
-			archetypes = 
-			{
-				false,
-				false,
-				false,
-			},
+			playerType = 1,
+			type = "hppText",
 			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
@@ -2580,26 +3702,23 @@ Enemy.Settings =
 	},
 	groupIconsOtherGroupsBGAlpha = 0.5,
 	playerKDRDisplayMode = 5,
-	groupIconsHPColor = 
-	{
-		200,
-		255,
-		0,
-	},
+	guardDistanceIndicatorAlphaWarning = 1,
 	groupIconsHideOnSelf = true,
-	killSpamReparseChunkSize = 20,
-	chatThrottleDelay = 10,
-	unitFramesCount1 = 6,
-	groupIconsTargetOnClick = true,
-	guardDistanceIndicatorMovable = true,
-	combatLogEPSShow = 
+	scenarioAlerterEnabled = true,
+	combatLogTargetDefenseTotalCalculate = 
 	{
 		true,
 		true,
 		true,
 		true,
+		true,
+		true,
 	},
-	groupIconsAlpha = 1,
+	unitFramesCount1 = 6,
+	guardDistanceIndicatorScaleNormal = 1,
+	combatLogTargetDefenseTotalEnabled = false,
+	combatLogIDSRowScale = 1,
+	groupIconsShowOtherGroups = true,
 	groupIconsPetBGColor = 
 	{
 		255,
@@ -2607,49 +3726,39 @@ Enemy.Settings =
 		255,
 	},
 	unitFramesGroupsPadding1 = 30,
-	guardDistanceIndicator = 2,
-	scenarioInfoEnabled = true,
-	groupIconsPetOffset = 
+	scenarioInfoSelection = 
 	{
-		0,
-		20,
-	},
-	newTargetMarkTemplate = 
-	{
-		color = 
+		
 		{
-			b = 0,
-			g = 0,
-			r = 255,
+			sortColumn = "value1",
+			columns = 
+			{
+				"db",
+				"deaths",
+			},
+			sortDirection = false,
+			id2 = "1",
+			id = "All",
 		},
-		unique = false,
-		firstLetters = 4,
-		showCareerIcon = true,
-		canClearOnClick = true,
-		permanentTargets = 
+		
 		{
+			sortColumn = "value1",
+			columns = 
+			{
+				"db",
+				"deaths",
+			},
+			sortDirection = false,
+			id2 = "2",
+			id = "All",
 		},
-		id = 6,
-		targetOnClick = true,
-		alpha = 1,
-		scale = 1,
-		layer = 3,
-		font = "font_clear_large_bold",
-		name = L"",
-		text = L"KILL",
-		display = 1,
-		offsetY = 50,
-		neverExpire = false,
-		permanent = false,
 	},
-	groupIconsOtherGroupsHPColor = 
-	{
-		200,
-		255,
-		255,
-	},
-	unitFramesSortingEnabled = true,
-	stateMachineThrottle = 0.3,
+	unitFramesIsVertical = false,
+	combatLogTargetDefenseScale = 1,
+	unitFramesMyGroupFirst = true,
+	combatLogEnabled = true,
+	unitFramesGroupsDirection2 = 4,
+	soundOnNewTargetId = 500,
 }
 
 
