@@ -1,0 +1,6 @@
+FriendSuggester.Data = 
+{
+}
+
+
+

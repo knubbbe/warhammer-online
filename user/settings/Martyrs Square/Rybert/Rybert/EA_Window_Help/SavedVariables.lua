@@ -1,0 +1,7 @@
+TutorialWindow.Settings = 
+{
+	showTutorials = true,
+}
+
+
+
