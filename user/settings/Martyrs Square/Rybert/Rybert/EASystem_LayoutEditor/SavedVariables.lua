@@ -205,7 +205,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup2Window = 
+	MiracleGrow2Icon = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EnemyTarget = 
 	{
 		locked = false,
 		hidden = true,
@@ -220,27 +225,27 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	EA_CareerResourceWindow = 
+	EnemyCombatLogTargetDefeseWindow = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	EA_Window_ZoneControl = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EnemyCombatLogEpsWindow = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
-		hidden = true,
+		hidden = false,
 	},
 	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	EA_Window_QuestTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -260,10 +265,10 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	MenuBarWindow = 
+	FloatingScenarioGroup3Window = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	EA_Window_RRQTracker = 
 	{
@@ -275,37 +280,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	Options = 
+	EA_Window_CityTracker = 
 	{
-		snapDistance = 20,
-		snapWindowsEnabled = true,
+		locked = false,
+		hidden = false,
 	},
 	PurePlayerUnitFrame = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_AssistWindow = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	MouseOverTargetWindow = 
-	{
-		locked = false,
-		hidden = true,
-	},
-	EA_Window_WinOMeter = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_ActionBar3 = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	WarbuilderMainWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -315,22 +295,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	PureTargetUnitFrameFriendly = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_Window_OverheadMap = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_ActionBar2 = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	FloatingScenarioGroup5Window = 
+	MouseOverTargetWindow = 
 	{
 		locked = false,
 		hidden = true,
@@ -340,22 +305,62 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
+	EA_ActionBar3 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_CareerResourceWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_AssistWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	PureTargetUnitFrameFriendly = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_ActionBar2 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_Window_OverheadMap = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	FloatingScenarioGroup5Window = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EA_Window_WinOMeter = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	EA_ActionBar1RightCap = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_CityTracker = 
+	WarbuilderMainWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup3Window = 
+	Options = 
 	{
-		locked = false,
-		hidden = true,
+		snapDistance = 20,
+		snapWindowsEnabled = true,
 	},
-	EA_Window_QuestTracker = 
+	MenuBarWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -365,12 +370,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EnemyCombatLogTargetDefeseWindow = 
+	EnemyCombatLogEpsWindow = 
 	{
 		locked = false,
 		hidden = true,
 	},
-	EnemyTarget = 
+	FloatingScenarioGroup2Window = 
 	{
 		locked = false,
 		hidden = true,

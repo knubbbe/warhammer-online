@@ -4,25 +4,25 @@ MiracleGrow2.vSettings =
 	bRunOnce = true,
 	progress = 
 	{
-		texture = 1,
-		fill = 
-		{
-			a = 255,
-			r = 192,
-			g = 192,
-			b = 192,
-		},
-		arrange = 2,
 		back = 
 		{
 			a = 255,
-			r = 64,
-			g = 48,
 			b = 32,
+			g = 48,
+			r = 64,
 		},
+		fill = 
+		{
+			a = 255,
+			b = 192,
+			g = 192,
+			r = 192,
+		},
+		arrange = 2,
+		texture = 1,
 	},
 	seedreserve = 4,
-	showtoggle = false,
+	showtoggle = true,
 	soundnum2 = 215,
 	sound = true,
 	minlvl = 0,
@@ -36,8 +36,78 @@ MiracleGrow2.vSettings =
 		0,
 	},
 	version = 2.33,
-	showing = true,
-	language = 0,
+	boxvis = 
+	{
+		
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		},
+		
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		},
+		
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		},
+		
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		}, 
+		[8] = 
+		{
+			true,
+			true,
+			false,
+			false, 
+			[0] = false,
+		},
+		[9] = 
+		{
+			true,
+			true,
+			true,
+			false, 
+			[0] = false,
+		},
+		[10] = 
+		{
+			true,
+			true,
+			true,
+			true, 
+			[0] = true,
+		},
+	},
+	layout = 
+	{
+		dimx = 39,
+		progdimy1 = 0,
+		dimy = 5,
+		border = false,
+		progdimx1 = 24,
+		spacing = 5,
+		count = 4,
+		progdimx2 = 39,
+		arrange = 1,
+		progdimy2 = 5,
+	},
 	boxlayout = 
 	{
 		
@@ -91,78 +161,8 @@ MiracleGrow2.vSettings =
 			1,
 		},
 	},
-	layout = 
-	{
-		dimx = 39,
-		progdimy1 = 0,
-		dimy = 5,
-		border = false,
-		progdimx1 = 24,
-		spacing = 5,
-		progdimy2 = 5,
-		progdimx2 = 39,
-		arrange = 1,
-		count = 4,
-	},
-	boxvis = 
-	{
-		
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		},
-		
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		},
-		
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		},
-		
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		}, 
-		[10] = 
-		{
-			true,
-			true,
-			true,
-			true, 
-			[0] = true,
-		},
-		[9] = 
-		{
-			true,
-			true,
-			true,
-			false, 
-			[0] = false,
-		},
-		[8] = 
-		{
-			true,
-			true,
-			false,
-			false, 
-			[0] = false,
-		},
-	},
+	language = 0,
+	showing = true,
 }
 
 
