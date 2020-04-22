@@ -22,6 +22,10 @@ EA_ActionBars_DataCache =
 		{
 			icon = 8001,
 		},
+		[8244] = 
+		{
+			icon = 8031,
+		},
 		[245] = 
 		{
 			icon = 5004,
@@ -30,6 +34,10 @@ EA_ActionBars_DataCache =
 		{
 			icon = 8030,
 		},
+		[8239] = 
+		{
+			icon = 7978,
+		},
 		[8241] = 
 		{
 			icon = 7960,
@@ -37,6 +45,10 @@ EA_ActionBars_DataCache =
 		[2931] = 
 		{
 			icon = 7945,
+		},
+		[8245] = 
+		{
+			icon = 8054,
 		},
 		[8238] = 
 		{
@@ -97,7 +109,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Imperial Pack Mule",
 				broken = false,
-				timestamp = 10,
+				timestamp = 15,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -201,7 +213,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Initiate's Draught of Allaying",
 				broken = false,
-				timestamp = 10,
+				timestamp = 15,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -305,7 +317,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Book of Binding",
 				broken = false,
-				timestamp = 10,
+				timestamp = 15,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -359,6 +371,17 @@ EA_ActionBars_DataCache =
 				isRefinable = false,
 				capacity = 1,
 			},
+		},
+	}, 
+	[7] = 
+	{
+		[3] = 
+		{
+			icon = 234,
+		},
+		[4] = 
+		{
+			icon = 258,
 		},
 	},
 }
