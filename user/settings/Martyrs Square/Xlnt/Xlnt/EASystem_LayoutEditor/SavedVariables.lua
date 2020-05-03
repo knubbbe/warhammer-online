@@ -1,28 +1,18 @@
 LayoutEditor.Settings = 
 {
-	LayerTimerWindow = 
+	ClosetGoblinOptionWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup3Window = 
+	TextEntry = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_GrantedAbilities = 
+	EnemyGuardDistanceIndicator = 
 	{
-		locked = false,
-		hidden = false,
-	},
-	FloatingScenarioGroup6Window = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_Window_CityTracker = 
-	{
-		locked = false,
+		locked = true,
 		hidden = false,
 	},
 	EA_Window_CampaignMap = 
@@ -33,19 +23,9 @@ LayoutEditor.Settings =
 	PrimaryTargetLayoutWindow = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
-	TextEntry = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	PureTargetUnitFrameFriendly = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	PureTargetHUDHostile = 
+	PureTargetUnitFrameHostile = 
 	{
 		locked = false,
 		hidden = false,
@@ -63,27 +43,7 @@ LayoutEditor.Settings =
 	BattlegroupHUDGroup4LayoutWindow = 
 	{
 		locked = false,
-		hidden = false,
-	},
-	PureTargetUnitFrameHostile = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_MoraleBar = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	RoR_Window_ScenarioSurrender = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_TacticsEditor = 
-	{
-		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	EA_Window_PublicQuestTracker = 
 	{
@@ -95,27 +55,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	PurePlayerPetUnitFrame = 
+	EnemyKillSpamDialog = 
 	{
 		locked = false,
-		hidden = false,
-	},
-	BattlegroupHUDGroup3LayoutWindow = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	FloatingScenarioGroup4Window = 
-	{
-		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	PurePlayerPetTargetUnitFrame = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	RoR_SoR_Button = 
 	{
 		locked = false,
 		hidden = false,
@@ -125,22 +70,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTracker = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_Window_QuestTrackerNub = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_Window_KeepObjectiveTracker = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	PlayerWindow = 
+	EA_TacticsEditor = 
 	{
 		locked = false,
 		hidden = false,
@@ -148,49 +78,34 @@ LayoutEditor.Settings =
 	FloatingScenarioGroup1Window = 
 	{
 		locked = false,
-		hidden = false,
-	},
-	EA_Window_ZoneControl = 
-	{
-		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	BattlegroupHUDGroup2LayoutWindow = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
-	MenuBarWindow = 
+	BattlegroupHUDGroup3LayoutWindow = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EnemyUnitFramesAnchor1 = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup5Window = 
+	EnemyCombatLogTargetDefeseTotalWindow = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
-	GroupWindow = 
+	EnemyTalismanAlerterIndicator = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
-	EA_StanceBar = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	FloatingScenarioGroup2Window = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	PureGroupLayout = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_Window_RRQTracker = 
+	EnemyPlayerKDR = 
 	{
 		locked = false,
 		hidden = true,
@@ -200,22 +115,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_CareerResourceWindow = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	PurePlayerUnitFrame = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	EA_Window_RvRTracker = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	MouseOverTargetWindow = 
+	EnemyUnitFramesAnchor2 = 
 	{
 		locked = false,
 		hidden = false,
@@ -225,32 +130,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	Options = 
-	{
-		snapDistance = 20,
-		snapWindowsEnabled = true,
-	},
 	EA_ActionBar1 = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_AssistWindow = 
+	EnemyMarksWindow = 
 	{
 		locked = false,
-		hidden = false,
-	},
-	WarbuilderMainWindow = 
-	{
-		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	EA_ChatWindowGroup1 = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	SecondaryTargetLayoutWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -260,22 +150,172 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_WinOMeter = 
+	BattlegroupHUDGroup1LayoutWindow = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	LayerTimerWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_ActionBar1RightCap = 
+	EA_GrantedAbilities = 
 	{
 		locked = false,
 		hidden = false,
+	},
+	FloatingScenarioGroup6Window = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	SecondaryTargetLayoutWindow = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EnemyTimer = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EA_MoraleBar = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	RoR_Window_ScenarioSurrender = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	FloatingScenarioGroup4Window = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	RoR_SoR_Button = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	PurePlayerPetUnitFrame = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	FloatingScenarioGroup2Window = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EnemyCombatLogEpsWindow = 
+	{
+		locked = false,
+		hidden = true,
 	},
 	Moth = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	PureTargetHUDFriendly = 
+	PlayerWindow = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EA_Window_KeepObjectiveTracker = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_Window_ZoneControl = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_Window_QuestTrackerNub = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	MenuBarWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	Options = 
+	{
+		snapDistance = 20,
+		snapWindowsEnabled = true,
+	},
+	GroupWindow = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EA_StanceBar = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EnemyKilledBy = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EA_CareerResourceWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_Window_RRQTracker = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EnemyIcon = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_AssistWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	PurePlayerUnitFrame = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_Window_WinOMeter = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	MouseOverTargetWindow = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	FloatingScenarioGroup5Window = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EA_ActionBar3 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	WarbuilderMainWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	MiracleGrow2 = 
 	{
 		locked = false,
 		hidden = false,
@@ -285,20 +325,60 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
+	EA_ActionBar2 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	PureTargetUnitFrameFriendly = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	MiracleGrow2Icon = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EnemyCombatLogIDSAnchor = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_ActionBar1RightCap = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_Window_CityTracker = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	FloatingScenarioGroup3Window = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EA_Window_QuestTracker = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	EA_HelpTipsContainerWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	ClosetGoblinOptionWindow = 
+	EnemyCombatLogTargetDefeseWindow = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
-	BattlegroupHUDGroup1LayoutWindow = 
+	EnemyTarget = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 }
 

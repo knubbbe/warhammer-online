@@ -3,20 +3,24 @@
     <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="" savedVariablesVersion="" />
     <Windows>
         <WindowSettings xmlVersion="1.0" name="FriendlyTargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
-            <Anchors />
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="PrimaryTargetLayoutWindow" xOffset="0.000000" yOffset="0.000000" />
+            </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="PrimaryTargetLayoutWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+        <WindowSettings xmlVersion="1.0" name="PrimaryTargetLayoutWindow" sizeX="265.000000" sizeY="223.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
                 <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="278.000000" yOffset="27.000000" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="SecondaryTargetLayoutWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.750000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="278.000000" yOffset="138.000000" />
+                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="-424.291748" yOffset="55.000000" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
-            <Anchors />
+        <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="223.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="PrimaryTargetLayoutWindow" xOffset="0.000000" yOffset="0.000000" />
+            </Anchors>
         </WindowSettings>
     </Windows>
 </UiModuleSettings>

@@ -39,15 +39,6 @@ EA_Window_OpenPartyLootRollOptions.Settings =
 		[3] = 0,
 		[4] = 0,
 	},
-	trash = 1,
-	talisman = 
-	{
-		[5] = -1,
-		[6] = -1,
-		[2] = -1,
-		[3] = -1,
-		[4] = -1,
-	},
 	crafting = 
 	{
 		[5] = -1,
@@ -56,6 +47,15 @@ EA_Window_OpenPartyLootRollOptions.Settings =
 		[3] = -1,
 		[4] = -1,
 	},
+	talisman = 
+	{
+		[5] = -1,
+		[6] = -1,
+		[2] = -1,
+		[3] = -1,
+		[4] = -1,
+	},
+	trash = 1,
 }
 
 
