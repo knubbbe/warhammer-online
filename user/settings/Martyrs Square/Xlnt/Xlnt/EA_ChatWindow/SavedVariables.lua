@@ -386,11 +386,11 @@ EA_ChatWindow.Settings =
 			maxAlpha = 0.7,
 			windowDims = 
 			{
-				y = 0.83333335540913,
-				x = 0,
-				height = 300,
+				y = 0.86522623478249,
+				x = -0.00057870371903412,
+				height = 265.55572509766,
 				scale = 1,
-				width = 400,
+				width = 516.66766357422,
 			},
 			activeTab = 1,
 			Tabs = 
@@ -398,10 +398,10 @@ EA_ChatWindow.Settings =
 				
 				{
 					defaultLog = "Chat",
-					showTimestamp = false,
+					showTimestamp = true,
 					tabText = L"Chat",
 					flashOnActivity = false,
-					font = "font_clear_medium",
+					font = "font_journal_body",
 					Filters = 
 					{
 						true,
@@ -473,7 +473,7 @@ EA_ChatWindow.Settings =
 					showTimestamp = false,
 					tabText = L"Combat",
 					flashOnActivity = false,
-					font = "font_clear_medium",
+					font = "font_journal_body",
 					Filters = 
 					{
 						false,
@@ -545,7 +545,7 @@ EA_ChatWindow.Settings =
 					showTimestamp = false,
 					tabText = L"RvR",
 					flashOnActivity = false,
-					font = "font_clear_medium",
+					font = "font_journal_body",
 					Filters = 
 					{
 						false,
@@ -617,7 +617,7 @@ EA_ChatWindow.Settings =
 					showTimestamp = false,
 					tabText = L"Misc.",
 					flashOnActivity = false,
-					font = "font_clear_medium",
+					font = "font_journal_body",
 					Filters = 
 					{
 						false,

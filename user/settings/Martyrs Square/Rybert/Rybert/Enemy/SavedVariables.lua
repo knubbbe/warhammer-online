@@ -1,7 +1,7 @@
-Enemy.Settings = 
+Enemy.Settings =
 {
 	combatLogIgnoreAbilityMinValue = 20000,
-	combatLogTargetDefenseShow = 
+	combatLogTargetDefenseShow =
 	{
 		true,
 		true,
@@ -21,7 +21,7 @@ Enemy.Settings =
 	unitFramesMyGroupOnly = false,
 	soundOnNewTarget = false,
 	guardDistanceIndicatorAlphaNormal = 0.75,
-	talismanAlerterColorWarning = 
+	talismanAlerterColorWarning =
 	{
 		255,
 		255,
@@ -30,7 +30,7 @@ Enemy.Settings =
 	talismanAlerterAnimation = false,
 	combatLogIDSRowPadding = L"3",
 	killSpamKilledByYouSound = 219,
-	combatLogTargetDefenseSize = 
+	combatLogTargetDefenseSize =
 	{
 		60,
 		20,
@@ -41,31 +41,31 @@ Enemy.Settings =
 	combatLogIDSDisplayTime = 20,
 	combatLogIgnoreNpc = false,
 	groupIconsEnabled = true,
-	groupIconsBGColor = 
+	groupIconsBGColor =
 	{
 		200,
 		255,
 		0,
 	},
-	groupIconsOffset = 
+	groupIconsOffset =
 	{
 		0,
 		50,
 	},
 	combatLogTargetDefenseBackgroundAlpha = 0.5,
 	combatLogIDSType = "dps",
-	groupIconsPetIconColor = 
+	groupIconsPetIconColor =
 	{
 		255,
 		100,
 		200,
 	},
 	combatLogIDSRowBackgroundAlpha = 0.7,
-	clickCastings = 
+	clickCastings =
 	{
-		[1] = 
+		[1] =
 		{
-			keyModifiers = 
+			keyModifiers =
 			{
 				false,
 				false,
@@ -76,7 +76,7 @@ Enemy.Settings =
 			exceptMe = false,
 			abilityId = 8241,
 			name = L"Cure",
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -91,18 +91,18 @@ Enemy.Settings =
 	unitFramesDetachMyGroup = false,
 	unitFramesHideWhenSolo = true,
 	groupIconsBGAlpha = 0.5,
-	effectsIndicators = 
+	effectsIndicators =
 	{
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
 			anchorTo = 5,
-			color = 
+			color =
 			{
 				b = 127,
 				g = 243,
@@ -114,7 +114,7 @@ Enemy.Settings =
 			icon = "guard",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78060",
+			id = "3405",
 			alpha = 1,
 			archetypeMatch = 1,
 			scale = 1,
@@ -122,9 +122,9 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 3,
 			offsetY = 2,
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					durationType = 3,
 					type = "guard",
@@ -138,17 +138,17 @@ Enemy.Settings =
 			},
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				true,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					durationType = 3,
 					type = "guard",
@@ -160,7 +160,7 @@ Enemy.Settings =
 					descriptionMatch = 2,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 255,
 				g = 181,
@@ -172,7 +172,7 @@ Enemy.Settings =
 			icon = "guard",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78061",
+			id = "3406",
 			alpha = 1,
 			archetypeMatch = 2,
 			name = L"Other guard",
@@ -182,16 +182,16 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
 			anchorTo = 9,
-			color = 
+			color =
 			{
 				b = 119,
 				g = 60,
@@ -203,7 +203,7 @@ Enemy.Settings =
 			icon = "dot",
 			canDispell = 2,
 			isCircleIcon = false,
-			id = "78062",
+			id = "3407",
 			alpha = 1,
 			archetypeMatch = 1,
 			scale = 1,
@@ -211,9 +211,9 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = 0,
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					descriptionMatch = 2,
 					castedByMe = 1,
@@ -226,16 +226,16 @@ Enemy.Settings =
 			},
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
 			anchorTo = 9,
-			color = 
+			color =
 			{
 				b = 0,
 				g = 191,
@@ -247,7 +247,7 @@ Enemy.Settings =
 			icon = "dot",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78063",
+			id = "3408",
 			alpha = 1,
 			archetypeMatch = 1,
 			scale = 1,
@@ -255,9 +255,9 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = 0,
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					durationType = 2,
 					type = "isHealing",
@@ -271,17 +271,17 @@ Enemy.Settings =
 			},
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				
+
 				{
 					durationType = 2,
 					type = "isBuff",
@@ -292,7 +292,7 @@ Enemy.Settings =
 					nameMatch = 1,
 					descriptionMatch = 2,
 				},
-				
+
 				{
 					durationType = 2,
 					type = "isHealing",
@@ -304,7 +304,7 @@ Enemy.Settings =
 					descriptionMatch = 2,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 255,
 				g = 200,
@@ -316,7 +316,7 @@ Enemy.Settings =
 			icon = "dot",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78064",
+			id = "3409",
 			alpha = 1,
 			logic = L"MyBuff and not MyHealing",
 			archetypeMatch = 1,
@@ -328,17 +328,17 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				
+
 				{
 					durationType = 2,
 					type = "isBlessing",
@@ -350,7 +350,7 @@ Enemy.Settings =
 					hasDurationLimit = true,
 					typeMatch = 1,
 				},
-				
+
 				{
 					durationType = 2,
 					type = "isHealing",
@@ -362,7 +362,7 @@ Enemy.Settings =
 					descriptionMatch = 2,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 255,
 				g = 200,
@@ -374,7 +374,7 @@ Enemy.Settings =
 			icon = "dot",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78065",
+			id = "3410",
 			alpha = 1,
 			logic = L"MyBlessing and not MyHealing",
 			archetypeMatch = 1,
@@ -386,16 +386,16 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				true,
 			},
 			anchorTo = 8,
-			color = 
+			color =
 			{
 				b = 64,
 				g = 255,
@@ -407,7 +407,7 @@ Enemy.Settings =
 			icon = "heal",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78066",
+			id = "3411",
 			alpha = 1,
 			archetypeMatch = 1,
 			scale = 0.6,
@@ -415,9 +415,9 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = -5,
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					durationType = 1,
 					type = "healDebuffOut50",
@@ -431,16 +431,16 @@ Enemy.Settings =
 			},
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
 			anchorTo = 8,
-			color = 
+			color =
 			{
 				b = 64,
 				g = 64,
@@ -452,7 +452,7 @@ Enemy.Settings =
 			icon = "heal",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78067",
+			id = "3412",
 			alpha = 1,
 			archetypeMatch = 1,
 			scale = 0.6,
@@ -460,9 +460,9 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = -5,
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					durationType = 1,
 					type = "healDebuffIn50",
@@ -476,17 +476,17 @@ Enemy.Settings =
 			},
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					durationType = 2,
 					type = "stagger",
@@ -498,7 +498,7 @@ Enemy.Settings =
 					descriptionMatch = 2,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 128,
 				g = 255,
@@ -510,7 +510,7 @@ Enemy.Settings =
 			icon = "stagger",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78068",
+			id = "3413",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Stagger",
@@ -520,16 +520,16 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				true,
 			},
 			anchorTo = 8,
-			color = 
+			color =
 			{
 				b = 128,
 				g = 64,
@@ -541,7 +541,7 @@ Enemy.Settings =
 			icon = "disabled",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78069",
+			id = "3414",
 			alpha = 1,
 			archetypeMatch = 1,
 			scale = 0.5,
@@ -549,9 +549,9 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = -5,
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					typeMatch = 1,
 					filterName = L"DoK_WP_Regen",
@@ -559,7 +559,7 @@ Enemy.Settings =
 					castedByMe = 1,
 					nameMatch = 1,
 					descriptionMatch = 2,
-					abilityIdsHash = 
+					abilityIdsHash =
 					{
 						[9561] = true,
 						[8237] = true,
@@ -570,17 +570,17 @@ Enemy.Settings =
 			},
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					typeMatch = 1,
 					filterName = L"ID",
@@ -588,7 +588,7 @@ Enemy.Settings =
 					castedByMe = 1,
 					nameMatch = 1,
 					descriptionMatch = 2,
-					abilityIdsHash = 
+					abilityIdsHash =
 					{
 						[613] = true,
 					},
@@ -596,7 +596,7 @@ Enemy.Settings =
 					durationType = 2,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 255,
 				g = 255,
@@ -609,7 +609,7 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78070",
+			id = "3415",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Immaculate Defense",
@@ -619,17 +619,17 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				true,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					typeMatch = 1,
 					filterName = L"FM",
@@ -637,7 +637,7 @@ Enemy.Settings =
 					castedByMe = 1,
 					nameMatch = 1,
 					descriptionMatch = 2,
-					abilityIdsHash = 
+					abilityIdsHash =
 					{
 						[3882] = true,
 						[674] = true,
@@ -648,7 +648,7 @@ Enemy.Settings =
 					durationType = 2,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 255,
 				g = 255,
@@ -661,7 +661,7 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78071",
+			id = "3416",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Focused Mind",
@@ -671,17 +671,17 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					typeMatch = 1,
 					filterName = L"TODB",
@@ -689,7 +689,7 @@ Enemy.Settings =
 					castedByMe = 1,
 					nameMatch = 1,
 					descriptionMatch = 2,
-					abilityIdsHash = 
+					abilityIdsHash =
 					{
 						[9616] = true,
 					},
@@ -697,7 +697,7 @@ Enemy.Settings =
 					durationType = 2,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 255,
 				g = 255,
@@ -710,7 +710,7 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78072",
+			id = "3417",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"1001 Dark Blessings",
@@ -720,17 +720,17 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					typeMatch = 1,
 					filterName = L"GOF",
@@ -738,7 +738,7 @@ Enemy.Settings =
 					castedByMe = 1,
 					nameMatch = 1,
 					descriptionMatch = 2,
-					abilityIdsHash = 
+					abilityIdsHash =
 					{
 						[8308] = true,
 					},
@@ -746,7 +746,7 @@ Enemy.Settings =
 					durationType = 2,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 255,
 				g = 255,
@@ -759,7 +759,7 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78073",
+			id = "3418",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Gift of Life",
@@ -769,17 +769,17 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					typeMatch = 1,
 					filterName = L"AnyMarkOrRune",
@@ -787,7 +787,7 @@ Enemy.Settings =
 					castedByMe = 2,
 					nameMatch = 1,
 					descriptionMatch = 2,
-					abilityIdsHash = 
+					abilityIdsHash =
 					{
 						[8560] = true,
 						[1608] = true,
@@ -817,7 +817,7 @@ Enemy.Settings =
 					durationType = 1,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 221,
 				g = 255,
@@ -829,7 +829,7 @@ Enemy.Settings =
 			icon = "dot",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78074",
+			id = "3419",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"My marks/runes",
@@ -839,17 +839,17 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					durationType = 2,
 					filterName = L"WordOfPain",
@@ -858,7 +858,7 @@ Enemy.Settings =
 					abilityIds = L"9475, 20535",
 					durationMax = 5,
 					hasDurationLimit = true,
-					abilityIdsHash = 
+					abilityIdsHash =
 					{
 						[9475] = true,
 						[20535] = true,
@@ -867,7 +867,7 @@ Enemy.Settings =
 					typeMatch = 1,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 255,
 				g = 255,
@@ -880,7 +880,7 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78075",
+			id = "3420",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Improved Word of Pain",
@@ -890,17 +890,17 @@ Enemy.Settings =
 			isEnabled = true,
 			playerTypeMatch = 1,
 		},
-		
+
 		{
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
 				false,
 			},
-			effectFilters = 
+			effectFilters =
 			{
-				[1] = 
+				[1] =
 				{
 					durationType = 2,
 					filterName = L"BoilingBlood",
@@ -909,7 +909,7 @@ Enemy.Settings =
 					abilityIds = L"8165",
 					durationMax = 5,
 					hasDurationLimit = true,
-					abilityIdsHash = 
+					abilityIdsHash =
 					{
 						[8165] = true,
 					},
@@ -917,7 +917,7 @@ Enemy.Settings =
 					typeMatch = 1,
 				},
 			},
-			color = 
+			color =
 			{
 				b = 255,
 				g = 255,
@@ -930,7 +930,7 @@ Enemy.Settings =
 			icon = "other",
 			canDispell = 1,
 			isCircleIcon = false,
-			id = "78076",
+			id = "3421",
 			alpha = 1,
 			archetypeMatch = 1,
 			name = L"Improved Boiling Blood",
@@ -941,48 +941,43 @@ Enemy.Settings =
 			playerTypeMatch = 1,
 		},
 	},
-	groupIconsPetHPBGColor = 
+	groupIconsPetHPBGColor =
 	{
 		100,
 		0,
 		0,
 	},
 	unitFramesDirection2 = 3,
-	guardMarkTemplate = 
+	guardMarkTemplate =
 	{
 		scale = 0.8,
 		unique = false,
 		firstLetters = 4,
 		showCareerIcon = false,
 		canClearOnClick = false,
-		permanentTargets = 
+		permanentTargets =
 		{
 		},
-		id = 3271,
+		id = 2504,
 		layer = 3,
 		alpha = 1,
 		targetOnClick = true,
 		text = L"G",
 		font = "font_default_text_giant",
 		name = L"",
-		color = 
-		{
-			65,
-			150,
-			255,
-		},
+		scale = 0.8,
 		display = 1,
 		offsetY = 75,
 		neverExpire = true,
 		permanent = false,
 	},
-	groupIconsOtherGroupsHPBGColor = 
+	groupIconsOtherGroupsHPBGColor =
 	{
 		50,
 		100,
 		100,
 	},
-	unitFramesSorting = 
+	unitFramesSorting =
 	{
 		1,
 		2,
@@ -991,1294 +986,804 @@ Enemy.Settings =
 	objectWindowsInactiveTimeout = 1200,
 	unitFramesGroupsCount1 = 1,
 	killSpamEnabled = true,
-	groupIconsParts = 
+	groupIconsParts =
 	{
 	},
-	groupIconsOtherGroupsOffset = 
+	groupIconsOtherGroupsOffset =
 	{
 		0,
 		50,
 	},
-	CombatLogStats = 
+	CombatLogStats =
 	{
-		[1] = 
+		[1] =
 		{
-			eps = 
+			eps =
 			{
-				
+
 				{
-					total = -234,
-					objectTime = 64937103500,
-					data = 
+					total = 338,
+					objectTime = 64937361554,
+					data =
 					{
-						
+
 						{
-							str = L"Tainted Horror's ability hits you for 31 damage. (15 mitigated) (38 absorbed)",
+							str = L"Tainted Hound's attack critically hits you for 101 damage. (39 mitigated)",
 							type = 1,
-							ability = L"ability",
+							ability = L"attack",
 							currentTarget = true,
-							time = 64937103506,
-							abs = 38,
-							value = 31,
-							mit = 15,
-							crit = false,
-							object = L"Tainted Horror",
+							time = 64937361573,
+							abs = 0,
+							value = 101,
+							mit = 39,
+							crit = true,
+							object = L"Tainted Hound",
 						},
-						
+
 						{
-							str = L"Tainted Horror's ability hits you for 0 damage. (14 mitigated) (70 absorbed)",
+							str = L"Tainted Hound's attack hits you for 69 damage. (26 mitigated)",
 							type = 1,
-							ability = L"ability",
+							ability = L"attack",
 							currentTarget = true,
-							time = 64937103508,
-							abs = 70,
+							time = 64937361575,
+							abs = 0,
+							value = 69,
+							mit = 26,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Tainted Hound's attack hits you for 69 damage. (26 mitigated)",
+							type = 1,
+							ability = L"attack",
+							currentTarget = true,
+							time = 64937361577,
+							abs = 0,
+							value = 69,
+							mit = 26,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Tainted Hound's Rabid Bite critically hits you for 99 damage. (48 mitigated)",
+							type = 1,
+							ability = L"Rabid Bite",
+							currentTarget = true,
+							time = 64937361577,
+							abs = 0,
+							value = 99,
+							mit = 48,
+							crit = true,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Tainted Hound's attack hits you for 69 damage. (26 mitigated)",
+							type = 1,
+							ability = L"attack",
+							currentTarget = true,
+							time = 64937361580,
+							abs = 0,
+							value = 69,
+							mit = 26,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Tainted Hound's Lunging Maw hits you for 0 damage. (34 mitigated) (71 absorbed)",
+							type = 1,
+							ability = L"Lunging Maw",
+							currentTarget = true,
+							time = 64937361580,
+							abs = 71,
 							value = 0,
-							mit = 14,
+							mit = 34,
 							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Tainted Horror's ability hits you for 31 damage. (15 mitigated) (38 absorbed)",
-							type = 1,
-							ability = L"ability",
-							currentTarget = true,
-							time = 64937103510,
-							abs = 38,
-							value = 31,
-							mit = 15,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Tainted Horror's ability hits you for 0 damage. (14 mitigated) (70 absorbed)",
-							type = 1,
-							ability = L"ability",
-							currentTarget = true,
-							time = 64937103513,
-							abs = 70,
-							value = 0,
-							mit = 14,
-							crit = false,
-							object = L"Tainted Horror",
+							object = L"Tainted Hound",
 						},
 					},
 					totalAoe = 0,
-					valueMaxData = 
+					valueMaxData =
 					{
-						[1] = 
+
 						{
-							str = L"Tainted Horror's attack hits you for 67 damage. (17 mitigated)",
+							str = L"Tainted Hound's attack critically hits you for 101 damage. (39 mitigated)",
 							type = 1,
 							ability = L"attack",
 							currentTarget = true,
-							time = 64937103500,
+							time = 64937361573,
 							abs = 0,
-							value = 67,
-							mit = 17,
+							value = 101,
+							mit = 39,
+							crit = true,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Tainted Hound's attack hits you for 69 damage. (26 mitigated)",
+							type = 1,
+							ability = L"attack",
+							currentTarget = true,
+							time = 64937361575,
+							abs = 0,
+							value = 69,
+							mit = 26,
 							crit = false,
-							object = L"Tainted Horror",
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Tainted Hound's attack hits you for 69 damage. (26 mitigated)",
+							type = 1,
+							ability = L"attack",
+							currentTarget = true,
+							time = 64937361577,
+							abs = 0,
+							value = 69,
+							mit = 26,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Tainted Hound's Rabid Bite critically hits you for 99 damage. (48 mitigated)",
+							type = 1,
+							ability = L"Rabid Bite",
+							currentTarget = true,
+							time = 64937361577,
+							abs = 0,
+							value = 99,
+							mit = 48,
+							crit = true,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Tainted Hound's attack hits you for 69 damage. (26 mitigated)",
+							type = 1,
+							ability = L"attack",
+							currentTarget = true,
+							time = 64937361580,
+							abs = 0,
+							value = 69,
+							mit = 26,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Tainted Hound's Lunging Maw hits you for 0 damage. (34 mitigated) (71 absorbed)",
+							type = 1,
+							ability = L"Lunging Maw",
+							currentTarget = true,
+							time = 64937361580,
+							abs = 71,
+							value = 0,
+							mit = 34,
+							crit = false,
+							object = L"Tainted Hound",
 						},
 					},
 					valueAoe = 0,
-					valueMax = 10,
-					value = -33,
-					object = L"Tainted Horror",
+					valueMax = 48,
+					value = 48,
+					object = L"Tainted Hound",
 				},
-				
+
 				{
-					valueAoeMaxData = 
+					valueAoeMaxData =
 					{
-						
+
 						{
-							str = L"Your attack critically hits Tainted Horror for 41 damage. (38 mitigated)",
+							str = L"Your attack hits Tainted Hound for 29 damage. (25 mitigated)",
 							type = 2,
 							abs = 0,
 							currentTarget = true,
-							time = 64937103448,
-							object = L"Tainted Horror",
-							value = 41,
-							crit = true,
-							mit = 38,
-							ability = L"attack",
-						},
-						
-						{
-							str = L"Your Divine Assault hits Tainted Horror for 34 damage. (22 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103448,
-							object = L"Tainted Horror",
-							value = 34,
-							crit = false,
-							mit = 22,
-							ability = L"Divine Assault",
-						},
-						
-						{
-							str = L"Your Sigmar's Fist hits Tainted Horror for 47 damage. (38 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103448,
-							object = L"Tainted Horror",
-							value = 47,
-							crit = false,
-							mit = 38,
-							ability = L"Sigmar's Fist",
-						},
-						
-						{
-							str = L"Your Castigation hits Tainted Horror for 7 damage. (6 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103448,
-							object = L"Tainted Horror",
-							value = 7,
-							crit = false,
-							mit = 6,
-							ability = L"Castigation",
-						},
-						
-						{
-							str = L"Your attack hits Tainted Horror for 29 damage. (28 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103450,
-							object = L"Tainted Horror",
+							time = 64937361564,
+							object = L"Tainted Hound",
 							value = 29,
 							crit = false,
-							mit = 28,
+							mit = 25,
 							ability = L"attack",
 						},
-						
+
 						{
-							str = L"Your Divine Strike hits Tainted Horror for 43 damage. (31 mitigated)",
+							str = L"Your Sigmar's Fist hits Tainted Hound for 51 damage. (35 mitigated)",
 							type = 2,
 							abs = 0,
 							currentTarget = true,
-							time = 64937103450,
-							object = L"Tainted Horror",
-							value = 43,
+							time = 64937361564,
+							object = L"Tainted Hound",
+							value = 51,
+							crit = false,
+							mit = 35,
+							ability = L"Sigmar's Fist",
+						},
+
+						{
+							str = L"Your Bludgeon hits Tainted Hound for 69 damage. (39 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							time = 64937361566,
+							object = L"Tainted Hound",
+							value = 69,
+							crit = false,
+							mit = 39,
+							ability = L"Bludgeon",
+						},
+
+						{
+							str = L"Your attack hits Tainted Hound for 34 damage. (27 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							time = 64937361566,
+							object = L"Tainted Hound",
+							value = 34,
+							crit = false,
+							mit = 27,
+							ability = L"attack",
+						},
+
+						{
+							str = L"Your Divine Strike hits Tainted Hound for 52 damage. (31 mitigated)",
+							type = 2,
+							abs = 0,
+							currentTarget = true,
+							time = 64937361568,
+							object = L"Tainted Hound",
+							value = 52,
 							crit = false,
 							mit = 31,
 							ability = L"Divine Strike",
 						},
-						
+
 						{
-							str = L"Your Castigation hits Tainted Horror for 7 damage. (6 mitigated)",
+							str = L"Your attack hits Tainted Hound for 34 damage. (27 mitigated)",
 							type = 2,
 							abs = 0,
 							currentTarget = true,
-							time = 64937103451,
-							object = L"Tainted Horror",
-							value = 7,
+							time = 64937361569,
+							object = L"Tainted Hound",
+							value = 34,
 							crit = false,
-							mit = 6,
-							ability = L"Castigation",
-						},
-						
-						{
-							str = L"Your Bludgeon hits Tainted Horror for 56 damage. (40 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103452,
-							object = L"Tainted Horror",
-							value = 56,
-							crit = false,
-							mit = 40,
-							ability = L"Bludgeon",
-						},
-						
-						{
-							str = L"Your attack hits Tainted Horror for 29 damage. (28 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103452,
-							object = L"Tainted Horror",
-							value = 29,
-							crit = false,
-							mit = 28,
+							mit = 27,
 							ability = L"attack",
-						},
-						
-						{
-							str = L"Your Bludgeon critically hits Tainted Horror for 80 damage. (58 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103453,
-							object = L"Tainted Horror",
-							value = 80,
-							crit = true,
-							mit = 58,
-							ability = L"Bludgeon",
-						},
-						
-						{
-							str = L"Your Castigation hits Tainted Horror for 7 damage. (6 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103453,
-							object = L"Tainted Horror",
-							value = 7,
-							crit = false,
-							mit = 6,
-							ability = L"Castigation",
-						},
-						
-						{
-							str = L"Your attack hits Tainted Horror for 29 damage. (28 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103455,
-							object = L"Tainted Horror",
-							value = 29,
-							crit = false,
-							mit = 28,
-							ability = L"attack",
-						},
-						
-						{
-							str = L"Your Bludgeon hits Tainted Horror for 56 damage. (40 mitigated)",
-							type = 2,
-							abs = 0,
-							currentTarget = true,
-							time = 64937103455,
-							object = L"Tainted Horror",
-							value = 56,
-							crit = false,
-							mit = 40,
-							ability = L"Bludgeon",
 						},
 					},
-					total = 395,
-					objectTime = 64937103499,
-					data = 
+					total = 317,
+					objectTime = 64937361556,
+					data =
 					{
-						
+
 						{
-							str = L"Your attack hits Tainted Horror for 32 damage. (25 mitigated)",
+							str = L"Your Divine Assault hits Tainted Hound for 43 damage. (21 mitigated)",
+							type = 2,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							time = 64937361574,
+							abs = 0,
+							value = 43,
+							mit = 21,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Your Divine Assault hits Tainted Hound for 43 damage. (21 mitigated)",
+							type = 2,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							time = 64937361575,
+							abs = 0,
+							value = 43,
+							mit = 21,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Your Divine Assault hits Tainted Hound for 43 damage. (21 mitigated)",
+							type = 2,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							time = 64937361576,
+							abs = 0,
+							value = 43,
+							mit = 21,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Your attack hits Tainted Hound for 34 damage. (27 mitigated)",
 							type = 2,
 							ability = L"attack",
 							currentTarget = true,
-							time = 64937103508,
+							time = 64937361576,
 							abs = 0,
-							value = 32,
-							mit = 25,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Divine Assault hits Tainted Horror for 37 damage. (19 mitigated)",
-							type = 2,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							time = 64937103508,
-							abs = 0,
-							value = 37,
-							mit = 19,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Divine Assault hits Tainted Horror for 37 damage. (19 mitigated)",
-							type = 2,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							time = 64937103509,
-							abs = 0,
-							value = 37,
-							mit = 19,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Castigation hits Tainted Horror for 7 damage. (5 mitigated)",
-							type = 2,
-							ability = L"Castigation",
-							currentTarget = true,
-							time = 64937103509,
-							abs = 0,
-							value = 7,
-							mit = 5,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Divine Assault hits Tainted Horror for 37 damage. (19 mitigated)",
-							type = 2,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							time = 64937103510,
-							abs = 0,
-							value = 37,
-							mit = 19,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Divine Assault hits Tainted Horror for 37 damage. (19 mitigated)",
-							type = 2,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							time = 64937103511,
-							abs = 0,
-							value = 37,
-							mit = 19,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your attack hits Tainted Horror for 32 damage. (25 mitigated)",
-							type = 2,
-							ability = L"attack",
-							currentTarget = true,
-							time = 64937103511,
-							abs = 0,
-							value = 32,
-							mit = 25,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Bludgeon hits Tainted Horror for 61 damage. (35 mitigated)",
-							type = 2,
-							ability = L"Bludgeon",
-							currentTarget = true,
-							time = 64937103512,
-							abs = 0,
-							value = 61,
-							mit = 35,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Castigation hits Tainted Horror for 37 damage. (18 mitigated)",
-							type = 2,
-							ability = L"Castigation",
-							currentTarget = true,
-							time = 64937103513,
-							abs = 0,
-							value = 37,
-							mit = 18,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your attack hits Tainted Horror for 32 damage. (25 mitigated)",
-							type = 2,
-							ability = L"attack",
-							currentTarget = true,
-							time = 64937103514,
-							abs = 0,
-							value = 32,
-							mit = 25,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Divine Strike hits Tainted Horror for 46 damage. (28 mitigated)",
-							type = 2,
-							ability = L"Divine Strike",
-							currentTarget = true,
-							time = 64937103515,
-							abs = 0,
-							value = 46,
-							mit = 28,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-					},
-					totalAoe = 395,
-					valueMaxData = 
-					{
-						
-						{
-							str = L"Your Divine Strike hits Tainted Horror for 40 damage. (27 mitigated)",
-							type = 2,
-							ability = L"Divine Strike",
-							currentTarget = true,
-							time = 64937103505,
-							abs = 0,
-							value = 40,
+							value = 34,
 							mit = 27,
 							crit = false,
-							object = L"Tainted Horror",
+							object = L"Tainted Hound",
 						},
-						
+
 						{
-							str = L"Your attack hits Tainted Horror for 28 damage. (24 mitigated)",
+							str = L"Your attack hits Tainted Hound for 34 damage. (27 mitigated)",
 							type = 2,
 							ability = L"attack",
 							currentTarget = true,
-							time = 64937103505,
+							time = 64937361579,
 							abs = 0,
-							value = 28,
-							mit = 24,
+							value = 34,
+							mit = 27,
 							crit = false,
-							object = L"Tainted Horror",
+							object = L"Tainted Hound",
 						},
-						
+
 						{
-							str = L"Your Sigmar's Fist hits Tainted Horror for 46 damage. (32 mitigated)",
+							str = L"Your Bludgeon hits Tainted Hound for 69 damage. (39 mitigated)",
+							type = 2,
+							ability = L"Bludgeon",
+							currentTarget = true,
+							time = 64937361579,
+							abs = 0,
+							value = 69,
+							mit = 39,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Your attack critically hits Tainted Hound for 51 damage. (39 mitigated)",
+							type = 2,
+							ability = L"attack",
+							currentTarget = true,
+							time = 64937361581,
+							abs = 0,
+							value = 51,
+							mit = 39,
+							crit = true,
+							object = L"Tainted Hound",
+						},
+					},
+					totalAoe = 317,
+					valueMaxData =
+					{
+
+						{
+							str = L"Your attack hits Tainted Hound for 29 damage. (25 mitigated)",
+							type = 2,
+							ability = L"attack",
+							currentTarget = true,
+							time = 64937361564,
+							abs = 0,
+							value = 29,
+							mit = 25,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Your Sigmar's Fist hits Tainted Hound for 51 damage. (35 mitigated)",
 							type = 2,
 							ability = L"Sigmar's Fist",
 							currentTarget = true,
-							time = 64937103506,
+							time = 64937361564,
 							abs = 0,
-							value = 46,
-							mit = 32,
+							value = 51,
+							mit = 35,
 							crit = false,
-							object = L"Tainted Horror",
+							object = L"Tainted Hound",
 						},
-						
+
 						{
-							str = L"Your Castigation hits Tainted Horror for 7 damage. (5 mitigated)",
-							type = 2,
-							ability = L"Castigation",
-							currentTarget = true,
-							time = 64937103507,
-							abs = 0,
-							value = 7,
-							mit = 5,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your attack hits Tainted Horror for 32 damage. (25 mitigated)",
-							type = 2,
-							ability = L"attack",
-							currentTarget = true,
-							time = 64937103508,
-							abs = 0,
-							value = 32,
-							mit = 25,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Divine Assault hits Tainted Horror for 37 damage. (19 mitigated)",
-							type = 2,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							time = 64937103508,
-							abs = 0,
-							value = 37,
-							mit = 19,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Divine Assault hits Tainted Horror for 37 damage. (19 mitigated)",
-							type = 2,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							time = 64937103509,
-							abs = 0,
-							value = 37,
-							mit = 19,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Castigation hits Tainted Horror for 7 damage. (5 mitigated)",
-							type = 2,
-							ability = L"Castigation",
-							currentTarget = true,
-							time = 64937103509,
-							abs = 0,
-							value = 7,
-							mit = 5,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Divine Assault hits Tainted Horror for 37 damage. (19 mitigated)",
-							type = 2,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							time = 64937103510,
-							abs = 0,
-							value = 37,
-							mit = 19,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Divine Assault hits Tainted Horror for 37 damage. (19 mitigated)",
-							type = 2,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							time = 64937103511,
-							abs = 0,
-							value = 37,
-							mit = 19,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your attack hits Tainted Horror for 32 damage. (25 mitigated)",
-							type = 2,
-							ability = L"attack",
-							currentTarget = true,
-							time = 64937103511,
-							abs = 0,
-							value = 32,
-							mit = 25,
-							crit = false,
-							object = L"Tainted Horror",
-						},
-						
-						{
-							str = L"Your Bludgeon hits Tainted Horror for 61 damage. (35 mitigated)",
+							str = L"Your Bludgeon hits Tainted Hound for 69 damage. (39 mitigated)",
 							type = 2,
 							ability = L"Bludgeon",
 							currentTarget = true,
-							time = 64937103512,
+							time = 64937361566,
 							abs = 0,
-							value = 61,
-							mit = 35,
+							value = 69,
+							mit = 39,
 							crit = false,
-							object = L"Tainted Horror",
+							object = L"Tainted Hound",
 						},
-					},
-					valueAoe = 56,
-					valueMax = 57,
-					value = 56,
-					valueAoeMax = 66,
-					object = L"Tainted Horror",
-				},
-				
-				{
-					total = 820,
-					objectTime = 64937103429,
-					data = 
-					{
-						
+
 						{
-							str = L"Your Prayer of Devotion heals you for 0 points. (86 overhealed)",
-							type = 3,
-							ability = L"Prayer of Devotion",
+							str = L"Your attack hits Tainted Hound for 34 damage. (27 mitigated)",
+							type = 2,
+							ability = L"attack",
 							currentTarget = true,
-							object = L"Rybert",
-							value = 0,
-							time = 64937103508,
+							time = 64937361566,
+							abs = 0,
+							value = 34,
+							mit = 27,
 							crit = false,
-							overheal = 86,
+							object = L"Tainted Hound",
 						},
-						
+
 						{
-							str = L"Your Divine Assault heals you for 0 points. (129 overhealed)",
-							type = 3,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 0,
-							time = 64937103508,
-							crit = false,
-							overheal = 129,
-						},
-						
-						{
-							str = L"Your Divine Assault heals you for 0 points. (129 overhealed)",
-							type = 3,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 0,
-							time = 64937103509,
-							crit = false,
-							overheal = 129,
-						},
-						
-						{
-							str = L"Your Divine Assault heals you for 0 points. (129 overhealed)",
-							type = 3,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 0,
-							time = 64937103510,
-							crit = false,
-							overheal = 129,
-						},
-						
-						{
-							str = L"Your Divine Assault heals you for 31 points. (98 overhealed)",
-							type = 3,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 31,
-							time = 64937103511,
-							crit = false,
-							overheal = 98,
-						},
-						
-						{
-							str = L"Your Prayer of Devotion heals you for 0 points. (86 overhealed)",
-							type = 3,
-							ability = L"Prayer of Devotion",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 0,
-							time = 64937103513,
-							crit = false,
-							overheal = 86,
-						},
-						
-						{
-							str = L"Your Prayer of Devotion heals you for 0 points. (86 overhealed)",
-							type = 3,
-							ability = L"Prayer of Devotion",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 0,
-							time = 64937103515,
-							crit = false,
-							overheal = 86,
-						},
-						
-						{
-							str = L"Your Divine Strike heals you for 0 points. (46 overhealed)",
-							type = 3,
+							str = L"Your Divine Strike hits Tainted Hound for 52 damage. (31 mitigated)",
+							type = 2,
 							ability = L"Divine Strike",
 							currentTarget = true,
+							time = 64937361568,
+							abs = 0,
+							value = 52,
+							mit = 31,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+
+						{
+							str = L"Your attack hits Tainted Hound for 34 damage. (27 mitigated)",
+							type = 2,
+							ability = L"attack",
+							currentTarget = true,
+							time = 64937361569,
+							abs = 0,
+							value = 34,
+							mit = 27,
+							crit = false,
+							object = L"Tainted Hound",
+						},
+					},
+					valueAoe = 45,
+					valueMax = 54,
+					value = 45,
+					valueAoeMax = 54,
+					object = L"Tainted Hound",
+				},
+
+				{
+					total = 960,
+					objectTime = 64937361554,
+					data =
+					{
+
+						{
+							str = L"Your Healing Hand heals you for 35 points. (85 overhealed)",
+							type = 3,
+							ability = L"Healing Hand",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 35,
+							time = 64937361572,
+							crit = false,
+							overheal = 85,
+						},
+
+						{
+							str = L"Your Divine Assault heals you for 0 points. (150 overhealed)",
+							type = 3,
+							ability = L"Divine Assault",
+							currentTarget = true,
 							object = L"Rybert",
 							value = 0,
-							time = 64937103515,
+							time = 64937361572,
 							crit = false,
-							overheal = 46,
+							overheal = 150,
+						},
+
+						{
+							str = L"Your Divine Assault heals you for 101 points. (49 overhealed)",
+							type = 3,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 101,
+							time = 64937361574,
+							crit = false,
+							overheal = 49,
+						},
+
+						{
+							str = L"Your Healing Hand heals you for 0 points. (120 overhealed)",
+							type = 3,
+							ability = L"Healing Hand",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 0,
+							time = 64937361575,
+							crit = false,
+							overheal = 120,
+						},
+
+						{
+							str = L"Your Divine Assault heals you for 69 points. (81 overhealed)",
+							type = 3,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 69,
+							time = 64937361575,
+							crit = false,
+							overheal = 81,
+						},
+
+						{
+							str = L"Your Divine Assault heals you for 0 points. (150 overhealed)",
+							type = 3,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 0,
+							time = 64937361576,
+							crit = false,
+							overheal = 150,
+						},
+
+						{
+							str = L"Your Healing Hand heals you for 120 points.",
+							type = 3,
+							ability = L"Healing Hand",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 120,
+							time = 64937361578,
+							crit = false,
+							overheal = 0,
 						},
 					},
 					totalAoe = 0,
-					valueMaxData = 
+					valueMaxData =
 					{
-						
+
 						{
-							str = L"Your Divine Aid heals you for 112 points.",
-							type = 3,
-							ability = L"Divine Aid",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 112,
-							time = 64937103488,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Healing Hand heals you for 105 points.",
+							str = L"Your Healing Hand heals you for 35 points. (85 overhealed)",
 							type = 3,
 							ability = L"Healing Hand",
 							currentTarget = true,
 							object = L"Rybert",
-							value = 105,
-							time = 64937103489,
+							value = 35,
+							time = 64937361572,
 							crit = false,
-							overheal = 0,
+							overheal = 85,
 						},
-						
+
 						{
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							type = 3,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 27,
-							time = 64937103489,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Divine Mend heals you for 205 points.",
-							type = 3,
-							ability = L"Divine Mend",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 205,
-							time = 64937103490,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							type = 3,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 27,
-							time = 64937103490,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Prayer of Devotion heals you for 86 points.",
-							type = 3,
-							ability = L"Prayer of Devotion",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 86,
-							time = 64937103491,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							type = 3,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 27,
-							time = 64937103492,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Divine Assault heals you for 105 points.",
-							type = 3,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 105,
-							time = 64937103492,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Healing Hand heals you for 105 points.",
-							type = 3,
-							ability = L"Healing Hand",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 105,
-							time = 64937103492,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Lingering Divine Aid critically heals you for 27 points. (13 overhealed)",
-							type = 3,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 27,
-							time = 64937103492,
-							crit = true,
-							overheal = 13,
-						},
-						
-						{
-							str = L"Your Divine Assault heals you for 0 points. (105 overhealed)",
+							str = L"Your Divine Assault heals you for 0 points. (150 overhealed)",
 							type = 3,
 							ability = L"Divine Assault",
 							currentTarget = true,
 							object = L"Rybert",
 							value = 0,
-							time = 64937103493,
+							time = 64937361572,
 							crit = false,
-							overheal = 105,
+							overheal = 150,
 						},
-						
+
 						{
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							type = 3,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"Rybert",
-							value = 27,
-							time = 64937103494,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Divine Assault heals you for 143 points.",
+							str = L"Your Divine Assault heals you for 101 points. (49 overhealed)",
 							type = 3,
 							ability = L"Divine Assault",
 							currentTarget = true,
 							object = L"Rybert",
-							value = 143,
-							time = 64937103494,
+							value = 101,
+							time = 64937361574,
+							crit = false,
+							overheal = 49,
+						},
+
+						{
+							str = L"Your Healing Hand heals you for 0 points. (120 overhealed)",
+							type = 3,
+							ability = L"Healing Hand",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 0,
+							time = 64937361575,
+							crit = false,
+							overheal = 120,
+						},
+
+						{
+							str = L"Your Divine Assault heals you for 69 points. (81 overhealed)",
+							type = 3,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 69,
+							time = 64937361575,
+							crit = false,
+							overheal = 81,
+						},
+
+						{
+							str = L"Your Divine Assault heals you for 0 points. (150 overhealed)",
+							type = 3,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 0,
+							time = 64937361576,
+							crit = false,
+							overheal = 150,
+						},
+
+						{
+							str = L"Your Healing Hand heals you for 120 points.",
+							type = 3,
+							ability = L"Healing Hand",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 120,
+							time = 64937361578,
 							crit = false,
 							overheal = 0,
 						},
 					},
 					valueAoe = 0,
-					valueMax = 186,
-					value = 117,
+					valueMax = 160,
+					value = 160,
 					object = L"Rybert",
 				},
-				
+
 				{
-					valueAoeMaxData = 
+					valueAoeMaxData =
 					{
-						
+
 						{
-							str = L"Your Divine Aid heals you for 112 points.",
+							str = L"Your Divine Aid heals Khanivorhia for 170 points.",
 							type = 4,
 							ability = L"Divine Aid",
 							currentTarget = true,
-							object = L"you",
-							value = 112,
-							time = 64937103488,
+							object = L"Khanivorhia",
+							value = 170,
+							time = 64937362173,
 							crit = false,
 							overheal = 0,
 						},
-						
+
 						{
-							str = L"Your Healing Hand heals you for 105 points.",
-							type = 4,
-							ability = L"Healing Hand",
-							currentTarget = true,
-							object = L"you",
-							value = 105,
-							time = 64937103489,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
+							str = L"Your Lingering Divine Aid critically heals Khanivorhia for 4 points. (57 overhealed)",
 							type = 4,
 							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							time = 64937103489,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Divine Mend heals you for 205 points.",
-							type = 4,
-							ability = L"Divine Mend",
-							currentTarget = true,
-							object = L"you",
-							value = 205,
-							time = 64937103490,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							type = 4,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							time = 64937103490,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Prayer of Devotion heals you for 86 points.",
-							type = 4,
-							ability = L"Prayer of Devotion",
-							currentTarget = true,
-							object = L"you",
-							value = 86,
-							time = 64937103491,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							type = 4,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							time = 64937103492,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Divine Assault heals you for 105 points.",
-							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
-							value = 105,
-							time = 64937103492,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Healing Hand heals you for 105 points.",
-							type = 4,
-							ability = L"Healing Hand",
-							currentTarget = true,
-							object = L"you",
-							value = 105,
-							time = 64937103492,
-							crit = false,
-							overheal = 0,
-						},
-						
-						{
-							str = L"Your Lingering Divine Aid critically heals you for 27 points. (13 overhealed)",
-							type = 4,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							time = 64937103492,
+							currentTarget = false,
+							object = L"Khanivorhia",
+							value = 4,
+							time = 64937362174,
 							crit = true,
-							overheal = 13,
+							overheal = 57,
 						},
-						
+
 						{
-							str = L"Your Divine Assault heals you for 0 points. (105 overhealed)",
-							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
-							value = 0,
-							time = 64937103493,
-							crit = false,
-							overheal = 105,
-						},
-						
-						{
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
+							str = L"Your Lingering Divine Aid heals Khanivorhia for 0 points. (41 overhealed)",
 							type = 4,
 							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							time = 64937103494,
+							currentTarget = false,
+							object = L"Khanivorhia",
+							value = 0,
+							time = 64937362175,
 							crit = false,
-							overheal = 0,
+							overheal = 41,
 						},
-						
+
 						{
-							str = L"Your Divine Assault heals you for 143 points.",
+							str = L"Your Lingering Divine Aid critically heals Khanivorhia for 0 points. (59 overhealed)",
 							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
-							value = 143,
-							time = 64937103494,
+							ability = L"Lingering Divine Aid",
+							currentTarget = false,
+							object = L"Khanivorhia",
+							value = 0,
+							time = 64937362176,
+							crit = true,
+							overheal = 59,
+						},
+
+						{
+							str = L"Your Lingering Divine Aid heals Khanivorhia for 0 points. (41 overhealed)",
+							type = 4,
+							ability = L"Lingering Divine Aid",
+							currentTarget = false,
+							object = L"Khanivorhia",
+							value = 0,
+							time = 64937362177,
 							crit = false,
-							overheal = 0,
+							overheal = 41,
+						},
+
+						{
+							str = L"Your Healing Hand heals Doshehowyou for 0 points. (158 overhealed)",
+							type = 4,
+							ability = L"Healing Hand",
+							currentTarget = false,
+							object = L"Doshehowyou",
+							value = 0,
+							time = 64937362177,
+							crit = false,
+							overheal = 158,
+						},
+
+						{
+							str = L"Your Lingering Divine Aid heals Khanivorhia for 0 points. (41 overhealed)",
+							type = 4,
+							ability = L"Lingering Divine Aid",
+							currentTarget = false,
+							object = L"Khanivorhia",
+							value = 0,
+							time = 64937362178,
+							crit = false,
+							overheal = 41,
 						},
 					},
-					total = 820,
-					objectTime = 64937103429,
-					data = 
+					total = 0,
+					objectTime = 64937362173,
+					data =
 					{
-						
+
 						{
-							overheal = 86,
+							overheal = 158,
 							type = 4,
-							ability = L"Prayer of Devotion",
-							currentTarget = true,
-							object = L"you",
+							ability = L"Healing Hand",
+							currentTarget = false,
+							object = L"Doshehowyou",
 							value = 0,
-							str = L"Your Prayer of Devotion heals you for 0 points. (86 overhealed)",
+							str = L"Your Healing Hand heals Doshehowyou for 0 points. (158 overhealed)",
 							crit = false,
-							time = 64937103508,
+							time = 64937362183,
 						},
-						
+
 						{
-							overheal = 129,
+							overheal = 158,
 							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
+							ability = L"Healing Hand",
+							currentTarget = false,
+							object = L"Doshehowyou",
 							value = 0,
-							str = L"Your Divine Assault heals you for 0 points. (129 overhealed)",
+							str = L"Your Healing Hand heals Doshehowyou for 0 points. (158 overhealed)",
 							crit = false,
-							time = 64937103508,
+							time = 64937362186,
 						},
-						
+
 						{
-							overheal = 129,
+							overheal = 158,
 							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
+							ability = L"Healing Hand",
+							currentTarget = false,
+							object = L"Doshehowyou",
 							value = 0,
-							str = L"Your Divine Assault heals you for 0 points. (129 overhealed)",
+							str = L"Your Healing Hand heals Doshehowyou for 0 points. (158 overhealed)",
 							crit = false,
-							time = 64937103509,
-						},
-						
-						{
-							overheal = 129,
-							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
-							value = 0,
-							str = L"Your Divine Assault heals you for 0 points. (129 overhealed)",
-							crit = false,
-							time = 64937103510,
-						},
-						
-						{
-							overheal = 98,
-							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
-							value = 31,
-							str = L"Your Divine Assault heals you for 31 points. (98 overhealed)",
-							crit = false,
-							time = 64937103511,
-						},
-						
-						{
-							overheal = 86,
-							type = 4,
-							ability = L"Prayer of Devotion",
-							currentTarget = true,
-							object = L"you",
-							value = 0,
-							str = L"Your Prayer of Devotion heals you for 0 points. (86 overhealed)",
-							crit = false,
-							time = 64937103513,
-						},
-						
-						{
-							overheal = 86,
-							type = 4,
-							ability = L"Prayer of Devotion",
-							currentTarget = true,
-							object = L"you",
-							value = 0,
-							str = L"Your Prayer of Devotion heals you for 0 points. (86 overhealed)",
-							crit = false,
-							time = 64937103515,
-						},
-						
-						{
-							overheal = 46,
-							type = 4,
-							ability = L"Divine Strike",
-							currentTarget = true,
-							object = L"you",
-							value = 0,
-							str = L"Your Divine Strike heals you for 0 points. (46 overhealed)",
-							crit = false,
-							time = 64937103515,
+							time = 64937362189,
 						},
 					},
-					totalAoe = 820,
-					valueMaxData = 
+					totalAoe = 474,
+					valueMaxData =
 					{
-						
+						[1] =
 						{
 							overheal = 0,
 							type = 4,
 							ability = L"Divine Aid",
 							currentTarget = true,
-							object = L"you",
-							value = 112,
-							str = L"Your Divine Aid heals you for 112 points.",
+							object = L"Khanivorhia",
+							value = 170,
+							str = L"Your Divine Aid heals Khanivorhia for 170 points.",
 							crit = false,
-							time = 64937103488,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Healing Hand",
-							currentTarget = true,
-							object = L"you",
-							value = 105,
-							str = L"Your Healing Hand heals you for 105 points.",
-							crit = false,
-							time = 64937103489,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							crit = false,
-							time = 64937103489,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Divine Mend",
-							currentTarget = true,
-							object = L"you",
-							value = 205,
-							str = L"Your Divine Mend heals you for 205 points.",
-							crit = false,
-							time = 64937103490,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							crit = false,
-							time = 64937103490,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Prayer of Devotion",
-							currentTarget = true,
-							object = L"you",
-							value = 86,
-							str = L"Your Prayer of Devotion heals you for 86 points.",
-							crit = false,
-							time = 64937103491,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							crit = false,
-							time = 64937103492,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
-							value = 105,
-							str = L"Your Divine Assault heals you for 105 points.",
-							crit = false,
-							time = 64937103492,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Healing Hand",
-							currentTarget = true,
-							object = L"you",
-							value = 105,
-							str = L"Your Healing Hand heals you for 105 points.",
-							crit = false,
-							time = 64937103492,
-						},
-						
-						{
-							overheal = 13,
-							type = 4,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							str = L"Your Lingering Divine Aid critically heals you for 27 points. (13 overhealed)",
-							crit = true,
-							time = 64937103492,
-						},
-						
-						{
-							overheal = 105,
-							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
-							value = 0,
-							str = L"Your Divine Assault heals you for 0 points. (105 overhealed)",
-							crit = false,
-							time = 64937103493,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Lingering Divine Aid",
-							currentTarget = true,
-							object = L"you",
-							value = 27,
-							str = L"Your Lingering Divine Aid heals you for 27 points.",
-							crit = false,
-							time = 64937103494,
-						},
-						
-						{
-							overheal = 0,
-							type = 4,
-							ability = L"Divine Assault",
-							currentTarget = true,
-							object = L"you",
-							value = 143,
-							str = L"Your Divine Assault heals you for 143 points.",
-							crit = false,
-							time = 64937103494,
+							time = 64937362173,
 						},
 					},
-					valueAoe = 117,
-					valueMax = 186,
-					value = 117,
-					valueAoeMax = 186,
-					object = L"you",
+					valueAoe = 79,
+					valueMax = 34,
+					value = 0,
+					valueAoeMax = 114,
+					object = L"Khanivorhia",
 				},
 			},
 			name = L"Default",
-			data = 
+			data =
 			{
-				
+
 				{
-					[L"Ravage"] = 
+					[L"Ravage"] =
 					{
-						normal = 
+						normal =
 						{
 							min = 105,
 							total = 105,
@@ -2291,7 +1796,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -2299,11 +1804,10 @@ Enemy.Settings =
 							abs = 0,
 							mit = 0,
 						},
-						parry = 0,
 					},
-					[L"Word of Pain"] = 
+					[L"Word of Pain"] =
 					{
-						normal = 
+
 						{
 							min = 222,
 							total = 222,
@@ -2316,7 +1820,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -2326,9 +1830,9 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Scythe Gash"] = 
+					[L"Scythe Gash"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
 							total = 39,
@@ -2336,7 +1840,7 @@ Enemy.Settings =
 							min = 39,
 							count = 1,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2348,7 +1852,7 @@ Enemy.Settings =
 								career = 0,
 							},
 							mit = 21,
-							minObject = 
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2360,10 +1864,7 @@ Enemy.Settings =
 								career = 0,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
 							overheal = 0,
 							total = 0,
@@ -2373,9 +1874,9 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Ethereal Chill"] = 
+					[L"Ethereal Chill"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
 							total = 271,
@@ -2383,7 +1884,7 @@ Enemy.Settings =
 							min = 43,
 							count = 6,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2395,7 +1896,7 @@ Enemy.Settings =
 								career = 0,
 							},
 							mit = 132,
-							minObject = 
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2410,7 +1911,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -2420,17 +1921,17 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"ability"] = 
+					[L"ability"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
-							total = 4133,
+							total = 3823,
 							max = 2016,
 							min = 0,
-							count = 69,
-							abs = 4159,
-							maxObject = 
+							count = 62,
+							abs = 3660,
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -2441,31 +1942,28 @@ Enemy.Settings =
 								hp = 67,
 								career = 12,
 							},
-							mit = 1035,
-							minObject = 
+							mit = 1110,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								career = 0,
 								isFriendly = false,
-								id = 431,
-								level = 6,
-								hp = 87,
-								name = L"Tainted Horror",
+								id = 1196,
+								level = 7,
+								hp = 100,
+								name = L"Tainted Hound",
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
 							overheal = 0,
 							total = 115,
 							max = 80,
 							min = 0,
-							count = 5,
-							abs = 390,
-							maxObject = 
+							count = 4,
+							abs = 308,
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2476,32 +1974,32 @@ Enemy.Settings =
 								hp = 100,
 								career = 0,
 							},
-							mit = 104,
-							minObject = 
+							mit = 84,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								career = 0,
+								name = L"Krev the Plunderer",
 								isFriendly = false,
-								id = 385,
-								level = 6,
+								id = 4039,
+								level = 8,
 								hp = 100,
-								name = L"Tainted Horror",
+								career = 0,
 							},
 						},
 						parry = 0,
 					},
-					[L"Rabid Bite"] = 
+					[L"Rabid Bite"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
-							total = 1071,
+							total = 1244,
 							max = 79,
 							min = 0,
-							count = 19,
-							abs = 278,
-							maxObject = 
+							count = 28,
+							abs = 736,
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2512,31 +2010,28 @@ Enemy.Settings =
 								hp = 100,
 								career = 0,
 							},
-							mit = 443,
-							minObject = 
+							mit = 782,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								career = 0,
 								isFriendly = false,
-								id = 217,
-								level = 5,
+								id = 1196,
+								level = 7,
 								hp = 100,
 								name = L"Tainted Hound",
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
 							overheal = 0,
-							total = 294,
+							total = 411,
 							max = 116,
-							min = 79,
-							count = 3,
-							abs = 26,
-							maxObject = 
+							min = 0,
+							count = 6,
+							abs = 152,
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2547,24 +2042,24 @@ Enemy.Settings =
 								hp = 100,
 								career = 0,
 							},
-							mit = 106,
-							minObject = 
+							mit = 250,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Tainted Hound",
+								career = 0,
 								isFriendly = false,
-								id = 4128,
+								id = 1181,
 								level = 7,
 								hp = 100,
-								career = 0,
+								name = L"Tainted Hound",
 							},
 						},
 						parry = 0,
 					},
-					[L"Ethereal Hand"] = 
+					[L"Ethereal Hand"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
 							total = 283,
@@ -2572,7 +2067,7 @@ Enemy.Settings =
 							min = 37,
 							count = 7,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2584,7 +2079,7 @@ Enemy.Settings =
 								career = 0,
 							},
 							mit = 147,
-							minObject = 
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2596,10 +2091,7 @@ Enemy.Settings =
 								career = 0,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
 							overheal = 0,
 							total = 0,
@@ -2607,11 +2099,10 @@ Enemy.Settings =
 							abs = 0,
 							mit = 0,
 						},
-						parry = 0,
 					},
-					[L"Ethereal Emanation"] = 
+					[L"Ethereal Emanation"] =
 					{
-						normal = 
+
 						{
 							overheal = 0,
 							total = 37,
@@ -2619,7 +2110,7 @@ Enemy.Settings =
 							min = 37,
 							count = 1,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2631,7 +2122,7 @@ Enemy.Settings =
 								career = 0,
 							},
 							mit = 21,
-							minObject = 
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2643,30 +2134,31 @@ Enemy.Settings =
 								career = 0,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
+							str = L"Your Healing Hand heals you for 105 points.",
+							type = 3,
+							ability = L"Healing Hand",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 105,
+							time = 64937103489,
+							crit = false,
 							overheal = 0,
-							total = 0,
-							count = 0,
-							abs = 0,
-							mit = 0,
 						},
 						parry = 0,
 					},
-					[L"Lunging Maw"] = 
+					[L"Lunging Maw"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
-							total = 805,
+							total = 1234,
 							max = 81,
 							min = 0,
-							count = 16,
-							abs = 354,
-							maxObject = 
+							count = 23,
+							abs = 425,
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2677,59 +2169,56 @@ Enemy.Settings =
 								hp = 100,
 								career = 0,
 							},
-							mit = 369,
-							minObject = 
+							mit = 627,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Tainted Hound",
+								career = 0,
 								isFriendly = false,
-								id = 4262,
+								id = 1196,
 								level = 7,
 								hp = 100,
-								career = 0,
+								name = L"Tainted Hound",
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
 							overheal = 0,
 							total = 0,
 							max = 0,
 							min = 0,
-							count = 1,
-							abs = 84,
-							maxObject = 
+							count = 2,
+							abs = 143,
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Tainted Hound",
-								isFriendly = false,
-								id = 4128,
-								level = 7,
-								hp = 100,
 								career = 0,
+								isFriendly = false,
+								id = 1180,
+								level = 6,
+								hp = 100,
+								name = L"Tainted Hound",
 							},
-							mit = 31,
-							minObject = 
+							mit = 83,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Tainted Hound",
-								isFriendly = false,
-								id = 4128,
-								level = 7,
-								hp = 100,
 								career = 0,
+								isFriendly = false,
+								id = 1180,
+								level = 6,
+								hp = 100,
+								name = L"Tainted Hound",
 							},
 						},
 						parry = 0,
 					},
-					[L"Gas Squig's Goop Shootin'"] = 
+					[L"Gas Squig's Goop Shootin'"] =
 					{
-						normal = 
+						normal =
 						{
 							min = 28,
 							total = 171,
@@ -2738,7 +2227,7 @@ Enemy.Settings =
 							abs = 0,
 							max = 115,
 							mit = 48,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -2750,22 +2239,23 @@ Enemy.Settings =
 								career = 8,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
+							str = L"Your Prayer of Devotion heals you for 86 points.",
+							type = 3,
+							ability = L"Prayer of Devotion",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 86,
+							time = 64937103491,
+							crit = false,
 							overheal = 0,
-							total = 0,
-							count = 0,
-							abs = 0,
-							mit = 0,
 						},
 						parry = 0,
 					},
-					[L"Gas Squig's attack"] = 
+					[L"Gas Squig's attack"] =
 					{
-						normal = 
+						normal =
 						{
 							min = 13,
 							total = 143,
@@ -2774,7 +2264,7 @@ Enemy.Settings =
 							abs = 0,
 							max = 52,
 							mit = 56,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -2789,7 +2279,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 18,
@@ -2797,7 +2287,7 @@ Enemy.Settings =
 							min = 18,
 							count = 1,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -2809,7 +2299,7 @@ Enemy.Settings =
 								career = 8,
 							},
 							mit = 7,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -2823,9 +2313,9 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Seeping Wound"] = 
+					[L"Seeping Wound"] =
 					{
-						normal = 
+						normal =
 						{
 							min = 31,
 							total = 72,
@@ -2838,7 +2328,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							min = 60,
 							total = 60,
@@ -2850,9 +2340,9 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Ground Rumble"] = 
+					[L"Ground Rumble"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
 							total = 10,
@@ -2860,7 +2350,7 @@ Enemy.Settings =
 							min = 10,
 							count = 1,
 							max = 10,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2872,7 +2362,7 @@ Enemy.Settings =
 								isFriendly = false,
 							},
 							mit = 1,
-							minObject = 
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -2884,22 +2374,58 @@ Enemy.Settings =
 								isFriendly = false,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
-							overheal = 0,
-							total = 0,
-							count = 0,
-							abs = 0,
-							mit = 0,
+							str = L"Your Lingering Divine Aid critically heals you for 27 points. (13 overhealed)",
+							type = 3,
+							ability = L"Lingering Divine Aid",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 27,
+							time = 64937103492,
+							crit = true,
+							overheal = 13,
 						},
-						parry = 0,
+
+						{
+							str = L"Your Divine Assault heals you for 0 points. (105 overhealed)",
+							type = 3,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 0,
+							time = 64937103493,
+							crit = false,
+							overheal = 105,
+						},
+
+						{
+							str = L"Your Lingering Divine Aid heals you for 27 points.",
+							type = 3,
+							ability = L"Lingering Divine Aid",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 27,
+							time = 64937103494,
+							crit = false,
+							overheal = 0,
+						},
+
+						{
+							str = L"Your Divine Assault heals you for 143 points.",
+							type = 3,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"Rybert",
+							value = 143,
+							time = 64937103494,
+							crit = false,
+							overheal = 0,
+						},
 					},
-					[L"Yer Bleedin'!"] = 
+					[L"Yer Bleedin'!"] =
 					{
-						normal = 
+
 						{
 							overheal = 0,
 							total = 228,
@@ -2907,7 +2433,7 @@ Enemy.Settings =
 							min = 76,
 							count = 3,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -2919,7 +2445,7 @@ Enemy.Settings =
 								career = 8,
 							},
 							mit = 57,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -2931,18 +2457,23 @@ Enemy.Settings =
 								career = 8,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
+							str = L"Your Healing Hand heals you for 105 points.",
+							type = 4,
+							ability = L"Healing Hand",
+							currentTarget = true,
+							object = L"you",
+							value = 105,
+							time = 64937103489,
+							crit = false,
 							overheal = 0,
 							total = 113,
 							max = 113,
 							min = 113,
 							count = 1,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -2954,7 +2485,7 @@ Enemy.Settings =
 								career = 8,
 							},
 							mit = 29,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -2968,9 +2499,9 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Chillwind"] = 
+					[L"Chillwind"] =
 					{
-						normal = 
+						normal =
 						{
 							min = 92,
 							total = 184,
@@ -2983,7 +2514,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							min = 143,
 							total = 143,
@@ -2995,16 +2526,16 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"attack"] = 
+					[L"attack"] =
 					{
-						normal = 
+						normal =
 						{
 							min = 8,
-							total = 15550,
-							count = 208,
+							total = 13194,
+							count = 194,
 							overheal = 0,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3015,21 +2546,18 @@ Enemy.Settings =
 								hp = 30,
 								career = 0,
 							},
-							mit = 3681,
+							mit = 3609,
 							max = 183,
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
 							overheal = 0,
-							total = 3414,
+							total = 2490,
 							max = 277,
 							min = 12,
-							count = 28,
+							count = 24,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3040,8 +2568,8 @@ Enemy.Settings =
 								hp = 30,
 								career = 0,
 							},
-							mit = 739,
-							minObject = 
+							mit = 638,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3056,19 +2584,19 @@ Enemy.Settings =
 						parry = 0,
 					},
 				},
-				
+
 				{
-					[L"attack"] = 
+					[L"attack"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
-							total = 7704,
+							total = 7153,
 							max = 47,
 							min = 9,
-							count = 256,
+							count = 234,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -3079,8 +2607,8 @@ Enemy.Settings =
 								hp = 100,
 								career = 22,
 							},
-							mit = 6372,
-							minObject = 
+							mit = 5793,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3092,18 +2620,15 @@ Enemy.Settings =
 								career = 0,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
 							overheal = 0,
-							total = 987,
+							total = 966,
 							max = 67,
 							min = 13,
-							count = 24,
+							count = 23,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -3114,8 +2639,8 @@ Enemy.Settings =
 								hp = 94,
 								career = 23,
 							},
-							mit = 966,
-							minObject = 
+							mit = 931,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3127,90 +2652,91 @@ Enemy.Settings =
 								career = 0,
 							},
 						},
-						parry = 0,
-					},
-					[L"Divine Assault"] = 
-					{
-						normal = 
+
 						{
 							overheal = 0,
-							total = 4536,
-							max = 38,
-							min = 30,
-							count = 131,
+							total = 3568,
+							max = 45,
+							min = 31,
+							count = 101,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								career = 0,
 								isFriendly = false,
-								id = 217,
-								level = 5,
+								id = 1180,
+								level = 6,
 								hp = 100,
 								name = L"Tainted Hound",
 							},
-							mit = 2732,
-							minObject = 
+							mit = 2112,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								career = 0,
+								name = L"Escaped Patient",
 								isFriendly = false,
-								id = 391,
-								level = 6,
+								id = 4065,
+								level = 7,
 								hp = 100,
-								name = L"Tainted Flamer",
+								career = 0,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
+							str = L"Your Divine Assault heals you for 105 points.",
+							type = 4,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"you",
+							value = 105,
+							time = 64937103492,
+							crit = false,
 							overheal = 0,
-							total = 1071,
-							max = 56,
-							min = 41,
-							count = 22,
+							total = 854,
+							max = 68,
+							min = 43,
+							count = 17,
 							abs = 0,
-							maxObject = 
-							{
-								isNpc = true,
-								type = "selfhostiletarget",
-								name = L"Tainted Hound",
-								isFriendly = false,
-								id = 4350,
-								level = 5,
-								hp = 100,
-								career = 0,
-							},
-							mit = 659,
-							minObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								career = 0,
 								isFriendly = false,
-								id = 391,
+								id = 1180,
 								level = 6,
 								hp = 100,
-								name = L"Tainted Flamer",
+								name = L"Tainted Hound",
+							},
+							mit = 516,
+							minObject =
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								name = L"Blackhand the Deceiver",
+								isFriendly = false,
+								id = 3937,
+								level = 7,
+								hp = 30,
+								career = 0,
 							},
 						},
 						parry = 0,
 					},
-					[L"Divine Strike"] = 
+					[L"Divine Strike"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
-							total = 2358,
+							total = 2030,
 							max = 76,
 							min = 35,
-							count = 52,
+							count = 44,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -3221,8 +2747,8 @@ Enemy.Settings =
 								hp = 100,
 								career = 22,
 							},
-							mit = 1518,
-							minObject = 
+							mit = 1297,
+							minObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -3234,18 +2760,59 @@ Enemy.Settings =
 								career = 13,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
+							str = L"Your Lingering Divine Aid critically heals you for 27 points. (13 overhealed)",
+							type = 4,
+							ability = L"Lingering Divine Aid",
+							currentTarget = true,
+							object = L"you",
+							value = 27,
+							time = 64937103492,
+							crit = true,
+							overheal = 13,
+						},
+
+						{
+							str = L"Your Divine Assault heals you for 0 points. (105 overhealed)",
+							type = 4,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"you",
+							value = 0,
+							time = 64937103493,
+							crit = false,
+							overheal = 105,
+						},
+
+						{
+							str = L"Your Lingering Divine Aid heals you for 27 points.",
+							type = 4,
+							ability = L"Lingering Divine Aid",
+							currentTarget = true,
+							object = L"you",
+							value = 27,
+							time = 64937103494,
+							crit = false,
 							overheal = 0,
-							total = 519,
+						},
+
+						{
+							str = L"Your Divine Assault heals you for 143 points.",
+							type = 4,
+							ability = L"Divine Assault",
+							currentTarget = true,
+							object = L"you",
+							value = 143,
+							time = 64937103494,
+							crit = false,
+							overheal = 0,
+							total = 468,
 							max = 90,
 							min = 0,
-							count = 9,
+							count = 8,
 							abs = 66,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -3256,8 +2823,8 @@ Enemy.Settings =
 								hp = 79,
 								career = 21,
 							},
-							mit = 403,
-							minObject = 
+							mit = 359,
+							minObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -3269,19 +2836,18 @@ Enemy.Settings =
 								career = 13,
 							},
 						},
-						parry = 0,
 					},
-					[L"Bludgeon"] = 
+					[L"Bludgeon"] =
 					{
-						normal = 
+
 						{
 							overheal = 0,
-							total = 6002,
+							total = 5892,
 							max = 110,
 							min = 27,
-							count = 104,
+							count = 100,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -3292,8 +2858,8 @@ Enemy.Settings =
 								hp = 94,
 								career = 23,
 							},
-							mit = 3810,
-							minObject = 
+							mit = 3651,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3305,30 +2871,27 @@ Enemy.Settings =
 								career = 0,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
 							overheal = 0,
-							total = 830,
-							max = 92,
+							total = 707,
+							max = 105,
 							min = 77,
-							count = 10,
+							count = 8,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								name = L"Tainted Hound",
-								isFriendly = false,
-								id = 4350,
-								level = 5,
-								hp = 100,
 								career = 0,
+								isFriendly = false,
+								id = 847,
+								level = 7,
+								hp = 100,
+								name = L"Tainted Hound",
 							},
-							mit = 494,
-							minObject = 
+							mit = 376,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3342,29 +2905,29 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Castigation"] = 
+					[L"Castigation"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
-							total = 2605,
-							max = 38,
+							total = 2168,
+							max = 41,
 							min = 2,
-							count = 191,
+							count = 156,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								career = 0,
 								isFriendly = false,
-								id = 217,
-								level = 5,
+								id = 847,
+								level = 7,
 								hp = 100,
 								name = L"Tainted Hound",
 							},
-							mit = 1845,
-							minObject = 
+							mit = 1534,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3376,18 +2939,15 @@ Enemy.Settings =
 								career = 0,
 							},
 						},
-						dodge = 0,
-						disrupt = 0,
-						block = 0,
-						crit = 
+
 						{
 							overheal = 0,
-							total = 358,
+							total = 325,
 							max = 58,
-							min = 5,
-							count = 16,
+							min = 8,
+							count = 15,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3398,44 +2958,44 @@ Enemy.Settings =
 								hp = 100,
 								career = 0,
 							},
-							mit = 224,
-							minObject = 
-							{
-								isNpc = true,
-								type = "selfhostiletarget",
-								career = 0,
-								isFriendly = false,
-								id = 391,
-								level = 6,
-								hp = 100,
-								name = L"Tainted Flamer",
-							},
-						},
-						parry = 0,
-					},
-					[L"Sigmar's Fist"] = 
-					{
-						normal = 
-						{
-							overheal = 0,
-							total = 1876,
-							max = 54,
-							min = 37,
-							count = 41,
-							abs = 0,
-							maxObject = 
+							mit = 202,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
 								name = L"Tainted Hound",
 								isFriendly = false,
-								id = 4129,
-								level = 5,
+								id = 4186,
+								level = 6,
 								hp = 100,
 								career = 0,
 							},
-							mit = 1279,
-							minObject = 
+						},
+						parry = 0,
+					},
+					[L"Sigmar's Fist"] =
+					{
+						normal =
+						{
+							overheal = 0,
+							total = 1658,
+							max = 55,
+							min = 37,
+							count = 36,
+							abs = 0,
+							maxObject =
+							{
+								isNpc = true,
+								type = "selfhostiletarget",
+								career = 0,
+								isFriendly = false,
+								id = 1180,
+								level = 6,
+								hp = 100,
+								name = L"Tainted Hound",
+							},
+							mit = 1104,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3450,15 +3010,15 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
-							total = 135,
+							total = 73,
 							max = 73,
-							min = 62,
-							count = 2,
+							min = 73,
+							count = 1,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3469,32 +3029,32 @@ Enemy.Settings =
 								hp = 100,
 								career = 0,
 							},
-							mit = 66,
-							minObject = 
+							mit = 23,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
-								career = 0,
+								name = L"Nurgling",
 								isFriendly = false,
-								id = 385,
-								level = 6,
+								id = 204,
+								level = 1,
 								hp = 100,
-								name = L"Tainted Horror",
+								career = 0,
 							},
 						},
 						parry = 0,
 					},
-					[L"Judgement"] = 
+					[L"Judgement"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 0,
-							total = 630,
+							total = 534,
 							max = 51,
 							min = 21,
-							count = 24,
+							count = 20,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selfhostiletarget",
@@ -3505,8 +3065,8 @@ Enemy.Settings =
 								hp = 100,
 								career = 24,
 							},
-							mit = 557,
-							minObject = 
+							mit = 453,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3521,15 +3081,15 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
-							total = 150,
+							total = 114,
 							max = 41,
 							min = 33,
-							count = 4,
+							count = 3,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3540,8 +3100,8 @@ Enemy.Settings =
 								hp = 100,
 								isFriendly = false,
 							},
-							mit = 121,
-							minObject = 
+							mit = 86,
+							minObject =
 							{
 								isNpc = true,
 								type = "selfhostiletarget",
@@ -3556,31 +3116,31 @@ Enemy.Settings =
 						parry = 0,
 					},
 				},
-				
+
 				{
-					[L"Rybert - Lingering Divine Aid"] = 
+					[L"Rybert - Lingering Divine Aid"] =
 					{
-						normal = 
+						normal =
 						{
-							overheal = 920,
-							total = 628,
+							overheal = 951,
+							total = 737,
 							abs = 0,
 							min = 23,
-							count = 64,
-							max = 27,
-							maxObject = 
+							count = 68,
+							max = 31,
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
 								career = 12,
 								isFriendly = true,
 								id = 114,
-								level = 8,
-								hp = 83,
+								level = 10,
+								hp = 92,
 								name = L"Rybert",
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3595,27 +3155,27 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
-							overheal = 114,
-							total = 27,
+							overheal = 101,
+							total = 88,
 							abs = 0,
 							min = 33,
-							count = 4,
-							max = 40,
-							maxObject = 
+							count = 5,
+							max = 45,
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
 								career = 12,
 								isFriendly = true,
 								id = 114,
-								level = 8,
-								hp = 100,
+								level = 10,
+								hp = 78,
 								name = L"Rybert",
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3629,29 +3189,29 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Rybert - Divine Aid"] = 
+					[L"Rybert - Divine Aid"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 760,
-							total = 542,
+							total = 558,
 							abs = 0,
 							min = 95,
 							count = 13,
-							max = 112,
-							maxObject = 
+							max = 128,
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
 								career = 12,
 								isFriendly = true,
 								id = 114,
-								level = 8,
-								hp = 53,
+								level = 10,
+								hp = 77,
 								name = L"Rybert",
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3666,27 +3226,27 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 140,
-							total = 0,
+							total = 175,
 							abs = 0,
 							min = 140,
-							count = 1,
-							max = 140,
-							maxObject = 
+							count = 2,
+							max = 175,
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
-								name = L"Rybert",
 								career = 12,
-								id = 114,
-								level = 6,
-								hp = 100,
 								isFriendly = true,
+								id = 114,
+								level = 10,
+								hp = 66,
+								name = L"Rybert",
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3700,17 +3260,29 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Rybert - Divine Assault"] = 
+					[L"Rybert - Divine Assault"] =
 					{
-						normal = 
+						normal =
 						{
-							overheal = 10121,
-							total = 9471,
-							max = 196,
-							min = 105,
-							count = 153,
+							overheal = 8032,
+							total = 7419,
+							max = 238,
+							min = 108,
+							count = 118,
 							abs = 0,
-							maxObject = 
+							maxObject =
+							{
+								isNpc = false,
+								type = "selffriendlytarget",
+								career = 12,
+								isFriendly = true,
+								id = 114,
+								level = 10,
+								hp = 100,
+								name = L"Rybert",
+							},
+							mit = 0,
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3721,23 +3293,11 @@ Enemy.Settings =
 								hp = 100,
 								career = 12,
 							},
-							mit = 0,
-							minObject = 
-							{
-								isNpc = false,
-								type = "selffriendlytarget",
-								career = 12,
-								isFriendly = true,
-								id = 114,
-								level = 8,
-								hp = 100,
-								name = L"Rybert",
-							},
 						},
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -3747,17 +3307,17 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Rybert - Healing Hand"] = 
+					[L"Rybert - Healing Hand"] =
 					{
-						normal = 
+						normal =
 						{
-							overheal = 6898,
-							total = 4139,
+							overheal = 6364,
+							total = 4328,
 							max = 186,
 							min = 82,
-							count = 109,
+							count = 104,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3769,7 +3329,7 @@ Enemy.Settings =
 								career = 12,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3784,27 +3344,27 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
-							overheal = 1219,
-							total = 434,
-							max = 160,
+							overheal = 873,
+							total = 495,
+							max = 169,
 							min = 115,
-							count = 12,
+							count = 10,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
 								career = 12,
 								isFriendly = true,
 								id = 114,
-								level = 8,
-								hp = 100,
+								level = 10,
+								hp = 98,
 								name = L"Rybert",
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3818,17 +3378,17 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Rybert - Divine Strike"] = 
+					[L"Rybert - Divine Strike"] =
 					{
-						normal = 
+						normal =
 						{
-							overheal = 633,
-							total = 1898,
+							overheal = 464,
+							total = 1688,
 							max = 65,
 							min = 37,
-							count = 55,
+							count = 46,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3840,7 +3400,7 @@ Enemy.Settings =
 								career = 12,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3855,7 +3415,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -3865,29 +3425,29 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Rybert - Divine Mend"] = 
+					[L"Rybert - Divine Mend"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 398,
-							total = 205,
-							max = 205,
+							total = 0,
+							max = 199,
 							min = 199,
-							count = 3,
+							count = 2,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
-								career = 12,
-								isFriendly = true,
-								id = 114,
-								level = 8,
-								hp = 81,
 								name = L"Rybert",
+								isFriendly = true,
+								id = 2800,
+								level = 8,
+								hp = 100,
+								career = 12,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3902,7 +3462,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -3912,17 +3472,17 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Rybert - Prayer of Devotion"] = 
+					[L"Rybert - Prayer of Devotion"] =
 					{
-						normal = 
+						normal =
 						{
-							overheal = 3489,
-							total = 5745,
+							overheal = 2560,
+							total = 4524,
 							max = 160,
 							min = 73,
-							count = 106,
+							count = 81,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3934,7 +3494,7 @@ Enemy.Settings =
 								career = 12,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3949,7 +3509,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -3960,19 +3520,19 @@ Enemy.Settings =
 						parry = 0,
 					},
 				},
-				
+
 				{
-					[L"Prayer of Devotion"] = 
+					[L"Prayer of Devotion"] =
 					{
-						normal = 
+						normal =
 						{
-							overheal = 3489,
-							total = 5745,
+							overheal = 2560,
+							total = 4524,
 							max = 160,
 							min = 73,
-							count = 106,
+							count = 81,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3984,7 +3544,7 @@ Enemy.Settings =
 								career = 12,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -3999,7 +3559,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -4009,18 +3569,18 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Lingering Divine Aid"] = 
+					[L"Lingering Divine Aid"] =
 					{
-						normal = 
+						normal =
 						{
 							min = 23,
-							total = 3402,
-							count = 146,
-							overheal = 1616,
+							total = 3511,
+							count = 153,
+							overheal = 1770,
 							abs = 0,
 							max = 47,
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4035,15 +3595,15 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
-							overheal = 114,
-							total = 508,
+							overheal = 217,
+							total = 573,
 							abs = 0,
 							min = 33,
-							count = 12,
+							count = 15,
 							max = 64,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4055,7 +3615,7 @@ Enemy.Settings =
 								career = 17,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4069,29 +3629,29 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Divine Mend"] = 
+					[L"Divine Mend"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 398,
-							total = 404,
-							max = 205,
+							total = 199,
+							max = 199,
 							min = 199,
-							count = 4,
+							count = 3,
 							abs = 0,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
-								career = 12,
+								name = L"Nightswatch",
 								isFriendly = true,
-								id = 114,
-								level = 8,
-								hp = 81,
-								name = L"Rybert",
+								id = 3769,
+								level = 11,
+								hp = 10,
+								career = 11,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4106,7 +3666,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -4116,17 +3676,29 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Divine Assault"] = 
+					[L"Divine Assault"] =
 					{
-						normal = 
+						normal =
 						{
-							overheal = 10121,
-							total = 9471,
-							max = 196,
-							min = 105,
-							count = 153,
+							overheal = 8032,
+							total = 7419,
+							max = 238,
+							min = 108,
+							count = 118,
 							abs = 0,
-							maxObject = 
+							maxObject =
+							{
+								isNpc = false,
+								type = "selffriendlytarget",
+								career = 12,
+								isFriendly = true,
+								id = 114,
+								level = 10,
+								hp = 100,
+								name = L"Rybert",
+							},
+							mit = 0,
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4137,23 +3709,11 @@ Enemy.Settings =
 								hp = 100,
 								career = 12,
 							},
-							mit = 0,
-							minObject = 
-							{
-								isNpc = false,
-								type = "selffriendlytarget",
-								career = 12,
-								isFriendly = true,
-								id = 114,
-								level = 8,
-								hp = 100,
-								name = L"Rybert",
-							},
 						},
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -4163,17 +3723,17 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Healing Hand"] = 
+					[L"Healing Hand"] =
 					{
-						normal = 
+						normal =
 						{
-							overheal = 11043,
-							total = 11806,
+							overheal = 11299,
+							total = 11995,
 							abs = 0,
 							min = 82,
 							count = 183,
 							max = 186,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4185,7 +3745,7 @@ Enemy.Settings =
 								career = 12,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4200,16 +3760,16 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							min = 115,
-							total = 1886,
-							count = 24,
-							overheal = 2381,
+							total = 1947,
+							count = 22,
+							overheal = 2035,
 							abs = 0,
 							max = 264,
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4223,17 +3783,17 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Divine Strike"] = 
+					[L"Divine Strike"] =
 					{
-						normal = 
+						normal =
 						{
-							overheal = 939,
-							total = 2760,
+							overheal = 770,
+							total = 2550,
 							abs = 0,
 							min = 35,
-							count = 75,
+							count = 66,
 							max = 90,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4245,7 +3805,7 @@ Enemy.Settings =
 								career = 17,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4260,7 +3820,7 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 0,
 							total = 0,
@@ -4270,17 +3830,17 @@ Enemy.Settings =
 						},
 						parry = 0,
 					},
-					[L"Divine Aid"] = 
+					[L"Divine Aid"] =
 					{
-						normal = 
+						normal =
 						{
 							overheal = 996,
-							total = 3127,
+							total = 3313,
 							abs = 0,
 							min = 95,
-							count = 29,
+							count = 30,
 							max = 191,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4292,7 +3852,7 @@ Enemy.Settings =
 								career = 17,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4307,15 +3867,15 @@ Enemy.Settings =
 						dodge = 0,
 						disrupt = 0,
 						block = 0,
-						crit = 
+						crit =
 						{
 							overheal = 140,
-							total = 524,
+							total = 699,
 							abs = 0,
 							min = 140,
-							count = 3,
+							count = 4,
 							max = 270,
-							maxObject = 
+							maxObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4327,7 +3887,7 @@ Enemy.Settings =
 								career = 18,
 							},
 							mit = 0,
-							minObject = 
+							minObject =
 							{
 								isNpc = false,
 								type = "selffriendlytarget",
@@ -4343,7 +3903,7 @@ Enemy.Settings =
 					},
 				},
 			},
-			dt = 
+			dt =
 			{
 				minutes = 43,
 				year = 2020,
@@ -4355,16 +3915,16 @@ Enemy.Settings =
 			},
 		},
 	},
-	groupIconsOtherGroupsBGColor = 
+	groupIconsOtherGroupsBGColor =
 	{
 		200,
 		255,
 		255,
 	},
-	unitFramesGroupsPadding2 = 0,
+	unitFramesGroupsPadding2 = 20,
 	talismanAlerterEnabled = false,
 	groupIconsLayer = 0,
-	groupIconsPetHPColor = 
+	groupIconsPetHPColor =
 	{
 		255,
 		225,
@@ -4372,7 +3932,7 @@ Enemy.Settings =
 	},
 	combatLogIDSTimeframe = 7.5,
 	unitFramesHideMyGroup = false,
-	groupIconsHPBGColor = 
+	groupIconsHPBGColor =
 	{
 		0,
 		100,
@@ -4380,18 +3940,18 @@ Enemy.Settings =
 	},
 	timerEnabled = false,
 	killSpamListBottomUp = false,
-	groupIconsScale = 1,
-	playerKills = 1,
+	groupIconsScale = 0.6,
+	playerKills = 0,
 	combatLogIDSMaxRows = L"5",
 	groupIconsPetAlpha = 1,
 	combatLogTargetDefenseTimeframe = 7.5,
 	combatLogTargetDefenseEnabled = false,
 	markNewTarget = false,
 	unitFramesTooltipMode = "always",
-	unitFramesGroupsDirection1 = 1,
+	unitFramesGroupsDirection1 = 3,
 	combatLogEPSTimeframe = 7.5,
 	combatLogEPSMaxValueMinTime = 4.5,
-	combatLogTargetDefenseTotalBackground = 
+	combatLogTargetDefenseTotalBackground =
 	{
 		0,
 		0,
@@ -4399,14 +3959,14 @@ Enemy.Settings =
 	},
 	objectWindowsTimeout = 20,
 	combatLogIgnoreWhenPolymorphed = true,
-	combatLogIDSRowBackground = 
+	combatLogIDSRowBackground =
 	{
 		225,
 		50,
 		50,
 	},
 	unitFramesPadding2 = 10,
-	combatLogEPSEnabled = 
+	combatLogEPSEnabled =
 	{
 		true,
 		true,
@@ -4419,11 +3979,11 @@ Enemy.Settings =
 	assistTargetOnNotifyClick = false,
 	scenarioInfoReplaceStandardWindow = false,
 	unitFramesTestMode = false,
-	markTemplates = 
+	markTemplates =
 	{
-		
+
 		{
-			color = 
+			color =
 			{
 				191,
 				255,
@@ -4432,7 +3992,7 @@ Enemy.Settings =
 			firstLetters = 4,
 			showCareerIcon = true,
 			canClearOnClick = true,
-			permanentTargets = 
+			permanentTargets =
 			{
 			},
 			id = 1,
@@ -4448,9 +4008,9 @@ Enemy.Settings =
 			neverExpire = false,
 			permanent = false,
 		},
-		
+
 		{
-			color = 
+			color =
 			{
 				255,
 				64,
@@ -4459,7 +4019,7 @@ Enemy.Settings =
 			firstLetters = 4,
 			showCareerIcon = true,
 			canClearOnClick = true,
-			permanentTargets = 
+			permanentTargets =
 			{
 			},
 			id = 2,
@@ -4475,9 +4035,9 @@ Enemy.Settings =
 			neverExpire = false,
 			permanent = true,
 		},
-		
+
 		{
-			color = 
+			color =
 			{
 				65,
 				150,
@@ -4486,7 +4046,7 @@ Enemy.Settings =
 			firstLetters = 4,
 			showCareerIcon = false,
 			canClearOnClick = true,
-			permanentTargets = 
+			permanentTargets =
 			{
 			},
 			id = 3,
@@ -4504,40 +4064,40 @@ Enemy.Settings =
 		},
 	},
 	talismanAlerterDisplayMode = 2,
-	unitFramesSize = 
+	unitFramesSize =
 	{
 		164,
 		64,
 	},
 	guardDistanceIndicatorScaleWarning = 1.5,
-	groupIconsOtherGroupsHPColor = 
+	groupIconsOtherGroupsHPColor =
 	{
 		200,
 		255,
 		255,
 	},
-	timerInactiveColor = 
+	timerInactiveColor =
 	{
 		255,
 		255,
 		255,
 	},
 	unitFramesSortingEnabled = true,
-	newTargetMarkTemplate = 
+	newTargetMarkTemplate =
 	{
 		scale = 1,
 		unique = false,
 		firstLetters = 4,
 		showCareerIcon = true,
 		canClearOnClick = true,
-		permanentTargets = 
+		permanentTargets =
 		{
 		},
 		id = 45,
 		text = L"KILL",
 		alpha = 1,
 		layer = 3,
-		color = 
+		color =
 		{
 			b = 0,
 			g = 0,
@@ -4554,37 +4114,37 @@ Enemy.Settings =
 	groupIconsPetBGAlpha = 0.5,
 	stateMachineThrottle = 0.3,
 	unitFramesScale = 1,
-	groupIconsPetOffset = 
+	groupIconsPetOffset =
 	{
 		0,
 		20,
 	},
 	soundOnNewTargetId = 500,
 	guardDistanceIndicator = 2,
-	timerActiveColor = 
+	timerActiveColor =
 	{
 		255,
 		255,
 		75,
 	},
-	scenarioInfoData = 
+	scenarioInfoData =
 	{
 		maxTimer = 120,
 		startingScenario = 0,
-		destructionPoints = 10,
-		id = 2006,
+		destructionPoints = 500,
+		id = 2000,
 		queuedWithGroup = false,
 		activeQueue = 0,
-		pointMax = 500,
 		mode = 2,
-		timeLeft = 86.365067107603,
-		orderPoints = 500,
+		orderPoints = 84,
+		timeLeft = 53.880964225158,
+		pointMax = 500,
 	},
 	scenarioInfoEnabled = true,
 	unitFramesIsVertical = false,
 	guardMarkEnabled = true,
-	groupIconsAlpha = 0.5,
-	combatLogEPSShow = 
+	groupIconsAlpha = 0.4,
+	combatLogEPSShow =
 	{
 		true,
 		true,
@@ -4598,12 +4158,12 @@ Enemy.Settings =
 	guardDistanceIndicatorScaleNormal = 1,
 	chatThrottleDelay = 10,
 	unitFramesEnabled = true,
-	playerDeaths = 4,
+	playerDeaths = 2,
 	scenarioAlerterEnabled = true,
 	groupIconsOtherGroupsLayer = 0,
 	groupIconsShowOnMarkedPlayers = false,
 	guardDistanceIndicatorAlphaWarning = 1,
-	groupIconsHPColor = 
+	groupIconsHPColor =
 	{
 		200,
 		255,
@@ -4611,57 +4171,131 @@ Enemy.Settings =
 	},
 	chatDelay = 2,
 	combatLogStatisticsEnabled = true,
-	combatLogIDSRowSize = 
+	combatLogIDSRowSize =
 	{
 		250,
 		30,
 	},
-	guardDistanceIndicatorColorNormal = 
+	guardDistanceIndicatorColorNormal =
 	{
 		127,
 		181,
 		255,
 	},
-	unitFramesParts = 
+	unitFramesParts =
 	{
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78048",
-			data = 
+			id = "3393",
+			data =
 			{
-				offlineHide = true,
-				anchorTo = "topleft",
-				color = 
+				anchorTo = "topright",
+				color =
 				{
 					255,
 					255,
 					255,
 				},
-				layer = 0,
-				alpha = 1,
-				texture = "rect",
-				deadHide = false,
-				size = 
+				farValue = 151,
+				anchorFrom = "topright",
+				farText = L"FAR",
+				prefix = L"",
+				suffix = L"",
+				distHide = false,
+				size =
 				{
-					136,
-					65,
+					30,
+					30,
+				},
+				offlineHide = true,
+				align = "right",
+				layer = 2,
+				alpha = 1,
+				deadHide = true,
+				font = "font_clear_small_bold",
+				texture = "aluminium",
+				scale = 0.9,
+				vertical = false,
+				pos =
+				{
+					-3,
+					3,
+				},
+			},
+			exceptMe = true,
+			name = L"Distance",
+			playerType = 1,
+			isEnabled = false,
+			archetypes =
+			{
+				false,
+				false,
+				false,
+			},
+			type = "distanceText",
+			playerTypeMatch = 1,
+		},
+
+		{
+			archetypeMatch = 1,
+			id = "78058",
+			data =
+			{
+				anchorTo = "topright",
+				color =
+				{
+					190,
+					255,
+					50,
+				},
+				level1 = 65,
+				anchorFrom = "topright",
+				level2 = 100,
+				distHide = false,
+				texture = "4dots",
+				offlineHide = true,
+				textureFullResize = false,
+				layer = 2,
+				alpha = 1,
+				color1 =
+				{
+					255,
+					150,
+					50,
+				},
+				color2 =
+				{
+					255,
+					50,
+					50,
+				},
+				deadHide = true,
+				color3 =
+				{
+					255,
+					50,
+					50,
+				},
+				scale = 1,
+				level3 = 150,
+				size =
+				{
+					40,
+					10,
 				},
 				vertical = false,
-				scale = 1,
-				distHide = false,
-				anchorFrom = "topleft",
-				pos = 
+				pos =
 				{
-					31,
-					0,
+					-3,
+					4,
 				},
 			},
 			exceptMe = false,
-			name = L"Selection",
+			name = L"Distance bar",
 			playerType = 1,
 			isEnabled = true,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -4670,56 +4304,49 @@ Enemy.Settings =
 			type = "selectionFrame",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78049",
-			data = 
+			id = "3394",
+			data =
 			{
-				offlineColor = 
-				{
-					150,
-					150,
-					150,
-				},
-				offlineHide = false,
-				anchorTo = "topleft",
-				color = 
-				{
-					0,
-					0,
-					0,
-				},
-				layer = 0,
-				anchorFrom = "topleft",
-				texture = "default2",
-				size = 
-				{
-					136,
-					67,
-				},
+				anchorTo = "right",
+				scale = 0.7,
+				anchorFrom = "right",
 				vertical = false,
-				scale = 1,
-				deadColor = 
-				{
-					200,
-					50,
-					50,
-				},
-				deadHide = false,
+				prefix = L"",
+				suffix = L"%",
 				distHide = false,
-				alpha = 0.75,
-				pos = 
+				size =
 				{
-					31,
-					-1,
+					50,
+					30,
+				},
+				offlineHide = true,
+				textureFullResize = false,
+				layer = 2,
+				alpha = 1,
+				deadHide = true,
+				color =
+				{
+					255,
+					255,
+					255,
+				},
+				font = "font_clear_small_bold",
+				align = "rightcenter",
+				texture = "3dots",
+				pos =
+				{
+					-3,
+					1,
 				},
 			},
 			exceptMe = false,
-			name = L"Background",
+			name = L"HP %",
 			playerType = 1,
-			isEnabled = true,
-			archetypes = 
+			isEnabled = false,
+			archetypes =
 			{
 				false,
 				false,
@@ -4728,13 +4355,192 @@ Enemy.Settings =
 			type = "panel",
 			playerTypeMatch = 1,
 		},
-		
+	},
+	unitFramesPadding1 = 2,
+	guardDistanceIndicatorColorWarning =
+	{
+		255,
+		50,
+		50,
+	},
+	guardEnabled = false,
+	groupIconsOtherGroupsBGAlpha = 0.5,
+	playerKDRDisplayMode = 5,
+	killSpamReparseChunkSize = 20,
+	groupIconsHideOnSelf = true,
+	combatLogTargetDefenseTotalCalculate =
+	{
+		false,
+		true,
+		true,
+		true,
+		true,
+		true,
+	},
+	guardDistanceIndicatorClickThrough = false,
+	unitFramesCount1 = 6,
+	combatLogTargetDefenseTotalEnabled = false,
+	combatLogLogParseErrors = true,
+	groupIconsShowOtherGroups = true,
+	intercomPrivate = true,
+	groupIconsPetBGColor =
+	{
+		255,
+		225,
+		255,
+	},
+	unitFramesGroupsPadding1 = 10,
+	scenarioInfoSelection =
+	{
+
+		{
+			sortColumn = "value1",
+			columns =
+			{
+				"db",
+				"deaths",
+			},
+			sortDirection = false,
+			id2 = "1",
+			id = "All",
+		},
+
+		{
+			sortColumn = "value1",
+			columns =
+			{
+				"db",
+				"deaths",
+			},
+			sortDirection = false,
+			id2 = "2",
+			id = "All",
+		},
+	},
+	combatLogEnabled = true,
+	combatLogTargetDefenseBackground =
+	{
+		0,
+		0,
+		0,
+	},
+	unitFramesMyGroupFirst = true,
+	combatLogTargetDefenseScale = 1,
+	unitFramesGroupsDirection2 = 4,
+	scenarioInfoPlayers =
+	{
+
+		{
+			deaths = 1,
+			renown = 40,
+			healing = 3829,
+			soloKills = 0,
+			damage = 415,
+			kills = 1,
+			name = L"Sybannak",
+			exp = 228,
+			db = 0,
+			level = 15,
+			career = 15,
+			realm = 2,
+		},
+
+		{
+			deaths = 0,
+			renown = 1409,
+			healing = 0,
+			soloKills = 0,
+			damage = 1880,
+			kills = 5,
+			name = L"Vendial",
+			exp = 15247,
+			db = 0,
+			level = 13,
+			career = 9,
+			realm = 1,
+		},
+
+		{
+			deaths = 0,
+			renown = 1629,
+			healing = 1724,
+			soloKills = 0,
+			damage = 9098,
+			kills = 18,
+			name = L"Eladorin",
+			exp = 16878,
+			db = 1,
+			level = 11,
+			career = 17,
+			realm = 1,
+		},
+
+		{
+			deaths = 1,
+			renown = 1409,
+			healing = 0,
+			soloKills = 0,
+			damage = 2912,
+			kills = 9,
+			name = L"Stenna",
+			exp = 28825,
+			db = 1,
+			level = 11,
+			career = 9,
+			realm = 1,
+		},
+
+		{
+			deaths = 0,
+			renown = 2088,
+			healing = 16022,
+			soloKills = 0,
+			damage = 1203,
+			kills = 17,
+			name = L"Rybert",
+			exp = 14744,
+			db = 0,
+			level = 7,
+			career = 12,
+			realm = 1,
+		},
+
+		{
+			deaths = 3,
+			renown = 40,
+			healing = 0,
+			soloKills = 0,
+			damage = 70124,
+			kills = 1,
+			name = L"Terrorbit",
+			exp = 614,
+			db = 0,
+			level = 13,
+			career = 8,
+			realm = 2,
+		},
+
+		{
+			deaths = 0,
+			renown = 1409,
+			healing = 0,
+			soloKills = 0,
+			damage = 2494,
+			kills = 6,
+			name = L"Helmtrudd",
+			exp = 15247,
+			db = 0,
+			level = 15,
+			career = 9,
+			realm = 1,
+		},
+
 		{
 			archetypeMatch = 1,
-			id = "78050",
-			data = 
+			id = "3395",
+			data =
 			{
-				size = 
+				size =
 				{
 					129,
 					59,
@@ -4742,7 +4548,7 @@ Enemy.Settings =
 				offlineHide = true,
 				anchorTo = "topleft",
 				distAlpha = 0.5,
-				color = 
+				color =
 				{
 					150,
 					190,
@@ -4758,7 +4564,7 @@ Enemy.Settings =
 				texture = "default",
 				distHide = false,
 				layer = 1,
-				pos = 
+				pos =
 				{
 					35,
 					3,
@@ -4768,7 +4574,7 @@ Enemy.Settings =
 			name = L"HP",
 			playerType = 1,
 			isEnabled = true,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -4777,11 +4583,11 @@ Enemy.Settings =
 			type = "hpbar",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78051",
-			data = 
+			id = "3396",
+			data =
 			{
 				offlineHide = true,
 				texture = "plain",
@@ -4789,12 +4595,12 @@ Enemy.Settings =
 				textureFullResize = true,
 				layer = 2,
 				anchorFrom = "bottomleft",
-				size = 
+				size =
 				{
 					128,
 					3,
 				},
-				color = 
+				color =
 				{
 					255,
 					220,
@@ -4806,7 +4612,7 @@ Enemy.Settings =
 				alpha = 1,
 				distHide = false,
 				distAlpha = 0.5,
-				pos = 
+				pos =
 				{
 					35,
 					0,
@@ -4816,7 +4622,7 @@ Enemy.Settings =
 			name = L"AP",
 			playerType = 3,
 			isEnabled = false,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -4825,23 +4631,23 @@ Enemy.Settings =
 			type = "apbar",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78052",
-			data = 
+			id = "3397",
+			data =
 			{
 				anchorTo = "bottomleft",
 				scale = 1,
 				anchorFrom = "bottomleft",
 				vertical = false,
 				distHide = false,
-				size = 
+				size =
 				{
 					129,
 					30,
 				},
-				distColor = 
+				distColor =
 				{
 					190,
 					225,
@@ -4857,13 +4663,13 @@ Enemy.Settings =
 				texture = "aluminium",
 				offlineHide = false,
 				wrap = false,
-				color = 
+				color =
 				{
 					255,
 					255,
 					255,
 				},
-				pos = 
+				pos =
 				{
 					40,
 					-5,
@@ -4873,7 +4679,7 @@ Enemy.Settings =
 			name = L"Name",
 			playerType = 1,
 			isEnabled = true,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -4882,14 +4688,14 @@ Enemy.Settings =
 			type = "nameText",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78053",
-			data = 
+			id = "3398",
+			data =
 			{
 				anchorTo = "topleft",
-				color = 
+				color =
 				{
 					255,
 					255,
@@ -4899,14 +4705,14 @@ Enemy.Settings =
 				alpha = 1,
 				vertical = false,
 				texture = "aluminium",
-				size = 
+				size =
 				{
 					28,
 					28,
 				},
 				anchorFrom = "topleft",
 				scale = 1,
-				pos = 
+				pos =
 				{
 					0,
 					4,
@@ -4915,8 +4721,8 @@ Enemy.Settings =
 			exceptMe = false,
 			name = L"Icon",
 			playerType = 1,
-			isEnabled = false,
-			archetypes = 
+			isEnabled = true,
+			archetypes =
 			{
 				false,
 				false,
@@ -4925,11 +4731,11 @@ Enemy.Settings =
 			type = "careerIcon",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78054",
-			data = 
+			id = "3399",
+			data =
 			{
 				offlineHide = false,
 				texture = "aluminium",
@@ -4937,7 +4743,7 @@ Enemy.Settings =
 				align = "center",
 				layer = 2,
 				anchorFrom = "bottomleft",
-				size = 
+				size =
 				{
 					20,
 					20,
@@ -4946,7 +4752,7 @@ Enemy.Settings =
 				font = "font_clear_small_bold",
 				vertical = false,
 				deadHide = false,
-				color = 
+				color =
 				{
 					255,
 					255,
@@ -4954,9 +4760,9 @@ Enemy.Settings =
 				},
 				distHide = false,
 				scale = 0.8,
-				pos = 
+				pos =
 				{
-					15,
+					10,
 					-5,
 				},
 			},
@@ -4964,7 +4770,7 @@ Enemy.Settings =
 			name = L"Level",
 			playerType = 1,
 			isEnabled = true,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -4973,36 +4779,33 @@ Enemy.Settings =
 			type = "levelText",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78055",
-			data = 
+			id = "3400",
+			data =
 			{
-				offlineHide = false,
 				anchorTo = "topleft",
-				scale = 1,
-				layer = 2,
-				alpha = 1,
-				texture = "star",
-				vertical = false,
-				size = 
-				{
-					16,
-					16,
-				},
-				deadHide = false,
-				color = 
+				color =
 				{
 					150,
 					190,
 					255,
 				},
-				distHide = false,
-				anchorFrom = "topleft",
-				pos = 
+				layer = 2,
+				alpha = 1,
+				vertical = false,
+				texture = "star",
+				size =
 				{
-					20,
+					16,
+					16,
+				},
+				anchorFrom = "topleft",
+				scale = 1,
+				pos =
+				{
+					-5,
 					-1,
 				},
 			},
@@ -5010,7 +4813,7 @@ Enemy.Settings =
 			name = L"Leader",
 			playerType = 1,
 			isEnabled = true,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -5019,11 +4822,11 @@ Enemy.Settings =
 			type = "groupLeaderIcon",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78056",
-			data = 
+			id = "3401",
+			data =
 			{
 				texture = "4dots",
 				offlineHide = true,
@@ -5032,7 +4835,7 @@ Enemy.Settings =
 				scale = 1,
 				layer = 3,
 				anchorFrom = "topleft",
-				size = 
+				size =
 				{
 					38,
 					10,
@@ -5043,13 +4846,13 @@ Enemy.Settings =
 				suffix = L"",
 				textureFullResize = false,
 				distHide = false,
-				color = 
+				color =
 				{
 					120,
 					200,
 					255,
 				},
-				pos = 
+				pos =
 				{
 					37,
 					4,
@@ -5059,7 +4862,7 @@ Enemy.Settings =
 			name = L"Morale",
 			playerType = 3,
 			isEnabled = false,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -5068,14 +4871,14 @@ Enemy.Settings =
 			type = "moraleBar",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78057",
-			data = 
+			id = "3402",
+			data =
 			{
 				anchorTo = "topright",
-				color = 
+				color =
 				{
 					255,
 					255,
@@ -5087,7 +4890,7 @@ Enemy.Settings =
 				prefix = L"",
 				suffix = L"",
 				distHide = false,
-				size = 
+				size =
 				{
 					30,
 					30,
@@ -5101,7 +4904,7 @@ Enemy.Settings =
 				texture = "aluminium",
 				scale = 0.9,
 				vertical = false,
-				pos = 
+				pos =
 				{
 					-3,
 					3,
@@ -5111,7 +4914,7 @@ Enemy.Settings =
 			name = L"Distance",
 			playerType = 1,
 			isEnabled = false,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -5120,14 +4923,14 @@ Enemy.Settings =
 			type = "distanceText",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78058",
-			data = 
+			id = "3403",
+			data =
 			{
 				anchorTo = "topright",
-				color = 
+				color =
 				{
 					190,
 					255,
@@ -5142,20 +4945,20 @@ Enemy.Settings =
 				textureFullResize = false,
 				layer = 2,
 				alpha = 1,
-				color1 = 
+				color1 =
 				{
 					255,
 					150,
 					50,
 				},
-				color2 = 
+				color2 =
 				{
 					255,
 					50,
 					50,
 				},
 				deadHide = true,
-				color3 = 
+				color3 =
 				{
 					255,
 					50,
@@ -5163,13 +4966,13 @@ Enemy.Settings =
 				},
 				scale = 1,
 				level3 = 150,
-				size = 
+				size =
 				{
 					40,
 					10,
 				},
 				vertical = false,
-				pos = 
+				pos =
 				{
 					-3,
 					4,
@@ -5179,7 +4982,7 @@ Enemy.Settings =
 			name = L"Distance bar",
 			playerType = 1,
 			isEnabled = true,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -5188,11 +4991,11 @@ Enemy.Settings =
 			type = "distanceBar",
 			playerTypeMatch = 1,
 		},
-		
+
 		{
 			archetypeMatch = 1,
-			id = "78059",
-			data = 
+			id = "3404",
+			data =
 			{
 				anchorTo = "right",
 				scale = 0.7,
@@ -5201,7 +5004,7 @@ Enemy.Settings =
 				prefix = L"",
 				suffix = L"%",
 				distHide = false,
-				size = 
+				size =
 				{
 					50,
 					30,
@@ -5211,7 +5014,7 @@ Enemy.Settings =
 				layer = 2,
 				alpha = 1,
 				deadHide = true,
-				color = 
+				color =
 				{
 					255,
 					255,
@@ -5220,7 +5023,7 @@ Enemy.Settings =
 				font = "font_clear_small_bold",
 				align = "rightcenter",
 				texture = "3dots",
-				pos = 
+				pos =
 				{
 					-3,
 					1,
@@ -5230,7 +5033,7 @@ Enemy.Settings =
 			name = L"HP %",
 			playerType = 1,
 			isEnabled = false,
-			archetypes = 
+			archetypes =
 			{
 				false,
 				false,
@@ -5240,8 +5043,8 @@ Enemy.Settings =
 			playerTypeMatch = 1,
 		},
 	},
-	unitFramesPadding1 = 2,
-	guardDistanceIndicatorColorWarning = 
+	unitFramesPadding1 = 6,
+	guardDistanceIndicatorColorWarning =
 	{
 		255,
 		50,
@@ -5252,7 +5055,7 @@ Enemy.Settings =
 	playerKDRDisplayMode = 5,
 	killSpamReparseChunkSize = 20,
 	groupIconsHideOnSelf = true,
-	combatLogTargetDefenseTotalCalculate = 
+	combatLogTargetDefenseTotalCalculate =
 	{
 		false,
 		true,
@@ -5267,19 +5070,19 @@ Enemy.Settings =
 	combatLogLogParseErrors = true,
 	groupIconsShowOtherGroups = true,
 	intercomPrivate = true,
-	groupIconsPetBGColor = 
+	groupIconsPetBGColor =
 	{
 		255,
 		225,
 		255,
 	},
 	unitFramesGroupsPadding1 = 10,
-	scenarioInfoSelection = 
+	scenarioInfoSelection =
 	{
-		
+
 		{
 			sortColumn = "value1",
-			columns = 
+			columns =
 			{
 				"db",
 				"deaths",
@@ -5288,10 +5091,10 @@ Enemy.Settings =
 			id2 = "1",
 			id = "All",
 		},
-		
+
 		{
 			sortColumn = "value1",
-			columns = 
+			columns =
 			{
 				"db",
 				"deaths",
@@ -5302,7 +5105,7 @@ Enemy.Settings =
 		},
 	},
 	combatLogEnabled = true,
-	combatLogTargetDefenseBackground = 
+	combatLogTargetDefenseBackground =
 	{
 		0,
 		0,
@@ -5311,367 +5114,352 @@ Enemy.Settings =
 	unitFramesMyGroupFirst = true,
 	combatLogTargetDefenseScale = 1,
 	unitFramesGroupsDirection2 = 4,
-	scenarioInfoPlayers = 
+	scenarioInfoPlayers =
 	{
-		
+
 		{
-			deaths = 1,
-			renown = 40,
-			healing = 3829,
+			deaths = 0,
+			renown = 2099,
+			healing = 0,
 			soloKills = 0,
-			damage = 415,
-			kills = 1,
-			name = L"Sybannak",
-			exp = 228,
-			db = 0,
-			level = 15,
-			career = 15,
 			realm = 2,
+			kills = 27,
+			name = L"Urummuk",
+			career = 6,
+			db = 10,
+			level = 14,
+			exp = 20789,
+			damage = 35896,
 		},
-		
+
 		{
-			deaths = 0,
-			renown = 1409,
+			deaths = 3,
+			renown = 631,
 			healing = 0,
 			soloKills = 0,
-			damage = 1880,
-			kills = 5,
-			name = L"Vendial",
-			exp = 15247,
-			db = 0,
-			level = 13,
-			career = 9,
 			realm = 1,
-		},
-		
-		{
-			deaths = 0,
-			renown = 1629,
-			healing = 1724,
-			soloKills = 0,
-			damage = 9098,
-			kills = 18,
-			name = L"Eladorin",
-			exp = 16878,
+			kills = 3,
+			name = L"Aerya",
+			career = 11,
 			db = 1,
-			level = 11,
-			career = 17,
-			realm = 1,
+			level = 7,
+			exp = 2691,
+			damage = 3149,
 		},
-		
+
 		{
-			deaths = 1,
-			renown = 1409,
+			deaths = 2,
+			renown = 645,
 			healing = 0,
 			soloKills = 0,
-			damage = 2912,
-			kills = 9,
-			name = L"Stenna",
-			exp = 28825,
-			db = 1,
-			level = 11,
-			career = 9,
 			realm = 1,
-		},
-		
-		{
-			deaths = 0,
-			renown = 2088,
-			healing = 16022,
-			soloKills = 0,
-			damage = 1203,
-			kills = 17,
-			name = L"Rybert",
-			exp = 14744,
+			kills = 3,
+			name = L"Azaburg",
+			career = 10,
 			db = 0,
 			level = 7,
-			career = 12,
+			exp = 2537,
+			damage = 6079,
+		},
+
+		{
+			deaths = 4,
+			renown = 574,
+			healing = 85,
+			soloKills = 0,
 			realm = 1,
-		},
-		
-		{
-			deaths = 3,
-			renown = 40,
-			healing = 0,
-			soloKills = 0,
-			damage = 70124,
-			kills = 1,
-			name = L"Terrorbit",
-			exp = 614,
-			db = 0,
-			level = 13,
-			career = 8,
-			realm = 2,
-		},
-		
-		{
-			deaths = 0,
-			renown = 1409,
-			healing = 0,
-			soloKills = 0,
-			damage = 2494,
-			kills = 6,
-			name = L"Helmtrudd",
-			exp = 15247,
-			db = 0,
-			level = 15,
-			career = 9,
-			realm = 1,
-		},
-		
-		{
-			deaths = 0,
-			renown = 1409,
-			healing = 0,
-			soloKills = 0,
-			damage = 15100,
-			kills = 13,
-			name = L"Andofili",
-			exp = 16036,
-			db = 7,
-			level = 14,
+			kills = 2,
+			name = L"Khanivorhia",
 			career = 19,
-			realm = 1,
+			db = 1,
+			level = 8,
+			exp = 1693,
+			damage = 6861,
 		},
-		
+
 		{
-			deaths = 3,
-			renown = 40,
-			healing = 0,
+			deaths = 0,
+			renown = 2959,
+			healing = 8766,
 			soloKills = 0,
-			damage = 3420,
-			kills = 0,
-			name = L"Anehtas",
-			exp = 228,
-			db = 0,
-			level = 12,
-			career = 24,
 			realm = 2,
-		},
-		
-		{
-			deaths = 3,
-			renown = 40,
-			healing = 0,
-			soloKills = 0,
-			damage = 36442,
-			kills = 0,
-			name = L"Kwiskass",
-			exp = 209,
+			kills = 24,
+			name = L"Faustis",
+			career = 23,
 			db = 0,
 			level = 8,
-			career = 8,
-			realm = 2,
+			exp = 11010,
+			damage = 1586,
 		},
-		
+
+		{
+			deaths = 1,
+			renown = 2534,
+			healing = 2500,
+			soloKills = 0,
+			realm = 2,
+			kills = 23,
+			name = L"Grimgorgg",
+			career = 5,
+			db = 1,
+			level = 14,
+			exp = 10516,
+			damage = 7525,
+		},
+
 		{
 			deaths = 2,
-			renown = 1529,
-			healing = 160,
+			renown = 761,
+			healing = 13477,
 			soloKills = 0,
-			damage = 4005,
-			kills = 14,
-			name = L"Oscrue",
-			exp = 15247,
-			db = 3,
-			level = 13,
-			career = 11,
 			realm = 1,
+			kills = 3,
+			name = L"Rybert",
+			career = 12,
+			db = 0,
+			level = 10,
+			exp = 2871,
+			damage = 1770,
 		},
-		
+
+		{
+			deaths = 2,
+			renown = 508,
+			healing = 133,
+			soloKills = 0,
+			realm = 1,
+			kills = 2,
+			name = L"Synnamon",
+			career = 9,
+			db = 1,
+			level = 15,
+			exp = 2813,
+			damage = 6727,
+		},
+
 		{
 			deaths = 0,
-			renown = 40,
+			renown = 1635,
 			healing = 0,
 			soloKills = 0,
-			damage = 1153,
-			kills = 1,
-			name = L"Dalsgard",
-			exp = 228,
+			realm = 2,
+			kills = 23,
+			name = L"Maimoudorixtis",
+			career = 8,
+			db = 3,
+			level = 14,
+			exp = 17171,
+			damage = 4576,
+		},
+
+		{
+			deaths = 1,
+			renown = 2530,
+			healing = 2553,
+			soloKills = 0,
+			realm = 2,
+			kills = 21,
+			name = L"Kevonn",
+			career = 23,
+			db = 0,
+			level = 7,
+			exp = 9881,
+			damage = 2787,
+		},
+
+		{
+			deaths = 3,
+			renown = 741,
+			healing = 342,
+			soloKills = 0,
+			realm = 1,
+			kills = 3,
+			name = L"Braendgeat",
+			career = 17,
+			db = 0,
+			level = 9,
+			exp = 2878,
+			damage = 4358,
+		},
+
+		{
+			deaths = 1,
+			renown = 517,
+			healing = 605,
+			soloKills = 0,
+			realm = 1,
+			kills = 2,
+			name = L"Iymyrr",
+			career = 10,
+			db = 0,
+			level = 9,
+			exp = 1593,
+			damage = 6227,
+		},
+
+		{
+			deaths = 3,
+			renown = 619,
+			healing = 0,
+			soloKills = 0,
+			realm = 1,
+			kills = 2,
+			name = L"Teutbert",
+			career = 9,
 			db = 0,
 			level = 14,
-			career = 13,
-			realm = 2,
+			exp = 2595,
+			damage = 4724,
 		},
-		
-		{
-			deaths = 0,
-			renown = 40,
-			healing = 0,
-			soloKills = 0,
-			damage = 1290,
-			kills = 0,
-			name = L"Cpkabana",
-			exp = 228,
-			db = 0,
-			level = 13,
-			career = 24,
-			realm = 2,
-		},
-		
-		{
-			deaths = 2,
-			renown = 2563,
-			healing = 0,
-			soloKills = 0,
-			damage = 2766,
-			kills = 7,
-			name = L"Keronus",
-			exp = 16317,
-			db = 1,
-			level = 10,
-			career = 11,
-			realm = 1,
-		},
-		
+
 		{
 			deaths = 1,
-			renown = 1409,
+			renown = 1848,
 			healing = 0,
 			soloKills = 0,
-			damage = 3487,
-			kills = 10,
-			name = L"Adelhide",
-			exp = 16158,
-			db = 1,
-			level = 6,
-			career = 9,
-			realm = 1,
-		},
-		
-		{
-			deaths = 3,
-			renown = 40,
-			healing = 0,
-			soloKills = 0,
-			damage = 2823,
-			kills = 1,
-			name = L"Rhetr",
-			exp = 614,
-			db = 0,
-			level = 10,
-			career = 13,
 			realm = 2,
+			kills = 24,
+			name = L"Thorngarden",
+			career = 16,
+			db = 1,
+			level = 12,
+			exp = 19387,
+			damage = 9967,
 		},
-		
+
 		{
-			deaths = 3,
-			renown = 40,
+			deaths = 0,
+			renown = 2436,
 			healing = 0,
 			soloKills = 0,
-			damage = 1275,
+			realm = 2,
+			kills = 27,
+			name = L"Gedoran",
+			career = 6,
+			db = 6,
+			level = 8,
+			exp = 21228,
+			damage = 14007,
+		},
+
+		{
+			deaths = 0,
+			renown = 2839,
+			healing = 2026,
+			soloKills = 0,
+			realm = 2,
+			kills = 29,
+			name = L"Zoarian",
+			career = 15,
+			db = 5,
+			level = 14,
+			exp = 12805,
+			damage = 12801,
+		},
+
+		{
+			deaths = 2,
+			renown = 690,
+			healing = 5775,
+			soloKills = 0,
+			realm = 1,
 			kills = 3,
-			name = L"Klaudiana",
-			exp = 1353,
-			db = 2,
-			level = 3,
+			name = L"Arutoria",
+			career = 17,
+			db = 0,
+			level = 9,
+			exp = 2235,
+			damage = 6016,
+		},
+
+		{
+			deaths = 3,
+			renown = 588,
+			healing = 5720,
+			soloKills = 0,
+			realm = 1,
+			kills = 3,
+			name = L"Alderya",
+			career = 3,
+			db = 0,
+			level = 7,
+			exp = 3035,
+			damage = 0,
+		},
+
+		{
+			deaths = 0,
+			renown = 1791,
+			healing = 72,
+			soloKills = 0,
+			realm = 2,
+			kills = 27,
+			name = L"Zahr",
 			career = 21,
-			realm = 2,
-		},
-		
-		{
-			deaths = 2,
-			renown = 40,
-			healing = 875,
-			soloKills = 0,
-			damage = 636,
-			kills = 1,
-			name = L"Costusss",
-			exp = 195,
-			db = 0,
-			level = 3,
-			career = 23,
-			realm = 2,
-		},
-		
-		{
-			deaths = 0,
-			renown = 3372,
-			healing = 7986,
-			soloKills = 0,
-			damage = 3981,
-			kills = 16,
-			name = L"Drakonval",
-			exp = 17623,
-			db = 0,
-			level = 4,
-			career = 12,
-			realm = 1,
-		},
-		
-		{
-			deaths = 2,
-			renown = 40,
-			healing = 0,
-			soloKills = 0,
-			damage = 3453,
-			kills = 3,
-			name = L"Shikimara",
-			exp = 1167,
 			db = 1,
-			level = 4,
-			career = 22,
-			realm = 2,
+			level = 14,
+			exp = 21209,
+			damage = 3242,
 		},
-		
-		{
-			deaths = 2,
-			renown = 40,
-			healing = 0,
-			soloKills = 0,
-			damage = 2084,
-			kills = 3,
-			name = L"Ptkaos",
-			exp = 781,
-			db = 0,
-			level = 3,
-			career = 13,
-			realm = 2,
-		},
-		
-		{
-			deaths = 2,
-			renown = 1840,
-			healing = 0,
-			soloKills = 0,
-			damage = 4056,
-			kills = 10,
-			name = L"Svanson",
-			exp = 19860,
-			db = 1,
-			level = 3,
-			career = 18,
-			realm = 1,
-		},
-		
-		{
-			deaths = 0,
-			renown = 3062,
-			healing = 710,
-			soloKills = 0,
-			damage = 8512,
-			kills = 18,
-			name = L"Eorend",
-			exp = 18155,
-			db = 4,
-			level = 2,
-			career = 18,
-			realm = 1,
-		},
-		
+
 		{
 			deaths = 1,
-			renown = 0,
+			renown = 2690,
+			healing = 6200,
+			soloKills = 0,
+			realm = 2,
+			kills = 26,
+			name = L"Zugergorc",
+			career = 5,
+			db = 2,
+			level = 12,
+			exp = 11886,
+			damage = 13915,
+		},
+
+		{
+			deaths = 0,
+			renown = 3011,
+			healing = 33411,
+			soloKills = 0,
+			realm = 2,
+			kills = 28,
+			name = L"Schetthealz",
+			career = 15,
+			db = 0,
+			level = 9,
+			exp = 11777,
+			damage = 2080,
+		},
+
+		{
+			deaths = 2,
+			renown = 663,
+			healing = 5316,
+			soloKills = 0,
+			realm = 1,
+			kills = 3,
+			name = L"Doshehowyou",
+			career = 17,
+			db = 0,
+			level = 8,
+			exp = 2403,
+			damage = 8499,
+		},
+
+		{
+			deaths = 3,
+			renown = 507,
 			healing = 0,
 			soloKills = 0,
-			damage = 911,
-			kills = 0,
-			name = L"Ghaelaso",
-			exp = 0,
-			db = 0,
-			level = 1,
-			career = 24,
-			realm = 2,
+			realm = 1,
+			kills = 3,
+			name = L"Anoldman",
+			career = 9,
+			db = 1,
+			level = 5,
+			exp = 2913,
+			damage = 5923,
 		},
 	},
 }

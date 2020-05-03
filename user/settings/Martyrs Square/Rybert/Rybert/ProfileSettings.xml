@@ -11,7 +11,7 @@
         <KeyBinding action="STRAFE_RIGHT" key="D" />
         <KeyBinding action="JUMP" key="Space" />
         <KeyBinding action="TOGGLE_WALK" key="NONE" />
-        <KeyBinding action="AUTO_RUN" key="F13" />
+        <KeyBinding action="AUTO_RUN" key="`" />
         <KeyBinding action="TOGGLE_ABILITIES_WINDOW" key="K" />
         <KeyBinding action="TOGGLE_BACKPACK_WINDOW" key="B" />
         <KeyBinding action="TOGGLE_CHARACTER_WINDOW" key="P" />

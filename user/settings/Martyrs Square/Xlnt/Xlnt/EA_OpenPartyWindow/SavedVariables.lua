@@ -11,16 +11,16 @@ EA_Window_OpenPartyLootRollOptions.Settings =
 	{
 		[5] = -1,
 		[6] = -1,
-		[2] = -1,
-		[3] = -1,
+		[2] = 1,
+		[3] = 1,
 		[4] = -1,
 	},
 	currency = 
 	{
 		[5] = -1,
 		[6] = -1,
-		[2] = -1,
-		[3] = -1,
+		[2] = 0,
+		[3] = 0,
 		[4] = -1,
 	},
 	potion = 
@@ -35,11 +35,11 @@ EA_Window_OpenPartyLootRollOptions.Settings =
 	{
 		[5] = -1,
 		[6] = -1,
-		[2] = -1,
-		[3] = -1,
-		[4] = -1,
+		[2] = 0,
+		[3] = 0,
+		[4] = 0,
 	},
-	trash = -1,
+	trash = 1,
 	talisman = 
 	{
 		[5] = -1,

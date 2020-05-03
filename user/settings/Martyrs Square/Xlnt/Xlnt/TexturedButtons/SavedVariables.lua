@@ -4,8 +4,9 @@ TexturedButtons.Settings =
 	{
 		HideActive = false,
 		SaveQuicklock = false,
-		CooldownPulse = false,
+		CooldownPulse = true,
 		HideQuicklock = false,
+		ActionButtonPickUpModifier = 32,
 		CustomGlow = 2,
 		HideGlow = false,
 	},
@@ -17,7 +18,7 @@ TexturedButtons.Settings =
 	},
 	Tint = 
 	{
-		Enabled = false,
+		Enabled = true,
 		Disabled = 
 		{
 			R = 150,
@@ -51,7 +52,7 @@ TexturedButtons.Settings =
 	},
 	Preset = 
 	{
-		Name = "Gloss",
+		Name = "SNT Skin 01",
 		Enabled = true,
 	},
 	Actionbars = 

@@ -2,9 +2,9 @@
 <UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="1.0" messagingEnabled="false">
     <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="" savedVariablesVersion="" />
     <Windows>
-        <WindowSettings xmlVersion="1.0" name="LayerTimerWindow" sizeX="500.000000" sizeY="50.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+        <WindowSettings xmlVersion="1.0" name="LayerTimerWindow" sizeX="500.000000" sizeY="50.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.797981" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottom" relativePoint="bottom" relativeTo="Root" xOffset="10.999968" yOffset="-148.820023" />
+                <WindowAnchor xmlVersion="1.0" point="bottom" relativePoint="bottom" relativeTo="Root" xOffset="-252.171524" yOffset="-207.100983" />
             </Anchors>
         </WindowSettings>
     </Windows>

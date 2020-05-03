@@ -66,21 +66,21 @@ BuffHead.Settings =
 			OnTargetChange = 
 			{
 				ClearBuffs = false,
-				ClearAlwaysShow = false,
-				ClearDebuffs = false,
+				ClearAlwaysShow = true,
+				ClearDebuffs = true,
 			},
 		},
 	},
 	Indicators = 
 	{
-		Compression = 1,
+		Compression = 3,
 		Padding = 
 		{
 			Y = 5,
-			X = 0,
+			X = 2,
 		},
 	},
-	Scale = 1,
+	Scale = 0.75,
 	PriorityEffects = 
 	{
 		SortToFront = true,
@@ -118,7 +118,7 @@ BuffHead.Settings =
 	},
 	Offset = 
 	{
-		Y = -20,
+		Y = 20,
 		X = 0,
 	},
 	Layer = 1,
