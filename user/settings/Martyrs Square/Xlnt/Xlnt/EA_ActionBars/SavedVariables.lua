@@ -14,6 +14,10 @@ EA_ActionBars_DataCache =
 		{
 			icon = 8046,
 		},
+		[8091] = 
+		{
+			icon = 7971,
+		},
 		[8236] = 
 		{
 			icon = 8029,
@@ -25,6 +29,10 @@ EA_ActionBars_DataCache =
 		[8082] = 
 		{
 			icon = 8051,
+		},
+		[8090] = 
+		{
+			icon = 7985,
 		},
 		[8237] = 
 		{
@@ -38,21 +46,33 @@ EA_ActionBars_DataCache =
 		{
 			icon = 7944,
 		},
+		[14427] = 
+		{
+			icon = 23412,
+		},
 		[8238] = 
 		{
 			icon = 7903,
+		},
+		[8099] = 
+		{
+			icon = 7970,
 		},
 		[8083] = 
 		{
 			icon = 8052,
 		},
+		[245] = 
+		{
+			icon = 5004,
+		},
 		[2931] = 
 		{
 			icon = 7945,
 		},
-		[8092] = 
+		[8239] = 
 		{
-			icon = 7972,
+			icon = 7978,
 		},
 		[8255] = 
 		{
@@ -74,13 +94,13 @@ EA_ActionBars_DataCache =
 		{
 			icon = 8045,
 		},
-		[8080] = 
+		[8088] = 
 		{
-			icon = 7966,
+			icon = 7968,
 		},
-		[8241] = 
+		[8092] = 
 		{
-			icon = 7960,
+			icon = 7972,
 		},
 		[8249] = 
 		{
@@ -90,13 +110,13 @@ EA_ActionBars_DataCache =
 		{
 			icon = 8001,
 		},
-		[245] = 
+		[8241] = 
 		{
-			icon = 5004,
+			icon = 7960,
 		},
-		[8239] = 
+		[8080] = 
 		{
-			icon = 7978,
+			icon = 7966,
 		},
 	},
 	
@@ -153,7 +173,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Imperial Pack Mule",
 				broken = false,
-				timestamp = 337,
+				timestamp = 2891,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -208,6 +228,110 @@ EA_ActionBars_DataCache =
 				capacity = 1,
 			},
 		},
+		[190471] = 
+		{
+			icon = 452,
+			itemData = 
+			{
+				description = L"",
+				renown = 0,
+				maxEquip = 0,
+				slots = 
+				{
+				},
+				equipSlot = 0,
+				races = 
+				{
+				},
+				tintB = 0,
+				speed = 0,
+				decayPaused = false,
+				timeLeftBeforeDecay = 0,
+				blockRating = 0,
+				iconNum = 452,
+				rarity = 2,
+				isTwoHanded = false,
+				marketingVariation = 0,
+				flags = 
+				{
+					false,
+					true,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false, 
+					[0] = false,
+				},
+				name = L"Initiate's Draught of Allaying",
+				broken = false,
+				timestamp = 15,
+				customizedIconNum = 0,
+				marketingIndex = 0,
+				skills = 
+				{
+				},
+				craftingSkillRequirement = 0,
+				itemSet = 0,
+				uniqueID = 190471,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
+				sellPrice = 30,
+				bop = false,
+				isNew = false,
+				dyeTintA = 0,
+				tintA = 0,
+				tier = 0,
+				craftingBonus = 
+				{
+				},
+				trophyLocation = 0,
+				enhSlot = 
+				{
+				},
+				bonus = 
+				{
+					[1] = 
+					{
+						type = 3,
+						value = 0,
+						cooldownTimeLeft = 0,
+						reference = 7871,
+						totalCooldownTime = 180,
+					},
+				},
+				currChargesRemaining = 0,
+				type = 31,
+				boundToPlayer = false,
+				customizedIconName = L"",
+				id = 690,
+				dps = 0,
+				numEnhancementSlots = 0,
+				trophyLocIndex = 1,
+				careers = 
+				{
+				},
+				iLevel = 1,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 1,
+				isRefinable = false,
+				capacity = 40,
+			},
+		},
 		[11919] = 
 		{
 			icon = 327,
@@ -257,7 +381,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Book of Binding",
 				broken = false,
-				timestamp = 338,
+				timestamp = 2890,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -287,7 +411,7 @@ EA_ActionBars_DataCache =
 					{
 						type = 3,
 						value = 0,
-						cooldownTimeLeft = 3172.805,
+						cooldownTimeLeft = 1080.5179443359,
 						reference = 246,
 						totalCooldownTime = 3600,
 					},
@@ -364,19 +488,23 @@ EA_ActionBars_DataCache =
 				timestamp = 19,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				capacity = 40,
+				skills = 
+				{
+				},
 				craftingSkillRequirement = 0,
-				level = 1,
+				itemSet = 0,
 				uniqueID = 157861,
-				armor = 0,
-				dyeTintB = 0,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
 				sellPrice = 30,
-				cultivationType = 0,
-				iLevel = 4,
+				bop = false,
+				isNew = false,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -398,120 +526,12 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 690,
 				dps = 0,
-				craftingBonus = 
-				{
-				},
-				trophyLocIndex = 1,
-				careers = 
-				{
-				},
-				isNew = false,
-				bop = false,
-				noChargeLeftDontDelete = 0,
-				stackCount = 1,
-				itemSet = 0,
-				isRefinable = false,
-				skills = 
-				{
-				},
-			},
-		},
-		[190471] = 
-		{
-			icon = 452,
-			itemData = 
-			{
-				description = L"",
-				renown = 0,
-				maxEquip = 0,
-				slots = 
-				{
-				},
-				equipSlot = 0,
-				races = 
-				{
-				},
-				tintB = 0,
-				speed = 0,
-				decayPaused = false,
-				timeLeftBeforeDecay = 0,
-				blockRating = 0,
-				iconNum = 452,
-				rarity = 2,
-				isTwoHanded = false,
-				marketingVariation = 0,
-				flags = 
-				{
-					false,
-					true,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false, 
-					[0] = false,
-				},
-				name = L"Initiate's Draught of Allaying",
-				broken = false,
-				timestamp = 1292,
-				customizedIconNum = 0,
-				marketingIndex = 0,
-				skills = 
-				{
-				},
-				craftingSkillRequirement = 0,
-				itemSet = 0,
-				uniqueID = 190471,
-				stackCount = 1,
-				noChargeLeftDontDelete = 0,
-				sellPrice = 30,
-				bop = false,
-				isNew = false,
-				dyeTintA = 0,
-				tintA = 0,
-				tier = 0,
-				craftingBonus = 
-				{
-				},
-				trophyLocation = 0,
-				enhSlot = 
-				{
-				},
-				bonus = 
-				{
-					[1] = 
-					{
-						type = 3,
-						value = 0,
-						cooldownTimeLeft = 0,
-						reference = 7871,
-						totalCooldownTime = 180,
-					},
-				},
-				currChargesRemaining = 0,
-				type = 31,
-				boundToPlayer = false,
-				customizedIconName = L"",
-				id = 690,
-				dps = 0,
 				numEnhancementSlots = 0,
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				iLevel = 1,
+				iLevel = 4,
 				cultivationType = 0,
 				dyeTintB = 0,
 				armor = 0,
