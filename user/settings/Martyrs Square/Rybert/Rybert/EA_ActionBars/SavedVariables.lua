@@ -30,6 +30,10 @@ EA_ActionBars_DataCache =
 		{
 			icon = 5004,
 		},
+		[8248] = 
+		{
+			icon = 7901,
+		},
 		[8237] = 
 		{
 			icon = 8030,
@@ -49,6 +53,10 @@ EA_ActionBars_DataCache =
 		[8245] = 
 		{
 			icon = 8054,
+		},
+		[8255] = 
+		{
+			icon = 7927,
 		},
 		[8238] = 
 		{
@@ -109,7 +117,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Imperial Pack Mule",
 				broken = false,
-				timestamp = 15,
+				timestamp = 14,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -164,6 +172,110 @@ EA_ActionBars_DataCache =
 				capacity = 1,
 			},
 		},
+		[157861] = 
+		{
+			icon = 452,
+			itemData = 
+			{
+				description = L"",
+				renown = 0,
+				maxEquip = 0,
+				slots = 
+				{
+				},
+				equipSlot = 0,
+				races = 
+				{
+				},
+				tintB = 0,
+				speed = 0,
+				decayPaused = false,
+				timeLeftBeforeDecay = 0,
+				blockRating = 0,
+				iconNum = 452,
+				rarity = 3,
+				isTwoHanded = false,
+				marketingVariation = 0,
+				flags = 
+				{
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false, 
+					[0] = false,
+				},
+				name = L"Draught of Allaying",
+				broken = false,
+				timestamp = 4716,
+				customizedIconNum = 0,
+				marketingIndex = 0,
+				skills = 
+				{
+				},
+				craftingSkillRequirement = 0,
+				itemSet = 0,
+				uniqueID = 157861,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
+				sellPrice = 30,
+				bop = false,
+				isNew = false,
+				dyeTintA = 0,
+				tintA = 0,
+				tier = 0,
+				craftingBonus = 
+				{
+				},
+				trophyLocation = 0,
+				enhSlot = 
+				{
+				},
+				bonus = 
+				{
+					[1] = 
+					{
+						type = 3,
+						value = 0,
+						cooldownTimeLeft = 0,
+						reference = 7872,
+						totalCooldownTime = 180,
+					},
+				},
+				currChargesRemaining = 0,
+				type = 31,
+				boundToPlayer = false,
+				customizedIconName = L"",
+				id = 690,
+				dps = 0,
+				numEnhancementSlots = 0,
+				trophyLocIndex = 1,
+				careers = 
+				{
+				},
+				iLevel = 4,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 1,
+				isRefinable = false,
+				capacity = 40,
+			},
+		},
 		[190471] = 
 		{
 			icon = 452,
@@ -213,7 +325,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Initiate's Draught of Allaying",
 				broken = false,
-				timestamp = 15,
+				timestamp = 14,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -317,7 +429,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Book of Binding",
 				broken = false,
-				timestamp = 15,
+				timestamp = 14,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
