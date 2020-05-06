@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="MiracleGrow2" sizeX="219.000000" sizeY="135.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.345005" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-0.777391" yOffset="-73.424294" />
+                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-0.777391" yOffset="-72.424332" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="MiracleGrow2Icon" sizeX="40.000000" sizeY="40.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">

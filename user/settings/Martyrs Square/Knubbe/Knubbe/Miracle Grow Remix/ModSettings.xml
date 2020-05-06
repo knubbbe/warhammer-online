@@ -2,9 +2,9 @@
 <UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="2.33" messagingEnabled="false">
     <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="2.13" savedVariablesVersion="2.13" />
     <Windows>
-        <WindowSettings xmlVersion="1.0" name="MiracleGrow2" sizeX="224.000000" sizeY="135.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.649804" showing="true">
+        <WindowSettings xmlVersion="1.0" name="MiracleGrow2" sizeX="224.000000" sizeY="135.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.409053" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-64.888458" yOffset="-67.785469" />
+                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-25.705950" yOffset="-74.777763" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="MiracleGrow2Icon" sizeX="40.000000" sizeY="40.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">

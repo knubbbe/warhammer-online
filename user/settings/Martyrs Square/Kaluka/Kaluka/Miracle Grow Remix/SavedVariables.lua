@@ -22,7 +22,7 @@ MiracleGrow2.vSettings =
 		},
 	},
 	seedreserve = 4,
-	showtoggle = false,
+	showtoggle = true,
 	soundnum2 = 215,
 	sound = true,
 	minlvl = 0,
@@ -36,7 +36,7 @@ MiracleGrow2.vSettings =
 		0,
 	},
 	version = 2.33,
-	showing = false,
+	showing = true,
 	language = 0,
 	boxlayout = 
 	{

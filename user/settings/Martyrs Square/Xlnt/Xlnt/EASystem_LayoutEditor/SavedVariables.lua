@@ -45,6 +45,11 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
+	PureTargetHUDFriendly = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	EA_Window_PublicQuestTracker = 
 	{
 		locked = false,
@@ -235,12 +240,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTrackerNub = 
+	MenuBarWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	MenuBarWindow = 
+	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
@@ -265,7 +270,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	EA_CareerResourceWindow = 
+	WarbuilderMainWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -310,7 +315,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	WarbuilderMainWindow = 
+	EA_CareerResourceWindow = 
 	{
 		locked = false,
 		hidden = false,
