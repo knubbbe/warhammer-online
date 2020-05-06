@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="EA_Window_RvRTracker" sizeX="350.000000" sizeY="150.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-0.000116" yOffset="125.000015" />
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="356.333221" yOffset="-22.000008" />
             </Anchors>
         </WindowSettings>
     </Windows>

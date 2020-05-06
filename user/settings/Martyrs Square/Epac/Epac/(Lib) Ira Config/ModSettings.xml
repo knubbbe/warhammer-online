@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="1.08" messagingEnabled="false">
+    <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="1.00" savedVariablesVersion="1.00" />
+    <Windows>
+        <WindowSettings xmlVersion="1.0" name="IraConfig" sizeX="550.000000" sizeY="600.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="" xOffset="0.000000" yOffset="0.000000" />
+            </Anchors>
+        </WindowSettings>
+    </Windows>
+</UiModuleSettings>
