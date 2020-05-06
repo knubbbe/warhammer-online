@@ -2,32 +2,22 @@ TexturedButtons.Settings =
 {
 	Misc = 
 	{
-		HideActive = true,
+		HideActive = false,
 		SaveQuicklock = false,
+		CooldownPulse = false,
 		HideQuicklock = false,
-		CooldownPulse = true,
-		HideGlow = false,
-		ActionButtonPickUpModifier = 32,
 		CustomGlow = 2,
+		HideGlow = false,
 	},
 	AdvancedTextures = 
 	{
-		
-		{
-		},
-		
-		{
-		},
-		
-		{
-		}, 
-		[8] = 
+		[1] = 
 		{
 		},
 	},
 	Tint = 
 	{
-		Enabled = true,
+		Enabled = false,
 		Disabled = 
 		{
 			R = 150,
@@ -54,22 +44,21 @@ TexturedButtons.Settings =
 		},
 		OnCooldown = 
 		{
-			R = 148,
-			G = 148,
-			B = 148,
+			R = 100,
+			G = 100,
+			B = 100,
 		},
 	},
 	Preset = 
 	{
-		Name = "SNT Skin 01",
+		Name = "Gloss",
 		Enabled = true,
 	},
 	Actionbars = 
 	{
-		Enabled = true,
 		Bar = 
 		{
-			
+			[1] = 
 			{
 				Spacing = 
 				{
@@ -82,46 +71,14 @@ TexturedButtons.Settings =
 					Y = 5,
 					X = 6,
 				},
-				HideEmpty = true,
+				HideEmpty = false,
 				PageSelector = 43,
-			},
-			
-			{
-				Spacing = 
-				{
-					Y = 0,
-					X = 0,
-				},
-				HideBackground = false,
-				Padding = 
-				{
-					Y = 5,
-					X = 6,
-				},
-				HideEmpty = true,
-				PageSelector = 44,
-			},
-			
-			{
-				Spacing = 
-				{
-					Y = 0,
-					X = 0,
-				},
-				Padding = 
-				{
-					Y = 3,
-					X = 3,
-				},
-				HideBackground = false,
-				HideEmpty = true,
-				PageSelector = 44,
 			},
 		},
 	},
 	Fonts = 
 	{
-		Enabled = true,
+		Enabled = false,
 		Cooldown = 
 		{
 			Color = 
@@ -130,7 +87,7 @@ TexturedButtons.Settings =
 				G = 255,
 				B = 0,
 			},
-			Font = "font_clear_medium_bold",
+			Font = "font_clear_large_bold",
 			Hide = false,
 		},
 		Keybind = 
@@ -141,19 +98,19 @@ TexturedButtons.Settings =
 				G = 255,
 				B = 255,
 			},
-			Font = "font_clear_small",
+			Font = "font_clear_medium_bold",
 			Hide = false,
 		},
 	},
 	Version = 6,
 	Cooldown = 
 	{
-		Enabled = true,
+		Enabled = false,
 		RemoveS = true,
 		EnableButtonTinting = true,
-		HideFlash = false,
+		HideFlash = true,
 		ShowGlobalCooldownText = false,
-		Alpha = 0.80000001192093,
+		Alpha = 0.8,
 		Tint = 
 		{
 			R = 0,
@@ -168,8 +125,7 @@ TexturedButtons.Settings =
 		{
 			[0] = 
 			{
-				Texture = "TexturedButtons_SNT_Buttons",
-				Slice = "Skin1_Normal",
+				Texture = "TexturedButtons_Gloss",
 			},
 			[1] = 
 			{

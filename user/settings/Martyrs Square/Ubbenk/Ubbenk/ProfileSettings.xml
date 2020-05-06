@@ -6,37 +6,41 @@
         <KeyBinding action="PLAYER_BACK" key="Down" />
         <KeyBinding action="PLAYER_BACK" key="S" />
         <KeyBinding action="PLAYER_LEFT" key="Left" />
+        <KeyBinding action="PLAYER_LEFT" key="A" />
         <KeyBinding action="PLAYER_RIGHT" key="Right" />
-        <KeyBinding action="STRAFE_LEFT" key="A" />
-        <KeyBinding action="STRAFE_RIGHT" key="D" />
+        <KeyBinding action="PLAYER_RIGHT" key="D" />
+        <KeyBinding action="STRAFE_LEFT" key="Q" />
+        <KeyBinding action="STRAFE_RIGHT" key="E" />
         <KeyBinding action="JUMP" key="Space" />
         <KeyBinding action="TOGGLE_WALK" key="NONE" />
-        <KeyBinding action="AUTO_RUN" key="`" />
-        <KeyBinding action="TOGGLE_ABILITIES_WINDOW" key="K" />
+        <KeyBinding action="AUTO_RUN" key="Num Lock" />
+        <KeyBinding action="AUTO_RUN" key="Mouse Button 4" />
+        <KeyBinding action="TOGGLE_ABILITIES_WINDOW" key="V" />
         <KeyBinding action="TOGGLE_BACKPACK_WINDOW" key="B" />
         <KeyBinding action="TOGGLE_CHARACTER_WINDOW" key="P" />
         <KeyBinding action="TOGGLE_PARTY_WINDOW" key="L" />
-        <KeyBinding action="TOGGLE_TOME_WINDOW" key="J" />
+        <KeyBinding action="TOGGLE_TOME_WINDOW" key="K" />
         <KeyBinding action="TOGGLE_GUILD_WINDOW" key="G" />
         <KeyBinding action="TOGGLE_HELP_WINDOW" key="H" />
         <KeyBinding action="TOGGLE_SOCIAL_WINDOW" key="O" />
         <KeyBinding action="TOGGLE_BATTLEGROUP_WINDOW" key="Left Alt+R" />
         <KeyBinding action="TOGGLE_WORLD_MAP_WINDOW" key="M" />
-        <KeyBinding action="TOGGLE_SCENARIO_SUMMARY_WINDOW" key="NONE" />
+        <KeyBinding action="TOGGLE_SCENARIO_SUMMARY_WINDOW" key="`" />
         <KeyBinding action="TOGGLE_CURRENT_EVENTS_WINDOW" key="NONE" />
         <KeyBinding action="TOGGLE_USER_SETTINGS_WINDOW" key="U" />
         <KeyBinding action="PET_ATTACK" key="Left Shift+C" />
-        <KeyBinding action="PET_FOLLOW" key="NONE" />
+        <KeyBinding action="PET_FOLLOW" key="Left Shift+F" />
         <KeyBinding action="PET_STAY" key="Left Shift+G" />
         <KeyBinding action="PET_AGGRESSIVE" key="Left Alt+&apos;" />
         <KeyBinding action="PET_DEFENSIVE" key="Left Alt+;" />
         <KeyBinding action="PET_PASSIVE" key="Left Alt+[" />
-        <KeyBinding action="MORALE_BAR_1" key="Left Alt+1" />
+        <KeyBinding action="MORALE_BAR_1" key="F9" />
         <KeyBinding action="MORALE_BAR_1" key="Left Alt+H" />
-        <KeyBinding action="MORALE_BAR_2" key="Left Alt+2" />
-        <KeyBinding action="MORALE_BAR_3" key="Left Alt+3" />
+        <KeyBinding action="MORALE_BAR_2" key="F10" />
+        <KeyBinding action="MORALE_BAR_2" key="Left Alt+J" />
+        <KeyBinding action="MORALE_BAR_3" key="F11" />
         <KeyBinding action="MORALE_BAR_3" key="Left Alt+N" />
-        <KeyBinding action="MORALE_BAR_4" key="Left Alt+4" />
+        <KeyBinding action="MORALE_BAR_4" key="F12" />
         <KeyBinding action="MORALE_BAR_4" key="Left Alt+M" />
         <KeyBinding action="ACTION_BAR_114" key="NONE" />
         <KeyBinding action="ACTION_BAR_115" key="NONE" />
@@ -47,40 +51,40 @@
         <KeyBinding action="ACTION_BAR_110" key="Left Shift+F11" />
         <KeyBinding action="ACTION_BAR_111" key="Left Shift+F12" />
         <KeyBinding action="ACTION_BAR_112" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_1" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_2" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_3" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_4" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_5" key="NONE" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_1" key="Left Shift+1" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_2" key="Left Shift+2" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_3" key="Left Shift+3" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_4" key="Left Shift+4" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_5" key="Left Shift+5" />
         <KeyBinding action="ACTION_BAR_1" key="1" />
         <KeyBinding action="ACTION_BAR_2" key="2" />
         <KeyBinding action="ACTION_BAR_3" key="3" />
         <KeyBinding action="ACTION_BAR_4" key="4" />
         <KeyBinding action="ACTION_BAR_5" key="5" />
-        <KeyBinding action="ACTION_BAR_6" key="Q" />
-        <KeyBinding action="ACTION_BAR_7" key="Mouse Button 4" />
-        <KeyBinding action="ACTION_BAR_8" key="F" />
-        <KeyBinding action="ACTION_BAR_9" key="T" />
-        <KeyBinding action="ACTION_BAR_10" key="Left Shift+T" />
-        <KeyBinding action="ACTION_BAR_11" key="NONE" />
-        <KeyBinding action="ACTION_BAR_12" key="NONE" />
-        <KeyBinding action="ACTION_BAR_13" key="Left Shift+1" />
-        <KeyBinding action="ACTION_BAR_14" key="Left Shift+2" />
-        <KeyBinding action="ACTION_BAR_15" key="Left Shift+3" />
-        <KeyBinding action="ACTION_BAR_16" key="Left Shift+4" />
-        <KeyBinding action="ACTION_BAR_17" key="Left Shift+5" />
-        <KeyBinding action="ACTION_BAR_18" key="Left Shift+Q" />
-        <KeyBinding action="ACTION_BAR_19" key="Mouse Button 5" />
-        <KeyBinding action="ACTION_BAR_20" key="Left Shift+F" />
-        <KeyBinding action="ACTION_BAR_21" key="E" />
-        <KeyBinding action="ACTION_BAR_22" key="Left Shift+E" />
-        <KeyBinding action="ACTION_BAR_23" key="NONE" />
-        <KeyBinding action="ACTION_BAR_24" key="NONE" />
+        <KeyBinding action="ACTION_BAR_6" key="6" />
+        <KeyBinding action="ACTION_BAR_7" key="7" />
+        <KeyBinding action="ACTION_BAR_8" key="8" />
+        <KeyBinding action="ACTION_BAR_9" key="9" />
+        <KeyBinding action="ACTION_BAR_10" key="0" />
+        <KeyBinding action="ACTION_BAR_11" key="-" />
+        <KeyBinding action="ACTION_BAR_12" key="=" />
+        <KeyBinding action="ACTION_BAR_13" key="Left Alt+1" />
+        <KeyBinding action="ACTION_BAR_14" key="Left Alt+2" />
+        <KeyBinding action="ACTION_BAR_15" key="Left Alt+3" />
+        <KeyBinding action="ACTION_BAR_16" key="Left Alt+4" />
+        <KeyBinding action="ACTION_BAR_17" key="Left Alt+5" />
+        <KeyBinding action="ACTION_BAR_18" key="Left Alt+6" />
+        <KeyBinding action="ACTION_BAR_19" key="Left Alt+7" />
+        <KeyBinding action="ACTION_BAR_20" key="Left Alt+8" />
+        <KeyBinding action="ACTION_BAR_21" key="Left Alt+9" />
+        <KeyBinding action="ACTION_BAR_22" key="Left Alt+0" />
+        <KeyBinding action="ACTION_BAR_23" key="Left Alt+-" />
+        <KeyBinding action="ACTION_BAR_24" key="Left Alt+=" />
         <KeyBinding action="ACTION_BAR_25" key="Left Control+1" />
         <KeyBinding action="ACTION_BAR_26" key="Left Control+2" />
         <KeyBinding action="ACTION_BAR_27" key="Left Control+3" />
         <KeyBinding action="ACTION_BAR_28" key="Left Control+4" />
-        <KeyBinding action="ACTION_BAR_29" key="NONE" />
+        <KeyBinding action="ACTION_BAR_29" key="Left Control+5" />
         <KeyBinding action="ACTION_BAR_30" key="Left Control+6" />
         <KeyBinding action="ACTION_BAR_31" key="Left Control+7" />
         <KeyBinding action="ACTION_BAR_32" key="Left Control+8" />
@@ -110,7 +114,7 @@
         <KeyBinding action="ACTION_BAR_56" key="NONE" />
         <KeyBinding action="ACTION_BAR_57" key="NONE" />
         <KeyBinding action="ACTION_BAR_58" key="NONE" />
-        <KeyBinding action="ACTION_BAR_59" key="Left Shift+V" />
+        <KeyBinding action="ACTION_BAR_59" key="NONE" />
         <KeyBinding action="ACTION_BAR_60" key="NONE" />
         <KeyBinding action="ACTION_BAR_61" key="NONE" />
         <KeyBinding action="ACTION_BAR_62" key="NONE" />
@@ -189,9 +193,9 @@
         <KeyBinding action="TARGET_GROUP_MEMBER_4_PET" key="Left Alt+F5" />
         <KeyBinding action="TARGET_GROUP_MEMBER_5_PET" key="Left Alt+F6" />
         <KeyBinding action="TARGET_GROUP_MEMBER_6_PET" key="Left Alt+F7" />
-        <KeyBinding action="NEAREST_ENEMY_TARGET" key="Tab" />
+        <KeyBinding action="NEAREST_ENEMY_TARGET" key="N" />
         <KeyBinding action="NEAREST_FRIENDLY_TARGET" key="Left Control+N" />
-        <KeyBinding action="CYCLE_ENEMY_TARGET" key="NONE" />
+        <KeyBinding action="CYCLE_ENEMY_TARGET" key="Tab" />
         <KeyBinding action="NEXT_ENEMY_TARGET" key="Left Shift+N" />
         <KeyBinding action="NEXT_FRIENDLY_TARGET" key="Left Control+Tab" />
         <KeyBinding action="PREVIOUS_ENEMY_TARGET" key="Left Shift+Tab" />
@@ -223,6 +227,6 @@
         <KeyBinding action="SUPER_SCREENSHOT" key="Left Shift+Print Screen" />
         <KeyBinding action="TOGGLE_UI" key="Left Shift+Z" />
         <KeyBinding action="BRACKET_CHAT" key="NONE" />
-        <KeyBinding action="STAR_CHAT" key="NONE" />
+        <KeyBinding action="STAR_CHAT" key="Left Shift+8" />
     </KeyBindings>
 </ProfileSettings>

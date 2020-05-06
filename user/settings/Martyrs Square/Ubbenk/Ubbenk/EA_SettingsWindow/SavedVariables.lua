@@ -1,19 +1,19 @@
 SettingsWindowTabInterface.SavedMessageSettings = 
 {
-	questSlider = 0.5,
+	questSlider = 0,
 	combat = true,
 	rvr = true,
-	socialSlider = 0.5,
+	socialSlider = 0,
 	geo = true,
 	social = true,
-	achievSlider = 0.5,
-	defaultSlider = 0.5,
+	achievSlider = 0,
+	defaultSlider = 0,
 	default = true,
 	achiev = true,
 	geoSlider = 1,
-	rvrSlider = 0.5,
+	rvrSlider = 0,
 	quest = true,
-	combatSlider = 0.5,
+	combatSlider = 0,
 }
 
 
