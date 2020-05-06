@@ -19,10 +19,16 @@ BuffHead.Settings =
 			},
 			Permanent = false,
 		},
-		Self = 
+		Friendly = 
 		{
 			Enabled = true,
 			Debuffs = 2,
+			OnTargetChange = 
+			{
+				ClearBuffs = true,
+				ClearAlwaysShow = true,
+				ClearDebuffs = true,
+			},
 			AlwaysShow = 
 			{
 			},
@@ -36,7 +42,12 @@ BuffHead.Settings =
 		{
 			Enabled = true,
 			Debuffs = 2,
-			Permanent = false,
+			OnTargetChange = 
+			{
+				ClearBuffs = false,
+				ClearAlwaysShow = false,
+				ClearDebuffs = false,
+			},
 			AlwaysShow = 
 			{
 			},
@@ -44,18 +55,12 @@ BuffHead.Settings =
 			AlwaysIgnore = 
 			{
 			},
-			OnTargetChange = 
-			{
-				ClearBuffs = false,
-				ClearAlwaysShow = false,
-				ClearDebuffs = false,
-			},
+			Permanent = false,
 		},
-		Friendly = 
+		Self = 
 		{
 			Enabled = true,
 			Debuffs = 2,
-			Permanent = false,
 			AlwaysShow = 
 			{
 			},
@@ -63,31 +68,26 @@ BuffHead.Settings =
 			AlwaysIgnore = 
 			{
 			},
-			OnTargetChange = 
-			{
-				ClearBuffs = true,
-				ClearAlwaysShow = true,
-				ClearDebuffs = true,
-			},
+			Permanent = false,
 		},
 	},
 	Indicators = 
 	{
-		Compression = 4,
 		Padding = 
 		{
 			Y = 1,
 			X = 0,
 		},
+		Compression = 4,
 	},
 	Scale = 0.7,
 	PriorityEffects = 
 	{
 		SortToFront = true,
-		Animation = 2,
 		Effect = 
 		{
 		},
+		Animation = 2,
 	},
 	AlwaysShow = 
 	{
@@ -112,9 +112,9 @@ BuffHead.Settings =
 		PriorityUpdate = true,
 		PriorityStart = 3,
 		GeneralDelay = 1,
-		MaximumUpdates = 0,
-		PriorityDelay = 0.1,
 		EffectAnchoring = 2,
+		PriorityDelay = 0.1,
+		MaximumUpdates = 0,
 	},
 	Offset = 
 	{
@@ -130,11 +130,6 @@ BuffHead.Settings =
 	},
 	MaximumThreshold = 60,
 	Version = 9,
-	Sync = 
-	{
-		Enable = true,
-		ResyncEvery = 10,
-	},
 	Layout = 
 	{
 		StatusBar = 
@@ -149,40 +144,40 @@ BuffHead.Settings =
 			Height = 16,
 			Background = 
 			{
-				Color = 
-				{
-					R = 0,
-					G = 0,
-					B = 0,
-				},
 				TextureDimensions = 
 				{
 					Height = 128,
 					Width = 128,
+				},
+				Color = 
+				{
+					B = 0,
+					G = 0,
+					R = 0,
 				},
 				Stretch = true,
 				Alpha = 0.8,
 				Texture = "EA_TintableImage",
 			},
+			Orientation = 1,
 			Foreground = 
 			{
 				Type = 1,
-				Color = 
-				{
-					R = 255,
-					G = 255,
-					B = 255,
-				},
 				TextureDimensions = 
 				{
 					Height = 128,
 					Width = 128,
 				},
+				Color = 
+				{
+					B = 255,
+					G = 255,
+					R = 255,
+				},
 				Stretch = true,
 				Alpha = 1,
 				Texture = "EA_TintableImage",
 			},
-			Orientation = 1,
 		},
 		Name = 
 		{
@@ -194,15 +189,14 @@ BuffHead.Settings =
 			X = 50,
 			Alignment = "leftcenter",
 			Height = 16,
+			Font = "font_clear_small",
 			Color = 
 			{
-				R = 255,
-				G = 255,
 				B = 255,
+				G = 255,
+				R = 255,
 			},
-			Font = "font_clear_small",
 		},
-		Height = 48,
 		StackCount = 
 		{
 			Scale = 1,
@@ -213,14 +207,15 @@ BuffHead.Settings =
 			X = 0,
 			Alignment = "rightcenter",
 			Height = 16,
+			Font = "font_clear_small_bold",
 			Color = 
 			{
-				R = 255,
-				G = 255,
 				B = 255,
+				G = 255,
+				R = 255,
 			},
-			Font = "font_clear_small_bold",
 		},
+		Height = 48,
 		Duration = 
 		{
 			Scale = 1,
@@ -232,36 +227,41 @@ BuffHead.Settings =
 			Alignment = "center",
 			Height = 16,
 			Format = 3,
+			Font = "font_clear_small_bold",
 			Color = 
 			{
-				R = 255,
-				G = 255,
 				B = 255,
+				G = 255,
+				R = 255,
 			},
-			Font = "font_clear_small_bold",
 		},
 		Icon = 
 		{
 			Y = 0,
 			X = 0,
-			Height = 48,
-			Alpha = 1,
 			Scale = 1,
-			Layer = 1,
 			Border = 
 			{
 				Color = 
 				{
-					R = 0,
-					G = 0,
 					B = 0,
+					G = 0,
+					R = 0,
 				},
 				Type = 1,
 				Alpha = 1,
 			},
+			Height = 48,
+			Layer = 1,
+			Alpha = 1,
 			Width = 48,
 		},
 		Width = 48,
+	},
+	Sync = 
+	{
+		Enable = true,
+		ResyncEvery = 10,
 	},
 	Containers = 
 	{
@@ -285,6 +285,11 @@ BuffHead.Settings =
 				Rows = 1,
 			},
 		},
+		Padding = 
+		{
+			Y = 5,
+			X = 0,
+		},
 		Debuffs = 
 		{
 			Anchor = 3,
@@ -294,11 +299,6 @@ BuffHead.Settings =
 				Columns = 10,
 				Rows = 1,
 			},
-		},
-		Padding = 
-		{
-			Y = 5,
-			X = 0,
 		},
 	},
 	AlwaysIgnore = 

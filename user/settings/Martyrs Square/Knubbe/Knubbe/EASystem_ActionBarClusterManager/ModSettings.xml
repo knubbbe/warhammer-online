@@ -4,12 +4,12 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="EA_MoraleBar" sizeX="295.000000" sizeY="72.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-0.000114" yOffset="-0.000024" />
+                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-0.000136" yOffset="0.000000" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EA_TacticsEditor" sizeX="350.000000" sizeY="50.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.644526" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-294.749451" yOffset="0.000035" />
+                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-294.749481" yOffset="0.000000" />
             </Anchors>
         </WindowSettings>
     </Windows>

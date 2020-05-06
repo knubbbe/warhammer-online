@@ -10,19 +10,19 @@ DebugWindow.Settings =
 			enabled = true,
 			color = 
 			{
-				r = 255,
-				g = 0,
 				b = 255,
-			},
-		},
-		
-		{
-			enabled = true,
-			color = 
-			{
+				g = 0,
 				r = 255,
-				g = 100,
+			},
+		},
+		
+		{
+			enabled = true,
+			color = 
+			{
 				b = 0,
+				g = 100,
+				r = 255,
 			},
 		},
 		
@@ -30,9 +30,9 @@ DebugWindow.Settings =
 			enabled = true,
 			color = 
 			{
-				r = 206,
+				b = 44,
 				g = 44,
-				b = 44,
+				r = 206,
 			},
 		},
 		
@@ -40,9 +40,9 @@ DebugWindow.Settings =
 			enabled = true,
 			color = 
 			{
-				r = 226,
-				g = 216,
 				b = 45,
+				g = 216,
+				r = 226,
 			},
 		},
 		
@@ -50,9 +50,9 @@ DebugWindow.Settings =
 			enabled = false,
 			color = 
 			{
-				r = 44,
-				g = 206,
 				b = 44,
+				g = 206,
+				r = 44,
 			},
 		},
 		
@@ -60,9 +60,9 @@ DebugWindow.Settings =
 			enabled = false,
 			color = 
 			{
-				r = 190,
-				g = 190,
 				b = 190,
+				g = 190,
+				r = 190,
 			},
 		},
 	},

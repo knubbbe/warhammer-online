@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="IraConfig" sizeX="550.000000" sizeY="600.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="" xOffset="-524.444458" yOffset="-54.444447" />
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="" xOffset="-524.444458" yOffset="-57.777779" />
             </Anchors>
         </WindowSettings>
     </Windows>
