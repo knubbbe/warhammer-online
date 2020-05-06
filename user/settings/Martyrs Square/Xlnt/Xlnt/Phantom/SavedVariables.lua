@@ -1,6 +1,6 @@
-Phantom.Settings = 
+Phantom.Settings =
 {
-	windows = 
+	windows =
 	{
 		ActionBarLockToggler = true,
 		SocialWindowButton = true,
@@ -8,15 +8,15 @@ Phantom.Settings =
 		OverheadMapArea = true,
 		PetWindow = true,
 		OverheadMapMail = true,
-		OverheadMapScenario = true,
 		OverheadMapZoom = true,
-		OverheadMapPins = true,
-		OverheadMapWorld = true,
-		MainAssist = true,
-		OverheadMapFrame = true,
 		OverheadMapRally = true,
+		OverheadMapWorld = true,
+		OverheadMapFrame = true,
+		MainAssist = true,
+		OverheadMapPins = true,
+		OverheadMapScenario = true,
 	},
-	buffs = 
+	buffs =
 	{
 		PlayerWindow = true,
 		GroupWindow = true,

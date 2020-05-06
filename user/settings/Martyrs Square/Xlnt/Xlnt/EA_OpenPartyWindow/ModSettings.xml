@@ -7,9 +7,9 @@
                 <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="" xOffset="50.000000" yOffset="150.000000" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="EA_Window_OpenPartyFlyOutAnchor" sizeX="300.000000" sizeY="200.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+        <WindowSettings xmlVersion="1.0" name="EA_Window_OpenPartyFlyOutAnchor" sizeX="300.000000" sizeY="200.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-352.333435" yOffset="-29.999987" />
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-352.333466" yOffset="-30.000000" />
             </Anchors>
         </WindowSettings>
     </Windows>

@@ -1,35 +1,35 @@
-TargetRing.Settings = 
+TargetRing.Settings =
 {
-	FriendlyTarget = 
-	{
-		enabled = true,
-		dy = -10,
-		dx = 0,
-		color = 
-		{
-			0,
-			255,
-			0,
-		},
-		alpha = 0.5,
-		sound = false,
-		scale = 1,
-	},
 	version = 1.3,
-	EnemyTarget = 
+	FriendlyTarget =
 	{
 		enabled = true,
 		dy = -10,
+		color =
+		{
+			0,
+			255,
+			0,
+		},
+		scale = 1,
+		sound = false,
+		alpha = 0.5,
 		dx = 0,
-		color = 
+	},
+	EnemyTarget =
+	{
+		enabled = true,
+		dy = -10,
+		color =
 		{
 			255,
 			0,
 			0,
 		},
-		alpha = 0.5,
-		sound = false,
 		scale = 1,
+		sound = false,
+		alpha = 0.5,
+		dx = 0,
 	},
 }
 

@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="LayerTimerWindow" sizeX="500.000000" sizeY="50.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.797981" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottom" relativePoint="bottom" relativeTo="Root" xOffset="-252.171524" yOffset="-207.100983" />
+                <WindowAnchor xmlVersion="1.0" point="bottom" relativePoint="bottom" relativeTo="Root" xOffset="-252.171570" yOffset="-207.101044" />
             </Anchors>
         </WindowSettings>
     </Windows>

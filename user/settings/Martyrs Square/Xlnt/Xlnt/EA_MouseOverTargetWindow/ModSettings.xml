@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="MouseOverTargetWindow" sizeX="300.000000" sizeY="70.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-0.333502" yOffset="-199.999969" />
+                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-0.333523" yOffset="-200.000000" />
             </Anchors>
         </WindowSettings>
     </Windows>

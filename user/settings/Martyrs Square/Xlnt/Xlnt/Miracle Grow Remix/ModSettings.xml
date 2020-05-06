@@ -4,12 +4,12 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="MiracleGrow2" sizeX="219.000000" sizeY="135.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.345005" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-0.777391" yOffset="-72.424332" />
+                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-0.777452" yOffset="-73.424347" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="MiracleGrow2Icon" sizeX="40.000000" sizeY="40.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+        <WindowSettings xmlVersion="1.0" name="MiracleGrow2Icon" sizeX="40.000000" sizeY="40.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="254.333313" yOffset="27.000000" />
+                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="254.333298" yOffset="27.000000" />
             </Anchors>
         </WindowSettings>
     </Windows>

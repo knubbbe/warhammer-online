@@ -1,8 +1,18 @@
-FriendSuggester.Data = 
+FriendSuggester.Data =
 {
-	[L"Fallinwivstyle"] = 
+	[L"Felixaris"] =
 	{
-		lockouts = 
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Fallinwivstyle"] =
+	{
+		lockouts =
 		{
 			1588458274,
 			1588458274,
@@ -10,29 +20,49 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Fabondil"] = 
+	[L"Beloft"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588621171,
-			1588621171,
-			1588621171,
+			1588542159,
+			1588542159,
+			1588542159,
 		},
 		value = 10,
 	},
-	[L"Krungsmor"] = 
+	[L"Xenocidez"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588457048,
-			1588457048,
-			1588457048,
+			1588542159,
+			1588542159,
+			1588542159,
 		},
 		value = 5,
 	},
-	[L"Talivar"] = 
+	[L"Azae"] =
 	{
-		lockouts = 
+		lockouts =
+		{
+			1588542683,
+			1588542683,
+			1588542683,
+		},
+		value = 10,
+	},
+	[L"Tyriol"] =
+	{
+		lockouts =
+		{
+			1588542683,
+			1588542683,
+			1588542683,
+		},
+		value = 10,
+	},
+	[L"Talivar"] =
+	{
+		lockouts =
 		{
 			1588456674,
 			1588456674,
@@ -40,9 +70,39 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Midgetsanta"] = 
+	[L"Larigel"] =
 	{
-		lockouts = 
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Neirke"] =
+	{
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 5,
+	},
+	[L"Madoxx"] =
+	{
+		lockouts =
+		{
+			1588542347,
+			1588542347,
+			1588542347,
+		},
+		value = 10,
+	},
+	[L"Gwyn"] =
+	{
+		lockouts =
 		{
 			1588620928,
 			1588620928,
@@ -50,69 +110,49 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Rhazkhar"] = 
+	[L"Father"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588458211,
-			1588458211,
-			1588458211,
+			1588542159,
+			1588542159,
+			1588542159,
 		},
 		value = 10,
 	},
-	[L"Uryuu"] = 
+	[L"Boomshaklaka"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588457259,
-			1588457259,
-			1588457259,
-		},
-		value = 10,
-	},
-	[L"Alfflaed"] = 
-	{
-		lockouts = 
-		{
-			1588621650,
-			1588621650,
-			1588621650,
+			1588542159,
+			1588542159,
+			1588542159,
 		},
 		value = 5,
 	},
-	[L"Famous"] = 
+	[L"Unlucky"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588621650,
-			1588621650,
-			1588621650,
-		},
-		value = 5,
-	},
-	[L"Carlek"] = 
-	{
-		lockouts = 
-		{
-			1588620336,
-			1588620336,
-			1588620336,
+			1588542159,
+			1588542159,
+			1588542159,
 		},
 		value = 10,
 	},
-	[L"Schianatuland"] = 
+	[L"Darhin"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588620336,
-			1588620336,
-			1588620336,
+			1588542683,
+			1588542683,
+			1588542683,
 		},
 		value = 10,
 	},
-	[L"Smellyheals"] = 
+	[L"Hirgon"] =
 	{
-		lockouts = 
+		lockouts =
 		{
 			1588457048,
 			1588457048,
@@ -120,9 +160,189 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Mivvv"] = 
+	[L"Isebrand"] =
 	{
-		lockouts = 
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Romulusxiii"] =
+	{
+		lockouts =
+		{
+			1588457775,
+			1588457775,
+			1588457775,
+		},
+		value = 5,
+	},
+	[L"Bouglir"] =
+	{
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 5,
+	},
+	[L"Marhuz"] =
+	{
+		lockouts =
+		{
+			1588457775,
+			1588457775,
+			1588457775,
+		},
+		value = 5,
+	},
+	[L"Aatelismies"] =
+	{
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Kralgrad"] =
+	{
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Hallucinogen"] =
+	{
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 10,
+	},
+	[L"Cfcet"] =
+	{
+		lockouts =
+		{
+			1588542391,
+			1588542391,
+			1588542391,
+		},
+		value = 5,
+	},
+	[L"Gingerbeerd"] =
+	{
+		lockouts =
+		{
+			1588457259,
+			1588457259,
+			1588457259,
+		},
+		value = 10,
+	},
+	[L"Vostol"] =
+	{
+		lockouts =
+		{
+			1588542683,
+			1588542683,
+			1588542683,
+		},
+		value = 5,
+	},
+	[L"Tunuh"] =
+	{
+		lockouts =
+		{
+			1588542478,
+			1588542478,
+			1588542478,
+		},
+		value = 5,
+	},
+	[L"Krungsmor"] =
+	{
+		lockouts =
+		{
+			1588457048,
+			1588457048,
+			1588457048,
+		},
+		value = 5,
+	},
+	[L"Cogger"] =
+	{
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 5,
+	},
+	[L"Fkngreenheron"] =
+	{
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Kosmoskatt"] =
+	{
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Amiens"] =
+	{
+		lockouts =
+		{
+			1588542270,
+			1588542270,
+			1588542270,
+		},
+		value = 5,
+	},
+	[L"Uryuu"] =
+	{
+		lockouts =
+		{
+			1588457259,
+			1588457259,
+			1588457259,
+		},
+		value = 10,
+	},
+	[L"Smellyheals"] =
+	{
+		lockouts =
+		{
+			1588457048,
+			1588457048,
+			1588457048,
+		},
+		value = 5,
+	},
+	[L"Mivvv"] =
+	{
+		lockouts =
 		{
 			1588456675,
 			1588456675,
@@ -130,49 +350,39 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Gwyn"] = 
+	[L"Lepibreno"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588457775,
-			1588457775,
-			1588457775,
-		},
-		value = 5,
-	},
-	[L"Whitekevinhart"] = 
-	{
-		lockouts = 
-		{
-			1588620928,
-			1588620928,
-			1588620928,
-		},
-		value = 5,
-	},
-	[L"Beardhealer"] = 
-	{
-		lockouts = 
-		{
-			1588620336,
-			1588620336,
-			1588620336,
+			1588542775,
+			1588542775,
+			1588542775,
 		},
 		value = 10,
 	},
-	[L"Kofala"] = 
+	[L"Artemior"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588621650,
-			1588621650,
-			1588621650,
+			1588542159,
+			1588542159,
+			1588542159,
 		},
 		value = 5,
 	},
-	[L"Warbringerz"] = 
+	[L"Rugrog"] =
 	{
-		lockouts = 
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 5,
+	},
+	[L"Warbringerz"] =
+	{
+		lockouts =
 		{
 			1588457400,
 			1588457400,
@@ -180,29 +390,99 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Hwiee"] = 
+	[L"Roderik"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588621650,
-			1588621650,
-			1588621650,
+			1588457048,
+			1588457048,
+			1588457048,
 		},
 		value = 5,
 	},
-	[L"Vlanyled"] = 
+	[L"Ragnec"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588620336,
-			1588620336,
-			1588620336,
+			1588542326,
+			1588542326,
+			1588542326,
 		},
-		value = 10,
+		value = 5,
 	},
-	[L"Marshal"] = 
+	[L"Mightyjoeyoung"] =
 	{
-		lockouts = 
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Ekynox"] =
+	{
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 5,
+	},
+	[L"Eloran"] =
+	{
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 5,
+	},
+	[L"Gaylord"] =
+	{
+		lockouts =
+		{
+			1588457775,
+			1588457775,
+			1588457775,
+		},
+		value = 5,
+	},
+	[L"Goldenarchmage"] =
+	{
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 5,
+	},
+	[L"Dollardance"] =
+	{
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 5,
+	},
+	[L"Dumperpumper"] =
+	{
+		lockouts =
+		{
+			1588457775,
+			1588457775,
+			1588457775,
+		},
+		value = 5,
+	},
+	[L"Marshal"] =
+	{
+		lockouts =
 		{
 			1588456670,
 			1588456670,
@@ -210,129 +490,59 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Vyamon"] = 
+	[L"Ghemeyhas"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588621650,
-			1588621650,
-			1588621650,
+			1588620928,
+			1588620928,
+			1588620928,
 		},
 		value = 5,
 	},
-	[L"Skullz"] = 
+	[L"Pinpal"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588621150,
-			1588621150,
-			1588621150,
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Babajagerjr"] =
+	{
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 5,
+	},
+	[L"Rhazkhar"] =
+	{
+		lockouts =
+		{
+			1588458211,
+			1588458211,
+			1588458211,
 		},
 		value = 10,
 	},
-	[L"Gaylord"] = 
+	[L"Coulson"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588457775,
-			1588457775,
-			1588457775,
+			1588542159,
+			1588542159,
+			1588542159,
 		},
 		value = 5,
 	},
-	[L"Bouton"] = 
+	[L"Fondueswiss"] =
 	{
-		lockouts = 
-		{
-			1588620928,
-			1588620928,
-			1588620928,
-		},
-		value = 5,
-	},
-	[L"Romulusxiii"] = 
-	{
-		lockouts = 
-		{
-			1588457775,
-			1588457775,
-			1588457775,
-		},
-		value = 5,
-	},
-	[L"Dumperpumper"] = 
-	{
-		lockouts = 
-		{
-			1588457775,
-			1588457775,
-			1588457775,
-		},
-		value = 5,
-	},
-	[L"Litest"] = 
-	{
-		lockouts = 
-		{
-			1588620928,
-			1588620928,
-			1588620928,
-		},
-		value = 5,
-	},
-	[L"Ghemeyhas"] = 
-	{
-		lockouts = 
-		{
-			1588457943,
-			1588457943,
-			1588457943,
-		},
-		value = 10,
-	},
-	[L"Marhuz"] = 
-	{
-		lockouts = 
-		{
-			1588457775,
-			1588457775,
-			1588457775,
-		},
-		value = 5,
-	},
-	[L"Droidle"] = 
-	{
-		lockouts = 
-		{
-			1588621148,
-			1588621148,
-			1588621148,
-		},
-		value = 10,
-	},
-	[L"Rozhilda"] = 
-	{
-		lockouts = 
-		{
-			1588621148,
-			1588621148,
-			1588621148,
-		},
-		value = 10,
-	},
-	[L"Ejet"] = 
-	{
-		lockouts = 
-		{
-			1588621148,
-			1588621148,
-			1588621148,
-		},
-		value = 10,
-	},
-	[L"Fondueswiss"] = 
-	{
-		lockouts = 
+		lockouts =
 		{
 			1588457400,
 			1588457400,
@@ -340,119 +550,49 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Vegonator"] = 
+	[L"Grunfus"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588621148,
-			1588621148,
-			1588621148,
-		},
-		value = 10,
-	},
-	[L"Pression"] = 
-	{
-		lockouts = 
-		{
-			1588620928,
-			1588620928,
-			1588620928,
+			1588542159,
+			1588542159,
+			1588542159,
 		},
 		value = 5,
 	},
-	[L"Galdar"] = 
+	[L"Exoteks"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588620336,
-			1588620336,
-			1588620336,
-		},
-		value = 10,
-	},
-	[L"Neuzeitprophet"] = 
-	{
-		lockouts = 
-		{
-			1588457943,
-			1588457943,
-			1588457943,
-		},
-		value = 10,
-	},
-	[L"Gregoro"] = 
-	{
-		lockouts = 
-		{
-			1588457943,
-			1588457943,
-			1588457943,
-		},
-		value = 10,
-	},
-	[L"Roderik"] = 
-	{
-		lockouts = 
-		{
-			1588457048,
-			1588457048,
-			1588457048,
+			1588543246,
+			1588543246,
+			1588543246,
 		},
 		value = 5,
 	},
-	[L"Papaschos"] = 
+	[L"Akkreysh"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588620928,
-			1588620928,
-			1588620928,
-		},
-		value = 5,
-	},
-	[L"Sokeas"] = 
-	{
-		lockouts = 
-		{
-			1588457943,
-			1588457943,
-			1588457943,
+			1588542159,
+			1588542159,
+			1588542159,
 		},
 		value = 10,
 	},
-	[L"Hirgon"] = 
+	[L"Zumir"] =
 	{
-		lockouts = 
+		lockouts =
 		{
-			1588457048,
-			1588457048,
-			1588457048,
+			1588543246,
+			1588543246,
+			1588543246,
 		},
 		value = 5,
 	},
-	[L"Flingueuse"] = 
+	[L"Quirlath"] =
 	{
-		lockouts = 
-		{
-			1588457259,
-			1588457259,
-			1588457259,
-		},
-		value = 10,
-	},
-	[L"Hartanskleiner"] = 
-	{
-		lockouts = 
-		{
-			1588457048,
-			1588457048,
-			1588457048,
-		},
-		value = 5,
-	},
-	[L"Quirlath"] = 
-	{
-		lockouts = 
+		lockouts =
 		{
 			1588457775,
 			1588457775,
@@ -460,15 +600,95 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Gingerbeerd"] = 
+	[L"Menzinger"] =
 	{
-		lockouts = 
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Neuzeitprophet"] =
+	{
+		lockouts =
+		{
+			1588457943,
+			1588457943,
+			1588457943,
+		},
+		value = 10,
+	},
+	[L"Yassna"] =
+	{
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Remdesivir"] =
+	{
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 5,
+	},
+	[L"Sokeas"] =
+	{
+		lockouts =
+		{
+			1588543246,
+			1588543246,
+			1588543246,
+		},
+		value = 15,
+	},
+	[L"Flingueuse"] =
+	{
+		lockouts =
 		{
 			1588457259,
 			1588457259,
 			1588457259,
 		},
 		value = 10,
+	},
+	[L"Gregoro"] =
+	{
+		lockouts =
+		{
+			1588457943,
+			1588457943,
+			1588457943,
+		},
+		value = 10,
+	},
+	[L"Garrbouil"] =
+	{
+		lockouts =
+		{
+			1588542159,
+			1588542159,
+			1588542159,
+		},
+		value = 10,
+	},
+	[L"Hartanskleiner"] =
+	{
+		lockouts =
+		{
+			1588457048,
+			1588457048,
+			1588457048,
+		},
+		value = 5,
 	},
 }
 
