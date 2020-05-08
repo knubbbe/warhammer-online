@@ -4,22 +4,22 @@ MiracleGrow2.vSettings =
 	bRunOnce = true,
 	progress = 
 	{
-		texture = 1,
-		fill = 
-		{
-			a = 255,
-			r = 192,
-			g = 192,
-			b = 192,
-		},
-		arrange = 2,
 		back = 
 		{
 			a = 255,
-			r = 64,
-			g = 48,
 			b = 32,
+			g = 48,
+			r = 64,
 		},
+		fill = 
+		{
+			a = 255,
+			b = 192,
+			g = 192,
+			r = 192,
+		},
+		arrange = 2,
+		texture = 1,
 	},
 	seedreserve = 4,
 	showtoggle = true,
@@ -36,74 +36,6 @@ MiracleGrow2.vSettings =
 		0,
 	},
 	version = 2.33,
-	showing = true,
-	language = 0,
-	boxlayout = 
-	{
-		
-		{
-			3,
-			0,
-		},
-		
-		{
-			8,
-			0,
-		},
-		
-		{
-			13,
-			0,
-		},
-		
-		{
-			18,
-			0,
-		},
-		
-		{
-			25,
-			0,
-		},
-		
-		{
-			32,
-			0,
-		},
-		
-		{
-			32,
-			0,
-		},
-		
-		{
-			23,
-			1,
-		},
-		
-		{
-			31,
-			1,
-		},
-		
-		{
-			0,
-			1,
-		},
-	},
-	layout = 
-	{
-		dimx = 39,
-		progdimy1 = 0,
-		dimy = 5,
-		border = false,
-		progdimx1 = 24,
-		spacing = 5,
-		progdimy2 = 5,
-		progdimx2 = 39,
-		arrange = 1,
-		count = 4,
-	},
 	boxvis = 
 	{
 		
@@ -163,6 +95,74 @@ MiracleGrow2.vSettings =
 			[0] = false,
 		},
 	},
+	layout = 
+	{
+		dimx = 39,
+		progdimy1 = 0,
+		dimy = 5,
+		border = false,
+		progdimx1 = 24,
+		spacing = 5,
+		count = 4,
+		progdimx2 = 39,
+		arrange = 1,
+		progdimy2 = 5,
+	},
+	boxlayout = 
+	{
+		
+		{
+			3,
+			0,
+		},
+		
+		{
+			8,
+			0,
+		},
+		
+		{
+			13,
+			0,
+		},
+		
+		{
+			18,
+			0,
+		},
+		
+		{
+			25,
+			0,
+		},
+		
+		{
+			32,
+			0,
+		},
+		
+		{
+			32,
+			0,
+		},
+		
+		{
+			23,
+			1,
+		},
+		
+		{
+			31,
+			1,
+		},
+		
+		{
+			0,
+			1,
+		},
+	},
+	language = 0,
+	showing = true,
 }
 
 

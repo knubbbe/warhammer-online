@@ -80,7 +80,7 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Eorm"] = 
+	[L"Cennypoo"] = 
 	{
 		lockouts = 
 		{
@@ -100,7 +100,7 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Cennypoo"] = 
+	[L"Eorm"] = 
 	{
 		lockouts = 
 		{

@@ -240,7 +240,7 @@ FriendSuggester.Data =
 		},
 		value = 15,
 	},
-	[L"Kiekefretter"] = 
+	[L"Gutslam"] = 
 	{
 		lockouts = 
 		{
@@ -250,13 +250,13 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Gutslam"] = 
+	[L"Alyran"] = 
 	{
 		lockouts = 
 		{
-			1588799505,
-			1588799505,
-			1588799505,
+			1588768892,
+			1588768892,
+			1588768892,
 		},
 		value = 5,
 	},
@@ -270,16 +270,6 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Heavenshalburn"] = 
-	{
-		lockouts = 
-		{
-			1588622379,
-			1588622379,
-			1588622379,
-		},
-		value = 10,
-	},
 	[L"Asaya"] = 
 	{
 		lockouts = 
@@ -290,15 +280,15 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Elanie"] = 
+	[L"Whitekevinhart"] = 
 	{
 		lockouts = 
 		{
-			1588623445,
-			1588623445,
-			1588623445,
+			1588622379,
+			1588622379,
+			1588622379,
 		},
-		value = 20,
+		value = 10,
 	},
 	[L"Tiggerking"] = 
 	{
@@ -310,15 +300,25 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Excedryn"] = 
+	[L"Granthor"] = 
 	{
 		lockouts = 
 		{
-			1588799505,
-			1588799505,
-			1588799505,
+			1588623445,
+			1588623445,
+			1588623445,
 		},
-		value = 5,
+		value = 10,
+	},
+	[L"Ozzyl"] = 
+	{
+		lockouts = 
+		{
+			1588768761,
+			1588768761,
+			1588768761,
+		},
+		value = 10,
 	},
 	[L"Badikuz"] = 
 	{
@@ -350,15 +350,15 @@ FriendSuggester.Data =
 		},
 		value = 15,
 	},
-	[L"Alagos"] = 
+	[L"Chtouille"] = 
 	{
 		lockouts = 
 		{
-			1588797819,
-			1588797819,
-			1588797819,
+			1588768606,
+			1588768606,
+			1588768606,
 		},
-		value = 5,
+		value = 10,
 	},
 	[L"Hhirio"] = 
 	{
@@ -410,15 +410,15 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Chtouille"] = 
+	[L"Alagos"] = 
 	{
 		lockouts = 
 		{
-			1588768606,
-			1588768606,
-			1588768606,
+			1588797819,
+			1588797819,
+			1588797819,
 		},
-		value = 10,
+		value = 5,
 	},
 	[L"Halimaa"] = 
 	{
@@ -440,17 +440,17 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Ozzyl"] = 
+	[L"Excedryn"] = 
 	{
 		lockouts = 
 		{
-			1588768761,
-			1588768761,
-			1588768761,
+			1588799505,
+			1588799505,
+			1588799505,
 		},
-		value = 10,
+		value = 5,
 	},
-	[L"Granthor"] = 
+	[L"Elanie"] = 
 	{
 		lockouts = 
 		{
@@ -458,9 +458,9 @@ FriendSuggester.Data =
 			1588623445,
 			1588623445,
 		},
-		value = 10,
+		value = 20,
 	},
-	[L"Whitekevinhart"] = 
+	[L"Heavenshalburn"] = 
 	{
 		lockouts = 
 		{
@@ -470,13 +470,13 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Alyran"] = 
+	[L"Kiekefretter"] = 
 	{
 		lockouts = 
 		{
-			1588768892,
-			1588768892,
-			1588768892,
+			1588799505,
+			1588799505,
+			1588799505,
 		},
 		value = 5,
 	},
