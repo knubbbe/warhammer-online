@@ -9,8 +9,8 @@ EA_Window_Backpack.settings =
 		[2] = L"Pouch 1",
 		[9] = L"Pouch 1",
 		[3] = L"Pouch 2",
-		[4] = L"Pouch 3",
 		[8] = L"Pouch 2",
+		[4] = L"Pouch 3",
 	},
 	filters = 
 	{

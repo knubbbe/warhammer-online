@@ -9,12 +9,12 @@ Phantom.Settings =
 		PetWindow = true,
 		OverheadMapMail = true,
 		OverheadMapScenario = true,
-		OverheadMapRally = true,
-		OverheadMapPins = true,
-		OverheadMapFrame = true,
-		MainAssist = true,
-		OverheadMapWorld = true,
 		OverheadMapZoom = true,
+		OverheadMapPins = true,
+		OverheadMapWorld = true,
+		MainAssist = true,
+		OverheadMapFrame = true,
+		OverheadMapRally = true,
 	},
 	buffs = 
 	{

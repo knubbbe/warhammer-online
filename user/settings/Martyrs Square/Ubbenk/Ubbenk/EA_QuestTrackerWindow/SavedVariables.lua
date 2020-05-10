@@ -4,13 +4,13 @@ EA_Window_QuestTracker.Settings =
 	fadeAlpha = 0.7,
 	fadeData = 
 	{
-		[17000] = 
+		[20021] = 
 		{
-			timer = 48.143237141892,
+			timer = 52.876700877212,
 		},
-		[47120] = 
+		[23059] = 
 		{
-			timer = 47.479468230158,
+			timer = 52.876700877212,
 		},
 	},
 	isShowing = true,

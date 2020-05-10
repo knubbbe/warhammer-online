@@ -5,13 +5,13 @@ TargetRing.Settings =
 	{
 		enabled = true,
 		dy = -10,
-		scale = 1,
 		color = 
 		{
 			0,
 			255,
 			0,
 		},
+		scale = 1,
 		sound = false,
 		alpha = 0.5,
 		dx = 0,
@@ -20,13 +20,13 @@ TargetRing.Settings =
 	{
 		enabled = true,
 		dy = -10,
-		scale = 1,
 		color = 
 		{
 			255,
 			0,
 			0,
 		},
+		scale = 1,
 		sound = false,
 		alpha = 0.5,
 		dx = 0,

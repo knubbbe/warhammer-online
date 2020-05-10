@@ -6,8 +6,8 @@ TexturedButtons.Settings =
 		SaveQuicklock = false,
 		CooldownPulse = false,
 		HideQuicklock = false,
-		CustomGlow = 2,
 		HideGlow = false,
+		CustomGlow = 2,
 	},
 	AdvancedTextures = 
 	{

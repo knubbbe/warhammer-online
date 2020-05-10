@@ -26,41 +26,41 @@ WSCT_CONFIG =
 				g = 128,
 				b = 255,
 			},
-			SHOWBLOCK = 
-			{
-				r = 100,
-				g = 150,
-				b = 200,
-			},
 			SHOWDODGEOUT = 
 			{
 				r = 0,
 				g = 128,
 				b = 255,
 			},
-			SHOWPARRYOUT = 
+			SHOWBLOCK = 
 			{
-				r = 0,
+				r = 100,
+				g = 150,
+				b = 200,
+			},
+			SHOWMORALE = 
+			{
+				r = 64,
 				g = 128,
 				b = 255,
 			},
-			SHOWSPELLOUT = 
+			SHOWXP = 
 			{
 				r = 255,
 				g = 255,
 				b = 0,
 			},
-			SHOWRESISTOUT = 
+			SHOWBUFF = 
 			{
-				r = 255,
-				g = 0,
-				b = 255,
-			},
-			SHOWABSORB = 
-			{
-				r = 255,
-				g = 255,
+				r = 180,
+				g = 180,
 				b = 0,
+			},
+			SHOWDODGE = 
+			{
+				r = 100,
+				g = 150,
+				b = 200,
 			},
 			SHOWDEBUFFFADE = 
 			{
@@ -68,11 +68,11 @@ WSCT_CONFIG =
 				g = 128,
 				b = 128,
 			},
-			SHOWABSORBOUT = 
+			SHOWLOWHP = 
 			{
 				r = 255,
-				g = 255,
-				b = 0,
+				g = 128,
+				b = 128,
 			},
 			SHOWHITOUT = 
 			{
@@ -80,7 +80,7 @@ WSCT_CONFIG =
 				g = 255,
 				b = 255,
 			},
-			SHOWXP = 
+			SHOWSPELLOUT = 
 			{
 				r = 255,
 				g = 255,
@@ -92,10 +92,10 @@ WSCT_CONFIG =
 				g = 255,
 				b = 255,
 			},
-			SHOWBUFF = 
+			SHOWHEAL = 
 			{
-				r = 180,
-				g = 180,
+				r = 0,
+				g = 255,
 				b = 0,
 			},
 			SHOWDEBUFF = 
@@ -110,11 +110,11 @@ WSCT_CONFIG =
 				g = 0,
 				b = 0,
 			},
-			SHOWLOWHP = 
+			SHOWRENOWN = 
 			{
-				r = 255,
+				r = 128,
 				g = 128,
-				b = 128,
+				b = 255,
 			},
 			SHOWPARRY = 
 			{
@@ -122,11 +122,11 @@ WSCT_CONFIG =
 				g = 150,
 				b = 200,
 			},
-			SHOWRENOWN = 
+			SHOWABSORBOUT = 
 			{
-				r = 128,
-				g = 128,
-				b = 255,
+				r = 255,
+				g = 255,
+				b = 0,
 			},
 			SHOWBUFFFADE = 
 			{
@@ -158,10 +158,10 @@ WSCT_CONFIG =
 				g = 255,
 				b = 0,
 			},
-			SHOWMORALE = 
+			SHOWRESISTOUT = 
 			{
-				r = 64,
-				g = 128,
+				r = 255,
+				g = 0,
 				b = 255,
 			},
 			SHOWRESOURCE = 
@@ -170,11 +170,11 @@ WSCT_CONFIG =
 				g = 180,
 				b = 255,
 			},
-			SHOWHEAL = 
+			SHOWPARRYOUT = 
 			{
 				r = 0,
-				g = 255,
-				b = 0,
+				g = 128,
+				b = 255,
 			},
 			SHOWHEALOUT = 
 			{
@@ -182,11 +182,11 @@ WSCT_CONFIG =
 				g = 175,
 				b = 0,
 			},
-			SHOWDODGE = 
+			SHOWABSORB = 
 			{
-				r = 100,
-				g = 150,
-				b = 200,
+				r = 255,
+				g = 255,
+				b = 0,
 			},
 		},
 		BUFFTYPE = false,
@@ -202,50 +202,50 @@ WSCT_CONFIG =
 			SHOWINTERRUPT = 1,
 		},
 		DMGFILTER = 0,
-		SHOWSPELLOUT = 1,
+		SHOWXP = 1,
 		SHOWRESOURCE = false,
 		FRAMES = 
 		{
 			SHOWINTERRUPT = 1,
 			SHOWBLOCKOUT = 3,
-			SHOWABSORB = 2,
-			SHOWDODGEOUT = 3,
-			SHOWPARRYOUT = 3,
 			SHOWSPELLOUT = 3,
-			SHOWRESISTOUT = 3,
+			SHOWBLOCK = 1,
+			SHOWABSORB = 2,
+			SHOWXP = 2,
+			SHOWBUFF = 2,
 			SHOWDODGE = 1,
 			SHOWDEBUFFFADE = 2,
-			SHOWABSORBOUT = 3,
+			SHOWLOWHP = 1,
 			SHOWHITOUT = 3,
-			SHOWXP = 2,
+			SHOWPARRYOUT = 3,
 			SHOWCOMBAT = 1,
-			SHOWBUFF = 2,
+			SHOWHEAL = 2,
 			SHOWDEBUFF = 2,
 			SHOWHIT = 1,
-			SHOWLOWHP = 1,
-			SHOWPARRY = 1,
 			SHOWRENOWN = 2,
+			SHOWPARRY = 1,
+			SHOWABSORBOUT = 3,
 			SHOWBUFFFADE = 2,
 			SHOWRESIST = 2,
 			SHOWSPELL = 1,
 			SHOWINF = 2,
 			SHOWAP = 2,
-			SHOWMORALE = 2,
+			SHOWRESISTOUT = 3,
 			SHOWRESOURCE = 2,
-			SHOWHEAL = 2,
+			SHOWMORALE = 2,
 			SHOWHEALOUT = 3,
-			SHOWBLOCK = 1,
+			SHOWDODGEOUT = 3,
 		},
 		SHOWHEALOUT = 1,
-		SHOWLOWHP = 1,
-		SHOWXP = 1,
 		SHOWDODGE = 1,
+		LOWHP = 40,
+		SHOWDEBUFFFADE = false,
 		SHOWHIT = 1,
 		SHOWINTERRUPT = 1,
-		SHOWBLOCKOUT = 1,
-		SHOWINF = 1,
+		SHOWRENOWN = 1,
+		SHOWBUFF = 1,
 		SHOWDODGEOUT = 1,
-		FPSMODE = 1,
+		SHOWSPELLOUT = 1,
 		SHOWRESIST = 1,
 		SPELLCOLORS = 
 		{
@@ -268,7 +268,7 @@ WSCT_CONFIG =
 				b = 0,
 			},
 		},
-		LOWHP = 40,
+		SHOWLOWHP = 1,
 		FLAGDAMAGE = false,
 		FRAMESDATA = 
 		{
@@ -321,22 +321,22 @@ WSCT_CONFIG =
 				XOFFSET = 0,
 			},
 		},
-		SHOWBUFF = 1,
-		SHOWPARRYOUT = 1,
-		TRUNCATE = true,
 		SHOWAP = false,
+		SHOWPARRYOUT = 1,
+		SHOWCOMBAT = 1,
 		SHOWRESISTOUT = 1,
+		SHOWINF = 1,
 		MOVEMENT = 1,
 		STICKYCRIT = 1,
 		FLASHCRIT = 1,
 		ANIMATIONSPEED = 15,
-		SHOWCOMBAT = 1,
+		TRUNCATE = true,
 		PETFLAG = 1,
 		SHOWABSORBOUT = 1,
-		SHOWDEBUFFFADE = false,
+		FPSMODE = 1,
 		TRUNCATESIZE = 8,
 		PLAYSOUND = 1,
-		SHOWRENOWN = 1,
+		SHOWBLOCKOUT = 1,
 		OUTHEALNAME = false,
 		HEALFILTER = 0,
 		ENABLED = 1,
