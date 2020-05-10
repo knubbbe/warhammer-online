@@ -35,6 +35,11 @@ CraftItemInfo.bonus={
   SPECIAL_CHANCE=14,
   DESTROY_ON_FAIL=15
 }
+
+local function ShOut(sString)
+  EA_ChatWindow.Print(towstring(sString))
+end
+
 --For readability of the API code, we create a local reference to the above
 --  variable with a short name
 local BONUS=CraftItemInfo.bonus
@@ -120,6 +125,19 @@ function CraftItemInfo.GetItemBonuses(itemData)
     end
   end
   
+  brokenItem=CraftItemInfo.getBrokenItem(itemData)
+  if brokenItem then 
+  
+	  if vResult[BONUS.EFFECT] then 
+			ShOut(L"Broken item has been fixed and needs to be removed:"..itemData.uniqueID)
+	  else
+		  for k,v in pairs(brokenItem) do
+			  vResult[k]={}
+			  table.insert(vResult[k],v)
+		  
+		  end
+	  end
+  end
   --Cache the results on the itemData so we can skip making them in the future
   itemData.CraftItemInfo=DataUtils.CopyTable(vResult)
   
@@ -273,11 +291,14 @@ function CraftItemInfo.GetItemEffect(itemData,bNoGrowsPrefix)
 
     --Normal crafting item, check the craftingBonus
     vData=CraftItemInfo.GetItemBonuses(itemData)
-    if vData[BONUS.EFFECT] and vData[BONUS.CRAFTING_FAMILY] then
-      --We have an effect, get the string
+    
+	
+	if  vData[BONUS.EFFECT] and vData[BONUS.CRAFTING_FAMILY] then
+    
+	  --We have an effect, get the string
       if (vData[BONUS.CRAFTING_FAMILY][1]==GameData.TradeSkills.APOTHECARY)
-          and CraftValueTip.ApothEffectList[vData[BONUS.EFFECT][1]] then
-
+		  and CraftValueTip.ApothEffectList[vData[BONUS.EFFECT][1]] then
+    
         --Known Apothecary effect
         sTemp=GetPhrase("EffectNames",CraftValueTip.ApothEffectList[vData[BONUS.EFFECT][1]])
         
@@ -511,5 +532,10 @@ function CraftItemInfo.GetSeedsToProduce(uniqueID)
     end
   end
   return vResult
+end
+
+function CraftItemInfo.getBrokenItem(itemData)
+   return CraftValueTip.BrokenItems[itemData.uniqueID]
+     
 end
 

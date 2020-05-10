@@ -190,8 +190,18 @@ function CraftValueTip.SlashCmd(args)
     if CraftValueTip.LastItem then
       CraftValueTip.ItemDump(CraftValueTip.LastItem)
     end
-  elseif (not args) or (args==L"") then
+   elseif args==L"lookup" then
+    if CraftValueTip.LastItem then
+      CraftValueTip.LookUpDump(CraftValueTip.LastItem)
+   end
+   elseif args==L"obj" then
+     if CraftValueTip.LastItem then
+       CraftValueTip.DumpObjInspector()
+     end
+   elseif (not args) or (args==L"") then
     CraftValueTip.DoConfig()
+	
+	
   else
     ShOut(CraftValueTip.GetPhrase("Messages","List0"))
     ShOut(CraftValueTip.GetPhrase("Messages","List1"))
@@ -217,11 +227,14 @@ function CraftValueTip.SetItemTooltipData(sWindow,itemData, extraText, extraText
   
   --Save the window in case we need to do a comparison tooltip
   --CraftValueTip.tooltipWindow=sWindow
-
+  --CraftValueTip.ItemDump(itemData)
+  --CraftValueTip.CraftDump(itemData)
+  
 
   --Only proceed if this is a crafting item  
 	if CraftValueTip.settings.enable and (itemData~=nil) and itemData.craftingBonus and itemData.craftingBonus[1] then
 	  --Get the item bonuses
+	
     vBonuses=CraftItemInfo.GetItemBonuses(itemData)
 
     --Get the type line
@@ -419,6 +432,18 @@ function CraftValueTip.ItemDump(itemData)
 	ShOut(sLine)
 end
 
+function CraftValueTip.LookUpDump(itemData)
+  local sLine
+  local vTable={}
+  if(itemData==nil) then
+    ShOut(L"<no item>")
+    return
+  end
+  sLine=L"["..itemData.uniqueID..L"]"..itemData.name..L" lvl"..itemData.level..L"/"..itemData.iLevel
+  ShOut(sLine)
+end
+
+
 --These functions provide easier macro access to the slash commands
 function CraftValueTip.Dump()
   CraftValueTip.CraftDump(CraftValueTip.LastItem)
@@ -426,6 +451,18 @@ end
 
 function CraftValueTip.Digest()
   CraftValueTip.ItemDump(CraftValueTip.LastItem)
+end
+
+function CraftValueTip.LookUpDump()
+  CraftValueTip.CraftLookUpDump(CraftValueTip.LastItem)
+end
+
+
+
+function CraftValueTip.DumpObjInspector()
+    if(ObjectInspector)	then
+		ObjectInspector.DisplayObject(CraftValueTip.LastItem,''..CraftValueTip.LastItem.uniqueID)
+	end
 end
 
 

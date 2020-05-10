@@ -33,8 +33,11 @@ function ic.Initialize()
   CreateWindow("IraConfig",false)
   WindowSetShowing("IraConfig",false)
   ic.CreateTabSet("IraConfigTabs",550,50)
-  LabelSetText("IraConfigTitleBarText",GetPregameString(StringTables.Pregame.LABEL_UI_MOD_SETTINGS))
-
+  if StringTables.Pregame ~=nil and StringTables.Pregame.LABEL_UI_MOD_SETTINGS ~=nil then
+	LabelSetText("IraConfigTitleBarText",GetPregameString(StringTables.Pregame.LABEL_UI_MOD_SETTINGS))
+  else
+	LabelSetText("IraConfigTitleBarText",L"Mod Settings")
+  end
   ButtonSetText("IraConfigOkayButton",GetString(StringTables.Default.LABEL_OKAY))
   ButtonSetText("IraConfigApplyButton",GetString(StringTables.Default.LABEL_APPLY))
   ButtonSetText("IraConfigResetButton",GetString(StringTables.Default.LABEL_RESET))

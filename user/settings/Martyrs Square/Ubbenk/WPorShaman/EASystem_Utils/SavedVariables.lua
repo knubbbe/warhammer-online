@@ -10,6 +10,16 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
+	[L"Nikaka"] = 
+	{
+		lockouts = 
+		{
+			1589133418,
+			1589133418,
+			1589133418,
+		},
+		value = 10,
+	},
 	[L"Etfonehome"] = 
 	{
 		lockouts = 
@@ -180,6 +190,16 @@ FriendSuggester.Data =
 		},
 		value = 15,
 	},
+	[L"Snarre"] = 
+	{
+		lockouts = 
+		{
+			1589133409,
+			1589133409,
+			1589133409,
+		},
+		value = 10,
+	},
 	[L"Gutslam"] = 
 	{
 		lockouts = 
@@ -220,15 +240,25 @@ FriendSuggester.Data =
 		},
 		value = 15,
 	},
-	[L"Ozzyl"] = 
+	[L"Brutiisimo"] = 
 	{
 		lockouts = 
 		{
-			1588768761,
-			1588768761,
-			1588768761,
+			1589133409,
+			1589133409,
+			1589133409,
 		},
 		value = 10,
+	},
+	[L"Kiekefretter"] = 
+	{
+		lockouts = 
+		{
+			1588799505,
+			1588799505,
+			1588799505,
+		},
+		value = 5,
 	},
 	[L"Bodzugg"] = 
 	{
@@ -240,7 +270,7 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Badikuz"] = 
+	[L"Excedryn"] = 
 	{
 		lockouts = 
 		{
@@ -248,7 +278,7 @@ FriendSuggester.Data =
 			1588799505,
 			1588799505,
 		},
-		value = 15,
+		value = 5,
 	},
 	[L"Taennmag"] = 
 	{
@@ -260,15 +290,15 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Hhirio"] = 
+	[L"Chtouille"] = 
 	{
 		lockouts = 
 		{
-			1588797819,
-			1588797819,
-			1588797819,
+			1588768606,
+			1588768606,
+			1588768606,
 		},
-		value = 5,
+		value = 10,
 	},
 	[L"Halimaa"] = 
 	{
@@ -300,35 +330,35 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Chtouille"] = 
+	[L"Hhirio"] = 
 	{
 		lockouts = 
 		{
-			1588768606,
-			1588768606,
-			1588768606,
+			1588797819,
+			1588797819,
+			1588797819,
+		},
+		value = 5,
+	},
+	[L"Badikuz"] = 
+	{
+		lockouts = 
+		{
+			1588799505,
+			1588799505,
+			1588799505,
+		},
+		value = 15,
+	},
+	[L"Ozzyl"] = 
+	{
+		lockouts = 
+		{
+			1588768761,
+			1588768761,
+			1588768761,
 		},
 		value = 10,
-	},
-	[L"Excedryn"] = 
-	{
-		lockouts = 
-		{
-			1588799505,
-			1588799505,
-			1588799505,
-		},
-		value = 5,
-	},
-	[L"Kiekefretter"] = 
-	{
-		lockouts = 
-		{
-			1588799505,
-			1588799505,
-			1588799505,
-		},
-		value = 5,
 	},
 }
 

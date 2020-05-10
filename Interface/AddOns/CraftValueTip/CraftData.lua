@@ -65,6 +65,7 @@ CraftValueTip.ApothEffectList={
   [35]="hywouinit",
   [36]="hytounocrit",
   [37]="hyhpregencritdmg",
+  [38]="hywsarmpen",
   [41]="trapoth",
   [42]="trcult",
   [43]="trsalv",
@@ -92,6 +93,7 @@ CraftValueTip.ApothEffectList={
 	[1108]="freecast", --Clearcast chance
 	[1109]="pet", --Summon lion
 	[1110]="movespeed", --Move speed (immediate)
+	
 }
 
 --Apothecary effect tiers by stat effect number
@@ -266,7 +268,7 @@ CraftValueTip.SeedList={
 --Purchased seeds
 [190501]={"purch",false,"regen",83509,199901},
 [190518]={"purch",false,"regen",83511,0},
-[190532]={"purch",false,"regen",83515,0},
+[190532]={"purch",false,"regen",83516,0},
 [190502]={"purch",false,"ap",83573,199901},
 [190519]={"purch",false,"ap",83575,0},
 [190533]={"purch",false,"ap",83579,0},
@@ -327,8 +329,8 @@ CraftValueTip.SeedList={
 [84013]={"std",false,"regen",83512,199903},
 [84014]={"std",false,"regen",83513,199903},
 [84015]={"std",false,"regen",83514,199904},
-[84016]={"std",false,"regen",83515,199904},
-[84017]={"std",false,"regen",83515,199905},
+[84016]={"std",false,"regen",83516,199904},
+[84017]={"std",false,"regen",83516,199905},
 -- Int
 [84018]={"std",false,"int",83517,199901},
 [84019]={"std",false,"int",83518,199901},
@@ -358,7 +360,7 @@ CraftValueTip.SeedList={
 [84041]={"std",false,"str",83540,199903},
 [84042]={"std",false,"str",83541,199904},
 [84043]={"std",false,"str",83542,199904},
-[84044]={"std",false,"str",84543,199905},
+[84044]={"std",false,"str",83543,199905},
 -- Flame breath
 [84045]={"std",false,"dmgcone",83544,199901},
 [84046]={"std",false,"dmgcone",83545,199901},
@@ -451,5 +453,37 @@ CraftValueTip.SeedList={
 [199810]={"rare",false,"hywourcrit",199860,0},
 [199811]={"rare",false,"hywouheal",199861,0},
 [199812]={"rare",false,"hywoustr",199862,0},
+[2017642]={"rare",false,"hystrmelee",199852,0},
+[2017643]={"rare",false,"hystrheal",199854,0},
+[2017646]={"rare",false,"hywourcrit",199860,0},
+[2017647]={"rare",false,"hywoustr",199864,0},
+[2017648]={"rare",false,"hyaccrcrit",199856,0},
+[2017649]={"rare",false,"hywillheal",199853,0},
+[2017651]={"rare",false,"hyintmcrit",199855,0},
+[2017641]={"rare",false,"hytoucrit",199851,0},
+[2017650]={"rare",false,"hywoumcrit",199859,0},
+[2017645]={"rare",false,"hywourcrit",199860,0},
+-- Flame breath
+[84045]={"std",false,"dmgcone",83544,199901},
+[84046]={"std",false,"dmgcone",83545,199901},
+[84047]={"std",false,"dmgcone",83546,199902},
+[84048]={"std",false,"dmgcone",83547,199902},
+[84049]={"std",false,"dmgcone",83548,199903},
+[84050]={"std",false,"dmgcone",83549,199903},
+[84051]={"std",false,"dmgcone",83550,199904},
+[84052]={"std",false,"dmgcone",83551,199904},
+[84053]={"std",false,"dmgcone",83552,199905},
 }
+-- This list contais crafting infos for RoR broken items missing key attributes
+CraftValueTip.BrokenItems={
+[1000276]={[6] = 33}, -- Primal defence
+[1000284]={[6] = 30}, -- Primal frenzy
+[1000281]={[6] = 36}, -- Primal Grace [+60 Toughness, -5% chance to be crit ]
+[1000282]={[6] = 38}, -- Primal Alacrity [+60 Weapon Skill, -5% incoming armor penetration]
+--[2017641]={[6] = 33}, -- Primal Alacrity [+60 Weapon Skill, -5% incoming armor penetration]
+--[2017650]={[6] = 33}, -- Primal Alacrity [+60 Weapon Skill, -5% incoming armor penetration]
 
+--[1000284]={[6] = 35}, -- Primal Vision [+60 Wounds & Initiative]
+-- [1000284]={[6] = 32}, -- Primal Hunger [+60 Wounds & Strength]
+-- [1000284]={[6] = 31}, -- Primal Affinity [+60 Wounds, +50 Healing Power]
+}

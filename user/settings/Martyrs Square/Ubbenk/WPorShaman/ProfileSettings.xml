@@ -14,8 +14,8 @@
         <KeyBinding action="AUTO_RUN" key="`" />
         <KeyBinding action="TOGGLE_ABILITIES_WINDOW" key="K" />
         <KeyBinding action="TOGGLE_BACKPACK_WINDOW" key="B" />
-        <KeyBinding action="TOGGLE_CHARACTER_WINDOW" key="P" />
-        <KeyBinding action="TOGGLE_PARTY_WINDOW" key="L" />
+        <KeyBinding action="TOGGLE_CHARACTER_WINDOW" key="C" />
+        <KeyBinding action="TOGGLE_PARTY_WINDOW" key="P" />
         <KeyBinding action="TOGGLE_TOME_WINDOW" key="J" />
         <KeyBinding action="TOGGLE_GUILD_WINDOW" key="G" />
         <KeyBinding action="TOGGLE_HELP_WINDOW" key="H" />
@@ -207,7 +207,7 @@
         <KeyBinding action="AID_GROUP_MEMBER_3" key="Left Control+F4" />
         <KeyBinding action="AID_GROUP_MEMBER_4" key="Left Control+F5" />
         <KeyBinding action="AID_GROUP_MEMBER_5" key="Left Control+F6" />
-        <KeyBinding action="LOOT_ALL" key="NONE" />
+        <KeyBinding action="LOOT_ALL" key="." />
         <KeyBinding action="LOOT_NEED" key="NONE" />
         <KeyBinding action="LOOT_GREED" key="NONE" />
         <KeyBinding action="LOOT_PASS" key="NONE" />
@@ -217,7 +217,7 @@
         <KeyBinding action="CAMERA_DOWN" key="NONE" />
         <KeyBinding action="CHAT_REPLY" key="R" />
         <KeyBinding action="INVERT_MOUSE_LOOK" key="Left Shift+Left Control+F11" />
-        <KeyBinding action="SWITCH_ATTACK" key="C" />
+        <KeyBinding action="SWITCH_ATTACK" key="NONE" />
         <KeyBinding action="TOGGLE_WEAPON_SHEATHE" key="X" />
         <KeyBinding action="SCREENSHOT" key="Print Screen" />
         <KeyBinding action="SUPER_SCREENSHOT" key="Left Shift+Print Screen" />

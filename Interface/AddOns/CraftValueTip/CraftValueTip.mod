@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModuleFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<UiMod name="Crafting Info Tooltip" version="1.5.3" date="29/11/2009" >
+	<UiMod name="Crafting Info Tooltip" version="1.5.8" date="13/04/2020" >
     <VersionSettings gameVersion="1.3.1" windowsVersion="1.24" savedVariablesVersion="1.24" />
 
 		<Author name="Irinia of Volkmar" />
