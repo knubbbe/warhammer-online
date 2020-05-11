@@ -4,61 +4,104 @@ TexturedButtons.Settings =
 	{
 		HideActive = false,
 		SaveQuicklock = false,
-		CooldownPulse = false,
-		HideQuicklock = false,
+		ActionButtonPickUpModifier = 32,
+		CooldownPulse = true,
 		CustomGlow = 2,
 		HideGlow = false,
+		HideQuicklock = true,
 	},
 	AdvancedTextures = 
 	{
-		[1] = 
+		
+		{
+		},
+		
+		{
+		},
+		
+		{
+		}, 
+		[8] = 
 		{
 		},
 	},
 	Tint = 
 	{
-		Enabled = false,
+		Enabled = true,
 		Disabled = 
 		{
-			R = 150,
-			G = 150,
 			B = 150,
-		},
-		EnabledValid = 
-		{
-			R = 255,
-			G = 255,
-			B = 255,
-		},
-		DisabledInvalid = 
-		{
-			R = 100,
-			G = 0,
-			B = 0,
+			G = 150,
+			R = 150,
 		},
 		EnabledInvalid = 
 		{
-			R = 200,
-			G = 0,
 			B = 0,
+			G = 0,
+			R = 200,
+		},
+		DisabledInvalid = 
+		{
+			B = 0,
+			G = 0,
+			R = 100,
+		},
+		EnabledValid = 
+		{
+			B = 255,
+			G = 255,
+			R = 255,
 		},
 		OnCooldown = 
 		{
-			R = 100,
-			G = 100,
-			B = 100,
+			B = 148,
+			G = 148,
+			R = 148,
 		},
 	},
 	Preset = 
 	{
-		Name = "Gloss",
+		Name = "SNT Skin 01",
 		Enabled = true,
 	},
 	Actionbars = 
 	{
+		Enabled = true,
 		Bar = 
 		{
-			[1] = 
+			
+			{
+				Spacing = 
+				{
+					Y = 0,
+					X = 0,
+				},
+				Padding = 
+				{
+					Y = 4,
+					X = 4,
+				},
+				HideBackground = false,
+				HideEmpty = true,
+				PageSelector = 43,
+			},
+			
+			{
+				Spacing = 
+				{
+					Y = 0,
+					X = 0,
+				},
+				Padding = 
+				{
+					Y = 4,
+					X = 4,
+				},
+				HideBackground = false,
+				HideEmpty = true,
+				PageSelector = 44,
+			},
+			
 			{
 				Spacing = 
 				{
@@ -68,55 +111,55 @@ TexturedButtons.Settings =
 				HideBackground = false,
 				Padding = 
 				{
-					Y = 5,
-					X = 6,
+					Y = 4,
+					X = 4,
 				},
-				HideEmpty = false,
-				PageSelector = 43,
+				HideEmpty = true,
+				PageSelector = 44,
 			},
 		},
 	},
 	Fonts = 
 	{
-		Enabled = false,
+		Enabled = true,
 		Cooldown = 
 		{
 			Color = 
 			{
-				R = 255,
-				G = 255,
 				B = 0,
+				G = 255,
+				R = 255,
 			},
-			Font = "font_clear_large_bold",
+			Font = "font_clear_medium_bold",
 			Hide = false,
 		},
 		Keybind = 
 		{
 			Color = 
 			{
-				R = 255,
-				G = 255,
 				B = 255,
+				G = 255,
+				R = 255,
 			},
-			Font = "font_clear_medium_bold",
+			Font = "font_clear_tiny",
 			Hide = false,
 		},
 	},
 	Version = 6,
 	Cooldown = 
 	{
-		Enabled = false,
+		Enabled = true,
 		RemoveS = true,
-		EnableButtonTinting = true,
-		HideFlash = true,
-		ShowGlobalCooldownText = false,
-		Alpha = 0.8,
+		EnableButtonTinting = false,
+		HideFlash = false,
 		Tint = 
 		{
-			R = 0,
-			G = 0,
 			B = 0,
+			G = 0,
+			R = 0,
 		},
+		Alpha = 0.8,
+		ShowGlobalCooldownText = false,
 	},
 	Custom = 
 	{
@@ -125,7 +168,8 @@ TexturedButtons.Settings =
 		{
 			[0] = 
 			{
-				Texture = "TexturedButtons_Gloss",
+				Slice = "Skin1_Normal",
+				Texture = "TexturedButtons_SNT_Buttons",
 			},
 			[1] = 
 			{

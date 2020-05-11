@@ -4,12 +4,12 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="EA_Window_OpenParty" sizeX="1050.000000" sizeY="670.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="" xOffset="50.000000" yOffset="150.000000" />
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="" xOffset="551.111145" yOffset="143.333344" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EA_Window_OpenPartyFlyOutAnchor" sizeX="300.000000" sizeY="200.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="8.000000" yOffset="138.000000" />
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-345.333496" yOffset="-158.000000" />
             </Anchors>
         </WindowSettings>
     </Windows>

@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="TomeWindow" sizeX="1258.000000" sizeY="885.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="" xOffset="0.000000" yOffset="30.000000" />
+                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="" xOffset="-24.444447" yOffset="126.666672" />
             </Anchors>
         </WindowSettings>
     </Windows>

@@ -1,9 +1,12 @@
 ScenarioGroupWindow.GroupWindowSettings = 
 {
-	showMainGroup = true,
 	floatingVisibility = 
 	{
+		true,
+		true,
+		true,
 	},
+	showMainGroup = false,
 }
 
 

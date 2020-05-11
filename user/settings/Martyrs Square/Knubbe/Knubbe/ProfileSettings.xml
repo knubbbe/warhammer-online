@@ -38,7 +38,7 @@
         <KeyBinding action="MORALE_BAR_3" key="Left Alt+N" />
         <KeyBinding action="MORALE_BAR_4" key="Left Alt+4" />
         <KeyBinding action="MORALE_BAR_4" key="Left Alt+M" />
-        <KeyBinding action="ACTION_BAR_114" key="NONE" />
+        <KeyBinding action="ACTION_BAR_114" key="Middle Mouse Button" />
         <KeyBinding action="ACTION_BAR_115" key="NONE" />
         <KeyBinding action="ACTION_BAR_116" key="NONE" />
         <KeyBinding action="ACTION_BAR_117" key="NONE" />
@@ -189,12 +189,12 @@
         <KeyBinding action="TARGET_GROUP_MEMBER_4_PET" key="Left Alt+F5" />
         <KeyBinding action="TARGET_GROUP_MEMBER_5_PET" key="Left Alt+F6" />
         <KeyBinding action="TARGET_GROUP_MEMBER_6_PET" key="Left Alt+F7" />
-        <KeyBinding action="NEAREST_ENEMY_TARGET" key="NONE" />
+        <KeyBinding action="NEAREST_ENEMY_TARGET" key="N" />
         <KeyBinding action="NEAREST_FRIENDLY_TARGET" key="Left Control+N" />
         <KeyBinding action="CYCLE_ENEMY_TARGET" key="Tab" />
-        <KeyBinding action="NEXT_ENEMY_TARGET" key="NONE" />
-        <KeyBinding action="NEXT_FRIENDLY_TARGET" key="Left Control+Tab" />
-        <KeyBinding action="PREVIOUS_ENEMY_TARGET" key="Left Shift+Tab" />
+        <KeyBinding action="NEXT_ENEMY_TARGET" key="Left Shift+N" />
+        <KeyBinding action="NEXT_FRIENDLY_TARGET" key="Left Shift+Tab" />
+        <KeyBinding action="PREVIOUS_ENEMY_TARGET" key="Left Control+Tab" />
         <KeyBinding action="PREVIOUS_FRIENDLY_TARGET" key="NONE" />
         <KeyBinding action="ASSIST_MAIN_ASSIST" key="F8" />
         <KeyBinding action="ASSIST_GROUP_MEMBER_1" key="Left Shift+F2" />
@@ -207,7 +207,7 @@
         <KeyBinding action="AID_GROUP_MEMBER_3" key="Left Control+F4" />
         <KeyBinding action="AID_GROUP_MEMBER_4" key="Left Control+F5" />
         <KeyBinding action="AID_GROUP_MEMBER_5" key="Left Control+F6" />
-        <KeyBinding action="LOOT_ALL" key="NONE" />
+        <KeyBinding action="LOOT_ALL" key="." />
         <KeyBinding action="LOOT_NEED" key="NONE" />
         <KeyBinding action="LOOT_GREED" key="NONE" />
         <KeyBinding action="LOOT_PASS" key="NONE" />

@@ -19,6 +19,25 @@ BuffHead.Settings =
 			},
 			Permanent = false,
 		},
+		Friendly = 
+		{
+			Enabled = true,
+			Debuffs = 2,
+			OnTargetChange = 
+			{
+				ClearBuffs = true,
+				ClearAlwaysShow = true,
+				ClearDebuffs = true,
+			},
+			AlwaysShow = 
+			{
+			},
+			Buffs = 2,
+			AlwaysIgnore = 
+			{
+			},
+			Permanent = false,
+		},
 		Hostile = 
 		{
 			Enabled = true,
@@ -33,25 +52,6 @@ BuffHead.Settings =
 			{
 			},
 			Buffs = 1,
-			AlwaysIgnore = 
-			{
-			},
-			Permanent = false,
-		},
-		Friendly = 
-		{
-			Enabled = true,
-			Debuffs = 2,
-			OnTargetChange = 
-			{
-				ClearBuffs = false,
-				ClearAlwaysShow = false,
-				ClearDebuffs = false,
-			},
-			AlwaysShow = 
-			{
-			},
-			Buffs = 2,
 			AlwaysIgnore = 
 			{
 			},
@@ -75,12 +75,12 @@ BuffHead.Settings =
 	{
 		Padding = 
 		{
-			Y = 5,
+			Y = 1,
 			X = 0,
 		},
-		Compression = 1,
+		Compression = 4,
 	},
-	Scale = 1,
+	Scale = 0.68,
 	PriorityEffects = 
 	{
 		SortToFront = true,
@@ -118,7 +118,7 @@ BuffHead.Settings =
 	},
 	Offset = 
 	{
-		Y = -20,
+		Y = -5,
 		X = 0,
 	},
 	Layer = 1,

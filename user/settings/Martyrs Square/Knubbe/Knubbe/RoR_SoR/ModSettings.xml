@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="1.0.4" messagingEnabled="false">
+<UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="1.2.1" messagingEnabled="false">
     <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="1.0" savedVariablesVersion="1.0" />
     <Windows>
         <WindowSettings xmlVersion="1.0" name="RoR_SoR_Button" sizeX="36.000000" sizeY="36.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
@@ -7,9 +7,14 @@
                 <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-224.333496" yOffset="109.000008" />
             </Anchors>
         </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="RoR_SoR_Main_Window" sizeX="300.000000" sizeY="25.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.014111" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-294.550293" yOffset="-263.990265" />
+            </Anchors>
+        </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="RoR_SoR_Window" sizeX="300.000000" sizeY="370.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.007337" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="1559.557495" yOffset="187.623398" />
+                <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-0.000136" yOffset="184.900223" />
             </Anchors>
         </WindowSettings>
     </Windows>
