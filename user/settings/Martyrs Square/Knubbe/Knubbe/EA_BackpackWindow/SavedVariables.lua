@@ -10,11 +10,22 @@ EA_Window_Backpack.settings =
 		[4] = L"Mythic,Dye,Uncommon,Rare,Talisman Making",
 		[9] = L"Pouch 1",
 		[2] = L"Common",
-		[5] = L"Accessory,Talisman,Trophy,Potions",
+		[5] = L"Accessory,Talisman,Potions,Trophy",
 		[10] = L"Pouch 2",
 	},
 	filters = 
 	{
+		[5] = 
+		{
+			[60100] = true,
+			[60300] = true,
+			[10300] = true,
+			[60400] = true,
+		},
+		[6] = 
+		{
+			[60200] = true,
+		},
 		[2] = 
 		{
 			[80200] = true,
@@ -33,17 +44,6 @@ EA_Window_Backpack.settings =
 			[80300] = true,
 			[80400] = true,
 			[50300] = true,
-		},
-		[5] = 
-		{
-			[60100] = true,
-			[60300] = true,
-			[60400] = true,
-			[10300] = true,
-		},
-		[6] = 
-		{
-			[60200] = true,
 		},
 	},
 }
