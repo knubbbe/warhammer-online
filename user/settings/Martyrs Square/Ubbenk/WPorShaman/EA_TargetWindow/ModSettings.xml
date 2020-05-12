@@ -15,7 +15,7 @@
                 <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="235.555557" yOffset="50.333321" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="223.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
+        <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
             <Anchors />
         </WindowSettings>
     </Windows>
