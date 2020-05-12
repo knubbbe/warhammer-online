@@ -27,6 +27,274 @@ ClosetGoblin.setData =
 			{
 				sets = 
 				{
+					
+					{
+						showCloakHeraldry = false,
+						tactics = L"x",
+						name = L"2H",
+						showCloak = false,
+						showHelm = false,
+						AbEnabled = 
+						{
+							true,
+							false,
+							false,
+							false,
+							false,
+						},
+						slots = 
+						{
+							
+							{
+								id = 403977,
+								enabled = true,
+								icon = 1265,
+								talisman = 
+								{
+								},
+							},
+							
+							{
+								enabled = true,
+							},
+							
+							{
+								enabled = false,
+							}, 
+							[5] = 
+							{
+								enabled = false,
+							},
+							[6] = 
+							{
+								enabled = false,
+							},
+							[7] = 
+							{
+								enabled = false,
+							},
+							[8] = 
+							{
+								enabled = false,
+							},
+							[9] = 
+							{
+								enabled = false,
+							},
+							[10] = 
+							{
+								enabled = false,
+							},
+							[11] = 
+							{
+								enabled = false,
+							},
+							[12] = 
+							{
+								enabled = false,
+							},
+							[13] = 
+							{
+								enabled = false,
+							},
+							[14] = 
+							{
+								enabled = false,
+							},
+							[15] = 
+							{
+								enabled = false,
+							},
+							[17] = 
+							{
+								enabled = false,
+							},
+							[18] = 
+							{
+								enabled = false,
+							},
+							[19] = 
+							{
+								id = 2015284,
+								enabled = false,
+								icon = 911,
+								talisman = 
+								{
+								},
+							},
+							[20] = 
+							{
+								id = 2015284,
+								enabled = false,
+								icon = 911,
+								talisman = 
+								{
+								},
+							},
+							[21] = 
+							{
+								id = 88937,
+								enabled = false,
+								icon = 386,
+								talisman = 
+								{
+								},
+							},
+							[22] = 
+							{
+								enabled = false,
+							},
+							[23] = 
+							{
+								enabled = false,
+							},
+							[24] = 
+							{
+								enabled = false,
+							},
+							[25] = 
+							{
+								enabled = false,
+							},
+						},
+						AbSettings = 
+						{
+							1,
+							2,
+							3,
+							4,
+							5,
+						},
+					},
+					
+					{
+						showCloakHeraldry = false,
+						tactics = L"x",
+						name = L"Shield",
+						showCloak = false,
+						showHelm = false,
+						AbEnabled = 
+						{
+							true,
+							false,
+							false,
+							false,
+							false,
+						},
+						slots = 
+						{
+							
+							{
+								id = 27756,
+								enabled = true,
+								icon = 1208,
+								talisman = 
+								{
+								},
+							},
+							
+							{
+								id = 403964,
+								enabled = true,
+								icon = 1026,
+								talisman = 
+								{
+								},
+							},
+							
+							{
+								enabled = false,
+							}, 
+							[5] = 
+							{
+								enabled = false,
+							},
+							[6] = 
+							{
+								enabled = false,
+							},
+							[7] = 
+							{
+								enabled = false,
+							},
+							[8] = 
+							{
+								enabled = false,
+							},
+							[9] = 
+							{
+								enabled = false,
+							},
+							[10] = 
+							{
+								enabled = false,
+							},
+							[11] = 
+							{
+								enabled = false,
+							},
+							[12] = 
+							{
+								enabled = false,
+							},
+							[13] = 
+							{
+								enabled = false,
+							},
+							[14] = 
+							{
+								enabled = false,
+							},
+							[15] = 
+							{
+								enabled = false,
+							},
+							[17] = 
+							{
+								enabled = false,
+							},
+							[18] = 
+							{
+								enabled = false,
+							},
+							[19] = 
+							{
+								enabled = false,
+							},
+							[20] = 
+							{
+								enabled = false,
+							},
+							[21] = 
+							{
+								enabled = false,
+							},
+							[22] = 
+							{
+								enabled = false,
+							},
+							[23] = 
+							{
+								enabled = false,
+							},
+							[24] = 
+							{
+								enabled = false,
+							},
+							[25] = 
+							{
+								enabled = false,
+							},
+						},
+						AbSettings = 
+						{
+							4,
+							2,
+							3,
+							4,
+							5,
+						},
+					},
 				},
 				name = L"kaluka",
 				zoneToSet = 
@@ -50,6 +318,7 @@ ClosetGoblin.setData =
 ClosetGoblin.settings = 
 {
 	zoneChange = true,
+	activeSet = L"2H",
 	toolTips = true,
 	outputMessages = true,
 	useItemRackOnCharacterWindow = true,
