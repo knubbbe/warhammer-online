@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="EA_HelpTipsContainerWindow" sizeX="474.000000" sizeY="69.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="0.333274" yOffset="198.999954" />
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="396.000000" yOffset="11.999999" />
             </Anchors>
         </WindowSettings>
     </Windows>

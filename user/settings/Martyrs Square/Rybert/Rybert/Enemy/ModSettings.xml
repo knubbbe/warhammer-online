@@ -79,12 +79,12 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EnemyUnitFramesAnchor1" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="0.000000" fontAlpha="0.000000" scale="1.868057" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="337.777802" yOffset="-143.555557" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="336.000000" yOffset="230.888763" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EnemyUnitFramesAnchor2" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="0.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="-365.666718" yOffset="255.000000" />
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="291.000000" yOffset="198.000000" />
             </Anchors>
         </WindowSettings>
     </Windows>

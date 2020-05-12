@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="RoR_Window_ScenarioSurrender" sizeX="350.000000" sizeY="150.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="-439.666748" yOffset="38.000000" />
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="325.000000" yOffset="47.999996" />
             </Anchors>
         </WindowSettings>
     </Windows>

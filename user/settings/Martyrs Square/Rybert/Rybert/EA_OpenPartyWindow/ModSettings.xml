@@ -9,7 +9,7 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EA_Window_OpenPartyFlyOutAnchor" sizeX="300.000000" sizeY="200.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-352.333435" yOffset="-29.999987" />
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-250.333511" yOffset="-208.999969" />
             </Anchors>
         </WindowSettings>
     </Windows>

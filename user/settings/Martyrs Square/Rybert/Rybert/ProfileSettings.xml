@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <ProfileSettings isShared="true">
     <KeyBindings>
-        <KeyBinding action="PLAYER_FORWARD" key="Up" />
         <KeyBinding action="PLAYER_FORWARD" key="W" />
-        <KeyBinding action="PLAYER_BACK" key="Down" />
+        <KeyBinding action="PLAYER_FORWARD" key="Up" />
         <KeyBinding action="PLAYER_BACK" key="S" />
+        <KeyBinding action="PLAYER_BACK" key="Down" />
         <KeyBinding action="PLAYER_LEFT" key="Left" />
         <KeyBinding action="PLAYER_RIGHT" key="Right" />
         <KeyBinding action="STRAFE_LEFT" key="A" />
@@ -14,8 +14,8 @@
         <KeyBinding action="AUTO_RUN" key="`" />
         <KeyBinding action="TOGGLE_ABILITIES_WINDOW" key="K" />
         <KeyBinding action="TOGGLE_BACKPACK_WINDOW" key="B" />
-        <KeyBinding action="TOGGLE_CHARACTER_WINDOW" key="P" />
-        <KeyBinding action="TOGGLE_PARTY_WINDOW" key="L" />
+        <KeyBinding action="TOGGLE_CHARACTER_WINDOW" key="C" />
+        <KeyBinding action="TOGGLE_PARTY_WINDOW" key="P" />
         <KeyBinding action="TOGGLE_TOME_WINDOW" key="J" />
         <KeyBinding action="TOGGLE_GUILD_WINDOW" key="G" />
         <KeyBinding action="TOGGLE_HELP_WINDOW" key="H" />
@@ -31,13 +31,13 @@
         <KeyBinding action="PET_AGGRESSIVE" key="Left Alt+&apos;" />
         <KeyBinding action="PET_DEFENSIVE" key="Left Alt+;" />
         <KeyBinding action="PET_PASSIVE" key="Left Alt+[" />
-        <KeyBinding action="MORALE_BAR_1" key="Left Alt+1" />
         <KeyBinding action="MORALE_BAR_1" key="Left Alt+H" />
+        <KeyBinding action="MORALE_BAR_1" key="Left Alt+1" />
         <KeyBinding action="MORALE_BAR_2" key="Left Alt+2" />
-        <KeyBinding action="MORALE_BAR_3" key="Left Alt+3" />
         <KeyBinding action="MORALE_BAR_3" key="Left Alt+N" />
-        <KeyBinding action="MORALE_BAR_4" key="Left Alt+4" />
+        <KeyBinding action="MORALE_BAR_3" key="Left Alt+3" />
         <KeyBinding action="MORALE_BAR_4" key="Left Alt+M" />
+        <KeyBinding action="MORALE_BAR_4" key="Left Alt+4" />
         <KeyBinding action="ACTION_BAR_114" key="NONE" />
         <KeyBinding action="ACTION_BAR_115" key="NONE" />
         <KeyBinding action="ACTION_BAR_116" key="NONE" />
@@ -217,7 +217,7 @@
         <KeyBinding action="CAMERA_DOWN" key="NONE" />
         <KeyBinding action="CHAT_REPLY" key="R" />
         <KeyBinding action="INVERT_MOUSE_LOOK" key="Left Shift+Left Control+F11" />
-        <KeyBinding action="SWITCH_ATTACK" key="C" />
+        <KeyBinding action="SWITCH_ATTACK" key="NONE" />
         <KeyBinding action="TOGGLE_WEAPON_SHEATHE" key="X" />
         <KeyBinding action="SCREENSHOT" key="Print Screen" />
         <KeyBinding action="SUPER_SCREENSHOT" key="Left Shift+Print Screen" />

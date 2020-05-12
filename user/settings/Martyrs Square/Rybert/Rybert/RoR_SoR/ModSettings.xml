@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="1.0.4" messagingEnabled="false">
+<UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="1.2.1" messagingEnabled="false">
     <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="1.0" savedVariablesVersion="1.0" />
     <Windows>
         <WindowSettings xmlVersion="1.0" name="RoR_SoR_Button" sizeX="36.000000" sizeY="36.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
                 <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-224.000107" yOffset="153.500000" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="RoR_SoR_Main_Window" sizeX="300.000000" sizeY="25.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.836667" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-345.333710" yOffset="-259.541656" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="RoR_SoR_Window" sizeX="300.000000" sizeY="370.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">

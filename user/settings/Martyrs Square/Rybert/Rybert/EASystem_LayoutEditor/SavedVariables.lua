@@ -195,7 +195,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
+	PureTargetHUDHostile = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	FloatingScenarioGroup4Window = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EnemyTarget = 
 	{
 		locked = false,
 		hidden = true,
@@ -210,15 +220,15 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup2Window = 
+	EnemyCombatLogTargetDefeseWindow = 
 	{
 		locked = false,
 		hidden = true,
 	},
-	EnemyCombatLogEpsWindow = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
-		hidden = true,
+		hidden = false,
 	},
 	Moth = 
 	{
@@ -230,7 +240,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	EA_Window_QuestTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -240,20 +250,20 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTrackerNub = 
+	FloatingScenarioGroup3Window = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	MenuBarWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	Options = 
+	EA_Window_OverheadMap = 
 	{
-		snapDistance = 20,
-		snapWindowsEnabled = true,
+		locked = false,
+		hidden = false,
 	},
 	GroupWindow = 
 	{
@@ -270,7 +280,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	EA_CareerResourceWindow = 
+	EnemyCombatLogIDSAnchor = 
 	{
 		locked = false,
 		hidden = false,
@@ -285,7 +295,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_AssistWindow = 
+	MiracleGrow2Icon = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	RoR_SoR_Main_Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -295,20 +310,15 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_WinOMeter = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	MouseOverTargetWindow = 
 	{
 		locked = false,
 		hidden = true,
 	},
-	FloatingScenarioGroup5Window = 
+	EA_AssistWindow = 
 	{
 		locked = false,
-		hidden = true,
+		hidden = false,
 	},
 	EA_ActionBar3 = 
 	{
@@ -325,7 +335,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_OverheadMap = 
+	PureTargetUnitFrameFriendly = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_CareerResourceWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -335,17 +350,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	PureTargetUnitFrameFriendly = 
+	FloatingScenarioGroup5Window = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
-	MiracleGrow2Icon = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EnemyCombatLogIDSAnchor = 
+	EA_Window_WinOMeter = 
 	{
 		locked = false,
 		hidden = false,
@@ -360,27 +370,27 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup3Window = 
-	{
-		locked = false,
-		hidden = true,
-	},
-	EA_Window_QuestTracker = 
+	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
+	},
+	Options = 
+	{
+		snapDistance = 10,
+		snapWindowsEnabled = true,
 	},
 	EA_HelpTipsContainerWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EnemyCombatLogTargetDefeseWindow = 
+	EnemyCombatLogEpsWindow = 
 	{
 		locked = false,
 		hidden = true,
 	},
-	EnemyTarget = 
+	FloatingScenarioGroup2Window = 
 	{
 		locked = false,
 		hidden = true,
