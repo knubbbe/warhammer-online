@@ -17,7 +17,7 @@
                 <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-260.333496" yOffset="20.000000" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="EA_Window_PublicQuestTracker" sizeX="600.000000" sizeY="71.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+        <WindowSettings xmlVersion="1.0" name="EA_Window_PublicQuestTracker" sizeX="600.000000" sizeY="0.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
                 <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-254.333496" yOffset="10.000000" />
             </Anchors>
