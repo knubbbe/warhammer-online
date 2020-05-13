@@ -38,7 +38,19 @@ WSCT_CONFIG =
 				g = 128,
 				r = 0,
 			},
-			SHOWXP = 
+			SHOWPARRYOUT = 
+			{
+				b = 255,
+				g = 128,
+				r = 0,
+			},
+			SHOWABSORB = 
+			{
+				b = 0,
+				g = 255,
+				r = 255,
+			},
+			SHOWSPELLOUT = 
 			{
 				b = 0,
 				g = 255,
@@ -49,18 +61,6 @@ WSCT_CONFIG =
 				b = 200,
 				g = 150,
 				r = 100,
-			},
-			SHOWPARRYOUT = 
-			{
-				b = 255,
-				g = 128,
-				r = 0,
-			},
-			SHOWLOWHP = 
-			{
-				b = 128,
-				g = 128,
-				r = 255,
 			},
 			SHOWDEBUFFFADE = 
 			{
@@ -80,7 +80,7 @@ WSCT_CONFIG =
 				g = 255,
 				r = 255,
 			},
-			SHOWSPELLOUT = 
+			SHOWXP = 
 			{
 				b = 0,
 				g = 255,
@@ -170,10 +170,10 @@ WSCT_CONFIG =
 				g = 180,
 				r = 180,
 			},
-			SHOWABSORB = 
+			SHOWLOWHP = 
 			{
-				b = 0,
-				g = 255,
+				b = 128,
+				g = 128,
 				r = 255,
 			},
 			SHOWHEALOUT = 
@@ -210,14 +210,14 @@ WSCT_CONFIG =
 			SHOWBLOCKOUT = 3,
 			SHOWDODGEOUT = 3,
 			SHOWBLOCK = 1,
-			SHOWSPELLOUT = 3,
-			SHOWABSORB = 2,
 			SHOWPARRYOUT = 3,
-			SHOWLOWHP = 1,
+			SHOWDODGE = 1,
+			SHOWXP = 2,
+			SHOWABSORB = 2,
 			SHOWDEBUFFFADE = 2,
 			SHOWRESISTOUT = 3,
 			SHOWHITOUT = 3,
-			SHOWXP = 2,
+			SHOWSPELLOUT = 3,
 			SHOWCOMBAT = 1,
 			SHOWBUFF = 2,
 			SHOWDEBUFF = 2,
@@ -232,7 +232,7 @@ WSCT_CONFIG =
 			SHOWHIT = 1,
 			SHOWHEAL = 2,
 			SHOWRESOURCE = 2,
-			SHOWDODGE = 1,
+			SHOWLOWHP = 1,
 			SHOWHEALOUT = 3,
 			SHOWMORALE = 2,
 		},
@@ -269,7 +269,7 @@ WSCT_CONFIG =
 			},
 		},
 		SHOWDODGE = 1,
-		FLAGDAMAGE = false,
+		FPSMODE = 1,
 		FRAMESDATA = 
 		{
 			
@@ -333,10 +333,10 @@ WSCT_CONFIG =
 		SHOWPARRYOUT = 1,
 		SHOWRESIST = 1,
 		SHOWABSORBOUT = 1,
-		FPSMODE = 1,
+		SHOWDEBUFFFADE = false,
 		SHOWHIT = 1,
 		PLAYSOUND = 1,
-		SHOWDEBUFFFADE = false,
+		FLAGDAMAGE = false,
 		SHOWAP = false,
 		SHOWBUFF = 1,
 		ENABLED = 1,

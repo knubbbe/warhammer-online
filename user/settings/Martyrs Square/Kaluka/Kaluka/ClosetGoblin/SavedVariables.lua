@@ -32,8 +32,8 @@ ClosetGoblin.setData =
 						showCloakHeraldry = false,
 						tactics = L"x",
 						name = L"2H",
-						showCloak = false,
 						showHelm = false,
+						showCloak = false,
 						AbEnabled = 
 						{
 							true,
@@ -61,11 +61,7 @@ ClosetGoblin.setData =
 							{
 								enabled = false,
 							}, 
-							[5] = 
-							{
-								enabled = false,
-							},
-							[6] = 
+							[14] = 
 							{
 								enabled = false,
 							},
@@ -73,35 +69,11 @@ ClosetGoblin.setData =
 							{
 								enabled = false,
 							},
-							[8] = 
-							{
-								enabled = false,
-							},
-							[9] = 
-							{
-								enabled = false,
-							},
-							[10] = 
-							{
-								enabled = false,
-							},
-							[11] = 
-							{
-								enabled = false,
-							},
-							[12] = 
-							{
-								enabled = false,
-							},
-							[13] = 
-							{
-								enabled = false,
-							},
-							[14] = 
-							{
-								enabled = false,
-							},
 							[15] = 
+							{
+								enabled = false,
+							},
+							[8] = 
 							{
 								enabled = false,
 							},
@@ -110,6 +82,10 @@ ClosetGoblin.setData =
 								enabled = false,
 							},
 							[18] = 
+							{
+								enabled = false,
+							},
+							[9] = 
 							{
 								enabled = false,
 							},
@@ -131,6 +107,10 @@ ClosetGoblin.setData =
 								{
 								},
 							},
+							[10] = 
+							{
+								enabled = false,
+							},
 							[21] = 
 							{
 								id = 88937,
@@ -140,7 +120,11 @@ ClosetGoblin.setData =
 								{
 								},
 							},
-							[22] = 
+							[5] = 
+							{
+								enabled = false,
+							},
+							[11] = 
 							{
 								enabled = false,
 							},
@@ -152,7 +136,23 @@ ClosetGoblin.setData =
 							{
 								enabled = false,
 							},
+							[12] = 
+							{
+								enabled = false,
+							},
 							[25] = 
+							{
+								enabled = false,
+							},
+							[6] = 
+							{
+								enabled = false,
+							},
+							[13] = 
+							{
+								enabled = false,
+							},
+							[22] = 
 							{
 								enabled = false,
 							},
@@ -171,8 +171,8 @@ ClosetGoblin.setData =
 						showCloakHeraldry = false,
 						tactics = L"x",
 						name = L"Shield",
-						showCloak = false,
 						showHelm = false,
+						showCloak = false,
 						AbEnabled = 
 						{
 							true,
@@ -205,11 +205,7 @@ ClosetGoblin.setData =
 							{
 								enabled = false,
 							}, 
-							[5] = 
-							{
-								enabled = false,
-							},
-							[6] = 
+							[14] = 
 							{
 								enabled = false,
 							},
@@ -217,35 +213,11 @@ ClosetGoblin.setData =
 							{
 								enabled = false,
 							},
-							[8] = 
-							{
-								enabled = false,
-							},
-							[9] = 
-							{
-								enabled = false,
-							},
-							[10] = 
-							{
-								enabled = false,
-							},
-							[11] = 
-							{
-								enabled = false,
-							},
-							[12] = 
-							{
-								enabled = false,
-							},
-							[13] = 
-							{
-								enabled = false,
-							},
-							[14] = 
-							{
-								enabled = false,
-							},
 							[15] = 
+							{
+								enabled = false,
+							},
+							[8] = 
 							{
 								enabled = false,
 							},
@@ -257,6 +229,10 @@ ClosetGoblin.setData =
 							{
 								enabled = false,
 							},
+							[9] = 
+							{
+								enabled = false,
+							},
 							[19] = 
 							{
 								enabled = false,
@@ -265,11 +241,19 @@ ClosetGoblin.setData =
 							{
 								enabled = false,
 							},
+							[10] = 
+							{
+								enabled = false,
+							},
 							[21] = 
 							{
 								enabled = false,
 							},
-							[22] = 
+							[5] = 
+							{
+								enabled = false,
+							},
+							[11] = 
 							{
 								enabled = false,
 							},
@@ -281,7 +265,23 @@ ClosetGoblin.setData =
 							{
 								enabled = false,
 							},
+							[12] = 
+							{
+								enabled = false,
+							},
 							[25] = 
+							{
+								enabled = false,
+							},
+							[6] = 
+							{
+								enabled = false,
+							},
+							[13] = 
+							{
+								enabled = false,
+							},
+							[22] = 
 							{
 								enabled = false,
 							},

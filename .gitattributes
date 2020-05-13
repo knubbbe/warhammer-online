@@ -1,5 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-*.lua text eol=crlf
-*.xml text eol=crlf
+*.lua text eol=lf
+*.xml text eol=lf
