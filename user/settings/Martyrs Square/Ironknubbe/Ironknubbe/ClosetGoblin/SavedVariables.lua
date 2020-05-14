@@ -33,22 +33,13 @@ ClosetGoblin.setData =
 						tactics = L"2",
 						name = L"2H",
 						showHelm = true,
-						showCloak = false,
-						AbEnabled = 
-						{
-							false,
-							false,
-							false,
-							false,
-							false,
-						},
 						slots = 
 						{
 							
 							{
-								id = 403580,
+								id = 5500015,
 								enabled = true,
-								icon = 3230,
+								icon = 3237,
 								talisman = 
 								{
 								},
@@ -142,6 +133,15 @@ ClosetGoblin.setData =
 								enabled = false,
 							},
 						},
+						AbEnabled = 
+						{
+							false,
+							false,
+							false,
+							false,
+							false,
+						},
+						showCloak = false,
 						AbSettings = 
 						{
 							1,
@@ -157,15 +157,6 @@ ClosetGoblin.setData =
 						tactics = L"1",
 						name = L"Shield",
 						showHelm = true,
-						showCloak = false,
-						AbEnabled = 
-						{
-							true,
-							false,
-							false,
-							false,
-							false,
-						},
 						slots = 
 						{
 							
@@ -179,9 +170,9 @@ ClosetGoblin.setData =
 							},
 							
 							{
-								id = 402692,
+								id = 28615,
 								enabled = true,
-								icon = 3347,
+								icon = 3002,
 								talisman = 
 								{
 								},
@@ -271,6 +262,15 @@ ClosetGoblin.setData =
 								enabled = false,
 							},
 						},
+						AbEnabled = 
+						{
+							true,
+							false,
+							false,
+							false,
+							false,
+						},
+						showCloak = false,
 						AbSettings = 
 						{
 							4,
