@@ -10,7 +10,7 @@ Enemy.Settings =
 		true,
 		true,
 	},
-	prevVersion = 0,
+	prevVersion = 279,
 	combatLogTargetDefenseHideTimeout = 10,
 	guardDistanceIndicatorAnimation = true,
 	groupIconsOtherGroupsAlpha = 1,
@@ -65,10 +65,10 @@ Enemy.Settings =
 	{
 		[1] = 
 		{
-			keyModifiers = 
+			archetypes = 
 			{
 				false,
-				true,
+				false,
 				false,
 			},
 			action = 1,
@@ -76,10 +76,10 @@ Enemy.Settings =
 			exceptMe = true,
 			abilityId = 1363,
 			name = L"Guard",
-			archetypes = 
+			keyModifiers = 
 			{
 				false,
-				false,
+				true,
 				false,
 			},
 			playerType = 3,
@@ -101,7 +101,20 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			anchorTo = 5,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					descriptionMatch = 2,
+					type = "guard",
+					typeMatch = 1,
+					hasDurationLimit = false,
+					castedByMe = 2,
+					filterName = L"MyGuard",
+					nameMatch = 1,
+					durationType = 3,
+				},
+			},
 			color = 
 			{
 				b = 127,
@@ -122,20 +135,7 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 3,
 			offsetY = 2,
-			effectFilters = 
-			{
-				[1] = 
-				{
-					durationType = 3,
-					type = "guard",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 2,
-					filterName = L"MyGuard",
-					nameMatch = 1,
-					descriptionMatch = 2,
-				},
-			},
+			anchorTo = 5,
 			playerTypeMatch = 1,
 		},
 		
@@ -150,14 +150,14 @@ Enemy.Settings =
 			{
 				[1] = 
 				{
-					durationType = 3,
+					descriptionMatch = 2,
 					type = "guard",
 					typeMatch = 1,
 					hasDurationLimit = false,
 					castedByMe = 3,
 					filterName = L"NotMyGuard",
 					nameMatch = 1,
-					descriptionMatch = 2,
+					durationType = 3,
 				},
 			},
 			color = 
@@ -177,9 +177,9 @@ Enemy.Settings =
 			archetypeMatch = 2,
 			name = L"Other guard",
 			scale = 0.8,
-			playerType = 3,
-			anchorTo = 5,
 			isEnabled = true,
+			anchorTo = 5,
+			playerType = 3,
 			playerTypeMatch = 1,
 		},
 		
@@ -190,7 +190,19 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			anchorTo = 9,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					typeMatch = 1,
+					castedByMe = 1,
+					durationType = 2,
+					hasDurationLimit = false,
+					filterName = L"Any",
+					nameMatch = 1,
+					descriptionMatch = 2,
+				},
+			},
 			color = 
 			{
 				b = 119,
@@ -211,19 +223,7 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = 0,
-			effectFilters = 
-			{
-				[1] = 
-				{
-					descriptionMatch = 2,
-					castedByMe = 1,
-					durationType = 2,
-					hasDurationLimit = false,
-					filterName = L"Any",
-					nameMatch = 1,
-					typeMatch = 1,
-				},
-			},
+			anchorTo = 9,
 			playerTypeMatch = 1,
 		},
 		
@@ -234,7 +234,20 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			anchorTo = 9,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					descriptionMatch = 2,
+					type = "isHealing",
+					typeMatch = 1,
+					hasDurationLimit = false,
+					castedByMe = 2,
+					filterName = L"MyHealing",
+					nameMatch = 1,
+					durationType = 2,
+				},
+			},
 			color = 
 			{
 				b = 0,
@@ -255,20 +268,7 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = 0,
-			effectFilters = 
-			{
-				[1] = 
-				{
-					durationType = 2,
-					type = "isHealing",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 2,
-					filterName = L"MyHealing",
-					nameMatch = 1,
-					descriptionMatch = 2,
-				},
-			},
+			anchorTo = 9,
 			playerTypeMatch = 1,
 		},
 		
@@ -283,33 +283,28 @@ Enemy.Settings =
 			{
 				
 				{
-					durationType = 2,
+					descriptionMatch = 2,
 					type = "isBuff",
 					typeMatch = 1,
 					hasDurationLimit = false,
 					castedByMe = 2,
 					filterName = L"MyBuff",
 					nameMatch = 1,
-					descriptionMatch = 2,
+					durationType = 2,
 				},
 				
 				{
-					durationType = 2,
+					descriptionMatch = 2,
 					type = "isHealing",
 					typeMatch = 1,
 					hasDurationLimit = false,
 					castedByMe = 2,
 					filterName = L"MyHealing",
 					nameMatch = 1,
-					descriptionMatch = 2,
+					durationType = 2,
 				},
 			},
-			color = 
-			{
-				b = 255,
-				g = 200,
-				r = 50,
-			},
+			scale = 1,
 			anchorFrom = 9,
 			exceptMe = true,
 			offsetX = -3,
@@ -320,12 +315,17 @@ Enemy.Settings =
 			alpha = 1,
 			logic = L"MyBuff and not MyHealing",
 			archetypeMatch = 1,
-			scale = 1,
-			name = L"Buff",
 			anchorTo = 9,
+			name = L"Buff",
 			playerType = 1,
-			offsetY = 0,
 			isEnabled = true,
+			offsetY = 0,
+			color = 
+			{
+				b = 255,
+				g = 200,
+				r = 50,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -346,28 +346,23 @@ Enemy.Settings =
 					descriptionMatch = 2,
 					castedByMe = 2,
 					durationMax = 59,
-					nameMatch = 1,
 					hasDurationLimit = true,
+					nameMatch = 1,
 					typeMatch = 1,
 				},
 				
 				{
-					durationType = 2,
+					descriptionMatch = 2,
 					type = "isHealing",
 					typeMatch = 1,
 					hasDurationLimit = false,
 					castedByMe = 2,
 					filterName = L"MyHealing",
 					nameMatch = 1,
-					descriptionMatch = 2,
+					durationType = 2,
 				},
 			},
-			color = 
-			{
-				b = 255,
-				g = 200,
-				r = 50,
-			},
+			scale = 1,
 			anchorFrom = 9,
 			exceptMe = false,
 			offsetX = -3,
@@ -378,12 +373,17 @@ Enemy.Settings =
 			alpha = 1,
 			logic = L"MyBlessing and not MyHealing",
 			archetypeMatch = 1,
-			scale = 1,
-			name = L"Blessing",
 			anchorTo = 9,
+			name = L"Blessing",
 			playerType = 1,
-			offsetY = 0,
 			isEnabled = true,
+			offsetY = 0,
+			color = 
+			{
+				b = 255,
+				g = 200,
+				r = 50,
+			},
 			playerTypeMatch = 1,
 		},
 		
@@ -394,7 +394,20 @@ Enemy.Settings =
 				false,
 				true,
 			},
-			anchorTo = 8,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					descriptionMatch = 2,
+					type = "healDebuffOut50",
+					typeMatch = 1,
+					hasDurationLimit = false,
+					castedByMe = 3,
+					filterName = L"OutHealDebuff",
+					nameMatch = 1,
+					durationType = 1,
+				},
+			},
 			color = 
 			{
 				b = 64,
@@ -415,20 +428,7 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = -5,
-			effectFilters = 
-			{
-				[1] = 
-				{
-					durationType = 1,
-					type = "healDebuffOut50",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 3,
-					filterName = L"OutHealDebuff",
-					nameMatch = 1,
-					descriptionMatch = 2,
-				},
-			},
+			anchorTo = 8,
 			playerTypeMatch = 1,
 		},
 		
@@ -439,7 +439,20 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			anchorTo = 8,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					descriptionMatch = 2,
+					type = "healDebuffIn50",
+					typeMatch = 1,
+					hasDurationLimit = false,
+					castedByMe = 3,
+					filterName = L"InHealDebuff",
+					nameMatch = 1,
+					durationType = 1,
+				},
+			},
 			color = 
 			{
 				b = 64,
@@ -460,20 +473,7 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = -5,
-			effectFilters = 
-			{
-				[1] = 
-				{
-					durationType = 1,
-					type = "healDebuffIn50",
-					typeMatch = 1,
-					hasDurationLimit = false,
-					castedByMe = 3,
-					filterName = L"InHealDebuff",
-					nameMatch = 1,
-					descriptionMatch = 2,
-				},
-			},
+			anchorTo = 8,
 			playerTypeMatch = 1,
 		},
 		
@@ -488,14 +488,14 @@ Enemy.Settings =
 			{
 				[1] = 
 				{
-					durationType = 2,
+					descriptionMatch = 2,
 					type = "stagger",
 					typeMatch = 1,
 					hasDurationLimit = false,
 					castedByMe = 1,
 					filterName = L"Stagger",
 					nameMatch = 1,
-					descriptionMatch = 2,
+					durationType = 2,
 				},
 			},
 			color = 
@@ -515,9 +515,9 @@ Enemy.Settings =
 			archetypeMatch = 1,
 			name = L"Stagger",
 			scale = 0.75,
-			playerType = 1,
-			anchorTo = 5,
 			isEnabled = true,
+			anchorTo = 5,
+			playerType = 1,
 			playerTypeMatch = 1,
 		},
 		
@@ -528,7 +528,25 @@ Enemy.Settings =
 				false,
 				true,
 			},
-			anchorTo = 8,
+			effectFilters = 
+			{
+				[1] = 
+				{
+					typeMatch = 1,
+					filterName = L"DoK_WP_Regen",
+					abilityIds = L"9561, 8237",
+					castedByMe = 1,
+					descriptionMatch = 2,
+					nameMatch = 1,
+					abilityIdsHash = 
+					{
+						[9561] = true,
+						[8237] = true,
+					},
+					hasDurationLimit = false,
+					durationType = 1,
+				},
+			},
 			color = 
 			{
 				b = 128,
@@ -549,25 +567,7 @@ Enemy.Settings =
 			isEnabled = true,
 			playerType = 1,
 			offsetY = -5,
-			effectFilters = 
-			{
-				[1] = 
-				{
-					typeMatch = 1,
-					filterName = L"DoK_WP_Regen",
-					abilityIds = L"9561, 8237",
-					castedByMe = 1,
-					nameMatch = 1,
-					descriptionMatch = 2,
-					abilityIdsHash = 
-					{
-						[9561] = true,
-						[8237] = true,
-					},
-					hasDurationLimit = false,
-					durationType = 1,
-				},
-			},
+			anchorTo = 8,
 			playerTypeMatch = 1,
 		},
 		
@@ -586,8 +586,8 @@ Enemy.Settings =
 					filterName = L"ID",
 					abilityIds = L"613",
 					castedByMe = 1,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					nameMatch = 1,
 					abilityIdsHash = 
 					{
 						[613] = true,
@@ -614,9 +614,9 @@ Enemy.Settings =
 			archetypeMatch = 1,
 			name = L"Immaculate Defense",
 			scale = 0.5,
-			playerType = 3,
-			anchorTo = 2,
 			isEnabled = true,
+			anchorTo = 2,
+			playerType = 3,
 			playerTypeMatch = 1,
 		},
 		
@@ -635,14 +635,14 @@ Enemy.Settings =
 					filterName = L"FM",
 					abilityIds = L"653, 674, 695, 3882",
 					castedByMe = 1,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					nameMatch = 1,
 					abilityIdsHash = 
 					{
 						[3882] = true,
-						[674] = true,
 						[653] = true,
 						[695] = true,
+						[674] = true,
 					},
 					hasDurationLimit = false,
 					durationType = 2,
@@ -666,9 +666,9 @@ Enemy.Settings =
 			archetypeMatch = 1,
 			name = L"Focused Mind",
 			scale = 0.5,
-			playerType = 3,
-			anchorTo = 2,
 			isEnabled = true,
+			anchorTo = 2,
+			playerType = 3,
 			playerTypeMatch = 1,
 		},
 		
@@ -687,8 +687,8 @@ Enemy.Settings =
 					filterName = L"TODB",
 					abilityIds = L"9616",
 					castedByMe = 1,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					nameMatch = 1,
 					abilityIdsHash = 
 					{
 						[9616] = true,
@@ -715,9 +715,9 @@ Enemy.Settings =
 			archetypeMatch = 1,
 			name = L"1001 Dark Blessings",
 			scale = 0.5,
-			playerType = 3,
-			anchorTo = 2,
 			isEnabled = true,
+			anchorTo = 2,
+			playerType = 3,
 			playerTypeMatch = 1,
 		},
 		
@@ -736,8 +736,8 @@ Enemy.Settings =
 					filterName = L"GOF",
 					abilityIds = L"8308",
 					castedByMe = 1,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					nameMatch = 1,
 					abilityIdsHash = 
 					{
 						[8308] = true,
@@ -764,9 +764,9 @@ Enemy.Settings =
 			archetypeMatch = 1,
 			name = L"Gift of Life",
 			scale = 0.5,
-			playerType = 3,
-			anchorTo = 2,
 			isEnabled = true,
+			anchorTo = 2,
+			playerType = 3,
 			playerTypeMatch = 1,
 		},
 		
@@ -785,8 +785,8 @@ Enemy.Settings =
 					filterName = L"AnyMarkOrRune",
 					abilityIds = L"3746, 8551, 8617, 3748, 8560, 8619, 20458, 3747, 8556, 8618, 3038, 3773, 8567, 8620, 1591, 3670, 20476, 1588, 1600, 3570, 1608, 3650, 3671",
 					castedByMe = 2,
-					nameMatch = 1,
 					descriptionMatch = 2,
+					nameMatch = 1,
 					abilityIdsHash = 
 					{
 						[8560] = true,
@@ -804,11 +804,11 @@ Enemy.Settings =
 						[1600] = true,
 						[3650] = true,
 						[3773] = true,
-						[8620] = true,
+						[3747] = true,
 						[3670] = true,
 						[3038] = true,
 						[8551] = true,
-						[3747] = true,
+						[8620] = true,
 						[8567] = true,
 						[1591] = true,
 						[8618] = true,
@@ -834,9 +834,9 @@ Enemy.Settings =
 			archetypeMatch = 1,
 			name = L"My marks/runes",
 			scale = 1,
-			playerType = 3,
-			anchorTo = 9,
 			isEnabled = true,
+			anchorTo = 9,
+			playerType = 3,
 			playerTypeMatch = 1,
 		},
 		
@@ -885,9 +885,9 @@ Enemy.Settings =
 			archetypeMatch = 1,
 			name = L"Improved Word of Pain",
 			scale = 0.5,
-			playerType = 3,
-			anchorTo = 2,
 			isEnabled = true,
+			anchorTo = 2,
+			playerType = 3,
 			playerTypeMatch = 1,
 		},
 		
@@ -935,9 +935,9 @@ Enemy.Settings =
 			archetypeMatch = 1,
 			name = L"Improved Boiling Blood",
 			scale = 0.5,
-			playerType = 3,
-			anchorTo = 2,
 			isEnabled = true,
+			anchorTo = 2,
+			playerType = 3,
 			playerTypeMatch = 1,
 		},
 	},
@@ -950,12 +950,7 @@ Enemy.Settings =
 	unitFramesDirection2 = 4,
 	guardMarkTemplate = 
 	{
-		color = 
-		{
-			65,
-			150,
-			255,
-		},
+		scale = 0.8,
 		unique = false,
 		firstLetters = L"4",
 		showCareerIcon = false,
@@ -966,11 +961,16 @@ Enemy.Settings =
 		id = 152,
 		text = L"G",
 		alpha = 0.4,
-		layer = 3,
-		scale = 0.8,
+		color = 
+		{
+			65,
+			150,
+			255,
+		},
+		targetOnClick = true,
 		font = "font_default_text_huge",
 		name = L"",
-		targetOnClick = true,
+		layer = 3,
 		display = 1,
 		offsetY = 75,
 		neverExpire = true,
@@ -1003,10 +1003,10 @@ Enemy.Settings =
 	{
 		[1] = 
 		{
-			eps = 
+			data = 
 			{
 			},
-			data = 
+			eps = 
 			{
 			},
 			name = L"Default",
@@ -1090,23 +1090,23 @@ Enemy.Settings =
 	{
 		
 		{
-			color = 
-			{
-				191,
-				255,
-				0,
-			},
+			scale = 1,
 			firstLetters = 4,
 			showCareerIcon = true,
 			canClearOnClick = true,
 			permanentTargets = 
 			{
 			},
-			id = 2,
+			id = 1,
 			layer = 3,
 			alpha = 1,
 			text = L"",
-			scale = 1,
+			color = 
+			{
+				191,
+				255,
+				0,
+			},
 			font = "font_clear_large_bold",
 			name = L"A",
 			targetOnClick = true,
@@ -1117,23 +1117,23 @@ Enemy.Settings =
 		},
 		
 		{
-			color = 
-			{
-				255,
-				64,
-				255,
-			},
+			scale = 1,
 			firstLetters = 4,
 			showCareerIcon = true,
 			canClearOnClick = true,
 			permanentTargets = 
 			{
 			},
-			id = 3,
+			id = 2,
 			layer = 3,
 			alpha = 1,
 			text = L"",
-			scale = 1,
+			color = 
+			{
+				255,
+				64,
+				255,
+			},
 			font = "font_clear_large_bold",
 			name = L"B",
 			targetOnClick = true,
@@ -1144,23 +1144,23 @@ Enemy.Settings =
 		},
 		
 		{
-			color = 
-			{
-				65,
-				150,
-				255,
-			},
+			scale = 1,
 			firstLetters = 4,
 			showCareerIcon = false,
 			canClearOnClick = true,
 			permanentTargets = 
 			{
 			},
-			id = 4,
+			id = 3,
 			layer = 3,
 			alpha = 1,
 			text = L"G",
-			scale = 1,
+			color = 
+			{
+				65,
+				150,
+				255,
+			},
 			font = "font_default_text_giant",
 			name = L"G",
 			targetOnClick = true,
@@ -1183,85 +1183,77 @@ Enemy.Settings =
 		255,
 		255,
 	},
-	newTargetMarkTemplate = 
+	combatLogTargetDefenseBackground = 
 	{
-		color = 
-		{
-			r = 255,
-			g = 0,
-			b = 0,
-		},
-		unique = false,
-		firstLetters = 4,
-		showCareerIcon = true,
-		canClearOnClick = true,
-		permanentTargets = 
-		{
-		},
-		id = 154,
-		text = L"KILL",
-		alpha = 1,
-		layer = 3,
-		scale = 1,
-		font = "font_clear_large_bold",
-		name = L"",
-		targetOnClick = true,
-		display = 1,
-		offsetY = 50,
-		neverExpire = false,
-		permanent = false,
+		0,
+		0,
+		0,
 	},
 	groupIconsPetBGAlpha = 0.5,
-	groupIconsShowOnMarkedPlayers = false,
+	unitFramesGroupsDirection2 = 4,
 	unitFramesScale = 1,
-	unitFramesSortingEnabled = true,
+	combatLogLogParseErrors = true,
 	soundOnNewTargetId = 500,
-	groupIconsOtherGroupsLayer = 0,
+	unitFramesMyGroupFirst = true,
 	timerActiveColor = 
 	{
 		255,
 		255,
 		75,
 	},
-	stateMachineThrottle = 0.3,
-	groupIconsOtherGroupsHPColor = 
+	combatLogEnabled = false,
+	combatLogTargetDefenseScale = 1,
+	scenarioInfoSelection = 
 	{
-		200,
-		255,
-		255,
+		
+		{
+			sortColumn = "value1",
+			columns = 
+			{
+				"db",
+				"deaths",
+			},
+			sortDirection = false,
+			id2 = "1",
+			id = "All",
+		},
+		
+		{
+			sortColumn = "value1",
+			columns = 
+			{
+				"db",
+				"deaths",
+			},
+			sortDirection = false,
+			id2 = "2",
+			id = "All",
+		},
 	},
-	groupIconsPetOffset = 
-	{
-		0,
-		20,
-	},
-	guardDistanceIndicator = 2,
-	scenarioInfoEnabled = false,
 	unitFramesIsVertical = false,
 	guardMarkEnabled = true,
+	intercomPrivate = true,
+	groupIconsShowOtherGroups = true,
 	combatLogIDSRowScale = 1,
-	groupIconsAlpha = 1,
+	combatLogTargetDefenseTotalEnabled = true,
 	version = 279,
-	combatLogEPSShow = 
-	{
-		true,
-		true,
-		true,
-		true,
-	},
-	guardDistanceIndicatorMovable = true,
-	groupIconsTargetOnClick = true,
-	playerDeaths = 0,
+	guardDistanceIndicatorScaleNormal = 1,
 	guardDistanceIndicatorClickThrough = false,
-	chatThrottleDelay = 10,
-	killSpamReparseChunkSize = 20,
-	unitFramesEnabled = true,
-	groupIconsHPColor = 
+	combatLogTargetDefenseTotalCalculate = 
 	{
-		200,
-		255,
-		0,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
 	},
+	playerDeaths = 0,
+	scenarioAlerterEnabled = true,
+	unitFramesEnabled = true,
+	groupIconsShowOnMarkedPlayers = false,
+	guardDistanceIndicatorAlphaWarning = 1,
+	groupIconsOtherGroupsLayer = 0,
 	chatDelay = 2,
 	combatLogStatisticsEnabled = false,
 	combatLogIDSRowSize = 
@@ -1279,7 +1271,7 @@ Enemy.Settings =
 	{
 		
 		{
-			archetypeMatch = 1,
+			type = "selectionFrame",
 			id = "1978",
 			data = 
 			{
@@ -1320,12 +1312,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "selectionFrame",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "panel",
 			id = "1979",
 			data = 
 			{
@@ -1378,12 +1370,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "panel",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "hpbar",
 			id = "1980",
 			data = 
 			{
@@ -1393,15 +1385,15 @@ Enemy.Settings =
 					3,
 				},
 				offlineHide = true,
-				layer = 1,
-				anchorTo = "topleft",
+				wrap = false,
+				distAlpha = 0.5,
 				color = 
 				{
 					150,
 					190,
 					255,
 				},
-				wrap = false,
+				layer = 1,
 				anchorFrom = "topleft",
 				scale = 1,
 				texture = "default",
@@ -1410,7 +1402,7 @@ Enemy.Settings =
 				textureFullResize = true,
 				alpha = 1,
 				distHide = false,
-				distAlpha = 0.5,
+				anchorTo = "topleft",
 				size = 
 				{
 					129,
@@ -1427,12 +1419,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "hpbar",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "apbar",
 			id = "1981",
 			data = 
 			{
@@ -1475,12 +1467,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "apbar",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "nameText",
 			id = "1982",
 			data = 
 			{
@@ -1532,12 +1524,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "nameText",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "careerIcon",
 			id = "1983",
 			data = 
 			{
@@ -1575,12 +1567,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "careerIcon",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "levelText",
 			id = "1984",
 			data = 
 			{
@@ -1620,12 +1612,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "levelText",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "groupLeaderIcon",
 			id = "1985",
 			data = 
 			{
@@ -1663,12 +1655,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "groupLeaderIcon",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "moraleBar",
 			id = "1986",
 			data = 
 			{
@@ -1678,28 +1670,28 @@ Enemy.Settings =
 					4,
 				},
 				offlineHide = true,
-				scale = 1,
-				anchorTo = "topleft",
 				color = 
 				{
 					120,
 					200,
 					255,
 				},
+				anchorTo = "topleft",
+				scale = 1,
 				layer = 3,
-				anchorFrom = "topleft",
+				alpha = 1,
 				size = 
 				{
 					38,
 					10,
 				},
 				textureFullResize = false,
-				vertical = false,
+				deadHide = true,
 				prefix = L"M ",
 				suffix = L"",
-				deadHide = true,
+				vertical = false,
 				distHide = false,
-				alpha = 1,
+				anchorFrom = "topleft",
 				texture = "4dots",
 			},
 			exceptMe = false,
@@ -1712,12 +1704,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "moraleBar",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "distanceText",
 			id = "1987",
 			data = 
 			{
@@ -1764,12 +1756,12 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "distanceText",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "distanceBar",
 			id = "1988",
 			data = 
 			{
@@ -1832,22 +1824,17 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "distanceBar",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 		
 		{
-			archetypeMatch = 1,
+			type = "hppText",
 			id = "1989",
 			data = 
 			{
 				anchorTo = "right",
-				color = 
-				{
-					255,
-					255,
-					255,
-				},
+				scale = 0.7,
 				anchorFrom = "right",
 				vertical = false,
 				prefix = L"",
@@ -1863,7 +1850,12 @@ Enemy.Settings =
 				layer = 2,
 				alpha = 1,
 				deadHide = true,
-				scale = 0.7,
+				color = 
+				{
+					255,
+					255,
+					255,
+				},
 				texture = "3dots",
 				align = "rightcenter",
 				font = "font_clear_small_bold",
@@ -1883,7 +1875,7 @@ Enemy.Settings =
 				false,
 				false,
 			},
-			type = "hppText",
+			archetypeMatch = 1,
 			playerTypeMatch = 1,
 		},
 	},
@@ -1897,23 +1889,26 @@ Enemy.Settings =
 	},
 	groupIconsOtherGroupsBGAlpha = 0.5,
 	playerKDRDisplayMode = 5,
-	guardDistanceIndicatorAlphaWarning = 1,
+	groupIconsHPColor = 
+	{
+		200,
+		255,
+		0,
+	},
 	groupIconsHideOnSelf = true,
-	scenarioAlerterEnabled = true,
-	combatLogTargetDefenseTotalCalculate = 
+	killSpamReparseChunkSize = 20,
+	chatThrottleDelay = 10,
+	unitFramesCount1 = 6,
+	groupIconsTargetOnClick = true,
+	guardDistanceIndicatorMovable = true,
+	combatLogEPSShow = 
 	{
 		true,
 		true,
 		true,
 		true,
-		true,
-		true,
 	},
-	unitFramesCount1 = 6,
-	guardDistanceIndicatorScaleNormal = 1,
-	combatLogTargetDefenseTotalEnabled = true,
-	groupIconsShowOtherGroups = true,
-	intercomPrivate = true,
+	groupIconsAlpha = 1,
 	groupIconsPetBGColor = 
 	{
 		255,
@@ -1921,44 +1916,49 @@ Enemy.Settings =
 		255,
 	},
 	unitFramesGroupsPadding1 = 40,
-	scenarioInfoSelection = 
-	{
-		
-		{
-			sortColumn = "value1",
-			columns = 
-			{
-				"db",
-				"deaths",
-			},
-			sortDirection = false,
-			id2 = "1",
-			id = "All",
-		},
-		
-		{
-			sortColumn = "value1",
-			columns = 
-			{
-				"db",
-				"deaths",
-			},
-			sortDirection = false,
-			id2 = "2",
-			id = "All",
-		},
-	},
-	combatLogTargetDefenseScale = 1,
-	combatLogEnabled = false,
-	unitFramesMyGroupFirst = true,
-	combatLogLogParseErrors = true,
-	unitFramesGroupsDirection2 = 4,
-	combatLogTargetDefenseBackground = 
+	guardDistanceIndicator = 2,
+	scenarioInfoEnabled = false,
+	groupIconsPetOffset = 
 	{
 		0,
-		0,
-		0,
+		20,
 	},
+	newTargetMarkTemplate = 
+	{
+		scale = 1,
+		unique = false,
+		firstLetters = 4,
+		showCareerIcon = true,
+		canClearOnClick = true,
+		permanentTargets = 
+		{
+		},
+		id = 154,
+		text = L"KILL",
+		alpha = 1,
+		color = 
+		{
+			r = 255,
+			g = 0,
+			b = 0,
+		},
+		targetOnClick = true,
+		font = "font_clear_large_bold",
+		name = L"",
+		layer = 3,
+		display = 1,
+		offsetY = 50,
+		neverExpire = false,
+		permanent = false,
+	},
+	groupIconsOtherGroupsHPColor = 
+	{
+		200,
+		255,
+		255,
+	},
+	unitFramesSortingEnabled = true,
+	stateMachineThrottle = 0.3,
 }
 
 

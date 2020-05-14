@@ -9,7 +9,7 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EnemyCombatLogIDSAnchor" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="0.000000" fontAlpha="0.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-406.666748" yOffset="-157.999954" />
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-406.666748" yOffset="-157.999893" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EnemyCombatLogIDSRow1" sizeX="250.000000" sizeY="30.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.111111" showing="false">
@@ -29,7 +29,7 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EnemyGuardDistanceIndicator" sizeX="100.000000" sizeY="100.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.666667" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottomleft" relativePoint="bottomleft" relativeTo="Root" xOffset="394.222198" yOffset="-266.666656" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="394.222137" yOffset="250.000015" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EnemyIcon" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
@@ -79,7 +79,7 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EnemyUnitFramesAnchor1" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="0.000000" fontAlpha="0.000000" scale="1.520834" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="168.777771" yOffset="204.777832" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="168.777771" yOffset="204.777771" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EnemyUnitFramesAnchor2" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="0.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
