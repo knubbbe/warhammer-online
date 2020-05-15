@@ -1,0 +1,280 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    
+    <Window name="AutoRollRowTemplate" savesettings="false" movable="false" layer="default" handleinput="true" popable="true" draganddrop="true">
+      <Size>
+        <AbsPoint x="493" y="48" />
+      </Size>
+      <Windows>
+        <FullResizeImage name="$parentBackground" inherits="EA_FullResizeImage_TintableSolidBackground">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent"/>
+            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent"/>
+          </Anchors>
+        </FullResizeImage>
+
+        <DynamicImage name="$parentIcon" inherits="EA_Image_DefaultIcon"  handleinput="false" >
+          <Size>
+            <AbsPoint x="48" y="48" />
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+          <Windows>
+            <DynamicImage name="$parentFrame" inherits="EA_Image_DefaultIconFrame"  handleinput="false" layer="background" >
+              <Size>
+                <AbsPoint x="48" y="48" />
+              </Size>
+            </DynamicImage>
+          </Windows>
+        </DynamicImage>
+        
+        <Label name="$parentName" inherits="TRollLabel">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="60" y="8" />
+            </Anchor>
+            <Anchor point="bottomleft" relativePoint="bottomright" relativeTo="$parent">
+              <AbsPoint x="215" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        
+        <Label name="$parentId" inherits="TRollLabel">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="220" y="8" />
+            </Anchor>
+            <Anchor point="bottomleft" relativePoint="bottomright" relativeTo="$parent">
+              <AbsPoint x="285" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        
+        <ComboBox name="$parentChoice" inherits="EA_ComboBox_DefaultResizableSmall" layer="popup">
+          <EventHandlers>
+            <EventHandler event="OnSelChanged" function="TidyRoll.CustomAutoRoll.OnChoiceChange" />
+          </EventHandlers>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="285" y="5"/>
+            </Anchor>
+          </Anchors>
+        </ComboBox>
+
+        <Button name="$parentDeleteButton" inherits="TRollButton">
+          <Size>
+            <AbsPoint x="70" y="39" />
+          </Size>
+          <Anchors>
+            <Anchor point="left" relativePoint="left" relativeTo="$parent">
+              <AbsPoint x="420" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyRoll.CustomAutoRoll.OnDeleteButton" />
+          </EventHandlers>
+        </Button>
+
+      </Windows>
+    </Window>
+    
+    
+    
+    
+    
+    
+    
+    <Window name="TRollAutoRoll" inherits="EA_Window_DefaultContextMenuFrame"  movable="true" popable="false" layer="default" savesettings="false" handleinput="true" >
+      <Size>
+        <AbsPoint x="555" y="635" />
+      </Size>
+      <Anchors>
+        <Anchor point="center" relativePoint="center" relativeTo="Root">
+          <AbsPoint x="0" y="0"/>
+        </Anchor>
+      </Anchors>
+      <EventHandlers>
+        <EventHandler event="OnShown" function="TidyRoll.CustomAutoRoll.OnShown" />
+        <EventHandler event="OnHidden" function="TidyRoll.CustomAutoRoll.OnHidden" />
+      </EventHandlers>
+
+      <Windows>
+
+        <!-- Background -->
+        <FullResizeImage name="$parentBackground" inherits="EA_FullResizeImage_BlackTransparent" handleinput="false">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" >
+              <AbsPoint x="3" y="3" />
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright" >
+              <AbsPoint x="-3" y="-3" />
+            </Anchor>
+          </Anchors>
+        </FullResizeImage>
+
+        <!-- Frame -->
+        <FullResizeImage name="$parentFrame" inherits="EA_Button_ResizeIconFrameNormal" handleinput="false">
+          <Anchors>
+            <Anchor point="topright" relativePoint="topright" />
+            <Anchor point="bottomleft" relativePoint="bottomleft" />
+          </Anchors>
+        </FullResizeImage>
+        
+        
+        <Label name="$parentTitleLabel" inherits="EA_Label_DefaultText" font="font_clear_large_bold" handleinput="false">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="0" y="10"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="0" y="10"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        
+        <Button name="$parentCloseButton" inherits="EA_Button_DefaultWindowClose">
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyRoll.CustomAutoRoll.OnClose" />
+          </EventHandlers>
+        </Button>
+
+        <Button name="$parentApplyButton" inherits="TRollButton">
+          <Anchors>
+            <Anchor point="bottom" relativePoint="bottom" relativeTo="$parent">
+              <AbsPoint x="10" y="-10"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyRoll.CustomAutoRoll.OnApply" />
+          </EventHandlers>
+        </Button>
+
+        
+        <!-- Add item by id -->
+        <Label name="$parentAddByIdLabel" inherits="TRollLabel" font="font_clear_medium">
+          <Size>
+            <AbsPoint x="400" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="30" y="60"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+
+        <Label name="$parentAddByIdIdLabel" inherits="TRollLabel">
+          <Size>
+            <AbsPoint x="120" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAddByIdLabel">
+              <AbsPoint x="10" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+
+        <EditBox name="$parentAddByIdIdEditBox" inherits="EA_EditBox_DefaultFrame">
+          <Size>
+            <AbsPoint x="200" y="32" />
+          </Size>
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentAddByIdIdLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </EditBox>
+
+        <Label name="$parentAddByIdNameLabel" inherits="TRollLabel">
+          <Size>
+            <AbsPoint x="120" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAddByIdIdLabel">
+              <AbsPoint x="0" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+
+        <EditBox name="$parentAddByIdNameEditBox" inherits="EA_EditBox_DefaultFrame">
+          <Size>
+            <AbsPoint x="200" y="32" />
+          </Size>
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentAddByIdNameLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </EditBox>
+
+        <Button name="$parentAddByIdButton" inherits="TRollButton">
+          <Anchors>
+            <Anchor point="bottomright" relativePoint="left" relativeTo="$parentAddByIdIdEditBox">
+              <AbsPoint x="30" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyRoll.CustomAutoRoll.AddById" />
+          </EventHandlers>
+        </Button>
+
+
+
+        <ListBox name="$parentList" scrollbar="EA_ScrollBar_DefaultVerticalChain" rowdef="AutoRollRowTemplate" layer="secondary" visiblerows="7" rowcount="500" rowspacing="0" draganddrop="true">
+          <Size>
+            <AbsPoint x="515" y="336" />
+          </Size>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyRoll.CustomAutoRoll.OnListLbuttonUp" />
+          </EventHandlers>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" >
+              <AbsPoint x="30" y="200" />
+            </Anchor>
+          </Anchors>
+
+          <ListData table="TidyRoll.CustomAutoRoll.autoRollList" populationfunction="TidyRoll.CustomAutoRoll.PopulateAutoRollList">
+            <ListColumns>
+              <ListColumn windowname="Icon" variable="iconNum" format="icon" />
+              <ListColumn windowname="Name" variable="name" format="wstring" />
+              <ListColumn windowname="Id" variable="id" format="number" />
+            </ListColumns>
+          </ListData>
+        </ListBox>
+
+        
+        <Label name="$parentListColumnsLabel" inherits="TRollLabel">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentList">
+              <AbsPoint x="0" y="-5"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="bottomright" relativeTo="$parentList">
+              <AbsPoint x="0" y="-5"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        
+        <Label name="$parentListHelpLabel" inherits="TRollLabel" textalign="center">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentList">
+              <AbsPoint x="20" y="5"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="topright" relativeTo="$parentList">
+              <AbsPoint x="-20" y="5"/>
+            </Anchor>
+          </Anchors>
+          <Color r="234" g="234" b="234" />
+        </Label>
+
+
+      </Windows>
+    </Window>
+
+  </Windows>
+</Interface>

@@ -1,0 +1,315 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    
+    <!-- ********* -->
+    <!-- TEMPLATES -->
+    <!-- ********* -->
+    
+    
+    
+    
+    
+    <!-- Label template -->
+    <Label name="TRollLabel" font="font_clear_default" textalign="left" handleinput="false" autoresize="true" wordwrap="true">
+      <Size>
+        <AbsPoint x="260" y="20" />
+      </Size>
+      <Color r="255" g="204" b="102" />
+    </Label>
+
+    <!-- Button template -->
+    <Button name="TRollButton" inherits="EA_Button_DefaultResizeable" font="font_clear_default" layer="secondary" />
+    
+    <!-- Tab Button template -->
+    <Button name="TRollTabButton" inherits="EA_Button_Tab" font="font_clear_default" layer="popup">
+      <EventHandlers>
+        <EventHandler event="OnLButtonUp" function="TidyRollOptions.OnTabLBU" />
+      </EventHandlers>
+    </Button>
+
+    <!-- Tab template -->
+    <Window name="TRollTabTemplate" movable="false" layer="secondary">
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+          <AbsPoint x="0" y="90"/>
+        </Anchor>
+        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="">
+          <AbsPoint x="0" y="-50"/>
+        </Anchor>
+      </Anchors>
+    </Window>
+    
+    
+    <!-- Checkbox template -->
+    <Window name="TRollCheckboxTemplate" layer="popup">
+      <Size>
+        <AbsPoint x="220" y="37" />
+      </Size>
+      <EventHandlers>
+        <EventHandler event="OnLButtonUp" function="TidyRollOptions.OnCheckboxLBU" />
+      </EventHandlers>
+      <Windows>
+        <Button name="$parentButton" inherits="EA_Button_DefaultCheckBox" handleinput="false">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Label name="$parentLabel" inherits="TRollLabel">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="35" y="3" />
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+      </Windows>
+    </Window>
+    
+    <!-- Radio template -->
+    <Window name="TRollRadioTemplate" layer="popup">
+      <Size>
+        <AbsPoint x="220" y="37" />
+      </Size>
+      <EventHandlers>
+        <EventHandler event="OnInitialize" function="EA_Window_DefaultLabelToggleCircle.Initialize" />
+        <EventHandler event="OnLButtonUp" function="TidyRollOptions.OnRadioLBU" />
+      </EventHandlers>
+      <Windows>
+        <Button name="$parentButton" inherits="EA_Button_DefaultToggleCircle" handleinput="false">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Label name="$parentLabel" inherits="TRollLabel">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="35" y="3" />
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+      </Windows>
+    </Window>
+
+    <!-- Item Button template -->
+    <Button name="TRollItemButton" movable="false" popable="false" savesettings="false" drawchildrenfirst="true">
+      <Size>
+        <AbsPoint x="64" y="64" />
+      </Size>
+      <Windows>
+
+        <DynamicImage name="$parentIcon" handleinput="false">
+          <Size>
+            <AbsPoint x="58" y="58" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" relativeTo="$parent" >
+              <AbsPoint x="0" y="0" />
+              </Anchor>
+            </Anchors>
+          <TexDims x="64" y="64" />
+        </DynamicImage>
+      </Windows>
+      <TexCoords>
+        <Normal texture="TidyRoll_SquareFrame" x="0" y="0" />
+        <NormalHighlit texture="TidyRoll_SquareFrame_Highlight" x="0" y="0" />
+        <Pressed texture="TidyRoll_SquareFrame" x="0" y="0" />
+        <Disabled texture="TidyRoll_SquareFrame" x="0" y="0" />
+      </TexCoords>
+    </Button>
+    
+    
+    <!-- Overlay template -->
+    <Window name="TRollOverlay" handleinput="false" layer="overlay">
+      <Size>
+        <AbsPoint x="64" y="64" />
+      </Size>
+      <Windows>
+        
+        <AnimatedImage name="$parentGlow" texture="EA_ActionBarAnim_Casting" fps="10" layer="overlay" handleinput="false" sticky="false" textureScale="0.9444">
+          <Size>
+            <AbsPoint x="67" y="69"/>
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" relativeTo="$parent">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+          <AnimFrames>
+            <AnimFrame id="1" x="0" y="0" />
+            <AnimFrame id="2" x="72" y="0" />
+            <AnimFrame id="3" x="144" y="0" />
+            <AnimFrame id="4" x="216" y="0" />
+            <AnimFrame id="5" x="288" y="0" />
+            <AnimFrame id="6" x="360" y="0" />
+          </AnimFrames>
+        </AnimatedImage>
+
+        <AnimatedImage name="$parentFlash" texture="recharge_flash_anim" fps="10" layer="overlay" handleinput="false" sticky="false" texturescale="1">
+          <Size>
+            <AbsPoint x="85" y="85" />
+          </Size>
+          <Anchors>
+            <Anchor point="center" relativePoint="center" relativeTo="$parent">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+          <AnimFrames>
+            <AnimFrame id="1" x="0" y="0" />
+            <AnimFrame id="2" x="85" y="0" />
+            <AnimFrame id="3" x="170" y="0" />
+            <AnimFrame id="4" x="0" y="85" />
+            <AnimFrame id="5" x="85" y="85" />
+            <AnimFrame id="6" x="170" y="85" />
+            <AnimFrame id="7" x="0" y="170" />
+            <AnimFrame id="8" x="85" y="170" />
+          </AnimFrames>
+        </AnimatedImage>
+      </Windows>
+    </Window>
+    
+    <!-- ************* -->
+    <!-- END TEMPLATES -->
+    <!-- ************* -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <Window name="TidyRollFrame" movable="false" popable="false" layer="default" savesettings="false">
+      <Size>
+        <AbsPoint x="64" y="87" />
+      </Size>
+      <Anchors>
+        <Anchor point="center" relativePoint="center" relativeTo="">
+          <AbsPoint x="0" y="0"/>
+        </Anchor>
+      </Anchors>
+      <EventHandlers>
+        <EventHandler event="OnLButtonUp" function="FrameManager.OnLButtonUp" />
+        <EventHandler event="OnRButtonUp" function="FrameManager.OnRButtonUp" />
+        <EventHandler event="OnMButtonUp" function="TidyRollFrame.OnMButtonUp" />
+        <EventHandler event="OnMouseWheel" function="FrameManager.OnMouseWheel" />
+        <!--EventHandler event="OnMouseOver" function="FrameManager.OnMouseOver" />
+        <EventHandler event="OnMouseOverEnd" function="FrameManager.OnMouseOverEnd" /-->
+      </EventHandlers>
+      <Windows>
+        
+        <Button name="$parentItemButton" inherits="TRollItemButton">
+          <EventHandlers>
+            <EventHandler event="OnMouseOver" function="FrameManager.OnMouseOver" />
+            <!--EventHandler event="OnMouseOverEnd" function="FrameManager.OnMouseOverEnd" /-->
+          </EventHandlers>
+          <Anchors>
+            <Anchor point="top" relativePoint="top" relativeTo="$parent">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        
+        <Window name="$parentOverlay" inherits="TRollOverlay" handleinput="false" >
+          <Size>
+            <AbsPoint x="64" y="64" />
+          </Size>
+          <Anchors>
+            <Anchor point="top" relativePoint="top" relativeTo="$parent">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        
+        <Window name="$parentTimer" inherits="EA_Window_DefaultFrameStatusBar" handleinput="false" >
+          <Size>
+            <AbsPoint x="64" y="23" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentItemButton" >
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="topright" relativeTo="$parentItemButton" >
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Window>
+        
+        <DynamicImage name="$parentCareerIcon" textureScale="0.875" handleinput="false" layer="overlay">
+          <Size>
+            <AbsPoint x="28" y="28" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="center" relativeTo="$parentItemButton">
+              <AbsPoint x="12" y="-12" />
+            </Anchor>
+          </Anchors>
+        </DynamicImage>
+        
+      </Windows>
+    </Window>
+    
+    
+    <Window name="TidyRollAnchor" movable="false" popable="false" layer="background" savesettings="true" handleinput="false" >
+      <Size>
+        <AbsPoint x="64" y="87" />
+      </Size>
+      <Anchors>
+        <Anchor point="center" relativePoint="center" relativeTo="Root">
+          <AbsPoint x="0" y="0"/>
+        </Anchor>
+      </Anchors>
+    </Window>
+    
+    
+    <Window name="TidyRollTimer" movable="false" popable="false" layer="background" savesettings="false" handleinput="false" >
+      <EventHandlers>
+        <EventHandler event="OnUpdate" function="TidyRoll.OnUpdate" />
+      </EventHandlers>
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft" relativeTo="Root">
+          <AbsPoint x="0" y="0"/>
+        </Anchor>
+      </Anchors>
+    </Window>
+    
+    
+    <Window name="TidyRollEsc" movable="false" popable="false" layer="background" savesettings="false" >
+      <EventHandlers>
+        <EventHandler event="OnShown" function="WindowUtils.OnShown" />
+        <EventHandler event="OnHidden" function="TidyRoll.OnEsc" />
+      </EventHandlers>
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft" relativeTo="Root">
+          <AbsPoint x="0" y="0"/>
+        </Anchor>
+      </Anchors>
+    </Window>
+    
+    
+    <Window name="TidyRollOptions" inherits="EA_Window_DefaultContextMenuFrame"  movable="true" popable="false" layer="default" savesettings="false" handleinput="true" >
+      <Size>
+        <AbsPoint x="400" y="650" />
+      </Size>
+      <Anchors>
+        <Anchor point="center" relativePoint="center" relativeTo="Root">
+          <AbsPoint x="0" y="0"/>
+        </Anchor>
+      </Anchors>
+      <EventHandlers>
+        <EventHandler event="OnShown" function="TidyRollOptions.OnShown" />
+        <EventHandler event="OnHidden" function="TidyRollOptions.OnHidden" />
+      </EventHandlers>
+    </Window>
+    
+    
+  </Windows>
+</Interface>

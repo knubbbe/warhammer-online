@@ -1,0 +1,9 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Assets>
+    
+    <Texture name="TidyRoll_SquareFrame" file="Textures/Tidy_roll_square_frame.dds" />
+    <Texture name="TidyRoll_SquareFrame_Highlight" file="Textures/Tidy_roll_square_frame_highlight.dds" />
+    <Texture name="recharge_flash_anim" file="Textures/recharged_square.DDS" />
+    
+  </Assets>
+</Interface>
