@@ -4,11 +4,11 @@ TexturedButtons.Settings =
 	{
 		HideActive = false,
 		SaveQuicklock = false,
-		CustomGlow = 2,
-		HideQuicklock = false,
-		HideGlow = false,
-		ActionButtonPickUpModifier = 32,
 		CooldownPulse = true,
+		HideQuicklock = false,
+		ActionButtonPickUpModifier = 32,
+		CustomGlow = 2,
+		HideGlow = false,
 	},
 	AdvancedTextures = 
 	{
@@ -21,33 +21,33 @@ TexturedButtons.Settings =
 		Enabled = true,
 		Disabled = 
 		{
-			B = 150,
-			G = 150,
 			R = 150,
-		},
-		EnabledInvalid = 
-		{
-			B = 0,
-			G = 0,
-			R = 200,
-		},
-		DisabledInvalid = 
-		{
-			B = 0,
-			G = 0,
-			R = 100,
+			G = 150,
+			B = 150,
 		},
 		EnabledValid = 
 		{
-			B = 255,
-			G = 255,
 			R = 255,
+			G = 255,
+			B = 255,
+		},
+		DisabledInvalid = 
+		{
+			R = 100,
+			G = 0,
+			B = 0,
+		},
+		EnabledInvalid = 
+		{
+			R = 200,
+			G = 0,
+			B = 0,
 		},
 		OnCooldown = 
 		{
-			B = 100,
-			G = 100,
 			R = 100,
+			G = 100,
+			B = 100,
 		},
 	},
 	Preset = 
@@ -66,12 +66,12 @@ TexturedButtons.Settings =
 					Y = 0,
 					X = 0,
 				},
+				HideBackground = false,
 				Padding = 
 				{
 					Y = 5,
 					X = 6,
 				},
-				HideBackground = false,
 				HideEmpty = false,
 				PageSelector = 43,
 			},
@@ -84,9 +84,9 @@ TexturedButtons.Settings =
 		{
 			Color = 
 			{
-				B = 0,
-				G = 255,
 				R = 255,
+				G = 255,
+				B = 0,
 			},
 			Font = "font_clear_large_bold",
 			Hide = false,
@@ -95,9 +95,9 @@ TexturedButtons.Settings =
 		{
 			Color = 
 			{
-				B = 255,
-				G = 255,
 				R = 255,
+				G = 255,
+				B = 255,
 			},
 			Font = "font_clear_medium_bold",
 			Hide = false,
@@ -110,14 +110,14 @@ TexturedButtons.Settings =
 		RemoveS = true,
 		EnableButtonTinting = true,
 		HideFlash = true,
+		ShowGlobalCooldownText = false,
+		Alpha = 0.8,
 		Tint = 
 		{
-			B = 0,
-			G = 0,
 			R = 0,
+			G = 0,
+			B = 0,
 		},
-		Alpha = 0.8,
-		ShowGlobalCooldownText = false,
 	},
 	Custom = 
 	{

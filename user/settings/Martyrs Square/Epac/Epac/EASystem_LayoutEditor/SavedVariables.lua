@@ -175,6 +175,11 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
+	Options = 
+	{
+		snapDistance = 20,
+		snapWindowsEnabled = true,
+	},
 	BattlegroupHUDGroup1LayoutWindow = 
 	{
 		locked = false,
@@ -190,10 +195,10 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	Options = 
+	FloatingScenarioGroup2Window = 
 	{
-		snapDistance = 20,
-		snapWindowsEnabled = true,
+		locked = false,
+		hidden = false,
 	},
 	EA_GrantedAbilities = 
 	{
@@ -215,11 +220,6 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup2Window = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	EnemyCombatLogTargetDefeseWindow = 
 	{
 		locked = false,
@@ -231,6 +231,11 @@ LayoutEditor.Settings =
 		hidden = false,
 	},
 	LIBGUI_Label43 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	LIBGUI_Image31 = 
 	{
 		locked = false,
 		hidden = false,
@@ -255,17 +260,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Image31 = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	EA_Window_WinOMeter = 
 	{
 		locked = false,
 		hidden = false,
 	},
 	FloatingScenarioGroup5Window = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	PureTargetUnitFrameFriendly = 
 	{
 		locked = false,
 		hidden = false,
@@ -285,12 +290,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	MenuBarWindow = 
+	RpBarWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	PureTargetUnitFrameFriendly = 
+	LIBGUI_Label44 = 
 	{
 		locked = false,
 		hidden = false,
@@ -300,7 +305,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	RpBarWindow = 
+	EA_AssistWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -310,12 +315,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_AssistWindow = 
+	EA_CareerResourceWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EnemyTarget = 
+	RoR_SoR_Button = 
 	{
 		locked = false,
 		hidden = false,
@@ -325,17 +330,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_CareerResourceWindow = 
+	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Window10 = 
+	MenuBarWindow = 
 	{
 		locked = false,
-		hidden = true,
+		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	EA_Window_QuestTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -345,12 +350,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	LIBGUI_Label44 = 
+	LIBGUI_Window10 = 
+	{
+		locked = false,
+		hidden = true,
+	},
+	EA_Window_ZoneControl = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_ZoneControl = 
+	PureTargetUnitFrameHostile = 
 	{
 		locked = false,
 		hidden = false,
@@ -360,12 +370,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTrackerNub = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	PureTargetUnitFrameHostile = 
+	Moth = 
 	{
 		locked = false,
 		hidden = false,
@@ -385,7 +390,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	Moth = 
+	PurePlayerUnitFrame = 
 	{
 		locked = false,
 		hidden = false,
@@ -405,7 +410,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	PurePlayerUnitFrame = 
+	RoR_SoR_Main_Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -440,12 +445,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTracker = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	RoR_SoR_Button = 
+	EnemyTarget = 
 	{
 		locked = false,
 		hidden = false,

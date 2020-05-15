@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="RpBarWindow" sizeX="522.000000" sizeY="16.000000" movable="false" alpha="0.559083" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="22.999998" yOffset="11.999999" />
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="8.000000" yOffset="11.000000" />
             </Anchors>
         </WindowSettings>
     </Windows>

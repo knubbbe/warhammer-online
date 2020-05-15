@@ -3,10 +3,10 @@ RoR_SoR.Settings =
 	Offset = 1,
 	ShowT1 = true,
 	HideScenario = false,
-	DrawBackground = true,
-	ShowPairings = true,
-	OnlyActive = true,
+	Enabled = false,
 	ShowBONames = true,
+	OnlyActive = true,
+	ShowPairings = true,
 	HideCombat = true,
 	StackDir = 1,
 	Version = 121,
@@ -15,7 +15,7 @@ RoR_SoR.Settings =
 	ShowForts = true,
 	ShowUnclaimed = true,
 	ShowCity = false,
-	Enabled = false,
+	DrawBackground = true,
 }
 
 

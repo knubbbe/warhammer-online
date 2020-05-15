@@ -1,7 +1,7 @@
 EA_Window_QuestTracker.Settings = 
 {
-	fadeTime = 1800,
 	fadeAlpha = 0.7,
+	fadeTime = 1800,
 	fadeData = 
 	{
 	},

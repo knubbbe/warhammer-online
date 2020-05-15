@@ -67,7 +67,7 @@
                 <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="443.999969" yOffset="-223.999969" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="EnemyTarget" sizeX="300.000000" sizeY="32.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+        <WindowSettings xmlVersion="1.0" name="EnemyTarget" sizeX="300.000000" sizeY="32.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
                 <WindowAnchor xmlVersion="1.0" point="bottom" relativePoint="bottom" relativeTo="Root" xOffset="428.333282" yOffset="-237.000153" />
             </Anchors>
