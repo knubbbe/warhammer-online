@@ -30,7 +30,7 @@ ClosetGoblin.setData =
 					
 					{
 						showCloakHeraldry = false,
-						tactics = L"x",
+						tactics = L"1",
 						name = L"2H",
 						showHelm = false,
 						showCloak = false,
@@ -169,7 +169,7 @@ ClosetGoblin.setData =
 					
 					{
 						showCloakHeraldry = false,
-						tactics = L"x",
+						tactics = L"1",
 						name = L"Shield",
 						showHelm = false,
 						showCloak = false,

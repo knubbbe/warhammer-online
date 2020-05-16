@@ -3,16 +3,17 @@ GuildWindow.SavedSettings =
 	[3] = 
 	{
 		sortOrder = 2,
-		sortButton = 4,
 		sortFilter = 1,
+		sortButton = 4,
 	},
+	SelectedTab = 7,
 }
 
 
 
 GuildWindowTabRecruit.Settings = 
 {
-	selectedBottomTab = 1,
+	selectedBottomTab = 2,
 }
 
 

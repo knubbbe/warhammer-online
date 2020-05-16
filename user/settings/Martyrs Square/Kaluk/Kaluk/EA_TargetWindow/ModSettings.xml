@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="1.0" messagingEnabled="false">
+    <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="" savedVariablesVersion="" />
+    <Windows>
+        <WindowSettings xmlVersion="1.0" name="FriendlyTargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
+            <Anchors />
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="PrimaryTargetLayoutWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="39.000000" yOffset="186.757996" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="SecondaryTargetLayoutWindow" sizeX="265.000000" sizeY="167.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.779351" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="bottom" relativePoint="bottom" relativeTo="Root" xOffset="474.597260" yOffset="-138.848389" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
+            <Anchors />
+        </WindowSettings>
+    </Windows>
+</UiModuleSettings>

@@ -165,7 +165,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
+	TidyRollAnchor = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	EnemyCombatLogEpsWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EnemyCombatLogTargetDefeseWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -180,7 +190,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EnemyCombatLogTargetDefeseWindow = 
+	FloatingScenarioGroup2Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -200,7 +210,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Window1 = 
+	EnemyPlayerKDR = 
 	{
 		locked = false,
 		hidden = false,
@@ -225,7 +235,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EnemyPlayerKDR = 
+	BattlegroupHUDGroup2LayoutWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -240,7 +250,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	PureTargetUnitFrameHostile = 
+	EnemyCombatLogIDSAnchor = 
 	{
 		locked = false,
 		hidden = false,
@@ -250,7 +260,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	EnemyCombatLogIDSAnchor = 
+	MiracleGrow2Icon = 
 	{
 		locked = false,
 		hidden = false,
@@ -265,22 +275,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	MiracleGrow2Icon = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	FloatingScenarioGroup3Window = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	LIBGUI_Window47 = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_MoraleBar = 
 	{
 		locked = false,
 		hidden = false,
@@ -290,12 +285,22 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_CareerResourceWindowActionBar = 
+	LIBGUI_Label42 = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EnemyTarget = 
+	EA_MoraleBar = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	LIBGUI_Window47 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_CareerResourceWindowActionBar = 
 	{
 		locked = false,
 		hidden = false,
@@ -305,12 +310,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
+	WarbuilderMainWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	LIBGUI_Window16 = 
 	{
 		locked = false,
 		hidden = true,
 	},
-	WarbuilderMainWindow = 
+	EnemyTarget = 
 	{
 		locked = false,
 		hidden = false,
@@ -320,7 +330,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Label42 = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -340,12 +350,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Label44 = 
+	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	EA_Window_QuestTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -365,17 +375,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	MenuBarWindow = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_Window_QuestTrackerNub = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	RoR_SoR_Main_Window = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_ActionBar4 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	MenuBarWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -420,7 +430,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_ActionBar4 = 
+	LIBGUI_Label44 = 
 	{
 		locked = false,
 		hidden = false,
@@ -450,17 +460,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTracker = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	RpBarWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
 	PureTargetUnitFrameFriendly = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	PureTargetUnitFrameHostile = 
 	{
 		locked = false,
 		hidden = false,
@@ -490,7 +500,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	BattlegroupHUDGroup2LayoutWindow = 
+	LIBGUI_Window1 = 
 	{
 		locked = false,
 		hidden = false,
@@ -500,15 +510,15 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup2Window = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	Options = 
 	{
 		snapDistance = 10,
 		snapWindowsEnabled = true,
+	},
+	TextEntryAnchor = 
+	{
+		locked = false,
+		hidden = false,
 	},
 }
 

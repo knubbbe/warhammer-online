@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<UiModuleSettings xmlVersion="1.0" enabled="false" lastLoadedVersion="2.8.0" messagingEnabled="false">
+    <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="1.0" savedVariablesVersion="1.0" />
+    <Windows>
+        <WindowSettings xmlVersion="1.0" name="EnemyCombatLogEpsWindow" sizeX="200.000000" sizeY="140.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="226.333237" yOffset="-162.000015" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyCombatLogIDSAnchor" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="0.000000" fontAlpha="0.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-90.999977" yOffset="99.999992" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyCombatLogTargetDefeseTotalWindow" sizeX="70.000000" sizeY="30.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="0.000014" yOffset="-79.999985" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyCombatLogTargetDefeseWindow" sizeX="375.000000" sizeY="35.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.111111" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="bottomleft" relativePoint="bottomleft" relativeTo="Root" xOffset="-1.111111" yOffset="-265.595123" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyGuardDistanceIndicator" sizeX="100.000000" sizeY="100.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="311.391235" yOffset="261.584503" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyIcon" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-25.000027" yOffset="267.999969" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyKillSpamDialog" sizeX="375.000000" sizeY="240.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="357.722107" yOffset="-123.555557" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyKilledBy" sizeX="1000.000000" sizeY="50.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="0.000001" yOffset="150.000015" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyMarksWindow" sizeX="178.000000" sizeY="52.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-0.000028" yOffset="-0.000012" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyPlayerKDR" sizeX="50.000000" sizeY="30.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="55.115238" yOffset="247.662720" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyScenarioInfoDialog" sizeX="1000.000000" sizeY="830.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="0.000000" yOffset="0.000000" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyTalismanAlerterIndicator" sizeX="100.000000" sizeY="100.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="411.391235" yOffset="261.584503" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyTarget" sizeX="300.000000" sizeY="32.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="299.999817" yOffset="284.000000" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyTimer" sizeX="150.000000" sizeY="30.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-45.000111" yOffset="-277.000061" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyUnitFramesAnchor1" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="0.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="0.000000" yOffset="284.000000" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="EnemyUnitFramesAnchor2" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="0.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-0.000013" yOffset="-0.000012" />
+            </Anchors>
+        </WindowSettings>
+    </Windows>
+</UiModuleSettings>

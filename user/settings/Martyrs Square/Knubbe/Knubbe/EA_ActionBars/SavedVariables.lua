@@ -42,9 +42,17 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4583,
 		},
-		[1824] = 
+		[1532] = 
 		{
-			icon = 2478,
+			icon = 4652,
+		},
+		[1363] = 
+		{
+			icon = 4515,
+		},
+		[1656] = 
+		{
+			icon = 4647,
 		},
 		[1821] = 
 		{
@@ -78,9 +86,9 @@ EA_ActionBars_DataCache =
 		{
 			icon = 2582,
 		},
-		[1] = 
+		[1904] = 
 		{
-			icon = 2626,
+			icon = 2466,
 		},
 		[1353] = 
 		{
@@ -106,17 +114,17 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4462,
 		},
-		[1826] = 
+		[245] = 
 		{
-			icon = 2593,
+			icon = 5004,
 		},
 		[1822] = 
 		{
 			icon = 2625,
 		},
-		[1511] = 
+		[1826] = 
 		{
-			icon = 4602,
+			icon = 2593,
 		},
 		[1515] = 
 		{
@@ -138,13 +146,13 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4616,
 		},
-		[1830] = 
+		[1522] = 
 		{
-			icon = 2599,
+			icon = 4610,
 		},
-		[1930] = 
+		[1539] = 
 		{
-			icon = 2464,
+			icon = 4476,
 		},
 		[1354] = 
 		{
@@ -154,9 +162,9 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4409,
 		},
-		[1901] = 
+		[14418] = 
 		{
-			icon = 2576,
+			icon = 23405,
 		},
 		[1903] = 
 		{
@@ -166,21 +174,21 @@ EA_ActionBars_DataCache =
 		{
 			icon = 2475,
 		},
-		[1508] = 
+		[1900] = 
 		{
-			icon = 4460,
+			icon = 2575,
 		},
 		[1378] = 
 		{
 			icon = 4421,
 		},
-		[1823] = 
+		[1508] = 
 		{
-			icon = 2613,
+			icon = 4460,
 		},
-		[1910] = 
+		[1512] = 
 		{
-			icon = 2472,
+			icon = 4603,
 		},
 		[1516] = 
 		{
@@ -198,13 +206,13 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4608,
 		},
-		[1532] = 
+		[1910] = 
 		{
-			icon = 4652,
+			icon = 2472,
 		},
-		[1900] = 
+		[1823] = 
 		{
-			icon = 2575,
+			icon = 2613,
 		},
 		[1918] = 
 		{
@@ -214,33 +222,137 @@ EA_ActionBars_DataCache =
 		{
 			icon = 2414,
 		},
-		[14418] = 
+		[1901] = 
 		{
-			icon = 23405,
+			icon = 2576,
 		},
-		[1363] = 
+		[1930] = 
 		{
-			icon = 4515,
+			icon = 2464,
 		},
-		[1522] = 
+		[1830] = 
 		{
-			icon = 4610,
+			icon = 2599,
 		},
-		[245] = 
+		[1511] = 
 		{
-			icon = 5004,
+			icon = 4602,
 		},
-		[1904] = 
+		[1] = 
 		{
-			icon = 2466,
+			icon = 2626,
 		},
-		[1656] = 
+		[1824] = 
 		{
-			icon = 4647,
+			icon = 2478,
 		},
 	},
 	
 	{
+		[157883] = 
+		{
+			icon = 476,
+			itemData = 
+			{
+				description = L"",
+				renown = 0,
+				maxEquip = 0,
+				slots = 
+				{
+				},
+				equipSlot = 0,
+				races = 
+				{
+				},
+				tintB = 0,
+				speed = 0,
+				decayPaused = false,
+				timeLeftBeforeDecay = 0,
+				blockRating = 0,
+				iconNum = 476,
+				rarity = 3,
+				isTwoHanded = false,
+				marketingVariation = 0,
+				flags = 
+				{
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false, 
+					[0] = false,
+				},
+				name = L"Elixir of Allaying",
+				broken = false,
+				timestamp = 2993,
+				customizedIconNum = 0,
+				marketingIndex = 0,
+				capacity = 40,
+				craftingSkillRequirement = 0,
+				level = 1,
+				uniqueID = 157883,
+				armor = 0,
+				dyeTintB = 0,
+				sellPrice = 30,
+				cultivationType = 0,
+				iLevel = 4,
+				dyeTintA = 0,
+				tintA = 0,
+				tier = 0,
+				numEnhancementSlots = 0,
+				trophyLocation = 0,
+				enhSlot = 
+				{
+				},
+				bonus = 
+				{
+					[1] = 
+					{
+						type = 3,
+						value = 0,
+						cooldownTimeLeft = 0,
+						reference = 7881,
+						totalCooldownTime = 180,
+					},
+				},
+				currChargesRemaining = 0,
+				type = 31,
+				boundToPlayer = false,
+				customizedIconName = L"",
+				id = 714,
+				dps = 0,
+				craftingBonus = 
+				{
+				},
+				trophyLocIndex = 1,
+				careers = 
+				{
+				},
+				isNew = false,
+				bop = false,
+				noChargeLeftDontDelete = 0,
+				stackCount = 1,
+				itemSet = 0,
+				isRefinable = false,
+				skills = 
+				{
+				},
+			},
+		},
 		[186803] = 
 		{
 			icon = 20233,
@@ -291,7 +403,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Iron Contraption",
 				broken = false,
-				timestamp = 15,
+				timestamp = 12,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -346,110 +458,6 @@ EA_ActionBars_DataCache =
 				capacity = 1,
 			},
 		},
-		[3000000] = 
-		{
-			icon = 476,
-			itemData = 
-			{
-				description = L"",
-				renown = 0,
-				maxEquip = 0,
-				slots = 
-				{
-				},
-				equipSlot = 0,
-				races = 
-				{
-				},
-				tintB = 0,
-				speed = 0,
-				decayPaused = false,
-				timeLeftBeforeDecay = 0,
-				blockRating = 0,
-				iconNum = 476,
-				rarity = 3,
-				isTwoHanded = false,
-				marketingVariation = 0,
-				flags = 
-				{
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false, 
-					[0] = false,
-				},
-				name = L"Fleeting Elixir of Allaying",
-				broken = false,
-				timestamp = 10,
-				customizedIconNum = 0,
-				marketingIndex = 0,
-				capacity = 40,
-				craftingSkillRequirement = 0,
-				level = 1,
-				uniqueID = 3000000,
-				armor = 0,
-				dyeTintB = 0,
-				sellPrice = 30,
-				cultivationType = 0,
-				iLevel = 4,
-				dyeTintA = 0,
-				tintA = 0,
-				tier = 0,
-				numEnhancementSlots = 0,
-				trophyLocation = 0,
-				enhSlot = 
-				{
-				},
-				bonus = 
-				{
-					[1] = 
-					{
-						type = 3,
-						value = 0,
-						cooldownTimeLeft = 0,
-						reference = 7879,
-						totalCooldownTime = 180,
-					},
-				},
-				currChargesRemaining = 0,
-				type = 31,
-				boundToPlayer = false,
-				customizedIconName = L"",
-				id = 714,
-				dps = 0,
-				craftingBonus = 
-				{
-				},
-				trophyLocIndex = 1,
-				careers = 
-				{
-				},
-				isNew = false,
-				bop = false,
-				noChargeLeftDontDelete = 0,
-				stackCount = 36,
-				itemSet = 0,
-				isRefinable = false,
-				skills = 
-				{
-				},
-			},
-		},
 		[186850] = 
 		{
 			icon = 20238,
@@ -502,23 +510,19 @@ EA_ActionBars_DataCache =
 				timestamp = 3234,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				skills = 
-				{
-				},
+				capacity = 1,
 				craftingSkillRequirement = 0,
-				itemSet = 0,
+				level = 2,
 				uniqueID = 186850,
-				stackCount = 1,
-				noChargeLeftDontDelete = 0,
+				armor = 0,
+				dyeTintB = 0,
 				sellPrice = 0,
-				bop = false,
-				isNew = false,
+				cultivationType = 0,
+				iLevel = 2,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -540,7 +544,9 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 9349,
 				dps = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocIndex = 1,
 				careers = 
 				{
@@ -556,18 +562,124 @@ EA_ActionBars_DataCache =
 					23,
 					24,
 				},
-				iLevel = 2,
+				isNew = false,
+				bop = false,
+				noChargeLeftDontDelete = 0,
+				stackCount = 1,
+				itemSet = 0,
+				isRefinable = false,
+				skills = 
+				{
+				},
+			},
+		},
+		[11919] = 
+		{
+			icon = 327,
+			itemData = 
+			{
+				description = L"Use to return to your rally point. You can set your rally point by talking to the Rally Master in any chapter area.",
+				renown = 0,
+				maxEquip = 1,
+				slots = 
+				{
+				},
+				equipSlot = 0,
+				races = 
+				{
+				},
+				tintB = 0,
+				speed = 0,
+				decayPaused = false,
+				timeLeftBeforeDecay = 0,
+				blockRating = 0,
+				iconNum = 327,
+				rarity = 6,
+				isTwoHanded = false,
+				marketingVariation = 0,
+				flags = 
+				{
+					false,
+					true,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false, 
+					[0] = false,
+				},
+				name = L"Book of Binding",
+				broken = false,
+				timestamp = 12,
+				customizedIconNum = 0,
+				marketingIndex = 0,
+				skills = 
+				{
+				},
+				craftingSkillRequirement = 0,
+				itemSet = 0,
+				uniqueID = 11919,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
+				sellPrice = 0,
+				bop = false,
+				isNew = false,
+				dyeTintA = 0,
+				tintA = 0,
+				tier = 0,
+				craftingBonus = 
+				{
+				},
+				trophyLocation = 0,
+				enhSlot = 
+				{
+				},
+				bonus = 
+				{
+					[1] = 
+					{
+						type = 3,
+						value = 0,
+						cooldownTimeLeft = 2632.877,
+						reference = 246,
+						totalCooldownTime = 3600,
+					},
+				},
+				currChargesRemaining = 0,
+				type = 0,
+				boundToPlayer = false,
+				customizedIconName = L"",
+				id = 531,
+				dps = 0,
+				numEnhancementSlots = 0,
+				trophyLocIndex = 1,
+				careers = 
+				{
+				},
+				iLevel = 0,
 				cultivationType = 0,
 				dyeTintB = 0,
 				armor = 0,
-				level = 2,
+				level = 0,
 				isRefinable = false,
 				capacity = 1,
 			},
 		},
-		[157863] = 
+		[190472] = 
 		{
-			icon = 454,
+			icon = 512,
 			itemData = 
 			{
 				description = L"",
@@ -585,14 +697,14 @@ EA_ActionBars_DataCache =
 				decayPaused = false,
 				timeLeftBeforeDecay = 0,
 				blockRating = 0,
-				iconNum = 454,
-				rarity = 3,
+				iconNum = 512,
+				rarity = 2,
 				isTwoHanded = false,
 				marketingVariation = 0,
 				flags = 
 				{
 					false,
-					false,
+					true,
 					false,
 					false,
 					false,
@@ -612,20 +724,20 @@ EA_ActionBars_DataCache =
 					false, 
 					[0] = false,
 				},
-				name = L"Draught of Respite",
+				name = L"Initiate's Warming Draught",
 				broken = false,
-				timestamp = 1283,
+				timestamp = 22,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				capacity = 40,
 				craftingSkillRequirement = 0,
-				level = 10,
-				uniqueID = 157863,
+				level = 1,
+				uniqueID = 190472,
 				armor = 0,
 				dyeTintB = 0,
 				sellPrice = 30,
 				cultivationType = 0,
-				iLevel = 12,
+				iLevel = 1,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
@@ -641,15 +753,15 @@ EA_ActionBars_DataCache =
 						type = 3,
 						value = 0,
 						cooldownTimeLeft = 0,
-						reference = 7872,
-						totalCooldownTime = 180,
+						reference = 7092,
+						totalCooldownTime = 60,
 					},
 				},
 				currChargesRemaining = 0,
-				type = 31,
+				type = 0,
 				boundToPlayer = false,
 				customizedIconName = L"",
-				id = 692,
+				id = 750,
 				dps = 0,
 				craftingBonus = 
 				{
@@ -667,110 +779,6 @@ EA_ActionBars_DataCache =
 				skills = 
 				{
 				},
-			},
-		},
-		[157862] = 
-		{
-			icon = 453,
-			itemData = 
-			{
-				description = L"",
-				renown = 0,
-				maxEquip = 0,
-				slots = 
-				{
-				},
-				equipSlot = 0,
-				races = 
-				{
-				},
-				tintB = 0,
-				speed = 0,
-				decayPaused = false,
-				timeLeftBeforeDecay = 0,
-				blockRating = 0,
-				iconNum = 453,
-				rarity = 3,
-				isTwoHanded = false,
-				marketingVariation = 0,
-				flags = 
-				{
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false, 
-					[0] = false,
-				},
-				name = L"Draught of Balming",
-				broken = false,
-				timestamp = 19,
-				customizedIconNum = 0,
-				marketingIndex = 0,
-				skills = 
-				{
-				},
-				craftingSkillRequirement = 0,
-				itemSet = 0,
-				uniqueID = 157862,
-				stackCount = 1,
-				noChargeLeftDontDelete = 0,
-				sellPrice = 30,
-				bop = false,
-				isNew = false,
-				dyeTintA = 0,
-				tintA = 0,
-				tier = 0,
-				craftingBonus = 
-				{
-				},
-				trophyLocation = 0,
-				enhSlot = 
-				{
-				},
-				bonus = 
-				{
-					[1] = 
-					{
-						type = 3,
-						value = 0,
-						cooldownTimeLeft = 0,
-						reference = 7872,
-						totalCooldownTime = 180,
-					},
-				},
-				currChargesRemaining = 0,
-				type = 31,
-				boundToPlayer = false,
-				customizedIconName = L"",
-				id = 691,
-				dps = 0,
-				numEnhancementSlots = 0,
-				trophyLocIndex = 1,
-				careers = 
-				{
-				},
-				iLevel = 8,
-				cultivationType = 0,
-				dyeTintB = 0,
-				armor = 0,
-				level = 5,
-				isRefinable = false,
-				capacity = 40,
 			},
 		},
 		[190471] = 
@@ -825,23 +833,19 @@ EA_ActionBars_DataCache =
 				timestamp = 3236,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				skills = 
-				{
-				},
+				capacity = 40,
 				craftingSkillRequirement = 0,
-				itemSet = 0,
+				level = 1,
 				uniqueID = 190471,
-				stackCount = 1,
-				noChargeLeftDontDelete = 0,
+				armor = 0,
+				dyeTintB = 0,
 				sellPrice = 30,
-				bop = false,
-				isNew = false,
+				cultivationType = 0,
+				iLevel = 1,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -863,23 +867,27 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 690,
 				dps = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				iLevel = 1,
-				cultivationType = 0,
-				dyeTintB = 0,
-				armor = 0,
-				level = 1,
+				isNew = false,
+				bop = false,
+				noChargeLeftDontDelete = 0,
+				stackCount = 1,
+				itemSet = 0,
 				isRefinable = false,
-				capacity = 40,
+				skills = 
+				{
+				},
 			},
 		},
-		[3000055] = 
+		[157863] = 
 		{
-			icon = 476,
+			icon = 454,
 			itemData = 
 			{
 				description = L"",
@@ -897,8 +905,8 @@ EA_ActionBars_DataCache =
 				decayPaused = false,
 				timeLeftBeforeDecay = 0,
 				blockRating = 0,
-				iconNum = 476,
-				rarity = 4,
+				iconNum = 454,
+				rarity = 3,
 				isTwoHanded = false,
 				marketingVariation = 0,
 				flags = 
@@ -924,24 +932,28 @@ EA_ActionBars_DataCache =
 					false, 
 					[0] = false,
 				},
-				name = L"Potent Fleeting Elixir of Allaying",
+				name = L"Draught of Respite",
 				broken = false,
-				timestamp = 1737,
+				timestamp = 113,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				capacity = 40,
+				skills = 
+				{
+				},
 				craftingSkillRequirement = 0,
-				level = 1,
-				uniqueID = 3000055,
-				armor = 0,
-				dyeTintB = 0,
-				sellPrice = 45,
-				cultivationType = 0,
-				iLevel = 5,
+				itemSet = 0,
+				uniqueID = 157863,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
+				sellPrice = 30,
+				bop = false,
+				isNew = false,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -953,7 +965,7 @@ EA_ActionBars_DataCache =
 						type = 3,
 						value = 0,
 						cooldownTimeLeft = 0,
-						reference = 7884,
+						reference = 7872,
 						totalCooldownTime = 180,
 					},
 				},
@@ -961,24 +973,20 @@ EA_ActionBars_DataCache =
 				type = 31,
 				boundToPlayer = false,
 				customizedIconName = L"",
-				id = 714,
+				id = 692,
 				dps = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				isNew = false,
-				bop = false,
-				noChargeLeftDontDelete = 0,
-				stackCount = 1,
-				itemSet = 0,
+				iLevel = 12,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 10,
 				isRefinable = false,
-				skills = 
-				{
-				},
+				capacity = 40,
 			},
 		},
 		[190473] = 
@@ -1033,23 +1041,19 @@ EA_ActionBars_DataCache =
 				timestamp = 2797,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				skills = 
-				{
-				},
+				capacity = 5,
 				craftingSkillRequirement = 0,
-				itemSet = 0,
+				level = 1,
 				uniqueID = 190473,
-				stackCount = 3,
-				noChargeLeftDontDelete = 0,
+				armor = 0,
+				dyeTintB = 0,
 				sellPrice = 30,
-				bop = false,
-				isNew = false,
+				cultivationType = 0,
+				iLevel = 2,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -1071,18 +1075,22 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 714,
 				dps = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				iLevel = 2,
-				cultivationType = 0,
-				dyeTintB = 0,
-				armor = 0,
-				level = 1,
+				isNew = false,
+				bop = false,
+				noChargeLeftDontDelete = 0,
+				stackCount = 3,
+				itemSet = 0,
 				isRefinable = false,
-				capacity = 5,
+				skills = 
+				{
+				},
 			},
 		},
 		[157825] = 
@@ -1137,19 +1145,23 @@ EA_ActionBars_DataCache =
 				timestamp = 1737,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				capacity = 40,
+				skills = 
+				{
+				},
 				craftingSkillRequirement = 0,
-				level = 1,
+				itemSet = 0,
 				uniqueID = 157825,
-				armor = 0,
-				dyeTintB = 0,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
 				sellPrice = 30,
-				cultivationType = 0,
-				iLevel = 4,
+				bop = false,
+				isNew = false,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -1171,22 +1183,18 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 750,
 				dps = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				isNew = false,
-				bop = false,
-				noChargeLeftDontDelete = 0,
-				stackCount = 1,
-				itemSet = 0,
+				iLevel = 4,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 1,
 				isRefinable = false,
-				skills = 
-				{
-				},
+				capacity = 40,
 			},
 		},
 		[186849] = 
@@ -1244,19 +1252,23 @@ EA_ActionBars_DataCache =
 				timestamp = 10,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				capacity = 1,
+				skills = 
+				{
+				},
 				craftingSkillRequirement = 0,
-				level = 2,
+				itemSet = 0,
 				uniqueID = 186849,
-				armor = 0,
-				dyeTintB = 0,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
 				sellPrice = 0,
-				cultivationType = 0,
-				iLevel = 2,
+				bop = false,
+				isNew = false,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -1278,22 +1290,18 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 9348,
 				dps = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				isNew = false,
-				bop = false,
-				noChargeLeftDontDelete = 0,
-				stackCount = 1,
-				itemSet = 0,
+				iLevel = 2,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 2,
 				isRefinable = false,
-				skills = 
-				{
-				},
+				capacity = 1,
 			},
 		},
 		[157861] = 
@@ -1348,19 +1356,23 @@ EA_ActionBars_DataCache =
 				timestamp = 1737,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				capacity = 40,
+				skills = 
+				{
+				},
 				craftingSkillRequirement = 0,
-				level = 1,
+				itemSet = 0,
 				uniqueID = 157861,
-				armor = 0,
-				dyeTintB = 0,
+				stackCount = 2,
+				noChargeLeftDontDelete = 0,
 				sellPrice = 30,
-				cultivationType = 0,
-				iLevel = 4,
+				bop = false,
+				isNew = false,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -1382,22 +1394,18 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 690,
 				dps = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				isNew = false,
-				bop = false,
-				noChargeLeftDontDelete = 0,
-				stackCount = 2,
-				itemSet = 0,
+				iLevel = 4,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 1,
 				isRefinable = false,
-				skills = 
-				{
-				},
+				capacity = 40,
 			},
 		},
 		[157873] = 
@@ -1452,19 +1460,23 @@ EA_ActionBars_DataCache =
 				timestamp = 10,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				capacity = 40,
+				skills = 
+				{
+				},
 				craftingSkillRequirement = 0,
-				level = 1,
+				itemSet = 0,
 				uniqueID = 157873,
-				armor = 0,
-				dyeTintB = 0,
+				stackCount = 4,
+				noChargeLeftDontDelete = 0,
 				sellPrice = 30,
-				cultivationType = 0,
-				iLevel = 4,
+				bop = false,
+				isNew = false,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -1486,22 +1498,18 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 750,
 				dps = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				isNew = false,
-				bop = false,
-				noChargeLeftDontDelete = 0,
-				stackCount = 4,
-				itemSet = 0,
+				iLevel = 4,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 1,
 				isRefinable = false,
-				skills = 
-				{
-				},
+				capacity = 40,
 			},
 		},
 		[157890] = 
@@ -1556,19 +1564,23 @@ EA_ActionBars_DataCache =
 				timestamp = 157,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				capacity = 40,
+				skills = 
+				{
+				},
 				craftingSkillRequirement = 0,
-				level = 5,
+				itemSet = 0,
 				uniqueID = 157890,
-				armor = 0,
-				dyeTintB = 0,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
 				sellPrice = 30,
-				cultivationType = 0,
-				iLevel = 8,
+				bop = false,
+				isNew = false,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -1590,27 +1602,23 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 715,
 				dps = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				isNew = false,
-				bop = false,
-				noChargeLeftDontDelete = 0,
-				stackCount = 1,
-				itemSet = 0,
+				iLevel = 8,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 5,
 				isRefinable = false,
-				skills = 
-				{
-				},
+				capacity = 40,
 			},
 		},
-		[190472] = 
+		[157862] = 
 		{
-			icon = 512,
+			icon = 453,
 			itemData = 
 			{
 				description = L"",
@@ -1628,14 +1636,14 @@ EA_ActionBars_DataCache =
 				decayPaused = false,
 				timeLeftBeforeDecay = 0,
 				blockRating = 0,
-				iconNum = 512,
-				rarity = 2,
+				iconNum = 453,
+				rarity = 3,
 				isTwoHanded = false,
 				marketingVariation = 0,
 				flags = 
 				{
 					false,
-					true,
+					false,
 					false,
 					false,
 					false,
@@ -1655,28 +1663,24 @@ EA_ActionBars_DataCache =
 					false, 
 					[0] = false,
 				},
-				name = L"Initiate's Warming Draught",
+				name = L"Draught of Balming",
 				broken = false,
-				timestamp = 22,
+				timestamp = 19,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				skills = 
-				{
-				},
+				capacity = 40,
 				craftingSkillRequirement = 0,
-				itemSet = 0,
-				uniqueID = 190472,
-				stackCount = 1,
-				noChargeLeftDontDelete = 0,
+				level = 5,
+				uniqueID = 157862,
+				armor = 0,
+				dyeTintB = 0,
 				sellPrice = 30,
-				bop = false,
-				isNew = false,
+				cultivationType = 0,
+				iLevel = 8,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -1688,38 +1692,42 @@ EA_ActionBars_DataCache =
 						type = 3,
 						value = 0,
 						cooldownTimeLeft = 0,
-						reference = 7092,
-						totalCooldownTime = 60,
+						reference = 7872,
+						totalCooldownTime = 180,
 					},
 				},
 				currChargesRemaining = 0,
-				type = 0,
+				type = 31,
 				boundToPlayer = false,
 				customizedIconName = L"",
-				id = 750,
+				id = 691,
 				dps = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				iLevel = 1,
-				cultivationType = 0,
-				dyeTintB = 0,
-				armor = 0,
-				level = 1,
+				isNew = false,
+				bop = false,
+				noChargeLeftDontDelete = 0,
+				stackCount = 1,
+				itemSet = 0,
 				isRefinable = false,
-				capacity = 40,
+				skills = 
+				{
+				},
 			},
 		},
-		[11919] = 
+		[3000055] = 
 		{
-			icon = 327,
+			icon = 476,
 			itemData = 
 			{
-				description = L"Use to return to your rally point. You can set your rally point by talking to the Rally Master in any chapter area.",
+				description = L"",
 				renown = 0,
-				maxEquip = 1,
+				maxEquip = 0,
 				slots = 
 				{
 				},
@@ -1732,14 +1740,14 @@ EA_ActionBars_DataCache =
 				decayPaused = false,
 				timeLeftBeforeDecay = 0,
 				blockRating = 0,
-				iconNum = 327,
-				rarity = 6,
+				iconNum = 476,
+				rarity = 4,
 				isTwoHanded = false,
 				marketingVariation = 0,
 				flags = 
 				{
 					false,
-					true,
+					false,
 					false,
 					false,
 					false,
@@ -1759,9 +1767,9 @@ EA_ActionBars_DataCache =
 					false, 
 					[0] = false,
 				},
-				name = L"Book of Binding",
+				name = L"Potent Fleeting Elixir of Allaying",
 				broken = false,
-				timestamp = 15,
+				timestamp = 1737,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -1769,10 +1777,10 @@ EA_ActionBars_DataCache =
 				},
 				craftingSkillRequirement = 0,
 				itemSet = 0,
-				uniqueID = 11919,
+				uniqueID = 3000055,
 				stackCount = 1,
 				noChargeLeftDontDelete = 0,
-				sellPrice = 0,
+				sellPrice = 45,
 				bop = false,
 				isNew = false,
 				dyeTintA = 0,
@@ -1792,31 +1800,31 @@ EA_ActionBars_DataCache =
 						type = 3,
 						value = 0,
 						cooldownTimeLeft = 0,
-						reference = 246,
-						totalCooldownTime = 3600,
+						reference = 7884,
+						totalCooldownTime = 180,
 					},
 				},
 				currChargesRemaining = 0,
-				type = 0,
+				type = 31,
 				boundToPlayer = false,
 				customizedIconName = L"",
-				id = 531,
+				id = 714,
 				dps = 0,
 				numEnhancementSlots = 0,
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				iLevel = 0,
+				iLevel = 5,
 				cultivationType = 0,
 				dyeTintB = 0,
 				armor = 0,
-				level = 0,
+				level = 1,
 				isRefinable = false,
-				capacity = 1,
+				capacity = 40,
 			},
 		},
-		[157883] = 
+		[3000000] = 
 		{
 			icon = 476,
 			itemData = 
@@ -1863,9 +1871,9 @@ EA_ActionBars_DataCache =
 					false, 
 					[0] = false,
 				},
-				name = L"Elixir of Allaying",
+				name = L"Fleeting Elixir of Allaying",
 				broken = false,
-				timestamp = 2993,
+				timestamp = 10,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -1873,8 +1881,8 @@ EA_ActionBars_DataCache =
 				},
 				craftingSkillRequirement = 0,
 				itemSet = 0,
-				uniqueID = 157883,
-				stackCount = 1,
+				uniqueID = 3000000,
+				stackCount = 36,
 				noChargeLeftDontDelete = 0,
 				sellPrice = 30,
 				bop = false,
@@ -1896,7 +1904,7 @@ EA_ActionBars_DataCache =
 						type = 3,
 						value = 0,
 						cooldownTimeLeft = 0,
-						reference = 7881,
+						reference = 7879,
 						totalCooldownTime = 180,
 					},
 				},
@@ -1923,9 +1931,9 @@ EA_ActionBars_DataCache =
 	}, 
 	[10] = 
 	{
-		[385] = 
+		[21] = 
 		{
-			icon = 2522,
+			icon = 4506,
 		},
 		[27] = 
 		{
@@ -1939,17 +1947,17 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4618,
 		},
-		[25] = 
+		[385] = 
 		{
-			icon = 4569,
+			icon = 2522,
 		},
 		[22] = 
 		{
 			icon = 4477,
 		},
-		[21] = 
+		[25] = 
 		{
-			icon = 4506,
+			icon = 4569,
 		},
 	},
 	[9] = 
@@ -1965,6 +1973,21 @@ EA_ActionBars_DataCache =
 		[6] = 
 		{
 			icon = 54,
+		},
+	},
+	[4] = 
+	{
+		[2] = 
+		{
+			icon = 210,
+		},
+		[3] = 
+		{
+			icon = 205,
+		},
+		[4] = 
+		{
+			icon = 208,
 		},
 	},
 	[7] = 
@@ -1984,21 +2007,6 @@ EA_ActionBars_DataCache =
 		[6] = 
 		{
 			icon = 285,
-		},
-	},
-	[4] = 
-	{
-		[2] = 
-		{
-			icon = 210,
-		},
-		[3] = 
-		{
-			icon = 205,
-		},
-		[4] = 
-		{
-			icon = 208,
 		},
 	},
 }

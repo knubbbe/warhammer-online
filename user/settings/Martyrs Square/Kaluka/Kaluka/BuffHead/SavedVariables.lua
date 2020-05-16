@@ -32,25 +32,6 @@ BuffHead.Settings =
 			},
 			Permanent = false,
 		},
-		Hostile = 
-		{
-			Enabled = true,
-			Debuffs = 2,
-			Permanent = false,
-			AlwaysShow = 
-			{
-			},
-			Buffs = 1,
-			AlwaysIgnore = 
-			{
-			},
-			OnTargetChange = 
-			{
-				ClearBuffs = false,
-				ClearAlwaysShow = false,
-				ClearDebuffs = false,
-			},
-		},
 		Friendly = 
 		{
 			Enabled = true,
@@ -68,6 +49,25 @@ BuffHead.Settings =
 				ClearBuffs = true,
 				ClearAlwaysShow = true,
 				ClearDebuffs = true,
+			},
+		},
+		Hostile = 
+		{
+			Enabled = true,
+			Debuffs = 2,
+			Permanent = false,
+			AlwaysShow = 
+			{
+			},
+			Buffs = 1,
+			AlwaysIgnore = 
+			{
+			},
+			OnTargetChange = 
+			{
+				ClearBuffs = false,
+				ClearAlwaysShow = false,
+				ClearDebuffs = false,
 			},
 		},
 	},
