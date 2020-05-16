@@ -4,18 +4,18 @@ RoR_SoR.Settings =
 	ShowT1 = true,
 	HideScenario = false,
 	Enabled = false,
-	ShowPairings = true,
+	DrawBackground = true,
 	OnlyActive = true,
 	ShowBONames = true,
-	DrawBackground = true,
+	Version = 121,
 	StackDir = 1,
 	ShowT4 = true,
-	Version = 121,
+	HideCombat = false,
 	DrawBanner = true,
 	ShowForts = true,
 	ShowUnclaimed = true,
 	ShowCity = true,
-	HideCombat = false,
+	ShowPairings = true,
 }
 
 

@@ -9,7 +9,7 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EA_Window_RRQTracker" sizeX="62.000000" sizeY="128.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-0.000298" yOffset="245.999939" />
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-0.000271" yOffset="245.999893" />
             </Anchors>
         </WindowSettings>
     </Windows>

@@ -205,7 +205,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Window1 = 
+	FloatingScenarioGroup6Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -245,7 +245,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	LIBGUI_Window47 = 
+	PureTargetUnitFrameFriendly = 
 	{
 		locked = false,
 		hidden = false,
@@ -270,7 +270,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	PureTargetUnitFrameFriendly = 
+	RoR_Window_ScenarioSurrender = 
 	{
 		locked = false,
 		hidden = false,
@@ -280,7 +280,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	RoR_Window_ScenarioSurrender = 
+	LIBGUI_Window47 = 
 	{
 		locked = false,
 		hidden = false,
@@ -295,7 +295,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Label44 = 
+	MenuBarWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -320,7 +320,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	RoR_SoR_Button = 
+	EnemyTarget = 
 	{
 		locked = false,
 		hidden = false,
@@ -330,17 +330,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTrackerNub = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	MenuBarWindow = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	EA_Window_QuestTracker = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	LIBGUI_Label44 = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -360,7 +360,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	PureTargetUnitFrameHostile = 
+	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
@@ -445,12 +445,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	PureTargetUnitFrameHostile = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EnemyTarget = 
+	RoR_SoR_Button = 
 	{
 		locked = false,
 		hidden = false,
@@ -495,7 +495,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup6Window = 
+	LIBGUI_Window1 = 
 	{
 		locked = false,
 		hidden = false,

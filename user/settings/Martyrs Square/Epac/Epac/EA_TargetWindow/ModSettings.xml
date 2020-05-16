@@ -3,7 +3,9 @@
     <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="" savedVariablesVersion="" />
     <Windows>
         <WindowSettings xmlVersion="1.0" name="FriendlyTargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.779351" showing="false">
-            <Anchors />
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="SecondaryTargetLayoutWindow" xOffset="0.000000" yOffset="0.000000" />
+            </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="PrimaryTargetLayoutWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
             <Anchors>
@@ -12,11 +14,13 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="SecondaryTargetLayoutWindow" sizeX="265.000000" sizeY="167.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.779351" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-426.805450" yOffset="262.075806" />
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-426.805420" yOffset="262.075806" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
-            <Anchors />
+        <WindowSettings xmlVersion="1.0" name="TargetWindow" sizeX="265.000000" sizeY="167.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.058702" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="PrimaryTargetLayoutWindow" xOffset="0.000000" yOffset="0.000000" />
+            </Anchors>
         </WindowSettings>
     </Windows>
 </UiModuleSettings>

@@ -1,0 +1,129 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+	<Windows>
+	
+		<Window name="TidyChatLootRollRowTemplate" >
+			<Size>
+				<AbsPoint x="250" y="32" />
+			</Size>
+			<Windows>
+				<FullResizeImage name="$parentBackground" inherits="EA_FullResizeImage_TintableSolidBackground">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo=""/>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo=""/>
+					</Anchors>
+				</FullResizeImage>
+
+        <Label name="$parentPlayerName" font="font_clear_medium" textalign="left" handleinput="false" autoresize="true" wordwrap="true">
+          <Size>
+            <AbsPoint x="170" y="32" />
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="20" y="7" />
+            </Anchor>
+          </Anchors>
+        </Label>
+        
+        <Label name="$parentRollNumber" font="font_clear_medium" textalign="right" handleinput="false" autoresize="true" wordwrap="true">
+          <Size>
+            <AbsPoint x="40" y="32" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentPlayerName">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+
+      </Windows>
+		</Window>
+
+		<Window name="TidyChatLootRoll" movable="true" savesettings="false" >
+			<Size>
+				<AbsPoint x="290" y="450" />
+			</Size>
+			<Anchors>
+				<Anchor point="center" relativePoint="center" relativeTo="Root">
+					<AbsPoint x="0" y="0" />
+				</Anchor>
+			</Anchors>
+			<EventHandlers>
+        <EventHandler event="OnShown" function="TidyChat.LootRoll.OnShown" />
+        <EventHandler event="OnHidden" function="TidyChat.LootRoll.OnHidden" />
+      </EventHandlers>
+			<Windows>
+
+        <Window name="$parentBackground" inherits="EA_Window_DefaultBackgroundFrame" />
+        <Window name="$parentTitleBar" inherits="EA_TitleBar_Default" />
+        <Button name="$parentClose" inherits="EA_Button_DefaultWindowClose" >
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyChat.LootRoll.OnClose" />
+          </EventHandlers>
+        </Button>
+
+        <Window name="$parentInfo" handleinput="false">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTitleBar">
+              <AbsPoint x="0" y="4"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentTitleBar">
+              <AbsPoint x="0" y="84"/>
+            </Anchor>
+          </Anchors>
+
+          <Windows>
+            <!-- Info Background -->
+            <FullResizeImage name="$parentBackground" inherits="EA_FullResizeImage_MetalFill">
+              <Anchors>
+                <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                  <AbsPoint x="10" y="0"/>
+                </Anchor>
+                <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                  <AbsPoint x="-10" y="0"/>
+                </Anchor>
+              </Anchors>
+            </FullResizeImage>
+
+            <!-- Info Label -->
+            <Label name="$parentLabel" font="font_clear_default" handleinput="false" textalign="center" autoresize="true" wordwrap="true">
+              <Anchors>
+                <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground">
+                  <AbsPoint x="5" y="5" />
+                </Anchor>
+                <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackground">
+                  <AbsPoint x="-5" y="0" />
+                </Anchor>
+              </Anchors>
+              <Color r="255" g="204" b="102" />
+            </Label>
+            
+            
+          </Windows>
+
+        </Window>
+
+
+
+        <!-- List Box of Slash commands  -->
+				<ListBox name="$parentList" scrollbar="EA_ScrollBar_DefaultVerticalChain" rowdef="TidyChatLootRollRowTemplate"  visiblerows="10" rowcount="50" rowspacing="0">
+                    <Size>
+                        <AbsPoint x="275" y="320" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentInfo" >
+                            <AbsPoint x="10" y="2" />
+                        </Anchor>
+                    </Anchors>
+
+                    <ListData table="TidyChat.LootRoll.itemRollData">
+                        <ListColumns>
+                          <ListColumn windowname="PlayerName" variable="1" format="wstring" />
+                          <ListColumn windowname="RollNumber" variable="2" format="wstring" />
+                        </ListColumns>
+                    </ListData>
+                </ListBox>		
+                                          		
+			</Windows>
+		</Window>
+	</Windows>
+</Interface>

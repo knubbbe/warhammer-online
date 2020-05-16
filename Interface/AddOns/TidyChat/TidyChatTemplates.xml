@@ -1,0 +1,90 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    
+    <!-- ********* -->
+    <!-- TEMPLATES -->
+    <!-- ********* -->
+    
+    <!-- Label template -->
+    <Label name="TChatLabel" font="font_clear_default" textalign="left" handleinput="false" autoresize="true" wordwrap="true">
+      <Size>
+        <AbsPoint x="260" y="20" />
+      </Size>
+      <Color r="255" g="204" b="102" />
+    </Label>
+
+    <!-- Button template -->
+    <Button name="TChatButton" inherits="EA_Button_DefaultResizeable" font="font_clear_default" layer="secondary" />
+
+    <!-- Tab Button template -->
+    <Button name="TChatTabButton" inherits="EA_Button_Tab" font="font_clear_default" layer="popup">
+      <EventHandlers>
+        <EventHandler event="OnLButtonUp" function="TidyChat.Options.OnTabLBU" />
+      </EventHandlers>
+    </Button>
+
+    <!-- Checkbox template -->
+    <Window name="TChatCheckboxTemplate" layer="popup">
+      <Size>
+        <AbsPoint x="220" y="37" />
+      </Size>
+      <EventHandlers>
+        <EventHandler event="OnLButtonUp" function="TidyChat.Options.OnCheckboxLBU" />
+      </EventHandlers>
+      <Windows>
+        <Button name="$parentButton" inherits="EA_Button_DefaultCheckBox" handleinput="false">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Label name="$parentLabel" inherits="TChatLabel">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="35" y="3" />
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+      </Windows>
+    </Window>
+
+    <!-- Radio template -->
+    <!--Window name="TChatRadioTemplate" layer="popup">
+      <Size>
+        <AbsPoint x="220" y="37" />
+      </Size>
+      <EventHandlers>
+        <EventHandler event="OnInitialize" function="EA_Window_DefaultLabelToggleCircle.Initialize" />
+        <EventHandler event="OnLButtonUp" function="TidyChat.Options.OnRadioLBU" />
+      </EventHandlers>
+      <Windows>
+        <Button name="$parentButton" inherits="EA_Button_DefaultToggleCircle" handleinput="false">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        <Label name="$parentLabel" inherits="TChatLabel">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="35" y="3" />
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+              <AbsPoint x="0" y="0" />
+            </Anchor>
+          </Anchors>
+        </Label>
+      </Windows>
+    </Window-->
+
+    <!-- ************* -->
+    <!-- END TEMPLATES -->
+    <!-- ************* -->
+
+  </Windows>
+</Interface>

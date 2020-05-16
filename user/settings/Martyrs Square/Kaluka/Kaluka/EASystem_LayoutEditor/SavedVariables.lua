@@ -275,7 +275,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	RoR_Window_ScenarioSurrender = 
+	LIBGUI_Window47 = 
 	{
 		locked = false,
 		hidden = false,
@@ -285,7 +285,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Window47 = 
+	RoR_Window_ScenarioSurrender = 
 	{
 		locked = false,
 		hidden = false,
@@ -295,7 +295,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	RoR_SoR_Button = 
+	EnemyTarget = 
 	{
 		locked = false,
 		hidden = false,
@@ -320,12 +320,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	Moth = 
+	LIBGUI_Label42 = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EnemyTarget = 
+	RoR_SoR_Button = 
 	{
 		locked = false,
 		hidden = false,
@@ -335,17 +335,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
+	Moth = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	LIBGUI_Label44 = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_ActionBar4 = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EA_Window_QuestTracker = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -365,12 +365,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Label42 = 
+	MenuBarWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	MenuBarWindow = 
+	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
@@ -420,7 +420,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTrackerNub = 
+	EA_ActionBar4 = 
 	{
 		locked = false,
 		hidden = false,
@@ -450,7 +450,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	EA_Window_QuestTracker = 
 	{
 		locked = false,
 		hidden = false,

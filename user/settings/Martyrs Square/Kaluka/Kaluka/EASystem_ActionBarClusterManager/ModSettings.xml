@@ -9,7 +9,7 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="EA_TacticsEditor" sizeX="350.000000" sizeY="50.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.644447" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-294.777130" yOffset="-0.000125" />
+                <WindowAnchor xmlVersion="1.0" point="bottomright" relativePoint="bottomright" relativeTo="Root" xOffset="-294.777130" yOffset="-0.000260" />
             </Anchors>
         </WindowSettings>
     </Windows>

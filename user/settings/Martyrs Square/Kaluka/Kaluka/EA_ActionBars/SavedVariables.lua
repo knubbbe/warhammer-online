@@ -295,7 +295,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Book of Binding",
 				broken = false,
-				timestamp = 1524,
+				timestamp = 37,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -607,7 +607,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Enslaved Pack Mule",
 				broken = false,
-				timestamp = 1524,
+				timestamp = 37,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 

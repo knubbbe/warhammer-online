@@ -430,6 +430,16 @@ FriendSuggester.Data =
 		},
 		value = 15,
 	},
+	[L"Shacha"] = 
+	{
+		lockouts = 
+		{
+			1589612068,
+			1589612068,
+			1589612068,
+		},
+		value = 5,
+	},
 	[L"Etighi"] = 
 	{
 		lockouts = 
@@ -530,6 +540,16 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
+	[L"Theburners"] = 
+	{
+		lockouts = 
+		{
+			1589611854,
+			1589611854,
+			1589611854,
+		},
+		value = 10,
+	},
 	[L"Delivering"] = 
 	{
 		lockouts = 
@@ -559,6 +579,16 @@ FriendSuggester.Data =
 			1589576317,
 		},
 		value = 20,
+	},
+	[L"Solabreaker"] = 
+	{
+		lockouts = 
+		{
+			1589612068,
+			1589612068,
+			1589612068,
+		},
+		value = 5,
 	},
 	[L"Shalena"] = 
 	{
@@ -660,6 +690,16 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
+	[L"Amberayne"] = 
+	{
+		lockouts = 
+		{
+			1589612068,
+			1589612068,
+			1589612068,
+		},
+		value = 5,
+	},
 	[L"Banrir"] = 
 	{
 		lockouts = 
@@ -679,6 +719,16 @@ FriendSuggester.Data =
 			1589407565,
 		},
 		value = 5,
+	},
+	[L"Galafanakis"] = 
+	{
+		lockouts = 
+		{
+			1589611914,
+			1589611914,
+			1589611914,
+		},
+		value = 10,
 	},
 	[L"Xia"] = 
 	{
@@ -830,6 +880,46 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
+	[L"Whitelionnn"] = 
+	{
+		lockouts = 
+		{
+			1589612068,
+			1589612068,
+			1589612068,
+		},
+		value = 5,
+	},
+	[L"Belzec"] = 
+	{
+		lockouts = 
+		{
+			1589495651,
+			1589495651,
+			1589495651,
+		},
+		value = 5,
+	},
+	[L"Hafor"] = 
+	{
+		lockouts = 
+		{
+			1589612068,
+			1589612068,
+			1589612068,
+		},
+		value = 5,
+	},
+	[L"Gazsika"] = 
+	{
+		lockouts = 
+		{
+			1589611854,
+			1589611854,
+			1589611854,
+		},
+		value = 10,
+	},
 	[L"Highcommand"] = 
 	{
 		lockouts = 
@@ -857,6 +947,16 @@ FriendSuggester.Data =
 			1589495651,
 			1589495651,
 			1589495651,
+		},
+		value = 5,
+	},
+	[L"Wetsponge"] = 
+	{
+		lockouts = 
+		{
+			1589574408,
+			1589574408,
+			1589574408,
 		},
 		value = 5,
 	},
@@ -890,16 +990,6 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Dulvar"] = 
-	{
-		lockouts = 
-		{
-			1589576317,
-			1589576317,
-			1589576317,
-		},
-		value = 20,
-	},
 	[L"Xryanna"] = 
 	{
 		lockouts = 
@@ -909,6 +999,16 @@ FriendSuggester.Data =
 			1589578164,
 		},
 		value = 10,
+	},
+	[L"Alonail"] = 
+	{
+		lockouts = 
+		{
+			1589575716,
+			1589575716,
+			1589575716,
+		},
+		value = 15,
 	},
 	[L"Mordekai"] = 
 	{
@@ -1040,6 +1140,16 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
+	[L"Kalikolel"] = 
+	{
+		lockouts = 
+		{
+			1589435637,
+			1589435637,
+			1589435637,
+		},
+		value = 5,
+	},
 	[L"Ormeledp"] = 
 	{
 		lockouts = 
@@ -1047,16 +1157,6 @@ FriendSuggester.Data =
 			1589578031,
 			1589578031,
 			1589578031,
-		},
-		value = 5,
-	},
-	[L"Belzec"] = 
-	{
-		lockouts = 
-		{
-			1589495651,
-			1589495651,
-			1589495651,
 		},
 		value = 5,
 	},
@@ -1090,15 +1190,15 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Wetsponge"] = 
+	[L"Cookiee"] = 
 	{
 		lockouts = 
 		{
-			1589574408,
-			1589574408,
-			1589574408,
+			1589611854,
+			1589611854,
+			1589611854,
 		},
-		value = 5,
+		value = 10,
 	},
 	[L"Melithin"] = 
 	{
@@ -1110,16 +1210,6 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Viv"] = 
-	{
-		lockouts = 
-		{
-			1589578031,
-			1589578031,
-			1589578031,
-		},
-		value = 5,
-	},
 	[L"Windaxa"] = 
 	{
 		lockouts = 
@@ -1127,6 +1217,16 @@ FriendSuggester.Data =
 			1589577444,
 			1589577444,
 			1589577444,
+		},
+		value = 10,
+	},
+	[L"Rosetta"] = 
+	{
+		lockouts = 
+		{
+			1589405826,
+			1589405826,
+			1589405826,
 		},
 		value = 10,
 	},
@@ -1190,6 +1290,16 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
+	[L"Viv"] = 
+	{
+		lockouts = 
+		{
+			1589578031,
+			1589578031,
+			1589578031,
+		},
+		value = 5,
+	},
 	[L"Ployka"] = 
 	{
 		lockouts = 
@@ -1210,16 +1320,6 @@ FriendSuggester.Data =
 		},
 		value = 20,
 	},
-	[L"Kalikolel"] = 
-	{
-		lockouts = 
-		{
-			1589435637,
-			1589435637,
-			1589435637,
-		},
-		value = 5,
-	},
 	[L"Aspael"] = 
 	{
 		lockouts = 
@@ -1239,6 +1339,16 @@ FriendSuggester.Data =
 			1589578164,
 		},
 		value = 10,
+	},
+	[L"Narclivis"] = 
+	{
+		lockouts = 
+		{
+			1589612068,
+			1589612068,
+			1589612068,
+		},
+		value = 5,
 	},
 	[L"Sienna"] = 
 	{
@@ -1280,16 +1390,6 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Alonail"] = 
-	{
-		lockouts = 
-		{
-			1589575716,
-			1589575716,
-			1589575716,
-		},
-		value = 15,
-	},
 	[L"Reykjavik"] = 
 	{
 		lockouts = 
@@ -1310,15 +1410,15 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Rosetta"] = 
+	[L"Dulvar"] = 
 	{
 		lockouts = 
 		{
-			1589405826,
-			1589405826,
-			1589405826,
+			1589576317,
+			1589576317,
+			1589576317,
 		},
-		value = 10,
+		value = 20,
 	},
 	[L"Halore"] = 
 	{

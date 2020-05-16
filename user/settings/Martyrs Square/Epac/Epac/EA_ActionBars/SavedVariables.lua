@@ -299,7 +299,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Book of Binding",
 				broken = false,
-				timestamp = 7425,
+				timestamp = 801,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -614,7 +614,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Imperial Pack Mule",
 				broken = false,
-				timestamp = 7425,
+				timestamp = 801,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 

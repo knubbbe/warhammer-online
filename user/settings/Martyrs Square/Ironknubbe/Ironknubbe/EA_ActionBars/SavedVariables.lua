@@ -38,9 +38,9 @@ EA_ActionBars_DataCache =
 		{
 			icon = 2626,
 		},
-		[1352] = 
+		[245] = 
 		{
-			icon = 4575,
+			icon = 5004,
 		},
 		[1356] = 
 		{
@@ -58,9 +58,9 @@ EA_ActionBars_DataCache =
 		{
 			icon = 2466,
 		},
-		[1908] = 
+		[1656] = 
 		{
-			icon = 2433,
+			icon = 4647,
 		},
 		[1930] = 
 		{
@@ -82,25 +82,25 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4607,
 		},
-		[2887] = 
+		[1522] = 
 		{
-			icon = 4477,
+			icon = 4610,
 		},
 		[1526] = 
 		{
 			icon = 4613,
 		},
-		[1656] = 
+		[1908] = 
 		{
-			icon = 4647,
+			icon = 2433,
 		},
 		[1912] = 
 		{
 			icon = 2582,
 		},
-		[1830] = 
+		[1515] = 
 		{
-			icon = 2599,
+			icon = 4457,
 		},
 		[1353] = 
 		{
@@ -114,9 +114,9 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4581,
 		},
-		[1365] = 
+		[1932] = 
 		{
-			icon = 4584,
+			icon = 2534,
 		},
 		[1369] = 
 		{
@@ -138,17 +138,17 @@ EA_ActionBars_DataCache =
 		{
 			icon = 2593,
 		},
-		[1515] = 
+		[1830] = 
 		{
-			icon = 4457,
+			icon = 2599,
 		},
 		[1519] = 
 		{
 			icon = 4566,
 		},
-		[1901] = 
+		[1523] = 
 		{
-			icon = 2576,
+			icon = 4468,
 		},
 		[1527] = 
 		{
@@ -186,17 +186,17 @@ EA_ActionBars_DataCache =
 		{
 			icon = 2472,
 		},
-		[1508] = 
+		[1823] = 
 		{
-			icon = 4460,
+			icon = 2613,
 		},
 		[1378] = 
 		{
 			icon = 4421,
 		},
-		[1823] = 
+		[1508] = 
 		{
-			icon = 2613,
+			icon = 4460,
 		},
 		[1898] = 
 		{
@@ -234,29 +234,29 @@ EA_ActionBars_DataCache =
 		{
 			icon = 2414,
 		},
-		[1523] = 
+		[1901] = 
 		{
-			icon = 4468,
+			icon = 2576,
 		},
 		[1363] = 
 		{
 			icon = 4515,
 		},
-		[1932] = 
+		[1365] = 
 		{
-			icon = 2534,
+			icon = 4584,
 		},
 		[1371] = 
 		{
 			icon = 4589,
 		},
-		[1522] = 
+		[2887] = 
 		{
-			icon = 4610,
+			icon = 4477,
 		},
-		[245] = 
+		[1352] = 
 		{
-			icon = 5004,
+			icon = 4575,
 		},
 	},
 	
@@ -585,214 +585,6 @@ EA_ActionBars_DataCache =
 				capacity = 40,
 			},
 		},
-		[190473] = 
-		{
-			icon = 476,
-			itemData = 
-			{
-				description = L"",
-				renown = 0,
-				maxEquip = 0,
-				slots = 
-				{
-				},
-				equipSlot = 0,
-				races = 
-				{
-				},
-				tintB = 0,
-				speed = 0,
-				decayPaused = false,
-				timeLeftBeforeDecay = 0,
-				blockRating = 0,
-				iconNum = 476,
-				rarity = 3,
-				isTwoHanded = false,
-				marketingVariation = 0,
-				flags = 
-				{
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false, 
-					[0] = false,
-				},
-				name = L"Initiate's Fleeting Elixir of Allaying",
-				broken = false,
-				timestamp = 2797,
-				customizedIconNum = 0,
-				marketingIndex = 0,
-				skills = 
-				{
-				},
-				craftingSkillRequirement = 0,
-				itemSet = 0,
-				uniqueID = 190473,
-				stackCount = 3,
-				noChargeLeftDontDelete = 0,
-				sellPrice = 30,
-				bop = false,
-				isNew = false,
-				dyeTintA = 0,
-				tintA = 0,
-				tier = 0,
-				craftingBonus = 
-				{
-				},
-				trophyLocation = 0,
-				enhSlot = 
-				{
-				},
-				bonus = 
-				{
-					[1] = 
-					{
-						type = 3,
-						value = 0,
-						cooldownTimeLeft = 0,
-						reference = 7879,
-						totalCooldownTime = 180,
-					},
-				},
-				currChargesRemaining = 0,
-				type = 31,
-				boundToPlayer = false,
-				customizedIconName = L"",
-				id = 714,
-				dps = 0,
-				numEnhancementSlots = 0,
-				trophyLocIndex = 1,
-				careers = 
-				{
-				},
-				iLevel = 2,
-				cultivationType = 0,
-				dyeTintB = 0,
-				armor = 0,
-				level = 1,
-				isRefinable = false,
-				capacity = 5,
-			},
-		},
-		[190471] = 
-		{
-			icon = 452,
-			itemData = 
-			{
-				description = L"",
-				renown = 0,
-				maxEquip = 0,
-				slots = 
-				{
-				},
-				equipSlot = 0,
-				races = 
-				{
-				},
-				tintB = 0,
-				speed = 0,
-				decayPaused = false,
-				timeLeftBeforeDecay = 0,
-				blockRating = 0,
-				iconNum = 452,
-				rarity = 2,
-				isTwoHanded = false,
-				marketingVariation = 0,
-				flags = 
-				{
-					false,
-					true,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false,
-					false, 
-					[0] = false,
-				},
-				name = L"Initiate's Draught of Allaying",
-				broken = false,
-				timestamp = 3236,
-				customizedIconNum = 0,
-				marketingIndex = 0,
-				skills = 
-				{
-				},
-				craftingSkillRequirement = 0,
-				itemSet = 0,
-				uniqueID = 190471,
-				stackCount = 1,
-				noChargeLeftDontDelete = 0,
-				sellPrice = 30,
-				bop = false,
-				isNew = false,
-				dyeTintA = 0,
-				tintA = 0,
-				tier = 0,
-				craftingBonus = 
-				{
-				},
-				trophyLocation = 0,
-				enhSlot = 
-				{
-				},
-				bonus = 
-				{
-					[1] = 
-					{
-						type = 3,
-						value = 0,
-						cooldownTimeLeft = 0,
-						reference = 7871,
-						totalCooldownTime = 180,
-					},
-				},
-				currChargesRemaining = 0,
-				type = 31,
-				boundToPlayer = false,
-				customizedIconName = L"",
-				id = 690,
-				dps = 0,
-				numEnhancementSlots = 0,
-				trophyLocIndex = 1,
-				careers = 
-				{
-				},
-				iLevel = 1,
-				cultivationType = 0,
-				dyeTintB = 0,
-				armor = 0,
-				level = 1,
-				isRefinable = false,
-				capacity = 40,
-			},
-		},
 		[3000055] = 
 		{
 			icon = 476,
@@ -895,6 +687,214 @@ EA_ActionBars_DataCache =
 				skills = 
 				{
 				},
+			},
+		},
+		[11919] = 
+		{
+			icon = 327,
+			itemData = 
+			{
+				description = L"Use to return to your rally point. You can set your rally point by talking to the Rally Master in any chapter area.",
+				renown = 0,
+				maxEquip = 1,
+				slots = 
+				{
+				},
+				equipSlot = 0,
+				races = 
+				{
+				},
+				tintB = 0,
+				speed = 0,
+				decayPaused = false,
+				timeLeftBeforeDecay = 0,
+				blockRating = 0,
+				iconNum = 327,
+				rarity = 6,
+				isTwoHanded = false,
+				marketingVariation = 0,
+				flags = 
+				{
+					false,
+					true,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false, 
+					[0] = false,
+				},
+				name = L"Book of Binding",
+				broken = false,
+				timestamp = 27,
+				customizedIconNum = 0,
+				marketingIndex = 0,
+				skills = 
+				{
+				},
+				craftingSkillRequirement = 0,
+				itemSet = 0,
+				uniqueID = 11919,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
+				sellPrice = 0,
+				bop = false,
+				isNew = false,
+				dyeTintA = 0,
+				tintA = 0,
+				tier = 0,
+				craftingBonus = 
+				{
+				},
+				trophyLocation = 0,
+				enhSlot = 
+				{
+				},
+				bonus = 
+				{
+					[1] = 
+					{
+						type = 3,
+						value = 0,
+						cooldownTimeLeft = 0,
+						reference = 246,
+						totalCooldownTime = 3600,
+					},
+				},
+				currChargesRemaining = 0,
+				type = 0,
+				boundToPlayer = false,
+				customizedIconName = L"",
+				id = 531,
+				dps = 0,
+				numEnhancementSlots = 0,
+				trophyLocIndex = 1,
+				careers = 
+				{
+				},
+				iLevel = 0,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 0,
+				isRefinable = false,
+				capacity = 1,
+			},
+		},
+		[190473] = 
+		{
+			icon = 476,
+			itemData = 
+			{
+				description = L"",
+				renown = 0,
+				maxEquip = 0,
+				slots = 
+				{
+				},
+				equipSlot = 0,
+				races = 
+				{
+				},
+				tintB = 0,
+				speed = 0,
+				decayPaused = false,
+				timeLeftBeforeDecay = 0,
+				blockRating = 0,
+				iconNum = 476,
+				rarity = 3,
+				isTwoHanded = false,
+				marketingVariation = 0,
+				flags = 
+				{
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false, 
+					[0] = false,
+				},
+				name = L"Initiate's Fleeting Elixir of Allaying",
+				broken = false,
+				timestamp = 2797,
+				customizedIconNum = 0,
+				marketingIndex = 0,
+				skills = 
+				{
+				},
+				craftingSkillRequirement = 0,
+				itemSet = 0,
+				uniqueID = 190473,
+				stackCount = 3,
+				noChargeLeftDontDelete = 0,
+				sellPrice = 30,
+				bop = false,
+				isNew = false,
+				dyeTintA = 0,
+				tintA = 0,
+				tier = 0,
+				craftingBonus = 
+				{
+				},
+				trophyLocation = 0,
+				enhSlot = 
+				{
+				},
+				bonus = 
+				{
+					[1] = 
+					{
+						type = 3,
+						value = 0,
+						cooldownTimeLeft = 0,
+						reference = 7879,
+						totalCooldownTime = 180,
+					},
+				},
+				currChargesRemaining = 0,
+				type = 31,
+				boundToPlayer = false,
+				customizedIconName = L"",
+				id = 714,
+				dps = 0,
+				numEnhancementSlots = 0,
+				trophyLocIndex = 1,
+				careers = 
+				{
+				},
+				iLevel = 2,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 1,
+				isRefinable = false,
+				capacity = 5,
 			},
 		},
 		[157862] = 
@@ -1157,7 +1157,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Imperial Pack Mule",
 				broken = false,
-				timestamp = 16,
+				timestamp = 27,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -1365,7 +1365,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Warming Draught",
 				broken = false,
-				timestamp = 16,
+				timestamp = 27,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -1628,14 +1628,14 @@ EA_ActionBars_DataCache =
 				capacity = 40,
 			},
 		},
-		[11919] = 
+		[190471] = 
 		{
-			icon = 327,
+			icon = 452,
 			itemData = 
 			{
-				description = L"Use to return to your rally point. You can set your rally point by talking to the Rally Master in any chapter area.",
+				description = L"",
 				renown = 0,
-				maxEquip = 1,
+				maxEquip = 0,
 				slots = 
 				{
 				},
@@ -1648,8 +1648,8 @@ EA_ActionBars_DataCache =
 				decayPaused = false,
 				timeLeftBeforeDecay = 0,
 				blockRating = 0,
-				iconNum = 327,
-				rarity = 6,
+				iconNum = 452,
+				rarity = 2,
 				isTwoHanded = false,
 				marketingVariation = 0,
 				flags = 
@@ -1675,9 +1675,9 @@ EA_ActionBars_DataCache =
 					false, 
 					[0] = false,
 				},
-				name = L"Book of Binding",
+				name = L"Initiate's Draught of Allaying",
 				broken = false,
-				timestamp = 16,
+				timestamp = 3236,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -1685,10 +1685,10 @@ EA_ActionBars_DataCache =
 				},
 				craftingSkillRequirement = 0,
 				itemSet = 0,
-				uniqueID = 11919,
+				uniqueID = 190471,
 				stackCount = 1,
 				noChargeLeftDontDelete = 0,
-				sellPrice = 0,
+				sellPrice = 30,
 				bop = false,
 				isNew = false,
 				dyeTintA = 0,
@@ -1707,29 +1707,29 @@ EA_ActionBars_DataCache =
 					{
 						type = 3,
 						value = 0,
-						cooldownTimeLeft = 404.452,
-						reference = 246,
-						totalCooldownTime = 3600,
+						cooldownTimeLeft = 0,
+						reference = 7871,
+						totalCooldownTime = 180,
 					},
 				},
 				currChargesRemaining = 0,
-				type = 0,
+				type = 31,
 				boundToPlayer = false,
 				customizedIconName = L"",
-				id = 531,
+				id = 690,
 				dps = 0,
 				numEnhancementSlots = 0,
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				iLevel = 0,
+				iLevel = 1,
 				cultivationType = 0,
 				dyeTintB = 0,
 				armor = 0,
-				level = 0,
+				level = 1,
 				isRefinable = false,
-				capacity = 1,
+				capacity = 40,
 			},
 		},
 		[3000000] = 
@@ -1781,7 +1781,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Fleeting Elixir of Allaying",
 				broken = false,
-				timestamp = 16,
+				timestamp = 27,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -1839,9 +1839,9 @@ EA_ActionBars_DataCache =
 	}, 
 	[10] = 
 	{
-		[385] = 
+		[25] = 
 		{
-			icon = 2522,
+			icon = 4569,
 		},
 		[27] = 
 		{
@@ -1851,21 +1851,21 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4650,
 		},
-		[28] = 
+		[21] = 
 		{
-			icon = 4618,
+			icon = 4506,
 		},
-		[25] = 
+		[385] = 
 		{
-			icon = 4569,
+			icon = 2522,
 		},
 		[22] = 
 		{
 			icon = 4477,
 		},
-		[21] = 
+		[28] = 
 		{
-			icon = 4506,
+			icon = 4618,
 		},
 	},
 	[9] = 

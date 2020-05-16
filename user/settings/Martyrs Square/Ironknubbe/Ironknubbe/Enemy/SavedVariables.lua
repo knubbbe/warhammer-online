@@ -640,9 +640,9 @@ Enemy.Settings =
 					abilityIdsHash = 
 					{
 						[3882] = true,
+						[695] = true,
 						[674] = true,
 						[653] = true,
-						[695] = true,
 					},
 					nameMatch = 1,
 					hasDurationLimit = false,
@@ -964,13 +964,13 @@ Enemy.Settings =
 		{
 		},
 		id = 152,
-		layer = 3,
+		targetOnClick = true,
 		alpha = 0.4,
-		scale = 0.8,
 		text = L"G",
+		scale = 0.8,
 		font = "font_default_text_huge",
 		name = L"",
-		targetOnClick = true,
+		layer = 3,
 		display = 1,
 		offsetY = 75,
 		neverExpire = true,
@@ -1187,13 +1187,13 @@ Enemy.Settings =
 	groupIconsPetBGAlpha = 0.5,
 	unitFramesGroupsDirection2 = 4,
 	unitFramesScale = 1,
+	soundOnNewTargetId = 500,
 	combatLogTargetDefenseBackground = 
 	{
 		0,
 		0,
 		0,
 	},
-	soundOnNewTargetId = 500,
 	unitFramesMyGroupFirst = true,
 	timerActiveColor = 
 	{
@@ -1233,8 +1233,8 @@ Enemy.Settings =
 	guardMarkEnabled = true,
 	intercomPrivate = true,
 	groupIconsShowOtherGroups = true,
-	combatLogLogParseErrors = true,
 	combatLogIDSRowScale = 1,
+	combatLogLogParseErrors = true,
 	combatLogTargetDefenseTotalEnabled = true,
 	version = 279,
 	guardDistanceIndicatorScaleNormal = 1,
@@ -1253,7 +1253,12 @@ Enemy.Settings =
 	groupIconsShowOnMarkedPlayers = false,
 	killSpamReparseChunkSize = 20,
 	guardDistanceIndicatorAlphaWarning = 1,
-	groupIconsOtherGroupsLayer = 0,
+	groupIconsHPColor = 
+	{
+		200,
+		255,
+		0,
+	},
 	chatDelay = 2,
 	combatLogStatisticsEnabled = false,
 	combatLogIDSRowSize = 
@@ -1889,12 +1894,7 @@ Enemy.Settings =
 	},
 	groupIconsOtherGroupsBGAlpha = 0.5,
 	playerKDRDisplayMode = 5,
-	groupIconsHPColor = 
-	{
-		200,
-		255,
-		0,
-	},
+	groupIconsOtherGroupsLayer = 0,
 	groupIconsHideOnSelf = true,
 	unitFramesEnabled = true,
 	chatThrottleDelay = 10,
@@ -1916,13 +1916,14 @@ Enemy.Settings =
 		255,
 	},
 	unitFramesGroupsPadding1 = 40,
-	guardDistanceIndicator = 2,
 	scenarioInfoEnabled = false,
+	guardDistanceIndicator = 2,
 	groupIconsPetOffset = 
 	{
 		0,
 		20,
 	},
+	stateMachineThrottle = 0.3,
 	newTargetMarkTemplate = 
 	{
 		color = 
@@ -1939,19 +1940,18 @@ Enemy.Settings =
 		{
 		},
 		id = 154,
-		layer = 3,
+		targetOnClick = true,
 		alpha = 1,
-		scale = 1,
 		text = L"KILL",
+		scale = 1,
 		font = "font_clear_large_bold",
 		name = L"",
-		targetOnClick = true,
+		layer = 3,
 		display = 1,
 		offsetY = 50,
 		neverExpire = false,
 		permanent = false,
 	},
-	stateMachineThrottle = 0.3,
 	unitFramesSortingEnabled = true,
 	groupIconsOtherGroupsHPColor = 
 	{
