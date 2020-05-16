@@ -165,6 +165,11 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
+	TidyRollAnchor = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	LIBGUI_Window25 = 
 	{
 		locked = false,
@@ -245,7 +250,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	FloatingScenarioGroup5Window = 
+	MiracleGrow2Icon = 
 	{
 		locked = false,
 		hidden = false,
@@ -265,12 +270,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Label42 = 
+	FloatingScenarioGroup5Window = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Window47 = 
+	RoR_Window_ScenarioSurrender = 
 	{
 		locked = false,
 		hidden = false,
@@ -280,7 +285,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	RoR_Window_ScenarioSurrender = 
+	LIBGUI_Window47 = 
 	{
 		locked = false,
 		hidden = false,
@@ -295,7 +300,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	Moth = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -320,7 +325,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	RoR_SoR_Button = 
+	EnemyTarget = 
 	{
 		locked = false,
 		hidden = false,
@@ -330,7 +335,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	Moth = 
 	{
 		locked = false,
 		hidden = false,
@@ -445,7 +450,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EnemyTarget = 
+	RoR_SoR_Button = 
 	{
 		locked = false,
 		hidden = false,
@@ -460,7 +465,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	MiracleGrow2Icon = 
+	LIBGUI_Label42 = 
 	{
 		locked = false,
 		hidden = false,
