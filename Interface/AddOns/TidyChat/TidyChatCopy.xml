@@ -1,0 +1,92 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+
+    <!--- Copy Window -->
+    <Window name="TidyChatCopy" layer="overlay" movable="true" savesettings="false">
+      <Size>
+        <AbsPoint x="750" y="750" />
+      </Size>
+      <Anchors>
+        <Anchor point="center" relativePoint="center" relativeTo="">
+          <AbsPoint x="0" y="0"/>
+        </Anchor>
+      </Anchors>
+      <EventHandlers>
+        <EventHandler event="OnShown" function="TidyChat.Copy.OnShown" />
+        <EventHandler event="OnHidden" function="TidyChat.Copy.OnHidden" />
+        <EventHandler event="OnMouseWheel" function="TidyChat.Copy.OnMouseWheel" />
+      </EventHandlers>
+      <Windows>
+
+        <Window name="$parentBackground" inherits="EA_Window_DefaultFrame" >
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" >
+              <AbsPoint x="0" y="32" />
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright" />
+          </Anchors>
+        </Window>
+
+        <Window name="$parentTitleBar" inherits="EA_TitleBar_Default" />
+
+        <Button name="$parentClose" inherits="EA_Button_DefaultWindowClose" >
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyChat.Copy.OnClose" />
+          </EventHandlers>
+        </Button>
+
+        <EditBox name="$parentLog" inherits="EA_EditBox_DefaultFrame_Multiline" font="font_guild_MP_R_17" maxchars="10240" >
+          <Size>
+            <AbsPoint x="580" y="450" />
+          </Size>
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground">
+              <AbsPoint x="4" y="4" />
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackground">
+              <AbsPoint x="-4" y="-60" />
+            </Anchor>
+          </Anchors>
+        </EditBox>
+
+        <Window name="$parentButtonBackground" inherits="EA_Window_DefaultButtonBottomFrame" layer="background" />
+
+        <Button name="$parentPrev" inherits="EA_Button_DefaultResizeable"  font="font_chat_text" textalign="center">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="bottomleft" >
+              <AbsPoint x="15" y="-10" />
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyChat.Copy.CopyPrev"/>
+          </EventHandlers>
+        </Button>
+
+        <Label name="$parentEntryCount" font="font_chat_text" maxchars="256" handleinput="false" textalign="center">
+          <Size>
+            <AbsPoint x="400" y="25"/>
+          </Size>
+          <Anchors>
+            <Anchor point="bottom" relativePoint="bottom" >
+              <AbsPoint x="0" y="-20"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <Button name="$parentNext" inherits="EA_Button_DefaultResizeable"  font="font_chat_text" textalign="center">
+          <Anchors>
+            <Anchor point="bottomright" relativePoint="bottomright" >
+              <AbsPoint x="-15" y="-10" />
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyChat.Copy.CopyNext"/>
+          </EventHandlers>
+        </Button>
+
+      </Windows>
+    </Window>
+    <!-- End Copy Window -->
+
+  </Windows>
+</Interface>

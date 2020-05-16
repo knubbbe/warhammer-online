@@ -1,9 +1,9 @@
 ChattyCathyVars = 
 {
-	[1] = 3,
 	Window = 2,
-	Alpha = 0.52908653020859,
+	[1] = 3,
 	To = 1,
+	Alpha = 0.52908653020859,
 }
 
 

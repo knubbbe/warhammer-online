@@ -50,6 +50,96 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
+	[L"Ulfbjorn"] = 
+	{
+		lockouts = 
+		{
+			1589395589,
+			1589395589,
+			1589395589,
+		},
+		value = 5,
+	},
+	[L"Neghed"] = 
+	{
+		lockouts = 
+		{
+			1589395589,
+			1589395589,
+			1589395589,
+		},
+		value = 5,
+	},
+	[L"Rhaega"] = 
+	{
+		lockouts = 
+		{
+			1589395589,
+			1589395589,
+			1589395589,
+		},
+		value = 5,
+	},
+	[L"Knofforc"] = 
+	{
+		lockouts = 
+		{
+			1589395174,
+			1589395174,
+			1589395174,
+		},
+		value = 10,
+	},
+	[L"Mirrows"] = 
+	{
+		lockouts = 
+		{
+			1589395589,
+			1589395589,
+			1589395589,
+		},
+		value = 5,
+	},
+	[L"Navec"] = 
+	{
+		lockouts = 
+		{
+			1589395589,
+			1589395589,
+			1589395589,
+		},
+		value = 5,
+	},
+	[L"Crocmonsieur"] = 
+	{
+		lockouts = 
+		{
+			1589395589,
+			1589395589,
+			1589395589,
+		},
+		value = 5,
+	},
+	[L"Choisu"] = 
+	{
+		lockouts = 
+		{
+			1589395220,
+			1589395220,
+			1589395220,
+		},
+		value = 10,
+	},
+	[L"Lemonclaw"] = 
+	{
+		lockouts = 
+		{
+			1589353737,
+			1589353737,
+			1589353737,
+		},
+		value = 10,
+	},
 	[L"Bawlzout"] = 
 	{
 		lockouts = 
@@ -79,6 +169,26 @@ FriendSuggester.Data =
 			1589354055,
 		},
 		value = 5,
+	},
+	[L"Typhlosion"] = 
+	{
+		lockouts = 
+		{
+			1589353737,
+			1589353737,
+			1589353737,
+		},
+		value = 10,
+	},
+	[L"Tbish"] = 
+	{
+		lockouts = 
+		{
+			1589395189,
+			1589395189,
+			1589395189,
+		},
+		value = 10,
 	},
 	[L"Shnurok"] = 
 	{
@@ -120,13 +230,13 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Typhlosion"] = 
+	[L"Suthani"] = 
 	{
 		lockouts = 
 		{
-			1589353737,
-			1589353737,
-			1589353737,
+			1589353769,
+			1589353769,
+			1589353769,
 		},
 		value = 10,
 	},
@@ -150,6 +260,16 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
+	[L"Tissaria"] = 
+	{
+		lockouts = 
+		{
+			1589395190,
+			1589395190,
+			1589395190,
+		},
+		value = 10,
+	},
 	[L"Jukk"] = 
 	{
 		lockouts = 
@@ -160,23 +280,13 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Lemonclaw"] = 
+	[L"Dipdab"] = 
 	{
 		lockouts = 
 		{
 			1589353737,
 			1589353737,
 			1589353737,
-		},
-		value = 10,
-	},
-	[L"Suthani"] = 
-	{
-		lockouts = 
-		{
-			1589353769,
-			1589353769,
-			1589353769,
 		},
 		value = 10,
 	},
@@ -190,13 +300,13 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Dipdab"] = 
+	[L"Fallox"] = 
 	{
 		lockouts = 
 		{
-			1589353737,
-			1589353737,
-			1589353737,
+			1589395190,
+			1589395190,
+			1589395190,
 		},
 		value = 10,
 	},

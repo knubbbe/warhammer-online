@@ -8,99 +8,99 @@ TidyRoll.Settings =
 	{
 		
 		{
-			choice = 0,
-			rarity = 3,
-			id = 208401,
-			iconNum = 25005,
+			choice = -1,
 			name = L"Scout's Medallion",
-		},
-		
-		{
-			choice = 0,
+			id = 208401,
 			rarity = 3,
-			id = 208402,
-			iconNum = 25006,
-			name = L"Soldier's Medallion",
-		},
-		
-		{
-			choice = 0,
-			rarity = 3,
-			id = 208403,
-			iconNum = 25001,
-			name = L"Officer's Medallion",
-		},
-		
-		{
-			choice = 0,
-			name = L"Conqueror's Medallion",
-			id = 1698,
-			iconNum = 25000,
-			rarity = 4,
-		},
-		
-		{
-			choice = 0,
-			rarity = 3,
-			id = 208431,
-			iconNum = 25003,
-			name = L"Recruit's Emblem",
-		},
-		
-		{
-			choice = 0,
-			rarity = 3,
-			id = 208432,
 			iconNum = 25005,
-			name = L"Scout's Emblem",
 		},
 		
 		{
-			choice = 0,
+			choice = -1,
+			name = L"Soldier's Medallion",
+			id = 208402,
 			rarity = 3,
-			id = 208433,
 			iconNum = 25006,
-			name = L"Soldier's Emblem",
 		},
 		
 		{
-			choice = 0,
+			choice = -1,
+			name = L"Officer's Medallion",
+			id = 208403,
 			rarity = 3,
-			id = 208434,
 			iconNum = 25001,
+		},
+		
+		{
+			choice = -1,
+			rarity = 4,
+			id = 1698,
+			name = L"Conqueror's Medallion",
+			iconNum = 25000,
+		},
+		
+		{
+			choice = -1,
+			name = L"Recruit's Emblem",
+			id = 208431,
+			rarity = 3,
+			iconNum = 25003,
+		},
+		
+		{
+			choice = -1,
+			name = L"Scout's Emblem",
+			id = 208432,
+			rarity = 3,
+			iconNum = 25005,
+		},
+		
+		{
+			choice = -1,
+			name = L"Soldier's Emblem",
+			id = 208433,
+			rarity = 3,
+			iconNum = 25006,
+		},
+		
+		{
+			choice = -1,
 			name = L"Officer's Emblem",
+			id = 208434,
+			rarity = 3,
+			iconNum = 25001,
 		},
 		
 		{
-			choice = 0,
-			name = L"Conqueror's Emblem",
+			choice = -1,
+			rarity = 4,
 			id = 1699,
+			name = L"Conqueror's Emblem",
 			iconNum = 25012,
-			rarity = 4,
 		},
 		
 		{
-			choice = 0,
-			name = L"Seal of the Exemplar",
+			choice = -1,
+			rarity = 4,
 			id = 2165,
+			name = L"Seal of the Exemplar",
 			iconNum = 20475,
-			rarity = 4,
 		},
 		
 		{
-			choice = 0,
-			name = L"Seal of the Paragon",
-			id = 2166,
-			iconNum = 20476,
+			choice = -1,
 			rarity = 4,
+			id = 2166,
+			name = L"Seal of the Paragon",
+			iconNum = 20476,
 		}, 
 		[0] = 
 		{
 			choice = -1,
-			rarity = 3,
-			id = 208400,
-			iconNum = 25003,
 			name = L"Recruit's Medallion",
+			id = 208400,
+			rarity = 3,
+			iconNum = 25003,
 		},
 	},
 	["button-offset"] = 0,
@@ -117,7 +117,7 @@ TidyRoll.Settings =
 	["managment-bind-greed-modificator"] = 0,
 	["onnew-flash"] = true,
 	["tooltip-disable-comparison"] = false,
-	["button-number"] = 8,
+	["button-number"] = 6,
 	["button-growth-direction"] = L"down",
 	["onnew-flash-only-new-items"] = false,
 	["managment-bind-pass-modificator"] = 0,

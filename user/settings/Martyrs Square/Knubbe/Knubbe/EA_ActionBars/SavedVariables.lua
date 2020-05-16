@@ -291,7 +291,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Iron Contraption",
 				broken = false,
-				timestamp = 16,
+				timestamp = 15,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -1761,7 +1761,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Book of Binding",
 				broken = false,
-				timestamp = 16,
+				timestamp = 15,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -1791,7 +1791,7 @@ EA_ActionBars_DataCache =
 					{
 						type = 3,
 						value = 0,
-						cooldownTimeLeft = 3600,
+						cooldownTimeLeft = 0,
 						reference = 246,
 						totalCooldownTime = 3600,
 					},

@@ -4,11 +4,11 @@ TexturedButtons.Settings =
 	{
 		HideActive = true,
 		SaveQuicklock = false,
-		CustomGlow = 2,
-		HideQuicklock = false,
 		ActionButtonPickUpModifier = 32,
-		HideGlow = false,
 		CooldownPulse = true,
+		CustomGlow = 2,
+		HideGlow = false,
+		HideQuicklock = false,
 	},
 	AdvancedTextures = 
 	{
@@ -158,7 +158,7 @@ TexturedButtons.Settings =
 			G = 0,
 			R = 0,
 		},
-		Alpha = 0.8,
+		Alpha = 0.80000001192093,
 		ShowGlobalCooldownText = false,
 	},
 	Custom = 

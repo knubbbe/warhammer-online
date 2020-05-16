@@ -1,0 +1,190 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    
+    <Window name="TChatTabWindowsTemplate" movable="false">
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+          <AbsPoint x="0" y="90"/>
+        </Anchor>
+        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="">
+          <AbsPoint x="0" y="-50"/>
+        </Anchor>
+      </Anchors>
+
+      <Windows>
+
+        <Label name="$parentSelectWindowLabel" inherits="TChatLabel">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="30" y="15"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="-10" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <ComboBox name="$parentSelectWindowCombo" inherits="EA_ComboBox_DefaultResizable" layer="popup">
+          <EventHandlers>
+            <EventHandler event="OnSelChanged" function="TidyChat.Options.UpdateGroupTabs" />
+          </EventHandlers>
+          
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSelectWindowLabel">
+              <AbsPoint x="0" y="10"/>
+            </Anchor>
+          </Anchors>
+        </ComboBox>
+
+        <Label name="$parentTabsInfoLabel" font="font_clear_default" textalign="left" handleinput="false" autoresize="true" wordwrap="true">
+          <Size>
+            <AbsPoint x="200" y="60" />
+          </Size>
+          <Anchors>
+            <Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="-10" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+      </Windows>
+    </Window>
+
+    
+    
+    
+    
+
+    <Window name="TChatTabWindowsGroupTemplate" movable="false">
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+          <AbsPoint x="0" y="80"/>
+        </Anchor>
+        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="">
+          <AbsPoint x="0" y="0"/>
+        </Anchor>
+      </Anchors>
+
+      <Windows>
+
+        <Window name="$parentTabsShowingCheckbox" inherits="TChatCheckboxTemplate">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="40" y="15"/>
+            </Anchor>
+            <Anchor point="top" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="0" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+        
+        <Window name="$parentBGShowingCheckbox" inherits="TChatCheckboxTemplate">
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentTabsShowingCheckbox">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="-10" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+
+        <Window name="$parentClickThroughCheckbox" inherits="TChatCheckboxTemplate">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTabsShowingCheckbox">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="topright" relativeTo="$parentBGShowingCheckbox">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+
+        <Label name="$parentScrollbarLabel" inherits="TChatLabel" font="font_clear_medium">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentClickThroughCheckbox">
+              <AbsPoint x="0" y="15"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="topright" relativeTo="$parentClickThroughCheckbox">
+              <AbsPoint x="0" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        
+        <Label name="$parentPositionLabel" inherits="TChatLabel">
+          <Size>
+            <AbsPoint x="170" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentScrollbarLabel">
+              <AbsPoint x="10" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <ComboBox name="$parentScrollbarPositionCombo" inherits="EA_ComboBox_DefaultResizable" layer="popup">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentPositionLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </ComboBox>
+
+        <Label name="$parentScrollbarFadeinAlphaLabel" inherits="TChatLabel">
+          <Size>
+            <AbsPoint x="170" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentPositionLabel">
+              <AbsPoint x="0" y="20"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <SliderBar name="$parentScrollbarFadeinAlphaSlider" inherits="EA_Default_SliderBar" >
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentScrollbarFadeinAlphaLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </SliderBar>
+
+        <Window name="$parentScrollbarFadeoutCheckbox" inherits="TChatCheckboxTemplate">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentScrollbarFadeinAlphaLabel">
+              <AbsPoint x="0" y="15"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="-10" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+
+        <Label name="$parentScrollbarFadeoutAlphaLabel" inherits="TChatLabel">
+          <Size>
+            <AbsPoint x="170" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentScrollbarFadeoutCheckbox">
+              <AbsPoint x="0" y="3"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <SliderBar name="$parentScrollbarFadeoutAlphaSlider" inherits="EA_Default_SliderBar" >
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentScrollbarFadeoutAlphaLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </SliderBar>
+
+
+
+      </Windows>
+    </Window>
+
+
+
+  </Windows>
+</Interface>

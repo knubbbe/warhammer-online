@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="TidyRollAnchor" sizeX="64.000000" sizeY="87.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="440.000000" yOffset="-258.500000" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="440.000000" yOffset="-258.500061" />
             </Anchors>
         </WindowSettings>
     </Windows>

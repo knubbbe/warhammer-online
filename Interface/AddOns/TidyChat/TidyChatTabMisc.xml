@@ -1,0 +1,44 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    
+    <Window name="TChatTabMiscTemplate" movable="false">
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+          <AbsPoint x="0" y="90"/>
+        </Anchor>
+        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="">
+          <AbsPoint x="0" y="-50"/>
+        </Anchor>
+      </Anchors>
+      
+      <Windows>
+        
+        <Window name="$parentSocialShowingCheckbox" inherits="TChatCheckboxTemplate">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="30" y="15"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="-10" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+
+        <Window name="$parentToBottomShowingCheckbox" inherits="TChatCheckboxTemplate">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSocialShowingCheckbox">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="topright" relativeTo="$parentSocialShowingCheckbox">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+
+
+
+      </Windows>
+    </Window>
+    
+  </Windows>
+</Interface>

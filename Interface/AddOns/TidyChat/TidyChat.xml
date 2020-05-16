@@ -1,0 +1,162 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    
+    <Window name="TidyChatOptions" inherits="EA_Window_DefaultContextMenuFrame"  movable="true" popable="false" layer="default" savesettings="false" handleinput="true" >
+      <Size>
+        <AbsPoint x="530" y="530" />
+      </Size>
+      <Anchors>
+        <Anchor point="center" relativePoint="center" relativeTo="Root">
+          <AbsPoint x="0" y="0"/>
+        </Anchor>
+      </Anchors>
+      <EventHandlers>
+        <EventHandler event="OnShown" function="TidyChat.Options.OnShown" />
+        <EventHandler event="OnHidden" function="TidyChat.Options.OnHidden" />
+      </EventHandlers>
+
+      <Windows>
+
+        <!-- Background -->
+        <FullResizeImage name="$parentBackground" inherits="EA_FullResizeImage_BlackTransparent" handleinput="false">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" >
+              <AbsPoint x="3" y="3" />
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="bottomright" >
+              <AbsPoint x="-3" y="-3" />
+            </Anchor>
+          </Anchors>
+        </FullResizeImage>
+
+        <!-- Frame -->
+        <FullResizeImage name="$parentFrame" inherits="EA_Button_ResizeIconFrameNormal" handleinput="false">
+          <Anchors>
+            <Anchor point="topright" relativePoint="topright" />
+            <Anchor point="bottomleft" relativePoint="bottomleft" />
+          </Anchors>
+        </FullResizeImage>
+        
+        
+        <Label name="$parentTitleLabel" inherits="EA_Label_DefaultText" font="font_clear_large_bold" handleinput="false">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="0" y="10"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="0" y="10"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        
+        <Label name="$parentVersionLabel" inherits="EA_Label_DefaultText" handleinput="false">
+          <Size>
+            <AbsPoint x="80" y="30" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parent">
+              <AbsPoint x="2" y="-2"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        
+        <Button name="$parentCloseButton" inherits="EA_Button_DefaultWindowClose">
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyChat.Options.OnClose" />
+          </EventHandlers>
+        </Button>
+        
+        <Button name="$parentCloseBottomButton" inherits="TChatButton">
+          <Anchors>
+            <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+              <AbsPoint x="-20" y="-10"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyChat.Options.OnClose" />
+          </EventHandlers>
+        </Button>
+
+        <Button name="$parentRevertButton" inherits="TChatButton">
+          <Anchors>
+            <Anchor point="left" relativePoint="right" relativeTo="$parentCloseBottomButton">
+              <AbsPoint x="-10" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyChat.Options.Reset" />
+          </EventHandlers>
+        </Button>
+
+
+        <Button name="$parentApplyButton" inherits="TChatButton">
+          <Anchors>
+            <Anchor point="left" relativePoint="right" relativeTo="$parentRevertButton">
+              <AbsPoint x="-10" y="0"/>
+            </Anchor>
+          </Anchors>
+          <EventHandlers>
+            <EventHandler event="OnLButtonUp" function="TidyChat.Options.OnApply" />
+          </EventHandlers>
+        </Button>
+        
+        
+        
+        <!--Tabs-->
+        <Button name="$parentViewMode1" inherits="TChatTabButton" id="1">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTitleLabel">
+              <AbsPoint x="6" y="4"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        
+        <Button name="$parentViewMode2" inherits="TChatTabButton" id="2">
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentViewMode1">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        
+        <Button name="$parentViewMode3" inherits="TChatTabButton" id="3">
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentViewMode2">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+        
+        <Button name="$parentViewMode4" inherits="TChatTabButton" id="4">
+          <Anchors>
+            <Anchor point="topright" relativePoint="topleft" relativeTo="$parentViewMode3">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Button>
+
+        <Window name="$parentTabWindows" inherits="TChatTabWindowsTemplate"/>
+        <Window name="$parentTabTextEntry" inherits="TChatTabTextEntryTemplate"/>
+        <Window name="$parentTabLogs" inherits="TChatTabLogsTemplate"/>
+        <Window name="$parentTabMisc" inherits="TChatTabMiscTemplate"/>
+
+
+
+      </Windows>
+    </Window>
+
+
+
+
+    <Window name="TextEntryAnchor" handleinput="false" savesettings="true">
+      <Size>
+        <AbsPoint x="550" y="34" />
+      </Size>
+      <Anchors>
+        <Anchor point="center" relativePoint="center" relativeTo="Root"/>
+      </Anchors>
+    </Window>
+
+
+  </Windows>
+</Interface>

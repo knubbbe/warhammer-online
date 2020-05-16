@@ -1,0 +1,141 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+  <Windows>
+    
+    <Window name="TChatTabTextEntryTemplate" movable="false">
+      <Anchors>
+        <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+          <AbsPoint x="0" y="90"/>
+        </Anchor>
+        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="">
+          <AbsPoint x="0" y="-50"/>
+        </Anchor>
+      </Anchors>
+      
+      <Windows>
+        
+        <Label name="$parentTextEntryLabel" inherits="TChatLabel" font="font_clear_medium">
+          <Anchors>
+            <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+              <AbsPoint x="30" y="15"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="-10" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+        
+        <Window name="$parentFreeTextEntryCheckbox" inherits="TChatCheckboxTemplate">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTextEntryLabel">
+              <AbsPoint x="10" y="15"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="topright" relativeTo="$parentTextEntryLabel">
+              <AbsPoint x="0" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+
+        <Label name="$parentRelativeToLabel" inherits="TChatLabel">
+          <Size>
+            <AbsPoint x="170" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentFreeTextEntryCheckbox">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <ComboBox name="$parentRelativeToCombo" inherits="EA_ComboBox_DefaultResizable" layer="popup">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentRelativeToLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </ComboBox>
+
+        <Label name="$parentAnchorPointLabel" inherits="TChatLabel">
+          <Size>
+            <AbsPoint x="170" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentRelativeToLabel">
+              <AbsPoint x="0" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <ComboBox name="$parentAnchorPointCombo" inherits="EA_ComboBox_DefaultResizable" layer="popup">
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentAnchorPointLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </ComboBox>
+        
+        <Label name="$parentBackgroundAlphaLabel" inherits="TChatLabel">
+          <Size>
+            <AbsPoint x="170" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentAnchorPointLabel">
+              <AbsPoint x="0" y="20"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <SliderBar name="$parentBackgroundAlphaSlider" inherits="EA_Default_SliderBar" >
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentBackgroundAlphaLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </SliderBar>
+
+        <Label name="$parentChannelLabel" inherits="TChatLabel" font="font_clear_medium">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentBackgroundAlphaLabel">
+              <AbsPoint x="-10" y="50"/>
+            </Anchor>
+            <Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+              <AbsPoint x="-10" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <Window name="$parentChannelShowingCheckbox" inherits="TChatCheckboxTemplate">
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentChannelLabel">
+              <AbsPoint x="10" y="15"/>
+            </Anchor>
+            <Anchor point="bottomright" relativePoint="topright" relativeTo="$parentChannelLabel">
+              <AbsPoint x="0" y="15"/>
+            </Anchor>
+          </Anchors>
+        </Window>
+
+        <Label name="$parentChannelAlphaLabel" inherits="TChatLabel">
+          <Size>
+            <AbsPoint x="170" y="20" />
+          </Size>
+          <Anchors>
+            <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentChannelShowingCheckbox">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </Label>
+
+        <SliderBar name="$parentChannelAlphaSlider" inherits="EA_Default_SliderBar" >
+          <Anchors>
+            <Anchor point="right" relativePoint="left" relativeTo="$parentChannelAlphaLabel">
+              <AbsPoint x="0" y="0"/>
+            </Anchor>
+          </Anchors>
+        </SliderBar>
+
+
+      </Windows>
+    </Window>
+    
+  </Windows>
+</Interface>

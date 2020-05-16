@@ -1,5 +1,15 @@
 FriendSuggester.Data = 
 {
+	[L"Peon"] = 
+	{
+		lockouts = 
+		{
+			1589612407,
+			1589612407,
+			1589612407,
+		},
+		value = 10,
+	},
 	[L"Walian"] = 
 	{
 		lockouts = 
@@ -9,6 +19,16 @@ FriendSuggester.Data =
 			1589582206,
 		},
 		value = 15,
+	},
+	[L"Elignis"] = 
+	{
+		lockouts = 
+		{
+			1589612246,
+			1589612246,
+			1589612246,
+		},
+		value = 10,
 	},
 	[L"Natem"] = 
 	{
@@ -20,6 +40,26 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
+	[L"Zigmarislav"] = 
+	{
+		lockouts = 
+		{
+			1589582206,
+			1589582206,
+			1589582206,
+		},
+		value = 15,
+	},
+	[L"Stayoffmylawn"] = 
+	{
+		lockouts = 
+		{
+			1589612246,
+			1589612246,
+			1589612246,
+		},
+		value = 10,
+	},
 	[L"Kulienn"] = 
 	{
 		lockouts = 
@@ -29,6 +69,16 @@ FriendSuggester.Data =
 			1589582206,
 		},
 		value = 15,
+	},
+	[L"Shury"] = 
+	{
+		lockouts = 
+		{
+			1589612246,
+			1589612246,
+			1589612246,
+		},
+		value = 10,
 	},
 	[L"Ibimseinsalman"] = 
 	{
@@ -70,13 +120,13 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Femafortpoingn"] = 
+	[L"Fuaark"] = 
 	{
 		lockouts = 
 		{
-			1589582946,
-			1589582946,
-			1589582946,
+			1589582206,
+			1589582206,
+			1589582206,
 		},
 		value = 5,
 	},
@@ -90,7 +140,7 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Fuaark"] = 
+	[L"Rhaggles"] = 
 	{
 		lockouts = 
 		{
@@ -98,7 +148,7 @@ FriendSuggester.Data =
 			1589582206,
 			1589582206,
 		},
-		value = 5,
+		value = 15,
 	},
 	[L"Royo"] = 
 	{
@@ -140,15 +190,15 @@ FriendSuggester.Data =
 		},
 		value = 10,
 	},
-	[L"Rhaggles"] = 
+	[L"Femafortpoingn"] = 
 	{
 		lockouts = 
 		{
-			1589582206,
-			1589582206,
-			1589582206,
+			1589582946,
+			1589582946,
+			1589582946,
 		},
-		value = 15,
+		value = 5,
 	},
 	[L"Arache"] = 
 	{
@@ -160,15 +210,15 @@ FriendSuggester.Data =
 		},
 		value = 5,
 	},
-	[L"Zigmarislav"] = 
+	[L"Feynriel"] = 
 	{
 		lockouts = 
 		{
-			1589582206,
-			1589582206,
-			1589582206,
+			1589612246,
+			1589612246,
+			1589612246,
 		},
-		value = 15,
+		value = 10,
 	},
 	[L"Halinn"] = 
 	{

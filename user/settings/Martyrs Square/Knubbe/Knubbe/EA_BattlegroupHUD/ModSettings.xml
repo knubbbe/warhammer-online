@@ -9,7 +9,7 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="BattlegroupHUDGroup2LayoutWindow" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.205391" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="0.000000" yOffset="-59.110493" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="0.000000" yOffset="-59.110516" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="BattlegroupHUDGroup3LayoutWindow" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.191921" showing="false">
@@ -19,7 +19,7 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="BattlegroupHUDGroup4LayoutWindow" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.191922" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="165.000000" yOffset="53.667183" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="165.000000" yOffset="53.667130" />
             </Anchors>
         </WindowSettings>
     </Windows>

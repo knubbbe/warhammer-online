@@ -2,7 +2,7 @@
 <UiModuleSettings xmlVersion="1.0" enabled="true" lastLoadedVersion="1.2" messagingEnabled="false">
     <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="" savedVariablesVersion="" />
     <Windows>
-        <WindowSettings xmlVersion="1.0" name="RoR_Window_ScenarioSurrender" sizeX="350.000000" sizeY="150.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+        <WindowSettings xmlVersion="1.0" name="RoR_Window_ScenarioSurrender" sizeX="350.000000" sizeY="100.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
                 <WindowAnchor xmlVersion="1.0" point="top" relativePoint="top" relativeTo="Root" xOffset="-355.666748" yOffset="11.999999" />
             </Anchors>

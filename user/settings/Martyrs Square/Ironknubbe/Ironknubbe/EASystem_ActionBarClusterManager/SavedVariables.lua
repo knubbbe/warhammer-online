@@ -4,9 +4,13 @@ ActionBarClusterSettings =
 	{
 		barId = 3,
 		columns = 7,
-		scale = 0.93,
 		buttonCount = 7,
-		buttonXSpacing = 0,
+		scale = 0.93,
+		modificationSettings = 
+		{
+			true,
+			true,
+		},
 		buttonXPadding = 4,
 		buttonYSpacing = 0,
 		show = true,
@@ -15,20 +19,20 @@ ActionBarClusterSettings =
 		caps = false,
 		buttonFactory = "ActionButton",
 		buttonYPadding = 4,
-		modificationSettings = 
-		{
-			true,
-			true,
-		},
+		buttonXSpacing = 0,
 		selector = 44,
 	},
 	EA_ActionBar1 = 
 	{
 		barId = 1,
 		columns = 12,
-		scale = 0.93,
 		buttonCount = 12,
-		buttonXSpacing = 0,
+		scale = 0.93,
+		modificationSettings = 
+		{
+			true,
+			true,
+		},
 		buttonXPadding = 4,
 		buttonYSpacing = 0,
 		show = true,
@@ -37,11 +41,7 @@ ActionBarClusterSettings =
 		caps = true,
 		buttonFactory = "ActionButton",
 		buttonYPadding = 4,
-		modificationSettings = 
-		{
-			true,
-			true,
-		},
+		buttonXSpacing = 0,
 		selector = 43,
 	},
 	EA_GrantedAbilities = 
@@ -70,9 +70,13 @@ ActionBarClusterSettings =
 	{
 		barId = 4,
 		columns = 12,
-		scale = 0.93,
 		buttonCount = 12,
-		buttonXSpacing = 0,
+		scale = 0.93,
+		modificationSettings = 
+		{
+			true,
+			true,
+		},
 		buttonXPadding = 6,
 		buttonYSpacing = 0,
 		show = false,
@@ -81,20 +85,20 @@ ActionBarClusterSettings =
 		caps = false,
 		buttonFactory = "ActionButton",
 		buttonYPadding = 5,
-		modificationSettings = 
-		{
-			true,
-			true,
-		},
+		buttonXSpacing = 0,
 		selector = 43,
 	},
 	EA_ActionBar5 = 
 	{
 		barId = 5,
 		columns = 12,
-		scale = 0.93,
 		buttonCount = 12,
-		buttonXSpacing = 0,
+		scale = 0.93,
+		modificationSettings = 
+		{
+			true,
+			true,
+		},
 		buttonXPadding = 6,
 		buttonYSpacing = 0,
 		show = false,
@@ -103,11 +107,7 @@ ActionBarClusterSettings =
 		caps = false,
 		buttonFactory = "ActionButton",
 		buttonYPadding = 5,
-		modificationSettings = 
-		{
-			true,
-			true,
-		},
+		buttonXSpacing = 0,
 		selector = 43,
 	},
 	EA_StanceBar = 
@@ -136,9 +136,13 @@ ActionBarClusterSettings =
 	{
 		barId = 2,
 		columns = 12,
-		scale = 0.93,
 		buttonCount = 12,
-		buttonXSpacing = 0,
+		scale = 0.93,
+		modificationSettings = 
+		{
+			true,
+			true,
+		},
 		buttonXPadding = 4,
 		buttonYSpacing = 0,
 		show = true,
@@ -147,11 +151,7 @@ ActionBarClusterSettings =
 		caps = false,
 		buttonFactory = "ActionButton",
 		buttonYPadding = 4,
-		modificationSettings = 
-		{
-			true,
-			true,
-		},
+		buttonXSpacing = 0,
 		selector = 44,
 	},
 	layoutMode = 4,
@@ -553,11 +553,11 @@ ActionBarClusterPositions =
 			XOffset = 0,
 			YOffset = 0,
 		},
-		EA_ActionBar1 = 
+		[5] = 
 		{
-			RelativeTo = "Root",
-			Point = "bottom",
-			RelativePoint = "bottomright",
+			RelativeTo = "EA_ActionBar1",
+			Point = "topright",
+			RelativePoint = "bottom",
 			XOffset = 0,
 			YOffset = 0,
 		},
@@ -649,11 +649,11 @@ ActionBarClusterPositions =
 			XOffset = 125,
 			YOffset = -12,
 		},
-		[5] = 
+		EA_ActionBar1 = 
 		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "topright",
-			RelativePoint = "bottom",
+			RelativeTo = "Root",
+			Point = "bottom",
+			RelativePoint = "bottomright",
 			XOffset = 0,
 			YOffset = 0,
 		},
@@ -796,15 +796,13 @@ ActionBarClusterPositions =
 			scale = 0.93000012636185,
 			YOffset = 0,
 		},
-		EA_ActionBar1 = 
+		[5] = 
 		{
-			RelativeTo = "Root",
-			Point = "bottom",
+			RelativeTo = "EA_ActionBar1",
+			Point = "top",
 			RelativePoint = "bottom",
-			XOffset = 11.333211898804,
-			showing = true,
-			scale = 0.93000012636185,
-			YOffset = -69.180030822754,
+			XOffset = -11,
+			YOffset = 0,
 		},
 		[11] = 
 		{
@@ -904,13 +902,15 @@ ActionBarClusterPositions =
 			scale = 0.74999994039536,
 			YOffset = -137.99995422363,
 		},
-		[5] = 
+		EA_ActionBar1 = 
 		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "top",
+			RelativeTo = "Root",
+			Point = "bottom",
 			RelativePoint = "bottom",
-			XOffset = -11,
-			YOffset = 0,
+			XOffset = 11.333211898804,
+			showing = true,
+			scale = 0.93000012636185,
+			YOffset = -69.180030822754,
 		},
 		EA_TacticsEditor = 
 		{
@@ -950,7 +950,7 @@ ActionBarClusterPositions =
 			RelativePoint = "bottom",
 			XOffset = -15.666903495789,
 			showing = true,
-			scale = 0.99999997350905,
+			scale = 1,
 			YOffset = -216,
 		},
 		[7] = 
@@ -997,15 +997,15 @@ ActionBarClusterPositions =
 			XOffset = -11,
 			YOffset = 0,
 		},
-		EA_ActionBar1 = 
+		EA_MoraleBar = 
 		{
 			RelativeTo = "Root",
-			Point = "bottom",
-			RelativePoint = "bottom",
-			XOffset = -15.62389755249,
+			Point = "bottomright",
+			RelativePoint = "bottomright",
+			XOffset = -282.22192382813,
 			showing = true,
-			scale = 0.82216242949168,
-			YOffset = 3.4438238799339e-005,
+			scale = 1,
+			YOffset = -2.4371676772716e-005,
 		},
 		[4] = 
 		{
@@ -1033,7 +1033,14 @@ ActionBarClusterPositions =
 			XOffset = 28,
 			YOffset = 0,
 		},
-		showing = false,
+		[23] = 
+		{
+			RelativeTo = "EA_ActionBar1",
+			Point = "top",
+			RelativePoint = "bottom",
+			XOffset = -11,
+			YOffset = 0,
+		},
 		[20] = 
 		{
 			RelativeTo = "EA_ActionBar1",
@@ -1049,7 +1056,7 @@ ActionBarClusterPositions =
 			RelativePoint = "bottomleft",
 			XOffset = 467,
 			showing = true,
-			scale = 0.99999997350905,
+			scale = 1,
 			YOffset = 8.0000286102295,
 		},
 		[21] = 
@@ -1067,18 +1074,16 @@ ActionBarClusterPositions =
 			RelativePoint = "bottom",
 			XOffset = 173.72970581055,
 			showing = true,
-			scale = 0.60700191391839,
+			scale = 0.60700190067291,
 			YOffset = -120.29587554932,
 		},
-		EA_MoraleBar = 
+		[5] = 
 		{
-			RelativeTo = "Root",
-			Point = "bottomright",
-			RelativePoint = "bottomright",
-			XOffset = -282.22192382813,
-			showing = true,
-			scale = 0.99999997350905,
-			YOffset = -2.4371676772716e-005,
+			RelativeTo = "EA_ActionBar1",
+			Point = "top",
+			RelativePoint = "bottom",
+			XOffset = -11,
+			YOffset = 0,
 		},
 		[11] = 
 		{
@@ -1088,14 +1093,7 @@ ActionBarClusterPositions =
 			XOffset = -11,
 			YOffset = 0,
 		},
-		[23] = 
-		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "top",
-			RelativePoint = "bottom",
-			XOffset = -11,
-			YOffset = 0,
-		},
+		showing = false,
 		EA_GrantedAbilities = 
 		{
 			RelativeTo = "Root",
@@ -1103,7 +1101,7 @@ ActionBarClusterPositions =
 			RelativePoint = "bottom",
 			XOffset = -256.9176940918,
 			showing = true,
-			scale = 0.51636324988471,
+			scale = 0.51636326313019,
 			YOffset = -170.88729858398,
 		},
 		[24] = 
@@ -1137,7 +1135,7 @@ ActionBarClusterPositions =
 			RelativePoint = "bottom",
 			XOffset = 440.33312988281,
 			showing = true,
-			scale = 0.99999997350905,
+			scale = 1,
 			YOffset = 7.9998931884766,
 		},
 		[6] = 
@@ -1155,7 +1153,7 @@ ActionBarClusterPositions =
 			RelativePoint = "bottom",
 			XOffset = -243.1667175293,
 			showing = true,
-			scale = 0.74999994701809,
+			scale = 0.74999994039536,
 			YOffset = -120,
 		},
 		EA_CareerResourceWindowActionBar = 
@@ -1168,13 +1166,15 @@ ActionBarClusterPositions =
 			scale = 0.57885554101732,
 			YOffset = -163.95324707031,
 		},
-		[5] = 
+		EA_ActionBar1 = 
 		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "top",
+			RelativeTo = "Root",
+			Point = "bottom",
 			RelativePoint = "bottom",
-			XOffset = -11,
-			YOffset = 0,
+			XOffset = -15.62389755249,
+			showing = true,
+			scale = 0.82216244935989,
+			YOffset = 3.4438238799339e-005,
 		},
 		EA_ActionBar2 = 
 		{
@@ -1183,7 +1183,7 @@ ActionBarClusterPositions =
 			RelativePoint = "bottom",
 			XOffset = -15.857271194458,
 			showing = true,
-			scale = 0.84486967987484,
+			scale = 0.84486967325211,
 			YOffset = -59.169353485107,
 		},
 		EA_TacticsEditor = 
@@ -1295,13 +1295,13 @@ ActionBarClusterPositions =
 			XOffset = 123,
 			YOffset = 0,
 		},
-		[23] = 
+		EA_CareerResourceWindowActionBar = 
 		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "topright",
-			RelativePoint = "bottom",
-			XOffset = 0,
-			YOffset = 0,
+			RelativeTo = "EA_CareerResourceWindow",
+			Point = "left",
+			RelativePoint = "right",
+			XOffset = -4,
+			YOffset = 10,
 		},
 		[20] = 
 		{
@@ -1335,13 +1335,13 @@ ActionBarClusterPositions =
 			XOffset = 0,
 			YOffset = 0,
 		},
-		EA_ActionBar1 = 
+		[5] = 
 		{
-			RelativeTo = "Root",
-			Point = "bottom",
-			RelativePoint = "bottomright",
+			RelativeTo = "EA_ActionBar1",
+			Point = "topright",
+			RelativePoint = "bottom",
 			XOffset = 0,
-			YOffset = -68,
+			YOffset = 0,
 		},
 		[11] = 
 		{
@@ -1351,13 +1351,13 @@ ActionBarClusterPositions =
 			XOffset = 0,
 			YOffset = 0,
 		},
-		EA_CareerResourceWindowActionBar = 
+		[23] = 
 		{
-			RelativeTo = "EA_CareerResourceWindow",
-			Point = "left",
-			RelativePoint = "right",
-			XOffset = -4,
-			YOffset = 10,
+			RelativeTo = "EA_ActionBar1",
+			Point = "topright",
+			RelativePoint = "bottom",
+			XOffset = 0,
+			YOffset = 0,
 		},
 		EA_GrantedAbilities = 
 		{
@@ -1431,13 +1431,13 @@ ActionBarClusterPositions =
 			XOffset = 0,
 			YOffset = 0,
 		},
-		[5] = 
+		EA_ActionBar1 = 
 		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "topright",
-			RelativePoint = "bottom",
+			RelativeTo = "Root",
+			Point = "bottom",
+			RelativePoint = "bottomright",
 			XOffset = 0,
-			YOffset = 0,
+			YOffset = -68,
 		},
 		EA_TacticsEditor = 
 		{
@@ -1554,13 +1554,13 @@ ActionBarClusterPositions =
 			XOffset = 28,
 			YOffset = 0,
 		},
-		[23] = 
+		EA_CareerResourceWindowActionBar = 
 		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "top",
-			RelativePoint = "bottom",
-			XOffset = -11,
-			YOffset = 0,
+			RelativeTo = "EA_CareerResourceWindow",
+			Point = "left",
+			RelativePoint = "right",
+			XOffset = -4,
+			YOffset = 10,
 		},
 		[20] = 
 		{
@@ -1594,13 +1594,13 @@ ActionBarClusterPositions =
 			XOffset = 0,
 			YOffset = 0,
 		},
-		EA_ActionBar1 = 
+		[5] = 
 		{
-			RelativeTo = "Root",
-			Point = "bottom",
+			RelativeTo = "EA_ActionBar1",
+			Point = "top",
 			RelativePoint = "bottom",
-			XOffset = 0,
-			YOffset = -138,
+			XOffset = -11,
+			YOffset = 0,
 		},
 		[11] = 
 		{
@@ -1610,13 +1610,13 @@ ActionBarClusterPositions =
 			XOffset = -11,
 			YOffset = 0,
 		},
-		EA_CareerResourceWindowActionBar = 
+		[23] = 
 		{
-			RelativeTo = "EA_CareerResourceWindow",
-			Point = "left",
-			RelativePoint = "right",
-			XOffset = -4,
-			YOffset = 10,
+			RelativeTo = "EA_ActionBar1",
+			Point = "top",
+			RelativePoint = "bottom",
+			XOffset = -11,
+			YOffset = 0,
 		},
 		EA_MoraleBar = 
 		{
@@ -1634,12 +1634,12 @@ ActionBarClusterPositions =
 			XOffset = -11,
 			YOffset = 0,
 		},
-		EA_ActionBar5 = 
+		[12] = 
 		{
-			RelativeTo = "EA_ActionBar4",
-			Point = "bottomright",
-			RelativePoint = "bottomleft",
-			XOffset = 0,
+			RelativeTo = "EA_ActionBar1",
+			Point = "top",
+			RelativePoint = "bottom",
+			XOffset = -11,
 			YOffset = 0,
 		},
 		EA_GrantedAbilities = 
@@ -1674,21 +1674,21 @@ ActionBarClusterPositions =
 			XOffset = -11,
 			YOffset = 0,
 		},
-		[12] = 
+		EA_ActionBar5 = 
 		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "top",
-			RelativePoint = "bottom",
-			XOffset = -11,
+			RelativeTo = "EA_ActionBar4",
+			Point = "bottomright",
+			RelativePoint = "bottomleft",
+			XOffset = 0,
 			YOffset = 0,
 		},
-		[5] = 
+		EA_ActionBar1 = 
 		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "top",
+			RelativeTo = "Root",
+			Point = "bottom",
 			RelativePoint = "bottom",
-			XOffset = -11,
-			YOffset = 0,
+			XOffset = 0,
+			YOffset = -138,
 		},
 		EA_ActionBar2 = 
 		{
