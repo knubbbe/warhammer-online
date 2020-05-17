@@ -7,10 +7,10 @@ EA_Window_Backpack.settings =
 		[6] = L"Pouch 5",
 		[7] = L"Pouch 1",
 		[2] = L"Weapons,Utility,Armor,Common",
-		[8] = L"Pouch 2",
-		[3] = L"Pouch 2",
-		[4] = L"Armor,Uncommon,Weapons,Very Rare,Rare,Mythic",
 		[9] = L"Pouch 1",
+		[3] = L"Pouch 2",
+		[8] = L"Pouch 2",
+		[4] = L"Armor,Uncommon,Weapons,Mythic,Rare,Very Rare",
 	},
 	filters = 
 	{
@@ -19,9 +19,9 @@ EA_Window_Backpack.settings =
 			[10200] = true,
 			[80300] = true,
 			[10100] = true,
-			[80500] = true,
-			[80400] = true,
 			[80600] = true,
+			[80400] = true,
+			[80500] = true,
 		},
 		[2] = 
 		{
