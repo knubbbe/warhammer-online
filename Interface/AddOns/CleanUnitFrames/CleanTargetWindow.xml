@@ -1,0 +1,30 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+    <Windows>
+
+
+        <!-- AnchorWindow for the Clean Target Frames -->
+        <Window name="CleanEnemyTargetLayoutWindow" inherits="TargetUnitFrameAnchor" savesettings="true" >
+            <Anchors>
+                <Anchor point="topright" relativePoint="topleft" relativeTo="CleanPlayerWindow">
+                    <AbsPoint x="50" y="0" />
+                </Anchor>
+            </Anchors>
+            <EventHandlers>
+              <EventHandler event="OnInitializeCustomSettings" function="CleanTargetWindow.InitializePrimaryTargetLayout"/>
+            </EventHandlers>
+        </Window>
+        
+       <Window name="CleanFriendlyTargetLayoutWindow" inherits="TargetUnitFrameAnchor" savesettings="true">
+            <Anchors>
+                <Anchor point="bottomleft" relativePoint="topleft" relativeTo="CleanEnemyTargetLayoutWindow">
+                    <AbsPoint x="0" y="0" />
+                </Anchor>
+            </Anchors>
+           <EventHandlers>
+             <EventHandler event="OnInitializeCustomSettings" function="CleanTargetWindow.InitializeSecondaryTargetLayout"/>
+           </EventHandlers>
+        </Window>
+        
+     
+    </Windows>
+</Interface>

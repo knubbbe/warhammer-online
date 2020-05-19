@@ -1,0 +1,17 @@
+<Interface xmlns:xsi="http://wutf-8.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+    <Scripts>
+        <Script file="CleanGroupWindow.lua" />
+    </Scripts>
+    <Windows>
+        <Window name="CleanGroupWindow" skipinput="true" savesettings="true" >
+            <Size>
+                <AbsPoint x="200" y="520" />
+            </Size>
+            <Anchors>
+                <Anchor point="bottomleft" relativePoint="topleft" relativeTo="CleanPlayerWindow">
+                    <AbsPoint x="0" y="48" />
+                </Anchor>
+            </Anchors>
+        </Window>
+    </Windows>
+</Interface>

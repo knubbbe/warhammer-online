@@ -1,0 +1,281 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+    <Scripts>
+        <Script file="CleanPlayerWindow.lua" />
+    </Scripts>
+    <Windows>
+        <DynamicImage name="CleanRvRFlagIndicator" texture="EA_HUD_01" slice="RvR-Flag" popable="false" handleinput="false" layer="overlay">
+            <Size>
+                <AbsPoint x="41" y="53" />
+            </Size>
+            <TexCoords x="113" y="90" />
+        </DynamicImage>
+    
+        <Window name="CleanUnitframeTemplate" movable="false" popable="false" layer="default" savesettings="true">
+            <Size>
+                <AbsPoint x="200" y="74" />
+            </Size>
+            <Windows>
+                <Button name="$parentAction" handleinput="false" alpha="0.0" hilighttexture="" backgroundtexture="" layer="overlay" popable="false">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+                    </Anchors>
+                </Button>
+
+                <!-- RVR Information -->
+                <DynamicImage name="$parentRvRFlagIndicator" inherits="CleanRvRFlagIndicator" handleinput="false" popable="false" layer="background">
+                    <Anchors>
+                        <Anchor point="right" relativePoint="center" relativeTo="$parent">
+                            <AbsPoint x="-20" y="0" />
+                        </Anchor>
+                    </Anchors>
+                </DynamicImage>
+                <Label name="$parentRvRFlagCountDown" font="font_heading_huge" maxchars="64" textalign="center" layer="popup" popable="false" handleinput="false">
+                    <Size>
+                        <AbsPoint x="800" y="72" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="center" relativePoint="center" relativeTo="Root">
+                            <AbsPoint x="0" y="-230" />
+                        </Anchor>
+                    </Anchors>
+                    <Color r="213" g="2" b="0" a="255" />
+                </Label>
+                
+                
+                <!-- Player Status Container -->
+                <Window name="$parentStatusContainer" popable="false" movable="false" handleinput="false">
+                    <Size>
+                        <AbsPoint x="180" y="40" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="0" y="24" />
+                        </Anchor>
+                    </Anchors>
+                    <Windows>
+                    
+                    
+        
+                        <!-- Health Bar Background -->
+                        <DynamicImage name="$parentHealthBarBG" inherits="HealthBarBackground" handleinput="false" layer="background" popable="false">
+                            <Anchors>
+                                <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+                                    <AbsPoint x="0" y="0" />
+                                </Anchor>
+                            </Anchors>
+                        </DynamicImage>
+        
+        
+                        <!-- Player Health Bar -->
+                        <StatusBar name="$parentHealthPercentBar" inherits="UnitFrameFriendlyHealthStatusBar" handleinput="false" popable="false" layer="background" interpolate="false">
+                            <Size>
+                                <AbsPoint x="165" y="28" />
+                            </Size>
+                            <Anchors>
+                                <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+                                    <AbsPoint x="11" y="4" />
+                                </Anchor>
+                            </Anchors>
+                        </StatusBar>
+                        
+                        <!-- Hostile Health Bar -->
+                        <StatusBar name="$parentEnemyHealthPercentBar" inherits="UnitFrameHostileStatusBar" handleinput="false" popable="false" layer="background" interpolate="false">
+                            <Size>
+                                <AbsPoint x="165" y="28" />
+                            </Size>
+                            <Anchors>
+                                <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+                                    <AbsPoint x="11" y="4" />
+                                </Anchor>
+                            </Anchors>
+                        </StatusBar>
+        
+        
+                        <!-- Health Bar Frame -->
+                        <DynamicImage name="$parentHealthBarFrame" inherits="HealthBarFrame" handleinput="false" layer="background" popable="false">
+                            <Anchors>
+                                <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+                                    <AbsPoint x="0" y="0" />
+                                </Anchor>
+                            </Anchors>
+                        </DynamicImage>
+        
+        
+                        <!-- AP Bar Background -->
+                        <DynamicImage name="$parentAPBarBG" inherits="APBarBackground" handleinput="false" layer="background" popable="false">
+                            <Anchors>
+                                <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentAPBarFrame">
+                                    <AbsPoint x="0" y="1" />
+                                </Anchor>
+                            </Anchors>
+                        </DynamicImage>
+        
+        
+                        <!-- AP Health Bar -->
+                        <StatusBar name="$parentAPPercentBar" inherits="UnitFrameAPStatusBar" handleinput="false" popable="false" layer="background" interpolate="false">
+                            <Size>
+                                <AbsPoint x="175" y="12" />
+                            </Size>
+                            <Anchors>
+                                <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentAPBarFrame">
+                                    <AbsPoint x="0" y="1" />
+                                </Anchor>
+                            </Anchors>
+                        </StatusBar>
+        
+        
+                        <!-- AP Bar Frame -->
+                        <DynamicImage name="$parentAPBarFrame" inherits="APBarFrame" handleinput="false" layer="background" popable="false">
+                            <Anchors>
+                                <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentHealthBarFrame">
+                                    <AbsPoint x="0" y="0" />
+                                </Anchor>
+                            </Anchors>
+                        </DynamicImage>
+        
+        
+                        <!-- Health Text -->
+                        <Label name="$parentHealthText" handleinput="false" font="font_clear_small_bold" maxchars="15" textalign="bottomright" layer="default">
+                            <Size>
+                                <AbsPoint x="65" y="28" />
+                            </Size>
+                            <Anchors>
+                                <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentHealthPercentBar">
+                                    <AbsPoint x="-4" y="-8" />
+                                </Anchor>
+                            </Anchors>
+                        </Label>
+        
+                        <!-- AP Text -->
+                        <Label name="$parentAPText" handleinput="false" font="font_clear_small_bold" maxchars="15" textalign="center" layer="default">
+                            <Size>
+                                <AbsPoint x="175" y="28" />
+                            </Size>
+                            <Anchors>
+                                <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentAPPercentBar">
+                                    <AbsPoint x="0" y="0" />
+                                </Anchor>
+                            </Anchors>
+                        </Label>
+        
+                    </Windows>
+                </Window>
+                
+                <!-- Player's Name -->
+                <Label name="$parentName" font="font_clear_small_bold" maxchars="30" textalign="bottomleft" layer="popup" popable="false">
+                    <Size>
+                        <AbsPoint x="180" y="23" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentStatusContainer">
+                            <AbsPoint x="3" y="-1" />
+                        </Anchor>
+                    </Anchors>
+                </Label>                                
+                
+                
+                <!-- Level Text -->
+                <Label name="$parentLevelText" font="font_clear_small_bold" handleinput="false" maxchars="10" textalign="left" autoresize="true" popable="false" layer="popup">
+                    <Size>
+                        <AbsPoint x="80" y="24" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="left" relativePoint="left" relativeTo="$parentStatusContainerHealthPercentBar">
+                            <AbsPoint x="5" y="-2" />
+                        </Anchor>
+                    </Anchors>
+                </Label>                
+                
+                <!-- Group Leader Crown -->
+                <DynamicImage name="$parentGroupLeaderCrown" inherits="GroupLeaderCrown" handleinput="false" popable="false" layer="popup">
+                    <Anchors>
+                        <Anchor point="right" relativePoint="left" relativeTo="$parentStatusContainer">
+                            <AbsPoint x="-5" y="2" />
+                        </Anchor>
+                    </Anchors>
+                </DynamicImage>
+                
+                
+                <!-- Warband Leader Crown -->
+                <DynamicImage name="$parentWarbandLeaderCrown" inherits="WarbandLeaderCrown" handleinput="false" popable="false" layer="popup">
+                    <Anchors>
+                        <Anchor point="topright" relativePoint="bottomright" relativeTo="$parentStatusContainer">
+                            <AbsPoint x="-5" y="-1" />
+                        </Anchor>
+                    </Anchors>
+                </DynamicImage>                
+                
+                <DynamicImage name="$parentCareerIcon" textureScale="1.0" handleinput="false"  layer="secondary">
+                    <Size>
+                        <AbsPoint x="32" y="32" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="bottomright" relativePoint="topleft" relativeTo="$parentStatusContainerAPPercentBar">
+                            <AbsPoint x="-4" y="-10" />
+                        </Anchor>
+                    </Anchors>
+                </DynamicImage>
+                
+            </Windows>
+        </Window>
+        
+        <Window name="CleanPlayerWindow" inherits="CleanUnitframeTemplate"  >
+            <Anchors>
+                <Anchor point="topleft" relativePoint="topleft" relativeTo="">
+                    <AbsPoint x="0" y="55" />
+                </Anchor>
+            </Anchors>
+            <EventHandlers>
+                <EventHandler event="OnInitialize" function="CleanPlayerWindow.Initialize" />
+                <EventHandler event="OnUpdate" function="CleanPlayerWindow.Update" />
+                <EventHandler event="OnShutdown" function="CleanPlayerWindow.Shutdown" />
+                <EventHandler event="OnLButtonDown" function="CleanPlayerWindow.OnLButtonDown" />
+                <EventHandler event="OnRButtonUp" function="CleanPlayerWindow.OnRButtonUp" />
+                <EventHandler event="OnMouseOver" function="CleanPlayerWindow.OnMouseOver" />
+            </EventHandlers>
+        </Window>
+        
+        <Window name="CleanGroupMemberTemplate" inherits="CleanUnitframeTemplate" savesettings="true">
+            <EventHandlers>
+                <EventHandler event="OnMouseOver" function="CleanGroupMemberUnitFrame.OnMouseOver" />
+                <EventHandler event="OnMouseOverEnd" function="CleanGroupMemberUnitFrame.OnMouseOverEnd" />
+                <EventHandler event="OnLButtonUp" function="CleanGroupMemberUnitFrame.OnLButtonUp" />
+                <EventHandler event="OnRButtonUp" function="CleanGroupMemberUnitFrame.OnRButtonUp" />
+            </EventHandlers>
+        </Window>
+        
+        <Window name="CleanTargetTemplate" inherits="CleanUnitframeTemplate" savesettings="true">
+            <EventHandlers>
+                <EventHandler event="OnMouseOver" function="CleanTargetUnitFrame.OnMouseOver" />
+                <EventHandler event="OnMouseOverEnd" function="CleanTargetUnitFrame.OnMouseOverEnd" />
+                <EventHandler event="OnLButtonUp" function="CleanTargetUnitFrame.OnLButtonUp" />
+                <EventHandler event="OnRButtonUp" function="CleanTargetUnitFrame.OnRButtonUp" />
+
+            </EventHandlers>
+        </Window>
+        
+        <Window name="CleanOPBAnchor" handleinput="false" popable="false" savesettings="true">
+            <Size>
+                <AbsPoint x="35" y="35" />
+            </Size>
+            <Anchors>
+                <Anchor point="topleft" relativePoint="topleft" relativeTo="Root">
+                    <AbsPoint x="230" y="50" />
+                </Anchor>
+            </Anchors>
+        </Window>
+        
+        <Window name="CleanPetAnchor" handleinput="false" popable="false" savesettings="true">
+            <Size>
+                <AbsPoint x="105" y="35" />
+            </Size>
+            <Anchors>
+                <Anchor point="topright" relativePoint="topleft" relativeTo="CleanPlayerWindow">
+                    <AbsPoint x="30" y="0" />
+                </Anchor>
+            </Anchors>
+        </Window>    
+            
+    </Windows>
+</Interface>

@@ -1,0 +1,6 @@
+2008-12-14  aiiane  <aiiane@aiiane.net>
+
+	* CleanTargetWindow.lua:
+	Force a full refresh of the target buff windows on loading end.
+	[76c6b204c0a2] [1.0.25]
+
