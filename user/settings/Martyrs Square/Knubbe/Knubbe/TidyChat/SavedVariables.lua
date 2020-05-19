@@ -108,10 +108,10 @@ TidyChat.Settings =
 	copy_showing = true,
 	social_showing = false,
 	textentry_channel_showing = true,
-	textentry_relative_to = 1,
+	textentry_free = false,
 	auction_filter_showing = true,
 	version = 9,
-	textentry_free = false,
+	textentry_relative_to = 1,
 }
 
 

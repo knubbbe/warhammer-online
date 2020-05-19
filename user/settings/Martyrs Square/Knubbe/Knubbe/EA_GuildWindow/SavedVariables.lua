@@ -6,7 +6,6 @@ GuildWindow.SavedSettings =
 		sortFilter = 1,
 		sortButton = 4,
 	},
-	SelectedTab = 7,
 }
 
 
