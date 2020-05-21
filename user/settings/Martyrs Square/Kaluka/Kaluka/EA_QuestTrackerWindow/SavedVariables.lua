@@ -1,30 +1,14 @@
 EA_Window_QuestTracker.Settings = 
 {
-	fadeAlpha = 0.7,
 	fadeTime = 30,
+	fadeAlpha = 0.7,
 	fadeData = 
 	{
-		[29740] = 
+		[20392] = 
 		{
 			timer = 0,
 		},
-		[20032] = 
-		{
-			timer = 0,
-		},
-		[22016] = 
-		{
-			timer = 0,
-		},
-		[20022] = 
-		{
-			timer = 0,
-		},
-		[20015] = 
-		{
-			timer = 0,
-		},
-		[29739] = 
+		[20044] = 
 		{
 			timer = 0,
 		},
@@ -32,15 +16,31 @@ EA_Window_QuestTracker.Settings =
 		{
 			timer = 0,
 		},
-		[49740] = 
+		[1922] = 
 		{
 			timer = 0,
 		},
-		[24006] = 
+		[22021] = 
 		{
 			timer = 0,
 		},
-		[20030] = 
+		[49706] = 
+		{
+			timer = 0,
+		},
+		[60335] = 
+		{
+			timer = 0,
+		},
+		[1923] = 
+		{
+			timer = 0,
+		},
+		[20046] = 
+		{
+			timer = 0,
+		},
+		[50470] = 
 		{
 			timer = 0,
 		},

@@ -5,9 +5,9 @@ xHUD.Settings =
 		enabled = true,
 		x = 694.99993896484,
 		scale = 0.34000000357628,
-		y = 350,
-		layouteditor = true,
 		parent = "xHUDFriendlyTargetHP",
+		layouteditor = true,
+		y = 350,
 	},
 	xHUDPlayerMorale = 
 	{
@@ -28,7 +28,7 @@ xHUD.Settings =
 		layouteditor = true,
 		clickthrough = true,
 		smooth = true,
-		enabled = false,
+		enabled = true,
 		alpha = 1,
 		width = 200,
 		y = 381.59997558594,
@@ -36,14 +36,14 @@ xHUD.Settings =
 		inverse = false,
 		no_target_fade = true,
 		height = 400,
+		texture = "xHUD_LeftGlowArc",
+		ooc_alpha = 0,
 		color2 = 
 		{
 			150,
 			150,
 			255,
 		},
-		ooc_alpha = 0,
-		texture = "xHUD_LeftGlowArc",
 	},
 	xHUDPlayerAP = 
 	{
@@ -72,8 +72,8 @@ xHUD.Settings =
 		inverse = false,
 		no_target_fade = true,
 		height = 400,
-		ooc_alpha = 0,
 		texture = "xHUD_LeftGlowArc",
+		ooc_alpha = 0,
 	},
 	updateDelay = 0.5,
 	xHUDFriendlyTargetHP = 
@@ -103,9 +103,9 @@ xHUD.Settings =
 		inverse = false,
 		no_target_fade = true,
 		height = 400,
-		ooc_alpha = 0,
-		uselti = false,
 		texture = "xHUD_RightGlowArc",
+		uselti = false,
+		ooc_alpha = 0,
 	},
 	xHUDPlayerRP = 
 	{
@@ -126,7 +126,7 @@ xHUD.Settings =
 		layouteditor = true,
 		clickthrough = true,
 		smooth = true,
-		enabled = false,
+		enabled = true,
 		alpha = 1,
 		width = 200,
 		y = 373.5,
@@ -134,17 +134,17 @@ xHUD.Settings =
 		inverse = false,
 		no_target_fade = true,
 		height = 400,
-		ooc_alpha = 0,
 		texture = "xHUD_LeftGlowArc",
+		ooc_alpha = 0,
 	},
 	xHUDHostileTargetIcon = 
 	{
 		enabled = true,
 		x = 709.99993896484,
 		scale = 0.34000000357628,
-		y = 350,
-		layouteditor = true,
 		parent = "xHUDHostileTargetHP",
+		layouteditor = true,
+		y = 350,
 	},
 	FriendlyTargetBuffs = 
 	{
@@ -163,8 +163,8 @@ xHUD.Settings =
 		x = 640,
 		arc = 75,
 		frame = "xHUDFriendlyTargetBuff",
-		counter = 0,
 		no_target_fade = true,
+		counter = 0,
 	},
 	HostileTargetBuffs = 
 	{
@@ -183,8 +183,8 @@ xHUD.Settings =
 		x = 715,
 		arc = 75,
 		frame = "xHUDHostileTargetBuff",
-		counter = 0,
 		no_target_fade = true,
+		counter = 0,
 	},
 	xHUDPlayerHP = 
 	{
@@ -213,39 +213,192 @@ xHUD.Settings =
 		inverse = false,
 		no_target_fade = true,
 		height = 400,
-		ooc_alpha = 0,
 		texture = "xHUD_LeftGlowArc",
+		ooc_alpha = 0,
 	},
-	smoothDelay = 0.5,
-	xHUDPlayerInf = 
+	Texts = 
 	{
-		direction = "down",
-		bgcolor = 
+		FriendName = 
 		{
-			0,
-			0,
-			0,
+			parent = "xHUDFriendlyTargetHP",
+			scale = 0.72000002861023,
+			text = "[$friend_level$friend_tier] $friend_name ($friend_hp%)",
+			layouteditor = true,
+			width = 350,
+			y = 604,
+			line = 
+			{
+				"[",
+				17,
+				19,
+				"] ",
+				14,
+				" (",
+				11,
+				"%)",
+			},
+			font = "font_clear_medium_bold",
+			align = "center",
+			height = 30,
+			color = 
+			{
+				100,
+				100,
+				255,
+			},
+			flags = 
+			{
+				[17] = true,
+				[14] = true,
+				[11] = true,
+				[19] = true,
+			},
+			x = 563.99993896484,
 		},
-		color = 
+		PlayerHP = 
 		{
-			0,
-			0,
-			255,
+			parent = "xHUDPlayerHP",
+			scale = 0.72000002861023,
+			text = "$cur_hp/$max_hp",
+			layouteditor = true,
+			width = 200,
+			y = 604,
+			line = 
+			{
+				1,
+				"/",
+				2,
+			},
+			font = "font_clear_medium_bold",
+			align = "center",
+			height = 25,
+			color = 
+			{
+				0,
+				255,
+				0,
+			},
+			flags = 
+			{
+				true,
+				true,
+			},
+			x = 420,
 		},
-		bgalpha = 0.2,
-		layouteditor = true,
-		clickthrough = true,
-		smooth = true,
-		enabled = false,
-		alpha = 1,
-		width = 200,
-		y = 394.19995117188,
-		x = 1175.4000244141,
-		inverse = false,
-		no_target_fade = true,
-		height = 400,
+		PlayerAP = 
+		{
+			parent = "xHUDPlayerAP",
+			scale = 0.72000002861023,
+			text = "$cur_ap/$max_ap",
+			layouteditor = true,
+			width = 200,
+			y = 622,
+			line = 
+			{
+				5,
+				"/",
+				6,
+			},
+			font = "font_clear_medium_bold",
+			align = "center",
+			height = 25,
+			color = 
+			{
+				255,
+				255,
+				0,
+			},
+			flags = 
+			{
+				[5] = true,
+				[6] = true,
+			},
+			x = 420,
+		},
+		PlayerCareer = 
+		{
+			parent = "xHUDPlayerCareer",
+			scale = 0.72000002861023,
+			text = "$cur_career",
+			layouteditor = true,
+			width = 200,
+			y = 636,
+			line = 
+			{
+				[1] = 8,
+			},
+			font = "font_clear_medium_bold",
+			align = "center",
+			height = 25,
+			color = 
+			{
+				200,
+				100,
+				255,
+			},
+			flags = 
+			{
+				[8] = true,
+			},
+			x = 420,
+		},
+		EnemyName = 
+		{
+			parent = "xHUDHostileTargetHP",
+			scale = 0.72000002861023,
+			text = "[$enemy_level$enemy_tier] $enemy_name ($enemy_hp%)",
+			layouteditor = true,
+			width = 350,
+			y = 622,
+			line = 
+			{
+				"[",
+				18,
+				20,
+				"] ",
+				15,
+				" (",
+				12,
+				"%)",
+			},
+			font = "font_clear_medium_bold",
+			align = "center",
+			height = 30,
+			color = 
+			{
+				255,
+				0,
+				0,
+			},
+			flags = 
+			{
+				[20] = true,
+				[18] = true,
+				[15] = true,
+				[12] = true,
+			},
+			x = 563.99993896484,
+		},
+	},
+	PlayerBuffs = 
+	{
+		direction2 = "left",
 		ooc_alpha = 0,
-		texture = "xHUD_LeftGlowArc",
+		layouteditor = true,
+		unit = 6,
+		selfbuff = false,
+		direction1 = "up",
+		clickthrough = false,
+		size = 40,
+		enabled = true,
+		max = 10,
+		alpha = 1,
+		y = 575,
+		x = 420,
+		arc = -75,
+		frame = "xHUDPlayerBuff",
+		no_target_fade = true,
+		counter = 1,
 	},
 	xHUDPlayerXP = 
 	{
@@ -266,7 +419,7 @@ xHUD.Settings =
 		layouteditor = true,
 		clickthrough = true,
 		smooth = true,
-		enabled = false,
+		enabled = true,
 		alpha = 1,
 		width = 200,
 		y = 375.29998779297,
@@ -274,88 +427,16 @@ xHUD.Settings =
 		inverse = false,
 		no_target_fade = true,
 		height = 400,
+		texture = "xHUD_LeftGlowArc",
+		ooc_alpha = 0,
 		color2 = 
 		{
 			0,
 			0,
 			0,
 		},
-		ooc_alpha = 0,
-		texture = "xHUD_LeftGlowArc",
 	},
 	version = 2,
-	xHUDCastBar = 
-	{
-		direction = "down",
-		bgcolor = 
-		{
-			0,
-			0,
-			0,
-		},
-		color = 
-		{
-			255,
-			255,
-			255,
-		},
-		bgalpha = 0.2,
-		layouteditor = true,
-		clickthrough = true,
-		smooth = true,
-		enabled = false,
-		alpha = 1,
-		width = 300,
-		y = 590,
-		x = 470,
-		inverse = false,
-		no_target_fade = true,
-		height = 20,
-		ooc_alpha = 1,
-		texture = "xHUD_HorizontalFuzzyBar",
-	},
-	xHUDPlayerCareer = 
-	{
-		direction = "down",
-		bgcolor = 
-		{
-			0,
-			0,
-			0,
-		},
-		color = 
-		{
-			200,
-			100,
-			255,
-		},
-		bgalpha = 0.2,
-		layouteditor = true,
-		clickthrough = true,
-		smooth = true,
-		enabled = true,
-		color2 = 
-		{
-			255,
-			100,
-			50,
-		},
-		alpha = 1,
-		width = 200,
-		y = 369.90002441406,
-		x = 1250.0999755859,
-		inverse = false,
-		no_target_fade = true,
-		height = 400,
-		color3 = 
-		{
-			185,
-			1,
-			1,
-		},
-		ooc_alpha = 0,
-		texture = "xHUD_LeftGlowArc",
-	},
 	xHUDHostileTargetHP = 
 	{
 		direction = "down",
@@ -383,194 +464,113 @@ xHUD.Settings =
 		inverse = false,
 		no_target_fade = true,
 		height = 400,
-		ooc_alpha = 0,
-		uselti = false,
 		texture = "xHUD_RightGlowArc",
-	},
-	PlayerBuffs = 
-	{
-		direction2 = "left",
+		uselti = false,
 		ooc_alpha = 0,
-		layouteditor = true,
-		unit = 6,
-		selfbuff = false,
-		direction1 = "up",
-		clickthrough = false,
-		size = 40,
-		enabled = true,
-		max = 10,
-		alpha = 1,
-		y = 575,
-		x = 420,
-		arc = -75,
-		frame = "xHUDPlayerBuff",
-		counter = 1,
-		no_target_fade = true,
 	},
-	Texts = 
+	xHUDPlayerCareer = 
 	{
-		FriendName = 
+		direction = "down",
+		bgcolor = 
 		{
-			line = 
-			{
-				"[",
-				17,
-				19,
-				"] ",
-				14,
-				" (",
-				11,
-				"%)",
-			},
-			scale = 0.72000002861023,
-			text = "[$friend_level$friend_tier] $friend_name ($friend_hp%)",
-			layouteditor = true,
-			width = 350,
-			y = 604,
-			x = 563.99993896484,
-			flags = 
-			{
-				[17] = true,
-				[11] = true,
-				[19] = true,
-				[14] = true,
-			},
-			color = 
-			{
-				100,
-				100,
-				255,
-			},
-			height = 30,
-			align = "center",
-			font = "font_clear_medium_bold",
-			parent = "xHUDFriendlyTargetHP",
+			0,
+			0,
+			0,
 		},
-		PlayerHP = 
+		color = 
 		{
-			line = 
-			{
-				1,
-				"/",
-				2,
-			},
-			scale = 0.72000002861023,
-			text = "$cur_hp/$max_hp",
-			layouteditor = true,
-			width = 200,
-			y = 604,
-			x = 420,
-			flags = 
-			{
-				true,
-				true,
-			},
-			color = 
-			{
-				0,
-				255,
-				0,
-			},
-			height = 25,
-			align = "center",
-			font = "font_clear_medium_bold",
-			parent = "xHUDPlayerHP",
+			200,
+			100,
+			255,
 		},
-		PlayerAP = 
+		bgalpha = 0.2,
+		layouteditor = true,
+		clickthrough = true,
+		smooth = true,
+		enabled = true,
+		texture = "xHUD_LeftGlowArc",
+		alpha = 1,
+		width = 200,
+		color2 = 
 		{
-			line = 
-			{
-				5,
-				"/",
-				6,
-			},
-			scale = 0.72000002861023,
-			text = "$cur_ap/$max_ap",
-			layouteditor = true,
-			width = 200,
-			y = 622,
-			x = 420,
-			flags = 
-			{
-				[5] = true,
-				[6] = true,
-			},
-			color = 
-			{
-				255,
-				255,
-				0,
-			},
-			height = 25,
-			align = "center",
-			font = "font_clear_medium_bold",
-			parent = "xHUDPlayerAP",
+			255,
+			100,
+			50,
 		},
-		PlayerCareer = 
+		x = 1250.0999755859,
+		inverse = false,
+		no_target_fade = true,
+		height = 400,
+		ooc_alpha = 0,
+		color3 = 
 		{
-			line = 
-			{
-				[1] = 8,
-			},
-			scale = 0.72000002861023,
-			text = "$cur_career",
-			layouteditor = true,
-			width = 200,
-			y = 636,
-			x = 420,
-			flags = 
-			{
-				[8] = true,
-			},
-			color = 
-			{
-				200,
-				100,
-				255,
-			},
-			height = 25,
-			align = "center",
-			font = "font_clear_medium_bold",
-			parent = "xHUDPlayerCareer",
+			185,
+			1,
+			1,
 		},
-		EnemyName = 
-		{
-			line = 
-			{
-				"[",
-				18,
-				20,
-				"] ",
-				15,
-				" (",
-				12,
-				"%)",
-			},
-			scale = 0.72000002861023,
-			text = "[$enemy_level$enemy_tier] $enemy_name ($enemy_hp%)",
-			layouteditor = true,
-			width = 350,
-			y = 622,
-			x = 563.99993896484,
-			flags = 
-			{
-				[20] = true,
-				[18] = true,
-				[12] = true,
-				[15] = true,
-			},
-			color = 
-			{
-				255,
-				0,
-				0,
-			},
-			height = 30,
-			align = "center",
-			font = "font_clear_medium_bold",
-			parent = "xHUDHostileTargetHP",
-		},
+		y = 369.90002441406,
 	},
+	xHUDCastBar = 
+	{
+		direction = "down",
+		bgcolor = 
+		{
+			0,
+			0,
+			0,
+		},
+		color = 
+		{
+			255,
+			255,
+			255,
+		},
+		bgalpha = 0.2,
+		layouteditor = true,
+		clickthrough = true,
+		smooth = true,
+		enabled = true,
+		alpha = 1,
+		width = 300,
+		y = 590,
+		x = 470,
+		inverse = false,
+		no_target_fade = true,
+		height = 20,
+		texture = "xHUD_HorizontalFuzzyBar",
+		ooc_alpha = 1,
+	},
+	xHUDPlayerInf = 
+	{
+		direction = "down",
+		bgcolor = 
+		{
+			0,
+			0,
+			0,
+		},
+		color = 
+		{
+			0,
+			0,
+			255,
+		},
+		bgalpha = 0.2,
+		layouteditor = true,
+		clickthrough = true,
+		smooth = true,
+		enabled = true,
+		alpha = 1,
+		width = 200,
+		y = 394.19995117188,
+		x = 1175.4000244141,
+		inverse = false,
+		no_target_fade = true,
+		height = 400,
+		texture = "xHUD_LeftGlowArc",
+		ooc_alpha = 0,
+	},
+	smoothDelay = 0.5,
 }
 
 

@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="ClosetGoblinOptionWindow" sizeX="48.000000" sizeY="48.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-116.777939" yOffset="-281.888855" />
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-115.222443" yOffset="-280.888916" />
             </Anchors>
         </WindowSettings>
     </Windows>

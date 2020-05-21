@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<UiModuleSettings xmlVersion="1.0" enabled="false" lastLoadedVersion="1.2.5" messagingEnabled="false">
+    <VersionSettings xmlVersion="1.0" gameVersion="1.4.8" windowsVersion="1.0" savedVariablesVersion="1.0" />
+    <Windows>
+        <WindowSettings xmlVersion="1.0" name="MoraleWindow1" sizeX="65.000000" sizeY="65.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.777778" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-151.111191" yOffset="353.055573" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="MoraleWindow2" sizeX="65.000000" sizeY="65.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="0.777778" showing="true">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-98.888962" yOffset="356.666687" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="MoraleWindow3" sizeX="65.000000" sizeY="65.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="0.000000" yOffset="0.000000" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="MoraleWindow4" sizeX="65.000000" sizeY="65.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="0.000000" yOffset="0.000000" />
+            </Anchors>
+        </WindowSettings>
+    </Windows>
+</UiModuleSettings>

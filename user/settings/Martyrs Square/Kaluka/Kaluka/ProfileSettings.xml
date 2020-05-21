@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <ProfileSettings isShared="false">
     <KeyBindings>
-        <KeyBinding action="PLAYER_FORWARD" key="W" />
         <KeyBinding action="PLAYER_FORWARD" key="Up" />
-        <KeyBinding action="PLAYER_BACK" key="S" />
+        <KeyBinding action="PLAYER_FORWARD" key="W" />
         <KeyBinding action="PLAYER_BACK" key="Down" />
+        <KeyBinding action="PLAYER_BACK" key="S" />
         <KeyBinding action="PLAYER_LEFT" key="Left" />
         <KeyBinding action="PLAYER_RIGHT" key="Right" />
         <KeyBinding action="STRAFE_LEFT" key="A" />
@@ -31,13 +31,13 @@
         <KeyBinding action="PET_AGGRESSIVE" key="Left Alt+&apos;" />
         <KeyBinding action="PET_DEFENSIVE" key="Left Alt+;" />
         <KeyBinding action="PET_PASSIVE" key="Left Alt+[" />
-        <KeyBinding action="MORALE_BAR_1" key="Left Alt+H" />
         <KeyBinding action="MORALE_BAR_1" key="Left Alt+1" />
+        <KeyBinding action="MORALE_BAR_1" key="Left Alt+H" />
         <KeyBinding action="MORALE_BAR_2" key="Left Alt+2" />
-        <KeyBinding action="MORALE_BAR_3" key="Left Alt+N" />
         <KeyBinding action="MORALE_BAR_3" key="Left Alt+3" />
-        <KeyBinding action="MORALE_BAR_4" key="Left Alt+M" />
+        <KeyBinding action="MORALE_BAR_3" key="Left Alt+N" />
         <KeyBinding action="MORALE_BAR_4" key="Left Alt+4" />
+        <KeyBinding action="MORALE_BAR_4" key="Left Alt+M" />
         <KeyBinding action="ACTION_BAR_114" key="NONE" />
         <KeyBinding action="ACTION_BAR_115" key="NONE" />
         <KeyBinding action="ACTION_BAR_116" key="NONE" />
@@ -62,7 +62,7 @@
         <KeyBinding action="ACTION_BAR_8" key="F" />
         <KeyBinding action="ACTION_BAR_9" key="T" />
         <KeyBinding action="ACTION_BAR_10" key="Left Shift+T" />
-        <KeyBinding action="ACTION_BAR_11" key="NONE" />
+        <KeyBinding action="ACTION_BAR_11" key="V" />
         <KeyBinding action="ACTION_BAR_12" key="NONE" />
         <KeyBinding action="ACTION_BAR_13" key="Left Shift+1" />
         <KeyBinding action="ACTION_BAR_14" key="Left Shift+2" />
