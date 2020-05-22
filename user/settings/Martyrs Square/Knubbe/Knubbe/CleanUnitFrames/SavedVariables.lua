@@ -64,17 +64,17 @@ CleanSettings =
 			170,
 			255,
 		},
-		RMDPS = 
-		{
-			255,
-			255,
-			60,
-		},
 		RPDPS = 
 		{
 			255,
 			180,
 			0,
+		},
+		RMDPS = 
+		{
+			255,
+			255,
+			60,
 		},
 	},
 	ShowPlayerBuffs = true,

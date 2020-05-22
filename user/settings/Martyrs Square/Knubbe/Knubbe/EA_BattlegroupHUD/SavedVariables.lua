@@ -1,6 +1,6 @@
 BattlegroupHUD.WindowSettings = 
 {
-	backgroundAlpha = 0.6058201789856,
+	backgroundAlpha = 0.23713126778603,
 }
 
 

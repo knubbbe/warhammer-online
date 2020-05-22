@@ -130,7 +130,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_ChatWindowGroup1 = 
+	CleanGroupWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -165,12 +165,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	CleanGroupWindow = 
+	CleanOPBAnchor = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	CleanOPBAnchor = 
+	EA_ChatWindowGroup1 = 
 	{
 		locked = false,
 		hidden = false,
@@ -355,7 +355,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	RoR_SoR_Button = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -380,7 +380,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	Moth = 
 	{
 		locked = false,
 		hidden = false,
@@ -400,12 +400,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTrackerNub = 
+	CleanEnemyTargetLayoutWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	CleanEnemyTargetLayoutWindow = 
+	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
@@ -418,7 +418,7 @@ LayoutEditor.Settings =
 	GroupWindow = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	EA_StanceBar = 
 	{
@@ -455,7 +455,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	Moth = 
+	RoR_SoR_Button = 
 	{
 		locked = false,
 		hidden = false,

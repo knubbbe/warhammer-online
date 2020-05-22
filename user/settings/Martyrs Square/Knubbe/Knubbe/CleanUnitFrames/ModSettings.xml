@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="CleanEnemyTargetLayoutWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.255767" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="168.722397" yOffset="263.695068" />
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="168.722382" yOffset="263.695068" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanEnemyTargetWindow" sizeX="200.000000" sizeY="74.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.255767" showing="false">
@@ -24,7 +24,12 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanGroupWindow" sizeX="200.000000" sizeY="520.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="0.000000" yOffset="-163.000015" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="325.555511" yOffset="-155.222229" />
+            </Anchors>
+        </WindowSettings>
+        <WindowSettings xmlVersion="1.0" name="CleanGroupWindowPlayer1" sizeX="200.000000" sizeY="74.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+            <Anchors>
+                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="CleanGroupWindow" xOffset="0.000000" yOffset="3.000000" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanOPBAnchor" sizeX="35.000000" sizeY="35.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
@@ -32,14 +37,14 @@
                 <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="510.000000" yOffset="27.999994" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="CleanPetAnchor" sizeX="105.000000" sizeY="35.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
+        <WindowSettings xmlVersion="1.0" name="CleanPetAnchor" sizeX="105.000000" sizeY="35.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.063920" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-335.166748" yOffset="272.500031" />
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-318.810883" yOffset="273.618622" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanPlayerWindow" sizeX="200.000000" sizeY="74.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.327779" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-130.888916" yOffset="243.127808" />
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="Root" xOffset="-130.888870" yOffset="243.127823" />
             </Anchors>
         </WindowSettings>
     </Windows>
