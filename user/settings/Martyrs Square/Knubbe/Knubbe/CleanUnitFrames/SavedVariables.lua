@@ -52,29 +52,29 @@ CleanSettings =
 			80,
 			80,
 		},
-		RSUPP = 
-		{
-			160,
-			170,
-			255,
-		},
 		MSUPP = 
 		{
 			180,
 			120,
 			255,
 		},
-		RPDPS = 
+		RSUPP = 
 		{
+			160,
+			170,
 			255,
-			180,
-			0,
 		},
 		RMDPS = 
 		{
 			255,
 			255,
 			60,
+		},
+		RPDPS = 
+		{
+			255,
+			180,
+			0,
 		},
 	},
 	ShowPlayerBuffs = true,

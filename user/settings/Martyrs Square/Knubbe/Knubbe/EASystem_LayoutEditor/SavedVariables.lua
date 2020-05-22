@@ -130,7 +130,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	CleanFriendlyTargetLayoutWindow = 
+	EA_ChatWindowGroup1 = 
 	{
 		locked = false,
 		hidden = false,
@@ -165,20 +165,20 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
+	CleanGroupWindow = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	CleanOPBAnchor = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_ChatWindowGroup1 = 
+	Options = 
 	{
-		locked = false,
-		hidden = false,
-	},
-	CleanGroupWindow = 
-	{
-		locked = false,
-		hidden = false,
+		snapDistance = 5,
+		snapWindowsEnabled = true,
 	},
 	EA_Window_OpenPartyFlyOutAnchor = 
 	{
@@ -190,17 +190,17 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	CleanEnemyTargetLayoutWindow = 
+	FloatingScenarioGroup2Window = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	Options = 
+	EnemyCombatLogEpsWindow = 
 	{
-		snapDistance = 5,
-		snapWindowsEnabled = true,
+		locked = false,
+		hidden = true,
 	},
-	FloatingScenarioGroup2Window = 
+	CleanFriendlyTargetLayoutWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -215,7 +215,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EnemyCombatLogEpsWindow = 
+	BattlegroupHUDGroup2LayoutWindow = 
 	{
 		locked = false,
 		hidden = true,
@@ -235,10 +235,10 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	BattlegroupHUDGroup2LayoutWindow = 
+	EnemyCombatLogIDSAnchor = 
 	{
 		locked = false,
-		hidden = true,
+		hidden = false,
 	},
 	EA_GrantedAbilities = 
 	{
@@ -260,6 +260,16 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
+	FloatingScenarioGroup5Window = 
+	{
+		locked = false,
+		hidden = false,
+	},
+	LIBGUI_Image31 = 
+	{
+		locked = false,
+		hidden = false,
+	},
 	EnemyCombatLogTargetDefeseWindow = 
 	{
 		locked = false,
@@ -270,25 +280,15 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Image31 = 
-	{
-		locked = false,
-		hidden = false,
-	},
-	EnemyCombatLogIDSAnchor = 
-	{
-		locked = false,
-		hidden = false,
-	},
 	LIBGUI_Window22 = 
 	{
 		locked = false,
 		hidden = true,
 	},
-	FloatingScenarioGroup5Window = 
+	MiracleGrow2 = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	LIBGUI_Window45 = 
 	{
@@ -300,12 +300,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	PureTargetUnitFrameFriendly = 
+	WarbuilderMainWindow = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	FloatingScenarioGroup3Window = 
+	PureTargetUnitFrameFriendly = 
 	{
 		locked = false,
 		hidden = false,
@@ -330,12 +330,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	MiracleGrow2 = 
+	FloatingScenarioGroup3Window = 
 	{
 		locked = false,
-		hidden = true,
+		hidden = false,
 	},
-	WarbuilderMainWindow = 
+	FloatingScenarioGroup6Window = 
 	{
 		locked = false,
 		hidden = false,
@@ -345,7 +345,7 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	FloatingScenarioGroup6Window = 
+	PurePlayerUnitFrame = 
 	{
 		locked = false,
 		hidden = false,
@@ -355,12 +355,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EnemyTarget = 
+	RoR_SoR_Button = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	RoR_SoR_Button = 
+	EnemyTarget = 
 	{
 		locked = false,
 		hidden = false,
@@ -375,12 +375,12 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_KeepObjectiveTracker = 
+	LIBGUI_Label44 = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	Moth = 
+	EA_Window_KeepObjectiveTracker = 
 	{
 		locked = false,
 		hidden = false,
@@ -390,22 +390,22 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = true,
 	},
-	LIBGUI_Label44 = 
+	LIBGUI_Window10 = 
 	{
 		locked = false,
-		hidden = false,
+		hidden = true,
 	},
 	EA_Window_ZoneControl = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	PurePlayerUnitFrame = 
+	EA_Window_QuestTrackerNub = 
 	{
 		locked = false,
 		hidden = false,
 	},
-	EA_Window_QuestTrackerNub = 
+	CleanEnemyTargetLayoutWindow = 
 	{
 		locked = false,
 		hidden = false,
@@ -455,10 +455,10 @@ LayoutEditor.Settings =
 		locked = false,
 		hidden = false,
 	},
-	LIBGUI_Window10 = 
+	Moth = 
 	{
 		locked = false,
-		hidden = true,
+		hidden = false,
 	},
 	MouseOverTargetWindow = 
 	{
