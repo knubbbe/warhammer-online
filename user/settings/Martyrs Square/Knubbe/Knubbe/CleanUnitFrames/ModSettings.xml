@@ -8,9 +8,7 @@
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanEnemyTargetWindow" sizeX="200.000000" sizeY="74.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.255767" showing="false">
-            <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="CleanEnemyTargetLayoutWindow" xOffset="0.000000" yOffset="0.000000" />
-            </Anchors>
+            <Anchors />
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanFriendlyTargetLayoutWindow" sizeX="265.000000" sizeY="111.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
@@ -18,9 +16,7 @@
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanFriendlyTargetWindow" sizeX="200.000000" sizeY="74.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
-            <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="CleanFriendlyTargetLayoutWindow" xOffset="0.000000" yOffset="0.000000" />
-            </Anchors>
+            <Anchors />
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanGroupWindow" sizeX="200.000000" sizeY="520.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
@@ -28,9 +24,7 @@
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanGroupWindowPlayer1" sizeX="200.000000" sizeY="74.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
-            <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="CleanGroupWindow" xOffset="0.000000" yOffset="3.000000" />
-            </Anchors>
+            <Anchors />
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="CleanOPBAnchor" sizeX="35.000000" sizeY="35.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
