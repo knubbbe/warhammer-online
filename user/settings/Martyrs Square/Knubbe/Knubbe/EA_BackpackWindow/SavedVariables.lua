@@ -1,6 +1,6 @@
 EA_Window_Backpack.settings = 
 {
-	currentMode = 3,
+	currentMode = 2,
 	filterPocketNames = 
 	{
 		[6] = L"Dye,Misc",

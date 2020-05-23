@@ -26,9 +26,17 @@ EA_ActionBars_DataCache =
 		{
 			icon = 23411,
 		},
-		[1352] = 
+		[245] = 
 		{
-			icon = 4575,
+			icon = 5004,
+		},
+		[1522] = 
+		{
+			icon = 4610,
+		},
+		[1541] = 
+		{
+			icon = 4422,
 		},
 		[1356] = 
 		{
@@ -42,17 +50,17 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4583,
 		},
-		[245] = 
+		[1526] = 
 		{
-			icon = 5004,
+			icon = 4613,
 		},
-		[1904] = 
+		[1656] = 
 		{
-			icon = 2466,
+			icon = 4647,
 		},
-		[1908] = 
+		[1363] = 
 		{
-			icon = 2433,
+			icon = 4515,
 		},
 		[1821] = 
 		{
@@ -74,21 +82,21 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4477,
 		},
-		[1526] = 
+		[1904] = 
 		{
-			icon = 4613,
+			icon = 2466,
 		},
-		[1656] = 
+		[1908] = 
 		{
-			icon = 4647,
+			icon = 2433,
 		},
 		[1912] = 
 		{
 			icon = 2582,
 		},
-		[1522] = 
+		[14418] = 
 		{
-			icon = 4610,
+			icon = 23405,
 		},
 		[1353] = 
 		{
@@ -114,21 +122,21 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4462,
 		},
-		[1363] = 
+		[1830] = 
 		{
-			icon = 4515,
+			icon = 2599,
 		},
 		[1822] = 
 		{
 			icon = 2625,
 		},
-		[1511] = 
+		[1826] = 
 		{
-			icon = 4602,
+			icon = 2593,
 		},
-		[1830] = 
+		[1515] = 
 		{
-			icon = 2599,
+			icon = 4457,
 		},
 		[1519] = 
 		{
@@ -146,9 +154,9 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4616,
 		},
-		[14418] = 
+		[1901] = 
 		{
-			icon = 23405,
+			icon = 2576,
 		},
 		[1539] = 
 		{
@@ -162,14 +170,6 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4409,
 		},
-		[1903] = 
-		{
-			icon = 2577,
-		},
-		[1841] = 
-		{
-			icon = 2475,
-		},
 		[1900] = 
 		{
 			icon = 2575,
@@ -178,13 +178,21 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4652,
 		},
-		[1378] = 
+		[1520] = 
 		{
-			icon = 4421,
+			icon = 4608,
 		},
 		[1823] = 
 		{
 			icon = 2613,
+		},
+		[1378] = 
+		{
+			icon = 4421,
+		},
+		[1508] = 
+		{
+			icon = 4460,
 		},
 		[1512] = 
 		{
@@ -202,17 +210,17 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4611,
 		},
-		[1520] = 
+		[1841] = 
 		{
-			icon = 4608,
+			icon = 2475,
 		},
 		[1910] = 
 		{
 			icon = 2472,
 		},
-		[1508] = 
+		[1903] = 
 		{
-			icon = 4460,
+			icon = 2577,
 		},
 		[1918] = 
 		{
@@ -222,21 +230,13 @@ EA_ActionBars_DataCache =
 		{
 			icon = 2414,
 		},
-		[1901] = 
+		[1511] = 
 		{
-			icon = 2576,
+			icon = 4602,
 		},
 		[1930] = 
 		{
 			icon = 2464,
-		},
-		[1515] = 
-		{
-			icon = 4457,
-		},
-		[1826] = 
-		{
-			icon = 2593,
 		},
 		[1] = 
 		{
@@ -245,6 +245,14 @@ EA_ActionBars_DataCache =
 		[1824] = 
 		{
 			icon = 2478,
+		},
+		[1352] = 
+		{
+			icon = 4575,
+		},
+		[1525] = 
+		{
+			icon = 4612,
 		},
 	},
 	
@@ -299,7 +307,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Iron Contraption",
 				broken = false,
-				timestamp = 17,
+				timestamp = 116,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -830,26 +838,22 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Brief Elixir of Salubrity",
 				broken = false,
-				timestamp = 17,
+				timestamp = 23,
 				customizedIconNum = 0,
 				marketingIndex = 0,
-				skills = 
-				{
-				},
+				capacity = 40,
 				craftingSkillRequirement = 0,
-				itemSet = 0,
+				level = 15,
 				uniqueID = 157897,
-				stackCount = 1,
-				noChargeLeftDontDelete = 0,
+				armor = 0,
+				dyeTintB = 0,
 				sellPrice = 30,
-				bop = false,
-				isNew = false,
+				cultivationType = 0,
+				iLevel = 16,
 				dyeTintA = 0,
 				tintA = 0,
 				tier = 0,
-				craftingBonus = 
-				{
-				},
+				numEnhancementSlots = 0,
 				trophyLocation = 0,
 				enhSlot = 
 				{
@@ -871,18 +875,22 @@ EA_ActionBars_DataCache =
 				customizedIconName = L"",
 				id = 717,
 				dps = 0,
-				numEnhancementSlots = 0,
+				craftingBonus = 
+				{
+				},
 				trophyLocIndex = 1,
 				careers = 
 				{
 				},
-				iLevel = 16,
-				cultivationType = 0,
-				dyeTintB = 0,
-				armor = 0,
-				level = 15,
+				isNew = false,
+				bop = false,
+				noChargeLeftDontDelete = 0,
+				stackCount = 1,
+				itemSet = 0,
 				isRefinable = false,
-				capacity = 40,
+				skills = 
+				{
+				},
 			},
 		},
 		[11919] = 
@@ -934,7 +942,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Book of Binding",
 				broken = false,
-				timestamp = 17,
+				timestamp = 116,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -2032,12 +2040,116 @@ EA_ActionBars_DataCache =
 				capacity = 40,
 			},
 		},
+		[157896] = 
+		{
+			icon = 479,
+			itemData = 
+			{
+				description = L"",
+				renown = 0,
+				maxEquip = 0,
+				slots = 
+				{
+				},
+				equipSlot = 0,
+				races = 
+				{
+				},
+				tintB = 0,
+				speed = 0,
+				decayPaused = false,
+				timeLeftBeforeDecay = 0,
+				blockRating = 0,
+				iconNum = 479,
+				rarity = 3,
+				isTwoHanded = false,
+				marketingVariation = 0,
+				flags = 
+				{
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false, 
+					[0] = false,
+				},
+				name = L"Fleeting Elixir of Salubrity",
+				broken = false,
+				timestamp = 116,
+				customizedIconNum = 0,
+				marketingIndex = 0,
+				skills = 
+				{
+				},
+				craftingSkillRequirement = 0,
+				itemSet = 0,
+				uniqueID = 157896,
+				stackCount = 1,
+				noChargeLeftDontDelete = 0,
+				sellPrice = 30,
+				bop = false,
+				isNew = false,
+				dyeTintA = 0,
+				tintA = 0,
+				tier = 0,
+				craftingBonus = 
+				{
+				},
+				trophyLocation = 0,
+				enhSlot = 
+				{
+				},
+				bonus = 
+				{
+					[1] = 
+					{
+						type = 3,
+						value = 0,
+						cooldownTimeLeft = 0,
+						reference = 7879,
+						totalCooldownTime = 180,
+					},
+				},
+				currChargesRemaining = 0,
+				type = 31,
+				boundToPlayer = false,
+				customizedIconName = L"",
+				id = 717,
+				dps = 0,
+				numEnhancementSlots = 0,
+				trophyLocIndex = 1,
+				careers = 
+				{
+				},
+				iLevel = 16,
+				cultivationType = 0,
+				dyeTintB = 0,
+				armor = 0,
+				level = 15,
+				isRefinable = false,
+				capacity = 40,
+			},
+		},
 	}, 
 	[10] = 
 	{
-		[28] = 
+		[21] = 
 		{
-			icon = 4618,
+			icon = 4506,
 		},
 		[27] = 
 		{
@@ -2047,21 +2159,21 @@ EA_ActionBars_DataCache =
 		{
 			icon = 4650,
 		},
-		[21] = 
+		[28] = 
 		{
-			icon = 4506,
+			icon = 4618,
 		},
-		[25] = 
+		[385] = 
 		{
-			icon = 4569,
+			icon = 2522,
 		},
 		[22] = 
 		{
 			icon = 4477,
 		},
-		[385] = 
+		[25] = 
 		{
-			icon = 2522,
+			icon = 4569,
 		},
 	},
 	[9] = 
