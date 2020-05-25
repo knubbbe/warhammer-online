@@ -80,7 +80,7 @@ BuffHead.Settings =
 			X = 0,
 		},
 	},
-	Scale = 0.68,
+	Scale = 0.68000000715256,
 	PriorityEffects = 
 	{
 		SortToFront = true,

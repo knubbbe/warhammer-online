@@ -392,8 +392,8 @@ EA_ChatWindow.Settings =
 			maxAlpha = 0.7,
 			windowDims = 
 			{
-				y = 0.84259085669925,
-				x = -0.00057870371903412,
+				y = 0.84259086847305,
+				x = -0.00057870376622304,
 				height = 290.001953125,
 				scale = 1,
 				width = 583.33776855469,
@@ -694,7 +694,7 @@ EA_ChatWindow.Settings =
 					},
 				},
 			},
-			movable = true,
+			movable = false,
 			scrollOffset = 0,
 			canAutoHide = true,
 		},

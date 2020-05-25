@@ -307,7 +307,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Iron Contraption",
 				broken = false,
-				timestamp = 10,
+				timestamp = 17,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -942,7 +942,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Book of Binding",
 				broken = false,
-				timestamp = 10,
+				timestamp = 17,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
@@ -1777,7 +1777,7 @@ EA_ActionBars_DataCache =
 				},
 				name = L"Fleeting Elixir of Salubrity",
 				broken = false,
-				timestamp = 10,
+				timestamp = 17,
 				customizedIconNum = 0,
 				marketingIndex = 0,
 				skills = 
