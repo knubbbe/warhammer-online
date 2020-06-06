@@ -1,0 +1,112 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### SkinEditor : Skin Reset ##################################################################### -->
+
+		<Window name="HGSE_SkinResetTemplate" layer="secondary">
+
+			<Anchors>
+				<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+				<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+			</Anchors>
+
+			<Windows>
+
+				<!-- ===== Name/Path of attribute ===== -->
+				<Label name="$parentName" font="font_default_sub_heading" maxchars="255" textalign="leftcenter">
+					<Size>
+						<AbsPoint x="300" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="20" y="20" />
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="204" b="102" a="255" />
+				</Label>
+
+                <!-- ===== Clear =============================================================================== -->
+                <Window name="$parentClear" inherits="HGG_LabelCheckButton">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="20" y="80" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+                <!-- ===== Wipe ================================================================================ -->
+                <Window name="$parentWipe" inherits="HGG_LabelCheckButton">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="20" y="120" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+                <!-- ===== Apply =============================================================================== -->
+                <Window name="$parentApply" inherits="HGG_LabelCheckButton">
+					<Size>
+						<AbsPoint x="200" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="20" y="160" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+				<Label name="$parentApplyEntry" inherits="HGG_ItemLabelTemplate">
+					<Size>
+						<AbsPoint x="150" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentApply">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<Label name="$parentApplyEntryText" inherits="HGG_ItemLabelTemplate" textalign="leftcenter">
+					<Size>
+						<AbsPoint x="120" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentApplyEntry">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+                <!-- ===== Status ============================================================================== -->
+                <Label name="$parentStatus" inherits="HGG_ItemLabelTemplate" textalign="leftcenter">
+                    <Size>
+                        <AbsPoint x="300" y="40" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parent">
+                            <AbsPoint x="20" y="-10" />
+                        </Anchor>
+                    </Anchors>
+                    <Color r="0" g="255" b="0" />
+                </Label>
+
+				<!-- ===== Reset =============================================================================== -->
+                <Button name="$parentReset" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center">
+                    <Anchors>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="HGSE_SkinAttributePanel">
+                            <AbsPoint x="-10" y="-10" />
+                        </Anchor>
+                    </Anchors>
+                    <EventHandlers>
+                        <EventHandler event="OnLButtonUp" function="HGSESkinReset.ResetSkin" />
+                    </EventHandlers>
+                </Button>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+
+</Interface>
+

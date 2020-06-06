@@ -1,0 +1,214 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### TAB HUD Buffs ############################################################################### -->
+		<Window name="HGG_TabHUDBuffsWindowTemplate" inherits="HGG_TabWindowTemplate">
+			<Windows>
+
+                <!-- ===== Player (De)Buffs ==================================================================== -->
+				<Label name="$parentPlayerBuffsFilterLabel" font="font_default_text_small" maxchars="32" textalign="rightcenter" layer="default" handleinput="false">
+					<Size>
+						<AbsPoint x="150" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentPlayerBuffsFilter" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentPlayerBuffsFilterLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabHUDBuffs.ChangePlayerBuffsFilter" />
+					</EventHandlers>
+				</ComboBox>
+
+				<Label name="$parentPlayerDebuffsFilterLabel" font="font_default_text_small" maxchars="32" textalign="rightcenter" layer="default" handleinput="false">
+					<Size>
+						<AbsPoint x="150" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="40" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentPlayerDebuffsFilter" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentPlayerDebuffsFilterLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabHUDBuffs.ChangePlayerDebuffsFilter" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== Friendly Target (De)Buffs =========================================================== -->
+				<Label name="$parentFriendlyTargetBuffsFilterLabel" font="font_default_text_small" maxchars="32" textalign="rightcenter" layer="default" handleinput="false">
+					<Size>
+						<AbsPoint x="150" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="120" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentFriendlyTargetBuffsFilter" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentFriendlyTargetBuffsFilterLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabHUDBuffs.ChangeFriendlyTargetBuffsFilter" />
+					</EventHandlers>
+				</ComboBox>
+
+				<Label name="$parentFriendlyTargetDebuffsFilterLabel" font="font_default_text_small" maxchars="32" textalign="rightcenter" layer="default" handleinput="false">
+					<Size>
+						<AbsPoint x="150" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="160" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentFriendlyTargetDebuffsFilter" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentFriendlyTargetDebuffsFilterLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabHUDBuffs.ChangeFriendlyTargetDebuffsFilter" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== Hostile Target (De)Buffs ============================================================ -->
+				<Label name="$parentHostileTargetBuffsFilterLabel" font="font_default_text_small" maxchars="32" textalign="rightcenter" layer="default" handleinput="false">
+					<Size>
+						<AbsPoint x="150" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="240" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentHostileTargetBuffsFilter" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentHostileTargetBuffsFilterLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabHUDBuffs.ChangeHostileTargetBuffsFilter" />
+					</EventHandlers>
+				</ComboBox>
+
+				<Label name="$parentHostileTargetDebuffsFilterLabel" font="font_default_text_small" maxchars="32" textalign="rightcenter" layer="default" handleinput="false">
+					<Size>
+						<AbsPoint x="150" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="280" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentHostileTargetDebuffsFilter" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentHostileTargetDebuffsFilterLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabHUDBuffs.ChangeHostileTargetDebuffsFilter" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== Show Buffs Max ====================================================================== -->
+				<Label name="$parentShowBuffsMaxLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<SliderBar name="$parentShowBuffsMaxSlider" inherits="HGG_SliderFullLabels" numticks="10">
+					<Size>
+						<AbsPoint x="250" y="33" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentShowBuffsMaxLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSlide" function="HealGridGuiTabHUDBuffs.ShowBuffsMaxChanged" />
+					</EventHandlers>
+				</SliderBar>
+
+                <!-- ===== Buff Frame Size Adjust ============================================================== -->
+				<Label name="$parentBuffFrameSizeAdjustLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="60" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<SliderBar name="$parentBuffFrameSizeAdjustSlider" inherits="HGG_SliderFullLabels" numticks="11">
+					<Size>
+						<AbsPoint x="250" y="33" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentBuffFrameSizeAdjustLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSlide" function="HealGridGuiTabHUDBuffs.BuffFrameSizeAdjustChanged" />
+					</EventHandlers>
+				</SliderBar>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+
+</Interface>
+

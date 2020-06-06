@@ -1,0 +1,177 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### The colored label #################################################################################### -->
+        <Window name="HG_HealGridColoredLabelTemplate">
+
+			<Windows>
+
+				<!-- ===== non-colored ===== -->
+				<Label name="$parentLabelNoColor" font="font_clear_small" textalign="topleft">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+					</Anchors>
+				</Label>
+
+				<!-- ===== colored ===== -->
+				<Label name="$parentLabel1" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+					</Anchors>
+				</Label>
+				<DynamicImage name="$parentLabel1Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel1" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel1" />
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentLabel2" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentLabel1" />
+					</Anchors>
+				</Label>	
+				<DynamicImage name="$parentLabel2Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel2" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel2" />
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentLabel3" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentLabel2" />
+					</Anchors>
+				</Label>	
+				<DynamicImage name="$parentLabel3Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel3" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel3" />
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentLabel4" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentLabel3" />
+					</Anchors>
+				</Label>	
+				<DynamicImage name="$parentLabel4Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel4" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel4" />
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentLabel5" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentLabel4" />
+					</Anchors>
+				</Label>	
+				<DynamicImage name="$parentLabel5Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel5" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel5" />
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentLabel6" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentLabel5" />
+					</Anchors>
+				</Label>	
+				<DynamicImage name="$parentLabel6Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel6" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel6" />
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentLabel7" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentLabel6" />
+					</Anchors>
+				</Label>	
+				<DynamicImage name="$parentLabel7Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel7" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel7" />
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentLabel8" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentLabel7" />
+					</Anchors>
+				</Label>	
+				<DynamicImage name="$parentLabel8Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel8" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel8" />
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentLabel9" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentLabel8" />
+					</Anchors>
+				</Label>	
+				<DynamicImage name="$parentLabel9Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel9" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel9" />
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentLabel10" font="font_clear_small" textalign="centerleft" autoresize="true" autoresizewidth="true">
+					<Size>
+						<AbsPoint x="20" y="20" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentLabel9" />
+					</Anchors>
+				</Label>	
+				<DynamicImage name="$parentLabel10Background" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentLabel10" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentLabel10" />
+					</Anchors>
+				</DynamicImage>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+</Interface>
+
+

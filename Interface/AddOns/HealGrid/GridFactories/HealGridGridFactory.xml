@@ -1,0 +1,60 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### Grid Template ######################################################################################## -->
+        <Window name="HG_HealGridGridTemplate" moveable="false" popable="false" skipinput="true" layer="default" savesettings="true">
+
+			<Windows>
+
+<!--
+       		    <DynamicImage name="$parentBackground_DEBUG" texture="tint_square" handleinput="false" layer="background">
+           			<Anchors>
+               			<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+          		        	<AbsPoint x="0" y="0"/>
+                   		</Anchor>
+               			<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+           		    		<AbsPoint x="0" y="0"/>
+       		            </Anchor>
+   		            </Anchors>
+					<TintColor r="255" g="0" b="0" />
+				</DynamicImage>
+-->
+
+				<Window name="$parentUnitContainer"  moveable="false" popable="false" skipinput="true" layer="secondary">
+           			<Anchors>
+                		<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+                		<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+					<Windows>
+
+<!--
+       		    		<DynamicImage name="$parentBackground_DEBUG" texture="tint_square" handleinput="false" layer="background">
+           					<Anchors>
+               					<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+          		        			<AbsPoint x="0" y="0"/>
+                   				</Anchor>
+               					<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+           		    				<AbsPoint x="0" y="0"/>
+       		            		</Anchor>
+   		            		</Anchors>
+							<TintColor r="0" g="255" b="0" />
+						</DynamicImage>
+-->
+
+					</Windows>
+				</Window>
+
+				<Window name="$parentHUDContainer"  moveable="false" popable="false" skipinput="true" layer="secondary">
+           			<Anchors>
+                		<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+                		<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+				</Window>
+
+			</Windows>
+        </Window>
+
+    </Windows>
+</Interface>
+

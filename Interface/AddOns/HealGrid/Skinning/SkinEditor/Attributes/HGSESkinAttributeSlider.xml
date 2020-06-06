@@ -1,0 +1,39 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### SkinEditor : Skin Attribute Slider ########################################################## -->
+
+		<Window name="HGSE_SkinAttributeSliderTemplate" layer="secondary">
+
+			<Anchors>
+				<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+				<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+					<AbsPoint x="0" y="-50" />
+				</Anchor>
+			</Anchors>
+
+			<Windows>
+
+                <!-- ===== Slider: Value ===== (name must be ValueSlider!) -->
+                <SliderBar name="$parentValueSlider" inherits="HGG_SliderFullLabels" numticks="9">
+					<Size>
+						<AbsPoint x="300" y="33" />
+					</Size>
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="20" y="100" />
+                        </Anchor>
+                    </Anchors>
+                    <EventHandlers>
+                        <EventHandler event="OnSlide" function="HGSESkinAttributeSlider.OnSlide" />
+                    </EventHandlers>
+                </SliderBar>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+
+</Interface>
+

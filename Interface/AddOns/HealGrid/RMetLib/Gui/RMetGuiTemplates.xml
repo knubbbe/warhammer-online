@@ -1,0 +1,258 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### Item Label ############################################################################### -->
+		<Label name="RMet_ItemLabelTemplate" font="font_default_text_small" maxchars="255" textalign="rightcenter">
+			<Size>
+				<AbsPoint x="140" y="24" />
+			</Size>
+		</Label>
+
+		<!-- ##### Sub heading ############################################################################## -->
+		<Label name="RMet_SubHeadingTemplate" font="font_default_sub_heading" maxchars="255" textalign="leftcenter">
+			<Size>
+				<AbsPoint x="400" y="24" />
+			</Size>
+			<Color r="255" g="204" b="102" a="255" />
+		</Label>
+
+		<!-- ##### GroupFrame ############################################################################### -->
+		<Window name="RMet_GroupFrameTemplate" layer="background">
+			<Size>
+				<AbsPoint x="200" y="200" />
+			</Size>
+			<Windows>
+				<Label name="$parentHeading" inherits="RMet_SubHeadingTemplate" textalign="bottomleft">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+						<Anchor point="topright" relativePoint="bottomright" relativeTo="$parent">
+							<AbsPoint x="0" y="30" />
+						</Anchor>
+					</Anchors>
+				</Label>
+				<FullResizeImage name="$parentFrame" inherits="EA_FullResizeImage_DefaultFrame" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="35" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+				</FullResizeImage>
+				<Window name="$parentContent">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentFrame">
+							<AbsPoint x="15" y="5" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentFrame">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+				</Window>
+			</Windows>
+		</Window>
+
+		<!-- ##### CheckButton ############################################################################## -->
+		<Window name="RMet_CheckButtonTemplate">
+			<Size>
+				<AbsPoint x="400" y="32" />
+			</Size>
+			<EventHandlers>
+				<EventHandler event="OnLButtonUp" function="RMetGuiBroker.CheckButtonOnLButtonUp" />
+			</EventHandlers>
+			<Windows>
+				<Button name="$parentButton" inherits="EA_Button_DefaultCheckBox" handleinput="false">
+					<Anchors>
+						<Anchor point="left" relativePoint="left" />
+					</Anchors>
+				</Button>
+				<Label name="$parentLabel" font="font_default_text_small" maxchars="255" handleinput="false" textalign="leftcenter" wordwrap="true">
+					<Size>
+						<AbsPoint x="370" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="right" relativeTo="$parent" />
+					</Anchors>
+					<Color r="255" g="255" b="255" />
+				</Label>
+			</Windows>
+		</Window>
+
+		<!-- ##### RadioButton ############################################################################## -->
+		<Window name="RMet_RadioButtonTemplate" inherits="RMet_CheckButtonTemplate" />
+
+		<!-- ##### ComboBox ################################################################################# -->
+		<Window name="RMet_ComboBoxTemplate">
+			<Size>
+				<AbsPoint x="400" y="40" />
+			</Size>
+			<Windows>
+				<Label name="$parentLabel" inherits="RMet_ItemLabelTemplate">
+					<Size>
+						<AbsPoint x="140" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="left" relativePoint="left" relativeTo="$parent" />
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentComboBox" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="right" relativeTo="$parent" />
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="RMetGuiBroker.ComboBoxOnSelChanged" />
+					</EventHandlers>
+				</ComboBox>
+			</Windows>
+		</Window>
+
+        <!-- ##### Slider with Full Labels ################################################################## -->
+        <Window name="RMet_SliderTemplate">
+			<Size>
+				<AbsPoint x="400" y="53" />
+			</Size>
+			<Windows>
+
+				<Label name="$parentLabel" inherits="RMet_ItemLabelTemplate">
+					<Size>
+						<AbsPoint x="140" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="left" relativePoint="left" relativeTo="$parent" />
+					</Anchors>
+				</Label>
+
+        		<SliderBar name="$parentSlider" inherits="EA_Default_SliderBar" numticks="5" layer="default">
+            		<Size>
+                		<AbsPoint x="250" y="33" />
+            		</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="right" relativeTo="$parent" />
+					</Anchors>
+            		<EventHandlers>
+                		<EventHandler event="OnSlide" function="RMetGuiBroker.SliderOnSlide" />
+            		</EventHandlers>
+        		</SliderBar>
+
+           		<Label name="$parentMinLabel" inherits="RMet_ItemLabelTemplate" textalign="leftcenter">
+               		<Size>
+                   		<AbsPoint x="100" y="20" />
+               		</Size>
+               		<Anchors>
+                   		<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSlider">
+                       		<AbsPoint x="0" y="0" />
+                   		</Anchor>
+               		</Anchors>
+           		</Label>
+
+           		<Label name="$parentMidLabel" inherits="RMet_ItemLabelTemplate" textalign="center">
+               		<Size>
+                   		<AbsPoint x="100" y="20" />
+               		</Size>
+               		<Anchors>
+                   		<Anchor point="bottom" relativePoint="top" relativeTo="$parentSlider">
+                       		<AbsPoint x="0" y="0" />
+                   		</Anchor>
+               		</Anchors>
+           		</Label>
+
+           		<Label name="$parentMaxLabel" inherits="RMet_ItemLabelTemplate" textalign="rightcenter">
+               		<Size>
+                   		<AbsPoint x="100" y="20" />
+               		</Size>
+               		<Anchors>
+                   		<Anchor point="bottomright" relativePoint="topright" relativeTo="$parentSlider">
+                       		<AbsPoint x="0" y="0" />
+                   		</Anchor>
+               		</Anchors>
+           		</Label>
+
+			</Windows>
+		</Window>
+	
+		<!-- ##### ColorPickerButton ######################################################################## -->
+		<Window name="RMet_ColorPickerButtonTemplate">
+			<Size>
+				<AbsPoint x="400" y="31" />
+			</Size>
+			<Windows>
+
+				<Label name="$parentLabel" inherits="RMet_ItemLabelTemplate">
+					<Size>
+						<AbsPoint x="140" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="left" relativePoint="left" relativeTo="$parent" />
+					</Anchors>
+				</Label>
+
+				<Button name="$parentButton" font="font_clear_small_bold" layer="popup">
+					<Size>
+						<AbsPoint x="250" y="31" />
+					</Size>
+           			<Anchors>
+               			<Anchor point="right" relativePoint="right" relativeTo="$parent" />
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="RMetGuiBroker.ColorPickerEditForegroundColor" />
+						<EventHandler event="OnRButtonUp" function="RMetGuiBroker.ColorPickerEditBackgroundColor" />
+					</EventHandlers>
+				</Button>
+
+				<DynamicImage name="$parentBorder" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentButton" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentButton" />
+					</Anchors>
+					<TintColor r="150" g="150" b="150" />
+				</DynamicImage>
+
+				<DynamicImage name="$parentBackground" texture="tint_square" layer="default">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentButton">
+							<AbsPoint x="1" y="1" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentButton">
+							<AbsPoint x="-1" y="-1" />
+						</Anchor>
+					</Anchors>
+					<TintColor r="0" g="0" b="0" />
+				</DynamicImage>
+
+				<Label name="$parentSign" font="font_clear_small_bold" textalign="center" layer="secondary">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentButton">
+							<AbsPoint x="1" y="1" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentButton">
+							<AbsPoint x="-1" y="-1" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+			</Windows>
+		</Window>
+
+		<!-- ##### Tab Window (container) ################################################################### -->
+		<Window name="RMet_TabWindowTemplate">
+			<Anchors>
+				<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground">
+					<AbsPoint x="20" y="70" />
+				</Anchor>
+				<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackground">
+					<AbsPoint x="-20" y="-20" />
+				</Anchor>
+			</Anchors>
+		</Window>
+
+    </Windows>
+
+</Interface>

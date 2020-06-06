@@ -1,0 +1,9 @@
+HealGridSkinModification = 
+{
+	skins = 
+	{
+	},
+}
+
+
+

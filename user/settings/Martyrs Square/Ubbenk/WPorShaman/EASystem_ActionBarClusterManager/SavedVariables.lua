@@ -995,13 +995,15 @@ ActionBarClusterPositions =
 			XOffset = -11,
 			YOffset = 0,
 		},
-		[5] = 
+		EA_MoraleBar = 
 		{
-			RelativeTo = "EA_ActionBar1",
-			Point = "top",
-			RelativePoint = "bottom",
-			XOffset = -11,
-			YOffset = 0,
+			RelativeTo = "Root",
+			Point = "bottomright",
+			RelativePoint = "bottomright",
+			XOffset = -282.22192382813,
+			showing = true,
+			scale = 0.99999997350905,
+			YOffset = -2.4371676772716e-005,
 		},
 		[4] = 
 		{
@@ -1073,15 +1075,13 @@ ActionBarClusterPositions =
 			scale = 0.60700191391839,
 			YOffset = -120.29587554932,
 		},
-		EA_ActionBar1 = 
+		[5] = 
 		{
-			RelativeTo = "Root",
-			Point = "bottom",
+			RelativeTo = "EA_ActionBar1",
+			Point = "top",
 			RelativePoint = "bottom",
-			XOffset = -15.62389755249,
-			showing = true,
-			scale = 0.82216242949168,
-			YOffset = 3.4438238799339e-005,
+			XOffset = -11,
+			YOffset = 0,
 		},
 		[11] = 
 		{
@@ -1095,12 +1095,12 @@ ActionBarClusterPositions =
 		EA_GrantedAbilities = 
 		{
 			RelativeTo = "Root",
-			Point = "center",
-			RelativePoint = "center",
-			XOffset = -201.92926025391,
+			Point = "bottom",
+			RelativePoint = "bottom",
+			XOffset = -250.34436035156,
 			showing = true,
-			scale = 0.70081836647458,
-			YOffset = 220.82789611816,
+			scale = 0.55549015601476,
+			YOffset = -120.22665405273,
 		},
 		[24] = 
 		{
@@ -1147,12 +1147,12 @@ ActionBarClusterPositions =
 		EA_StanceBar = 
 		{
 			RelativeTo = "Root",
-			Point = "center",
-			RelativePoint = "center",
-			XOffset = 287.83325195313,
+			Point = "bottom",
+			RelativePoint = "bottom",
+			XOffset = 211.83322143555,
 			showing = true,
 			scale = 0.74999994701809,
-			YOffset = 244.5,
+			YOffset = -163.99996948242,
 		},
 		EA_CareerResourceWindowActionBar = 
 		{
@@ -1164,15 +1164,15 @@ ActionBarClusterPositions =
 			scale = 0.74999994701809,
 			YOffset = -150.81996154785,
 		},
-		EA_MoraleBar = 
+		EA_ActionBar1 = 
 		{
 			RelativeTo = "Root",
-			Point = "bottomright",
-			RelativePoint = "bottomright",
-			XOffset = -282.22192382813,
+			Point = "bottom",
+			RelativePoint = "bottom",
+			XOffset = -15.62389755249,
 			showing = true,
-			scale = 0.99999997350905,
-			YOffset = -2.4371676772716e-005,
+			scale = 0.82216242949168,
+			YOffset = 3.4438238799339e-005,
 		},
 		EA_ActionBar2 = 
 		{

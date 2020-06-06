@@ -1,0 +1,46 @@
+===v2.0.0===
+
+# migration to svn
+
+===v1.0.8===
+
+# WAR 1.2.1 changes
+
+===v1.0.7===
+
+# CompareValues no longer iterates over __index - keys (as this could recurse indefinately)
+
+===v1.0.6===
+
+# Major enhancements to GUI Widget Classes
+# Cleaned up dependencies
+
+===v1.0.5===
+
+# Updated dependencies to accomodate WAR 1.2 release (EA_Battlegroup)
+
+===v1.0.4===
+
+# Added Slider
+# BUGFIX: Initialization of RMetGuiUtility fixed
+
+===v1.0.3===
+
+# Added RadioButton
+
+===v1.0.2===
+
+# Added RMetUtility.WindowSetTintColor()
+# ColorPickButton now can set background color
+# changed RMet_GroupFrameTemplate to "background"
+
+===v1.0.1===
+
+# added RMetUtility.IsShiftPressed()
+# added RMetUtility.IsAltPressed()
+# added RMetUtility.IsControlPressed()
+# increased ColorPickerButton height from 28 to 31 for better rendering
+
+===v1.0.0===
+
+# Initial Release

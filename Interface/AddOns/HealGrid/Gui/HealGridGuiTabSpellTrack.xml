@@ -1,0 +1,936 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### Tab6: SpellTrack Templates ################################################################## -->
+
+		<!-- ===== Template for the color button ===== -->
+		<Window name="HGG_TabSpellTrackColorButtonTemplate">
+			<Size>
+				<AbsPoint x="25" y="25" />
+			</Size>
+			<Windows>
+				<Button name="$parentButton" font="font_clear_small_bold" layer="popup">
+           			<Anchors>
+               			<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+               			<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="HealGridGuiTabSpellTrack.TabColorChangeSignColor" />
+						<EventHandler event="OnRButtonUp" function="HealGridGuiTabSpellTrack.TabColorChangeBackgroundColor" />
+					</EventHandlers>
+				</Button>
+				<DynamicImage name="$parentBorder" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+					<TintColor r="255" g="255" b="255" />
+				</DynamicImage>
+				<DynamicImage name="$parentBackground" texture="tint_square" layer="default">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="1" y="1" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+							<AbsPoint x="-1" y="-1" />
+						</Anchor>
+					</Anchors>
+					<TintColor r="0" g="0" b="0" />
+				</DynamicImage>
+				<Label name="$parentSign" font="font_clear_small" textalign="center" layer="secondary">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+				</Label>
+			</Windows>
+		</Window>
+
+		<!-- ===== Template for the color button group ===== -->
+		<Window name="HGG_TabSpellTrackColorButtonGroupTemplate">
+			<Size>
+				<AbsPoint x="175" y="25" />
+			</Size>
+			<Windows>
+				<Window name="$parentHealthy" inherits="HGG_TabSpellTrackColorButtonTemplate">
+					<Anchors>
+						<Anchor point="left" relativePoint="left" relativeTo="$parent" />
+					</Anchors>
+				</Window>
+				<Window name="$parentFair" inherits="HGG_TabSpellTrackColorButtonTemplate">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentHealthy">
+							<AbsPoint x="5" y="0" />
+						</Anchor>
+					</Anchors>
+				</Window>
+				<Window name="$parentHurt" inherits="HGG_TabSpellTrackColorButtonTemplate">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentFair">
+							<AbsPoint x="5" y="0" />
+						</Anchor>
+					</Anchors>
+				</Window>
+				<Window name="$parentWounded" inherits="HGG_TabSpellTrackColorButtonTemplate">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentHurt">
+							<AbsPoint x="5" y="0" />
+						</Anchor>
+					</Anchors>
+				</Window>
+				<Window name="$parentPoor" inherits="HGG_TabSpellTrackColorButtonTemplate">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentWounded">
+							<AbsPoint x="5" y="0" />
+						</Anchor>
+					</Anchors>
+				</Window>
+				<Window name="$parentCritic" inherits="HGG_TabSpellTrackColorButtonTemplate">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentPoor">
+							<AbsPoint x="5" y="0" />
+						</Anchor>
+					</Anchors>
+				</Window>
+			</Windows>
+		</Window>
+
+		<!-- ===== Template for the tabs ===== -->
+		<Button name="HGG_TabSpellTrackTabTemplate" inherits="EA_Button_Tab">
+			<EventHandlers>
+				<EventHandler event="OnLButtonUp" function="HealGridGuiTabSpellTrack.SwitchTab" />
+			</EventHandlers>
+		</Button>
+
+		<!-- ===== Template for one row of the list ===== -->
+		<Button name="HGG_TabSpellTrackListRowTemplate" inherits="EA_Button_ResizeIconFrame_NoNormalImage" >
+			<Size>
+				<AbsPoint x="750" y="26" />
+			</Size>
+
+			<Windows>
+
+				<FullResizeImage name="$parentBackground" inherits="EA_FullResizeImage_TintableSolidBackground" handleinput="false">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+					<TintColor r="50" g="50" b="50" />
+				</FullResizeImage>
+
+				<Label name="$parentName" inherits="EA_Label_ChatText" textalign="leftcenter" handleinput="false">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+						<Anchor point="topleft" relativePoint="bottomright" relativeTo="$parent">
+							<AbsPoint x="290" y="26" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<Label name="$parentSignSelf" inherits="EA_Label_ChatText" textalign="center" handleinput="false">
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentName">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentName">
+							<AbsPoint x="50" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+				<DynamicImage name="$parentSignSelfBackground" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentSignSelf">
+							<AbsPoint x="15" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignSelf">
+							<AbsPoint x="-15" y="0" />
+						</Anchor>
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentSignSelfMultiple" inherits="EA_Label_ChatText" textalign="center" handleinput="false">
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentSignSelf">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignSelf">
+							<AbsPoint x="50" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+				<DynamicImage name="$parentSignSelfMultipleBackground" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentSignSelfMultiple">
+							<AbsPoint x="15" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignSelfMultiple">
+							<AbsPoint x="-15" y="0" />
+						</Anchor>
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentSignOther" inherits="EA_Label_ChatText" textalign="center" handleinput="false">
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentSignSelfMultiple">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignSelfMultiple">
+							<AbsPoint x="50" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+				<DynamicImage name="$parentSignOtherBackground" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentSignOther">
+							<AbsPoint x="15" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignOther">
+							<AbsPoint x="-15" y="0" />
+						</Anchor>
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentSignOtherMultiple" inherits="EA_Label_ChatText" textalign="center" handleinput="false">
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentSignOther">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignOther">
+							<AbsPoint x="50" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+				<DynamicImage name="$parentSignOtherMultipleBackground" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentSignOtherMultiple">
+							<AbsPoint x="15" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignOtherMultiple">
+							<AbsPoint x="-15" y="0" />
+						</Anchor>
+					</Anchors>
+				</DynamicImage>
+
+				<Label name="$parentDuration" inherits="EA_Label_ChatText" textalign="center" handleinput="false">
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentSignOtherMultiple">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignOtherMultiple">
+							<AbsPoint x="50" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<Label name="$parentWarnExpire" inherits="EA_Label_ChatText" textalign="center" handleinput="false">
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentDuration">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentDuration">
+							<AbsPoint x="50" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<Label name="$parentWarnExpireSign" inherits="EA_Label_ChatText" textalign="center" handleinput="false">
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentWarnExpire">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentWarnExpire">
+							<AbsPoint x="50" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<Label name="$parentLabelIndex" inherits="EA_Label_ChatText" textalign="center" handleinput="false">
+					<Anchors>
+						<Anchor point="topright" relativePoint="topleft" relativeTo="$parentWarnExpireSign">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentWarnExpireSign">
+							<AbsPoint x="100" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+			</Windows>
+
+			<EventHandlers>
+				<EventHandler event="OnLButtonUp" function="HealGridGuiTabSpellTrack.ListSelectRow" />
+			</EventHandlers>
+
+		</Button>
+		
+		<!-- ===== Template for the sort button ===== -->
+		<Button name="HGG_TabSpellTrackSortButtonTemplate" inherits="EA_Button_ListSort" textalign="center" textAutoFitMinScale="1.0">
+			<EventHandlers>
+				<EventHandler event="OnLButtonUp" function="HealGridGuiTabSpellTrack.OnSortList" />
+<!--
+				<EventHandler event="OnMouseOver" function="xxxx.OnMouseOverSortButton" />
+-->
+			</EventHandlers>
+		</Button>
+
+		<!-- ##### Tab6: SpellTrack ############################################################################ -->
+
+		<Window name="HGG_TabSpellTrackWindowTemplate" inherits="HGG_TabWindowTemplate">
+			<Windows>
+
+				<!-- ===== Button Bar ===== -->
+				<Window name="$parentSortButtonBar">
+
+					<Size>
+						<AbsPoint x="750" y="36" />
+					</Size>
+
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+
+					<Windows>
+
+						<Button name="$parentNameButton" inherits="HGG_TabSpellTrackSortButtonTemplate" id="1">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomleft" relativePoint="bottomright" relativeTo="$parent">
+									<AbsPoint x="290" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+
+						<Button name="$parentSignSelfButton" inherits="HGG_TabSpellTrackSortButtonTemplate" id="2">
+							<Anchors>
+								<Anchor point="topright" relativePoint="topleft" relativeTo="$parentNameButton">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentNameButton">
+									<AbsPoint x="50" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+
+						<Button name="$parentSignSelfMultipleButton" inherits="HGG_TabSpellTrackSortButtonTemplate" id="3">
+							<Anchors>
+								<Anchor point="topright" relativePoint="topleft" relativeTo="$parentSignSelfButton">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignSelfButton">
+									<AbsPoint x="50" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+
+						<Button name="$parentSignOtherButton" inherits="HGG_TabSpellTrackSortButtonTemplate" id="4">
+							<Anchors>
+								<Anchor point="topright" relativePoint="topleft" relativeTo="$parentSignSelfMultipleButton">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignSelfMultipleButton">
+									<AbsPoint x="50" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+
+						<Button name="$parentSignOtherMultipleButton" inherits="HGG_TabSpellTrackSortButtonTemplate" id="5">
+							<Anchors>
+								<Anchor point="topright" relativePoint="topleft" relativeTo="$parentSignOtherButton">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignOtherButton">
+									<AbsPoint x="50" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+
+						<Button name="$parentDurationButton" inherits="HGG_TabSpellTrackSortButtonTemplate" id="6">
+							<Anchors>
+								<Anchor point="topright" relativePoint="topleft" relativeTo="$parentSignOtherMultipleButton">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSignOtherMultipleButton">
+									<AbsPoint x="50" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+
+						<Button name="$parentWarnExpireButton" inherits="HGG_TabSpellTrackSortButtonTemplate" id="7">
+							<Anchors>
+								<Anchor point="topright" relativePoint="topleft" relativeTo="$parentDurationButton">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentDurationButton">
+									<AbsPoint x="50" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+
+						<Button name="$parentWarnExpireSignButton" inherits="HGG_TabSpellTrackSortButtonTemplate" id="8">
+							<Anchors>
+								<Anchor point="topright" relativePoint="topleft" relativeTo="$parentWarnExpireButton">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentWarnExpireButton">
+									<AbsPoint x="50" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+
+						<Button name="$parentLabelIndexButton" inherits="HGG_TabSpellTrackSortButtonTemplate" id="9">
+							<Anchors>
+								<Anchor point="topright" relativePoint="topleft" relativeTo="$parentWarnExpireSignButton">
+									<AbsPoint x="0" y="0" />
+								</Anchor>
+								<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentWarnExpireSignButton">
+									<AbsPoint x="100" y="0" />
+								</Anchor>
+							</Anchors>
+						</Button>
+
+					</Windows>
+				</Window>
+
+				<!-- ===== List Box ===== -->
+				<ListBox name="$parentList" scrollbar="EA_ScrollBar_DefaultVerticalChain" rowdef="HGG_TabSpellTrackListRowTemplate" visiblerows="10" rowcount="100" rowspacing="0">
+					<Anchors>
+						<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentSortButtonBar">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentSortButtonBar">
+							<AbsPoint x="24" y="260" />
+						</Anchor>
+					</Anchors>
+					<ListData table="HealGridGuiTabSpellTrack.listData" populationfunction="HealGridGuiTabSpellTrack.Populate">
+						<ListColumns>
+							<ListColumn windowname="Name"				variable="name"					format="wstring" />
+							<ListColumn windowname="SignSelf"			variable="signSelf"				format="wstring" />
+							<ListColumn windowname="SignSelfMultiple"	variable="signSelfMultiple"		format="wstring" />
+							<ListColumn windowname="SignOther"			variable="signOther"			format="wstring" />
+							<ListColumn windowname="SignOtherMultiple"	variable="signOtherMultiple"	format="wstring" />
+							<ListColumn windowname="Duration"			variable="duration"				format="wstring" />
+							<ListColumn windowname="WarnExpire"			variable="warnExpire"			format="wstring" />
+							<ListColumn windowname="WarnExpireSign"		variable="warnExpireSign"		format="wstring" />
+							<ListColumn windowname="LabelIndex"			variable="labelIndex"			format="wstring" />
+						</ListColumns>
+					</ListData>
+				</ListBox>
+
+				<!-- ===== List: Add Button ===== -->
+				<Button name="$parentListAdd" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center">
+            		<Anchors>
+                		<Anchor point="topright" relativePoint="topleft" relativeTo="$parentSortButtonBar">
+                    		<AbsPoint x="60" y="40" />
+                		</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="HealGridGuiTabSpellTrack.ListUnselectRow" />
+					</EventHandlers>
+				</Button>
+
+				<!-- ===== List: Remove Button ===== -->
+				<Button name="$parentListRemove" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center">
+            		<Anchors>
+                		<Anchor point="bottom" relativePoint="top" relativeTo="$parentListAdd">
+                    		<AbsPoint x="0" y="20" />
+                		</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="HealGridGuiTabSpellTrack.ListRemoveRow" />
+					</EventHandlers>
+				</Button>
+
+				<!-- ===== Edit Boxes Frame ======================================================================================================================================== -->
+				<FullResizeImage name="$parentEditBorder" inherits="EA_FullResizeImage_DefaultFrame">
+					<Anchors>
+						<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentList">
+							<AbsPoint x="0" y="50" />
+						</Anchor>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+				</FullResizeImage>
+
+				<!-- ===== The tabbed pane ===== -->
+				<Window name="$parentTabSeparatorLeft" inherits="EA_Window_TabSeparatorLeftSide" handleinput="true" layer="popup">
+					<Size>
+						<AbsPoint x="10" y="20" />
+					</Size>
+            		<Anchors>
+                		<Anchor point="bottomleft" relativePoint="bottomright" relativeTo="$parentTabSelectGeneral">
+                    		<AbsPoint x="0" y="14" />
+                		</Anchor>
+					</Anchors>
+				</Window>
+
+				<Button name="$parentTabSelectGeneral" inherits="HGG_TabSpellTrackTabTemplate" id="1">
+            		<Anchors>
+                		<Anchor point="topleft" relativePoint="bottomleft" relativeTo="$parentEditBorder">
+                    		<AbsPoint x="10" y="5" />
+                		</Anchor>
+					</Anchors>
+				</Button>
+
+				<Button name="$parentTabSelectColor" inherits="HGG_TabSpellTrackTabTemplate" id="2">
+            		<Anchors>
+                		<Anchor point="topright" relativePoint="topleft" relativeTo="$parentTabSelectGeneral" />
+					</Anchors>
+				</Button>
+
+				<Button name="$parentTabSelectFilter" inherits="HGG_TabSpellTrackTabTemplate" id="3">
+            		<Anchors>
+                		<Anchor point="topright" relativePoint="topleft" relativeTo="$parentTabSelectColor" />
+					</Anchors>
+				</Button>
+
+				<Window name="$parentTabSeparatorRight" inherits="EA_Window_TabSeparatorRightSide" layer="background" popable="false">
+            		<Anchors>
+                		<Anchor point="bottomright" relativePoint="topleft" relativeTo="$parentTabSelectFilter">
+                    		<AbsPoint x="0" y="-6" />
+                		</Anchor>
+                		<Anchor point="topright" relativePoint="bottomright" relativeTo="$parentEditBorder">
+                    		<AbsPoint x="0" y="0" />
+                		</Anchor>
+					</Anchors>
+				</Window>
+
+				<!-- ===== Edit Box: Error message ===== -->
+				<Label name="$parentEditErrorLabel" font="font_default_sub_heading" maxchars="400" textalign="leftcenter">
+					<Size>
+						<AbsPoint x="600" y="24" />
+					</Size>
+					<Anchors>
+						<Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentEditBorder">
+							<AbsPoint x="20" y="-20" />
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="0" b="0" />
+				</Label>
+				
+				<!-- ===== Commit Button ===== -->
+				<Button name="$parentEditCommit" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center" layer="popup">
+            		<Anchors>
+                		<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentEditBorder">
+                    		<AbsPoint x="-20" y="-20" />
+                		</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="HealGridGuiTabSpellTrack.EditCommit" />
+					</EventHandlers>
+				</Button>
+
+				<!-- ===== Content: GeneralTab ======================================================================================================================================== -->
+				<Window name="$parentTabGeneral">
+
+            		<Anchors>
+                		<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentEditBorder" />
+                		<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentEditBorder" />
+					</Anchors>
+
+					<Windows>
+
+
+						<!-- ===== Edit Box: Name ===== -->
+						<Label name="$parentNameLabel" inherits="HGG_ItemLabelTemplate">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="20" />
+								</Anchor>
+							</Anchors>
+						</Label>
+		
+						<EditBox name="$parentName" inherits="EA_EditBox_DefaultFrame" history="15" maxchars="255" taborder="1">
+							<Size>
+								<AbsPoint x="500" y="32" />
+							</Size>
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentNameLabel">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+							</EventHandlers>
+						</EditBox>
+		
+						<Button name="$parentNameButtonLookup" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center">
+            				<Anchors>
+                				<Anchor point="right" relativePoint="left" relativeTo="$parentName">
+                    				<AbsPoint x="10" y="0" />
+                				</Anchor>
+							</Anchors>
+							<EventHandlers>
+								<EventHandler event="OnLButtonUp" function="HealGridGuiTabSpellTrack.TabGeneralLookupSpellName" />
+							</EventHandlers>
+						</Button>
+		
+						<!-- ===== Edit Box: Sign ===== -->
+						<Label name="$parentSignLabel" inherits="HGG_ItemLabelTemplate">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="60" />
+								</Anchor>
+							</Anchors>
+						</Label>
+		
+						<EditBox name="$parentSign" inherits="EA_EditBox_DefaultFrame" history="15" maxchars="1" taborder="2">
+							<Size>
+								<AbsPoint x="32" y="32" />
+							</Size>
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSignLabel">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+							</EventHandlers>
+						</EditBox>
+		
+						<!-- ===== Edit Box: Duration ===== -->
+						<Label name="$parentDurationLabel" inherits="HGG_ItemLabelTemplate">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="100" />
+								</Anchor>
+							</Anchors>
+						</Label>
+		
+						<EditBox name="$parentDuration" inherits="EA_EditBox_DefaultFrame" history="15" maxchars="5" taborder="3">
+							<Size>
+								<AbsPoint x="100" y="32" />
+							</Size>
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentDurationLabel">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+							</EventHandlers>
+						</EditBox>
+		
+						<Label name="$parentDurationSecondsLabel" inherits="HGG_ItemLabelTemplate" textalign="leftcenter">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentDuration">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+						</Label>
+		
+						<!-- ===== Edit Box: WarnExpire ===== -->
+						<Label name="$parentWarnExpireLabel" inherits="HGG_ItemLabelTemplate">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="140" />
+								</Anchor>
+							</Anchors>
+						</Label>
+		
+						<EditBox name="$parentWarnExpire" inherits="EA_EditBox_DefaultFrame" history="15" maxchars="5" taborder="4">
+							<Size>
+								<AbsPoint x="100" y="32" />
+							</Size>
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentWarnExpireLabel">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+							</EventHandlers>
+						</EditBox>
+
+						<Label name="$parentWarnExpireSecondsLabel" inherits="HGG_ItemLabelTemplate" textalign="leftcenter">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentWarnExpire">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+						</Label>
+		
+						<!-- ===== Edit Box: WarnExpireSign ===== -->
+						<Label name="$parentWarnExpireSignLabel" inherits="HGG_ItemLabelTemplate">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="180" />
+								</Anchor>
+							</Anchors>
+						</Label>
+		
+						<EditBox name="$parentWarnExpireSign" inherits="EA_EditBox_DefaultFrame" history="15" maxchars="1" taborder="5">
+							<Size>
+								<AbsPoint x="32" y="32" />
+							</Size>
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentWarnExpireSignLabel">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+							<EventHandlers>
+							</EventHandlers>
+						</EditBox>
+
+                		<!-- ===== LabelIndex ===== -->
+						<Label name="$parentLabelIndexLabel" inherits="HGG_ItemLabelTemplate">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="220" />
+								</Anchor>
+							</Anchors>
+						</Label>
+
+                		<ComboBox name="$parentLabelIndex" inherits="EA_ComboBox_DefaultResizable">
+                    		<Size>
+                        		<AbsPoint x="250" y="28" />
+                    		</Size>
+                    		<Anchors>
+                        		<Anchor point="right" relativePoint="left" relativeTo="$parentLabelIndexLabel">
+                            		<AbsPoint x="10" y="0" />
+                        		</Anchor>
+                    		</Anchors>
+						</ComboBox>
+
+		
+					</Windows>
+				</Window>
+
+				<!-- ===== Content: ColorTab ========================================================================================================================================== -->
+				<Window name="$parentTabColor">
+
+            		<Anchors>
+                		<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentEditBorder" />
+                		<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentEditBorder" />
+					</Anchors>
+
+					<Windows>
+
+						<!-- ===== ColorSelect: SelfCastColor ===== -->
+						<Label name="$parentSelfCastColorLabel" inherits="HGG_ItemLabelTemplate">
+							<Size>
+								<AbsPoint x="250" y="40" />
+							</Size>
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="20" />
+								</Anchor>
+							</Anchors>
+						</Label>
+
+						<Window name="$parentSelfCastColor" inherits="HGG_TabSpellTrackColorButtonGroupTemplate" id="1">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSelfCastColorLabel">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+						</Window>
+
+						<!-- ===== ColorSelect: SelfCastMultipleColor ===== -->
+						<Label name="$parentSelfCastMultipleColorLabel" inherits="HGG_ItemLabelTemplate">
+							<Size>
+								<AbsPoint x="250" y="40" />
+							</Size>
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="60" />
+								</Anchor>
+							</Anchors>
+						</Label>
+
+						<Window name="$parentSelfCastMultipleColor" inherits="HGG_TabSpellTrackColorButtonGroupTemplate" id="2">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentSelfCastMultipleColorLabel">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+						</Window>
+
+                		<!-- ===== ColorSelect: SelfCastStackCount ===== -->
+                		<ComboBox name="$parentSelfCastStackCount" inherits="EA_ComboBox_DefaultResizable">
+                    		<Size>
+                        		<AbsPoint x="250" y="28" />
+                    		</Size>
+                    		<Anchors>
+                        		<Anchor point="right" relativePoint="left" relativeTo="$parentSelfCastMultipleColor">
+                            		<AbsPoint x="10" y="0" />
+                        		</Anchor>
+                    		</Anchors>
+                		</ComboBox>
+
+						<!-- ===== ColorSelect: OtherCastColor ===== -->
+						<Label name="$parentOtherCastColorLabel" inherits="HGG_ItemLabelTemplate">
+							<Size>
+								<AbsPoint x="250" y="40" />
+							</Size>
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="100" />
+								</Anchor>
+							</Anchors>
+						</Label>
+
+						<Window name="$parentOtherCastColor" inherits="HGG_TabSpellTrackColorButtonGroupTemplate" id="3">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentOtherCastColorLabel">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+						</Window>
+
+						<!-- ===== ColorSelect: OtherCastMultipleColor ===== -->
+						<Label name="$parentOtherCastMultipleColorLabel" inherits="HGG_ItemLabelTemplate">
+							<Size>
+								<AbsPoint x="250" y="40" />
+							</Size>
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="10" y="140" />
+								</Anchor>
+							</Anchors>
+						</Label>
+
+						<Window name="$parentOtherCastMultipleColor" inherits="HGG_TabSpellTrackColorButtonGroupTemplate" id="4">
+							<Anchors>
+								<Anchor point="right" relativePoint="left" relativeTo="$parentOtherCastMultipleColorLabel">
+									<AbsPoint x="10" y="0" />
+								</Anchor>
+							</Anchors>
+						</Window>
+
+                		<!-- ===== ColorSelect: OtherCastAggregateCount ===== -->
+                		<ComboBox name="$parentOtherCastAggregateCount" inherits="EA_ComboBox_DefaultResizable">
+                    		<Size>
+                        		<AbsPoint x="250" y="28" />
+                    		</Size>
+                    		<Anchors>
+                        		<Anchor point="right" relativePoint="left" relativeTo="$parentOtherCastMultipleColor">
+                            		<AbsPoint x="10" y="0" />
+                        		</Anchor>
+                    		</Anchors>
+                		</ComboBox>
+
+						<!-- ===== Label: Info ===== -->
+						<Label name="$parentInfo1" inherits="HGG_ItemLabelTemplate" textalign="centerleft">
+							<Size>
+								<AbsPoint x="500" y="30" />
+							</Size>
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="50" y="230" />
+								</Anchor>
+							</Anchors>
+						</Label>
+
+						<Label name="$parentInfo2" inherits="HGG_ItemLabelTemplate" textalign="centerleft">
+							<Size>
+								<AbsPoint x="500" y="30" />
+							</Size>
+							<Anchors>
+								<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentInfo1" />
+							</Anchors>
+						</Label>
+
+						<Label name="$parentInfo3" inherits="HGG_ItemLabelTemplate" textalign="centerleft">
+							<Size>
+								<AbsPoint x="500" y="30" />
+							</Size>
+							<Anchors>
+								<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentInfo2" />
+							</Anchors>
+						</Label>
+
+					</Windows>
+
+				</Window>
+
+				<!-- ===== Content: FilterTab  ======================================================================================================================================== -->
+				<Window name="$parentTabFilter">
+
+            		<Anchors>
+                		<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentEditBorder" />
+                		<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentEditBorder" />
+					</Anchors>
+
+					<Windows>
+
+						<!-- ===== Filter: CastBy ===== -->
+						<Label name="$parentCastByLabel" inherits="HGG_SubHeadingTemplate">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="50" y="20" />
+								</Anchor>
+							</Anchors>
+						</Label>
+
+						<!-- ===== Filter: CastBySelf ===== -->
+                		<Window name="$parentCastBySelf" inherits="HGG_LabelCheckButton">
+							<Size>
+								<AbsPoint x="180" y="32" />
+							</Size>
+                    		<Anchors>
+                        		<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentCastByLabel">
+                            		<AbsPoint x="0" y="0" />
+                        		</Anchor>
+                    		</Anchors>
+                		</Window>
+
+						<!-- ===== Filter: CastByOther ===== -->
+                		<Window name="$parentCastByOther" inherits="HGG_LabelCheckButton">
+							<Size>
+								<AbsPoint x="180" y="32" />
+							</Size>
+                    		<Anchors>
+                        		<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentCastByLabel">
+                            		<AbsPoint x="0" y="30" />
+                        		</Anchor>
+                    		</Anchors>
+                		</Window>
+
+						<!-- ===== Filter: CastOn ===== -->
+						<Label name="$parentCastOnLabel" inherits="HGG_SubHeadingTemplate">
+							<Anchors>
+								<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+									<AbsPoint x="250" y="20" />
+								</Anchor>
+							</Anchors>
+						</Label>
+
+						<!-- ===== Filter: CastOnFriendly ===== -->
+                		<Window name="$parentCastOnFriendly" inherits="HGG_LabelCheckButton">
+							<Size>
+								<AbsPoint x="180" y="32" />
+							</Size>
+                    		<Anchors>
+                        		<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentCastOnLabel">
+                            		<AbsPoint x="0" y="0" />
+                        		</Anchor>
+                    		</Anchors>
+                		</Window>
+
+						<!-- ===== Filter: CastOnHostile ===== -->
+                		<Window name="$parentCastOnHostile" inherits="HGG_LabelCheckButton">
+							<Size>
+								<AbsPoint x="180" y="32" />
+							</Size>
+                    		<Anchors>
+                        		<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentCastOnLabel">
+                            		<AbsPoint x="0" y="30" />
+                        		</Anchor>
+                    		</Anchors>
+                		</Window>
+
+					</Windows>
+
+				</Window>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+
+</Interface>
+

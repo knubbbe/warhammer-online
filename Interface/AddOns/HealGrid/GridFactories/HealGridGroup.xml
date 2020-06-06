@@ -1,0 +1,19 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### Group ################################################################################################ -->
+        <Window name="HG_HealGridGroupTemplate" inherits="HG_HealGridGridTemplate">
+            <Size>
+                <AbsPoint x="250" y="50" />
+            </Size>
+            <Anchors>
+                <Anchor point="center" relativePoint="center" relativeTo="">
+                    <AbsPoint x="0" y="140" />
+                </Anchor>
+			</Anchors>
+        </Window>
+
+    </Windows>
+</Interface>
+

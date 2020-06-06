@@ -1,0 +1,91 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### Tab1: General ############################################################################### -->
+
+		<Window name="HGG_TabGeneralWindowTemplate" inherits="HGG_TabWindowTemplate">
+			<Windows>
+
+				<!-- ===== PlayCareerPointSound ================================================================ -->
+				<Window name="$parentPlayCareerPointSound" inherits="RMet_CheckButtonTemplate">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+				<!-- ===== UseColoredLabels ==================================================================== -->
+				<Window name="$parentUseColoredLabels" inherits="RMet_CheckButtonTemplate">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="40" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+				<!-- ===== Dispellable Debuff Flags ====================================================== -->
+				<Label name="$parentDispellableDebuffFlagsHeading" inherits="RMet_SubHeadingTemplate">
+   					<Anchors>
+           				<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+               				<AbsPoint x="100" y="0" />
+   	    				</Anchor>
+					</Anchors>
+				</Label>
+
+				<Window name="$parentDispellableDebuffFlagAilment" inherits="RMet_CheckButtonTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="100" y="40" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+				<Window name="$parentDispellableDebuffFlagCripple" inherits="RMet_CheckButtonTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="250" y="40" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+				<Window name="$parentDispellableDebuffFlagCurse" inherits="RMet_CheckButtonTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="100" y="80" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+				<Window name="$parentDispellableDebuffFlagDamaging" inherits="RMet_CheckButtonTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="250" y="80" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+				<Window name="$parentDispellableDebuffFlagDebuff" inherits="RMet_CheckButtonTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="100" y="120" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+				<Window name="$parentDispellableDebuffFlagHex" inherits="RMet_CheckButtonTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="250" y="120" />
+						</Anchor>
+					</Anchors>
+				</Window>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+
+</Interface>
+

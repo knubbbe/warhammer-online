@@ -1,0 +1,325 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### Debuff Flags Template: one squared debuff box ############################################################## -->
+		<Window name="HG_HealGridDebuffFlagBoxTemplate" moveable="false" popable="false" handleinput="false" layer="default">
+
+      		<Size>
+          		<AbsPoint x="8" y="8" />
+			</Size>
+
+			<Windows>
+
+                <!-- Border -->
+                <DynamicImage name="$parentBorder" texture="tint_square" handleinput="false" layer="background">
+					 <TintColor r="0" g="0" b="0" />
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="0" y="0"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="0" y="0"/>
+                        </Anchor>
+                    </Anchors>
+				</DynamicImage>
+
+                <!-- Background -->
+                <DynamicImage name="$parentBackground" texture="tint_square" handleinput="false" layer="secondary">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="1" y="1"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="-1" y="-1"/>
+                        </Anchor>
+                    </Anchors>
+				</DynamicImage>
+
+			</Windows>
+		</Window>
+
+		<!-- ##### Debuff Flags Template ###################################################################################### -->
+		<Window name="HG_HealGridDebuffFlagsTemplate" moveable="false" popable="false" handleinput="false">
+
+<!--
+           	<Size>
+           		<AbsPoint x="20" y="30" />
+			</Size>
+-->
+
+			<Windows>
+
+                <!-- Flag Debuff -->
+				<Window name="$parentDEBUFF" inherits="HG_HealGridDebuffFlagBoxTemplate">
+                    <Anchors>
+                        <Anchor point="topright" relativePoint="topright" relativeTo="$parent" />
+                    </Anchors>
+				</Window>
+
+                <!-- Flag Damaging -->
+				<Window name="$parentDAMAGING" inherits="HG_HealGridDebuffFlagBoxTemplate">
+                    <Anchors>
+                        <Anchor point="left" relativePoint="right" relativeTo="$parentDEBUFF" />
+                    </Anchors>
+				</Window>
+
+                <!-- Flag Hex -->
+				<Window name="$parentHEX" inherits="HG_HealGridDebuffFlagBoxTemplate">
+                    <Anchors>
+                        <Anchor point="bottom" relativePoint="top" relativeTo="$parentDEBUFF" />
+                    </Anchors>
+				</Window>
+
+                <!-- Flag Curse -->
+				<Window name="$parentCURSE" inherits="HG_HealGridDebuffFlagBoxTemplate">
+                    <Anchors>
+                        <Anchor point="bottom" relativePoint="top" relativeTo="$parentDAMAGING" />
+                    </Anchors>
+				</Window>
+
+                <!-- Flag Ailment -->
+				<Window name="$parentAILMENT" inherits="HG_HealGridDebuffFlagBoxTemplate">
+                    <Anchors>
+                        <Anchor point="bottom" relativePoint="top" relativeTo="$parentHEX" />
+                    </Anchors>
+				</Window>
+
+                <!-- Flag Cripple -->
+				<Window name="$parentCRIPPLE" inherits="HG_HealGridDebuffFlagBoxTemplate">
+                    <Anchors>
+                        <Anchor point="bottom" relativePoint="top" relativeTo="$parentAILMENT" />
+                    </Anchors>
+				</Window>
+
+			</Windows>
+		</Window>
+
+		<!-- ##### Unit Label Template ################################################################################## -->
+		<Label name="HG_HealGridUnitLabelTemplate" font="font_clear_tiny" maxchars="20" layer="default" handleinput="false" warnOnTextCropped="false">
+			<Anchors>
+				<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+				<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+			</Anchors>
+		</Label>
+
+		<!-- ##### Unit Bar Template #################################################################################### -->
+		<Window name="HG_HealGridUnitBarTemplate" handleinput="false" moveable="false" popable="false">
+			<Anchors>
+				<Anchor point="topleft" relativePoint="topleft" />
+				<Anchor point="bottomright" relativePoint="bottomright" />
+			</Anchors>
+			<Windows>
+				<DynamicImage name="$parentBackground" texture="tint_square" handleinput="false" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" />
+						<Anchor point="bottomright" relativePoint="bottomright" />
+					</Anchors>
+				</DynamicImage>
+				<DynamicImage name="$parentForeground" texture="tint_square" handleinput="false" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" />
+						<Anchor point="bottomright" relativePoint="bottomright" />
+					</Anchors>
+				</DynamicImage>
+			</Windows>
+		</Window>
+
+		<!-- ##### Unit Template ######################################################################################## -->
+		<Window name="HG_HealGridUnitTemplate" moveable="false" popable="false" handleinput="true" layer="default">
+
+            <Size>
+                <AbsPoint x="50" y="50" />
+			</Size>
+
+			<Windows>
+
+                <!-- Border -->
+                <DynamicImage name="$parentBorder" texture="tint_square" handleinput="false" layer="background">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="0" y="0"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="0" y="0"/>
+                        </Anchor>
+                    </Anchors>
+				</DynamicImage>
+
+                <!-- Background -->
+                <DynamicImage name="$parentBackground" texture="tint_square" handleinput="false" layer="default">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="2" y="2"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="-2" y="-2"/>
+                        </Anchor>
+                    </Anchors>
+				</DynamicImage>
+
+                <!-- Bars -->
+				<Window name="$parentBar" moveable="false" popable="false" handleinput="false" layer="secondary">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackground" />
+					</Anchors>
+					<Windows>
+						<Window name="$parentHealthPoints" inherits="HG_HealGridUnitBarTemplate" layer="background" />
+						<Window name="$parentActionPoints" inherits="HG_HealGridUnitBarTemplate" layer="default" />
+						<Window name="$parentMoraleLevel" inherits="HG_HealGridUnitBarTemplate" layer="secondary" />
+					</Windows>
+				</Window>
+
+                <!-- Career Icon -->
+				<DynamicImage name="$parentIconCareerLine" textureScale="1.0" handleinput="false" layer="popup">
+					<Size>
+						<AbsPoint x="32" y="32"/>
+					</Size>
+					<Anchors>
+						<Anchor point="center" relativePoint="center" relativeTo="$parentBackground">
+							<AbsPoint x="0" y="0"/>
+						</Anchor>
+					</Anchors>
+				</DynamicImage>
+
+				<!-- The Labels -->
+				<Window name="$parentLabel" moveable="false" popable="false" handleinput="false" layer="overlay">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground" />
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackground" />
+                    </Anchors>
+
+					<Windows>
+
+						<!-- the labels -->
+                		<Label name="$parentTopLeft" inherits="HG_HealGridUnitLabelTemplate" textalign="topleft" />
+                		<Label name="$parentTop" inherits="HG_HealGridUnitLabelTemplate" textalign="top" />
+                		<Label name="$parentTopRight" inherits="HG_HealGridUnitLabelTemplate" textalign="topright" />
+                		<Label name="$parentLeft" inherits="HG_HealGridUnitLabelTemplate" textalign="leftcenter" />
+                		<Label name="$parentCenter" inherits="HG_HealGridUnitLabelTemplate" textalign="center" />
+                		<Label name="$parentRight" inherits="HG_HealGridUnitLabelTemplate" textalign="rightcenter" />
+                		<Label name="$parentBottomLeft" inherits="HG_HealGridUnitLabelTemplate" textalign="bottomleft" />
+                		<Label name="$parentBottom" inherits="HG_HealGridUnitLabelTemplate" textalign="bottom" />
+                		<Label name="$parentBottomRight" inherits="HG_HealGridUnitLabelTemplate" textalign="bottomright" />
+		
+                		<!-- Debuff Flags -->
+						<Window name="$parentDebuffFlags" inherits="HG_HealGridDebuffFlagsTemplate" layer="background">
+                    		<Anchors>
+                        		<Anchor point="topright" relativePoint="topright" relativeTo="$parent">
+                            		<AbsPoint x="-2" y="2"/>
+                        		</Anchor>
+                    		</Anchors>
+						</Window>
+
+					</Windows>
+				</Window>
+
+			</Windows>
+
+			<EventHandlers>
+           		<EventHandler event="OnLButtonDown" function="HealGridMouseClick.UnitLButtonDown" />
+           		<EventHandler event="OnLButtonUp" function="HealGridMouseClick.UnitLButtonUp" />
+           		<EventHandler event="OnMButtonDown" function="HealGridMouseClick.UnitMButtonDown" />
+           		<EventHandler event="OnMButtonUp" function="HealGridMouseClick.UnitMButtonUp" />
+           		<EventHandler event="OnRButtonDown" function="HealGridMouseClick.UnitRButtonDown" />
+           		<EventHandler event="OnRButtonUp" function="HealGridMouseClick.UnitRButtonUp" />
+                <EventHandler event="OnMouseOver" function="HealGridUnitTooltip.StartTooltip" />
+                <EventHandler event="OnMouseOverEnd" function="HealGridUnitTooltip.StopTooltip" />
+            </EventHandlers>
+
+		</Window>
+
+		<!-- ##### Unit Pet Template #################################################################################### -->
+		<Window name="HG_HealGridUnitPetTemplate" moveable="false" popable="false" handleinput="true" layer="default">
+
+            <Size>
+                <AbsPoint x="50" y="20" />
+			</Size>
+
+			<Windows>
+
+                <!-- Border -->
+                <DynamicImage name="$parentBorder" texture="tint_square" handleinput="false" layer="background">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="0" y="0"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="0" y="0"/>
+                        </Anchor>
+                    </Anchors>
+				</DynamicImage>
+
+                <!-- Background -->
+                <DynamicImage name="$parentBackground" texture="tint_square" handleinput="false" layer="default">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="2" y="2"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="-2" y="-2"/>
+                        </Anchor>
+                    </Anchors>
+				</DynamicImage>
+
+                <!-- Label Center -->
+                <Label name="$parentLabelCenter" font="font_clear_small_bold" maxchars="100" textalign="center" layer="overlay" handleinput="false">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackground" />
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackground" />
+                    </Anchors>
+				</Label>
+
+			</Windows>
+
+			<EventHandlers>
+           		<EventHandler event="OnLButtonDown" function="HealGridMouseClick.UnitPetLButtonDown" />
+           		<EventHandler event="OnLButtonUp" function="HealGridMouseClick.UnitPetLButtonUp" />
+           		<EventHandler event="OnMButtonDown" function="HealGridMouseClick.UnitPetMButtonDown" />
+           		<EventHandler event="OnMButtonUp" function="HealGridMouseClick.UnitPetMButtonUp" />
+           		<EventHandler event="OnRButtonDown" function="HealGridMouseClick.UnitPetRButtonDown" />
+           		<EventHandler event="OnRButtonUp" function="HealGridMouseClick.UnitPetRButtonUp" />
+			</EventHandlers>
+
+		</Window>
+
+		<!-- ##### Unit Placeholder ###################################################################################### -->
+		<Window name="HG_HealGridUnitPlaceholderTemplate" moveable="false" popable="false" handleinput="true" layer="default">
+
+            <Size>
+                <AbsPoint x="50" y="50" />
+			</Size>
+
+			<Windows>
+
+                <!-- Border -->
+                <DynamicImage name="$parentBorder" texture="tint_square" handleinput="false" layer="background">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="0" y="0"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="0" y="0"/>
+                        </Anchor>
+                    </Anchors>
+				</DynamicImage>
+
+                <!-- Background -->
+                <DynamicImage name="$parentBackground" texture="tint_square" handleinput="false" layer="secondary">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="2" y="2"/>
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="-2" y="-2"/>
+                        </Anchor>
+                    </Anchors>
+				</DynamicImage>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+</Interface>
+

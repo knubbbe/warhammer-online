@@ -3,7 +3,7 @@ Phantom.Settings =
 	windows = 
 	{
 		ActionBarLockToggler = true,
-		SocialWindowButton = true,
+		SocialWindowButton = false,
 		OverheadMapCity = true,
 		OverheadMapArea = true,
 		PetWindow = false,

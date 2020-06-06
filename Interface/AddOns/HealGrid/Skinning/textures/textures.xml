@@ -1,0 +1,98 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+   <Assets>
+        <Texture name="tint_square" file="Skinning/textures/statusbars/squaredtint.tga" />
+   
+        <Texture name="HalA" file="Skinning/textures/statusbars/HalA.tga" />
+        <Texture name="HalB" file="Skinning/textures/statusbars/HalB.tga" />
+        <Texture name="HalC" file="Skinning/textures/statusbars/HalC.tga" />
+        <Texture name="HalD" file="Skinning/textures/statusbars/HalD.tga" />
+        <Texture name="HalE" file="Skinning/textures/statusbars/HalE.tga" />
+        <Texture name="HalF" file="Skinning/textures/statusbars/HalF.tga" />
+        <Texture name="HalG" file="Skinning/textures/statusbars/HalG.tga" />
+        <Texture name="HalH" file="Skinning/textures/statusbars/HalH.tga" />
+        <Texture name="HalI" file="Skinning/textures/statusbars/HalI.tga" />
+        <Texture name="HalJ" file="Skinning/textures/statusbars/HalJ.tga" />
+        <Texture name="HalK" file="Skinning/textures/statusbars/HalK.tga" />
+        <Texture name="HalL" file="Skinning/textures/statusbars/HalL.tga" />
+        <Texture name="HalM" file="Skinning/textures/statusbars/HalM.tga" />
+        <Texture name="HalN" file="Skinning/textures/statusbars/HalN.tga" />
+        <Texture name="HalO" file="Skinning/textures/statusbars/HalO.tga" />
+        <Texture name="HalP" file="Skinning/textures/statusbars/HalP.tga" />
+        <Texture name="HalQ" file="Skinning/textures/statusbars/HalQ.tga" />
+        <Texture name="HalR" file="Skinning/textures/statusbars/HalR.tga" />
+        <Texture name="HalS" file="Skinning/textures/statusbars/HalS.tga" />
+        <Texture name="HalT" file="Skinning/textures/statusbars/HalT.tga" />
+        <Texture name="HalU" file="Skinning/textures/statusbars/HalU.tga" />
+        <Texture name="HalV" file="Skinning/textures/statusbars/HalV.tga" />
+
+		<Texture name="Aluminium" file="Skinning/textures/statusbars/Aluminium.tga" />
+		<Texture name="Armory" file="Skinning/textures/statusbars/Armory.tga" />
+		<Texture name="BantoBar" file="Skinning/textures/statusbars/BantoBar.tga" />
+		<Texture name="Bars" file="Skinning/textures/statusbars/Bars.tga" />
+		<Texture name="Bumps" file="Skinning/textures/statusbars/Bumps.tga" />
+		<Texture name="Button" file="Skinning/textures/statusbars/Button.tga" />
+		<Texture name="Charcoal" file="Skinning/textures/statusbars/Charcoal.tga" />
+		<Texture name="Cilo" file="Skinning/textures/statusbars/Cilo.tga" />
+		<Texture name="Cloud" file="Skinning/textures/statusbars/Cloud.tga" />
+		<Texture name="Combo" file="Skinning/textures/statusbars/combo.tga" />
+		<Texture name="Comet" file="Skinning/textures/statusbars/Comet.tga" />
+		<Texture name="Dabs" file="Skinning/textures/statusbars/Dabs.tga" />
+		<Texture name="DarkBottom" file="Skinning/textures/statusbars/DarkBottom.tga" />
+		<Texture name="Diagonal" file="Skinning/textures/statusbars/Diagonal.tga" />
+		<Texture name="Empty" file="Skinning/textures/statusbars/Empty.tga" />
+		<Texture name="Falumn" file="Skinning/textures/statusbars/Falumn.tga" />
+		<Texture name="Fifths" file="Skinning/textures/statusbars/Fifths.tga" />
+		<Texture name="Flat" file="Skinning/textures/statusbars/Flat.tga" />
+		<Texture name="Fourths" file="Skinning/textures/statusbars/Fourths.tga" />
+		<Texture name="Frost" file="Skinning/textures/statusbars/Frost.tga" />
+		<Texture name="Glamour2" file="Skinning/textures/statusbars/Glamour2.tga" />
+		<Texture name="Glamour3" file="Skinning/textures/statusbars/Glamour3.tga" />
+		<Texture name="Glamour4" file="Skinning/textures/statusbars/Glamour4.tga" />
+		<Texture name="Glamour5" file="Skinning/textures/statusbars/Glamour5.tga" />
+		<Texture name="Glamour6" file="Skinning/textures/statusbars/Glamour6.tga" />
+		<Texture name="Glamour7" file="Skinning/textures/statusbars/Glamour7.tga" />
+		<Texture name="Glamour" file="Skinning/textures/statusbars/Glamour.tga" />
+		<Texture name="Glass" file="Skinning/textures/statusbars/Glass.tga" />
+		<Texture name="Glaze2" file="Skinning/textures/statusbars/Glaze2.tga" />
+		<Texture name="Glaze" file="Skinning/textures/statusbars/Glaze.tga" />
+		<Texture name="Gloss" file="Skinning/textures/statusbars/Gloss.tga" />
+		<Texture name="Graphite" file="Skinning/textures/statusbars/Graphite.tga" />
+		<Texture name="Grid" file="Skinning/textures/statusbars/Grid.tga" />
+		<Texture name="Hatched" file="Skinning/textures/statusbars/Hatched.tga" />
+		<Texture name="Healbot" file="Skinning/textures/statusbars/Healbot.tga" />
+		<Texture name="LiteStepLite" file="Skinning/textures/statusbars/LiteStepLite.tga" />
+		<Texture name="LiteStep" file="Skinning/textures/statusbars/LiteStep.tga" />
+		<Texture name="Lyfe" file="Skinning/textures/statusbars/Lyfe.tga" />
+		<Texture name="MelliDarkRough" file="Skinning/textures/statusbars/MelliDarkRough.tga" />
+		<Texture name="MelliDark" file="Skinning/textures/statusbars/MelliDark.tga" />
+		<Texture name="Melli" file="Skinning/textures/statusbars/Melli.tga" />
+		<Texture name="Minimalist" file="Skinning/textures/statusbars/Minimalist.tga" />
+		<Texture name="Otravi" file="Skinning/textures/statusbars/Otravi.tga" />
+		<Texture name="Outline" file="Skinning/textures/statusbars/Outline.tga" />
+		<Texture name="Perl2" file="Skinning/textures/statusbars/Perl2.tga" />
+		<Texture name="Perl" file="Skinning/textures/statusbars/Perl.tga" />
+		<Texture name="Pill" file="Skinning/textures/statusbars/Pill.tga" />
+		<Texture name="Rain" file="Skinning/textures/statusbars/Rain.tga" />
+		<Texture name="Rocks" file="Skinning/textures/statusbars/Rocks.tga" />
+		<Texture name="Round" file="Skinning/textures/statusbars/Round.tga" />
+		<Texture name="Ruben" file="Skinning/textures/statusbars/Ruben.tga" />
+		<Texture name="Runes" file="Skinning/textures/statusbars/Runes.tga" />
+		<Texture name="Skewed" file="Skinning/textures/statusbars/Skewed.tga" />
+		<Texture name="Smooth" file="Skinning/textures/statusbars/Smooth.tga" />
+		<Texture name="Smoothv2" file="Skinning/textures/statusbars/Smoothv2.tga" />
+		<Texture name="Smudge" file="Skinning/textures/statusbars/Smudge.tga" />
+		<Texture name="Steel" file="Skinning/textures/statusbars/Steel.tga" />
+		<Texture name="Striped" file="Skinning/textures/statusbars/Striped.tga" />
+		<Texture name="Tube" file="Skinning/textures/statusbars/Tube.tga" />
+		<Texture name="Water" file="Skinning/textures/statusbars/Water.tga" />
+		<Texture name="Wglass" file="Skinning/textures/statusbars/Wglass.tga" />
+		<Texture name="Wisps" file="Skinning/textures/statusbars/Wisps.tga" />
+
+		<Texture name="Xeon" file="Skinning/textures/statusbars/Xeon.tga" />
+
+        <Texture name="HalBackground" file="Skinning/textures/backgrounds/HalBackground.tga" />
+        <Texture name="HalBackgroundA" file="Skinning/textures/backgrounds/HalBackgroundA.tga" />
+
+        <Texture name="Moo" file="Skinning/textures/backgrounds/moo.tga" />
+   </Assets>
+</Interface>

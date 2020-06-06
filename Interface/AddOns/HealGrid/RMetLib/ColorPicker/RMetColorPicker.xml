@@ -1,0 +1,161 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### Color Select ################################################################################ -->
+
+		<!-- ===== ColorGroupButtonTemplate ===== -->
+		<Window name="RMet_ColorPickerColorGroupButtonTemplate">
+			<Size>
+				<AbsPoint x="100" y="30" />
+			</Size>
+			<Windows>
+				<Button name="$parentButton" font="font_clear_small_bold" layer="popup">
+           			<Anchors>
+               			<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+               			<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="RMetColorPicker.SelectColorGroup" />
+					</EventHandlers>
+				</Button>
+				<DynamicImage name="$parentBackground" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+				</DynamicImage>
+			</Windows>
+		</Window>
+
+		<!-- ===== ColorButtonTemplate ===== -->
+		<Window name="RMet_ColorPickerColorButtonTemplate">
+			<Size>
+				<AbsPoint x="100" y="30" />
+			</Size>
+			<Windows>
+				<Button name="$parentButton" font="font_clear_small_bold" layer="popup" textAutoFitMinScale="0.2">
+           			<Anchors>
+               			<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+               			<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="RMetColorPicker.SelectColor" />
+					</EventHandlers>
+				</Button>
+				<DynamicImage name="$parentBackground" texture="tint_square" layer="background">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+					</Anchors>
+				</DynamicImage>
+			</Windows>
+		</Window>
+
+		<!-- ===== ColorPickerWindow ===== -->
+		<Window name="RMet_ColorPicker" movable="true" layer="popup">
+            <Size>
+                <AbsPoint x="520" y="268" />
+            </Size>
+            <Anchors>
+                <Anchor point="center" relativePoint="center" relativeTo="">
+                    <AbsPoint x="0" y="0" />
+                </Anchor>
+			</Anchors>
+
+			<Windows>
+
+				<!-- ===== Window Background =========================================================================== -->
+				<Window name="$parentBackground" inherits="EA_Window_DefaultFrame">
+            		<Anchors>
+                		<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                    		<AbsPoint x="0" y="32" />
+                		</Anchor>
+                		<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                    		<AbsPoint x="0" y="0" />
+                		</Anchor>
+					</Anchors>
+				</Window>
+
+				<!-- ===== Title bar and close button ================================================================== -->
+				<Window name="$parentTitleBar" inherits="EA_TitleBar_Default" />
+
+				<Button name="$parentClose" inherits="EA_Button_DefaultWindowClose">
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="RMetColorPicker.CloseWindow" />
+					</EventHandlers>
+				</Button>
+
+				<!-- ===== ColorGroup select buttons =================================================================== -->
+				<Window name="$parentColorGroup1" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="1">
+					<Anchors>
+                		<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                    		<AbsPoint x="10" y="38" />
+                		</Anchor>
+					</Anchors>
+				</Window>
+
+				<Window name="$parentColorGroup2" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="2">
+					<Anchors>
+                		<Anchor point="right" relativePoint="left" relativeTo="$parentColorGroup1" />
+					</Anchors>
+				</Window>
+
+				<Window name="$parentColorGroup3" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="3">
+					<Anchors>
+                		<Anchor point="right" relativePoint="left" relativeTo="$parentColorGroup2" />
+					</Anchors>
+				</Window>
+
+				<Window name="$parentColorGroup4" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="4">
+					<Anchors>
+                		<Anchor point="right" relativePoint="left" relativeTo="$parentColorGroup3" />
+					</Anchors>
+				</Window>
+
+				<Window name="$parentColorGroup5" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="5">
+					<Anchors>
+                		<Anchor point="right" relativePoint="left" relativeTo="$parentColorGroup4" />
+					</Anchors>
+				</Window>
+
+				<Window name="$parentColorGroup6" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="6">
+					<Anchors>
+                		<Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentColorGroup1" />
+					</Anchors>
+				</Window>
+
+				<Window name="$parentColorGroup7" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="7">
+					<Anchors>
+                		<Anchor point="right" relativePoint="left" relativeTo="$parentColorGroup6" />
+					</Anchors>
+				</Window>
+
+				<Window name="$parentColorGroup8" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="8">
+					<Anchors>
+                		<Anchor point="right" relativePoint="left" relativeTo="$parentColorGroup7" />
+					</Anchors>
+				</Window>
+
+				<Window name="$parentColorGroup9" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="9">
+					<Anchors>
+                		<Anchor point="right" relativePoint="left" relativeTo="$parentColorGroup8" />
+					</Anchors>
+				</Window>
+
+				<Window name="$parentColorGroup10" inherits="RMet_ColorPickerColorGroupButtonTemplate" id="10">
+					<Anchors>
+                		<Anchor point="right" relativePoint="left" relativeTo="$parentColorGroup9" />
+					</Anchors>
+				</Window>
+
+				<!-- ===== Color select buttons ======================================================================== -->
+				<!-- ===== Auto-created in the code ==================================================================== -->
+
+			</Windows>
+		</Window>
+
+    </Windows>
+
+</Interface>
+

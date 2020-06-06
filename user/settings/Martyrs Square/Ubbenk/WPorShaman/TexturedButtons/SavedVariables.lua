@@ -153,7 +153,7 @@ TexturedButtons.Settings =
 		EnableButtonTinting = false,
 		HideFlash = false,
 		ShowGlobalCooldownText = false,
-		Alpha = 0.80000001192093,
+		Alpha = 0.8,
 		Tint = 
 		{
 			R = 0,

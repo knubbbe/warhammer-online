@@ -1,0 +1,315 @@
+SystemData.Events.PLAYER_COOLDOWN_TIMER_SET
+GetHotbarCooldown (self:GetSlot ())
+actionType, actionId, self.m_IsEnabled, self.m_IsTargetValid = GetHotbarData (slot)
+
+WindowSetGameActionData( mouseOverWindow, GameData.PlayerActions.DO_ABILITY, abilityID, L"" );
+GameData.PlayerActions = 
+{
+	DO_CRAFTING = 7,
+	FIRE_SIEGE_WEAPON = 6,
+	USE_ITEM = 2,
+	COMMAND_PET = 8,
+	DO_ABILITY = 1,
+	COMMAND_PET_DO_ABILITY = 9, 
+	SET_TARGET = 3,
+    ASSIST_PLAYER = 10,
+	NONE = 0,
+	COMMAND_TEXT = 5,
+	DO_MACRO = 4,
+},
+
+Logitech G15: EA_LCDKeyboard / A19521DB_BAFCBBBC8725A5D9.lua
+
+TEST: repeatedly put too long names into label: do i get repeated warnings????
+      what if i change the "too long" text??? then warnings???
+      There is a xml-tag to prevent these warnings !!!!
+
+TextLogSetEntryLimit("DebugWindowText", 5000)
+
+GameDefs.CON_DESCS = {}
+GameDefs.CON_DESCS[GameData.ConType.NO_LEVEL]    =  L""
+GameDefs.CON_DESCS[GameData.ConType.TRIVIAL]     =  GetString( StringTables.Default.LABEL_CON_TRIVIAL )
+GameDefs.CON_DESCS[GameData.ConType.EFFORTLESS]  =  GetString( StringTables.Default.LABEL_CON_EFFORTLESS )
+GameDefs.CON_DESCS[GameData.ConType.EASY]        =  GetString( StringTables.Default.LABEL_CON_EASY )
+GameDefs.CON_DESCS[GameData.ConType.EQUAL]       =  GetString( StringTables.Default.LABEL_CON_EQUAL )
+GameDefs.CON_DESCS[GameData.ConType.CHALLENGING] =  GetString( StringTables.Default.LABEL_CON_CHALLENGING )
+GameDefs.CON_DESCS[GameData.ConType.DANGEROUS]   =  GetString( StringTables.Default.LABEL_CON_DANGEROUS )
+GameDefs.CON_DESCS[GameData.ConType.DEADLY]      =  GetString( StringTables.Default.LABEL_CON_DEADLY )
+GameDefs.CON_DESCS[GameData.ConType.FRIENDLY]    =  L""
+
+GameDefs.TIER_NAMES = {}
+GameDefs.TIER_NAMES[ 0 ] = L""
+GameDefs.TIER_NAMES[ 1 ] = GetString( StringTables.Default.LABEL_MONSTER_TIER_CHAMPION )
+GameDefs.TIER_NAMES[ 2 ] = GetString( StringTables.Default.LABEL_MONSTER_TIER_HERO )
+GameDefs.TIER_NAMES[ 3 ] = GetString( StringTables.Default.LABEL_MONSTER_TIER_LORD )
+
+
+----- NOTICE ----------------------------------------
+
+- at attached HUD-clicks, the handler of HealGridHUDMain is called
+- range-timer-expiration: if grid (or attached HUD) gets hidden, it no longer decreases timer (stored in HealGridUnit) (dirtyFix: now checking for HasUnitChanged())
+- buff-timer-expiration: if grid gets hidden, it no longer decreases the cachedBuffData duration (stored in HealGridUnit) (dirtyFix: now checking for HasUnitChanged())
+- at attached HUDs, hud:OnUpdate() ONLY called if grid is visible (thus, nothing is updated, also not HUD-units) (no pre/postUpdate calls too)
+  - new grid.attachedTo and let the HUD (or other attached grids) make the update decision themselves?
+- buffs: duration can be zero (0). seems that math.floor() is used!
+
+----- TOP PRIORITY ----------------------------------
+
+- HealGridUnit:UpdateBuffs(): Better Update, do not ALWAYS wipe cachedBuffs, update them! (review!!)
+- better HealGridBattlegroup.IsPlayerInBattlegroup()!!!!!!!!!
+- when unit dead, wipe cached buffs (PROBLEM: how to RELIABLY detect that unit is dead)
+
+----- MODULES ---------------------------------------
+
+- cooldown tracker
+- announce
+  - add announcement message (e.g. "casting _SPELLNAME_ on _TARGET_")
+  - pre-cast / post-cast
+  - announce to: group / say / target
+- buff-bot (or as part of bufftrack???):
+  - track missing buffs
+- main assist / priority targets
+  - own grid
+  - list with "custom picked" players, either by their name or meta-unit (friendlytarget, mainassist, pet, ...)
+- tactics changer
+  - different sets for "group status": solo/g/bg/sg
+  - join/leave scenario (covered by above?)
+  - automatically? or bring up popup with selection question (option)
+
+----- REVIEW ----------------------------------------
+
+----- NEXT ------------------------------------------
+
+- function HealGridCastBar:BeginCast( abilityID, isChannel, desiredCastTime, averageLatency )
+  - changed last param: averyageLatency -> "now it's showing or not" (IRC)
+   -> google wardiff !!!!
+
+- TargetInfo:UnitSigilEntryId() 
+
+- RMetLib : RequiredVersion() -> gui if version too low !
+- Does OnLoadingEnd() also fire when leaving a scenario !!!!?????
+
+- dummy-data:
+  - bail out if in REAL group!!!
+
+- TargetInfo:UnitSigilEntryId() 
+
+- RMetLib : RequiredVersion() -> gui if version too low !
+- Does OnLoadingEnd() also fire when leaving a scenario !!!!?????
+
+- function HealGridUtility.SetColorPlus( windowName, unitObj, colorKey, cacheValue, widget, forceRedraw )
+  - pass colorKey/colorCache as an array (so that i do no longer need return values and have common naming)
+  - naming: array = {colorKey=color,colorCache=color}
+- INTELLIGENT PADDING: keep box within unitframe-box !!!!
+- add Klik-Textures (and use as bars???)
+
+- Gui: use new class-oriented settings (RMetLib)
+- HealGridColorPicker: Replace by RMetColorSelect ! (grep!)
+
+- Grid:
+  - add "gridGroupGrowth" (left->right/right->left and up->down/down->up)
+    - add to existing gridOrientation and gridGrowth
+  - padding between cells and/or groups
+
+- range scan
+  - do not scan range if ability is invalid (aka not yet known)!!!! (how to cache this!?)
+  - register LEVEL_GAINED (ABILITY_GAINED) ??? (lookup event names)
+
+- SkinEditor: FontAttr (width of dropdown)
+- [careershort] : add to hostile target lower left corner (isNpc/isMob/isPlayer)
+- [rvr]: flagged for rvr
+
+- battlegroup/warband: isInSameRegion / zoneNum (display for FAR, but how?) (tag?)
+- debuff-flags
+  - not in corner (offset?)
+  - option "pack" to pack them together
+  - allow positioning and "intelligent" display according to position (corner only?)
+- EmergencyMonitor: health / debuffs (fully customizable what units are shown)
+- range in yards (for hunter)
+
+- scale: "honor WAR UI scale" (y/n) n == undock
+  - new frame HG_RootAnchor with "correct" scaling (can i really unhook from parent=Root)??
+
+----- MODULES ----------------------------------------
+
+- "tooltip" for current grid unit 
+  - show buffs/debuffs at tooltip
+  - pet: add "mood" to 2nd line
+  - friendly player: rvr flag (red icon background + ?2nd? line [rvr])
+  - mobs: 
+    - print BIG level-diff in career-icon (+ hero/elite...), color background/text in con-color
+    - also print hero/elite in (1st?) GameDefs.TIER_NAMES 
+    - print con-text into 2nd line: CON_DESC
+  - also display for "mouse-over" units (option)
+  - what to put in 2nd line (groupleader, mainassist, ...)
+  - add "tier" to level (+x*)
+  - truncate VERY long names and use autoscale on name
+  - add layer for NPC-targets (also for enemy players) (line1: UnitTier(), hero, .. or "Friendly Player" or "Enemy Player")
+  - transperant (alpha)
+  - anchoring (free-float / attach to hud TOP)
+  - frametype ~= UNIT: show both friendly and hostile mapping, highlight which spell would be casted in the current situation
+  - red if unit is OOR/LoS
+  - yellow/orange if on cooldown
+  - beautify dimensions and borders
+  - icons for spells
+  - GetUnitRaceName() for all units (possible? does it return something useful?) (decode career line???) (CURRENTLY REMOVED)
+    - does race make any sense? or map it myself by careerLine (male/female)
+  - groupleader indication
+  - friendly target: lookup if player/group/wg/scenario and get info from there
+  - optional: check if target is quest mob
+  - career for hostile players (not mobs) (incl career icon)
+- MouseClick: 
+  - if click in placeholder target frame, process click for "TARGET" (target nearest) and "ASSIST" (assist main-assist)
+  - not UNIT, if no friendly and no hostile target and no any spell, check if friendly or hostile spell and use it
+  - add action "actionbar"
+  - action MORALE: assign abilityID (in addition to morale level) (GameData.AbilityType.MORALE)
+  - action SLASHCMD: actionDetail={cmd=cmd,target=YES|NO,retarget=RETARGET|KEEP|PLAYER}
+  - action SLASHCMD: allow for more lines (aka multiple commands)
+  - do not calculate action every call, but create mapping with all possible mouse keys: actionMap = {LMB=action,RMB=action,SHIFT-LMB=action, ...}
+  - apply the "map-bindings" to all frames on init/change and not 'just-in-time' before cast. no longer use FrameCleanUp().
+    - special consider attached HUDS, is this a problem?
+  - add group pets (frame: 'HG_HealGrid_GroupMemberPet_'). but how to target???
+  - different spells when clicked in upper/lower half (or quarters) -> WindowGetScreenPosition()
+  - pets: can i cast on them when i have already targed them ??? if so -> spell-category PETS (frametype)
+  - stances???
+- tags
+  - [berzerk]   15 >15< >>>15<<< better: [ap_berzerk]
+  - function: leader (name:leader) prepands a + if unit is leader of g/bg/sg
+    - WARNING: this will be called OFTEN!
+- skinning
+  - sources:
+    - WoW -> SharedMediaXXXX !!!! (curse, search on it!)
+    - check out LibSharedAssests and SharedAssetsHal
+  - Textures: 
+    - dimension for tint_square!!!???
+    - more "styles" (Tiled/Zoom/Centered/Scaled/FillScreen)
+    - make styles intelligent 
+    - anchor to bottom(left) if growth is BOTTOM_TOP)
+    - if FillScreen/zoom...: what if bar only half-full!!! ("cut" half the texture)
+    - add KliK texture(s)
+  - SkinChooser: popup for skin selection, displaying
+    - skin name / author
+    - skin description
+    - preview image
+  - bars (unitFrames+hp/ap/mp)
+    - border
+    - padding (+/-) % (TRBL)
+  - SkinEditor
+    - include comands in help (len pre post empty)
+    - help text for nodes (where to display?)
+  - new HUD skin with Klik-bar-textures for the bars
+  - enable watermarks on unit-frame level (e.g. in hud, only do it for hostile targets) {off/on/player/mob+player}
+  - add labels to morale bar (tags: [moraleLevel] [moraleLevelName])
+  - add labels to cast bar (tags: [castTime] [castStatus] [castInterruptTime] ...)
+  - add labels for group-pets 
+    - NOT POSSIBLE as pet is not an own object!
+    - to make it happen, first need to create class HealGridUnitGroupPet, but with current poor pet support this is questionable!
+  - label-width: ('x%','AUTO') (re-anchor the unit-label!!) (NOTE: this make skin-apply quite confusing, really do this??)
+    - OR add "morale cooldown" to "color+", but ONLY for morale bar !!!!
+  - skin suggestions
+    - http://i77.photobucket.com/albums/j43/ludiusvox/WoWScrnShot_060908_193823.jpg
+- buffs
+  - buff-updates: use triggers? (NO)
+  - mark buffs cast by yourself (e.g. * in topleft corner)
+  - display stackCount AND remaining time (e.g. stack-count top-right) (skin labels!)
+  - aggregate and display aggregate count (e.g. "2P2", "3P5" (means 2players2spells, 3players5spells) (autoscale label)
+  - tooltip: RButton to remove buff (grep BuffFrame | RemoveEffect) (NOTE: only remove OWn buffs)
+  - MButton to "trigger" buff (e.g. priest buffs)
+  - RButton to dispell buff (cast dispell)
+  - CTRL-RMB a buff, add it to the buff track!
+  - LEFT/RIGHT: center buffs to unitFrame.height/2 ?
+  - BOTTOM: grow from bottom-center _or_ if totalBuffWidth > hudWidth, then grow from center, otherwise left-align
+  - new filter for both buff and debuff: CASTABLE (problem: how to know this?)
+  - optimize buff draws (do not draw if already "good") (ONLY if this really improves performance!)
+  - sort buffs: HealGridUnit.lua -> "TODO: sort this"
+- dropdown menu:
+  - group and warband: if click on member and member == avatar, show avatar menu
+  - warband: add "leave warband" (== gruppe verlassen)
+  - warband: if group member, add group member options
+  - all: check restrictions. e.g. it is ALWAYS possible to target a unit
+  - player: when in scenario, add ShowScenarioWindow, remove invalid others (flag RvR, Open groups, ...)
+  - "convert to warband": add to player-menu when in group (currently you have to click a group member)
+- Debuff-flags: 
+  - highlight dispellabble DE-buffs: green border (or non-dispelable with orange border)
+  - new filter: DISPELLABLE_PACKED -> show only dispellable and pack in corner (or do this with DISPELLABLE ??)
+  - allow positioning (topleft, topright, bottomleft, bottomright) (in skin!)
+  - add settings for pet
+- class templates for
+  - dispellable (now true/false, change to ALL/SELF/NONE
+  - bufftrack
+  - rangecheck (add resurrect)
+
+----- TODO -------------------------------------------
+
+- throttle Update() of HealGridProgressBars() (update of the labels, that is!!!)
+  - new method: UpdateLabels() 
+  - Call UpdateLabels( forced ) when bar-values change!
+  - do I *really* want to throttle this???
+- show if player is not in same zone as groupleader (as tag?)
+- mainassist: HealGridUtility.GetMainAssist() needs improvement, esp for scenariogroups
+- dispellableDebuff(Flags): now false/true, but should be NONE/SELF/ALL
+- HealGridSettings: CleanUp no longer used character savings! (e.g. of deleted chars)
+- if unit becomes targeted, IMMEDIATELY update all info
+  - cache unit data (problem: only cache data for TARGETED unit again, esp problem at scenariogroups)
+  - call OnUpdate, coordinate centrally at target-trigger (replace currentRange-check by OnUpdate)
+  - ALWAYS update friendly target (already done via HUDMain-calls, right)?  what about attached HUDs?
+- OnUpdateChanged: update friendly/hostile target in HUD (all huds?) (what about buffs?)
+- highlight bauble bearer!
+- workable buff throttle (in multiples of buff throttle, at least internally)
+- show PvP flag at HUD and other grids (optional)
+- display killing spree (as a bar?) (or background-bar for targetname!)
+- new settings for bars (line, pos)
+- bars: throttle Update() of labels, but call update() if "bar-property" changes (eg. careerPointsUpdated, ActionPointsUpdated)
+- Sync Colors of debuff-indicators with WAR (DataUtils module) (really possible?)
+- range check: option to fade box or to color border
+- HealGrid.RangeScanTarget(): can I optimize this? e.g. only call if targetClassification is 'selffriendlytarget'
+- add a dropdown to change the window-layer for the grid
+- if no enemy targeted: click into box to select nearest
+- icon at minimap to open HealGrid-GUI
+- option to color names for class-type (or leave them white)
+- friendlyTarget: GetCareerLine() via name-lookup (player/group/bg/sg)
+- make placeholders click-through (option?)
+- display AP for friendly target (get from player/group if not provided)
+- show if unit is under attack (red border/red HP)
+- attached HUD positioning (top, left, bottom, right)
+- HealGridUtilit.SetLabelText(): check if current text is same as new text. if it is, do not call SetLabelText()
+- ProgressBar (children): Events triggered and handled, even if bar is invisible. 
+  - Problem: bar IS visible, but parent (or parent of parent) not. need FrameOrAnyParentFrameIsHidden()
+- SetLabelDebuffFlags: always called, might cause delay (need to call to hide).
+  - new method WindowSetShowingSafe(): only change status if necessary?
+  - OR remember hidden state and show/hide the frame the debuffs are in (the 'debuffFrame')
+- GUI: move only with titlebar (WindowSetMoving())
+- GUI: add arrows for sort indication (and maybe add up/down sorting)
+- highlight guildmates (in BG/SG)
+- bufftrack
+  - use different index (e.g. just an int) (only necessary if i want to track same buff, e.g. in multiple positions)
+- "test mode" setting: turns on all grids with current features to "preview" the settings
+- debug facility (linux log level)
+- remove option: "group show when in warband"
+- unithealth: take from most accurate source (player -> target -> group -> warband -> scenariogroup)
+- play sound ("scream") when hit
+- further improve HealGridUnit:IsDead(): hp == 0, morale == 0, all buffs gone (really??), ap not usable (LOG)
+- color career-resource-points for shaman (and order-faction career)
+- hide WAR group: allow different settings for group / scenariogroup (now synced)
+- enable/disable healgrid
+- in scenarios, players who leave the group and solo do NOT show in the grid (player who are NOT part of ANY group)
+  - what is the data on them? sgroupslotnum=0, sgroupindex=0
+
+----- IDEAS ------------------------------------
+
+- instead of parsing "windowName", use ID for unit-windows. 
+  - define IDs (UNIT_WINDOW_PLAYER = 1, UNIT_WINDOW_BATTLEGROUP_3_4 = 88)
+  - HealGridUtility.GetWindowID( 'battlegroup', g, m ) returns UNIT_WINDOW_BATTLEGROUP_3_4
+  - QUESTION: How often do I parse it? Is this really better???
+- RangeCheck: give 2 spells, one long cast, one short cast. color border differently
+
+----- BUGS -------------------------------------
+
+- no range indication for pet target
+- class icon of white lion not shown (NOT CONFIRMED)
+
+----- MANUAL -----------------------------------
+
+- screenshots of gui / warband / scenario / hud / group (incl AP)
+- screenshot of depleting bars !!!!
+- section: ClickCasting

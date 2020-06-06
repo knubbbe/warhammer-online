@@ -1,0 +1,376 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### Tab4: Battlegroup ########################################################################### -->
+		<Window name="HGG_TabBattlegroupWindowTemplate" inherits="HGG_TabWindowTemplate">
+			<Windows>
+
+                <!-- ===== Stay Hidden ========================================================================= -->
+                <Window name="$parentStayHidden" inherits="EA_LabelCheckButton">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                    </Anchors>
+                    <EventHandlers>
+                        <EventHandler event="OnLButtonUp" function="HealGridGuiTabBattlegroup.StayHiddenClicked" />
+                    </EventHandlers>
+                </Window>
+
+                <!-- ===== Hide WAR Warband Frames ============================================================= -->
+                <Window name="$parentHideWARWarbandFrames" inherits="EA_LabelCheckButton">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="0" y="40" />
+                        </Anchor>
+                    </Anchors>
+                    <EventHandlers>
+                        <EventHandler event="OnLButtonUp" function="HealGridGuiTabBattlegroup.HideWARWarbandFramesClicked" />
+                    </EventHandlers>
+                </Window>
+
+				<!-- ===== Show HUD ============================================================================ -->
+				<Window name="$parentShowHUD" inherits="EA_LabelCheckButton">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="80" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="HealGridGuiTabBattlegroup.ShowHUDClicked" />
+					</EventHandlers>
+				</Window>
+
+                <!-- ===== Show Debuff Flags =================================================================== -->
+				<Label name="$parentShowDebuffFlagsLabel" inherits="HGG_ItemLabelTemplate">
+					<Size>
+						<AbsPoint x="150" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="400" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentShowDebuffFlags" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentShowDebuffFlagsLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabBattlegroup.ChangeShowDebuffFlags" />
+					</EventHandlers>
+				</ComboBox>
+
+				<!-- ===== PreviewGrid ========================================================================= -->
+				<Window name="$parentPreviewGrid" inherits="EA_LabelCheckButton">
+					<Anchors>
+						<Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parent">
+							<AbsPoint x="0" y="-10" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="HealGridGuiTabBattlegroup.PreviewGridClicked" />
+					</EventHandlers>
+				</Window>
+
+                <!-- ===== Skin ================================================================================ -->
+				<Label name="$parentSkinLabel" font="font_default_text_small" maxchars="32" textalign="rightcenter" layer="default" handleinput="false">
+					<Size>
+						<AbsPoint x="150" y="40" />
+					</Size>
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentSkin" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentSkinLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabBattlegroup.ChangeSkin" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== GridOrientation ===================================================================== -->
+				<Label name="$parentGridOrientationLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="60" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentGridOrientation" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentGridOrientationLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabBattlegroup.GridOrientationChanged" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== GridGrowth ========================================================================== -->
+				<Label name="$parentGridGrowthLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="100" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentGridGrowth" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentGridGrowthLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabBattlegroup.GridGrowthChanged" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== GridGrouping ======================================================================== -->
+				<Label name="$parentGridGroupingLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="140" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentGridGrouping" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentGridGroupingLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabBattlegroup.GridGroupingChanged" />
+					</EventHandlers>
+				</ComboBox>
+
+				<!-- ===== CareerLineIcon ====================================================================== -->
+				<Label name="$parentShowCareerLineIconLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="180" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentShowCareerLineIcon" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentShowCareerLineIconLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabBattlegroup.ShowCareerLineIconChanged" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== ShowHealthPointsBar ================================================================= -->
+				<Label name="$parentShowHealthPointsBarLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="220" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentShowHealthPointsBar" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentShowHealthPointsBarLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabBattlegroup.ShowHealthPointsBarChanged" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== ShowActionPointsBar ================================================================= -->
+				<Label name="$parentShowActionPointsBarLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="260" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentShowActionPointsBar" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentShowActionPointsBarLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabBattlegroup.ShowActionPointsBarChanged" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== ShowMoraleLevelBar ================================================================== -->
+				<Label name="$parentShowMoraleLevelBarLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="300" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<ComboBox name="$parentShowMoraleLevelBar" inherits="EA_ComboBox_DefaultResizable">
+					<Size>
+						<AbsPoint x="250" y="28" />
+					</Size>
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentShowMoraleLevelBarLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSelChanged" function="HealGridGuiTabBattlegroup.ShowMoraleLevelBarChanged" />
+					</EventHandlers>
+				</ComboBox>
+
+                <!-- ===== UnitFrame Width ===================================================================== -->
+				<Label name="$parentUnitFrameWidthLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="360" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<SliderBar name="$parentUnitFrameWidthSlider" inherits="HGG_SliderFullLabels" numticks="11">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentUnitFrameWidthLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSlide" function="HealGridGuiTabBattlegroup.UnitFrameWidthChanged" />
+					</EventHandlers>
+				</SliderBar>
+
+                <!-- ===== UnitFrame Height ==================================================================== -->
+				<Label name="$parentUnitFrameHeightLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="420" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<SliderBar name="$parentUnitFrameHeightSlider" inherits="HGG_SliderFullLabels" numticks="11">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentUnitFrameHeightLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSlide" function="HealGridGuiTabBattlegroup.UnitFrameHeightChanged" />
+					</EventHandlers>
+				</SliderBar>
+
+                <!-- ===== UnitFrame Scale ===================================================================== -->
+				<Label name="$parentUnitFrameScaleLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="480" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<SliderBar name="$parentUnitFrameScaleSlider" inherits="HGG_SliderFullLabels" numticks="8">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentUnitFrameScaleLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSlide" function="HealGridGuiTabBattlegroup.UnitFrameScaleChanged" />
+					</EventHandlers>
+				</SliderBar>
+
+                <!-- ===== Update Throttle ===================================================================== -->
+				<Label name="$parentUpdateThrottleLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="560" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<SliderBar name="$parentUpdateThrottleSlider" inherits="HGG_SliderFullLabels" numticks="11">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentUpdateThrottleLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSlide" function="HealGridGuiTabBattlegroup.UpdateThrottleChanged" />
+					</EventHandlers>
+				</SliderBar>
+
+                <!-- ===== Buff Update Throttle ================================================================ -->
+				<Label name="$parentBuffUpdateThrottleLabel" inherits="HGG_ItemLabelTemplate">
+					<Anchors>
+						<Anchor point="top" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="0" y="620" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+				<SliderBar name="$parentBuffUpdateThrottleSlider" inherits="HGG_SliderFullLabels" numticks="11">
+					<Anchors>
+						<Anchor point="right" relativePoint="left" relativeTo="$parentBuffUpdateThrottleLabel">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnSlide" function="HealGridGuiTabBattlegroup.BuffUpdateThrottleChanged" />
+					</EventHandlers>
+				</SliderBar>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+
+</Interface>
+

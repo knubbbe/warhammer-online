@@ -1,0 +1,48 @@
+
+##### font clear ######################################################################################################################
+
+
+<Font name="font_clear_tiny"        height="14" texsize="256" antialias="true" hinting="false" autohinting="true" outline="true" shadow="false"/>
+<Font name="font_clear_small"       height="16" texsize="256" antialias="true" hinting="false" autohinting="true" outline="true" shadow="false"/>
+<Font name="font_clear_medium"      height="20" texsize="256" antialias="true" hinting="false" autohinting="true" outline="true" shadow="false"/>
+<Font name="font_clear_large"       height="24" texsize="256" antialias="true" hinting="false" autohinting="true" outline="true" shadow="false"/>
+<Font name="font_clear_small_bold"  height="16" texsize="256" antialias="true" hinting="false" autohinting="true" outline="true" shadow="false"/>
+<Font name="font_clear_medium_bold" height="20" texsize="256" antialias="true" hinting="false" autohinting="true" outline="true" shadow="false"/>
+<Font name="font_clear_large_bold"  height="24" texsize="256" antialias="true" hinting="false" autohinting="true" outline="true" shadow="false"/>
+
+
+##### font arial ######################################################################################################################
+
+
+<Font name="font_arial09"      height="9"  texsize="256" />
+<Font name="font_arial11"      height="11" texsize="256" />
+<Font name="font_arial14"      height="14" texsize="512" />
+<Font name="font_arial14_bold" height="14" texsize="512" />
+<Font name="font_arial18"      height="18" texsize="521" />
+<Font name="font_arial18_bold" height="18" texsize="512" />
+<Font name="font_arial35_bold" height="35" texsize="512" />
+
+<Font name="font_arial12"      height="12" texsize="256" antialias="false" />
+<Font name="font_arial16"      height="16" texsize="256" antialias="false" />
+<Font name="font_arial36"      height="36" texsize="512" antialias="false" />
+
+
+##### font alert outline ##############################################################################################################
+
+
+<Font name="font_alert_outline_tiny" height="18" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_small" height="24" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_medium" height="30" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_large" height="36" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_huge" height="42" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_giant" height="48" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_gigantic" height="60" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+
+<Font name="font_alert_outline_half_tiny" height="9" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_half_small" height="12" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_half_medium" height="15" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_half_large" height="18" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_half_huge" height="21" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_half_giant" height="24" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+<Font name="font_alert_outline_half_gigantic" height="30" texsize="256" antialias="true" hinting="false" autohinting="false" outline="true" shadow="false" shadowsize="1"/>
+

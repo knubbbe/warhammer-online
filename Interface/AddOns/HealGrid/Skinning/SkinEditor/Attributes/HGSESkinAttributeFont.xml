@@ -1,0 +1,43 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<Button name="HGSE_SkinAttributeFontComboBox" inherits="EA_Button_DefaultResizableComboBoxSelected">
+            <Size>
+                <AbsPoint x="400" y="29" />
+            </Size>
+			<OverlayOffset x="373" y="0" />
+		</Button>
+
+		<!-- ##### SkinEditor : Skin Attribute Font ############################################################ -->
+
+		<Window name="HGSE_SkinAttributeFontTemplate" layer="secondary">
+
+			<Anchors>
+				<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+				<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+					<AbsPoint x="0" y="-50" />
+				</Anchor>
+			</Anchors>
+
+			<Windows>
+
+                <!-- ===== ComboBox: Value ===== -->
+                <ComboBox name="$parentValue" inherits="EA_ComboBox_DefaultResizable" selectedbutton="HGSE_SkinAttributeFontComboBox" >
+            		<Size>
+                		<AbsPoint x="400" y="29" />
+            		</Size>
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="20" y="100" />
+                        </Anchor>
+                    </Anchors>
+                </ComboBox>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+
+</Interface>
+

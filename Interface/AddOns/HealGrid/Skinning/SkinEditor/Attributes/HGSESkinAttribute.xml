@@ -1,0 +1,71 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+	<Windows>
+
+		<!-- ##### SkinEditor : Skin Attribute ################################################################# -->
+
+		<Window name="HGSE_SkinAttributeTemplate" layer="default">
+
+			<Anchors>
+				<Anchor point="topleft" relativePoint="topleft" relativeTo="$parentContent" />
+				<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentContent" />
+			</Anchors>
+
+			<Windows>
+
+				<!-- ===== Name/Path of attribute ===== -->
+				<Label name="$parentName"  font="font_default_sub_heading" maxchars="255" textalign="leftcenter">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="10" y="0" />
+						</Anchor>
+						<Anchor point="topright" relativePoint="bottomright" relativeTo="$parent">
+							<AbsPoint x="-10" y="30" />
+						</Anchor>
+					</Anchors>
+					<Color r="255" g="204" b="102" a="255" />
+				</Label>
+
+				<!-- ===== Description of attribute ===== -->
+				<Label name="$parentDescription" font="font_default_text_small" maxchars="255" textalign="leftcenter" wordwrap="true">
+					<Anchors>
+						<Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+							<AbsPoint x="10" y="30" />
+						</Anchor>
+						<Anchor point="topright" relativePoint="bottomright" relativeTo="$parent">
+							<AbsPoint x="-10" y="90" />
+						</Anchor>
+					</Anchors>
+				</Label>
+
+                <!-- ===== Reset Button (Defaults) ===== -->
+				<Button name="$parentResetAttribute" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center" layer="overlay">
+					<Anchors>
+						<Anchor point="bottom" relativePoint="bottom" relativeTo="$parent">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="HealGridSkinEditor.ResetAttribute" />
+					</EventHandlers>
+				</Button>
+
+                <!-- ===== Set Attribute (Save) ===== -->
+				<Button name="$parentSetAttribute" inherits="EA_Button_DefaultResizeable" font="font_chat_text" textalign="center" layer="overlay">
+					<Anchors>
+						<Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+							<AbsPoint x="0" y="0" />
+						</Anchor>
+					</Anchors>
+					<EventHandlers>
+						<EventHandler event="OnLButtonUp" function="HealGridSkinEditor.SetAttribute" />
+					</EventHandlers>
+				</Button>
+
+			</Windows>
+		</Window>
+
+    </Windows>
+
+</Interface>
+
