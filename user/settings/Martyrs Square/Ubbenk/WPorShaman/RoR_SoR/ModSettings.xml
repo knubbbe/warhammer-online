@@ -4,12 +4,12 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="RoR_SoR_Button" sizeX="36.000000" sizeY="36.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-224.333496" yOffset="109.000008" />
+                <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-25.444609" yOffset="251.666672" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="RoR_SoR_Main_Window" sizeX="300.000000" sizeY="25.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.014111" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-345.100159" yOffset="-270.323608" />
+                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-345.100250" yOffset="-270.323639" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="RoR_SoR_Window" sizeX="300.000000" sizeY="370.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.007337" showing="false">

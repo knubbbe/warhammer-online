@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r21 | philosound | 2010-12-29 16:25:17 +0000 (Wed, 29 Dec 2010) | 1 line
+Changed paths:
+   A /tags/v1.3.2 (from /trunk:20)
+
+Tagging as v1.3.2
+------------------------------------------------------------------------
+r20 | philosound | 2010-12-29 16:24:21 +0000 (Wed, 29 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/RangeFadingSquared.lua
+   M /trunk/RangeFadingSquared.mod
+
+fixes a bug with Squared Testmode
+------------------------------------------------------------------------

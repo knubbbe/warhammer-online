@@ -1,0 +1,8 @@
+2011-03-03  Philosound  <Philosound>
+
+[d91d00a8b92f] [3.8.10]
+* Squared.lua, Squared.mod:
+
+version bump
+
+

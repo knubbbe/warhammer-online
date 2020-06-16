@@ -1,2 +1,0 @@
-changes are recorded in CHANGELOG.txt of HealGrid
-for build-nummer check HealGridSkin.mod

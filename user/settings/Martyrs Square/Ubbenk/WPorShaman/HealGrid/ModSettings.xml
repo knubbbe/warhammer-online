@@ -4,7 +4,7 @@
     <Windows>
         <WindowSettings xmlVersion="1.0" name="HGG_HealGrid" sizeX="1200.000000" sizeY="800.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="" xOffset="147.777710" yOffset="-44.444447" />
+                <WindowAnchor xmlVersion="1.0" point="center" relativePoint="center" relativeTo="" xOffset="133.333267" yOffset="-151.111115" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="HGG_HealGridMenuRow1" sizeX="170.000000" sizeY="30.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
@@ -507,34 +507,34 @@
                 <WindowAnchor xmlVersion="1.0" point="bottomleft" relativePoint="topleft" relativeTo="HGG_HealGridMenuRow98" xOffset="0.000000" yOffset="0.000000" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="HG_HealGridBattlegroup" sizeX="360.000000" sizeY="240.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+        <WindowSettings xmlVersion="1.0" name="HG_HealGridBattlegroup" sizeX="372.000000" sizeY="280.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.111111" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="0.000000" yOffset="-17.000008" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="269.000000" yOffset="57.148304" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="HG_HealGridGroup" sizeX="300.000000" sizeY="60.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+        <WindowSettings xmlVersion="1.0" name="HG_HealGridGroup" sizeX="360.000000" sizeY="60.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.111111" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="3.000000" yOffset="-207.000015" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="298.999969" yOffset="218.999985" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="HG_HealGridHUDMain" sizeX="300.000000" sizeY="102.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.111111" showing="true">
+        <WindowSettings xmlVersion="1.0" name="HG_HealGridHUDMain" sizeX="300.000000" sizeY="76.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.111111" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="266.000000" yOffset="203.000015" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="266.000000" yOffset="203.222122" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="HG_HealGridIcon" sizeX="32.000000" sizeY="32.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-218.333496" yOffset="176.999985" />
+                <WindowAnchor xmlVersion="1.0" point="topright" relativePoint="topright" relativeTo="Root" xOffset="-218.333481" yOffset="176.999985" />
             </Anchors>
         </WindowSettings>
-        <WindowSettings xmlVersion="1.0" name="HG_HealGridScenariogroup" sizeX="360.000000" sizeY="600.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
+        <WindowSettings xmlVersion="1.0" name="HG_HealGridScenariogroup" sizeX="390.000000" sizeY="640.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.111111" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="topleft" relativePoint="topleft" relativeTo="Root" xOffset="0.000000" yOffset="104.000000" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="240.000000" yOffset="-110.444473" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="HG_HealGridUnitTooltipAnchor" sizeX="200.000000" sizeY="105.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="true">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="right" relativePoint="right" relativeTo="Root" xOffset="-0.000112" yOffset="0.000015" />
+                <WindowAnchor xmlVersion="1.0" point="bottomleft" relativePoint="bottomleft" relativeTo="Root" xOffset="473.000000" yOffset="-250.000000" />
             </Anchors>
         </WindowSettings>
     </Windows>

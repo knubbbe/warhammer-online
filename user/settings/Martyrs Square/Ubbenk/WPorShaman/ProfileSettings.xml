@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <ProfileSettings isShared="true">
     <KeyBindings>
-        <KeyBinding action="PLAYER_FORWARD" key="Up" />
         <KeyBinding action="PLAYER_FORWARD" key="W" />
-        <KeyBinding action="PLAYER_BACK" key="Down" />
+        <KeyBinding action="PLAYER_FORWARD" key="Up" />
         <KeyBinding action="PLAYER_BACK" key="S" />
+        <KeyBinding action="PLAYER_BACK" key="Down" />
         <KeyBinding action="PLAYER_LEFT" key="Left" />
         <KeyBinding action="PLAYER_RIGHT" key="Right" />
         <KeyBinding action="STRAFE_LEFT" key="A" />
@@ -31,13 +31,13 @@
         <KeyBinding action="PET_AGGRESSIVE" key="Left Alt+&apos;" />
         <KeyBinding action="PET_DEFENSIVE" key="Left Alt+;" />
         <KeyBinding action="PET_PASSIVE" key="Left Alt+[" />
-        <KeyBinding action="MORALE_BAR_1" key="Left Alt+1" />
         <KeyBinding action="MORALE_BAR_1" key="Left Alt+H" />
+        <KeyBinding action="MORALE_BAR_1" key="Left Alt+1" />
         <KeyBinding action="MORALE_BAR_2" key="Left Alt+2" />
-        <KeyBinding action="MORALE_BAR_3" key="Left Alt+3" />
         <KeyBinding action="MORALE_BAR_3" key="Left Alt+N" />
-        <KeyBinding action="MORALE_BAR_4" key="Left Alt+4" />
+        <KeyBinding action="MORALE_BAR_3" key="Left Alt+3" />
         <KeyBinding action="MORALE_BAR_4" key="Left Alt+M" />
+        <KeyBinding action="MORALE_BAR_4" key="Left Alt+4" />
         <KeyBinding action="ACTION_BAR_114" key="NONE" />
         <KeyBinding action="ACTION_BAR_115" key="NONE" />
         <KeyBinding action="ACTION_BAR_116" key="NONE" />
@@ -47,11 +47,11 @@
         <KeyBinding action="ACTION_BAR_110" key="Left Shift+F11" />
         <KeyBinding action="ACTION_BAR_111" key="Left Shift+F12" />
         <KeyBinding action="ACTION_BAR_112" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_1" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_2" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_3" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_4" key="NONE" />
-        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_5" key="NONE" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_1" key="Left Control+Left Shift+1" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_2" key="Left Control+Left Shift+2" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_3" key="Left Control+Left Shift+3" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_4" key="Left Control+Left Shift+4" />
+        <KeyBinding action="SWITCH_ACTION_BAR_PAGE_5" key="Left Control+Left Shift+5" />
         <KeyBinding action="ACTION_BAR_1" key="1" />
         <KeyBinding action="ACTION_BAR_2" key="2" />
         <KeyBinding action="ACTION_BAR_3" key="3" />
@@ -62,7 +62,7 @@
         <KeyBinding action="ACTION_BAR_8" key="F" />
         <KeyBinding action="ACTION_BAR_9" key="T" />
         <KeyBinding action="ACTION_BAR_10" key="Left Shift+T" />
-        <KeyBinding action="ACTION_BAR_11" key="NONE" />
+        <KeyBinding action="ACTION_BAR_11" key="R" />
         <KeyBinding action="ACTION_BAR_12" key="NONE" />
         <KeyBinding action="ACTION_BAR_13" key="Left Shift+1" />
         <KeyBinding action="ACTION_BAR_14" key="Left Shift+2" />
@@ -74,7 +74,7 @@
         <KeyBinding action="ACTION_BAR_20" key="Left Shift+F" />
         <KeyBinding action="ACTION_BAR_21" key="E" />
         <KeyBinding action="ACTION_BAR_22" key="Left Shift+E" />
-        <KeyBinding action="ACTION_BAR_23" key="NONE" />
+        <KeyBinding action="ACTION_BAR_23" key="Left Shift+R" />
         <KeyBinding action="ACTION_BAR_24" key="NONE" />
         <KeyBinding action="ACTION_BAR_25" key="Left Control+1" />
         <KeyBinding action="ACTION_BAR_26" key="Left Control+2" />
@@ -215,7 +215,7 @@
         <KeyBinding action="TOGGLE_CONTROL_LOCK" key="NONE" />
         <KeyBinding action="CAMERA_UP" key="NONE" />
         <KeyBinding action="CAMERA_DOWN" key="NONE" />
-        <KeyBinding action="CHAT_REPLY" key="R" />
+        <KeyBinding action="CHAT_REPLY" key="NONE" />
         <KeyBinding action="INVERT_MOUSE_LOOK" key="Left Shift+Left Control+F11" />
         <KeyBinding action="SWITCH_ATTACK" key="NONE" />
         <KeyBinding action="TOGGLE_WEAPON_SHEATHE" key="X" />

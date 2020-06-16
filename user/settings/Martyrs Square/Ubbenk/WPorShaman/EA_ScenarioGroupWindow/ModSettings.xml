@@ -19,17 +19,17 @@
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup4Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.080810" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="432.999908" yOffset="152.333633" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="432.999908" yOffset="152.333588" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup5Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="0.000000" yOffset="-90.999985" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="0.000000" yOffset="-90.999992" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="FloatingScenarioGroup6Window" sizeX="139.000000" sizeY="330.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">
             <Anchors>
-                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="305.000000" yOffset="22.999924" />
+                <WindowAnchor xmlVersion="1.0" point="left" relativePoint="left" relativeTo="Root" xOffset="305.000000" yOffset="22.999947" />
             </Anchors>
         </WindowSettings>
         <WindowSettings xmlVersion="1.0" name="UngroupedPlayersWindow" sizeX="565.000000" sizeY="343.000000" movable="false" alpha="1.000000" fontAlpha="1.000000" scale="1.000000" showing="false">

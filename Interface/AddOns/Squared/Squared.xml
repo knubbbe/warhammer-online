@@ -1,0 +1,275 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+
+    <Windows>
+        
+        <Window name="SquaredUnitBoxTemplate" layer="default" moveable="false" popable="false" savesettings="false">
+            <Size>
+                <AbsPoint x="68" y="68" />
+            </Size>
+            <Windows>
+            
+                <Window name="$parentAction" alpha="0.0" hilighttexture="" layer="background" popable="false" handleinput="true">
+                    <EventHandlers>
+                        <EventHandler event="OnLButtonDown" function="Squared.UnitLClick" />
+                        <EventHandler event="OnRButtonDown" function="Squared.UnitRClick" />
+                        <EventHandler event="OnLButtonUp" function="Squared.UnitLRelease" />
+                        <EventHandler event="OnRButtonUp" function="Squared.UnitRRelease" />
+						<EventHandler event="OnMouseOver" function="Squared.UnitMouseOver" />
+						<EventHandler event="OnMouseOverEnd" function="Squared.UnitMouseOut" />
+                    </EventHandlers>
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+                    </Anchors>
+                </Window>
+            
+                <!-- overall square background (border) -->
+                <DynamicImage name="$parentBackground" layer="background" texture="squared_tint" handleinput="false">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent" />
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent" />
+                    </Anchors>
+                    <TintColor r="30" g="10" b="30" />
+                </DynamicImage>
+                
+                <!-- back fill (interior background) -->
+                <DynamicImage name="$parentBackFill" layer="default" texture="squared_tint" handleinput="false">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parent">
+                            <AbsPoint x="4" y="4" />
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="-4" y="-4" />
+                        </Anchor>
+                    </Anchors>
+                    <TintColor r="0" g="0" b="0" />
+                </DynamicImage>
+                
+                <!-- fore fill (bar color) -->
+                <DynamicImage name="$parentForeFill" layer="secondary" texture="squared_tint" handleinput="false">
+                    <Size>
+                        <AbsPoint x="60" y="40" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parent">
+                            <AbsPoint x="4" y="-4" />
+                        </Anchor>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parent">
+                            <AbsPoint x="-4" y="-4" />
+                        </Anchor>
+                    </Anchors>
+                    <TintColor r="0" g="150" b="0" />
+                </DynamicImage>
+                
+                <DynamicImage name="$parentOffline" layer="popup" texture="squared_tint" handleinput="false" popable="false">
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackFill" />
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackFill" />
+                    </Anchors>
+                    <TintColor r="30" g="30" b="30" />
+                </DynamicImage>
+                
+                <!-- center icon -->
+                <DynamicImage name="$parentIcon" textureScale="1.0" handleinput="false"  layer="popup" popable="false">
+                    <Size>
+                        <AbsPoint x="32" y="32" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="center" relativePoint="center" relativeTo="$parentBackFill">
+                            <AbsPoint x="0" y="0" />
+                        </Anchor>
+                    </Anchors>
+                </DynamicImage>
+                
+                <!-- main center text -->
+                <Label name="$parentText" textalign="center" autoresize="true" font="font_clear_small_bold" layer="overlay" handleinput="false">
+                    <Size>
+                        <AbsPoint x="60" y="24" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="center" relativePoint="center" relativeTo="$parentBackFill" />
+                    </Anchors>
+                    <Color r="255" g="255" b="255" />
+                </Label>
+                
+                <Label name="$parentTopText" textalign="center" autoresize="true" font="font_clear_small_bold" layer="overlay" handleinput="false">
+                    <Size>
+                        <AbsPoint x="60" y="24" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="top" relativePoint="bottom" relativeTo="$parentText" />
+                    </Anchors>
+                    <Color r="255" g="255" b="255" />
+                </Label>
+                
+                <Label name="$parentBottomText" textalign="center" autoresize="true" font="font_clear_small_bold" layer="overlay" handleinput="false">
+                    <Size>
+                        <AbsPoint x="60" y="24" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="bottom" relativePoint="top" relativeTo="$parentText" />
+                    </Anchors>
+                    <Color r="255" g="255" b="255" />
+                </Label>
+                
+                <!--corner indicators -->
+                <DynamicImage name="$parentTopLeft" layer="overlay" texture="squared_tint" handleinput="false">
+                    <Size>
+                        <AbsPoint x="10" y="10" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="topleft" relativePoint="topleft" relativeTo="$parentBackFill" />
+                    </Anchors>
+                    <TintColor r="255" g="150" b="255" />
+                </DynamicImage>
+                
+                <DynamicImage name="$parentBotLeft" layer="overlay" texture="squared_tint" handleinput="false">
+                    <Size>
+                        <AbsPoint x="10" y="10" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="bottomleft" relativePoint="bottomleft" relativeTo="$parentBackFill" />
+                    </Anchors>
+                    <TintColor r="255" g="150" b="255" />
+                </DynamicImage>
+                
+                <DynamicImage name="$parentTopRight" layer="overlay" texture="squared_tint" handleinput="false">
+                    <Size>
+                        <AbsPoint x="10" y="10" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="topright" relativePoint="topright" relativeTo="$parentBackFill" />
+                    </Anchors>
+                    <TintColor r="255" g="150" b="255" />
+                </DynamicImage>
+                
+                <DynamicImage name="$parentBotRight" layer="overlay" texture="squared_tint" handleinput="false">
+                    <Size>
+                        <AbsPoint x="10" y="10" />
+                    </Size>
+                    <Anchors>
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="$parentBackFill" />
+                    </Anchors>
+                    <TintColor r="255" g="150" b="255" />
+                </DynamicImage>
+                
+                
+                
+            </Windows>
+        </Window>
+        
+        <Window name="SquaredAnchor" handleinput="false">
+            <Size>
+                <AbsPoint x="68" y="68" />
+            </Size>
+            <Anchors>
+                <Anchor point="topleft" relativePoint="topleft" relativeTo="Root">
+                    <AbsPoint x="300" y="200" />
+                </Anchor>
+            </Anchors>
+        </Window>
+        
+        <Window name="SquaredUnitFrame" inherits="SquaredUnitBoxTemplate" parent="SquaredAnchor">
+
+            <EventHandlers>
+                <EventHandler event="OnLButtonDown" function="Squared.UnitLClick" />
+                <EventHandler event="OnRButtonDown" function="Squared.UnitRClick" />
+            </EventHandlers>
+
+        </Window>
+		
+		<DynamicImage name="SquaredIcon" handleinput="true" texture="squaredicon">
+            <Size>
+                <AbsPoint x="32" y="32" />
+            </Size>
+			<TexCoords x="0" y="0" />
+			<TexDims x="24" y="24" />
+            <Anchors>
+                <Anchor point="left" relativePoint="right" relativeTo="EA_Window_OverheadMapMapDisplay">
+                    <AbsPoint x="5" y="0" />
+                </Anchor>
+            </Anchors>
+			<EventHandlers>
+                <EventHandler event="OnLButtonDown" function="Squared.ToggleActive" />
+                <EventHandler event="OnRButtonDown" function="Squared.ShowSettings" />
+            </EventHandlers>
+        </DynamicImage>
+        
+        <Window name="SquaredImportExport" movable="true" layer="default" savesettings="false">
+            <Size>
+                <AbsPoint x="600" y="630" />
+            </Size>
+            <Anchors>
+                <Anchor point="center" relativePoint="center" relativeTo="Root">
+                    <AbsPoint x="0" y="0" />
+                </Anchor>
+            </Anchors>
+            
+            <Windows>
+                <Window name="$parentBackground" inherits="EA_Window_DefaultBackgroundFrame" />
+                <Window name="$parentTitle" inherits="EA_TitleBar_Default" />
+                <Button name="$parentClose" inherits="EA_Button_DefaultWindowClose">
+                    <EventHandlers>
+                        <EventHandler event="OnLButtonUp" function="Squared.CloseImportExport" />
+                    </EventHandlers>
+                </Button>
+                
+                <Window name="$parentFrame">
+                    <Anchors>
+                        <Anchor point="bottomleft" relativePoint="topleft" relativeTo="$parentTitle" />
+                        <Anchor point="bottomright" relativePoint="bottomright" relativeTo="" />
+                    </Anchors>
+                    <Windows>
+                    
+                        <Button name="$parentImportButton" inherits="EA_Button_DefaultResizeable">
+                            <Anchors>
+                                <Anchor point="bottom" relativePoint="bottomright" relativeTo="">
+                                    <AbsPoint x="-10" y="-50" />
+                                </Anchor>
+                            </Anchors>
+                            <EventHandlers>
+                                <EventHandler event="OnLButtonUp" function="Squared.ImportSettings" />
+                            </EventHandlers>
+                        </Button>
+                        <Button name="$parentExportButton" inherits="EA_Button_DefaultResizeable">
+                            <EventHandlers>
+                                <EventHandler event="OnLButtonUp" function="Squared.ExportSettings" />
+                            </EventHandlers>
+                            <Anchors>
+                                <Anchor point="bottom" relativePoint="bottomleft" relativeTo="">
+                                    <AbsPoint x="10" y="-50" />
+                                </Anchor>
+                            </Anchors>
+                        </Button>
+                        
+                        <EditBox name="$parentData" font="font_clear_small" inherits="EA_EditBox_DefaultFrame_Multiline" maxchars="4096" scrolling="vert">
+                            <Anchors>
+                                <Anchor point="top" relativePoint="top" relativeTo="$parent">
+                                    <AbsPoint x="0" y="10" />
+                                </Anchor>
+                            </Anchors>
+                            <Size>
+                                <AbsPoint x="580" y="480" />
+                            </Size>
+                        </EditBox>
+                        
+                        <Label name="$parentCopyInfo" font="font_clear_small" textalign="center" wordwrap="true">
+                            <Anchors>
+                                <Anchor point="bottom" relativePoint="bottom" relativeTo="">
+                                    <AbsPoint x="0" y="-10" />
+                                </Anchor>
+                            </Anchors>
+                            <Size>
+                                <AbsPoint x="580" y="30" />
+                            </Size>
+                        </Label>
+                    </Windows>
+                </Window>
+                
+            </Windows>
+        
+        </Window>
+        
+    </Windows>
+
+</Interface>

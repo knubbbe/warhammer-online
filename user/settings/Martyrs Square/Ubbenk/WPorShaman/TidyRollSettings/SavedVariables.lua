@@ -3,12 +3,12 @@ TidyRoll.Settings =
 	["scroll-invert"] = false,
 	["onnew-glow"] = true,
 	["onnew-save-position"] = true,
-	["managment-onesc-rollchoice"] = -1,
+	["managment-onesc-rollchoice"] = 1,
 	CustomAutoRollSettings = 
 	{
 		
 		{
-			choice = -1,
+			choice = 0,
 			name = L"Scout's Medallion",
 			id = 208401,
 			rarity = 3,
@@ -16,7 +16,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			name = L"Soldier's Medallion",
 			id = 208402,
 			rarity = 3,
@@ -24,7 +24,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			name = L"Officer's Medallion",
 			id = 208403,
 			rarity = 3,
@@ -32,7 +32,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			rarity = 4,
 			id = 1698,
 			name = L"Conqueror's Medallion",
@@ -40,7 +40,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			name = L"Recruit's Emblem",
 			id = 208431,
 			rarity = 3,
@@ -48,7 +48,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			name = L"Scout's Emblem",
 			id = 208432,
 			rarity = 3,
@@ -56,7 +56,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			name = L"Soldier's Emblem",
 			id = 208433,
 			rarity = 3,
@@ -64,7 +64,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			name = L"Officer's Emblem",
 			id = 208434,
 			rarity = 3,
@@ -72,7 +72,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			rarity = 4,
 			id = 1699,
 			name = L"Conqueror's Emblem",
@@ -80,7 +80,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			rarity = 4,
 			id = 2165,
 			name = L"Seal of the Exemplar",
@@ -88,7 +88,7 @@ TidyRoll.Settings =
 		},
 		
 		{
-			choice = -1,
+			choice = 0,
 			rarity = 4,
 			id = 2166,
 			name = L"Seal of the Paragon",
@@ -97,34 +97,34 @@ TidyRoll.Settings =
 		[0] = 
 		{
 			choice = -1,
-			name = L"Recruit's Medallion",
-			id = 208400,
 			rarity = 3,
+			id = 208400,
+			name = L"Recruit's Medallion",
 			iconNum = 25003,
 		},
 	},
 	["button-offset"] = 0,
-	["managment-onesc-visible-only"] = true,
+	["default-disable"] = true,
 	["career-icon-show"] = true,
-	["managment-bind-need"] = 2,
-	["managment-bind-greed-modificator"] = 0,
-	["auto-need-for-medallions"] = false,
-	["tooltip-disable-comparison"] = false,
+	["managment-bind-need"] = 3,
+	["auto-greed"] = true,
+	["auto-need-for-medallions"] = true,
+	["managment-bind-pass-modificator"] = 0,
 	["sort-type"] = 1,
 	["sort-order"] = 1,
-	["managment-bind-greed"] = 3,
+	["managment-bind-greed"] = 2,
 	["timer-show-text"] = true,
-	["button-number"] = 1,
-	["onnew-flash"] = true,
-	["managment-bind-need-modificator"] = 0,
-	["onnew-flash-only-new-items"] = false,
-	["button-growth-direction"] = L"down",
-	["managment-bind-pass"] = 4,
-	version = 14,
 	["onnew-glow-only-new-items"] = false,
-	["managment-bind-pass-modificator"] = 0,
-	["auto-greed"] = false,
-	["default-disable"] = true,
+	["onnew-flash"] = true,
+	["tooltip-disable-comparison"] = false,
+	version = 14,
+	["button-growth-direction"] = L"up",
+	["onnew-flash-only-new-items"] = false,
+	["managment-bind-pass"] = 4,
+	["button-number"] = 5,
+	["managment-bind-need-modificator"] = 0,
+	["managment-bind-greed-modificator"] = 0,
+	["managment-onesc-visible-only"] = true,
 }
 
 

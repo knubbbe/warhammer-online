@@ -1,3 +1,0 @@
-(10:19:15 AM) rmet0815: if i have a table with a meta-table, is there a way to see where a variable is defined (in the "derived" table or the meta-table)?
-(10:20:25 AM) Aiiane: rawget(table, index) will return the "real" value of table[index] without invoking metamethods
-(10:20:34 AM) Aiiane: so if rawget(table, index) == nil

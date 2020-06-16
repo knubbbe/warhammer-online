@@ -1,0 +1,70 @@
+<Interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Interface.xsd">
+<Scripts>
+	<Script file="TargetsUnitFrame.lua" />
+</Scripts>
+
+<Windows>
+	<!-- Unit frame template -->
+	<Window name="TargetsUnitFrame" layer="default" moveable="false" popable="false" savesettings="false">
+		<Size><AbsPoint x="100" y="55" /></Size>
+		<Windows>
+			<Window name="$parentAction" alpha="0.0" popable="false" handleinput="true">
+				<EventHandlers>
+					<EventHandler event="OnLButtonDown" function="TargetsUnitFrame.UnitLClick"/>
+					<EventHandler event="OnRButtonDown" function="TargetsUnitFrame.UnitRClick"/>
+				</EventHandlers>
+				<Anchors>
+					<Anchor point="topleft" relativePoint="topleft" />
+					<Anchor point="bottomright" relativePoint="bottomright" />
+				</Anchors>
+			</Window>
+
+			<FullResizeImage name="$parentBackground" layer="background" inherits="EA_FullResizeImage_TintableSolidBackground" alpha="0.25" handleinput="false">
+				<Anchors>
+					<Anchor point="topleft" relativePoint="topleft"><AbsPoint x="0" y="0"/></Anchor>
+					<Anchor point="bottomright" relativePoint="bottomright"><AbsPoint x="0" y="0"/></Anchor>
+				</Anchors>
+				<TintColor r="0" g="0" b="0" />
+			</FullResizeImage>
+
+			<Label name="$parentLabelName" font="font_heading_unitframe_con" textalign="center" layer="secondary" handleinput="false" maxchars="11">
+				<Size><AbsPoint x="100" y="20" /></Size>
+				<Anchors><Anchor point="top" relativePoint="top" relativeTo="$parent"><AbsPoint x="0" y="0"/></Anchor></Anchors>
+			</Label>
+
+			<Label name="$parentLabelHealth" font="font_heading_unitframe_con" textalign="center" layer="secondary" handleinput="false">
+				<Size><AbsPoint x="100" y="20" /></Size>
+				<Anchors>
+					<Anchor point="bottom" relativePoint="top" relativeTo="$parentLabelName"><AbsPoint x="10" y="0"/></Anchor>
+				</Anchors>
+			</Label>
+
+			<StatusBar name="$parentHPBar" inherits="UnitFrameFriendlyHealthStatusSmallBar" popable="false" layer="background" interpolate="true">
+				<Size><AbsPoint x="100" y="55" /></Size>
+				<Anchors><Anchor point="top" relativePoint="top" relativeTo="$parent"><AbsPoint x="0" y="0" /></Anchor></Anchors>
+			</StatusBar>
+
+			<DynamicImage name="$parentCareerIcon" textureScale="1.0" handleinput="false" layer="default" alpha="0.75">
+				<Size><AbsPoint x="32" y="32" /></Size>
+				<Anchors>
+					<Anchor point="left" relativePoint="left" relativeTo="$parentHPBar"><AbsPoint x="0" y="0" /></Anchor>
+				</Anchors>
+			</DynamicImage>
+
+			<Label name="$parentLabelRank" font="font_clear_small" textalign="center" layer="secondary" handleinput="false">
+				<Color r="250" g="250" b="0" />
+				<Size><AbsPoint x="25" y="20" /></Size>
+				<Anchors>
+					<Anchor point="center" relativePoint="center" relativeTo="$parentCareerIcon"><AbsPoint x="0" y="0"/></Anchor>
+				</Anchors>
+			</Label>
+		</Windows>
+	</Window>
+
+	<!-- Anchor Window -->
+	<Window name="TargetsAnchor" handleinput="false" savesettings="true">
+		<Size><AbsPoint x="48" y="48" /></Size>
+		<Anchors><Anchor point="center" relativePoint="center" relativeTo="Root" /></Anchors>
+	</Window>
+</Windows>
+</Interface>

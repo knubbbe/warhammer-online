@@ -1,9 +1,0 @@
-The preferred way of installation is via the Curse client. Just click the 
-"install via curse client" button at 
-http://war.curse.com/downloads/war-addons/details/kwestor.aspx. 
-The latest version and all dependencies will then be automatically installed
-for you.
-
-If you manually install HealGrid, please make sure that you COMPLETELY remove
-the HealGrid-folder from your addon-folder before you install the latest
-version.
